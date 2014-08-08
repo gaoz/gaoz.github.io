@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Fixed Top Navbar Example for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet">
+	<!-- language flat icon CSS -- document https://github.com/usrz/bootstrap-languages -->
+    <link href="asset/css/languages.css" rel="stylesheet">
+    <!-- social media icon CSS with social_media_icon.js-- document https://http://codepen.io/benfields/pen/pnoEL -->
+    <link href="asset/css/social_media_icon.css" rel="stylesheet">
+    
+    <!-- Custom 1 styles for this template -->
+    <link href="asset/css/theme1.css" rel="stylesheet">
+
+    
+
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">WhiteLabelSite</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Activities <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="lang-xs lang-lbl" lang="en"></span><span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#"><span class="lang-xs lang-lbl" lang="en"></span></a></li>
+                <li><a href="#"><span class="lang-xs lang-lbl" lang="zh"></span></a></li>
+			  </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">US$ Dollar <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">฿ - Thai Baht</a></li>
+                <li><a href="#">JP¥ - Japanese Yen</a></li>
+                <li><a href="#">€ - Euro</a></li>
+                <li><a href="#">£ - Pound Sterling</a></li>
+                <li><a href="#">CN¥ - Chinese Yuan</a></li>
+              </ul>
+            </li>
+            <li class=""><a href="./"><span class="glyphicon glyphicon-shopping-cart"></span>(0)</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="MissionBanner" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#MissionBanner" data-slide-to="0" class="active"></li>
+            <li data-target="#MissionBanner" data-slide-to="1" class=""></li>
+            <li data-target="#MissionBanner" data-slide-to="2" class=""></li>
+            <li data-target="#MissionBanner" data-slide-to="3" class=""></li>
+            <li data-target="#MissionBanner" data-slide-to="4" class=""></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item ad1 active">
+                <div class="shadow-layer">
+                    <div class="carousel-caption">
+                        <h1>eTour International</h1>
+                        <p>Business to Business Solution</p>
+                        <p>
+                            <a class="btn btn-lg btn-clear" href="#">Explore Our company</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item ad2">
+                <div class="shadow-layer">
+                    <div class="carousel-caption">
+                        <h1>More Connections, More Revenues.</h1>
+                        <p>Create more relationships through online marketplace.</p>
+                        <p>
+                            <a class="btn btn-lg btn-clear" href="#">Explore Our gifts</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item ad3">
+                <div class="shadow-layer">
+                    <div class="carousel-caption">
+                        <h1>The best tour in Hawaii</h1>
+                        <p>Over 200 activities for you to select</p>
+                        <p>
+                            <a class="btn btn-lg btn-clear" href="#">Explore Our tours</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item ad4 ">
+                <div class="shadow-layer">
+                    <div class="carousel-caption">
+                        <h1>Start you business with White label site </h1>
+                        <p>Bring business to your community</p>
+                        <p>
+                            <a class="btn btn-lg btn-clear" href="#">start here</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item ad5">
+                <div class="shadow-layer">
+                    <div class="carousel-caption">
+                        <h1>Meet our business owner </h1>
+                         <p>Build world wide business connection.</p>
+                          <p>
+                            <a class="btn btn-lg btn-clear" href="#">Schedule</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  Next and Previous controls below
+        href values must reference the id for this carousel -->
+        <a class="left carousel-control" href="#MissionBanner" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#MissionBanner" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+
+   
+    </div>
+    <!-- /.carousel -->
+    
+    
+     <!--    Adopt
+  ================================================== ---->
+        <div class="jumbotron press-section" id="1">
+            <div class="container center">
+                        <h1>Digital Lifestyle Conference</h1>
+                        <h3 class="subtitle-lg">East Meets West in Startup Paradise 2014 </h3>
+                    </div>
+                    <div class="container programs-card">
+                            <div class="col-sm-5 col-xs-12">
+                                        <img src="asset/img/plan/event1.png" alt="" class="img-responsive img-rounded breathingroom">
+                                                      
+                						<div id="social" class="miniWidth">
+                                        <div class="text-center breathingroom adopt-share">
+                                            <div class="list-title social">
+                                                
+                                                  <ul>
+                                                    <li class="facebook" data-text="Like me on Facebook" data-network="facebook"><a href="#">Facebook</a></li>
+                                                    <li class="twitter" data-text="Tweet me on Twiiter" data-network="twitter"><a href="#">Twitter</a></li>
+                                                    <li class="google" data-text="Plus me on Google" data-network="google"><a href="#">Github</a></li>
+                                                    <li class="pinterest" data-text="Pin me on Pinterest" data-network="pinterest"><a href="#">Github</a></li>
+                                                  </ul>
+                                                  <p id="socialmediatext">Find me on the web</p>
+                                                
+                                            </div>
+                                        </div>
+                                        </div>
+                                  
+    
+                            </div>
+                            <div class="col-sm-7 col-xs-12">
+                                <h5>Supplier</h5>
+                                <p>eTour International Group WL</p>
+                                <h5>Address</h5>
+                                <p>91-119 Olai Street,Kapolei, HI 96707</p>
+                                <h5>Description</h5>
+                                <p>November 6-7: East Meets West in Startup Paradise 2014 "Digital Lifestyle" Conference in Honolulu, Hawaii - Reserve your seat now!</p>
+                            </div>
+                            <div class="col-sm-7 col-xs-12">
+                            	<button style="display: block; width: 100%;" class="btn btn-dark">View Details</button>
+                            </div>
+                    </div><!-- end of program card content -->
+                    
+            
+                </div>
+               
+            </div>
+        </div>
+    <!-- end of activities showcase -->
+    
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/social_media_icon.js"></script>
+  </body>
+</html>

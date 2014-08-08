@@ -1,0 +1,247 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+/* THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+ .carousel {
+    margin-bottom: -50px;
+    /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    margin-top: -30px;
+    padding-top: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+ .carousel-caption {
+    text-shadow: none;
+    z-index: 10;
+    top: 50px;
+    margin: 10px;
+    padding: 0 40px;
+}
+
+.carousel-caption h1 {
+    font-size: 80px;
+    font-weight:200;
+    line-height:1;
+}
+
+.carousel-caption-shade {
+    color: #fff;
+    background-color: rgba(250,250,250,.3)
+}
+
+.carousel-indicators {
+  z-index: 13;
+}
+/* Declare heights because of positioning of img element */
+ .carousel .item {
+    min-height:600px;
+    min-width:100%;
+    background-color: #f2f2f2;
+}
+.carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:500px;
+}
+.carousel-inner .item {
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15%;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+.carousel-control.left {
+  background-image: none;
+}
+.carousel-control.right {
+  background-image: none;
+}
+
+.img-40 {
+    width:40%;
+}
+
+
+.ad1 {
+    background: url(../img/banner/place1.jpg) no-repeat center center;
+}
+.ad2 {
+    background: url(../img/banner/place4.jpg) no-repeat center top;
+}
+
+.ad3 {
+    background: url(../img/banner/place2.jpg) no-repeat center top;
+}
+
+.ad4 {
+    background: url(../img/banner/place3.jpg) no-repeat center top;
+}
+.ad5 {
+    background: url(../img/banner/place6.jpg) no-repeat center top;
+}
+
+
+
+.shadow-layer {
+    background-color:none;
+    background-color: rgba(0,0,0,0.3);
+    -webkit-transition: background-color 0.5s ease;
+    -moz-transition: background-color 0.5s ease;
+    -o-transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.shadow-layer:hover {
+    background-color: rgba(0, 0, 0, 0.0);
+    -webkit-transition: background-color 0.5s ease;
+    -moz-transition: background-color 0.5s ease;
+    -o-transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+    /* Remove the edge padding needed for mobile */
+    .marketing {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+
+  .carousel-caption h1{
+     font-size: 60px;
+  }
+}
+@media (max-width: 991px) {
+    .carousel .item {
+    min-height:500px;
+    }
+}
+@media (min-width: 992px) {
+    /* Narrow Menu bar and Body part, but banner slider show */
+    .container {
+        width: 860px;
+    }
+
+  .carousel-caption h1{
+     font-size: 70px;
+  }
+}
+@media (max-width: 767px) {
+    .carousel .item {
+    min-height:400px;
+    }
+
+    .carousel-caption {
+        padding: 0;
+    }
+    .carousel-caption h1 {
+        font-size:40px;
+    }
+
+}
+
+
+/* Buttons
+--------------------------------*/
+.btn-clear {
+    color: #fff;
+    background-color: transparent;
+    border: 3px solid #fff;
+}
+.btn-clear:hover {
+    color: #333;
+    background-color: #fff;
+    border: 3px solid #fff;
+}
+.btn-clear:focus,
+.btn-clear:active, {
+    color: #fff;
+    background-color: transparent;
+    border: 3px solid #fff;
+}
+.btn-dark {
+    font-weight: 400;
+    color: #fff;
+    background-color: #444;
+    border: 1px solid #444;
+}
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #444;
+    background-color: #fff;
+    border: 3px solid #444;
+}
+.btn-clear-on-white {
+    color: #333;
+    background-color: transparent;
+    border: 1px solid #c1c1c1;
+}
+.btn-clear-on-white:hover,
+.btn-clear-on-white:focus {
+    color: #333;
+    background-color: #f1f1f1;
+    border: solid 1px #c1c1c1;
+}
+.btn-clear-on-white:active {
+    color: #fff;
+    background-color: #333;
+}
+.btn-group .btn .
+.input-group button {
+    margin-left: 5px;
+}
+
+
+/* program plans section of home page */
+.programs-card{
+	padding: 15px 5px;
+	border: 2px dotted #555;
+	border-radius: 10px;
+}
+
+
