@@ -155,7 +155,7 @@
      font-size: 60px;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 991px) {j
     .carousel .item {
     min-height:500px;
     }
@@ -238,6 +238,12 @@
 
 
 /* program plans section of home page */
+.gray-bg{
+	background-color:#E1E0E2;
+}
+.white-bg{
+	background-color:#FFF;
+}
 .programs-card{
 	padding: 15px 5px;
 	border: 2px dotted #555;
