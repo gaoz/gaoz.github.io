@@ -244,4 +244,15 @@
 	border-radius: 10px;
 }
 
+.rows-text-limit{
+
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical; 
+
+}
+.programs p{
+  font-size:18px;
+}
 
