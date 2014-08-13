@@ -248,6 +248,7 @@
 	padding: 15px 5px;
 	border: 2px dotted #555;
 	border-radius: 10px;
+	cursor:pointer;
 }
 
 .rows-text-limit{
