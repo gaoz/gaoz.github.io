@@ -171,6 +171,9 @@
   }
 }
 @media (max-width: 767px) {
+	.carousel{
+		margin-bottom: -38px;
+	}
     .carousel .item {
     min-height:400px;
     }
@@ -237,7 +240,7 @@
 }
 
 
-/* program plans section of home page */
+/* desktop view program plans  - home page */
 .gray-bg{
 	background-color:#E1E0E2;
 }
@@ -262,4 +265,18 @@
 .programs p{
   font-size:18px;
 }
+/* mobile view of program plans - home page */
+.mobile{
+	padding-left:3%;
+	padding-right:3%;
+	padding-top:20px;
+	background-color:#E1E0E2;	
+}
 
+.mobile-program-card{
+	background-color:#fff;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	-webkit-box-shadow: 0px 3px #AAAAAA;
+	box-shadow: 0px 3px #AAAAAA;
+}

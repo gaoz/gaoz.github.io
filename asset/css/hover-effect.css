@@ -2,7 +2,7 @@
 /* Effect 4b */
 .white-bg .programs-card:hover {
 	background:#D7D7D7;
-	-webkit-transition-duration:1s;
+	-webkit-transition-duration:0.5s;
 }
 .programs-card {
 	-webkit-transition-duration:0.5s;
@@ -10,7 +10,7 @@
 
 .gray-bg .programs-card:hover {
 	background:#FFF;
-	-webkit-transition-duration:1s;
+	-webkit-transition-duration:0.5s;
 }
 
 
