@@ -275,7 +275,23 @@
 	background-size: cover;
 	border-radius: 3px;
 }
+.tour1 {
+    background: url(../img/plan/tour1.jpg) no-repeat center center;
+}
+.tour2 {
+    background: url(../img/plan/tour2.jpg) no-repeat center center;
+}
 
+.tour3 {
+    background: url(../img/plan/tour3.jpg) no-repeat center center;
+}
+
+.tour4 {
+    background: url(../img/plan/tour4.jpg) no-repeat center center;
+}
+.tour5 {
+    background: url(../img/plan/tour5.jpg) no-repeat center center;
+}
 
 /* mobile view of program plans - home page */
 .mobile{
@@ -316,4 +332,85 @@
 .mobile-program-title{
 	padding-top:20px;
 	padding-bottom:15px;
+}
+
+/*footer*/
+
+footer { 
+  font: 100% 'Droid Sans', arial, sans-serif;
+  height: 95px;
+  padding: 28px 0 5px 0;
+  text-align: center; 
+  background: #FFFFF;
+  color: #000;
+  margin: 0;
+  position: relative;
+  opacity: .6;
+  filter: alpha(opacity=60);
+
+}
+footer .cotyright{
+    margin: 10px 0;
+    font-size: 12px;
+}
+footer .tip{
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -36px;
+    right: 20%;
+}
+#footer a{
+    color: #000;
+}
+.company_name{
+    font-size: 26px;
+    line-height: 38px;
+    font-weight: 700;
+    color: #444444;
+    background: #f8f8f5;
+    padding: 10px 20px 0;
+}
+.company_trans{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.company_des{
+    font-size: 14px;
+    line-height: 26px;
+    background: #f8f8f5;
+    padding: 0 20px 10px;
+}
+.company_des strong{
+    font-size: 16px;
+}
+.terms_des{
+    font-size: 14px;
+    line-height: 26px;
+}
+.terms_des strong{
+    font-size: 16px;
+}
+.privacy_des{
+    font-size: 14px;
+    line-height: 26px;
+}
+.privacy_des strong{
+    font-size: 16px;
+}
+.cancel_des{
+    font-size: 14px;
+    line-height: 26px;
+}
+.cancel_des strong{
+    font-size: 16px;
+}
+.side_content .section_txt{
+    line-height: 30px;
+    font-size: 14px;
+    background: #f8f8f5;  
+    padding: 10px 20px;
+}
+.side_content .section_txt label{
+    font-weight: 700;
 }
