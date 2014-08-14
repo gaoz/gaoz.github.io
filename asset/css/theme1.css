@@ -265,6 +265,18 @@
 .programs p{
   font-size:18px;
 }
+/* image size box - one class finish all the job for resizing the img*/
+.programs-card .item {
+	min-height: 250px;
+	width: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	border-radius: 3px;
+}
+
+
 /* mobile view of program plans - home page */
 .mobile{
 	padding-left:3%;
@@ -274,6 +286,7 @@
 }
 
 .mobile-program-card{
+	cursor:pointer;
 	background-color:#fff;
 	border-bottom-left-radius: 3px;
 	border-bottom-right-radius: 3px;
@@ -282,6 +295,7 @@
 }
 
 .mobile-program-title .mobile-program-card{
+	cursor:default;
 	padding: 30px;
 	border-radius: 5px;
 	overflow: hidden;

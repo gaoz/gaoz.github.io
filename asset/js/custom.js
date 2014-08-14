@@ -49,7 +49,10 @@ $(".programs-card").click(function(){
      window.location=$(this).find(".view-detail").attr("href"); 
      return false;
 });
-
+$(".mobile-program-card").click(function(){
+     window.location=$(this).find(".view-detail").attr("href"); 
+     return false;
+});
 
 /*
 
