@@ -282,13 +282,7 @@
 }
 
 .mobile-program-title .mobile-program-card{
-	border-top-left-radius: 3px;
-	border-top-right-radius: 3px;
-	
-	background-color: #F2F5F7;
 	padding: 30px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
 	border-radius: 5px;
 	overflow: hidden;
 	
