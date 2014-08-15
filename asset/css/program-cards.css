@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* Desktop View Program cards CSS Document */
+
+
+
+.jumbotron{
+	background:url(../img/etc/program-bg.jpg);
+	margin-bottom: 0px;
+
+}
+.programs p {
+	margin-bottom: 0px;
+}
+.gray-bg{
+	background-color:#E1E0E2;
+}
+.white-bg{
+	background-color:#FFF;
+}
+.programs-card{
+	height:300px;
+	padding-left:0px;
+	background-color:#FFF;
+	border-radius: 3px;
+	cursor:pointer;
+}
+.program-shadow{
+	background-image: url(../img/etc/program-shadow.png);
+	background-repeat: no-repeat;
+	height: 50px;
+	background-size: 98% auto;
+}
+.rows-text-limit{
+
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical; 
+
+}
+.programs p{
+  font-size:18px;
+}
+/* image size box - one class finish all the job for resizing the img*/
+.programs-card .item {
+	min-height: 300px;/* desktop view image height*/
+	width: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	border-bottom-left-radius: 3px;
+	border-top-left-radius: 3px;
+}
+.tour1 {
+    background: url(../img/plan/tour1.jpg) no-repeat center center;
+}
+.tour2 {
+    background: url(../img/plan/tour2.jpg) no-repeat center center;
+}
+
+.tour3 {
+    background: url(../img/plan/tour3.jpg) no-repeat center center;
+}
+
+.tour4 {
+    background: url(../img/plan/tour4.jpg) no-repeat center center;
+}
+.tour5 {
+    background: url(../img/plan/tour5.jpg) no-repeat center center;
+}
+
+#no-left-padding{
+	padding-left:0px;
+}
+
+
+#no-padding{
+	padding:0px;
+}
+
+.fadeIn {
+  -vendor-animation-duration: 10s;
+  -vendor-animation-delay: 5s;
+  -vendor-animation-iteration-count: infinite;
+}

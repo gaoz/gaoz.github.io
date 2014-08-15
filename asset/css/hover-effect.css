@@ -1,6 +1,6 @@
 
 /* Effect 4b */
-.white-bg .programs-card:hover {
+/*.white-bg .programs-card:hover {
 	background:#D7D7D7;
 	-webkit-transition-duration:0.5s;
 }
@@ -12,7 +12,7 @@
 	background:#FFF;
 	-webkit-transition-duration:0.5s;
 }
-
+*/
 
 /* make keyframes that tell the start state and the end state of our object */
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }

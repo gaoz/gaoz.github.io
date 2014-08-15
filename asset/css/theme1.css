@@ -240,58 +240,6 @@
 }
 
 
-/* desktop view program plans  - home page */
-.gray-bg{
-	background-color:#E1E0E2;
-}
-.white-bg{
-	background-color:#FFF;
-}
-.programs-card{
-	padding: 15px 5px;
-	border: 2px dotted #555;
-	border-radius: 10px;
-	cursor:pointer;
-}
-
-.rows-text-limit{
-
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical; 
-
-}
-.programs p{
-  font-size:18px;
-}
-/* image size box - one class finish all the job for resizing the img*/
-.programs-card .item {
-	min-height: 250px;
-	width: 100%;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	border-radius: 3px;
-}
-.tour1 {
-    background: url(../img/plan/tour1.jpg) no-repeat center center;
-}
-.tour2 {
-    background: url(../img/plan/tour2.jpg) no-repeat center center;
-}
-
-.tour3 {
-    background: url(../img/plan/tour3.jpg) no-repeat center center;
-}
-
-.tour4 {
-    background: url(../img/plan/tour4.jpg) no-repeat center center;
-}
-.tour5 {
-    background: url(../img/plan/tour5.jpg) no-repeat center center;
-}
 
 /* mobile view of program plans - home page */
 .mobile{
@@ -321,7 +269,7 @@
 }
 
 .mobile-program-card .item {
-	min-height:200px;
+	min-height:200px;   /* mobile programe image height */
     width: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -347,6 +295,7 @@ footer {
   position: relative;
   opacity: .6;
   filter: alpha(opacity=60);
+  border-top: 2px dotted #555;
 
 }
 footer .cotyright{
