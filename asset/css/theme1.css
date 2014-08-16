@@ -1,8 +1,13 @@
 
+html, body{
+	font-family: 'Open Sans', sans-serif;!important
+}
 
 
-
-
+.navbar *{
+	text-transform: uppercase;
+	font-size: 12px;	
+}
 
 
 
@@ -363,3 +368,14 @@ footer .tip{
 .side_content .section_txt label{
     font-weight: 700;
 }
+
+
+#totalgdslogo{
+	width:560px;
+	margin:0 auto;
+	height: 120px;
+	padding: 0px 0 0 0;
+	background:url("https://dn-totalgdsimg.qbox.me/53eec3ee505f88b3679c248b") no-repeat;
+	background-size: 100% auto;
+}
+	
