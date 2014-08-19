@@ -28,6 +28,9 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
 
+     <!--fullscreen slidershow stuff-->
+        <link rel="stylesheet" type="text/css" href="asset/css/fullscreen-slidershow.css" />
+        <script type="text/javascript" src="asset/js/modernizr.custom.86080.js"></script>
 
 
     
@@ -35,7 +38,21 @@
   </head>
 
   <body>
-	
+  
+  	<!--full screen slider show  support file   fullscreen-sildershow.css  odernizr.custom.86080.js-->
+<ul class="cb-slideshow">
+            <li><span></span><div><h3>JJ·French·Bistro</h3></div></li>
+            <li><span></span><div><h3>The Best Dessert In Honolulu</h3></div></li>
+            <li><span></span><div><h3></h3></div></li>
+            <li><span></span><div><h3>bal·ance</h3></div></li>
+            <li><span></span><div><h3>qui·e·tude</h3></div></li>
+            <li><span></span><div><h3>re·lax·a·tion</h3></div></li>
+    </ul>
+    <!--end of full screen slider show -->     
+     
+  
+  
+<div class="hidden" id="website-wrapper">	
     <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
@@ -468,7 +485,7 @@
     </div>
     <span class="tip"></span>
 	</footer> 
-
+</div><!--end of website-wrapper -->
 
 
     <!-- Bootstrap core JavaScript
@@ -506,6 +523,25 @@
 			callbackFunction: function(elem, action){} // Callback to do after a class was added to an element. Action will return "add" or "remove", depending if the class was added or removed
 		});
 	</script>
+    
+    
+    <script>
+	// Full screen slidershow js
+
+		$(".cb-slideshow").click(function(){
+			$("#website-wrapper").removeClass("hidden");
+			$(".cb-slideshow").addClass("hidden");
+		});
+		
+		$(".cb-slideshow").scroll(function(){
+			$("#website-wrapper").removeClass("hidden");
+			$(".cb-slideshow").addClass("hidden");
+		});
+	</script>
+
+    
+    
+    
 
   </body>
 </html>
