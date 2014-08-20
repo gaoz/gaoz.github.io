@@ -15,9 +15,6 @@ html, body{
 
 
 
-
-
-
  
 
 
@@ -298,9 +295,9 @@ footer {
   color: #000;
   margin: 0;
   position: relative;
-  opacity: .6;
+  opacity: 1;
   filter: alpha(opacity=60);
-  border-top: 2px dotted #555;
+/*  border-top: 2px dotted #555;*/
 
 }
 footer .cotyright{
