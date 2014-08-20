@@ -1,0 +1,542 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+
+<style>
+.main_wrap {
+	height: 0px;
+	margin: -40px; 
+	min-height: 0px;
+}
+.jumbotron{
+	background:url(http://gaoz.github.io/asset/img/etc/program-bg.jpg);
+	margin-bottom: 0px!important;
+}
+.jumbotron .desktop-program-title{
+	font-family: 'Oswald', sans-serif;
+	font-size: 40px;
+	line-height: 33px;
+	padding-bottom: 10px;
+
+}
+.jumbotron .content{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 178px;
+	margin: 0;
+	padding-top: 50%;
+	margin-left: auto;
+	margin-right: auto;	
+}
+.jumbotron .program-title{
+	font-family: 'Oswald', sans-serif;
+	color:#000;
+	font-size: 30px;
+	line-height: 33px;
+	padding-bottom: 10px;
+}
+.jumbotron .from{
+	font-family: 'Oswald', sans-serif;
+	width:48px;
+	color: #000;
+	font-size: 14px;
+	line-height: 25px;
+	vertical-align: middle;
+	margin-left: auto;
+	margin-right: auto;
+	text-transform: uppercase;
+	border-top: solid 1px #d2d2d2;
+	border-bottom: solid 1px #d2d2d2;
+	font-weight: normal;
+	
+}
+.jumbotron .price{
+	font-family: 'Oswald', sans-serif;
+	color: #000;
+	font-size: 30px;
+	font-weight: 30px;
+	line-height: 60px;
+	word-wrap: break-word;
+}
+.programs{
+	height:200px;
+	overflow:hidden;
+	border-right: 2px dotted #000;
+}
+.programs *{
+	color:#000;
+}
+.programs p {
+	margin-bottom: 0px;
+}
+.gray-bg{
+	background-color:#E1E0E2;
+}
+.white-bg{
+	background-color:#FFF;
+}
+ticket{
+	background-color:#047aa6;
+}
+.programs-card{
+	height:266px;
+	padding-left:0px;
+	border-radius: 4px;
+	background-color:#047aa6;
+	cursor:pointer;
+}
+.program-shadow{
+	background-image: url(http://gaoz.github.io/asset/img/etc/shadow2.png);
+	background-repeat: no-repeat;
+	height: 30px;
+	background-size: 100% auto;
+}
+.rows-text-limit{
+
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical; 
+
+}
+
+/* image size box - one class finish all the job for resizing the img*/
+.programs-card .item {
+	min-height: 266px;/* desktop view image height*/
+	width: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	border-bottom-left-radius: 3px;
+	border-top-left-radius: 3px;
+}
+.tour1 {
+    background: url(http://gaoz.github.io/asset/img/plan/tour1.jpg) no-repeat center center;
+}
+.tour2 {
+    background: url(http://gaoz.github.io/asset/img/plan/tour2.jpg) no-repeat center center;
+}
+
+.tour3 {
+    background: url(http://gaoz.github.io/asset/img/plan/tour3.jpg) no-repeat center center;
+}
+
+.tour4 {
+    background: url(http://gaoz.github.io/asset/img/plan/tour4.jpg) no-repeat center center;
+}
+.tour5 {
+    background: url(http://gaoz.github.io/asset/img/plan/tour5.jpg) no-repeat center center;
+}
+.tour6 {
+    background: url(http://gaoz.github.io/asset/img/plan/tour6.jpg) no-repeat center center;
+}
+.tour7 {
+    background: url(http://gaoz.github.io/asset/img/plan/tour7.jpg) no-repeat center center;
+}
+
+#no-left-padding{
+	padding-left:0px;
+}
+
+
+#no-padding{
+	padding:0px;
+}
+
+.fadeIn {
+  -vendor-animation-duration: 10s;
+  -vendor-animation-delay: 5s;
+  -vendor-animation-iteration-count: infinite;
+}
+
+.blue_ticket .p-header{
+	height:50px;
+	background-color:#047aa6;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;	
+}
+.blue_ticket .top-left{
+
+}
+.blue_ticket .p-footer{
+	height:50px;
+	background-color:#047aa6;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;	
+}
+.blue_ticket .programs-card{
+	background-color:#FFF;
+	
+}
+
+#right-dot{
+	border-right: 2px dotted #000;
+}
+
+</style>
+
+
+
+<!-- Bootstrap core CSS -->
+    <link href="http://gaoz.github.io/asset/css/bootstrap.min.css" rel="stylesheet">
+	<!-- language flat icon CSS -- document https://github.com/usrz/bootstrap-languages -->
+    <link href="http://gaoz.github.io/asset/css/languages.css" rel="stylesheet">
+    <!-- social media icon CSS with social_media_icon.js-- document https://http://codepen.io/benfields/pen/pnoEL -->
+    <link href="http://gaoz.github.io/asset/css/hover-effect.css" rel="stylesheet">
+    <link href="http://gaoz.github.io/asset/css/Flat_Social_Buttons.css" rel="stylesheet">
+   
+    <link href="http://gaoz.github.io/asset/css/animate.css" rel="stylesheet">
+
+    <!-- Custom 1 styles for this template -->
+    <link href="http://gaoz.github.io/asset/css/theme1.css" rel="stylesheet">
+</footer>
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+<!-- Carousel
+    ================================================== -->
+    <div id="MissionBanner" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#MissionBanner" data-slide-to="0" class="active"></li>
+            <li data-target="#MissionBanner" data-slide-to="1" class=""></li>
+            <li data-target="#MissionBanner" data-slide-to="2" class=""></li>
+            <li data-target="#MissionBanner" data-slide-to="3" class=""></li>
+            <li data-target="#MissionBanner" data-slide-to="4" class=""></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item ad1 active">
+                <div class="shadow-layer">
+                    <div class="carousel-caption">
+                        <h1>eTour International</h1>
+                        <p>Business to Business Solutions</p>
+                        <p>
+                            <a class="btn btn-lg btn-clear" href="#">Explore Our Company</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item ad2">
+                <div class="shadow-layer">
+                    <div class="carousel-caption">
+                        <h1>More Connections, More Revenues.</h1>
+                        <p>Create more relationships through online marketplace.</p>
+                        <p>
+                            <a class="btn btn-lg btn-clear" href="#">See Our Connections</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item ad3">
+                <div class="shadow-layer">
+                    <div class="carousel-caption">
+                        <h1>The Best Tour in Hawaii</h1>
+                        <p>Over 200 activities for you to select</p>
+                        <p>
+                            <a class="btn btn-lg btn-clear" href="#">Explore Our Tours</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item ad4 ">
+                <div class="shadow-layer">
+                    <div class="carousel-caption">
+                        <h1>Start Your Business with White Label Site </h1>
+                        <p>Bring business to your community</p>
+                        <p>
+                            <a class="btn btn-lg btn-clear" href="#">Start Here</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item ad5">
+                <div class="shadow-layer">
+                    <div class="carousel-caption">
+                        <h1>Meet Our Business Owners </h1>
+                         <p>Build world wide business connection.</p>
+                          <p>
+                            <a class="btn btn-lg btn-clear" href="#">Schedule</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  Next and Previous controls below
+        href values must reference the id for this carousel -->
+        <a class="left carousel-control" href="#MissionBanner" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#MissionBanner" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+
+   
+    </div>
+    <!-- /.carousel -->
+    <br class=""></br>
+    
+
+    
+     <!--    activities
+  ================================================== ---->
+  			<div class="container mobile mobile-program-title visible-xs ">
+                        <div class="mobile-program-card">       
+                             <p class="text-center">Reserve Your Tickets and Hotels</p>
+                        </div>     
+                    
+           </div>
+            
+  
+  
+  
+  
+  			<div class="jumbotron hidden-xs">
+            	<div class="text-center container"> 
+            	<h1 class="desktop-program-title"> Reserve Your Tickets and Hotels</h1>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            
+  	
+            <div class="blue_ticket jumbotron hidden-xs">
+                                     <div class="left-in">
+                                     				  
+                                                     <div class=" container programs-card ticket" id="no-padding"> <a class="view-detail" href=""></a>									   <div class="p-header p-header-left col-sm-10" id="right-dot"></div>
+                                                             <div class="p-header col-sm-2" ></div>
+                                                            <div class="programs col-sm-10 col-xs-12">
+                                                                <h3 class="program-title">East Meets West Event - Digital Lifestyle Conference 2014</h3>
+                                                                <h5 class="hidden-xs"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;&nbsp;&nbsp;BlueStartUps.Inc</h5>
+                                                                <h5 class="hidden-xs"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;Honolulu, Hawaii</h5>
+                                                                <h5 class="description"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;&nbsp;Description:</h5>
+                                                                <h5 class="rows-text-limit"> November 5-7: East Meets West in Startup Paradise 2014 "Digital Lifestyle" Conference in Honolulu, Hawaii - Reserve your seat now!</h5>
+                                                           
+                                                               <!-- <button style="display: block; width: 100%;" class="btn btn-dark">From $100&nbsp;&nbsp;&nbsp;&nbsp;View Details</button>-->
+                                                            </div>
+                                                            <div class="col-sm-2 col-xs-12">
+                                                                <div class="content text-center">
+                                                                       <P class="from">FROM</P>
+                                                                       <p class="price">$250</p>  
+                                                                </div>           
+                                                            </div>
+                                                            <div class="p-footer col-sm-10" id="right-dot"></div>	
+                                                            <div class="p-footer col-sm-2" ></div>
+                                                        
+                                                    </div><!-- end of program card content -->
+                                                  	  <div class="container" id="no-padding">
+                                                            <div class="program-shadow"></div>
+                                                    </div>
+                                    </div>
+                    
+            </div>
+            
+          
+          
+          
+          
+          
+          
+          
+  	
+            <div class="jumbotron hidden-xs">
+                                     <div class="left-in">
+                                                     <div class=" container programs-card ticket"> <a class="view-detail" href=""></a>
+                                                            
+                                                            <div class="programs col-sm-10 col-xs-12">
+                                                                <h3 class="program-title">East Meets West Event - Digital Lifestyle Conference 2014</h3>
+                                                                <h5 class="hidden-xs"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;&nbsp;&nbsp;BlueStartUps.Inc</h5>
+                                                                <h5 class="hidden-xs"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;Honolulu, Hawaii</h5>
+                                                                <h5 class="description"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;&nbsp;Description:</h5>
+                                                                <h5 class="rows-text-limit"> November 5-7: East Meets West in Startup Paradise 2014 "Digital Lifestyle" Conference in Honolulu, Hawaii - Reserve your seat now!</h5>
+                                                           
+                                                               <!-- <button style="display: block; width: 100%;" class="btn btn-dark">From $100&nbsp;&nbsp;&nbsp;&nbsp;View Details</button>-->
+                                                            </div>
+                                                            <div class="col-sm-2 col-xs-12">
+                                                                <div class="content text-center">
+                                                                       <P class="from">FROM</P>
+                                                                       <p class="price">$250</p>  
+                                                                </div>           
+                                                            </div>	
+                                                        
+                                                    </div><!-- end of program card content -->
+                                                  	<div class="container" id="no-padding">
+                                                            <div class="program-shadow"></div>
+                                                    </div>
+                                    </div>
+                    
+            </div>
+          
+            
+            
+            <div class="jumbotron hidden-xs">
+                                     <div class="right-in">
+                                                     <div class=" container programs-card"> <a class="view-detail" href=""></a>
+                                                            <div class="col-sm-4 col-xs-12" id="no-left-padding">
+                                                                       
+                                                                        <div class="item tour2"></div>              
+                                                            </div>	
+                                    
+                                                            
+                                                            <div class="programs col-sm-6 col-xs-12">
+                                                                <h3 class="program-title">Honolulu Screamer Jet Boat</h3>
+                                                                <h5 class="hidden-xs"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;&nbsp;&nbsp;eTour International Group WL</h5>
+                                                                <h5 class="hidden-xs"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;91-119 Olai Street,Kapolei, HI 96707</h5>
+                                                                <span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;&nbsp;Description:<h5  class="rows-text-limit"> November 6-7: East Meets West in Startup Paradise 2014 "Digital Lifestyle" Conference in Honolulu, Hawaii - Reserve your seat now!</h5>
+                                                           
+                                                               <!-- <button style="display: block; width: 100%;" class="btn btn-dark">From $100&nbsp;&nbsp;&nbsp;&nbsp;View Details</button>-->
+                                                            </div>
+                                                            <div class="col-sm-2 col-xs-12">
+                                                                <div class="content text-center">
+                                                                       <P class="from">FROM</P>
+                                                                       <p class="price">$189</p>  
+                                                                </div>           
+                                                            </div>	
+                                                        
+                                                    </div><!-- end of program card content -->
+                                                  	<div class="container" id="no-padding">
+                                                            <div class="program-shadow"></div>
+                                                    </div>
+                                    </div>
+                    
+            </div>
+            
+            
+            
+            
+           
+            <div class="container mobile visible-xs ">
+                        <div class="mobile-program-card">
+                        	<a class="view-detail" href=""></a>
+                             <div class="program-image item tour4"></div>
+                             <h5 class="text-center">Digital Lifestyle Conference</h5>
+                             <p class="text-center">$99</p>
+                        </div>     
+                    
+            </div>
+
+            
+            <div class="container mobile visible-xs ">
+                        <div class="mobile-program-card">
+                        	<a class="view-detail" href=""></a>
+                             <div class="item tour1"></div>
+                             <h5 class="text-center">Digital Lifestyle Conference</h5>
+                             <p class="text-center">$99</p>
+                        </div>     
+                    
+            </div>
+            
+            <div class="container mobile visible-xs ">
+                        <div class="mobile-program-card">
+                        	 <a class="view-detail" href=""></a>
+                             <div class="item tour2"></div>
+                             <h5 class="text-center">Digital Lifestyle Conference</h5>
+                             <p class="text-center">$99</p>
+                        </div>     
+                    
+            </div>
+            
+            <div class="container mobile visible-xs ">
+                        <div class="mobile-program-card">
+                        	<a class="view-detail" href=""></a>
+                             <div class="item tour3"></div>
+                             <h5 class="text-center">Digital Lifestyle Conference</h5>
+                             <p class="text-center">$99</p>
+                        </div>     
+                    
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+            
+            
+            
+            
+            
+            
+  
+    <!-- end of activities showcase -->
+
+	<footer>
+    <div id="footer">
+    
+    <div id="totalgdslogo">
+     </div>
+        <a href="/en/site/about"> About eTourer</a> | 
+        <a href="/en/site/terms"> Terms & Conditions</a>  | 
+        <a href="/en/site/privacy"> Privacy Policy</a>  | 
+        <a href="/en/site/cancellation"> Cancellation Policy</a>  | 
+        <a href="/en/site/contact"> Contact Us</a>  
+        <p class="cotyright">Copyright 2012-2014 &copy; eTour International Group WL</p>
+    </div>
+    <span class="tip"></span>
+	</footer> 
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://gaoz.github.io/asset/js/bootstrap.min.js"></script>
+    <script src="http://gaoz.github.io/asset/js/custom.js"></script>
+    
+    
+    
+   <!-- <script src="https://raw.githubusercontent.com/dirkgroenen/jQuery-viewport-checker/master/jquery.viewportchecker.js"></script>-->
+   
+   
+   
+   
+   	<script>
+		
+		$('.left-in').viewportChecker({
+			classToAdd: 'animated fadeInLeft', // Class to add to the elements when they are visible
+			offset: -100, // The offset of the elements (let them appear earlier or later)
+			repeat: true, // Add the possibility to remove the class if the elements are not visible
+			callbackFunction: function(elem, action){} // Callback to do after a class was added to an element. Action will return "add" or "remove", depending if the class was added or removed
+		});
+		$('.right-in').viewportChecker({
+			classToAdd: 'animated fadeInRight', // Class to add to the elements when they are visible
+			offset: -100, // The offset of the elements (let them appear earlier or later)
+			repeat: true, // Add the possibility to remove the class if the elements are not visible
+			callbackFunction: function(elem, action){} // Callback to do after a class was added to an element. Action will return "add" or "remove", depending if the class was added or removed
+		});
+		$('.fade-in').viewportChecker({
+			classToAdd: 'animated fadeIn', // Class to add to the elements when they are visible
+			offset: 200, // The offset of the elements (let them appear earlier or later)
+			repeat: true, // Add the possibility to remove the class if the elements are not visible
+			callbackFunction: function(elem, action){} // Callback to do after a class was added to an element. Action will return "add" or "remove", depending if the class was added or removed
+		});
+	</script>
+
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>
