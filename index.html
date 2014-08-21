@@ -23,10 +23,11 @@
 	<link href="asset/css/theme1.css" rel="stylesheet">
     <!-- Custom 1 styles for this template -->
     <link href="asset/css/parallax_sildershow.css" rel="stylesheet">
+   
 
 	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-  
+   
 
 
 
@@ -159,6 +160,7 @@
                     </div>
                 </div>
             </div>
+            
         </div>
     
         <a class="left carousel-control" href="#MissionBanner" data-slide="prev">
@@ -175,22 +177,34 @@
     
 
    <section id="slide-1" class="homeSlide">
-        <div class="bcg"
-            data-center="background-position: 50% 0px;"
-            data-top-bottom="background-position: 50% -100px;"
-            data-anchor-target="#slide-1"
-        >
-            <div class="hsContainer">
-                <div class="hsContent"
-                    data-center="bottom: 50%; opacity: 1"
-                    data-top="bottom: 50%; opacity: 1"
-                    data-anchor-target="#slide-1 h2"
-                >
-                    <h2>East Meets West 2014</h2>
-                </div>
+            <div class="bcg image1" id="sliderbackground"
+                    data-center="background-position: 50% 0px;"
+                    data-top-bottom="background-position: 50% -100px;"
+                    data-anchor-target="#slide-1">
+                    
             </div>
-        </div>
-	</section>
+            <div class="bcg image2" id="sliderbackground"
+                    data-center="background-position: 50% 0px;"
+                    data-top-bottom="background-position: 50% -100px;"
+                    data-anchor-target="#slide-1">
+                    
+            </div>
+            <div class="bcg image3" id="sliderbackground"
+                    data-center="background-position: 50% 0px;"
+                    data-top-bottom="background-position: 50% -100px;"
+                    data-anchor-target="#slide-1">
+                    
+            </div>
+         
+            <div class="hsContainer">
+                            <div class="hsContent"
+                                data-center="bottom: 50%; opacity: 1"
+                                data-top="bottom: 50%; opacity: 1"
+                                data-anchor-target="#slide-1 h2">
+                                <h2>East Meets West 2014</h2>
+                            </div>
+            </div>
+    </section>
    
   
      <!--    activities
@@ -526,6 +540,33 @@
 			callbackFunction: function(elem, action){} // Callback to do after a class was added to an element. Action will return "add" or "remove", depending if the class was added or removed
 		});
 	</script>
-
+    <script>
+   /* window.onload = function(){
+		
+		
+		function test() {
+			 	if($('#sliderbackground').hasClass('image1'))
+                {
+					$('#sliderbackground').removeClass('image1');
+					$('#sliderbackground').addClass('image2');	
+                }else if($('#sliderbackground').hasClass('image2'))
+                {
+                    $('#sliderbackground').removeClass('image2');
+					$('#sliderbackground').addClass('image3');
+				}else if($('#sliderbackground').hasClass('image3'))
+				{	
+					$('#sliderbackground').removeClass('image3');
+					$('#sliderbackground').addClass('image1');
+				}else{
+					$('#sliderbackground').addClass('image1');
+				}
+				
+            }
+        var interval = setInterval(test, 6000);
+	};
+    */
+    
+    </script>
+	
   </body>
 </html>
