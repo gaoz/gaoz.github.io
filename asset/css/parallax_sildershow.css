@@ -183,7 +183,7 @@ main {
 
 .image1{
 	background-image:url('../img/banner/place4.jpg');
-	/*-webkit-animation: image1Animation 24s linear infinite 0s;*/
+	-webkit-animation: image1Animation 24s linear infinite 0s;
 }
 .image2{
 	background-image:url('../img/banner/place3.jpg');
