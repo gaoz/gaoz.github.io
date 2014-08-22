@@ -9,14 +9,59 @@ html, body{
 	font-size: 12px;	
 }
 
+.navbar-brand{
+	font-size: 25px;
+	padding-bottom: 10px;
+	color: #555;
+	font-style: normal;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 0.20em;
+	-webkit-font-smoothing: antialiased;
+	
+}
 
 
 
+/* blinking text */
+
+.blink_me {
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 5s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+
+    animation-name: blinker;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@-moz-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.2; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.2; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.2; }
+    100% { opacity: 1.0; }
+}
 
 
-
- 
-
+/* end of blinking text css */
 
 
 /* THE CAROUSEL
@@ -26,7 +71,6 @@ html, body{
  .carousel {
     margin-bottom: -50px;
     /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
-    margin-top: -30px;
     padding-top: 60px;
 }
 /* Since positioning the image, we need to help out the caption */
