@@ -108,9 +108,7 @@ body {
 h2 {
 	margin-top: 0;
 }
-.loading {
-	background: url('../img/ico_loading.gif') no-repeat center center;
-}
+
 section {
 	min-width: 960px;
 	opacity: 1;
@@ -134,7 +132,7 @@ main {
 	left: 0;
 }
 .bcg {
-	position:absolute;
+
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -183,16 +181,16 @@ main {
 
 .image1{
 	background-image:url('../img/banner/place4.jpg');
-	-webkit-animation: image1Animation 24s linear infinite 0s;
+	/*-webkit-animation: image1Animation 24s linear infinite 0s;*/
 }
 .image2{
 	background-image:url('../img/banner/place3.jpg');
-	-webkit-animation: image2Animation 24s linear infinite 0s;
+	/*-webkit-animation: image2Animation 24s linear infinite 0s;*/
 
 }
 .image3{
 	background-image:url('../img/banner/place6.jpg');
-	-webkit-animation: image3Animation 24s linear infinite 0s;
+	/*-webkit-animation: image3Animation 24s linear infinite 0s;*/
 
 }
 /*@-webkit-keyframes image1Animation { 

@@ -4,10 +4,15 @@
 
 
 .jumbotron .desktop-program-title{
-	font-family: 'Oswald', sans-serif;
-	font-size: 40px;
-	line-height: 33px;
+	font-size: 30px;
 	padding-bottom: 10px;
+	color: #555;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 1.17em;
+	text-transform: uppercase;
+	letter-spacing: 0.20em;
+	-webkit-font-smoothing: antialiased;
 
 }
 
@@ -21,14 +26,19 @@
 	padding-top: 50%;
 	margin-left: auto;
 	margin-right: auto;
+	-webkit-font-smoothing: antialiased;
 
 	
 }
 .jumbotron .program-title{
+	
 	font-family: 'Oswald', sans-serif;
 	font-size: 30px;
 	line-height: 33px;
 	padding-bottom: 10px;
+	color:#888;
+	font-weight:100;
+	-webkit-font-smoothing: antialiased;
 
 }
 
@@ -45,6 +55,7 @@
 	border-top: solid 1px #d2d2d2;
 	border-bottom: solid 1px #d2d2d2;
 	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
 	
 }
 
@@ -56,10 +67,12 @@
 	font-weight: 30px;
 	line-height: 60px;
 	word-wrap: break-word;
+	-webkit-font-smoothing: antialiased;
 }
 
 .jumbotron{
-	background:url(../img/etc/program-bg.jpg);
+	background-color:#DDD;
+/*	background:url(../img/etc/program-bg.jpg);*/
 	margin-bottom: 0px;
 
 }
