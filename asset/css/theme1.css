@@ -21,7 +21,27 @@ html, body{
 	
 }
 
+.main-nav{
+	background-color:#333;	
+}
+.navbar-default .navbar-nav>li>a {
+color: #999;
+}
+.navbar-default .navbar-nav>li>a:hover {
+color: #fff;
+}
+.navbar-default .navbar-nav>li>a:visited {
+color: #999;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+color: #fff;
+border-bottom:4px solid #fff;
+background-color:#333;
+}
 
+.open>.dropdown-menu {
+border-top:4px solid #666;
+}
 
 /* blinking text */
 
