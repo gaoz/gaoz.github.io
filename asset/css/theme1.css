@@ -106,6 +106,14 @@ background-color:#333;
     margin-top: 105px;
     /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
 }
+
+@media (max-width: 767px){
+.carousel {
+    margin-top: 50px;
+    /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+}
+
+}
 /* Since positioning the image, we need to help out the caption */
  .carousel-caption {
     text-shadow: none;
