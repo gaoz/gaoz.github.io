@@ -2,7 +2,7 @@
 html, body{
 	font-family: 'Open Sans', sans-serif;!important
 }
-
+/* navigation bar section */
 
 .navbar *{
 	text-transform: uppercase;
@@ -52,7 +52,7 @@ background-color:#333;
 	font-size: 20px;
 }
 }
-
+/* end of navigation bar section */
 
 
 /* blinking text */
@@ -96,7 +96,7 @@ background-color:#333;
 /* end of blinking text css */
 
 
-/* THE CAROUSEL
+/* THE CAROUSEL slidershow section
 -------------------------------------------------- */
 
 /* Carousel base class */
@@ -360,25 +360,29 @@ background-color:#333;
 	padding-bottom:15px;
 }
 
-/*footer*/
+/***************footer section**********************/
 
 footer { 
-  font: 100% 'Droid Sans', arial, sans-serif;
-  height: 95px;
+ font-size: 12px;
+	font-style: normal;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 0.20em;
+	-webkit-font-smoothing: antialiased;
+  height: auto;
   padding: 28px 0 5px 0;
   text-align: center; 
-  background: #FFFFFF;
-  color: #000;
+  background: #333;
   margin: 0;
   position: relative;
+  color: #BBB;
   opacity: 1;
-  filter: alpha(opacity=60);
 /*  border-top: 2px dotted #555;*/
 
 }
 footer .cotyright{
     margin: 10px 0;
-    font-size: 12px;
+    font-size: 10px;
 }
 footer .tip{
     width: 0;
@@ -387,62 +391,18 @@ footer .tip{
     top: -36px;
     right: 20%;
 }
-#footer a{
-    color: #000;
+footer a{
+    color: #AAA;
 }
-.company_name{
-    font-size: 26px;
-    line-height: 38px;
-    font-weight: 700;
-    color: #444444;
-    background: #f8f8f5;
-    padding: 10px 20px 0;
+footer .supportedby{
+	margin-bottom:30px;
 }
-.company_trans{
-    font-weight: bold;
-    margin-bottom: 10px;
+footer .supportedby-texts{
+	margin-bottom:10px;
 }
-.company_des{
-    font-size: 14px;
-    line-height: 26px;
-    background: #f8f8f5;
-    padding: 0 20px 10px;
+footer .socialmedia-footer{
+	font:12px;
 }
-.company_des strong{
-    font-size: 16px;
-}
-.terms_des{
-    font-size: 14px;
-    line-height: 26px;
-}
-.terms_des strong{
-    font-size: 16px;
-}
-.privacy_des{
-    font-size: 14px;
-    line-height: 26px;
-}
-.privacy_des strong{
-    font-size: 16px;
-}
-.cancel_des{
-    font-size: 14px;
-    line-height: 26px;
-}
-.cancel_des strong{
-    font-size: 16px;
-}
-.side_content .section_txt{
-    line-height: 30px;
-    font-size: 14px;
-    background: #f8f8f5;  
-    padding: 10px 20px;
-}
-.side_content .section_txt label{
-    font-weight: 700;
-}
-
-
 #totalgdslogo{
 	width:560px;
 	margin:0 auto;
@@ -452,3 +412,4 @@ footer .tip{
 	background-size: 100% auto;
 }
 	
+/* end of footer section */
