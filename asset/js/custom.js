@@ -39,7 +39,7 @@ $(function(){
 |                |
 | mouse click    |
 |                | 
-|  direct to     |
+|  redirect to   |
 |  view detail   | 
 |                | 
 +----------------+ 
@@ -54,6 +54,8 @@ $(".mobile-program-card").click(function(){
      return false;
 });
 
+
+
 /*
 
 jQuery Viewport Checker – A nifty little script that checks if an element is in the viewport and then adds a class to it.
@@ -61,12 +63,6 @@ http://www.web2feel.com/tutorial-for-animated-scroll-loading-effects-with-animat
 
 
 */
-
-
-
-
-
-
 
 (function($){
     $.fn.viewportChecker = function(useroptions){

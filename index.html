@@ -40,7 +40,7 @@
                 <div class="navbar-header col-sm-8">
                 	<div class="row">
                     	<div class="col-xs-10">
-                  		  <a class=" navbar-brand blink_me" href="#">eTours International</a>					    </div>
+                  		  <a class=" navbar-brand blink_me" href="#">eTour International</a>					    </div>
                         <div class="col-xs-2">
                           <button type="button" class=" navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                             <span class="sr-only">Toggle navigation</span>
@@ -546,8 +546,8 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<!--<script src="asset/js/jQuery_v1.8.2.js"></script>--><!--this old version jQuery must be used with SmoothScroll.js-->
-    <!--<script src="asset/js/SmoothScroll.js"></script>--><!--this js must be used with jQuery_v1.8.2.js-->
+	<script src="asset/js/jQuery_v1.8.2.js"></script><!--this old version jQuery must be used with SmoothScroll.js-->
+    <script src="asset/js/SmoothScroll.js"></script><!--this js must be used with jQuery_v1.8.2.js-->
     <script src="asset/js/bootstrap.min.js"></script>
     <script src="asset/js/custom.js"></script>
     <!--<script src="asset/js/skrollr.js"></script>--><!--this js must be used with parallax_slidershow_controller.js--> 
@@ -558,53 +558,23 @@
    
    
    	<script>
-		
+		// this script is used with viewcheck js (inside custom.js) to control the animation (animate.css) in the page when scroll. 
 		$('.left-in').viewportChecker({
 			classToAdd: 'animated fadeInLeft', // Class to add to the elements when they are visible
 			offset: -100, // The offset of the elements (let them appear earlier or later)
-			repeat: true, // Add the possibility to remove the class if the elements are not visible
 			callbackFunction: function(elem, action){} // Callback to do after a class was added to an element. Action will return "add" or "remove", depending if the class was added or removed
 		});
 		$('.right-in').viewportChecker({
 			classToAdd: 'animated fadeInRight', // Class to add to the elements when they are visible
 			offset: -100, // The offset of the elements (let them appear earlier or later)
-			repeat: true, // Add the possibility to remove the class if the elements are not visible
 			callbackFunction: function(elem, action){} // Callback to do after a class was added to an element. Action will return "add" or "remove", depending if the class was added or removed
 		});
 		$('.fade-in').viewportChecker({
 			classToAdd: 'animated fadeIn', // Class to add to the elements when they are visible
 			offset: 200, // The offset of the elements (let them appear earlier or later)
-			repeat: true, // Add the possibility to remove the class if the elements are not visible
 			callbackFunction: function(elem, action){} // Callback to do after a class was added to an element. Action will return "add" or "remove", depending if the class was added or removed
 		});
 	</script>
-    <script>
-   /* window.onload = function(){
-		
-		
-		function test() {
-			 	if($('#sliderbackground').hasClass('image1'))
-                {
-					$('#sliderbackground').removeClass('image1');
-					$('#sliderbackground').addClass('image2');	
-                }else if($('#sliderbackground').hasClass('image2'))
-                {
-                    $('#sliderbackground').removeClass('image2');
-					$('#sliderbackground').addClass('image3');
-				}else if($('#sliderbackground').hasClass('image3'))
-				{	
-					$('#sliderbackground').removeClass('image3');
-					$('#sliderbackground').addClass('image1');
-				}else{
-					$('#sliderbackground').addClass('image1');
-				}
-				
-            }
-        var interval = setInterval(test, 6000);
-	};
-    */
-    
-    </script>
 
 	
   </body>
