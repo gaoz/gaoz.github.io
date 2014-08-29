@@ -237,18 +237,40 @@
 }
 
 .mobile-program-card .price{
+	vertical-align:middle;
+    display:table-cell;
+    float:none;
+	padding-right: 0px;		
+}
+.mobile-program-card .price h5{
+
+	color:#777;
+	padding-bottom:5px;
+	padding-top:5px;
+	padding-left: 15px; 
+	padding-right: 15px; 
+	border-radius:2px;
+	background-color:rgba(0,0,0,0.1);
+		
+}
+
+.mobile-program-card .title{
+	vertical-align:middle;
+    display:table-cell;
+    float:none;
 	
 	color:#777;
 	padding-bottom:3px;
 	padding-top:3px;
 	border-radius:2px;
-	background-color:rgba(0,0,0,0.05);
+	line-height:18px;
+
 		
 }
+
 .mobile-program-card .program-detail .row{
-	color:#777;
 	position:relative;
-	margin-right: -2px; /* override bootstrap */
+	margin-right: -3px; /* override bootstrap */
 	margin-left: 0px; /* override bootstrap */
 }	
 

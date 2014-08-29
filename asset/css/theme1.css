@@ -50,6 +50,24 @@ background-color:#333;
 .open>.dropdown-menu {
 border-top:4px solid #666;
 }
+
+/* mobile vertical alignment styles */
+.theme1-nav .col-middle {
+    vertical-align:middle;
+	padding-right:20px;
+}
+
+
+/* mobile vertical alignment styles */
+.theme1-nav .col-xs-height {
+    display:table-cell;
+    float:none;
+}
+
+
+
+
+
 @media (max-width: 767px){
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
 border-bottom:0px solid #fff;
