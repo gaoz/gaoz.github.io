@@ -19,8 +19,15 @@ html, body{
 	text-transform: uppercase;
 	letter-spacing: 0.20em;
 	-webkit-font-smoothing: antialiased;
+	line-height:30px;
 	height: auto;
 }
+.theme1-nav .navbar-toggle{
+  
+  float: none;
+  margin-right: 0;
+}
+
 
 .main-nav{
 	background-color:#333;	
