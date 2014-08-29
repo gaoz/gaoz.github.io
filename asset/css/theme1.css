@@ -83,6 +83,11 @@ border-top:4px solid #666;
 }
 
 
+.main-nav .navbar-default .navbar-nav>li>a:visited {
+color: #999;
+
+}
+
 
 
 
