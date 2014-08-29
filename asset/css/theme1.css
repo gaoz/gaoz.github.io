@@ -37,9 +37,27 @@ color: #999;
 }
 .navbar-default .navbar-nav>li>a:hover {
 color: #fff;
+-webkit-transition-delay: 0s;
+	-webkit-transition-duration: 0.25s;
+	-webkit-transition-property: color;
+	-webkit-transition-timing-function: linear;
+	
+	transition-delay: 0s;
+	transition-duration: 0.25s;
+	transition-property: color;
+	transition-timing-function: linear;
 }
-.navbar-default .navbar-nav>li>a:visited {
-color: #999;
+.secondary-nav .dropdown-toggle:hover {
+color: #000!important;
+-webkit-transition-delay: 0s;
+	-webkit-transition-duration: 0.25s;
+	-webkit-transition-property: color;
+	-webkit-transition-timing-function: linear;
+	
+	transition-delay: 0s;
+	transition-duration: 0.25s;
+	transition-property: color;
+	transition-timing-function: linear;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
 color: #fff;
@@ -47,9 +65,9 @@ border-bottom:4px solid #fff;
 background-color:#333;
 }
 
-.open>.dropdown-menu {
+/*.open>.dropdown-menu {
 border-top:4px solid #666;
-}
+}*/
 
 /* mobile vertical alignment styles */
 .theme1-nav .col-middle {
@@ -358,7 +376,7 @@ background-color:#333;
 /***************footer section**********************/
 
 footer { 
- font-size: 12px;
+ font-size: 10px;
 	font-style: normal;
 	font-weight: 300;
 	text-transform: uppercase;
@@ -377,7 +395,8 @@ footer {
 }
 footer .cotyright{
     margin: 10px 0;
-    font-size: 10px;
+	letter-spacing: 1px;
+	-webkit-font-smoothing: antialiased;
 }
 footer .tip{
     width: 0;
@@ -387,7 +406,10 @@ footer .tip{
     right: 20%;
 }
 footer a{
-    color: #AAA;
+    color: #EEE;
+	letter-spacing: 1px;
+	-webkit-font-smoothing: antialiased;
+	line-height:20px;
 }
 footer .supportedby{
 	margin-bottom:30px;
@@ -396,16 +418,9 @@ footer .supportedby-texts{
 	margin-bottom:10px;
 }
 footer .socialmedia-footer{
-	font:12px;
+	letter-spacing: 1px;
 }
-#totalgdslogo{
-	width:560px;
-	margin:0 auto;
-	height: 120px;
-	padding: 0px 0 0 0;
-	background:url("https://dn-totalgdsimg.qbox.me/53eec3ee505f88b3679c248b") no-repeat;
-	background-size: 100% auto;
-}
+
 	
 /* end of footer section */
 
