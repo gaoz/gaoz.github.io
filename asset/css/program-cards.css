@@ -31,11 +31,10 @@
 	
 }
 .jumbotron .program-title{
-	
+
 	font-family: 'Oswald', sans-serif;
-	font-size: 30px;
-	line-height: 33px;
-	padding-bottom: 10px;
+	font-size: 25px;
+	line-height: 30px;
 	color:#888;
 	font-weight:100;
 	-webkit-font-smoothing: antialiased;
@@ -101,13 +100,26 @@
 	height: 30px;
 	background-size: 100% auto;
 }
-.rows-text-limit{
+.three-rows-text-limit{
 
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical; 
 
+}
+.two-row-text-limit {
+overflow: hidden;
+display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+}
+
+.one-row-text-limit {
+overflow: hidden;
+display: -webkit-box;
+-webkit-line-clamp: 1;
+-webkit-box-orient: vertical;
 }
 
 /* image size box - one class finish all the job for resizing the img*/
@@ -177,10 +189,22 @@
 }
 
 .jumbotron .view-detail:hover{
-	box-shadow: 0 0 5px #000
+	box-shadow: 0 0 5px #000;
+	
+	-webkit-transition-delay: 0s;
+	-webkit-transition-duration: 0.25s;
+	-webkit-transition-property: box-shadow;
+	-webkit-transition-timing-function: linear;
+	
+	transition-delay: 0s;
+	transition-duration: 0.25s;
+	transition-property: box-shadow;
+	transition-timing-function: linear;
 
 }
-
+.jumbotron .programs h5{
+line-height: 22px;	
+}
 
 
 /* mobile view of program plans - home page */
