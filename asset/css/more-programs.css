@@ -1,0 +1,122 @@
+.programs-section{
+	padding-top:110px;
+	min-height:800px;
+	height:auto;
+	background-color:#ddd;		
+}
+.no-padding{
+	padding:0px!important;	
+}
+.programs-section .wrapper1{
+	padding-top:45px;
+		
+}
+
+.programs-section .wrapper2{
+	min-height:800px;
+	padding-top:5px;
+	padding-bottom:5px;	
+}
+.programs-section  .sort-control-label {
+	margin-right: 5px;
+}
+.programs-section  .key-words-label {
+	margin-left: 15px;
+	margin-right: 5px;
+}
+.programs-section  .panel-color-theme{
+
+font-size:12px;
+border: 1px solid #ddd;
+
+
+}
+.programs-section  .panel-color-theme>.panel-heading {
+color: #DDD;
+background-color:#AAA;
+
+}
+
+.programs-section .catagory .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+
+}
+
+
+.programs-section .badge {
+display: inline-block;
+min-width: 10px;
+padding: 3px 7px;
+font-size: 10px;
+ font-weight: 100;
+line-height: 1;
+color: #fff;
+text-align: center;
+white-space: nowrap;
+vertical-align: baseline;
+background-color: #B8BDBB;
+border-radius: 10px;
+}
+
+
+
+
+.programs-section .form-search {
+border: 1px solid #cccccc;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+
+}
+
+.programs-section .form-search-btn {
+
+border: 1px solid #cccccc;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.programs-section .navbar-form {
+
+	margin-top: 0px!important;
+	margin-bottom: 20px!important;
+
+}
+
+.programs-section .SortingAndkeywords{
+	
+	padding-bottom:12px;	
+}
+
+
+/* program cards section*/
+
+.programs-section .card-item{
+	width:100%;
+	position: relative;
+	height: 150px;
+	background-color:#fff;
+	border-radius:5px;
+	cursor:pointer;
+	margin-bottom:20px;
+}
+
+.programs-section .image{
+	width: 100%;
+	min-height:150px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	border-bottom-left-radius: 3px;
+	border-top-left-radius: 3px;
+}
+
+.programs-section #no-padding{
+	padding-left:0px!important;
+	padding-right:0px!important;
+}
+.programs-section .price{
+	padding-bottom:30px;	
+}
+
+
+
