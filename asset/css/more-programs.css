@@ -14,11 +14,10 @@
 	padding-bottom:5px;	
 }
 .programs-section .navbar-form {
-margin-top: 0px;
+	margin-top: 0px;
 }
 .programs-section  .sort-control-label {
 	margin-right: 5px;
-	margin-left: 15px;
 }
 .programs-section  .key-words-label {
 	
@@ -56,29 +55,47 @@ vertical-align: baseline;
 background-color: #B8BDBB;
 border-radius: 10px;
 }
-
+.programs-section .sort-control{
+	padding-bottom:10px;	
+}
+.programs-section .key-words{
+	
+	padding-bottom:10px;	
+	
+}
 
 /* mobile view */
 @media (max-width: 767px){
 .programs-section{
 	padding-top:80px;		
 }
+
 }
 /* Desktop view */
 @media (min-width: 768px){
 .navbar-form {
 	padding: 0px 0px;
 }
+.programs-section .sort-control{
+	float: right;
+
+}
+}
+.programs-section .sort-control{
+	display:inline-block;
+
 }
 
-.programs-section .SortingAndkeywords{
-	
-	padding-bottom:10px;	
+.programs-section .key-words{
+	display:inline-block;
+
 }
 
 
 /* program cards section*/
 
+
+/* desktop view size css*/
 .programs-section .card-item{
 	width:100%;
 	position: relative;
@@ -108,5 +125,31 @@ border-radius: 10px;
 	padding-bottom:30px;	
 }
 
+/* mobile view size css */
 
+@media (max-width: 767px){
+	
+/* mobile view */
+.programs-section .card-item{
+	height: 210px!important;	
+}
+
+.programs-section .card-item .price{
+	margin-right:-3px;
+	display:inline-block;
+	float:right;
+	font-size:14px;
+	color:#777;
+	padding-bottom:8px;
+	padding-top:8px;
+	padding-left: 15px; 
+	padding-right: 15px; 
+	border-radius:2px;
+	background-color:rgba(0,0,0,0.08);
+}
+#no-right-padding{
+	padding-right:0px;	
+}
+
+}
 
