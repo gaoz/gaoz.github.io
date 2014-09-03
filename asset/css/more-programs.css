@@ -1,5 +1,5 @@
 .programs-section{
-	padding-top:110px;
+	padding-top:160px;
 	min-height:800px;
 	height:auto;
 	background-color:#ddd;		
@@ -7,21 +7,21 @@
 .no-padding{
 	padding:0px!important;	
 }
-.programs-section .wrapper1{
-	padding-top:45px;
-		
-}
 
 .programs-section .wrapper2{
 	min-height:800px;
 	padding-top:5px;
 	padding-bottom:5px;	
 }
+.programs-section .navbar-form {
+margin-top: 0px;
+}
 .programs-section  .sort-control-label {
 	margin-right: 5px;
+	margin-left: 15px;
 }
 .programs-section  .key-words-label {
-	margin-left: 15px;
+	
 	margin-right: 5px;
 }
 .programs-section  .panel-color-theme{
@@ -58,32 +58,22 @@ border-radius: 10px;
 }
 
 
-
-
-.programs-section .form-search {
-border: 1px solid #cccccc;
-	border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px;
-
+/* mobile view */
+@media (max-width: 767px){
+.programs-section{
+	padding-top:50px;		
 }
-
-.programs-section .form-search-btn {
-
-border: 1px solid #cccccc;
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
 }
-
-.programs-section .navbar-form {
-
-	margin-top: 0px!important;
-	margin-bottom: 20px!important;
-
+/* Desktop view */
+@media (min-width: 768px){
+.navbar-form {
+	padding: 0px 0px;
+}
 }
 
 .programs-section .SortingAndkeywords{
 	
-	padding-bottom:12px;	
+	padding-bottom:10px;	
 }
 
 
