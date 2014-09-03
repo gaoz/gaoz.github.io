@@ -61,7 +61,7 @@ border-radius: 10px;
 /* mobile view */
 @media (max-width: 767px){
 .programs-section{
-	padding-top:70px;		
+	padding-top:80px;		
 }
 }
 /* Desktop view */
