@@ -69,20 +69,38 @@ border-radius: 10px;
 .programs-section{
 	padding-top:80px;		
 }
-
+.programs-section .navbar-form{
+	margin-bottom: 0px;	
+	border-bottom: none;
 }
-/* Desktop view */
-@media (min-width: 768px){
+.programs-section .key-words{
+	width:49%;	
+}
+.programs-section .sort-control{
+	float:none;
+	width:49%;	
+}
+.programs-section .key-words .btn{
+	width:100%;	
+}
+.programs-section .sort-control .btn-group{
+	width:100%;	
+}
+.programs-section .sort-control .btn{
+	width:100%;	
+}
+.programs-section .navbar-form {
+	padding: 10px 15px;
+}
+}
+
+
 .navbar-form {
 	padding: 0px 0px;
 }
 .programs-section .sort-control{
-	float: right;
-
-}
-}
-.programs-section .sort-control{
 	display:inline-block;
+	float: right;
 
 }
 
@@ -182,26 +200,6 @@ line-height: 1.42857143;
 color: #333;
 }
 
-.programs-section .navbar-form{
-	margin-bottom: 0px;	
-	border-bottom: none;
-}
-.programs-section .key-words{
-	width:49%;	
-}
-.programs-section .sort-control{
-	float:right;
-	width:49%;	
-}
-.programs-section .key-words .btn{
-	width:100%;	
-}
-.programs-section .sort-control .btn-group{
-	width:100%;	
-}
-.programs-section .sort-control .btn{
-	width:100%;	
-}
 
 
 }
