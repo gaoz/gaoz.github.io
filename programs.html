@@ -111,7 +111,8 @@
         <div class="container wrapper2">
             	<div class="row"><!-- row up the catagory and program cards "-->
                 	  <div class="col-xs-12 col-sm-3 catagory">
-                    	  <form class="navbar-form" role="search">
+                        
+                        <form class="navbar-form" role="search">
                             <div class="input-group">
                                 <input type="text" class="form-control" placeholder="Search" name="q">
                                 <div class="input-group-btn">
@@ -119,7 +120,7 @@
                                 </div>
                             </div>
                        </form>
-                    
+                 
                           
                         <div class="panel panel-color-theme hidden-xs">
                        	   <div class="panel-heading">Catagory</div>
@@ -256,41 +257,40 @@
                 
                     <div class="col-xs-12 col-sm-9 card-list">
                     	   <div class="SortingAndkeywords">
-                           	  <div class="key-words">
-                                    <label class="key-words-label">Key words:</label>
+                           	  <div class="key-words hidden-xs">
+                                    <label class="key-words-label ">Key words:</label>
                                     <div class="btn-group">
-                                          <button type="button" class="btn btn-default disabled">
-                                                dinner </span></button>
-                                          <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-remove-circle"></button>
+                                        <button type="button" class="btn btn-default disabled">
+                                               <div class="small">dinner</div> </button>
+                                        <button type="button" class="btn btn-default"><div class="small"><span class="glyphicon glyphicon-remove-circle"></div></button>
                                    </div>
                                    <div class="btn-group">
-                                          <button type="button" class="btn btn-default disabled">
-                                                dinner </span></button>
-                                          <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-remove-circle"></button>
+                                        <button type="button" class="btn btn-default disabled">
+                                              <div class="small">tour</div> </button>
+                                        <button type="button" class="btn btn-default"><div class="small"><span class="glyphicon glyphicon-remove-circle"></div></button>
                                    </div>
-                               </div><!--end of key-words -->
-                      			   <div class="sort-control">
-                                         <label class="sort-control-label ">Sort by:</label>
-                                          <div class="btn-group">
-                                                <button type="button" class=" btn btn-default dropdown-toggle" data-toggle="dropdown">
-                                                      <div class="small">Default <span class="caret"></span></div>
-                                                </button>
-                                                <ul class="dropdown-menu" role="menu">
-                                                      <li><a href="#">Default</a></li>
-                                                      <li><a href="#">Price</a></li>
-                                                </ul>   
-                                          </div>
-                                          <div class="btn-group">
-                                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                                                  Dropdown
-                                                  <span class="caret"></span>
-                                                </button>
-                                                <ul class="dropdown-menu" role="menu">
-                                                  <li><a href="#">Dropdown link</a></li>
-                                                  <li><a href="#">Dropdown link</a></li>
-                                                </ul>
-                                          </div>
-                       				</div><!--end of sorting-control-->
+                               </div><!--end of desktop-keywords -->
+                               
+                               <div class="key-words hidden-sm">
+                                   	<button type="button" class=" btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                                  <div class="small">Clear Keywords&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-remove-circle"></span></div>
+                                    </button>
+                                      
+                                </div><!--end of mobile-keywords-->
+                                
+                               <div class="sort-control">
+                                     <label class="sort-control-label hidden-xs">Sort by:</label>
+                                      <div class="btn-group">
+                                            <button type="button" class=" btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                                  <div class="small">Sort Default&nbsp;&nbsp;&nbsp;<span class="caret"></span></div>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                  <li><a href="#"><div class="small">Default</div></a></li>
+                                                  <li><a href="#"><div class="small">Price</div></a></li>
+                                            </ul>   
+                                      </div>
+                                      
+                                </div><!--end of sorting-control-->
                        	  </div>  <!--end of sorting and keyword -->
                             
                             <div class="card-item right-in"><a class="view-detail" href="#"></a>

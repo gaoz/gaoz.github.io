@@ -181,5 +181,28 @@ font-size: 15px;
 line-height: 1.42857143;
 color: #333;
 }
+
+.programs-section .navbar-form{
+	margin-bottom: 0px;	
+	border-bottom: none;
+}
+.programs-section .key-words{
+	width:49%;	
+}
+.programs-section .sort-control{
+	float:right;
+	width:49%;	
+}
+.programs-section .key-words .btn{
+	width:100%;	
+}
+.programs-section .sort-control .btn-group{
+	width:100%;	
+}
+.programs-section .sort-control .btn{
+	width:100%;	
+}
+
+
 }
 
