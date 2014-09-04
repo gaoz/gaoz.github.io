@@ -121,8 +121,29 @@ border-radius: 10px;
 	padding-left:0px!important;
 	padding-right:0px!important;
 }
+.programs-section .title{
+	font-family: 'Oswald', sans-serif;
+	font-size: 22px;
+	line-height: 30px;
+	color: #888;
+	font-weight: 100;
+	-webkit-font-smoothing: antialiased;
+}
+.programs-section .from{
+	padding-top:15px;
+	padding-bottom:10px;	
+}
 .programs-section .price{
-	padding-bottom:30px;	
+	
+	padding-bottom:10px;	
+}
+.programs-section .description{
+	font-size:12px;
+	line-height:17px;
+}
+#right-border{
+
+	border-right:1px solid #F1F1F1;
 }
 
 /* mobile view size css */
@@ -130,8 +151,12 @@ border-radius: 10px;
 @media (max-width: 767px){
 	
 /* mobile view */
+#right-border{
+
+	border-right:none;
+}
 .programs-section .card-item{
-	height: 210px!important;	
+	height: 200px!important;	
 }
 
 .programs-section .card-item .price{
@@ -150,6 +175,11 @@ border-radius: 10px;
 #no-right-padding{
 	padding-right:0px;	
 }
-
+.programs-section .title{
+font-family: 'Open Sans', sans-serif;
+font-size: 15px;
+line-height: 1.42857143;
+color: #333;
+}
 }
 
