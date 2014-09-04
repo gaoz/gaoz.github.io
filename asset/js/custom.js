@@ -58,8 +58,6 @@ $(".card-item").click(function(){
      return false;
 });
 
-
-
 /*
 
 jQuery Viewport Checker – A nifty little script that checks if an element is in the viewport and then adds a class to it.
