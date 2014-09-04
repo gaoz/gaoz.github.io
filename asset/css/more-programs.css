@@ -188,7 +188,7 @@ border-radius: 10px;
 	padding-left: 15px; 
 	padding-right: 15px; 
 	border-radius:2px;
-	background-color:rgba(0,0,0,0.08);
+	background-color:rgba(0,0,0,0.1);
 }
 #no-right-padding{
 	padding-right:0px;	
