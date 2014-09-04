@@ -64,6 +64,19 @@ border-radius: 10px;
 	
 }
 
+.programs-section .navbar-form {
+	padding: 0px 0px;
+}
+.programs-section .sort-control{
+	display:inline-block;
+	float: right;
+
+}
+
+.programs-section .key-words{
+	display:inline-block;
+
+}
 /* mobile view */
 @media (max-width: 767px){
 .programs-section{
@@ -95,19 +108,6 @@ border-radius: 10px;
 }
 
 
-.navbar-form {
-	padding: 0px 0px;
-}
-.programs-section .sort-control{
-	display:inline-block;
-	float: right;
-
-}
-
-.programs-section .key-words{
-	display:inline-block;
-
-}
 
 
 /* program cards section*/
