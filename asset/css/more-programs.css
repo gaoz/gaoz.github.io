@@ -26,12 +26,17 @@
 .programs-section  .panel-color-theme{
 
 font-size:12px;
-border: 1px solid #ddd;
+border:none;
+
+	-webkit-box-shadow: 0 0 8px #bbb;
+	-moz-box-shadow: 0 0 8px #bbb;
+	box-shadow: 0 0 8px #bbb
+
 
 
 }
 .programs-section  .panel-color-theme>.panel-heading {
-color: #DDD;
+color: #fff;
 background-color:#AAA;
 
 }
@@ -122,6 +127,12 @@ border-radius: 10px;
 	border-radius:5px;
 	cursor:pointer;
 	margin-bottom:20px;
+	
+	-webkit-box-shadow: 0 0 8px #C9C5C5;
+	-moz-box-shadow: 0 0 8px #C9C5C5;
+	box-shadow: 0 0 8px #C9C5C5;
+	
+
 }
 
 .programs-section .image{
