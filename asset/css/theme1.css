@@ -154,14 +154,14 @@ background-color:#333;
 
 /* Carousel base class */
  .carousel {
-    padding-top: 105px;
+   /* padding-top: 105px;*/
 	border-bottom:1px solid #000;
     /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
 }
 
 @media (max-width: 767px){
 .carousel {
-    padding-top: 57px;
+   /* padding-top: 57px;*/
     /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
 }
 
