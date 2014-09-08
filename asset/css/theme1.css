@@ -21,7 +21,7 @@ html, body{
 	-webkit-font-smoothing: antialiased;
 	line-height:30px;
 	height: auto;
-	white-space:nowrap;
+	white-space:pre-wrap;
 }
 .theme1-nav .navbar-toggle{
   
