@@ -1,5 +1,15 @@
 
-
+.divider.down {
+height: 62px;
+margin-bottom: -62px;
+background-image: url(http://images.apple.com/v/itunes/d/images/divider_down.png);
+margin-left: -70px;
+margin-right: -70px;
+padding-left: 70px;
+padding-right: 70px;
+background-repeat: no-repeat;
+background-position: 50% 0;
+}
 
 
 
@@ -10,7 +20,7 @@ text-transform: uppercase;
 }
 
 .detail-background h1{
-color:#fff;
+/*color:#fff;
 margin-top: 0;
 font-size: 35px;
 padding-top:65px;
@@ -21,6 +31,16 @@ line-height: 1.17em;
 text-transform: uppercase;
 letter-spacing: 0.20em;
 -webkit-font-smoothing: antialiased;
+*/
+box-sizing: border-box;
+color: #fff;
+display: block;
+font-family: 'Playfair Display', sans-serif;
+font-size: 38px;
+height: 19px;
+line-height: 18.8999996185303px;
+padding-top:65px;
+text-transform: uppercase;
 
 }
 
@@ -65,6 +85,7 @@ text-transform: uppercase;
 .detail-body{
 	min-height:300px;	
 	padding-top:50px;
+	padding-bottom:100px;
 }
 
 .decription{
@@ -78,12 +99,7 @@ padding-top:10px;
 font-size: 12px;
 letter-spacing: 0.07em;
 line-height: 1.4em;
-/*font-family: 'Roboto', sans-serif;
-font-style: normal;
-font-weight: 300;
-line-height: 1.17em;
-letter-spacing: 0.10em;
--webkit-font-smoothing: antialiased;*/	
+
 }
 .decription h3{
 
@@ -103,16 +119,6 @@ text-align: left;
 text-transform: uppercase;
 
 
-/*padding-bottom:0px;
-padding-top:20px;
-font-size: 25px;
-font-family: 'Roboto', sans-serif;
-font-style: normal;
-font-weight: 300;
-line-height: 1.17em;
-text-transform: uppercase;
-letter-spacing: 0.10em;
--webkit-font-smoothing: antialiased;*/
 }
 
 .black-cover:hover{
@@ -123,10 +129,6 @@ letter-spacing: 0.10em;
     transition: background-color 0.5s ease; 
 	
 }
-.decription h4 a{
-
-}
-
 
 
 
@@ -149,60 +151,145 @@ letter-spacing: 0.10em;
 }
 
 
-
+.paddle-nav{
+position:relative;
+}
 .paddle-nav a{
-	-webkit-background-clip: border-box;
--webkit-background-origin: padding-box;
--webkit-background-size: 67px 130px;
--webkit-font-smoothing: antialiased;
--webkit-transition-delay: 0s;
--webkit-transition-duration: 0.25s;
--webkit-transition-property: opacity;
--webkit-transition-timing-function: linear;
-background-attachment: scroll;
-background-clip: border-box;
-background-color: rgba(0, 0, 0, 0);
-background-origin: padding-box;
-background-size: 67px 130px;
-box-sizing: border-box;
-color: rgb(0, 136, 204);
-cursor: pointer;
-display:inline-block;
-font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
-font-size: 15.5555562973022px;
+	cursor:pointer;
+}
+
+.paddle-nav .next span{
+	float:right;
+	font-size: 20px;
+font-family: 'Roboto', sans-serif;
 font-style: normal;
-font-variant: normal;
-font-weight: normal;
-height: 130px;
-letter-spacing: normal;
-line-height: 0px;
-list-style-image: none;
-list-style-position: outside;
-list-style-type: none;
+font-weight: 100;
+line-height: 1.17em;
+text-transform: uppercase;
+letter-spacing: 0.20em;
+-webkit-font-smoothing: antialiased;
+
+color:#333;
+display:inline-block;
+padding-top:25px;
+padding-right:50px;
+}
+.paddle-nav .mid span{
+	font-size: 20px;
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 100;
+line-height: 1.17em;
+text-transform: uppercase;
+letter-spacing: 0.20em;
+-webkit-font-smoothing: antialiased;
+
+color:#333;
+display:inline-block;
+padding-top:25px;
+}
+.paddle-nav .previous span{
+font-size: 20px;
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 100;
+line-height: 1.17em;
+text-transform: uppercase;
+letter-spacing: 0.20em;
+-webkit-font-smoothing: antialiased;
+
+color:#333;
+display:inline-block;
+padding-top:25px;
+padding-left:50px;
+}
+.paddle-nav .next{
+position:relative;
+height:90px;
+width:100%;
+background-size: 50px auto;
+background-position:right;
+background-repeat: no-repeat;
+display:inline-block;
+background-image: url(../img/etc/paddle_next.png);
+}
+.paddle-nav .previous{
+position:relative;
+height:90px;
+width:100%;
+background-size: 50px auto;
+background-repeat: no-repeat;
+display:inline-block;
+background-image: url(../img/etc/paddle_previous.png);
+}
+.paddle-nav .week{
+	color:#333;
+	text-transform:uppercase;
+	display:inline-block;
+	height:120px;
+	width:13%;
+	border:1px #666666 solid;
+	border-radius: 3px;
+	margin-bottom:5px;
+	display:inline-block;
+	-webkit-transition-delay: 0s;
+	-webkit-transition-duration: 0.5s;
+	-webkit-transition-property: background-color;
+	-webkit-transition-timing-function: linear;
+	
+	transition-delay: 0s;
+	transition-duration: 0.5s;
+	transition-property: background-color;
+	transition-timing-function: linear;
+		
+}
+	
+.paddle-nav .week h3{
+	font-size: 80;
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 300;
+line-height: 1.17em;
+text-transform: uppercase;
+letter-spacing: 0.20em;
+-webkit-font-smoothing: antialiased;
+
+}
+.paddle-nav .week h6{
+
+	padding-top:15px;	
+}
+.paddle-nav .week:hover{
+	color:#fff;
+	background-color:#999;
+	border:1px #666666 solid;
+	border-radius: 3px;
+	margin-bottom:5px;
+	display:inline-block;
+	-webkit-transition-delay: 0s;
+	-webkit-transition-duration: 0.5s;
+	-webkit-transition-property: background-color;
+	-webkit-transition-timing-function: linear;
+	
+	transition-delay: 0s;
+	transition-duration: 0.5s;
+	transition-property: background-color;
+	transition-timing-function: linear;
+}
+.calendar .title{
+padding-bottom:80px;
+box-sizing: border-box;
+color: rgb(51, 51, 51);	
+display: block;
+font-family: 'Playfair Display', sans-serif;
+font-size: 18px;
+font-weight: bold;
+height: 19px;
+line-height: 18.8999996185303px;
 margin-bottom: 0px;
 margin-left: 0px;
 margin-right: 0px;
 margin-top: 0px;
-opacity: 0.699999988079071;
-position: absolute;
-right: 54.21875px;
 text-align: left;
-text-decoration: none;
-transition-delay: 0s;
-transition-duration: 0.25s;
-transition-property: opacity;
-transition-timing-function: linear;
-width: 66.9965286254883px;
-z-index: 1003;
-zoom: 1;
-}	
-
-.paddle-nav .next{
-
-background-image: url(http://images.apple.com/support/assets/images/home/paddle_next.png);
-}
-
-.paddle-nav .previous{
-
-background-image: url(http://images.apple.com/support/assets/images/home/previous.png);
+text-transform: uppercase;
 }
