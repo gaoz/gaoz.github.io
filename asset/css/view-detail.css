@@ -9,10 +9,7 @@ margin-bottom:8px;
 position:relative;
 height: 62px;
 background-image: url(http://images.apple.com/v/itunes/d/images/divider_down.png);
-margin-left: -70px;
-margin-right: -70px;
-padding-left: 70px;
-padding-right: 70px;
+
 background-repeat: no-repeat;
 background-position: 50% 0;
 }
