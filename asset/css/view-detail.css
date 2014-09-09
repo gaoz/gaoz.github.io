@@ -185,6 +185,52 @@ padding-top:5px;
 
 
 }
+.calendar .paddle-nav .previous:hover{
+	color:#fff;
+	background-color:#555;
+	text-transform:uppercase;
+	display:inline-block;
+	height:30px;
+	width:90%;
+	border:1px #666666 solid;
+	border-radius: 3px;
+	margin-bottom:5px;
+	display:inline-block;
+	-webkit-transition-delay: 0s;
+	-webkit-transition-duration: 0.5s;
+	-webkit-transition-property: background-color;
+	-webkit-transition-timing-function: linear;
+	
+	transition-delay: 0s;
+	transition-duration: 0.5s;
+	transition-property: background-color;
+	transition-timing-function: linear;
+
+
+}
+.calendar .paddle-nav .next:hover{
+	color:#fff;
+	background-color:#555;
+	text-transform:uppercase;
+	display:inline-block;
+	height:30px;
+	width:90%;
+	border:1px #666666 solid;
+	border-radius: 3px;
+	margin-bottom:5px;
+	display:inline-block;
+	-webkit-transition-delay: 0s;
+	-webkit-transition-duration: 0.5s;
+	-webkit-transition-property: background-color;
+	-webkit-transition-timing-function: linear;
+	
+	transition-delay: 0s;
+	transition-duration: 0.5s;
+	transition-property: background-color;
+	transition-timing-function: linear;
+
+
+}
 .calendar .paddle-nav .next{
 	color:#333;
 	text-transform:uppercase;
@@ -219,12 +265,12 @@ padding-top:5px;
 	display:inline-block;
 	-webkit-transition-delay: 0s;
 	-webkit-transition-duration: 0.5s;
-	-webkit-transition-property: background-color;
+	-webkit-transition-property: border;
 	-webkit-transition-timing-function: linear;
 	
 	transition-delay: 0s;
 	transition-duration: 0.5s;
-	transition-property: background-color;
+	transition-property: border;
 	transition-timing-function: linear;
 		
 }
@@ -250,8 +296,7 @@ margin-top:0px;
 }
 .calendar .paddle-nav .week:hover{
 	color:#fff;
-	background-color:#999;
-	border:1px #666666 solid;
+	background-color:#555;
 	border-radius: 3px;
 	margin-bottom:5px;
 	display:inline-block;
