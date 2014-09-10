@@ -4,8 +4,8 @@ html, body{
 }
 /* navigation bar section */
 
-@media (max-width: 979px)
-{
+@media (max-width: 767px){/* fix mobile view menu bar static stick to the top */
+
 .navbar-fixed-top {
 	position: static;
 }
