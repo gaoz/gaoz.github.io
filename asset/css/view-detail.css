@@ -365,3 +365,12 @@ margin-top: 0px;
 text-align: left;
 text-transform: uppercase;
 }
+@media (max-width: 767px){/* fix mobile view menu bar static stick to the top */
+
+.plan button{
+	width:100%!important;
+	border-radius:0px;
+	margin-left:0px!important;
+}
+
+}
