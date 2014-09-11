@@ -92,8 +92,7 @@ text-transform: uppercase;
 
 .decription h4{
 	color:#666;
-padding-bottom:30px;
-padding-top:10px;
+margin-top:28px;
 font-size: 12px;
 letter-spacing: 0.07em;
 line-height: 1.4em;
@@ -109,10 +108,7 @@ font-size: 18px;
 font-weight: bold;
 height: 19px;
 line-height: 18.8999996185303px;
-margin-bottom: 0px;
-margin-left: 0px;
-margin-right: 0px;
-margin-top: 0px;
+
 text-align: left;
 text-transform: uppercase;
 
