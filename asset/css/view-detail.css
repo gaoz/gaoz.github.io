@@ -366,6 +366,9 @@ text-transform: uppercase;
 .plan .panel{
 	margin-top:15px;	
 }
+.plan .panel-body h3{
+	margin-top:0px;	
+}
 @media (max-width: 767px){/* fix mobile view menu bar static stick to the top */
 
 .plan button{
