@@ -9,10 +9,38 @@ margin-bottom:8px;
 position:relative;
 height: 62px;
 background-image: url(http://images.apple.com/v/itunes/d/images/divider_down.png);
-
 background-repeat: no-repeat;
 background-position: 50% 0;
 }
+.web_link {
+margin-left: 1000px;
+margin-top: 30px;
+position: relative;
+top: 0px;
+width: auto;
+height: 40px;
+overflow: hidden;
+right: 1px;
+text-align: right;
+}
+.web_link a {
+width: 32px;
+height: 32px;
+display: inline-block;
+vertical-align: middle;
+margin-right: 10px;
+}
+.web_link a:hover {
+-webkit-animation: scaleIcon 1s .2s ease both;
+}
+.web_link a.web_twitter {
+background: url(../img/etc/twitter.png);
+}
+.web_link a.web_facebook {
+background: url(../img/etc/facebook.png);
+}
+
+
 
 
 
