@@ -368,6 +368,13 @@ text-transform: uppercase;
 .plan .panel-body h3{
 	margin-top:0px;	
 }
+.plan .alert {
+padding: 15px;
+margin-bottom: 5px;
+border: 1px solid transparent;
+border-radius: 4px;
+}
+
 @media (max-width: 767px){/* fix mobile view menu bar static stick to the top */
 
 .plan button{
