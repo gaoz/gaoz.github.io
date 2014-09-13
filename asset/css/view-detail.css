@@ -70,9 +70,8 @@ color:#fff!important;
 margin-top: 15px;
 font-size: 10.4px;
 text-transform: uppercase;
+color:#fff;
 }
-
-
 
 .detail-title .detail-background{
 	min-height: 266px;/* desktop view image height*/
@@ -110,7 +109,7 @@ text-transform: uppercase;
 
 .decription h4{
 	color:#666;
-margin-top:28px;
+margin-top:20px;
 font-size: 12px;
 letter-spacing: 0.07em;
 line-height: 1.4em;
@@ -126,7 +125,7 @@ font-size: 18px;
 font-weight: bold;
 height: 19px;
 line-height: 18.8999996185303px;
-
+	
 text-align: left;
 text-transform: uppercase;
 
@@ -329,10 +328,7 @@ font-size: 18px;
 font-weight: bold;
 height: 19px;
 line-height: 18.8999996185303px;
-margin-bottom: 0px;
-margin-left: 0px;
-margin-right: 0px;
-margin-top: 0px;
+
 text-align: left;
 text-transform: uppercase;
 }
@@ -352,10 +348,6 @@ font-size: 18px;
 font-weight: bold;
 height: 19px;
 line-height: 18.8999996185303px;
-margin-bottom: 0px;
-margin-left: 0px;
-margin-right: 0px;
-margin-top: 0px;
 text-align: left;
 text-transform: uppercase;
 }
