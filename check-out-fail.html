@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Checkout Successful</title>
+    <title>Payment</title>
 
     <!-- Bootstrap core CSS -->
     <link href="asset/css/bootstrap.min.css" rel="stylesheet">
@@ -32,40 +32,7 @@
  
 
   </head>
-   <style>
-   .print-vouncher-section {
-		min-height:500px;
-		background-color:rgb(221, 221, 221);   
-   }
-   	.print-vouncher-section .Step{
-		
-		padding-top:50px;
-	}
-	.print-vouncher-section .panel-title span{
-		color:#0BB3E3;	
-		padding-right:20px;
-	}
-	.print-vouncher-section .border{
-		border:#000000 solid 1px;	
-		background-color:#f3f3f3;
-		background-image:url("asset/img/etc/voucher_pic.png");
-		
-	}
-	.print-vouncher-section .Signature{
-		margin-top:30px;
-		font-weight:700;
-		font-size:18px;
-		
-	}
-	.print-vouncher-section .Signature_line{
-		margin-top:30px;
-		height:22px;
-		border-bottom:#000000 solid 1px;
-	}
-	.print-vouncher-section .col-xs-9{
-		word-break:break-word;	
-	}
-   </style>
+
   <body>
 	
     <!-- Fixed navbar -->
@@ -141,64 +108,77 @@
     </div>
 <!--end of space down from the menu bar and logo section--->
 
+<style>
+.checkout-status-session {
+	min-height:500px;	
+	background-color:rgb(221, 221, 221);
+}
+.checkout-status-session .Step {
+		padding-top:50px;
+}
+.checkout-status-session .panel-title span{
+	padding-right:20px;	
+}
+.checkout-status-session .panel-body h1{
+	padding-bottom:50px;	
+}
+.checkout-status-session .panel-body td{
+	line-height:30px;
+	
+}
+.checkout-status-session .total{
+	border-top:#000000 solid 1px;
+	padding-top:10px;
+	padding-bottom:30px;
+}
 
-    
-    
-<div class="print-vouncher-section">
+</style>
+<div class="checkout-status-session">
 	<div class="container">
 
         <div class="Step">
-    		<div class="panel  panel-info">
+    		<div class="panel panel-success">
               <div class="panel-heading">
-                <h3 class="panel-title"><span class="glyphicon glyphicon-qrcode"></span>Vouncher For Printing</h3>
+                <h3 class="panel-title"><span class="glyphicon glyphicon-tag"></span>Your Orders</h3>
               </div>
       
                   
                   <div class="panel-body">
-                  		<div class="pull-right">
-                            <div class="pull-right btn-group btn-group-lg">
-                                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-print"></span> Print</button>
-                                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-cloud-download"></span> Download</button>
-                            </div>
-                        </div>
-                        <div style="padding-left:10px; padding-right:10px;" class="row">	
-                            <div class="col-xs-9">My Voucher</div>
-                            <div class="col-xs-9">Ticket No.: 140917063103180</div>
-                        </div>
-                  		<div class="border">
-                        	
-                        	<div class="text-center" style="width: 100%;height:124px;">
-                                            <img width="124" height="124" src="asset/img/etc/qr_code.png">
-                            </div>
+                  		<h1 ><small>Order Status:</small> <span style="color:green;">Pending&nbsp;Payment</span></h1>
+                  		<table class="table table-striped">
+                          <thead>
+                            <tr>
+                              <th>#</th>
+                              <th>Program</th>
+                              <th>Date</th>
+                              <th>Price</th>
+                              <th>Vouncher</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr >
+                              <td>1</td>
+                              <td>Water Park Tour Package</td>
+                              <td>2014-9-20</td>
+                              <td>$10.00</td>
+                              <td><button type="button" class="btn  btn-success"><span class="glyphicon glyphicon-print"></span> Print</button></td>
+                            </tr>
                             
-                            
-                        </div>
-                        <div class="col-xs-3">Specials: 	</div>
-                        <div class="col-xs-9">acy219538(Membership Special)</div>
-                        <div class="col-xs-3">Plan:</div>
-                        <div class="col-xs-9">opn219540(Membership Specials)</div>
-                        <div class="col-xs-3">Date:</div>
-                        <div class="col-xs-9">2014-09-17</div>
-                        <div class="col-xs-3">Amount:</div>
-                        <div class="col-xs-9">1</div>
-                        <div class="col-xs-3">Payment:</div>
-                        <div class="	col-xs-9">Pay at the Scene</div>
-                        
-                        <div class="col-xs-3">Contact:</div>
-                        <div class="	col-xs-9">Kai Iwasaki</div>
-                        <div class="col-xs-3">Phone:</div>
-                        <div class="	col-xs-9">8081234567</div>
-                        <div class="col-xs-3">Email:</div>
-                        <div class="	col-xs-9">808@totalgds.com</div>
-                        <div class="col-xs-3">Supplier:</div>
-                        <div class="	col-xs-9">Anytime Fitness (todd.takata@totalgds.com/8088888888)</div>
-                        <div class="col-xs-3">For billing inquiries:</div>
-                        <div class="col-xs-9">Please refer all billing inquiries to Anytime Fitness (todd.takata@totalgds.com/8088888888).</div>	
-                        <div class="col-xs-12 Signature">Signature:</div>
-                        <div class="	col-xs-12"><div class="Signature_line"><span class="glyphicon glyphicon-pencil"></span></div></div>
-                        <div class="col-xs-12">
-This voucher is invalid until signed by the guest and a valid photo ID must be presented at the time of redemption.</div>
-						
+                            <tr >
+                              <td>2</td>
+                              <td>Water Park Tour Package</td>
+                              <td>2014-9-20</td>
+                              <td>$10.00</td>
+                              <td><button type="button" class="btn  btn-success"><span class="glyphicon glyphicon-print"></span> Print</button></td>
+                            </tr>
+
+                          </tbody>
+                        </table>
+                       
+                        <h4 class="total text-right"><span>Pay Online:&nbsp;</span><span style="color:red;">$100.00</span><span> &nbsp;&nbsp;Pay&nbsp;in&nbsp;Store:&nbsp;</span><span style="color:red;">$0.00&nbsp;&nbsp;</span></h4> 
+                        <h5><a href="#">Refresh</a> After your payment is processed successfully, please click <a href="#">here</a> to review your order.</h5>
+                   
+                        <h5><span class="glyphicon glyphicon-exclamation-sign"></span> Reminder: Please print out and bring the voucher(s) with you to attend the activity.</h5>
                   </div>
                   
             </div>
@@ -208,12 +188,8 @@ This voucher is invalid until signed by the guest and a valid photo ID must be p
         
         
     </div>
-</div>
 
-  
-      
-            
-            
+</div>
             
 
             
@@ -300,10 +276,4 @@ This voucher is invalid until signed by the guest and a valid photo ID must be p
 
 	
   </body>
-</html>
-</title>
-</head>
-
-<body>
-</body>
 </html>

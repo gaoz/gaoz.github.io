@@ -23,7 +23,7 @@
 	
 -webkit-background-size: auto, auto;
 background-color: rgba(0, 0, 0, 0);
-background-image: none, url(http://store.storeimages.cdn-apple.com/4095/store.apple.com/rs-web/web/base/icons/res/sprites.svg);
+background-image: none, url(../img/etc/sprites.svg);
 background-position: -698px 3px, -698px 3px;
 background-repeat: no-repeat, no-repeat;
 background-size: auto, auto;
@@ -38,7 +38,7 @@ background-position: -728px 3px;
 -webkit-background-size: auto, auto;
 background-color: rgba(0, 0, 0, 0);
 
-background-image: none, url(http://store.storeimages.cdn-apple.com/4095/store.apple.com/rs-web/web/base/icons/res/sprites.svg);
+background-image: none, url(../img/etc/sprites.svg);
 background-repeat: no-repeat, no-repeat;
 background-size: auto, auto;
 color: rgb(51, 51, 51);
@@ -53,7 +53,7 @@ background-position: -758px 3px;
 -webkit-background-size: auto, auto;
 background-color: rgba(0, 0, 0, 0);
 
-background-image: none, url(http://store.storeimages.cdn-apple.com/4095/store.apple.com/rs-web/web/base/icons/res/sprites.svg);
+background-image: none, url(../img/etc/sprites.svg);
 background-repeat: no-repeat, no-repeat;
 background-size: auto, auto;
 color: rgb(51, 51, 51);
@@ -73,11 +73,10 @@ line-height: 1.16667em;
 text-transform:capitalize;
 letter-spacing: 0.00em;
 -webkit-font-smoothing: antialiased;
-
 }
 
 .checkout-section .buy_total-title{
-	font-style: normal;
+font-style: normal;
 font-weight:100;
 font-size: 18px;
 line-height: 1.16667em;
