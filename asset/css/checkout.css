@@ -82,7 +82,10 @@ font-size: 18px;
 line-height: 1.16667em;
 text-transform:capitalize;	
 }
-
+.checkout-section .SecondStepInfo{
+	padding-left:10px;
+	padding-right:10px;	
+}
 #OnlinePayment{
 	padding-right:10px;	
 }
