@@ -28,6 +28,16 @@
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;	
 }
+.panel-style2{
+	width: 100%;
+	height:auto;
+	background: #FFF;
+	margin-bottom:10px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;	
+}
 
 .detail-panel1 .detail-label{
 box-sizing: border-box;
@@ -48,15 +58,7 @@ letter-spacing: 0.07em;
 line-height: 1.4em;
 
 }
-.divider.down {
-margin-top:10px;
-margin-bottom:8px;
-position:relative;
-height: 15px;
-background-image: url(../img/etc/divider_down.png);
-background-repeat: no-repeat;
-background-position: 50% 0;
-}
+
 
 .title-style1{
 padding:20px;
@@ -340,15 +342,6 @@ border-radius: 4px;
 }
 
 
-
-.gradient-background {
-	background: #3f77a4; /* Old browsers */
-	background: -webkit-linear-gradient(top,  #3f77a4, #8bb6d0, #6e80b8 70%, #26447c);
-	background: -moz-linear-gradient(top,  #3f77a4, #8bb6d0, #6e80b8 70%, #26447c);
-	background: -o-linear-gradient(top,  #3f77a4, #8bb6d0, #6e80b8 70%, #26447c);
-	background: -ms-linear-gradient(top,  #3f77a4, #8bb6d0, #6e80b8 70%, #26447c);
-	background: linear-gradient(top,  #3f77a4, #8bb6d0, #6e80b8 70%, #26447c);
-}
 
 
 
