@@ -79,6 +79,10 @@ padding:20px;
 	
 }
 
+
+
+
+/* calendar */
 .calendar .paddle-nav{
 position:relative;
 padding-bottom: 50px;
@@ -273,7 +277,7 @@ text-transform: uppercase;
 }
 
 
-
+/* plan section */
 
 .plan .title{
 	padding-bottom:80px;
@@ -344,4 +348,15 @@ border-radius: 4px;
 
 
 
+/* CSS REQUIRED for plan options checkbox */
+.state-icon {
+    left: -5px;
+}
 
+
+.well .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+z-index: 2;
+color: #fff;
+background-color: #888;
+border-color: #777;
+}
