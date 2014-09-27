@@ -28,7 +28,19 @@
 	padding-top:10px;
 	padding-bottom:10px;		
 }
-
+.bs-callout+.bs-callout {
+margin-top: -5px;
+}
+.bs-callout-info {
+border-left-color: #5bc0de!important;
+}
+.bs-callout {
+padding: 20px;
+margin: 20px 0;
+border: 1px solid #eee;
+border-left-width: 5px;
+border-radius: 3px;
+}
 
 /*==================================================
  * box panel background Effect 7
