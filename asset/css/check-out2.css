@@ -42,7 +42,13 @@ border-left-width: 5px;
 border-radius: 3px;
 }
 
+@media (min-width: 992px) {
 
+   .container {
+        width: 1170px;
+    }
+
+}
 
 /*==================================================
  * box panel background Effect 7
