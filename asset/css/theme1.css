@@ -309,10 +309,10 @@ background-color:#333;
 }
 @media (min-width: 992px) {
     /* Narrow Menu bar and Body part, but banner slider show */
-   /* .container {
+   .container {
         width: 860px;
     }
-*/
+
   .carousel-caption h1{
      font-size: 70px;
   }
