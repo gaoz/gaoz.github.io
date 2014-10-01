@@ -8,11 +8,11 @@
 }
 .cart-checkout-section .cart-summary{
 	margin-left:5px;
-	margin-right:5px;
 	margin-bottom:5px;
 }
 .cart-checkout-section .cart-info{
 	margin:5px;
+	margin-right:0px;
 }
 .cart-checkout-section .item-description{
 	
@@ -88,6 +88,19 @@ margin-top:-35px;
 	}
 	.cart-checkout-section #price-table{
 	margin-top:0px;	
+	}
+	
+	.cart-checkout-section .plan-price{
+	text-align: left;	  
+	}
+	.cart-checkout-section .main-title {
+	font-size: 20px;
+	}
+	.cart-checkout-section .cart-summary{
+	margin-right:5px
+	}
+	.cart-checkout-section .cart-info{
+		margin-right:5px;
 	}
 }
 
