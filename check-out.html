@@ -267,7 +267,41 @@
                                             <h5>Possible Questions:</h5>
                                              <textarea class="form-control" rows="3"></textarea>
                                         </div>
+                                        
+                                        <div class="well">   <!--there is a piece of js at line 223 of custom.js-->
+                                        	 <div class="checkbox" >
+                                                <label style="padding-bottom:20px;">
+                                                  <input type="checkbox" id="yourCheckboxID" > Transportation
+                                                </label>
+                                                <div id="yourDivID" style="display:none;">
+                                                    <form class="form-horizontal" role="form">
+                                                         <div class="form-group">
+                                                            <label for="inputHotelName" class="col-sm-4 control-label">Hotel Name</label>
+                                                            <div class="col-sm-8">
+                                                              <input type="hotelName" class="form-control" id="inputHotelName" placeholder="Hotel Name">
+                                                            </div>
+                                                         </div>
+                                                         <div class="form-group">
+                                                            <label for="inputRoomNumber" class="col-sm-4 control-label">Room Number</label>
+                                                            <div class="col-sm-8">
+                                                              <input type="RoomNumber" class="form-control" id="inputRoomNumber" placeholder="Room Number">
+                                                            </div>
+                                                         </div>
+                                                    </form>
+                                                    <div class="checkbox" >
+                                                        <label style="padding-bottom:20px;">
+                                                          <input type="checkbox" id="yourCheckboxID2">Show Pickup Location
+                                                        </label>
+                                                        <div id="yourDivID2" style="display:none;">
+                                                             <div id="map_canvas"></div>
+                                                        </div>
+                                                     </div>
+                                                </div>
+                                             </div>
+                                        </div>
+                                        
                                         <button style ="width:100%; " class=" btn btn-xs btn-primary" href="#"><span class="glyphicon glyphicon-list-alt"></span> apply answers to all other people</button>
+                                        
                                      
                                      </div>
                                      
@@ -387,6 +421,7 @@
                                             <h5>Sample5: Question with textarea answer</h5>
                                              <textarea class="form-control" rows="3"></textarea>
                                         </div>
+                                        
                                         
                                      
                                      </div>
@@ -546,7 +581,10 @@ padding-right: 2%;">tax:</label><span>US$4.00</span></p>
 			callbackFunction: function(elem, action){} // Callback to do after a class was added to an element. Action will return "add" or "remove", depending if the class was added or removed
 		});
 	</script>
-
+    
+    
+    
+	
 	
   </body>
 </html>

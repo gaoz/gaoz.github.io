@@ -135,7 +135,7 @@ http://www.web2feel.com/tutorial-for-animated-scroll-loading-effects-with-animat
 
 /*
 
-js for checkbox style in viewdetail plan option panel;
+js for checkbox style in viewdetail plan option panel  and checkout process;
 */
 
 
@@ -218,3 +218,18 @@ $(function () {
         $('#display-json').html(JSON.stringify(checkedItems, null, '\t'));
     });
 });
+
+
+/* transportation hide and show content js when click on a checkbox*/
+$("#yourCheckboxID").click(function ()
+{
+    if ($("#yourCheckboxID").attr("checked"))
+    {
+        $("#yourDivID").show();
+    }
+    else
+    {
+        $("#yourDivID").hide();
+    }              
+});
+
