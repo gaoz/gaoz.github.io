@@ -30,7 +30,7 @@
 .cart-checkout-section 	#title {
 	font-weight:bold;
 }
-/* left border color  style */
+/* person fill in panel style */
 .cart-checkout-section .bs-callout+.bs-callout {
 margin-top: -5px;
 }
@@ -39,10 +39,11 @@ border-left-color: #5bc0de!important;
 }
 .cart-checkout-section .bs-callout {
 padding: 20px;
-margin: 20px 0;
-border: 1px solid #5bc0de;
+margin: 10px 0;
+border: 0px solid #5bc0de;
 border-left-width: 5px;
 border-radius: 3px;
+background-color:#888;
 }
 
 .cart-checkout-section .item-description p>label {
@@ -62,9 +63,34 @@ margin-top:-35px;
 	height: 200px;
 	background-color:#070;
 }
+.cart-checkout-section .CheckBoxWithMulChoice .panel-title{
+	margin-top:20px;
+}
+.cart-checkout-section .CheckBoxWithMulChoice a:hover{
+	text-decoration:none;	
+}
+.cart-checkout-section .CheckBoxWithMulChoice .panel-title{
+	font-size:14px;	
+}
+.cart-checkout-section .transportation .panel-title{
+	margin-top:20px;
+}
+.cart-checkout-section .transportation a:hover{
+	text-decoration:none;	
+}
+.cart-checkout-section .transportation .panel-title{
+	font-size:14px;	
+}
+.cart-checkout-section .item-person-title{
+	color:#EEE;	
+}
 
-
-
+.cart-checkout-section .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+z-index: 2;
+color: #fff;
+background-color: #888;
+border-color: #777;
+}
 @media (min-width: 992px) {
 
    .cart-checkout-section .container {

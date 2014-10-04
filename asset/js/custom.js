@@ -220,16 +220,25 @@ $(function () {
 });
 
 
-/* transportation hide and show content js when click on a checkbox*/
-$("#yourCheckboxID").click(function ()
-{
-    if ($("#yourCheckboxID").attr("checked"))
+/*  hide and show content js when click on a checkbox*/
+
+$('.collapse').collapse();
+$('.panel-heading h4 a input[type=checkbox]').on('click', function(e){
+    e.stopPropagation();
+    $(this).parent().trigger('click');   // <---  HERE helps to check the box when click on the component
+	
+})
+$('#collapse1').on('show.bs.collapse', function(e){
+    if( ! $('.panel-heading h4 a input[type=checkbox]').is(':checked') )
     {
-        $("#yourDivID").show();
+        return false;
     }
-    else
-    {
-        $("#yourDivID").hide();
-    }              
 });
+$('#collapse2').on('show.bs.collapse', function(e){
+    if( ! $('.panel-heading h4 a input[type=checkbox]').is(':checked') )
+    {
+        return false;
+    }
+});
+
 

@@ -126,7 +126,7 @@
                                      US$ 1990.00
                                     </div>
                                     <div class="col-sm-12 col-xs-4">
-                                    <button class="btn btn-xs btn-danger" href="#"><span class="glyphicon glyphicon-remove-circle"></span> Delete</button>
+                                    <button class="btn btn-xs btn-info" href="#"> Delete Item</button>
                                     </div>
                             	</div>
                             
@@ -217,7 +217,7 @@
                             
                                 <div class="item-person col-sm-6">
                                     <div class="bs-callout bs-callout-info">
-                                        <h4>Adult 1<button class="pull-right btn btn-xs btn-danger" href="#"><span class="glyphicon glyphicon-remove-circle"></span> Delete</button></h4>
+                                        <h4 class="item-person-title">Adult 1<button class="pull-right btn btn-xs btn-info" href="#">Delete Person</button></h4>
                                         
                                         <div class="well">
                                             <h5>Additonal Options For You:</h5>
@@ -232,16 +232,32 @@
                                         </div>
                                         
                                         
-                                        <div class="well">
-                                            <h5>Multiple Choices Question: What would you like to do in this activies?</h5>
-                                            <ul class="list-group checked-list-box">
-                                              <li class="list-group-item" data-checked="true">Take Picture</li>
-                                              <li class="list-group-item">Swimming</li>
-                                              <li class="list-group-item">Runing</li>
-                                              <li class="list-group-item">Go Shopping</li>
-                                           
-                                  
-                                            </ul>
+                                        <div class="CheckBoxWithMulChoice panel-group" id="accordion">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                      <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                                            <ul class="list-group checked-list-box">
+                                                              <li class="list-group-item">CheckBox Question With Multiple Choice Question</li>
+                                                            </ul>
+                                                        </a>
+                                                      </h4>
+                                                </div>
+                                                <div id="collapse2" class="panel-collapse collapse in">
+                                                    <div class="panel-body">
+                                                        <div class="">
+                                                            <ul class="list-group checked-list-box">
+                                                              <li class="list-group-item" data-checked="true">Dolphin or Whale Signting Guaarrantee Full refund if no dolphin or whale sighting. Includes $10.00 wet suit rental. <span style="color:#5bc0de;">(Addtional US$199.00)</span></li>
+                                                              <li class="list-group-item">Dolphin or Whale Signting Guarrantee Full refund if no dolphin or whale sighting. Includes $10.00 wet suit rental.<span style="color:#5bc0de;">(Addtional US$9.00)</span></li>
+                                                              <li class="list-group-item">Dolphin or Whale Signting Guarrantee Full refund if no dolphin or whale sighting. Includes $10.00 wet suit rental.<span style="color:#5bc0de;">(Addtional US$19.00)</span></li>
+                                                              <li class="list-group-item">Dolphin or Whale Signting Guarrantee Full refund if no dolphin or whale sighting. Includes $10.00 wet suit rental.<span style="color:#5bc0de;">(Addtional US$1199.00)</span></li>
+                                                           
+                                                  
+                                                            </ul>                                                                                                                                   
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                         
                                         
@@ -268,39 +284,111 @@
                                              <textarea class="form-control" rows="3"></textarea>
                                         </div>
                                         
-                                        <div class="well">   <!--there is a piece of js at line 223 of custom.js-->
-                                        	 <div class="checkbox" >
-                                                <label style="padding-bottom:20px;">
-                                                  <input type="checkbox" id="yourCheckboxID" > Transportation
-                                                </label>
-                                                <div id="yourDivID" style="display:none;">
-                                                    <form class="form-horizontal" role="form">
-                                                         <div class="form-group">
-                                                            <label for="inputHotelName" class="col-sm-4 control-label">Hotel Name</label>
-                                                            <div class="col-sm-8">
-                                                              <input type="hotelName" class="form-control" id="inputHotelName" placeholder="Hotel Name">
-                                                            </div>
-                                                         </div>
-                                                         <div class="form-group">
-                                                            <label for="inputRoomNumber" class="col-sm-4 control-label">Room Number</label>
-                                                            <div class="col-sm-8">
-                                                              <input type="RoomNumber" class="form-control" id="inputRoomNumber" placeholder="Room Number">
-                                                            </div>
-                                                         </div>
-                                                    </form>
-                                                    <div class="checkbox" >
-                                                        <label style="padding-bottom:20px;">
-                                                          <input type="checkbox" id="yourCheckboxID2">Show Pickup Location
-                                                        </label>
-                                                        <div id="yourDivID2" style="display:none;">
-                                                             <div id="map_canvas"></div>
-                                                        </div>
-                                                     </div>
+                                       
+                                        
+                                        <div class="transportation panel-group" id="accordion">  <!--there is a piece of js at line 223 of custom.js-->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                      <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                                            <ul class="list-group checked-list-box">
+                                                              <li class="list-group-item">Addon Transportation <span style="color:#5bc0de;">(Addtional US$1199.00)</span></li>
+                                                            </ul>
+                                                        </a>
+                                                      </h4>
                                                 </div>
-                                             </div>
+                                                <div id="collapse1" class="panel-collapse collapse in">
+                                                    <div class="panel-body">
+                                                        <div class="transportation panel-group" id="accordion">  <!--there is a piece of js at line 223 of custom.js-->
+                                                            <div class="panel panel-default">
+                                                                <div class="hotel panel-heading">
+                                                                	 
+                                                                      <h4 class="panel-title " style="margin-top:20px;">
+                                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                                                            <ul class="list-group checked-list-box">
+                                                                              <li class="list-group-item">Hotel</span></li>
+                                                                            </ul>
+                                                                        </a>
+                                                                      </h4>
+                                                                </div>
+                                                                <div id="collapse3" class="panel-collapse collapse in">
+                                                                    <div class="panel-body">
+                                                                        <div class="">
+                                                                            <form class="form-horizontal" role="form">
+                                                                                 <div class="form-group">
+                                                                                    <label for="inputHotelName" class="col-sm-5 control-label">Hotel Name</label>
+                                                                                    <div class="col-sm-7">
+                                                                                      <input type="hotelName" class="form-control" id="inputHotelName" placeholder="Hotel Name">
+                                                                                    </div>
+                                                                                 </div>
+                                                                                 <div class="form-group">
+                                                                                    <label for="inputRoomNumber" class="col-sm-5 control-label">Room Number</label>
+                                                                                    <div class="col-sm-7">
+                                                                                      <input type="RoomNumber" class="form-control" id="inputRoomNumber" placeholder="Room Number">
+                                                                                    </div>
+                                                                                 </div>
+                                                            				</form>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        
+                                                        
+                                                         <div class="transportation panel-group" id="accordion">  <!--there is a piece of js at line 223 of custom.js-->
+                                                            <div class="panel panel-default">
+                                                                <div class="condor panel-heading">
+                                                                
+                                                                      <h4 class="panel-title " style="margin-top:20px;">
+                                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                                                                            <ul class="list-group checked-list-box">
+                                                                              <li class="list-group-item">Condor</span></li>
+                                                                            </ul>
+                                                                        </a>
+                                                                      </h4>
+                                                                </div>
+                                                                <div id="collapse4" class="panel-collapse collapse in">
+                                                                    <div class="panel-body">
+                                                                        <div class="">
+                                                                            <form class="form-horizontal" role="form">
+                                                                                 <div class="form-group">
+                                                                                    <label for="inputAddress" class="col-sm-2 control-label">Address</label>
+                                                                                    <div class="col-sm-10">
+                                                                                      <input type="address" class="form-control" id="inputAddress" placeholder="Address">
+                                                                                    </div>
+                                                                                 </div>
+                                                            				</form>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        	
+                                                        
+                                                           <!-- <form class="form-horizontal" role="form">
+                                                                 <div class="form-group">
+                                                                    <label for="inputHotelName" class="col-sm-4 control-label">Hotel Name</label>
+                                                                    <div class="col-sm-8">
+                                                                      <input type="hotelName" class="form-control" id="inputHotelName" placeholder="Hotel Name">
+                                                                    </div>
+                                                                 </div>
+                                                                 <div class="form-group">
+                                                                    <label for="inputRoomNumber" class="col-sm-4 control-label">Room Number</label>
+                                                                    <div class="col-sm-8">
+                                                                      <input type="RoomNumber" class="form-control" id="inputRoomNumber" placeholder="Room Number">
+                                                                    </div>
+                                                                 </div>
+                                                            </form>       -->                                                                                                  
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                         
-                                        <button style ="width:100%; " class=" btn btn-xs btn-primary" href="#"><span class="glyphicon glyphicon-list-alt"></span> apply answers to all other people</button>
+                                        
+                                        
+                                        <button style ="width:100%;color:#535252; " class=" btn btn-lg btn-info" href="#"> Same answer to everyone</button>
                                         
                                      
                                      </div>
@@ -310,7 +398,7 @@
                                 
                                 <div class="item-person col-sm-6">
                                     <div class="bs-callout bs-callout-info">
-                                        <h4>Adult 2<button class="pull-right btn btn-xs btn-danger" href="#"><span class="glyphicon glyphicon-remove-circle"></span> Delete</button></h4>
+                                        <h4  class="item-person-title">Adult 2<button class="pull-right btn btn-xs btn-info" href="#"> Delete Person</button></h4>
                                         
                                         <div class="well">
                                             <h5>Sample1: Multiple Choice Question With Price</h5>
@@ -371,7 +459,7 @@
                             
                                 <div class="item-person col-sm-6">
                                     <div class="bs-callout bs-callout-info">
-                                        <h4>Children 3<button class="pull-right btn btn-xs btn-danger" href="#"><span class="glyphicon glyphicon-remove-circle"></span> Delete</button></h4>
+                                        <h4  class="item-person-title">Children 3<button class="pull-right btn btn-xs btn-info" href="#"> Delete Person</button></h4>
                                         
                                         <div class="well">
                                             <h5>Sample1: Multiple Choice Question With Price</h5>
@@ -428,10 +516,11 @@
                                 </div><!--end of person 3-->
                             
                             </div><!--end of a row that fit 2x person -->
-                            
-                        <div class="well col-sm-12">
+                        <div class="bs-callout bs-callout-info col-sm-12" >    
+                        	<div class="well " style="margin-bottom:0px;">
                                     	<h5>Notes for Ultimate Circle Island Eco Adventure - PlanA</h5>
                                 		 <textarea class="form-control" rows="3"></textarea>
+                        	</div>
                         </div>    
                             
                    		</div> <!--end of item 1-->  
