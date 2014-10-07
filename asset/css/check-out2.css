@@ -95,11 +95,10 @@ margin-top:-35px;
 	color:#5bc0de;
 	cursor:pointer;	
 }
-.cart-checkout-section .list-group .list-group-item {
-	cursor:pointer;	
+.cart-checkout-section .transportation .list-group .list-group-item {
 }
 .cart-checkout-section .transportation .list-group .list-group-item:hover {
-	background-color:#888;	
+	
 }
 
 .cart-checkout-section .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
