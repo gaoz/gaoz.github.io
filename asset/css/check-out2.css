@@ -95,6 +95,7 @@ margin-top:-35px;
 	color:#5bc0de;
 	cursor:pointer;	
 }
+
 .cart-checkout-section .transportation .list-group .list-group-item {
 }
 .cart-checkout-section .transportation .list-group .list-group-item:hover {
@@ -115,8 +116,15 @@ border-color: #777;
 
 }
 
-@media (max-width: 767px){/* fix mobile view menu bar static stick to the top */
-
+@media (max-width: 767px){/* mobile view  */
+	.cart-checkout-section .bs-callout {
+		padding-left:5px;
+		padding-right:5px;
+	}
+	.cart-checkout-section .item-person {
+		padding-left:1px;
+		padding-right:1px;
+	}
 	.cart-checkout-section .item-description p>label {
 		width: 100%;
 		text-align:left;
