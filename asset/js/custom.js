@@ -135,7 +135,7 @@ http://www.web2feel.com/tutorial-for-animated-scroll-loading-effects-with-animat
 
 /*
 
-js for checkbox style in viewdetail plan option panel  and checkout process;
+js for checkbox style in viewdetail plan option panel and checkout process;
 */
 
 
