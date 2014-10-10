@@ -242,3 +242,11 @@ $('#collapse2').on('show.bs.collapse', function(e){
 });
 
 
+
+/* navigation menu loader */
+
+$(function () {
+	$.get("navigation-menu.html", function (data) {
+		$("navigation-bar-container").append(data);
+	});
+});

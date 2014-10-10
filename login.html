@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content=""> 	
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>WhiteLabelSite</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet">
+	<!-- language flat icon CSS -- document https://github.com/usrz/bootstrap-languages -->
+    <link href="asset/css/languages.css" rel="stylesheet">
+    <!-- social media icon CSS with social_media_icon.js-- document https://http://codepen.io/benfields/pen/pnoEL -->
+    <link href="asset/css/hover-effect.css" rel="stylesheet">
+    <link href="asset/css/Flat_Social_Buttons.css" rel="stylesheet">
+    <link href="asset/css/program-cards.css" rel="stylesheet">
+    <link href="asset/css/animate.css" rel="stylesheet">
+	<link href="asset/css/theme1.css" rel="stylesheet">
+    <link href="asset/css/bootstrap_helper.css" rel="stylesheet"> <!--test test test , this can be deleted anytime-->
+    <link href="asset/css/more-programs.css" rel="stylesheet"> 
+	<link href="asset/css/check-out2.css" rel="stylesheet">
+    <link href="asset/css/view-detail2.css" rel="stylesheet"> 
+    <!-- Custom 1 styles for this template -->
+   
+
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+ 
+
+  </head>
+
+  <body>
+	
+    <!-- Fixed navbar -->
+    <div class="navigation-bar-container"> <!--use jquery to load navigation menu-->
+    
+    </div>
+    
+<!--space down from the menu bar and logo section--->
+    <div class="container hidden-xs">
+          <div style="height:105px"></div> 
+    </div>
+<!--end of space down from the menu bar and logo section--->
+
+
+
+
+
+    <div class="container">  
+    
+    
+    	
+        
+        <div id="loginbox" style="margin-top:50px; margin-bottom:100px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2"> 
+            <div  class="alert alert-success">
+                <a href="#" class="close" data-dismiss="alert">&times;</a>
+                <strong>Success!</strong> You have been successfully logged in. In 3 seconds, you will be redirected to the previous page, or just click <a> here </a> to go back.
+            </div>  
+            
+            <div  class="alert alert-danger alert-error">
+                <a href="#" class="close" data-dismiss="alert">&times;</a>
+                <strong>Error!</strong> Invalid username or password, please try again.
+            </div>
+                           
+            <div class="panel panel-info" >
+                    <div class="panel-heading">
+                        <div class="panel-title">Sign In</div>
+                        <div style="float:right; font-size: 80%; position: relative; top:-10px"><a href="#">Forgot password?</a></div>
+                    </div>     
+
+                    <div style="padding-top:30px" class="panel-body" >
+
+                        <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+                            
+                        <form id="loginform" class="form-horizontal" role="form">
+                                    
+                            <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">                                        
+                                    </div>
+                                
+                            <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                        <input id="login-password" type="password" class="form-control" name="password" placeholder="password">
+                                    </div>
+                                    
+
+                                
+                            <div class="input-group">
+                                      <div class="checkbox">
+                                        <label>
+                                          <input id="login-remember" type="checkbox" name="remember" value="1"> Remember me
+                                        </label>
+                                      </div>
+                                    </div>
+
+
+                                <div style="margin-top:10px" class="form-group">
+                                    <!-- Button -->
+
+                                    <div class="col-sm-12 controls">
+                                      <a id="btn-login" href="#" style="width:100%;" class="btn btn-success">Login  </a>
+                                   
+
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <div class="col-md-12 control">
+                                        <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
+                                            This login panel is for agent to use only! 
+                                        
+                                        </div>
+                                    </div>
+                                </div>    
+                            </form>     
+
+
+
+                        </div>                     
+                    </div>  
+        </div>
+        <div id="signupbox" style="display:none; margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <div class="panel-title">Sign Up</div>
+                            <div style="float:right; font-size: 85%; position: relative; top:-10px"><a id="signinlink" href="#" onclick="$('#signupbox').hide(); $('#loginbox').show()">Sign In</a></div>
+                        </div>  
+                        <div class="panel-body" >
+                            <form id="signupform" class="form-horizontal" role="form">
+                                
+                                <div id="signupalert" style="display:none" class="alert alert-danger">
+                                    <p>Error:</p>
+                                    <span></span>
+                                </div>
+                                    
+                                
+                                  
+                                <div class="form-group">
+                                    <label for="email" class="col-md-3 control-label">Email</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" name="email" placeholder="Email Address">
+                                    </div>
+                                </div>
+                                    
+                                <div class="form-group">
+                                    <label for="firstname" class="col-md-3 control-label">First Name</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" name="firstname" placeholder="First Name">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastname" class="col-md-3 control-label">Last Name</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" name="lastname" placeholder="Last Name">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="col-md-3 control-label">Password</label>
+                                    <div class="col-md-9">
+                                        <input type="password" class="form-control" name="passwd" placeholder="Password">
+                                    </div>
+                                </div>
+                                    
+                                <div class="form-group">
+                                    <label for="icode" class="col-md-3 control-label">Invitation Code</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" name="icode" placeholder="">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <!-- Button -->                                        
+                                    <div class="col-md-offset-3 col-md-9">
+                                        <button id="btn-signup" type="button" class="btn btn-info"><i class="icon-hand-right"></i> &nbsp Sign Up</button>
+                                        <span style="margin-left:8px;">or</span>  
+                                    </div>
+                                </div>
+                                
+                                <div style="border-top: 1px solid #999; padding-top:20px"  class="form-group">
+                                    
+                                    <div class="col-md-offset-3 col-md-9">
+                                        <button id="btn-fbsignup" type="button" class="btn btn-primary"><i class="icon-facebook"></i>   Sign Up with Facebook</button>
+                                    </div>                                           
+                                        
+                                </div>
+                                
+                                
+                                
+                            </form>
+                         </div>
+                    </div>
+
+               
+               
+                
+         </div> 
+    </div>
+    
+
+
+	<footer>
+    	<div class="container">
+             <div class="bounce-in col-sm-4 col-xs-12 supportedby">
+             	   <div class="supportedby-texts">Supported by</div>
+                   <div class="row supportedby-logos">
+                        <a href="http://etour.totalgds.com"><img height="50px" width="auto" alt="Flower" src="asset/img/etc/etourlogo.png" /></a>
+                        <a href="http://www.totalgds.com"><img height="50px" width="auto" alt="Flower" src="asset/img/etc/totalgdslogo.png" /></a>
+                        
+                   </div>
+             </div>
+             
+
+          <!--  <div id="totalgdslogo">-->
+             <div class="bounce-in col-sm-8 col-xs-12">
+                <a href="/en/site/about"> About us</a> | 
+                <a href="/en/site/terms"> Terms & Conditions</a>  | 
+                <a href="/en/site/privacy"> Privacy Policy</a>  | 
+                <a href="/en/site/cancellation"> Cancellation Policy</a>  | 
+                <a href="/en/site/contact"> Contact Us</a>  
+                <p class="cotyright">Copyright 2012-2014 &copy; eTour International Group WL</p>
+                <p class="socialmedia-footer">Follow Us On
+                                <a href="http://etour.totalgds.com"><img height="20px" width="auto" alt="Flower" src="https://www.facebook.com/images/fb_icon_325x325.png" /></a>
+                                <a href="http://www.totalgds.com"><img height="20px" width="auto" alt="Flower" src="https://g.twimg.com/Twitter_logo_blue.png" /></a></p>
+            </div>
+		</div>
+   
+	</footer> 
+ 	
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="asset/js/jQuery_v1.8.2.js"></script><!--this old version jQuery must be used with SmoothScroll.js-->
+    <script src="asset/js/SmoothScroll.js"></script><!--this js must be used with jQuery_v1.8.2.js-->
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/custom.js"></script>
+    <!--<script src="asset/js/skrollr.js"></script>--><!--this js must be used with parallax_slidershow_controller.js--> 
+    <!--<script src="asset/js/parallax_slidershow_controller.js"></script>--><!--this js must be used with skrollr.js-->
+   <!-- <script src="https://raw.githubusercontent.com/dirkgroenen/jQuery-viewport-checker/master/jquery.viewportchecker.js"></script>-->
+   
+   
+   
+   
+   	<script>
+		// this script is used with viewcheck js (inside custom.js) to control the animation (animate.css) in the page when scroll. 
+		$('.left-in').viewportChecker({
+			classToAdd: 'animated fadeInLeft', // Class to add to the elements when they are visible
+			offset: -100, // The offset of the elements (let them appear earlier or later)
+			callbackFunction: function(elem, action){} // Callback to do after a class was added to an element. Action will return "add" or "remove", depending if the class was added or removed
+		});
+		$('.right-in').viewportChecker({
+			classToAdd: 'animated fadeInRight', // Class to add to the elements when they are visible
+			offset: -100, // The offset of the elements (let them appear earlier or later)
+			callbackFunction: function(elem, action){} // Callback to do after a class was added to an element. Action will return "add" or "remove", depending if the class was added or removed
+		});
+		$('.fade-in').viewportChecker({
+			classToAdd: 'animated  fadeInUp', // Class to add to the elements when they are visible
+			offset: -100, // The offset of the elements (let them appear earlier or later)
+			callbackFunction: function(elem, action){} // Callback to do after a class was added to an element. Action will return "add" or "remove", depending if the class was added or removed
+		});
+		$('.bounce-in').viewportChecker({
+			classToAdd: 'animated bounceIn', // Class to add to the elements when they are visible
+			offset: -100, // The offset of the elements (let them appear earlier or later)
+			callbackFunction: function(elem, action){} // Callback to do after a class was added to an element. Action will return "add" or "remove", depending if the class was added or removed
+		});
+	</script>
+    
+    
+    
+	
+	
+  </body>
+</html>
