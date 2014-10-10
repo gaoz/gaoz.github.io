@@ -242,11 +242,26 @@ $('#collapse2').on('show.bs.collapse', function(e){
 });
 
 
+/* animation script */
 
-/* navigation menu loader */
-
-$(function () {
-	$.get("navigation-menu.html", function (data) {
-		$("navigation-bar-container").append(data);
-	});
-});
+// this script is used with viewcheck js (inside custom.js) to control the animation (animate.css) in the page when scroll. 
+		$('.left-in').viewportChecker({
+			classToAdd: 'animated fadeInLeft', // Class to add to the elements when they are visible
+			offset: -100, // The offset of the elements (let them appear earlier or later)
+			callbackFunction: function(elem, action){} // Callback to do after a class was added to an element. Action will return "add" or "remove", depending if the class was added or removed
+		});
+		$('.right-in').viewportChecker({
+			classToAdd: 'animated fadeInRight', // Class to add to the elements when they are visible
+			offset: -100, // The offset of the elements (let them appear earlier or later)
+			callbackFunction: function(elem, action){} // Callback to do after a class was added to an element. Action will return "add" or "remove", depending if the class was added or removed
+		});
+		$('.fade-in').viewportChecker({
+			classToAdd: 'animated  fadeInUp', // Class to add to the elements when they are visible
+			offset: -100, // The offset of the elements (let them appear earlier or later)
+			callbackFunction: function(elem, action){} // Callback to do after a class was added to an element. Action will return "add" or "remove", depending if the class was added or removed
+		});
+		$('.bounce-in').viewportChecker({
+			classToAdd: 'animated bounceIn', // Class to add to the elements when they are visible
+			offset: -100, // The offset of the elements (let them appear earlier or later)
+			callbackFunction: function(elem, action){} // Callback to do after a class was added to an element. Action will return "add" or "remove", depending if the class was added or removed
+		});
