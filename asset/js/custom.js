@@ -265,3 +265,40 @@ $('#collapse2').on('show.bs.collapse', function(e){
 			offset: -100, // The offset of the elements (let them appear earlier or later)
 			callbackFunction: function(elem, action){} // Callback to do after a class was added to an element. Action will return "add" or "remove", depending if the class was added or removed
 		});
+
+
+
+
+
+
+$(document).ready(function(){
+	$('input[type="radio"]').click(function(){
+		if($(this).attr("value")=="displaythis"){
+			$(".mybox").hide();
+			$(".displaythis").show();
+		}
+		if($(this).attr("value")=="hidethis"){
+			$(".mybox").hide();
+	
+		}
+		if($(this).attr("value")=="hidethis2"){
+			$(".mybox").hide();
+
+		}
+	});
+});
+
+
+$(document).ready(function(){
+	$('input[type="radio"]').click(function(){
+		if($(this).attr("value")=="show_hotel_content"){
+			$(".mybox2").hide();
+			$(".show_hotel_content").show();
+		}
+		if($(this).attr("value")=="show_else_content"){
+			$(".mybox2").hide();
+			$(".show_else_content").show();
+		}
+
+	});
+});

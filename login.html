@@ -36,9 +36,75 @@
 
   <body>
 	
-    <!-- Fixed navbar -->
-    <div class="navigation-bar-container"> <!--use jquery to load navigation menu-->
-    
+     <!-- Fixed navbar -->
+    <div class="theme1-nav navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+      		<div class="row">
+                <div class=" navbar-header col-sm-6">
+                	<div class="row">
+                    	<div class="animated fadeInDown  col-xs-12 col-xs-height">
+                  		  <a class="navbar-brand blink_me" href="#">eTour WhiteLabel</a>					    </div>
+                        <div class="col-xs-height col-middle">
+                          <button type="button" class=" navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+                        </div>
+                    </div>    
+                </div>
+                <div class="navbar-collapse navbar-right collapse col-sm-6 secondary-nav">
+                        <ul class="animated fadeInDown nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="lang-xs lang-lbl" lang="en"></span><span class="caret"></span></a>
+                          <ul class="animated fadeInUp dropdown-menu" role="menu">
+                            <li><a href="#"><span class="lang-xs lang-lbl" lang="en"></span></a></li>
+                            <li><a href="#"><span class="lang-xs lang-lbl" lang="zh"></span></a></li>
+                          </ul>
+                        </li>
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">US$ Dollar <span class="caret"></span></a>
+                          <ul class="animated fadeInUp dropdown-menu" role="menu">
+                            <li><a href="#">฿ - Thai Baht</a></li>
+                            <li><a href="#">JP¥ - Japanese Yen</a></li>
+                            <li><a href="#">€ - Euro</a></li>
+                            <li><a href="#">£ - Pound Sterling</a></li>
+                            <li><a href="#">CN¥ - Chinese Yuan</a></li>
+                          </ul>
+                        </li>
+                            <li><a href="check-out.html" class="dropdown-toggle"><span class="glyphicon glyphicon-shopping-cart"></span>(0)</a>
+                        </li>
+                        </li>
+                            <li><a href="login.html" class="dropdown-toggle"><span class="glyphicon glyphicon-user"></span></a>
+                        </li>
+                      </ul>
+                </div> 
+		 </div><!--row-->
+         
+         
+        <div class="row"> 
+            <div class="navbar-collapse collapse main-nav">
+              <ul class="animated fadeInRight nav navbar-nav">
+                <li class="active"><a href="index.html">HOME</a></li>
+                <li><a href="programs.html">Programs Display Mode 1</a></li>
+                <li><a href="programs2.html">Programs Display Mode 2</a></li>
+                <li><a href="view-detail.html">View Detail</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Checkout <span class="caret"></span></a>
+                  <ul class="animated fadeInUp dropdown-menu" role="menu">
+                    <li><a href="check-out.html">Checkout Now</a></li>
+                    <li><a href="check-out-success.html">Checkout Success</a></li>
+                    <li><a href="check-out-fail.html">Checkout Fail</a></li>
+                  </ul>
+                </li>
+              </ul>
+              
+            </div><!--/.nav-collapse -->
+         </div><!--row -->
+         
+         
+      </div>
     </div>
     
 <!--space down from the menu bar and logo section--->
@@ -50,159 +116,152 @@
 
 
 
-
-    <div class="container">  
-    
-    
-    	
+    <div class="container-fluid" style="background-color:#ddd;">
+        <div class="container" >  
         
-        <div id="loginbox" style="margin-top:50px; margin-bottom:100px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2"> 
-            <div  class="alert alert-success">
-                <a href="#" class="close" data-dismiss="alert">&times;</a>
-                <strong>Success!</strong> You have been successfully logged in. In 3 seconds, you will be redirected to the previous page, or just click <a> here </a> to go back.
-            </div>  
+        
             
-            <div  class="alert alert-danger alert-error">
-                <a href="#" class="close" data-dismiss="alert">&times;</a>
-                <strong>Error!</strong> Invalid username or password, please try again.
-            </div>
-                           
-            <div class="panel panel-info" >
-                    <div class="panel-heading">
-                        <div class="panel-title">Sign In</div>
-                        <div style="float:right; font-size: 80%; position: relative; top:-10px"><a href="#">Forgot password?</a></div>
-                    </div>     
-
-                    <div style="padding-top:30px" class="panel-body" >
-
-                        <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
-                            
-                        <form id="loginform" class="form-horizontal" role="form">
-                                    
-                            <div style="margin-bottom: 25px" class="input-group">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">                                        
-                                    </div>
+            
+            <div id="loginbox" style="margin-top:50px; margin-bottom:100px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2"> 
+                <div  class="alert alert-success">
+                    <a href="#" class="close" data-dismiss="alert">&times;</a>
+                    <strong>Success!</strong> You have been successfully logged in. In 3 seconds, you will be redirected to the previous page, or just click <a> here </a> to go back.
+                </div>  
+                
+                <div  class="alert alert-danger alert-error">
+                    <a href="#" class="close" data-dismiss="alert">&times;</a>
+                    <strong>Error!</strong> Invalid username or password, please try again.
+                </div>
+                               
+                <div class="panel panel-info" >
+                        <div class="panel-heading">
+                            <div class="panel-title">Sign In</div>
+                            <div style="float:right; font-size: 80%; position: relative; top:-10px"><a href="#">Forgot password?</a></div>
+                        </div>     
+    
+                        <div style="padding-top:30px" class="panel-body" >
+    
+                            <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
                                 
-                            <div style="margin-bottom: 25px" class="input-group">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                                        <input id="login-password" type="password" class="form-control" name="password" placeholder="password">
-                                    </div>
-                                    
-
-                                
-                            <div class="input-group">
-                                      <div class="checkbox">
-                                        <label>
-                                          <input id="login-remember" type="checkbox" name="remember" value="1"> Remember me
-                                        </label>
-                                      </div>
-                                    </div>
-
-
-                                <div style="margin-top:10px" class="form-group">
-                                    <!-- Button -->
-
-                                    <div class="col-sm-12 controls">
-                                      <a id="btn-login" href="#" style="width:100%;" class="btn btn-success">Login  </a>
-                                   
-
-                                    </div>
-                                </div>
-
-
-                                <div class="form-group">
-                                    <div class="col-md-12 control">
-                                        <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
-                                            This login panel is for agent to use only! 
+                            <form id="loginform" class="form-horizontal" role="form">
                                         
+                                <div style="margin-bottom: 25px" class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                            <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">                                        
+                                        </div>
+                                    
+                                <div style="margin-bottom: 25px" class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                            <input id="login-password" type="password" class="form-control" name="password" placeholder="password">
+                                        </div>
+                                        
+    
+                                    
+                                <div class="input-group">
+                                          <div class="checkbox">
+                                            <label>
+                                              <input id="login-remember" type="checkbox" name="remember" value="1"> Remember me
+                                            </label>
+                                          </div>
+                                        </div>
+    
+    
+                                    <div style="margin-top:10px" class="form-group">
+                                        <!-- Button -->
+    
+                                        <div class="col-sm-12 controls">
+                                          <a id="btn-login" href="#" style="width:100%;" class="btn btn-success">Login  </a>
+                                       
+    
                                         </div>
                                     </div>
-                                </div>    
-                            </form>     
-
-
-
-                        </div>                     
-                    </div>  
-        </div>
-        <div id="signupbox" style="display:none; margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
-                    <div class="panel panel-info">
-                        <div class="panel-heading">
-                            <div class="panel-title">Sign Up</div>
-                            <div style="float:right; font-size: 85%; position: relative; top:-10px"><a id="signinlink" href="#" onclick="$('#signupbox').hide(); $('#loginbox').show()">Sign In</a></div>
-                        </div>  
-                        <div class="panel-body" >
-                            <form id="signupform" class="form-horizontal" role="form">
-                                
-                                <div id="signupalert" style="display:none" class="alert alert-danger">
-                                    <p>Error:</p>
-                                    <span></span>
-                                </div>
-                                    
-                                
-                                  
-                                <div class="form-group">
-                                    <label for="email" class="col-md-3 control-label">Email</label>
-                                    <div class="col-md-9">
-                                        <input type="text" class="form-control" name="email" placeholder="Email Address">
-                                    </div>
-                                </div>
-                                    
-                                <div class="form-group">
-                                    <label for="firstname" class="col-md-3 control-label">First Name</label>
-                                    <div class="col-md-9">
-                                        <input type="text" class="form-control" name="firstname" placeholder="First Name">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="lastname" class="col-md-3 control-label">Last Name</label>
-                                    <div class="col-md-9">
-                                        <input type="text" class="form-control" name="lastname" placeholder="Last Name">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="password" class="col-md-3 control-label">Password</label>
-                                    <div class="col-md-9">
-                                        <input type="password" class="form-control" name="passwd" placeholder="Password">
-                                    </div>
-                                </div>
-                                    
-                                <div class="form-group">
-                                    <label for="icode" class="col-md-3 control-label">Invitation Code</label>
-                                    <div class="col-md-9">
-                                        <input type="text" class="form-control" name="icode" placeholder="">
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <!-- Button -->                                        
-                                    <div class="col-md-offset-3 col-md-9">
-                                        <button id="btn-signup" type="button" class="btn btn-info"><i class="icon-hand-right"></i> &nbsp Sign Up</button>
-                                        <span style="margin-left:8px;">or</span>  
-                                    </div>
-                                </div>
-                                
-                                <div style="border-top: 1px solid #999; padding-top:20px"  class="form-group">
-                                    
-                                    <div class="col-md-offset-3 col-md-9">
-                                        <button id="btn-fbsignup" type="button" class="btn btn-primary"><i class="icon-facebook"></i>   Sign Up with Facebook</button>
-                                    </div>                                           
-                                        
-                                </div>
-                                
-                                
-                                
-                            </form>
-                         </div>
-                    </div>
-
-               
-               
-                
-         </div> 
-    </div>
     
+    
+                                    
+                                </form>     
+    
+    
+    
+                            </div>                     
+                        </div>  
+            </div>
+            <div id="signupbox" style="display:none; margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <div class="panel-title">Sign Up</div>
+                                <div style="float:right; font-size: 85%; position: relative; top:-10px"><a id="signinlink" href="#" onclick="$('#signupbox').hide(); $('#loginbox').show()">Sign In</a></div>
+                            </div>  
+                            <div class="panel-body" >
+                                <form id="signupform" class="form-horizontal" role="form">
+                                    
+                                    <div id="signupalert" style="display:none" class="alert alert-danger">
+                                        <p>Error:</p>
+                                        <span></span>
+                                    </div>
+                                        
+                                    
+                                      
+                                    <div class="form-group">
+                                        <label for="email" class="col-md-3 control-label">Email</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control" name="email" placeholder="Email Address">
+                                        </div>
+                                    </div>
+                                        
+                                    <div class="form-group">
+                                        <label for="firstname" class="col-md-3 control-label">First Name</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control" name="firstname" placeholder="First Name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lastname" class="col-md-3 control-label">Last Name</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control" name="lastname" placeholder="Last Name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password" class="col-md-3 control-label">Password</label>
+                                        <div class="col-md-9">
+                                            <input type="password" class="form-control" name="passwd" placeholder="Password">
+                                        </div>
+                                    </div>
+                                        
+                                    <div class="form-group">
+                                        <label for="icode" class="col-md-3 control-label">Invitation Code</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control" name="icode" placeholder="">
+                                        </div>
+                                    </div>
+    
+                                    <div class="form-group">
+                                        <!-- Button -->                                        
+                                        <div class="col-md-offset-3 col-md-9">
+                                            <button id="btn-signup" type="button" class="btn btn-info"><i class="icon-hand-right"></i> &nbsp Sign Up</button>
+                                            <span style="margin-left:8px;">or</span>  
+                                        </div>
+                                    </div>
+                                    
+                                    <div style="border-top: 1px solid #999; padding-top:20px"  class="form-group">
+                                        
+                                        <div class="col-md-offset-3 col-md-9">
+                                            <button id="btn-fbsignup" type="button" class="btn btn-primary"><i class="icon-facebook"></i>   Sign Up with Facebook</button>
+                                        </div>                                           
+                                            
+                                    </div>
+                                    
+                                    
+                                    
+                                </form>
+                             </div>
+                        </div>
+    
+                   
+                   
+                    
+             </div> 
+        </div>
+	</div>   
 
 
 	<footer>

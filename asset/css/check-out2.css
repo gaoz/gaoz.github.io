@@ -105,14 +105,55 @@ background-color: #888;
 border-color: #777;
 }
 
-@media (min-width: 992px) {   /* desktop view */
+.cart-checkout-section .mybox{
+display: none;
+}
+.cart-checkout-section .mybox2{
+display: none;
+}
+ 
 
+
+
+@media (min-width: 992px) {   /* desktop view */
+	
    .cart-checkout-section .container { /* 其它页面都是限在860px宽的, 这个1170px宽度是把CHECKOUT这页面还原到BOOTSTRAP的原始设定 */
         width: 1170px;
     }
 
 }
-
+@media (min-width: 768px){ /* desktop small window view  col-sm-x */
+	.cart-checkout-section .plan_notes_box{
+		padding-left:1px;
+		padding-right:1px;
+	}
+	.cart-checkout-section .item-person {
+		padding-left:1px;
+		padding-right:1px;
+	}
+	.cart-checkout-section .item-description p>label {
+		width: 100%;
+		text-align:left;
+		
+	
+	}
+	.cart-checkout-section .switch-to-zero-width-mobile-view{
+		width:0%!important;
+	}
+	
+	.cart-checkout-section #mobile-style{
+		width:45%!important;
+	}
+	.cart-checkout-section #mobile-style1{
+		width:45%!important;
+	}
+	.cart-checkout-section #mobile-style2{
+		width:10%!important;
+	}
+	.cart-checkout-section #price-table{
+	margin-top:0px;	
+	}
+}
 @media (max-width: 767px){/* mobile view  */
 	.cart-checkout-section .plan_notes_box{
 		padding-left:1px;
