@@ -105,13 +105,6 @@ background-color: #888;
 border-color: #777;
 }
 
-.cart-checkout-section .mybox{
-display: none;
-}
-.cart-checkout-section .mybox2{
-display: none;
-}
- 
 
 
 
@@ -128,6 +121,11 @@ display: none;
 		padding-right:1px;
 	}
 	.cart-checkout-section .item-person {
+		padding-left:1px;
+		padding-right:1px;
+	}
+	
+	.cart-checkout-section .group-transportation {
 		padding-left:1px;
 		padding-right:1px;
 	}
@@ -161,6 +159,10 @@ display: none;
 	}
 
 	.cart-checkout-section .item-person {
+		padding-left:1px;
+		padding-right:1px;
+	}
+	.cart-checkout-section .group-transportation {
 		padding-left:1px;
 		padding-right:1px;
 	}

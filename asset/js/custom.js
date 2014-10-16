@@ -220,29 +220,9 @@ $(function () {
 });
 
 
-/*  hide and show content js when click on a checkbox*/
-
-$('.collapse').collapse();
-$('.panel-heading h4 a input[type=checkbox]').on('click', function(e){
-    e.stopPropagation();
-    $(this).parent().trigger('click');   // <---  HERE helps to check the box when click on the component
-	
-})
-$('#collapse1').on('show.bs.collapse', function(e){
-    if( ! $('.panel-heading h4 a input[type=checkbox]').is(':checked') )
-    {
-        return false;
-    }
-});
-$('#collapse2').on('show.bs.collapse', function(e){
-    if( ! $('.panel-heading h4 a input[type=checkbox]').is(':checked') )
-    {
-        return false;
-    }
-});
-
-
-/* animation script */
+/* animation script 
+use those .left-in .right-in below to animation components in our page.
+*/
 
 // this script is used with viewcheck js (inside custom.js) to control the animation (animate.css) in the page when scroll. 
 		$('.left-in').viewportChecker({
@@ -270,35 +250,117 @@ $('#collapse2').on('show.bs.collapse', function(e){
 
 
 
-
-$(document).ready(function(){
-	$('input[type="radio"]').click(function(){
-		if($(this).attr("value")=="displaythis"){
-			$(".mybox").hide();
-			$(".displaythis").show();
-		}
-		if($(this).attr("value")=="hidethis"){
-			$(".mybox").hide();
+/*  type 1: simple hide and show content when click on a checkbox*/
+$('.collapse').collapse();
+$('.panel-heading h4 a input[type=checkbox]').on('click', function(e){
+    e.stopPropagation();
+    $(this).parent().trigger('click');   // <---  HERE helps to check the box when click on the component
 	
+})
+
+
+/*  type 2: multiple box to hide and show content when click on a checkbox*/
+
+/* fixed code*/
+/* this is for transportation group pick up option panel */
+$(document).ready(function(){  
+	$('input[type="radio"]').click(function(){
+		if($(this).attr("value")=="trans1"){
+			$(".mybox0").hide();
+			$(".trans1").show();
 		}
-		if($(this).attr("value")=="hidethis2"){
-			$(".mybox").hide();
+		if($(this).attr("value")=="trans2"){
+			$(".mybox0").hide();
+			$(".trans2").show();
+		}
+		if($(this).attr("value")=="trans3"){
+			$(".mybox0").hide();
 
 		}
 	});
 });
 
 
-$(document).ready(function(){
+
+
+
+
+/* 
+JS for person info panel
+
+when looping this code, remeber to increase 
+
+raido-set#
+hotel#
+other#
+mybox#
+
+************
+# = number
+************
+
+*/
+$(document).ready(function(){  /* this is for each hotel/other address options(transportation panel, each person panel)*/
 	$('input[type="radio"]').click(function(){
-		if($(this).attr("value")=="show_hotel_content"){
-			$(".mybox2").hide();
-			$(".show_hotel_content").show();
+		if($(this).attr("value")=="hotel1"){
+			$(".mybox1").hide();
+			$(".hotel1").show();
 		}
-		if($(this).attr("value")=="show_else_content"){
-			$(".mybox2").hide();
-			$(".show_else_content").show();
+		if($(this).attr("value")=="other1"){
+			$(".mybox1").hide();
+			$(".other1").show();
 		}
 
 	});
+});
+
+
+$(document).ready(function(){   /* this is for each hotel/other address options(transportation panel, each person panel)*/
+	$('input[type="radio"]').click(function(){
+		if($(this).attr("value")=="hotel2"){
+			$(".mybox2").hide();
+			$(".hotel2").show();
+		}
+		if($(this).attr("value")=="other2"){
+			$(".mybox2").hide();
+			$(".other2").show();
+		}
+
+	});
+});
+/* */
+
+
+/* js that check whether has item in the cart and display differently */
+var repeater;
+function doWork() {
+ 		if ( $( "#cart-item" ).length ) {
+			
+		}else{
+			
+			$(".cart-with-items").hide();
+			$(".cart-without-items").show();	
+		}
+ repeater = setTimeout(doWork, 1000);
+}
+doWork();
+
+
+
+/* delete buttons */
+$('.delete-person').on("click", function () {
+    $(this).parents('div.item-person').fadeOut("slow", function() {
+		$(this).remove();
+		
+	});
+
+
+});
+
+$('.delete-item').on("click", function () {
+    $(this).parents('div.item').fadeOut("slow", function() {
+		$(this).remove();
+		
+	});
+		
 });
