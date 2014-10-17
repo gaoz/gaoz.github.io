@@ -386,7 +386,15 @@ background-color:#333;
 }
 
 
-
+/* image size box - one class finish all the job for resizing the img - you need to size the image box*/
+.ratio-img-box-cover {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	border-bottom-left-radius: 3px;
+	border-top-left-radius: 3px;
+}
 
 
 /***************footer section**********************/

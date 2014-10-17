@@ -99,6 +99,7 @@
 	background-repeat: no-repeat;
 	height: 30px;
 	background-size: 100% auto;
+	
 }
 .three-rows-text-limit{
 
@@ -156,7 +157,18 @@ display: -webkit-box;
 .tour7 {
     background: url(../img/plan/tour7.jpg) no-repeat center center;
 }
-
+.news1{
+	background: url(http://ww2.sinaimg.cn/bmiddle/b4031917gw1elcof5i8cyj20bw0gn75l.jpg)no-repeat center center; 	
+}
+.news2{
+	background: url(http://ww3.sinaimg.cn/bmiddle/b4031917gw1elbkmi428rj20b70cj3zt.jpg)no-repeat center center; 	
+}
+.news3{
+	background: url(http://ww4.sinaimg.cn/bmiddle/b4031917jw1elberq3r7vj20h4078wgi.jpg)no-repeat center center; 	
+}
+.news4{
+	background: url(http://ww3.sinaimg.cn/bmiddle/b4031917jw1elbetpc1qjj20ci08cq4f.jpg)no-repeat center center; 	
+}
 #no-left-padding{
 	padding-left:0px;
 }
