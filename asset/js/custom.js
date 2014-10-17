@@ -331,7 +331,7 @@ $(document).ready(function(){   /* this is for each hotel/other address options(
 /* */
 
 
-/* js that check whether has item in the cart and display differently */
+/* js that check whether has item in the cart and display a 0 item in the cart in a new panel */
 var repeater;
 function doWork() {
  		if ( $( "#cart-item" ).length ) {
@@ -364,3 +364,14 @@ $('.delete-item').on("click", function () {
 	});
 		
 });
+
+/* news feed scroll */
+var div = $('div.newsfeed');
+setInterval(function(){
+    var pos = div.scrollTop();
+	div.animate({ scrollTop: (pos + 100) });
+	if (div[0].scrollHeight - div.scrollTop() == div.outerHeight()) 
+	{	
+		div.animate({ scrollTop: 0 });
+	}
+}, 5000)
