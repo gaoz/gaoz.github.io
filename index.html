@@ -195,51 +195,83 @@
     <!-- /.carousel -->
 
   	<!--social media news feed ===========================-->
+    <style>
+	.newsfeed .news-card{	
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:20px;
+		height: 100px;	
+	}
+	.newsfeed .item{
+		border-radius:5px;
+		height:100%;
+		background-color:white;
+	}
+	.newsfeed .item a{
+		letter-spacing: 0.07em;
+		color:hsla(0,0%,58%,1.00);
+		cursor:pointer;
+	}
+	.newsfeed .news-image{
+		height:80px;
+		margin-left:15px;
+	}
+	</style>
     <div class="container mobile mobile-program-title visible-xs ">
-                          
-                             <p class="text-center">Weibo News Feed</p>
-                     
-                    
+    	<p class="text-center">Weibo News Feed</p>
     </div>
     <div class="jumbotron hidden-xs"  style="padding:10px; padding-top:30px;" >
-            	<div class="text-center container"> 
-            	<h1 class="desktop-program-title" style="font-size:18px;">Weibo News Feed</h1>
-                </div>
-    </div>
-    <div class="jumbotron" style=" background-color:#ddd; padding:10px; padding-left:8%;padding-right:8%; padding-top:30px; " >	
-    	<div class="newsfeed" style="height:100px; background-color:white; overflow:auto; border-radius:5px;" >
-              <div style="display:inline-block; width:300px;" >
-              		<div class="ratio-img-box-cover news1" style="background-color:#ddd; display:inline-block; vertical-align:top; height:90px; width:90px; margin:5px;"></div>
-                   	<div style="background-color:#ddd; display:inline-block; vertical-align:top; width:200px; height:90px;margin-top:5px; margin-left:-8px; padding-left:10px; border-bottom-right-radius:3px;border-top-right-radius:3px; "><h6 class="three-rows-text-limit"><a style="letter-spacing: 0.07em; color:#444;cursor:pointer;">List Special Membership Offers. Example, 3 Day Pass, 1 Week, 30 Day. Flexibility to offer complimentary passes and/or purchase passes at discounted</a></h6>
-                    <h6 class="one-row-text-limit"><a style="color:#444; cursor:pointer;">Posted on 10.07.2015</a></h6>
-                    </div>  
-              </div>
-              <div style="display:inline-block; width:300px;" >
-              		<div class="ratio-img-box-cover news2" style="background-color:#ddd; display:inline-block; vertical-align:top; height:90px; width:90px; margin:5px;"></div>
-                   	<div style="background-color:#ddd; display:inline-block; vertical-align:top; width:200px; height:90px;margin-top:5px; margin-left:-8px; padding-left:10px; border-bottom-right-radius:3px;border-top-right-radius:3px; "><h6 class="three-rows-text-limit"><a style="letter-spacing: 0.07em; color:#444;cursor:pointer;">List Special Membership Offers. Example, 3 Day Pass, 1 Week, 30 Day. Flexibility to offer complimentary passes and/or purchase passes at discounted</a></h6>
-                    <h6 class="one-row-text-limit"><a style="color:#444; cursor:pointer;">Posted on 10.07.2015</a></h6>
-                    </div>  
-              </div>
-              <div style="display:inline-block; width:300px;" >
-              		<div class="ratio-img-box-cover news3" style="background-color:#ddd; display:inline-block; vertical-align:top; height:90px; width:90px; margin:5px;"></div>
-                   	<div style="background-color:#ddd; display:inline-block; vertical-align:top; width:200px; height:90px;margin-top:5px; margin-left:-8px; padding-left:10px; border-bottom-right-radius:3px;border-top-right-radius:3px; "><h6 class="three-rows-text-limit"><a style="letter-spacing: 0.07em; color:#444;cursor:pointer;">List Special Membership Offers. Example, 3 Day Pass, 1 Week, 30 Day. Flexibility to offer complimentary passes and/or purchase passes at discounted</a></h6>
-                    <h6 class="one-row-text-limit"><a style="color:#444; cursor:pointer;">Posted on 10.07.2015</a></h6>
-                    </div>  
-              </div>
-              <div style="display:inline-block; width:300px;" >
-              		<div class="ratio-img-box-cover news4" style="background-color:#ddd; display:inline-block; vertical-align:top; height:90px; width:90px; margin:5px;"></div>
-                   	<div style="background-color:#ddd; display:inline-block; vertical-align:top; width:200px; height:90px;margin-top:5px; margin-left:-8px; padding-left:10px; border-bottom-right-radius:3px;border-top-right-radius:3px; "><h6 class="three-rows-text-limit"><a style="letter-spacing: 0.07em; color:#444;cursor:pointer;">List Special Membership Offers. Example, 3 Day Pass, 1 Week, 30 Day. Flexibility to offer complimentary passes and/or purchase passes at discounted</a></h6>
-                    <h6 class="one-row-text-limit"><a style="color:#444; cursor:pointer;">Posted on 10.07.2015</a></h6>
-                    </div>  
-              </div>
-              
-              
-              
-                            
+        <div class="text-center container"> 
+        <h1 class="desktop-program-title" style="font-size:18px;">Weibo News Feed</h1>
         </div>
-        <div class="program-shadow" style="height:50px;">
-        </div>	
-   	</div>  
+    </div>
+    
+    <div class="newsfeed jumbotron">
+    	<div class="fluide-container">
+        	<div class="row">
+        		<div class="fade-in col-lg-3 col-sm-6 col-xs-12 news-card">
+                	<div class="item">
+                    	<div class="row">
+                    		<div class="col-xs-4 col-sm-4 ratio-img-box-cover news-image news1"></div>
+                        	<div class="col-xs-7 col-sm-7"><h6 class="four-rows-text-limit"><a>List Special Membership Offers. Example, 3 Day Pass, 1 Week, 30 Day. Flexibility to offer complimentary passes and/or purchase passes at discounted</a></h6></div>
+                    	</div>
+                    </div> 
+                    <div class="program-shadow" style="height:50px;"></div>	
+            	</div>  
+                <div class="fade-in col-lg-3 col-sm-6 col-xs-12 news-card">
+                	<div class="item">
+                    	<div class="row">
+                    		<div class="col-xs-4 col-sm-4 ratio-img-box-cover news-image news2"></div>
+                        	<div class="col-xs-7 col-sm-7"><h6 class="four-rows-text-limit"><a >分享:日本密苏里号粉丝所做的密苏里号战舰，非常精致的模型!! 作品名称: "有些人赴战求生存，有些人赴战求身亡" "SOME FOUGHT TO LIVEーSOME FOUGHT TO DIE" 设计者:RENE HIERONYMUS PHOTOS: ALBERT MOSER 比例:1:72 花费工时：746 hours Scratch Build</a></h6></div>
+                    	</div>
+                    </div> 
+                    <div class="program-shadow" style="height:50px;"></div>	
+            	</div> 
+                <div class="fade-in col-lg-3 col-sm-6 col-xs-12 news-card">
+                	<div class="item">
+                    	<div class="row">
+                    		<div class="col-xs-4 col-sm-4 ratio-img-box-cover news-image news3"></div>
+                        	<div class="col-xs-7 col-sm-7"><h6 class="four-rows-text-limit"><a >美国国家气象局(National Weather Service)表示，热带风暴安娜(Ana)预料将在本周增强为飓风，根据预测，安娜将在18日下午掠过大岛，并在19日通过夏威夷毛伊岛(Maui) 。 Photo: Central Pacific Hurricane Center</a></h6></div>
+                    	</div>
+                    </div> 
+                    <div class="program-shadow" style="height:50px;"></div>	
+            	</div> 
+                <div class="fade-in col-lg-3 col-sm-6 col-xs-12 news-card">
+                	<div class="item">
+                    	<div class="row">
+                    		<div class="col-xs-4 col-sm-4 ratio-img-box-cover news-image news4"></div>
+                        	<div class="col-xs-7 col-sm-7"><h6 class="four-rows-text-limit"><a>生存，有些人赴战求身亡" "SOME FOUGHT TO LIVEーSOME FOUGHT TO DIE" 设计者:RENE HIERONYMUS PHOTOS: ALBERT MOSER 比例:1:72 花费工时：746 hours Scratch Build</a></h6></div>
+                    	</div>
+                    </div> 
+                    <div class="program-shadow" style="height:50px;"></div>	
+            	</div>             
+            </div>
+    	</div>
+    </div>
+    
+    
+    
+     
     <!--end of social media news feed ===========================-->
     
 

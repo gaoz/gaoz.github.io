@@ -101,6 +101,22 @@
 	background-size: 100% auto;
 	
 }
+.five-rows-text-limit{
+
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical; 
+
+}
+.four-rows-text-limit{
+
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical; 
+
+}
 .three-rows-text-limit{
 
   overflow: hidden;
