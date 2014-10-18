@@ -1,37 +1,5 @@
 // JavaScript Document
 
-$(function(){
-	
-	/* social media icon hang over effect Service hovers */
-	$("#social ul li").hover(
-		function() {
-			$("#social").addClass($(this).data("network")).addClass("active");
-			$("#socialmediatext").html($(this).data("text"));
-		},
-		function() {
-			$("#social").removeClass();
-			$("#socialmediatext").html("Find me on the web");
-		}
-	);
-	
-	
-	
-/* Pull down on-row-fluid-------------------------------------
-+-span6----------+
-|                |
-| content        |
-| that           | 
-| is tall        | +-span6----------+    
-|                | |short content   |
-+----------------+ +----------------+
------------------------------------------------ */
-	$('.pull-down').each(function() {
-    	$(this).css('margin-top', $(this).parent().height()-$(this).height())
-	});
-		
-});
-
-
 
 	
 /* Div clickable with link that links to a <a> tag inside it-------------------------------------
@@ -365,7 +333,8 @@ $('.delete-item').on("click", function () {
 		
 });
 
-/* news feed scroll */
+/* div auto scroll and backup - not being used.*/
+/*
 var div = $('div.newsfeed');
 setInterval(function(){
     var pos = div.scrollTop();
@@ -375,3 +344,4 @@ setInterval(function(){
 		div.animate({ scrollTop: 0 });
 	}
 }, 5000)
+*/

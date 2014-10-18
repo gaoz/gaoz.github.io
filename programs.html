@@ -1194,45 +1194,12 @@
  	
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="asset/js/jQuery_v1.8.2.js"></script><!--this old version jQuery must be used with SmoothScroll.js-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>  <!--bootstrap only works with this 1.11 jquery. and the 1.8 is used to handle the viewport js bug that. better to keep both -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="asset/js/jQuery_v1.8.2.js"></script><!--this old version jQuery must be used with SmoothScroll.js-->    <!--if delete this jquery v1.8.2, it will cause a nav auto expanded when switch to mobile view. the bug comes from custom.js/viewport checker js(bug source)-->
     <script src="asset/js/SmoothScroll.js"></script><!--this js must be used with jQuery_v1.8.2.js-->
-    <script src="asset/js/bootstrap.min.js"></script>
-    <script src="asset/js/custom.js"></script>
-    <!--<script src="asset/js/skrollr.js"></script>--><!--this js must be used with parallax_slidershow_controller.js--> 
-    <!--<script src="asset/js/parallax_slidershow_controller.js"></script>--><!--this js must be used with skrollr.js-->
-   <!-- <script src="https://raw.githubusercontent.com/dirkgroenen/jQuery-viewport-checker/master/jquery.viewportchecker.js"></script>-->
-   
-   
-   
-   
-   	<script>
-		// this script is used with viewcheck js (inside custom.js) to control the animation (animate.css) in the page when scroll. 
-		$('.left-in').viewportChecker({
-			classToAdd: 'animated fadeInLeft', // Class to add to the elements when they are visible
-			offset: -100, // The offset of the elements (let them appear earlier or later)
-			callbackFunction: function(elem, action){} // Callback to do after a class was added to an element. Action will return "add" or "remove", depending if the class was added or removed
-		});
-		$('.right-in').viewportChecker({
-			classToAdd: 'animated fadeInRight', // Class to add to the elements when they are visible
-			offset: -100, // The offset of the elements (let them appear earlier or later)
-			callbackFunction: function(elem, action){} // Callback to do after a class was added to an element. Action will return "add" or "remove", depending if the class was added or removed
-		});
-		$('.fade-in').viewportChecker({
-			classToAdd: 'animated fadeInUp', // Class to add to the elements when they are visible
-			offset: -100, // The offset of the elements (let them appear earlier or later)
-			callbackFunction: function(elem, action){} // Callback to do after a class was added to an element. Action will return "add" or "remove", depending if the class was added or removed
-		});
-		
-		$('.bounce-in').viewportChecker({
-			classToAdd: 'animated bounceIn', // Class to add to the elements when they are visible
-			offset: -100, // The offset of the elements (let them appear earlier or later)
-			callbackFunction: function(elem, action){} // Callback to do after a class was added to an element. Action will return "add" or "remove", depending if the class was added or removed
-		});
-	</script>
+	<script src="asset/js/custom.js"></script>
 
 	
   </body>
