@@ -1,35 +1,74 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <meta name="description" content=""> 	
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
 
-    <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <title>WhiteLabelSite</title>
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet">
+	<!-- language flat icon CSS -- document https://github.com/usrz/bootstrap-languages -->
+    <link href="asset/css/languages.css" rel="stylesheet">
+    <!-- social media icon CSS with social_media_icon.js-- document https://http://codepen.io/benfields/pen/pnoEL -->
+    <link href="asset/css/hover-effect.css" rel="stylesheet">
+    <link href="asset/css/Flat_Social_Buttons.css" rel="stylesheet">
+    <link href="asset/css/program-cards.css" rel="stylesheet">
+    <link href="asset/css/animate.css" rel="stylesheet">
+	<link href="asset/css/theme1.css" rel="stylesheet">
+    <link href="asset/css/bootstrap_helper.css" rel="stylesheet"> <!--test test test , this can be deleted anytime-->
+    <link href="asset/css/more-programs.css" rel="stylesheet"> 
+    <!-- Custom 1 styles for this template -->
+   
 
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+ 
+	<style>
+		.logo-mat{
+	position: fixed;
+	height: 100px;
+	width: 170px;
+	background-color: white;
+	z-index: 9999;
+	margin-left: -10px;
+	text-shadow: 4px 4px 0px hsla(0,0%,0%,1.00);
+	
+		}
+		.main-nav ul.nav, .brandname{
+			padding-left:200px;	
+		}
+		@media (max-width: 767px){/* fix mobile view menu bar static stick to the top */
 
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+		.logo-mat{
+			height:50px;
+			border-bottom-left-radius: 0px;
+			border-bottom-right-radius: 0px;
+			margin-left:-15px;
+			background-color: white;
+		}
+		}
+	</style>
   </head>
+
   <body>
-     <!-- Fixed navbar -->
+	
+    <!-- Fixed navbar -->
     <div class="theme1-nav navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container-fluid">
+      		<div class="logo-mat navlogo">
+            
+            </div>
       		<div class="row">
                 <div class=" navbar-header col-sm-6">
                 	<div class="row">
-                    	<div class="animated fadeInDown  col-xs-12 col-xs-height">
-                  		  <a class="navbar-brand blink_me" href="#">eTour WhiteLabel</a>					    </div>
+                    	<div class="brandname animated fadeInDown  col-xs-12 col-xs-height">
+                  		  <a class="navbar-brand blink_me" href="#"></a>					    </div>
                         <div class="col-xs-height col-middle">
                           <button type="button" class=" navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                             <span class="sr-only">Toggle navigation</span>
@@ -93,6 +132,527 @@
          
       </div>
     </div>
+    
+  
+    
+<!--space down from the menu bar and logo section--->
+    <div class="container hidden-xs">
+          <div style="height:105px"></div> 
+    </div>
+<!--end of space down from the menu bar and logo section--->
+	
+    
+    <!-- Carousel
+    ================================================== -->
+  <div id="MissionBanner" class="carousel slide">
+  
+        <ol class="animated fadeIn carousel-indicators">
+            <li data-target="#MissionBanner" data-slide-to="0" class="active"></li>
+            <li data-target="#MissionBanner" data-slide-to="1" class=""></li>
+            <li data-target="#MissionBanner" data-slide-to="2" class=""></li>
+            <li data-target="#MissionBanner" data-slide-to="3" class=""></li>
+            <li data-target="#MissionBanner" data-slide-to="4" class=""></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item ad1 active">
+                <div class="shadow-layer">
+                    <div class="animated fadeInUp carousel-caption">
+                        <h1>eTour International</h1>
+                        <p>Business to Business Solutions</p>
+                        <p>
+                            <a class="btn btn-lg btn-clear" href="#">Explore Our Company</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item ad2">
+                <div class="shadow-layer">
+                    <div class="animated fadeInUp carousel-caption">
+                        <h1>More Connections, More Revenues.</h1>
+                        <p>Create more relationships through online marketplace.</p>
+                        <p>
+                            <a class="btn btn-lg btn-clear" href="#">See Our Connections</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item ad3">
+                <div class="shadow-layer">
+                    <div class="animated fadeInUp carousel-caption">
+                        <h1>The Best Tour in Hawaii</h1>
+                        <p>Over 200 activities for you to select</p>
+                        <p>
+                            <a class="btn btn-lg btn-clear" href="#">Explore Our Tours</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item ad4 ">
+                <div class="shadow-layer">
+                    <div class="animated fadeInUp carousel-caption">
+                        <h1>Start Your Business with White Label Site </h1>
+                        <p>Bring business to your community</p>
+                        <p>
+                            <a class="btn btn-lg btn-clear" href="#">Start Here</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item ad5">
+                <div class="shadow-layer">
+                    <div class="animated fadeInUp carousel-caption">
+                        <h1>Meet Our Business Owners </h1>
+                         <p>Build world wide business connection.</p>
+                          <p>
+                            <a class="btn btn-lg btn-clear" href="#">Schedule</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    
+        <a class="animated fadeInLeft  left carousel-control" href="#MissionBanner" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="animated fadeInRight  right carousel-control" href="#MissionBanner" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+
+   
+    </div>
+    <!-- /.carousel -->
+
+  	<!--social media news feed ===========================-->
+    <style>
+	.newsfeed .news-card{	
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:20px;
+		height: 100px;	
+	}
+	.newsfeed .item{
+		border-radius:5px;
+		height:100%;
+		background-color:white;
+	}
+	.newsfeed .item a{
+		letter-spacing: 0.07em;
+		color:hsla(0,0%,58%,1.00);
+		cursor:pointer;
+	}
+	.newsfeed .news-image{
+		height:80px;
+		margin-left:15px;
+	}
+	</style>
+    <div class="container mobile mobile-program-title visible-xs ">
+    	<p class="text-center">Weibo News Feed</p>
+    </div>
+    <div class="jumbotron hidden-xs"  style="padding:10px; padding-top:30px;" >
+        <div class="text-center container"> 
+        <h1 class="desktop-program-title" style="font-size:18px;">Weibo News Feed</h1>
+        </div>
+    </div>
+    
+    <div class="newsfeed jumbotron">
+    	<div class="fluide-container">
+        	<div class="row">
+        		<div class="fade-in col-lg-3 col-sm-6 col-xs-12 news-card">
+                	<div class="item">
+                    	<div class="row">
+                    		<div class="col-xs-4 col-sm-4 ratio-img-box-cover news-image news1"></div>
+                        	<div class="col-xs-7 col-sm-7"><h6 class="four-rows-text-limit"><a>List Special Membership Offers. Example, 3 Day Pass, 1 Week, 30 Day. Flexibility to offer complimentary passes and/or purchase passes at discounted</a></h6></div>
+                    	</div>
+                    </div> 
+                    <div class="program-shadow" style="height:50px;"></div>	
+            	</div>  
+                <div class="fade-in col-lg-3 col-sm-6 col-xs-12 news-card">
+                	<div class="item">
+                    	<div class="row">
+                    		<div class="col-xs-4 col-sm-4 ratio-img-box-cover news-image news2"></div>
+                        	<div class="col-xs-7 col-sm-7"><h6 class="four-rows-text-limit"><a >分享:日本密苏里号粉丝所做的密苏里号战舰，非常精致的模型!! 作品名称: "有些人赴战求生存，有些人赴战求身亡" "SOME FOUGHT TO LIVEーSOME FOUGHT TO DIE" 设计者:RENE HIERONYMUS PHOTOS: ALBERT MOSER 比例:1:72 花费工时：746 hours Scratch Build</a></h6></div>
+                    	</div>
+                    </div> 
+                    <div class="program-shadow" style="height:50px;"></div>	
+            	</div> 
+                <div class="fade-in col-lg-3 col-sm-6 col-xs-12 news-card">
+                	<div class="item">
+                    	<div class="row">
+                    		<div class="col-xs-4 col-sm-4 ratio-img-box-cover news-image news3"></div>
+                        	<div class="col-xs-7 col-sm-7"><h6 class="four-rows-text-limit"><a >美国国家气象局(National Weather Service)表示，热带风暴安娜(Ana)预料将在本周增强为飓风，根据预测，安娜将在18日下午掠过大岛，并在19日通过夏威夷毛伊岛(Maui) 。 Photo: Central Pacific Hurricane Center</a></h6></div>
+                    	</div>
+                    </div> 
+                    <div class="program-shadow" style="height:50px;"></div>	
+            	</div> 
+                <div class="fade-in col-lg-3 col-sm-6 col-xs-12 news-card">
+                	<div class="item">
+                    	<div class="row">
+                    		<div class="col-xs-4 col-sm-4 ratio-img-box-cover news-image news4"></div>
+                        	<div class="col-xs-7 col-sm-7"><h6 class="four-rows-text-limit"><a>生存，有些人赴战求身亡" "SOME FOUGHT TO LIVEーSOME FOUGHT TO DIE" 设计者:RENE HIERONYMUS PHOTOS: ALBERT MOSER 比例:1:72 花费工时：746 hours Scratch Build</a></h6></div>
+                    	</div>
+                    </div> 
+                    <div class="program-shadow" style="height:50px;"></div>	
+            	</div>             
+            </div>
+    	</div>
+    </div>
+    
+    
+    
+     
+    <!--end of social media news feed ===========================-->
+    
+
+   	
+
+     <!--    activities
+  ================================================== ---->
+
+ 
+  			<div class="container mobile mobile-program-title visible-xs ">
+                          
+                             <p class="text-center">eTour Activities and Events</p>
+                     
+                    
+            </div>
+            
+  
+  			<div class="jumbotron hidden-xs">
+            	<div class="text-center container"> 
+            	<h1 class="desktop-program-title"> eTour Activities and Events</h1>
+                </div>
+            </div>
+  	
+            <div class="jumbotron hidden-xs">
+                                     <div class="left-in">
+                                                     <div class=" container programs-card"> <a class="view-detail" href="view-detail.html"></a>
+                                                            <div class="col-sm-4 col-xs-12" id="no-left-padding">
+                                                                       
+                                                                        <div class="item tour1"></div>              
+                                                            </div>	
+                                    
+                                                            
+                                                            <div class="programs col-sm-6 col-xs-12">
+                                                                <h3 class="program-title two-row-text-limit">Alii Kai Catamaran Dinner Cruise - New Special package</h3>
+                                                                <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;&nbsp;&nbsp;eTour International Group WL</h5>
+                                                                <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;91-119 Olai Street,Kapolei, HI 96707</h5>
+                                                                <span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;&nbsp;Description:<h5  class="three-rows-text-limit"> November 6-7: East Meets West in Startup Paradise 2014 "Digital Lifestyle" Conference in Honolulu, Hawaii - Reserve your seat now!</h5>
+                                                           
+                                                               <!-- <button style="display: block; width: 100%;" class="btn btn-dark">From $100&nbsp;&nbsp;&nbsp;&nbsp;View Details</button>-->
+                                                            </div>
+                                                            <div class="col-sm-2 col-xs-12">
+                                                                <div class="content text-center">
+                                                                       <P class="from">FROM</P>
+                                                                       <p class="price">$189</p> 
+                                                                       <p class="view-detail"><span class="glyphicon glyphicon-chevron-right"></span> View Detail</p>   
+                                                                </div>   
+                                                         
+                                                                       
+                                                                       
+                                                                          
+                                                            </div>	
+                                                        
+                                                    </div><!-- end of program card content -->
+                                                  	<div class="container" id="no-padding">
+                                                            <div class="program-shadow"></div>
+                                                    </div>
+                                    </div>
+                    
+            </div>
+          
+            
+            
+            <div class="jumbotron hidden-xs">
+                                     <div class="right-in">
+                                                     <div class=" container programs-card"> <a class="view-detail" href="view-detail.html"></a>
+                                                            <div class="col-sm-4 col-xs-12" id="no-left-padding">
+                                                                       
+                                                                        <div class="item tour2"></div>              
+                                                            </div>	
+                                    
+                                                            
+                                                            <div class="programs col-sm-6 col-xs-12">
+                                                                <h3 class="two-row-text-limit program-title">Honolulu Screamer Jet Boat</h3>
+                                                                <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;&nbsp;&nbsp;eTour International Group WL</h5>
+                                                                <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;91-119 Olai Street,Kapolei, HI 96707</h5>
+                                                                <span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;&nbsp;Description:<h5  class="three-rows-text-limit"> November 6-7: East Meets West in Startup Paradise 2014 "Digital Lifestyle" Conference in Honolulu, Hawaii - Reserve your seat now!</h5>
+                                                           
+                                                               <!-- <button style="display: block; width: 100%;" class="btn btn-dark">From $100&nbsp;&nbsp;&nbsp;&nbsp;View Details</button>-->
+                                                            </div>
+                                                            <div class="col-sm-2 col-xs-12">
+                                                                <div class="content text-center">
+                                                                       <P class="from">FROM</P>
+                                                                       <p class="price">$189</p>
+                                                                        <p class="view-detail"><span class="glyphicon glyphicon-chevron-right"></span> View Detail</p>     
+                                                                </div> 
+                                                                           
+                                                            </div>	
+                                                        
+                                                    </div><!-- end of program card content -->
+                                                  	<div class="container" id="no-padding">
+                                                            <div class="program-shadow"></div>
+                                                    </div>
+                                    </div>
+                    
+            </div>
+            
+            
+            
+            
+            <div class="jumbotron hidden-xs">
+                                     <div class="left-in">
+                                                     <div class=" container programs-card"> <a class="view-detail" href="view-detail.html"></a>
+                                                            <div class="col-sm-4 col-xs-12" id="no-left-padding">
+                                                                       
+                                                                        <div class="item tour3"></div>              
+                                                            </div>	
+                                    
+                                                            
+                                                            <div class="programs col-sm-6 col-xs-12">
+                                                                <h3 class="two-row-text-limit program-title">Honolulu Screamer Jet Boat</h3>
+                                                                <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;&nbsp;&nbsp;eTour International Group WL</h5>
+                                                                <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;91-119 Olai Street,Kapolei, HI 96707</h5>
+                                                                <span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;&nbsp;Description:<h5  class="three-rows-text-limit"> November 6-7: East Meets West in Startup Paradise 2014 "Digital Lifestyle" Conference in Honolulu, Hawaii - Reserve your seat now!</h5>
+                                                           
+                                                               <!-- <button style="display: block; width: 100%;" class="btn btn-dark">From $100&nbsp;&nbsp;&nbsp;&nbsp;View Details</button>-->
+                                                            </div>
+                                                            <div class="col-sm-2 col-xs-12">
+                                                                <div class="content text-center">
+                                                                       <P class="from">FROM</P>
+                                                                       <p class="price">$189</p>
+                                                                       <p class="view-detail"><span class="glyphicon glyphicon-chevron-right"></span> View Detail</p>     
+                                                                </div>           
+                                                            </div>	
+                                                        
+                                                    </div><!-- end of program card content -->
+                                                  	<div class="container" id="no-padding">
+                                                            <div class="program-shadow"></div>
+                                                    </div>
+                                    </div>
+                    
+            </div>
+            
+
+
+            <div class="jumbotron hidden-xs">
+                                     <div class="right-in">
+                                                     <div class=" container programs-card"> <a class="view-detail" href="view-detail.html"></a>
+                                                            <div class="col-sm-4 col-xs-12" id="no-left-padding">
+                                                                       
+                                                                        <div class="item tour4"></div>              
+                                                            </div>	
+                                    
+                                                            
+                                                            <div class="two-row-text-limit programs col-sm-6 col-xs-12">
+                                                                <h3 class="program-title">Honolulu Screamer Jet Boat</h3>
+                                                                <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;&nbsp;&nbsp;eTour International Group WL</h5>
+                                                                <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;91-119 Olai Street,Kapolei, HI 96707</h5>
+                                                                <span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;&nbsp;Description:<h5  class="three-rows-text-limit"> November 6-7: East Meets West in Startup Paradise 2014 "Digital Lifestyle" Conference in Honolulu, Hawaii - Reserve your seat now!</h5>
+                                                           
+                                                               <!-- <button style="display: block; width: 100%;" class="btn btn-dark">From $100&nbsp;&nbsp;&nbsp;&nbsp;View Details</button>-->
+                                                            </div>
+                                                            <div class="col-sm-2 col-xs-12">
+                                                                <div class="content text-center">
+                                                                       <P class="from">FROM</P>
+                                                                       <p class="price">$189</p>
+                                                                       <p class="view-detail"><span class="glyphicon glyphicon-chevron-right"></span> View Detail</p>     
+                                                                </div>           
+                                                            </div>	
+                                                        
+                                                    </div><!-- end of program card content -->
+                                                  	<div class="container" id="no-padding">
+                                                            <div class="program-shadow"></div>
+                                                    </div>
+                                    </div>
+                    
+            </div>
+            
+            <div class="jumbotron hidden-xs">
+                                     <div class="right-in">
+                                                     <div class=" container programs-card"> <a class="view-detail" href="view-detail.html"></a>
+                                                            <div class="col-sm-4 col-xs-12" id="no-left-padding">
+                                                                       
+                                                                        <div class="item tour5"></div>              
+                                                            </div>	
+                                    
+                                                            
+                                                            <div class="two-row-text-limit programs col-sm-6 col-xs-12">
+                                                                <h3 class="program-title">Honolulu Screamer Jet Boat</h3>
+                                                                <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;&nbsp;&nbsp;eTour International Group WL</h5>
+                                                                <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;91-119 Olai Street,Kapolei, HI 96707</h5>
+                                                                <span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;&nbsp;Description:<h5  class="three-rows-text-limit"> November 6-7: East Meets West in Startup Paradise 2014 "Digital Lifestyle" Conference in Honolulu, Hawaii - Reserve your seat now!</h5>
+                                                           
+                                                               <!-- <button style="display: block; width: 100%;" class="btn btn-dark">From $100&nbsp;&nbsp;&nbsp;&nbsp;View Details</button>-->
+                                                            </div>
+                                                            <div class="col-sm-2 col-xs-12">
+                                                                <div class="content text-center">
+                                                                       <P class="from">FROM</P>
+                                                                       <p class="price">$189</p>
+                                                                       <p class="view-detail"><span class="glyphicon glyphicon-chevron-right"></span> View Detail</p>     
+                                                                </div>           
+                                                            </div>	
+                                                        
+                                                    </div><!-- end of program card content -->
+                                                  	<div class="container" id="no-padding">
+                                                            <div class="program-shadow"></div>
+                                                    </div>
+                                    </div>
+                    
+            </div>
+            
+            
+            
+            <div class="jumbotron hidden-xs">
+                                     <div class="left-in">
+                                                     <div class=" container programs-card"> <a class="view-detail" href="view-detail.html"></a>
+                                                            <div class="col-sm-4 col-xs-12" id="no-left-padding">
+                                                                       
+                                                                        <div class="item tour6"></div>              
+                                                            </div>	
+                                    
+                                                            
+                                                            <div class="two-row-text-limit programs col-sm-6 col-xs-12">
+                                                                <h3 class="program-title">Honolulu Screamer Jet Boat</h3>
+                                                                <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;&nbsp;&nbsp;eTour International Group WL</h5>
+                                                                <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;91-119 Olai Street,Kapolei, HI 96707</h5>
+                                                                <span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;&nbsp;Description:<h5  class="three-rows-text-limit"> November 6-7: East Meets West in Startup Paradise 2014 "Digital Lifestyle" Conference in Honolulu, Hawaii - Reserve your seat now!tttttt ttttttttt tt ttttt ttt tttttttt ttttttttttttttttttttttttttttttttttttttttt</h5>
+                                                           
+                                                               <!-- <button style="display: block; width: 100%;" class="btn btn-dark">From $100&nbsp;&nbsp;&nbsp;&nbsp;View Details</button>-->
+                                                            </div>
+                                                            <div class="col-sm-2 col-xs-12">
+                                                                <div class="content text-center">
+                                                                       <P class="from">FROM</P>
+                                                                       <p class="price">$189</p>
+                                                                       <p class="view-detail"><span class="glyphicon glyphicon-chevron-right"></span> View Detail</p>     
+                                                                </div>           
+                                                            </div>	
+                                                        
+                                                    </div><!-- end of program card content -->
+                                                  	<div class="container" id="no-padding">
+                                                            <div class="program-shadow"></div>
+                                                    </div>
+                                    </div>
+                    
+            </div>
+            
+            <div class="container mobile padding-left-right-3% visible-xs ">
+                <div class="mobile-program-card">
+                    <a class="view-detail" href=""></a>
+                        <div class="program-image item tour4"></div>
+                        <div class="program-detail">
+                            <div class="row">
+                                <h5 class="col-xs-12 title ">Magic of Polynesia Show</h5>
+                                <div class="price text-center">
+                                 	<h5>CN$199</h5>
+                                 </div>
+                            </div>
+                        </div>
+                   
+                </div>     
+            </div>
+            
+            <div class="container mobile padding-left-right-3% visible-xs ">
+                <div class="mobile-program-card">
+                    <a class="view-detail" href=""></a>
+                        <div class="program-image item tour3"></div>
+                        <div class="program-detail">
+                            <div class="row">
+                                <h5 class="col-xs-12 title ">Alii Kai Catamaran Dinner Cruise</h5>
+                                <div class="price text-center">
+                                 	<h5>CN$199</h5>
+                                 </div>
+                            </div>
+                        </div>
+                   
+                </div>     
+            </div>
+            
+            
+            <div class="container mobile padding-left-right-3% visible-xs ">
+                <div class="mobile-program-card">
+                    <a class="view-detail" href=""></a>
+                        <div class="program-image item tour2"></div>
+                        <div class="program-detail">
+                            <div class="row">
+                                <h5 class="col-xs-12 title ">Ultimate Circle Island Eco Adventure</h5>
+                                <div class="price text-center">
+                                 	<h5>CN$199</h5>
+                                 </div>
+                            </div>
+                        </div>
+                  
+                </div>     
+            </div>
+            
+            
+            <div class="container mobile padding-left-right-3% visible-xs ">
+                <div class="mobile-program-card">
+                    <a class="view-detail" href=""></a>
+                        <div class="program-image item tour1"></div>
+                        <div class="program-detail">
+                            <div class="row">
+                                <h5 class="col-xs-12 title ">5 Star Sunset Dining & Jazz</h5>
+                                <div class="price text-center">
+                                 	<h5>CN$199</h5>
+                                 </div>
+                            </div>
+                        </div>
+                 
+                </div>     
+            </div>
+            
+            
+           
+      
+            
+            
+            
+
+            
+            
+            
+            
+            
+        
+            
+            
+            
+            
+            
+            
+  
+    <!-- end of activities showcase -->
+
+	<footer>
+    	<div class="container">
+             <div class="bounce-in col-sm-4 col-xs-12 supportedby">
+             	   <div class="supportedby-texts">Supported by</div>
+                   <div class="row supportedby-logos">
+                        <a href="http://etour.totalgds.com"><img height="50px" width="auto" alt="Flower" src="asset/img/etc/etourlogo.png" /></a>
+                        <a href="http://www.totalgds.com"><img height="50px" width="auto" alt="Flower" src="asset/img/etc/totalgdslogo.png" /></a>
+                        
+                   </div>
+             </div>
+             
+
+          <!--  <div id="totalgdslogo">-->
+             <div class="bounce-in col-sm-8 col-xs-12">
+                <a href="/en/site/about"> About us</a> | 
+                <a href="/en/site/terms"> Terms & Conditions</a>  | 
+                <a href="/en/site/privacy"> Privacy Policy</a>  | 
+                <a href="/en/site/cancellation"> Cancellation Policy</a>  | 
+                <a href="/en/site/contact"> Contact Us</a>  
+                <p class="cotyright">Copyright 2012-2014 &copy; eTour International Group WL</p>
+                <p class="socialmedia-footer">Follow Us On
+                                <a href="http://etour.totalgds.com"><img height="20px" width="auto" alt="Flower" src="https://www.facebook.com/images/fb_icon_325x325.png" /></a>
+                                <a href="http://www.totalgds.com"><img height="20px" width="auto" alt="Flower" src="https://g.twimg.com/Twitter_logo_blue.png" /></a></p>
+            </div>
+		</div>
+   
+	</footer> 
+ 	
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>  <!--bootstrap only works with this 1.11 jquery. and the 1.8 is used to handle the viewport js bug that. better to keep both -->
@@ -100,9 +660,10 @@
 	<script src="asset/js/jQuery_v1.8.2.js"></script><!--this old version jQuery must be used with SmoothScroll.js-->    <!--if delete this jquery v1.8.2, it will cause a nav auto expanded when switch to mobile view. the bug comes from custom.js/viewport checker js(bug source)-->
     <script src="asset/js/SmoothScroll.js"></script><!--this js must be used with jQuery_v1.8.2.js-->
 	<script src="asset/js/custom.js"></script>
+
    
-   
-   
-   
+
+
+	
   </body>
 </html>

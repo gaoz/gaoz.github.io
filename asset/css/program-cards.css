@@ -185,6 +185,14 @@ display: -webkit-box;
 .news4{
 	background: url(http://ww3.sinaimg.cn/bmiddle/b4031917jw1elbetpc1qjj20ci08cq4f.jpg)no-repeat center center; 	
 }
+.navlogo{
+	background: url(http://ussmissouri.cn/bundles/business/images/template/logo.png	)no-repeat center center;
+	background-size: contain;
+}
+.navlogo1{
+	background: url(http://totalgdsimg.qiniudn.com/536c1f6994a252f72400005f	)no-repeat center center;
+	background-size: contain;
+}
 #no-left-padding{
 	padding-left:0px;
 }
