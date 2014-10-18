@@ -101,9 +101,46 @@ http://www.web2feel.com/tutorial-for-animated-scroll-loading-effects-with-animat
 
 
 
+/* animation script 
+use those .left-in .right-in below to animation components in our page.
+*/
+
+// this script is used with viewcheck js (inside custom.js) to control the animation (animate.css) in the page when scroll. 
+		$('.left-in').viewportChecker({
+			classToAdd: 'animated fadeInLeft', // Class to add to the elements when they are visible
+			offset: -100, // The offset of the elements (let them appear earlier or later)
+			callbackFunction: function(elem, action){} // Callback to do after a class was added to an element. Action will return "add" or "remove", depending if the class was added or removed
+		});
+		$('.right-in').viewportChecker({
+			classToAdd: 'animated fadeInRight', // Class to add to the elements when they are visible
+			offset: -100, // The offset of the elements (let them appear earlier or later)
+			callbackFunction: function(elem, action){} // Callback to do after a class was added to an element. Action will return "add" or "remove", depending if the class was added or removed
+		});
+		$('.fade-in').viewportChecker({
+			classToAdd: 'animated  fadeInUp', // Class to add to the elements when they are visible
+			offset: -100, // The offset of the elements (let them appear earlier or later)
+			callbackFunction: function(elem, action){} // Callback to do after a class was added to an element. Action will return "add" or "remove", depending if the class was added or removed
+		});
+		$('.bounce-in').viewportChecker({
+			classToAdd: 'animated bounceIn', // Class to add to the elements when they are visible
+			offset: -100, // The offset of the elements (let them appear earlier or later)
+			callbackFunction: function(elem, action){} // Callback to do after a class was added to an element. Action will return "add" or "remove", depending if the class was added or removed
+		});
+
+
+
+
+
+
+
+
 /*
 
-js for checkbox style in viewdetail plan option panel and checkout process;
+customized checkbox style in viewdetail plan option panel and checkout process;
+Used Glyphicon check and uncheck icon to modify the checkbox style.
+
+>>>>used with type 1 checkbox js at line 227<<<<
+
 */
 
 
@@ -187,47 +224,38 @@ $(function () {
     });
 });
 
+/*  Type 1 checkbox: 
+Modified icon with js above. Simply hide and show content when click on a checkbox*/
 
-/* animation script 
-use those .left-in .right-in below to animation components in our page.
-*/
-
-// this script is used with viewcheck js (inside custom.js) to control the animation (animate.css) in the page when scroll. 
-		$('.left-in').viewportChecker({
-			classToAdd: 'animated fadeInLeft', // Class to add to the elements when they are visible
-			offset: -100, // The offset of the elements (let them appear earlier or later)
-			callbackFunction: function(elem, action){} // Callback to do after a class was added to an element. Action will return "add" or "remove", depending if the class was added or removed
-		});
-		$('.right-in').viewportChecker({
-			classToAdd: 'animated fadeInRight', // Class to add to the elements when they are visible
-			offset: -100, // The offset of the elements (let them appear earlier or later)
-			callbackFunction: function(elem, action){} // Callback to do after a class was added to an element. Action will return "add" or "remove", depending if the class was added or removed
-		});
-		$('.fade-in').viewportChecker({
-			classToAdd: 'animated  fadeInUp', // Class to add to the elements when they are visible
-			offset: -100, // The offset of the elements (let them appear earlier or later)
-			callbackFunction: function(elem, action){} // Callback to do after a class was added to an element. Action will return "add" or "remove", depending if the class was added or removed
-		});
-		$('.bounce-in').viewportChecker({
-			classToAdd: 'animated bounceIn', // Class to add to the elements when they are visible
-			offset: -100, // The offset of the elements (let them appear earlier or later)
-			callbackFunction: function(elem, action){} // Callback to do after a class was added to an element. Action will return "add" or "remove", depending if the class was added or removed
-		});
-
-
-
-
-
-/*  type 1: simple hide and show content when click on a checkbox*/
 $('.collapse').collapse();
 $('.panel-heading h4 a input[type=checkbox]').on('click', function(e){
     e.stopPropagation();
     $(this).parent().trigger('click');   // <---  HERE helps to check the box when click on the component
 	
 })
+/*
+$('#collapse1').on('show.bs.collapse', function(e){
+    if( ! $('.panel-heading h4 a input[type=checkbox]').is(':checked') )
+    {
+        return false;
+    }
+});
+
+$('#collapse2').on('show.bs.collapse', function(e){
+    if( ! $('.panel-heading h4 a input[type=checkbox]').is(':checked') )
+    {           
+        return false;
+    }
+});
+*/
 
 
-/*  type 2: multiple box to hide and show content when click on a checkbox*/
+
+
+
+
+/*  Type 2 checkbox: No style added, used default checkbox style. 
+multiple box to hide and show content when click on a checkbox*/
 
 /* fixed code*/
 /* this is for transportation group pick up option panel */
