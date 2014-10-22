@@ -193,6 +193,10 @@ display: -webkit-box;
 	background: url(http://totalgdsimg.qiniudn.com/536c1f6994a252f72400005f	)no-repeat center center;
 	background-size: contain;
 }
+.navlogo2{
+	background: url(http://www.koolinaoceanadventures.com/images/logot.png)no-repeat center center;
+	background-size: contain;
+}
 #no-left-padding{
 	padding-left:0px;
 }

@@ -29,46 +29,35 @@
 	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
  
-	<style>
-		.logo-mat{
-	position: fixed;
-	height: 100px;
-	width: 170px;
-	background-color: white;
-	z-index: 9999;
-	margin-left: -10px;
-	text-shadow: 4px 4px 0px hsla(0,0%,0%,1.00);
-	
-		}
-		.main-nav ul.nav, .brandname{
-			padding-left:200px;	
-		}
-		@media (max-width: 767px){/* fix mobile view menu bar static stick to the top */
 
-		.logo-mat{
-			height:50px;
-			border-bottom-left-radius: 0px;
-			border-bottom-right-radius: 0px;
-			margin-left:-15px;
-			background-color: white;
-		}
-		}
-	</style>
   </head>
 
   <body>
-	
+
     <!-- Fixed navbar -->
     <div class="theme1-nav navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container-fluid">
-      		<div class="logo-mat navlogo">
             
-            </div>
+            <!-- navi bar  -->
       		<div class="row">
-                <div class=" navbar-header col-sm-6">
+                <div class=" navbar-header col-sm-8">
                 	<div class="row">
-                    	<div class="brandname animated fadeInDown  col-xs-12 col-xs-height">
-                  		  <a class="navbar-brand blink_me" href="#"></a>					    </div>
+                    	<style>
+								.brandname{height:150px;}
+								.top {background-color: white; height: 100%; display:flex; align-items: center;}
+								.navbar-brand{padding-left:30px;}
+								.logoimage {background-color: white; width: 200px; height: 150px;}
+									
+						</style>     
+                    	<div class="brandname animated fadeInDown  col-xs-12 col-xs-height">   
+                        	
+                        	<div class="top">
+                                <div class="logoimage navlogo2"></div>
+                                <a class="hidden-xs navbar-brand">Ko'olina Adventure</a>
+                               
+                            </div>          		  
+                        </div>
+                        
                         <div class="col-xs-height col-middle">
                           <button type="button" class=" navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                             <span class="sr-only">Toggle navigation</span>
@@ -79,7 +68,7 @@
                         </div>
                     </div>    
                 </div>
-                <div class="navbar-collapse navbar-right collapse col-sm-6 secondary-nav">
+                <div class="navbar-collapse navbar-right collapse col-sm-4 secondary-nav">
                         <ul class="animated fadeInDown nav navbar-nav navbar-right">
                         <li class="dropdown">
                           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="lang-xs lang-lbl" lang="en"></span><span class="caret"></span></a>
