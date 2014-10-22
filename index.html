@@ -29,11 +29,11 @@
 	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
  
-
-  </head>
-
-  <body>
 	
+  </head>
+	
+  <body>
+
        <!-- Fixed navbar -->
     <div class="theme1-nav navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container-fluid">
@@ -41,19 +41,50 @@
             <!-- navi bar  -->
       		<div class="row">
                 <div class=" navbar-header col-sm-8">
-                	<div class="row">
+                	<div class="brand row">
+                    	<!-- NAVIGATION BAR TOP (LOGO, TITLE)-->
+                        <!-- Including a piece of js at custom.js line 378 (adjust logo and title size when scrolling)-->
+                        <!-- Including new css below -->
                     	<style>
-								.brandname{height:150px;}
-								.top {background-color: #f8f8f8; height: 100%; display:flex; align-items: center;}
-								.navbar-brand{padding-left:30px;}
-								.logoimage {background-color: #f8f8f8; width: 200px; height: 150px;}
-									
+							.top-nav {background-color: #f8f8f8; height: 100%; display:flex; align-items: center;}
+							.title-position{ margin-left: -15px; padding-left:40px;}
+							.title-style{
+								padding-bottom: 10px;
+								color: #555;
+								font-style: normal;
+								font-weight: 300;
+								text-transform: uppercase;
+								letter-spacing: 0.20em;
+								-webkit-font-smoothing: antialiased;
+								line-height:30px;
+								height: auto;
+								white-space:pre-wrap;
+							}
+							.title-sm{font-size:15px;}
+							.title-lg{font-size:25px;}
+							.logoimage {width: 200px; height: 150px;}
+							.logoimage-shrink{width: 65px; height: 50px;}
+							.transition{
+								-webkit-transition-delay: 0s;
+								-webkit-transition-duration: 0.25s;
+								-webkit-transition-property: height;
+								-webkit-transition-timing-function: linear;
+								
+								transition-delay: 0s;
+								transition-duration: 0.25s;
+								transition-property: height;
+								transition-timing-function: linear;	
+							}
+							.navlogo2{
+								background: url(http://www.koolinaoceanadventures.com/images/logot.png)no-repeat center center;
+								background-size: contain;
+							}
 						</style>     
-                    	<div class="brandname animated fadeInDown  col-xs-12 col-xs-height">   
+                    	<div class="animated fadeInDown  col-xs-12 col-xs-height">   
                         	
-                        	<div class="top">
-                                <div class="logoimage navlogo2"></div>
-                                <a class="hidden-xs navbar-brand">Ko'olina Adventure</a>
+                        	<div class="top-nav">
+                                <div class="transition logoimage navlogo2" id="logo"></div>
+                                <a class="hidden-xs title-position title-lg title-style" id="title">Ko'olina Adventure</a>
                                
                             </div>          		  
                         </div>
@@ -66,8 +97,8 @@
                             <span class="icon-bar"></span>
                           </button>
                         </div>
-                    </div>    
-                </div>
+                    </div> <!-- end of brand"-->   
+                </div><!-- end of navbar-header"-->   
                 <div class="navbar-collapse navbar-right collapse col-sm-4 secondary-nav">
                         <ul class="animated fadeInDown nav navbar-nav navbar-right">
                         <li class="dropdown">
