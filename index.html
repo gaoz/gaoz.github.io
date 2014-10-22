@@ -40,12 +40,13 @@
             
             <!-- navi bar  -->
       		<div class="row">
-                <div class=" navbar-header col-sm-8">
+                <div class="navbar-header">
                 	<div class="brand row">
                     	<!-- NAVIGATION BAR TOP (LOGO, TITLE)-->
-                        <!-- Including a piece of js at custom.js line 378 (adjust logo and title size when scrolling)-->
+                        <!-- Including a piece of js at index.html(bottom of this page) line 687 (adjust logo and title size when scrolling)-->
                         <!-- Including new css below -->
                     	<style>
+							
 							.top-nav {background-color: #f8f8f8; height: 100%; display:flex; align-items: center;}
 							.title-position{ margin-left: -15px; padding-left:40px;}
 							.title-style{
@@ -79,13 +80,48 @@
 								background: url(http://www.koolinaoceanadventures.com/images/logot.png)no-repeat center center;
 								background-size: contain;
 							}
+							/*small size window view*/
+							@media only screen 
+							and (min-device-width : 768px) 
+							and (max-device-width : 1024px) {
+							.title-lg{
+									font-size:15px;	
+								}
+							}
+							
 						</style>     
                     	<div class="animated fadeInDown  col-xs-12 col-xs-height">   
                         	
                         	<div class="top-nav">
                                 <div class="transition logoimage navlogo2" id="logo"></div>
-                                <a class="hidden-xs title-position title-lg title-style" id="title">Ko'olina Adventure</a>
-                               
+                                <a class="hidden-xs title-position title-lg title-style" hef="index.html" id="title">Ko'olina Adventure</a>
+                                 <div class="navbar-collapse navbar-right collapse secondary-nav">
+                                        <ul class="animated fadeInDown nav navbar-nav navbar-right">
+                                        <li class="dropdown">
+                                          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="lang-xs lang-lbl" lang="en"></span><span class="caret"></span></a>
+                                          <ul class="animated fadeInUp dropdown-menu" role="menu">
+                                            <li><a href="#"><span class="lang-xs lang-lbl" lang="en"></span></a></li>
+                                            <li><a href="#"><span class="lang-xs lang-lbl" lang="zh"></span></a></li>
+                                          </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">US$ Dollar <span class="caret"></span></a>
+                                          <ul class="animated fadeInUp dropdown-menu" role="menu">
+                                            <li><a href="#">฿ - Thai Baht</a></li>
+                                            <li><a href="#">JP¥ - Japanese Yen</a></li>
+                                            <li><a href="#">€ - Euro</a></li>
+                                            <li><a href="#">£ - Pound Sterling</a></li>
+                                            <li><a href="#">CN¥ - Chinese Yuan</a></li>
+                                          </ul>
+                                        </li>
+                                        <li>
+                                            <a href="check-out.html" class="dropdown-toggle"><span class="glyphicon glyphicon-shopping-cart"></span>(0)</a>
+                                        </li>
+                                        <li>
+                                            <a href="login.html" class="dropdown-toggle"><span class="glyphicon glyphicon-user"></span></a>
+                                        </li>
+                                      </ul>
+                                </div> 
                             </div>          		  
                         </div>
                         
@@ -98,34 +134,9 @@
                           </button>
                         </div>
                     </div> <!-- end of brand"-->   
-                </div><!-- end of navbar-header"-->   
-                <div class="navbar-collapse navbar-right collapse col-sm-4 secondary-nav">
-                        <ul class="animated fadeInDown nav navbar-nav navbar-right">
-                        <li class="dropdown">
-                          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="lang-xs lang-lbl" lang="en"></span><span class="caret"></span></a>
-                          <ul class="animated fadeInUp dropdown-menu" role="menu">
-                            <li><a href="#"><span class="lang-xs lang-lbl" lang="en"></span></a></li>
-                            <li><a href="#"><span class="lang-xs lang-lbl" lang="zh"></span></a></li>
-                          </ul>
-                        </li>
-                        <li class="dropdown">
-                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">US$ Dollar <span class="caret"></span></a>
-                          <ul class="animated fadeInUp dropdown-menu" role="menu">
-                            <li><a href="#">฿ - Thai Baht</a></li>
-                            <li><a href="#">JP¥ - Japanese Yen</a></li>
-                            <li><a href="#">€ - Euro</a></li>
-                            <li><a href="#">£ - Pound Sterling</a></li>
-                            <li><a href="#">CN¥ - Chinese Yuan</a></li>
-                          </ul>
-                        </li>
-                       	<li>
-                        	<a href="check-out.html" class="dropdown-toggle"><span class="glyphicon glyphicon-shopping-cart"></span>(0)</a>
-                        </li>
-                        <li>
-                        	<a href="login.html" class="dropdown-toggle"><span class="glyphicon glyphicon-user"></span></a>
-                        </li>
-                      </ul>
-                </div> 
+                 
+                   
+                </div><!-- end of navbar-header"-->  
 		 </div><!--row-->
          
          
@@ -680,7 +691,24 @@
 	<script src="asset/js/jQuery_v1.8.2.js"></script><!--this old version jQuery must be used with SmoothScroll.js-->    <!--if delete this jquery v1.8.2, it will cause a nav auto expanded when switch to mobile view. the bug comes from custom.js/viewport checker js(bug source)-->
     <script src="asset/js/SmoothScroll.js"></script><!--this js must be used with jQuery_v1.8.2.js-->
 	<script src="asset/js/custom.js"></script>
-
+    
+    
+  <!-- adjust navigation bar size when scroll down-->
+	<script>$(function(){
+      $(window).scroll(function(event){
+          if ($(document).scrollTop() > 200) {
+			$('#title').addClass('title-sm');
+			$('#title').removeClass('title-lg');
+			$('#logo').addClass('logoimage-shrink');
+			$('#logo').removeClass('logoimage');
+		  } else {
+			$('#title').removeClass('title-sm');
+			$('#title').addClass('title-lg');  
+			$('#logo').removeClass('logoimage-shrink');
+			$('#logo').addClass('logoimage');
+		  }
+	   });
+ 	});</script>
    
 
 

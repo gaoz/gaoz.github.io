@@ -375,21 +375,4 @@ setInterval(function(){
 */
 
 
-/* adjust navigation bar size when scroll down */
-$(function(){
-      //Keep track of last scroll
-      var lastScroll = 0;
-      $(window).scroll(function(event){
-          if ($(document).scrollTop() > 200) {
-			$('#title').addClass('title-sm');
-			$('#title').removeClass('title-lg');
-			$('#logo').addClass('logoimage-shrink');
-			$('#logo').removeClass('logoimage');
-		  } else {
-			$('#title').removeClass('title-sm');
-			$('#title').addClass('title-lg');  
-			$('#logo').removeClass('logoimage-shrink');
-			$('#logo').addClass('logoimage');
-		  }
-	   });
- });
+

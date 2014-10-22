@@ -102,7 +102,7 @@ color: #999;
 
 
 
-@media (max-width: 767px){
+@media (max-width: 767px){/*mobile view */
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
 border-bottom:0px solid #fff;
 border-left:4px solid #fff;
@@ -317,7 +317,7 @@ background-color:#333;
      font-size: 70px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 767px) {/*mobile view */
 	.carousel{
 	}
     .carousel .item {

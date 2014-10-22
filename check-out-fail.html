@@ -38,11 +38,56 @@
     <!-- Fixed navbar -->
     <div class="theme1-nav navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container-fluid">
+            
+            <!-- navi bar  -->
       		<div class="row">
-                <div class=" navbar-header col-sm-6">
-                	<div class="row">
-                    	<div class="animated fadeInDown  col-xs-12 col-xs-height">
-                  		  <a class="navbar-brand blink_me" href="#">eTour WhiteLabel</a>					    </div>
+                <div class=" navbar-header col-sm-6 col-lg-8">
+                	<div class="brand row">
+                    	<!-- ADDED LOGO IMAGE INTO NAVIGATION BAR TOP SECTION (LOGO, TITLE) CSS-->
+                    	<style>
+							.top-nav {background-color: #f8f8f8; height: 100%; display:flex; align-items: center;}
+							.title-position{ margin-left: -15px; padding-left:40px;}
+							.title-style{
+								padding-bottom: 10px;
+								color: #555;
+								font-style: normal;
+								font-weight: 300;
+								text-transform: uppercase;
+								letter-spacing: 0.20em;
+								-webkit-font-smoothing: antialiased;
+								line-height:30px;
+								height: auto;
+								white-space:pre-wrap;
+							}
+							.title-sm{font-size:15px;}
+							.title-lg{font-size:25px;}
+							.logoimage {width: 200px; height: 150px;}
+							.logoimage-shrink{width: 65px; height: 50px;}
+							.transition{
+								-webkit-transition-delay: 0s;
+								-webkit-transition-duration: 0.25s;
+								-webkit-transition-property: height;
+								-webkit-transition-timing-function: linear;
+								
+								transition-delay: 0s;
+								transition-duration: 0.25s;
+								transition-property: height;
+								transition-timing-function: linear;	
+							}
+							.navlogo2{
+								background: url(http://www.koolinaoceanadventures.com/images/logot.png)no-repeat center center;
+								background-size: contain;
+							}
+						</style>     
+                    	<div class="animated fadeInDown  col-xs-12 col-xs-height">   
+                        	
+                        	<div class="top-nav">
+                                <div class="transition logoimage-shrink navlogo2" id="logo"></div>
+                                <a class="hidden-xs title-position title-sm title-style" id="title">Ko'olina Adventure</a>
+                               
+                            </div>          		  
+                        </div>
+                        
                         <div class="col-xs-height col-middle">
                           <button type="button" class=" navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                             <span class="sr-only">Toggle navigation</span>
@@ -51,9 +96,9 @@
                             <span class="icon-bar"></span>
                           </button>
                         </div>
-                    </div>    
-                </div>
-                <div class="navbar-collapse navbar-right collapse col-sm-6 secondary-nav">
+                    </div> <!-- end of brand"-->   
+                </div><!-- end of navbar-header"-->   
+                <div class="navbar-collapse navbar-right collapse  col-sm-6 col-lg-4 secondary-nav">
                         <ul class="animated fadeInDown nav navbar-nav navbar-right">
                         <li class="dropdown">
                           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="lang-xs lang-lbl" lang="en"></span><span class="caret"></span></a>
@@ -106,6 +151,7 @@
          
       </div>
     </div>
+    
     
 <!--space down from the menu bar and logo section--->
     <div class="container hidden-xs">
