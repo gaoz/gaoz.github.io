@@ -444,7 +444,9 @@ footer .supportedby-texts{
 footer .socialmedia-footer{
 	letter-spacing: 1px;
 }
-
+footer .powerby{
+	text-transform:capitalize;
+}
 	
 /* end of footer section */
 

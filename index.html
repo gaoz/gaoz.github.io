@@ -47,10 +47,16 @@
                         <!-- Including new css below -->
                     	<style>
 							
-							.top-nav {background-color: #f8f8f8; height: 100%; display:flex; align-items: center;}
-							.title-position{ margin-left: -15px; padding-left:40px;}
+							.top-nav {background-color: #f8f8f8; height: 100%; 
+								display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+							 	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+							  	display: -ms-flexbox;      /* TWEENER - IE 10 */
+							  	display: -webkit-flex;     /* NEW - Chrome */
+							  	display: flex; 
+								align-items: center;}
+							.title-position{padding-left:10px;}
 							.title-style{
-								padding-bottom: 10px;
+								
 								color: #555;
 								font-style: normal;
 								font-weight: 300;
@@ -80,22 +86,63 @@
 								background: url(http://www.koolinaoceanadventures.com/images/logot.png)no-repeat center center;
 								background-size: contain;
 							}
-							/*small size window view*/
-							@media only screen 
-							and (min-device-width : 768px) 
-							and (max-device-width : 1024px) {
-							.title-lg{
-									font-size:15px;	
+							
+							@media (min-width: 768px){ /* desktop view */
+								.secondary-nav{
+										margin-top:-50px;	
 								}
+								#title{
+									margin-top:-30px;	
+								}
+								.title-position{padding-left:30px;}
+							}
+							@media (max-width: 767px){/*mobile view */
+								#title{font-size:15px;}
+								.logoimage { height: 50px;}
+								
+							}
+							.flex-container {
+							  padding-left:5px;
+							  -ms-box-orient: horizontal;
+							  display: -webkit-box;
+							  display: -moz-box;
+							  display: -ms-flexbox;
+							  display: -moz-flex;
+							  display: -webkit-flex;
+							  display: flex;
+							  
+							  
+							  -webkit-align-items: center; 
+							  align-items: center; 
 							}
 							
 						</style>     
                     	<div class="animated fadeInDown  col-xs-12 col-xs-height">   
                         	
-                        	<div class="top-nav">
+                        	<!--<div class="top-nav">
                                 <div class="transition logoimage navlogo2" id="logo"></div>
                                 <a class="hidden-xs title-position title-lg title-style" hef="index.html" id="title">Ko'olina Adventure</a>
-                                 <div class="navbar-collapse navbar-right collapse secondary-nav">
+                                
+                            </div>--> 
+                            <div class="flex-container">
+                                <div class="flex-item transition logoimage navlogo" id="logo"></div>
+                                <a class="text-center flex-item title-position title-lg title-style" hef="index.html" id="title">Ko'olina Adventure Ko'olina Adventure </a>
+                            </div>         		  
+                        </div>
+                        
+                        <div class="col-xs-height col-middle">
+                          <button type="button" class=" navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+                        </div>
+                    </div> <!-- end of brand"-->   
+                 
+                   
+                </div><!-- end of navbar-header"--> 
+               					 <div class="navbar-collapse navbar-right collapse secondary-nav">
                                         <ul class="animated fadeInDown nav navbar-nav navbar-right">
                                         <li class="dropdown">
                                           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="lang-xs lang-lbl" lang="en"></span><span class="caret"></span></a>
@@ -122,24 +169,9 @@
                                         </li>
                                       </ul>
                                 </div> 
-                            </div>          		  
-                        </div>
-                        
-                        <div class="col-xs-height col-middle">
-                          <button type="button" class=" navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                          </button>
-                        </div>
-                    </div> <!-- end of brand"-->   
-                 
-                   
-                </div><!-- end of navbar-header"-->  
 		 </div><!--row-->
          
-         
+         						  
         <div class="row"> 
             <div class="navbar-collapse collapse main-nav">
               <ul class="animated fadeInRight nav navbar-nav">
@@ -149,7 +181,7 @@
                 <li><a href="view-detail.html">View Detail</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Checkout <span class="caret"></span></a>
-                  <ul class="animated fadeInUp dropdown-menu" role="menu">
+                  <ul class="dropdown-menu" role="menu">
                     <li><a href="check-out.html">Checkout Now</a></li>
                     <li><a href="check-out-success.html">Checkout Success</a></li>
                     <li><a href="check-out-fail.html">Checkout Fail</a></li>
@@ -278,11 +310,11 @@
 	}
 	</style>
     <div class="container mobile mobile-program-title visible-xs ">
-    	<p class="text-center">Weibo News Feed</p>
+    	<p class="text-center">News Feed</p>
     </div>
     <div class="jumbotron hidden-xs"  style="padding:10px; padding-top:30px;" >
         <div class="text-center container"> 
-        <h1 class="desktop-program-title" style="font-size:18px;">Weibo News Feed</h1>
+        <h1 class="desktop-program-title" style="font-size:18px;">News Feed</h1>
         </div>
     </div>
     
@@ -343,7 +375,7 @@
  
   			<div class="container mobile mobile-program-title visible-xs ">
                           
-                             <p class="text-center">eTour Activities and Events</p>
+                             <p class="text-center">Activities and Events</p>
                      
                     
             </div>
@@ -351,7 +383,7 @@
   
   			<div class="jumbotron hidden-xs">
             	<div class="text-center container"> 
-            	<h1 class="desktop-program-title"> eTour Activities and Events</h1>
+            	<h1 class="desktop-program-title">Activities and Events</h1>
                 </div>
             </div>
   	
@@ -366,7 +398,7 @@
                                                             
                                                             <div class="programs col-sm-6 col-xs-12">
                                                                 <h3 class="program-title two-row-text-limit">Alii Kai Catamaran Dinner Cruise - New Special package</h3>
-                                                                <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;&nbsp;&nbsp;eTour International Group WL</h5>
+                                                               
                                                                 <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;91-119 Olai Street,Kapolei, HI 96707</h5>
                                                                 <span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;&nbsp;Description:<h5  class="three-rows-text-limit"> November 6-7: East Meets West in Startup Paradise 2014 "Digital Lifestyle" Conference in Honolulu, Hawaii - Reserve your seat now!</h5>
                                                            
@@ -405,7 +437,7 @@
                                                             
                                                             <div class="programs col-sm-6 col-xs-12">
                                                                 <h3 class="two-row-text-limit program-title">Honolulu Screamer Jet Boat</h3>
-                                                                <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;&nbsp;&nbsp;eTour International Group WL</h5>
+                                                               
                                                                 <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;91-119 Olai Street,Kapolei, HI 96707</h5>
                                                                 <span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;&nbsp;Description:<h5  class="three-rows-text-limit"> November 6-7: East Meets West in Startup Paradise 2014 "Digital Lifestyle" Conference in Honolulu, Hawaii - Reserve your seat now!</h5>
                                                            
@@ -442,7 +474,7 @@
                                                             
                                                             <div class="programs col-sm-6 col-xs-12">
                                                                 <h3 class="two-row-text-limit program-title">Honolulu Screamer Jet Boat</h3>
-                                                                <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;&nbsp;&nbsp;eTour International Group WL</h5>
+                                                                
                                                                 <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;91-119 Olai Street,Kapolei, HI 96707</h5>
                                                                 <span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;&nbsp;Description:<h5  class="three-rows-text-limit"> November 6-7: East Meets West in Startup Paradise 2014 "Digital Lifestyle" Conference in Honolulu, Hawaii - Reserve your seat now!</h5>
                                                            
@@ -477,7 +509,7 @@
                                                             
                                                             <div class="two-row-text-limit programs col-sm-6 col-xs-12">
                                                                 <h3 class="program-title">Honolulu Screamer Jet Boat</h3>
-                                                                <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;&nbsp;&nbsp;eTour International Group WL</h5>
+                                                                
                                                                 <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;91-119 Olai Street,Kapolei, HI 96707</h5>
                                                                 <span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;&nbsp;Description:<h5  class="three-rows-text-limit"> November 6-7: East Meets West in Startup Paradise 2014 "Digital Lifestyle" Conference in Honolulu, Hawaii - Reserve your seat now!</h5>
                                                            
@@ -510,7 +542,7 @@
                                                             
                                                             <div class="two-row-text-limit programs col-sm-6 col-xs-12">
                                                                 <h3 class="program-title">Honolulu Screamer Jet Boat</h3>
-                                                                <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;&nbsp;&nbsp;eTour International Group WL</h5>
+                                                                
                                                                 <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;91-119 Olai Street,Kapolei, HI 96707</h5>
                                                                 <span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;&nbsp;Description:<h5  class="three-rows-text-limit"> November 6-7: East Meets West in Startup Paradise 2014 "Digital Lifestyle" Conference in Honolulu, Hawaii - Reserve your seat now!</h5>
                                                            
@@ -545,7 +577,7 @@
                                                             
                                                             <div class="two-row-text-limit programs col-sm-6 col-xs-12">
                                                                 <h3 class="program-title">Honolulu Screamer Jet Boat</h3>
-                                                                <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;&nbsp;&nbsp;eTour International Group WL</h5>
+                                                                
                                                                 <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;91-119 Olai Street,Kapolei, HI 96707</h5>
                                                                 <span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;&nbsp;Description:<h5  class="three-rows-text-limit"> November 6-7: East Meets West in Startup Paradise 2014 "Digital Lifestyle" Conference in Honolulu, Hawaii - Reserve your seat now!tttttt ttttttttt tt ttttt ttt tttttttt ttttttttttttttttttttttttttttttttttttttttt</h5>
                                                            
@@ -657,27 +689,15 @@
 
 	<footer>
     	<div class="container">
-             <div class="bounce-in col-sm-4 col-xs-12 supportedby">
-             	   <div class="supportedby-texts">Supported by</div>
-                   <div class="row supportedby-logos">
-                        <a href="http://etour.totalgds.com"><img height="50px" width="auto" alt="Flower" src="asset/img/etc/etourlogo.png" /></a>
-                        <a href="http://www.totalgds.com"><img height="50px" width="auto" alt="Flower" src="asset/img/etc/totalgdslogo.png" /></a>
-                        
-                   </div>
-             </div>
-             
-
-          <!--  <div id="totalgdslogo">-->
-             <div class="bounce-in col-sm-8 col-xs-12">
+             <div class="bounce-in col-sm-12">
                 <a href="/en/site/about"> About us</a> | 
                 <a href="/en/site/terms"> Terms & Conditions</a>  | 
                 <a href="/en/site/privacy"> Privacy Policy</a>  | 
                 <a href="/en/site/cancellation"> Cancellation Policy</a>  | 
                 <a href="/en/site/contact"> Contact Us</a>  
-                <p class="cotyright">Copyright 2012-2014 &copy; eTour International Group WL</p>
-                <p class="socialmedia-footer">Follow Us On
-                                <a href="http://etour.totalgds.com"><img height="20px" width="auto" alt="Flower" src="https://www.facebook.com/images/fb_icon_325x325.png" /></a>
-                                <a href="http://www.totalgds.com"><img height="20px" width="auto" alt="Flower" src="https://g.twimg.com/Twitter_logo_blue.png" /></a></p>
+                <p class="cotyright">Copyright 2012-2014 &copy; Company Name</p>
+                <p class="powerby">Powered by <a href="www.totalgds.com">TotalGDS</a></p>
+                
             </div>
 		</div>
    
