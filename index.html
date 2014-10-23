@@ -39,21 +39,15 @@
       <div class="container-fluid">
             
             <!-- navi bar  -->
-      		<div class="row">
-                <div class="navbar-header">
+      	<div class="row">
+            <div class="navbar-header">
                 	<div class="brand row">
                     	<!-- NAVIGATION BAR TOP (LOGO, TITLE)-->
                         <!-- Including a piece of js at index.html(bottom of this page) line 687 (adjust logo and title size when scrolling)-->
                         <!-- Including new css below -->
                     	<style>
 							
-							.top-nav {background-color: #f8f8f8; height: 100%; 
-								display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-							 	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-							  	display: -ms-flexbox;      /* TWEENER - IE 10 */
-							  	display: -webkit-flex;     /* NEW - Chrome */
-							  	display: flex; 
-								align-items: center;}
+							
 							.title-position{padding-left:10px;}
 							.title-style{
 								
@@ -70,7 +64,7 @@
 							.title-sm{font-size:15px;}
 							.title-lg{font-size:25px;}
 							.logoimage {width: 200px; height: 150px;}
-							.logoimage-shrink{width: 65px; height: 50px;}
+							.logoimage-shrink{width: 66.665px; height: 50px;}
 							.transition{
 								-webkit-transition-delay: 0s;
 								-webkit-transition-duration: 0.25s;
@@ -86,7 +80,12 @@
 								background: url(http://www.koolinaoceanadventures.com/images/logot.png)no-repeat center center;
 								background-size: contain;
 							}
-							
+							@media (min-width: 1028px){ /* desktop view */
+								
+								#title{
+									margin-top:0px!important;	
+								}
+							}
 							@media (min-width: 768px){ /* desktop view */
 								.secondary-nav{
 										margin-top:-50px;	
@@ -98,8 +97,8 @@
 							}
 							@media (max-width: 767px){/*mobile view */
 								#title{font-size:15px;}
-								.logoimage { height: 50px;}
-								
+								.logoimage { width: 20%; height: 50px;} 
+								.brand{ margin-left:0px; margin-right:0px;}
 							}
 							.flex-container {
 							  padding-left:5px;
@@ -111,22 +110,15 @@
 							  display: -webkit-flex;
 							  display: flex;
 							  
-							  
 							  -webkit-align-items: center; 
 							  align-items: center; 
 							}
 							
 						</style>     
-                    	<div class="animated fadeInDown  col-xs-12 col-xs-height">   
-                        	
-                        	<!--<div class="top-nav">
-                                <div class="transition logoimage navlogo2" id="logo"></div>
-                                <a class="hidden-xs title-position title-lg title-style" hef="index.html" id="title">Ko'olina Adventure</a>
-                                
-                            </div>--> 
+                    	<div class="animated fadeInDown col-xs-12 col-xs-height">   
                             <div class="flex-container">
-                                <div class="flex-item transition logoimage navlogo" id="logo"></div>
-                                <a class="text-center flex-item title-position title-lg title-style" hef="index.html" id="title">Ko'olina Adventure Ko'olina Adventure </a>
+                                <div class="flex-item transition logoimage navlogo2" id="logo"></div>
+                                <a class="text-center flex-item title-position title-lg title-style" hef="index.html" id="title">Ko'olina Adventure</a>
                             </div>         		  
                         </div>
                         
@@ -141,35 +133,35 @@
                     </div> <!-- end of brand"-->   
                  
                    
-                </div><!-- end of navbar-header"--> 
-               					 <div class="navbar-collapse navbar-right collapse secondary-nav">
-                                        <ul class="animated fadeInDown nav navbar-nav navbar-right">
-                                        <li class="dropdown">
-                                          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="lang-xs lang-lbl" lang="en"></span><span class="caret"></span></a>
-                                          <ul class="animated fadeInUp dropdown-menu" role="menu">
-                                            <li><a href="#"><span class="lang-xs lang-lbl" lang="en"></span></a></li>
-                                            <li><a href="#"><span class="lang-xs lang-lbl" lang="zh"></span></a></li>
-                                          </ul>
-                                        </li>
-                                        <li class="dropdown">
-                                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">US$ Dollar <span class="caret"></span></a>
-                                          <ul class="animated fadeInUp dropdown-menu" role="menu">
-                                            <li><a href="#">฿ - Thai Baht</a></li>
-                                            <li><a href="#">JP¥ - Japanese Yen</a></li>
-                                            <li><a href="#">€ - Euro</a></li>
-                                            <li><a href="#">£ - Pound Sterling</a></li>
-                                            <li><a href="#">CN¥ - Chinese Yuan</a></li>
-                                          </ul>
-                                        </li>
-                                        <li>
-                                            <a href="check-out.html" class="dropdown-toggle"><span class="glyphicon glyphicon-shopping-cart"></span>(0)</a>
-                                        </li>
-                                        <li>
-                                            <a href="login.html" class="dropdown-toggle"><span class="glyphicon glyphicon-user"></span></a>
-                                        </li>
-                                      </ul>
-                                </div> 
-		 </div><!--row-->
+            </div><!-- end of navbar-header"--> 
+            <div class="navbar-collapse navbar-right collapse secondary-nav">
+                <ul class="animated fadeInDown nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="lang-xs lang-lbl" lang="en"></span><span class="caret"></span></a>
+                  <ul class="animated fadeInUp dropdown-menu" role="menu">
+                    <li><a href="#"><span class="lang-xs lang-lbl" lang="en"></span></a></li>
+                    <li><a href="#"><span class="lang-xs lang-lbl" lang="zh"></span></a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">US$ Dollar <span class="caret"></span></a>
+                  <ul class="animated fadeInUp dropdown-menu" role="menu">
+                    <li><a href="#">฿ - Thai Baht</a></li>
+                    <li><a href="#">JP¥ - Japanese Yen</a></li>
+                    <li><a href="#">€ - Euro</a></li>
+                    <li><a href="#">£ - Pound Sterling</a></li>
+                    <li><a href="#">CN¥ - Chinese Yuan</a></li>
+                  </ul>
+                </li>
+                <li>
+                    <a href="check-out.html" class="dropdown-toggle"><span class="glyphicon glyphicon-shopping-cart"></span>(0)</a>
+                </li>
+                <li>
+                    <a href="login.html" class="dropdown-toggle"><span class="glyphicon glyphicon-user"></span></a>
+                </li>
+              </ul>
+            </div> 
+		</div><!--row-->
          
          						  
         <div class="row"> 
