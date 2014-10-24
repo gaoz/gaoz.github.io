@@ -29,25 +29,28 @@
 	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
  
-
-  </head>
-
-  <body>
 	
-     <!-- Fixed navbar -->
+  </head>
+	
+  <body>
+
+       <!-- Fixed navbar -->
     <div class="theme1-nav navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container-fluid">
             
             <!-- navi bar  -->
-      		<div class="row">
-                <div class=" navbar-header col-sm-6 col-lg-8">
+      	<div class="row">
+            <div class="navbar-header">
                 	<div class="brand row">
-                    	<!-- ADDED LOGO IMAGE INTO NAVIGATION BAR TOP SECTION (LOGO, TITLE) CSS-->
+                    	<!-- NAVIGATION BAR TOP (LOGO, TITLE)-->
+                        <!-- Including a piece of js at index.html(bottom of this page) line 687 (adjust logo and title size when scrolling)-->
+                        <!-- Including new css below -->
                     	<style>
-							.top-nav {background-color: #f8f8f8; height: 100%; display:flex; align-items: center;}
-							.title-position{ margin-left: -15px; padding-left:40px;}
-							.title-style{
-								padding-bottom: 10px;
+							
+							
+							.theme1-nav .title-position{padding-left:10px;}
+							.theme1-nav .title-style{
+								
 								color: #555;
 								font-style: normal;
 								font-weight: 300;
@@ -58,11 +61,11 @@
 								height: auto;
 								white-space:pre-wrap;
 							}
-							.title-sm{font-size:15px;}
-							.title-lg{font-size:25px;}
-							.logoimage {width: 200px; height: 150px;}
-							.logoimage-shrink{width: 65px; height: 50px;}
-							.transition{
+							.theme1-nav .title-sm{font-size:15px;}
+							.theme1-nav .title-lg{font-size:25px;}
+							.theme1-nav .logoimage {width: 200px; height: 150px;}
+							.theme1-nav .logoimage-shrink{width: 66.665px; height: 50px;}
+							.theme1-nav .transition{
 								-webkit-transition-delay: 0s;
 								-webkit-transition-duration: 0.25s;
 								-webkit-transition-property: height;
@@ -73,18 +76,54 @@
 								transition-property: height;
 								transition-timing-function: linear;	
 							}
-							.navlogo2{
+							.theme1-nav .navlogo2{
 								background: url(http://www.koolinaoceanadventures.com/images/logot.png)no-repeat center center;
 								background-size: contain;
 							}
+							@media (min-width: 1028px){ /* desktop view */
+								
+								.theme1-nav #title{
+									margin-top:0px!important;	
+								}
+							}
+							@media (min-width: 768px){ /* desktop view */
+								.theme1-nav .secondary-nav{
+										margin-top:-50px;	
+								}
+								/*.theme1-nav #title{      this one is only for the first page.
+									margin-top:-30px;	
+								}*/
+								.theme1-nav .title-position{padding-left:30px;}
+							}
+							@media (max-width: 767px){/*mobile view */
+								.theme1-nav #title{font-size:13px;}
+								.theme1-nav .logoimage { width: 66.665px; height: 50px; } 
+																.brand{ margin-left:0px; margin-right:0px;}
+								.theme1-nav .brand-inner{padding-left:0px;}
+									
+							}
+							.theme1-nav #logo{margin-top:3px; margin-bottom:3px;}
+
+							.theme1-nav .flex-container {
+							  padding-left:3px;
+							  -ms-box-orient: horizontal;
+							  display: -webkit-box;
+							  display: -moz-box;
+							  display: -ms-flexbox;
+							  display: -moz-flex;
+							  display: -webkit-flex;
+							  display: flex;
+							  
+							  -webkit-align-items: center; 
+							  align-items: center; 
+							}
+							
 						</style>     
-                    	<div class="animated fadeInDown  col-xs-12 col-xs-height">   
-                        	
-                        	<div class="top-nav">
-                                <div class="transition logoimage-shrink navlogo2" id="logo"></div>
-                                <a class="hidden-xs title-position title-sm title-style" id="title">Ko'olina Adventure</a>
-                               
-                            </div>          		  
+                    	<div class="brand-inner animated fadeInDown col-xs-12 col-xs-height">   
+                            <div class="flex-container">
+                                <div class="flex-item transition logoimage-shrink navlogo2" id="logo"></div>
+                                <a class="text-center flex-item title-position title-lg title-style" hef="index.html" id="title">Company Name </a>
+                            </div>         		  
                         </div>
                         
                         <div class="col-xs-height col-middle">
@@ -96,37 +135,39 @@
                           </button>
                         </div>
                     </div> <!-- end of brand"-->   
-                </div><!-- end of navbar-header"-->   
-                <div class="navbar-collapse navbar-right collapse  col-sm-6 col-lg-4 secondary-nav">
-                        <ul class="animated fadeInDown nav navbar-nav navbar-right">
-                        <li class="dropdown">
-                          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="lang-xs lang-lbl" lang="en"></span><span class="caret"></span></a>
-                          <ul class="animated fadeInUp dropdown-menu" role="menu">
-                            <li><a href="#"><span class="lang-xs lang-lbl" lang="en"></span></a></li>
-                            <li><a href="#"><span class="lang-xs lang-lbl" lang="zh"></span></a></li>
-                          </ul>
-                        </li>
-                        <li class="dropdown">
-                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">US$ Dollar <span class="caret"></span></a>
-                          <ul class="animated fadeInUp dropdown-menu" role="menu">
-                            <li><a href="#">฿ - Thai Baht</a></li>
-                            <li><a href="#">JP¥ - Japanese Yen</a></li>
-                            <li><a href="#">€ - Euro</a></li>
-                            <li><a href="#">£ - Pound Sterling</a></li>
-                            <li><a href="#">CN¥ - Chinese Yuan</a></li>
-                          </ul>
-                        </li>
-                       	<li>
-                        	<a href="check-out.html" class="dropdown-toggle"><span class="glyphicon glyphicon-shopping-cart"></span>(0)</a>
-                        </li>
-                        <li>
-                        	<a href="login.html" class="dropdown-toggle"><span class="glyphicon glyphicon-user"></span></a>
-                        </li>
-                      </ul>
-                </div> 
-		 </div><!--row-->
+                 
+                   
+            </div><!-- end of navbar-header"--> 
+            <div class="navbar-collapse navbar-right collapse secondary-nav">
+                <ul class="animated fadeInDown nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="lang-xs lang-lbl" lang="en"></span><span class="caret"></span></a>
+                  <ul class="animated fadeInUp dropdown-menu" role="menu">
+                    <li><a href="#"><span class="lang-xs lang-lbl" lang="en"></span></a></li>
+                    <li><a href="#"><span class="lang-xs lang-lbl" lang="zh"></span></a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">US$ Dollar <span class="caret"></span></a>
+                  <ul class="animated fadeInUp dropdown-menu" role="menu">
+                    <li><a href="#">฿ - Thai Baht</a></li>
+                    <li><a href="#">JP¥ - Japanese Yen</a></li>
+                    <li><a href="#">€ - Euro</a></li>
+                    <li><a href="#">£ - Pound Sterling</a></li>
+                    <li><a href="#">CN¥ - Chinese Yuan</a></li>
+                  </ul>
+                </li>
+                <li>
+                    <a href="check-out.html" class="dropdown-toggle"><span class="glyphicon glyphicon-shopping-cart"></span>(0)</a>
+                </li>
+                <li>
+                    <a href="login.html" class="dropdown-toggle"><span class="glyphicon glyphicon-user"></span></a>
+                </li>
+              </ul>
+            </div> 
+		</div><!--row-->
          
-         
+         						  
         <div class="row"> 
             <div class="navbar-collapse collapse main-nav">
               <ul class="animated fadeInRight nav navbar-nav">
@@ -136,7 +177,7 @@
                 <li><a href="view-detail.html">View Detail</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Checkout <span class="caret"></span></a>
-                  <ul class="animated fadeInUp dropdown-menu" role="menu">
+                  <ul class="dropdown-menu" role="menu">
                     <li><a href="check-out.html">Checkout Now</a></li>
                     <li><a href="check-out-success.html">Checkout Success</a></li>
                     <li><a href="check-out-fail.html">Checkout Fail</a></li>
@@ -150,56 +191,33 @@
          
       </div>
     </div>
+    
+  
+    
 <!--space down from the menu bar and logo section--->
     <div class="container hidden-xs">
-          <div style="height:105px"></div> 
+          <div style="height:205px"></div> 
     </div>
 <!--end of space down from the menu bar and logo section--->
+	
+    
+ 
+    
+    
+    
+     
+    <!--end of social media news feed ===========================-->
+    
 
-    
-    
-    
-<!--fullscrollslideshow-->
-
-<!--<section id="slide-1" class="homeSlide">
-            <div class="bcg image1" id="sliderbackground"
-                    data-center="background-position: 50% 0px;"
-                    data-top-bottom="background-position: 50% -100px;"
-                    data-anchor-target="#slide-1">
-            </div>
-            <div class="bcg image2" id="sliderbackground"
-                    data-center="background-position: 50% 0px;"
-                    data-top-bottom="background-position: 50% -100px;"
-                    data-anchor-target="#slide-1">
-                  
-                    
-            </div>
-            <div class="bcg image3" id="sliderbackground"
-                    data-center="background-position: 50% 0px;"
-                    data-top-bottom="background-position: 50% -100px;"
-                    data-anchor-target="#slide-1">
-                   
-                    
-            </div>
-         
-            <div class="hsContainer">
-                            <div class="hsContent"
-                                data-center="bottom: 50%; opacity: 1"
-                                data-top="bottom: 50%; opacity: 1"
-                                data-anchor-target="#slide-1 h2">
-                                <h2>East Meets West 2014</h2>
-                            </div>
-            </div>
-    </section>-->
-   
+   	
 
      <!--    activities
   ================================================== ---->
-			
-            
+
+ 
   			<div class="container mobile mobile-program-title visible-xs ">
                           
-                             <p class="text-center">eTour Activities and Events</p>
+                             <p class="text-center">Activities and Events</p>
                      
                     
             </div>
@@ -207,13 +225,13 @@
   
   			<div class="jumbotron hidden-xs">
             	<div class="text-center container"> 
-            	<h1 class="desktop-program-title"> eTour Activities and Events</h1>
+            	<h1 class="desktop-program-title">Activities and Events</h1>
                 </div>
             </div>
   	
             <div class="jumbotron hidden-xs">
                                      <div class="left-in">
-                                                     <div class=" container programs-card"> <a class="view-detail" href=""></a>
+                                                     <div class=" container programs-card"> <a class="view-detail" href="view-detail.html"></a>
                                                             <div class="col-sm-4 col-xs-12" id="no-left-padding">
                                                                        
                                                                         <div class="item tour1"></div>              
@@ -221,8 +239,8 @@
                                     
                                                             
                                                             <div class="programs col-sm-6 col-xs-12">
-                                                                <h3 class="program-title two-row-text-limit">Alii Kai Catamaran Dinner Cruise - New Special package</h3>
-                                                                <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;&nbsp;&nbsp;eTour International Group WL</h5>
+                                                                <h3 class="program-title two-row-text-limit">Sample Activity One</h3>
+                                                               
                                                                 <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;91-119 Olai Street,Kapolei, HI 96707</h5>
                                                                 <span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;&nbsp;Description:<h5  class="three-rows-text-limit"> November 6-7: East Meets West in Startup Paradise 2014 "Digital Lifestyle" Conference in Honolulu, Hawaii - Reserve your seat now!</h5>
                                                            
@@ -252,7 +270,7 @@
             
             <div class="jumbotron hidden-xs">
                                      <div class="right-in">
-                                                     <div class=" container programs-card"> <a class="view-detail" href=""></a>
+                                                     <div class=" container programs-card"> <a class="view-detail" href="view-detail.html"></a>
                                                             <div class="col-sm-4 col-xs-12" id="no-left-padding">
                                                                        
                                                                         <div class="item tour2"></div>              
@@ -260,12 +278,11 @@
                                     
                                                             
                                                             <div class="programs col-sm-6 col-xs-12">
-                                                                <h3 class="two-row-text-limit program-title">Honolulu Screamer Jet Boat</h3>
-                                                                <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;&nbsp;&nbsp;eTour International Group WL</h5>
+                                                                <h3 class="two-row-text-limit program-title">Sample Activity Two</h3>
+                                                               
                                                                 <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;91-119 Olai Street,Kapolei, HI 96707</h5>
                                                                 <span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;&nbsp;Description:<h5  class="three-rows-text-limit"> November 6-7: East Meets West in Startup Paradise 2014 "Digital Lifestyle" Conference in Honolulu, Hawaii - Reserve your seat now!</h5>
                                                            
-
                                                                <!-- <button style="display: block; width: 100%;" class="btn btn-dark">From $100&nbsp;&nbsp;&nbsp;&nbsp;View Details</button>-->
                                                             </div>
                                                             <div class="col-sm-2 col-xs-12">
@@ -290,7 +307,7 @@
             
             <div class="jumbotron hidden-xs">
                                      <div class="left-in">
-                                                     <div class=" container programs-card"> <a class="view-detail" href=""></a>
+                                                     <div class=" container programs-card"> <a class="view-detail" href="view-detail.html"></a>
                                                             <div class="col-sm-4 col-xs-12" id="no-left-padding">
                                                                        
                                                                         <div class="item tour3"></div>              
@@ -298,8 +315,8 @@
                                     
                                                             
                                                             <div class="programs col-sm-6 col-xs-12">
-                                                                <h3 class="two-row-text-limit program-title">Honolulu Screamer Jet Boat</h3>
-                                                                <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;&nbsp;&nbsp;eTour International Group WL</h5>
+                                                                <h3 class="two-row-text-limit program-title">Sample Activity Three</h3>
+                                                                
                                                                 <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;91-119 Olai Street,Kapolei, HI 96707</h5>
                                                                 <span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;&nbsp;Description:<h5  class="three-rows-text-limit"> November 6-7: East Meets West in Startup Paradise 2014 "Digital Lifestyle" Conference in Honolulu, Hawaii - Reserve your seat now!</h5>
                                                            
@@ -325,7 +342,7 @@
 
             <div class="jumbotron hidden-xs">
                                      <div class="right-in">
-                                                     <div class=" container programs-card"> <a class="view-detail" href=""></a>
+                                                     <div class=" container programs-card"> <a class="view-detail" href="view-detail.html"></a>
                                                             <div class="col-sm-4 col-xs-12" id="no-left-padding">
                                                                        
                                                                         <div class="item tour4"></div>              
@@ -333,8 +350,8 @@
                                     
                                                             
                                                             <div class="two-row-text-limit programs col-sm-6 col-xs-12">
-                                                                <h3 class="program-title">Honolulu Screamer Jet Boat</h3>
-                                                                <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;&nbsp;&nbsp;eTour International Group WL</h5>
+                                                                <h3 class="program-title">Sample Activity Four</h3>
+                                                                
                                                                 <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;91-119 Olai Street,Kapolei, HI 96707</h5>
                                                                 <span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;&nbsp;Description:<h5  class="three-rows-text-limit"> November 6-7: East Meets West in Startup Paradise 2014 "Digital Lifestyle" Conference in Honolulu, Hawaii - Reserve your seat now!</h5>
                                                            
@@ -358,7 +375,7 @@
             
             <div class="jumbotron hidden-xs">
                                      <div class="right-in">
-                                                     <div class=" container programs-card"> <a class="view-detail" href=""></a>
+                                                     <div class=" container programs-card"> <a class="view-detail" href="view-detail.html"></a>
                                                             <div class="col-sm-4 col-xs-12" id="no-left-padding">
                                                                        
                                                                         <div class="item tour5"></div>              
@@ -366,8 +383,8 @@
                                     
                                                             
                                                             <div class="two-row-text-limit programs col-sm-6 col-xs-12">
-                                                                <h3 class="program-title">Honolulu Screamer Jet Boat</h3>
-                                                                <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;&nbsp;&nbsp;eTour International Group WL</h5>
+                                                                <h3 class="program-title">Sample Activity Five</h3>
+                                                                
                                                                 <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;91-119 Olai Street,Kapolei, HI 96707</h5>
                                                                 <span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;&nbsp;Description:<h5  class="three-rows-text-limit"> November 6-7: East Meets West in Startup Paradise 2014 "Digital Lifestyle" Conference in Honolulu, Hawaii - Reserve your seat now!</h5>
                                                            
@@ -393,7 +410,7 @@
             
             <div class="jumbotron hidden-xs">
                                      <div class="left-in">
-                                                     <div class=" container programs-card"> <a class="view-detail" href=""></a>
+                                                     <div class=" container programs-card"> <a class="view-detail" href="view-detail.html"></a>
                                                             <div class="col-sm-4 col-xs-12" id="no-left-padding">
                                                                        
                                                                         <div class="item tour6"></div>              
@@ -401,8 +418,8 @@
                                     
                                                             
                                                             <div class="two-row-text-limit programs col-sm-6 col-xs-12">
-                                                                <h3 class="program-title">Honolulu Screamer Jet Boat</h3>
-                                                                <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;&nbsp;&nbsp;eTour International Group WL</h5>
+                                                                <h3 class="program-title">Sample Activity Six</h3>
+                                                                
                                                                 <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;91-119 Olai Street,Kapolei, HI 96707</h5>
                                                                 <span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;&nbsp;Description:<h5  class="three-rows-text-limit"> November 6-7: East Meets West in Startup Paradise 2014 "Digital Lifestyle" Conference in Honolulu, Hawaii - Reserve your seat now!tttttt ttttttttt tt ttttt ttt tttttttt ttttttttttttttttttttttttttttttttttttttttt</h5>
                                                            
@@ -430,7 +447,7 @@
                         <div class="program-image item tour4"></div>
                         <div class="program-detail">
                             <div class="row">
-                                <h5 class="col-xs-12 title ">Magic of Polynesia Show</h5>
+                                <h5 class="col-xs-12 title ">Sample Activity One</h5>
                                 <div class="price text-center">
                                  	<h5>CN$199</h5>
                                  </div>
@@ -446,7 +463,7 @@
                         <div class="program-image item tour3"></div>
                         <div class="program-detail">
                             <div class="row">
-                                <h5 class="col-xs-12 title ">Alii Kai Catamaran Dinner Cruise</h5>
+                                <h5 class="col-xs-12 title ">Sample Activity Two</h5>
                                 <div class="price text-center">
                                  	<h5>CN$199</h5>
                                  </div>
@@ -463,7 +480,7 @@
                         <div class="program-image item tour2"></div>
                         <div class="program-detail">
                             <div class="row">
-                                <h5 class="col-xs-12 title ">Ultimate Circle Island Eco Adventure</h5>
+                                <h5 class="col-xs-12 title ">Sample Activity Three</h5>
                                 <div class="price text-center">
                                  	<h5>CN$199</h5>
                                  </div>
@@ -480,7 +497,7 @@
                         <div class="program-image item tour1"></div>
                         <div class="program-detail">
                             <div class="row">
-                                <h5 class="col-xs-12 title ">5 Star Sunset Dining & Jazz</h5>
+                                <h5 class="col-xs-12 title ">Sample Activity Four</h5>
                                 <div class="price text-center">
                                  	<h5>CN$199</h5>
                                  </div>
@@ -514,27 +531,15 @@
 
 	<footer>
     	<div class="container">
-             <div class="bounce-in col-sm-4 col-xs-12 supportedby">
-             	   <div class="supportedby-texts">Supported by</div>
-                   <div class="row supportedby-logos">
-                        <a href="http://etour.totalgds.com"><img height="50px" width="auto" alt="Flower" src="asset/img/etc/etourlogo.png" /></a>
-                        <a href="http://www.totalgds.com"><img height="50px" width="auto" alt="Flower" src="asset/img/etc/totalgdslogo.png" /></a>
-                        
-                   </div>
-             </div>
-             
-
-          <!--  <div id="totalgdslogo">-->
-             <div class="bounce-in col-sm-8 col-xs-12">
+             <div class="bounce-in col-sm-12">
                 <a href="/en/site/about"> About us</a> | 
                 <a href="/en/site/terms"> Terms & Conditions</a>  | 
                 <a href="/en/site/privacy"> Privacy Policy</a>  | 
                 <a href="/en/site/cancellation"> Cancellation Policy</a>  | 
                 <a href="/en/site/contact"> Contact Us</a>  
-                <p class="cotyright">Copyright 2012-2014 &copy; eTour International Group WL</p>
-                <p class="socialmedia-footer">Follow Us On
-                                <a href="http://etour.totalgds.com"><img height="20px" width="auto" alt="Flower" src="https://www.facebook.com/images/fb_icon_325x325.png" /></a>
-                                <a href="http://www.totalgds.com"><img height="20px" width="auto" alt="Flower" src="https://g.twimg.com/Twitter_logo_blue.png" /></a></p>
+                <p class="cotyright">Copyright 2012-2014 &copy; Company Name</p>
+                <p class="powerby">Powered by <a href="www.totalgds.com">TotalGDS</a></p>
+                
             </div>
 		</div>
    
@@ -542,12 +547,32 @@
  	
 
 
-     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>  <!--bootstrap only works with this 1.11 jquery. and the 1.8 is used to handle the viewport js bug that. better to keep both -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	<script src="asset/js/jQuery_v1.8.2.js"></script><!--this old version jQuery must be used with SmoothScroll.js-->    <!--if delete this jquery v1.8.2, it will cause a nav auto expanded when switch to mobile view. the bug comes from custom.js/viewport checker js(bug source)-->
     <script src="asset/js/SmoothScroll.js"></script><!--this js must be used with jQuery_v1.8.2.js-->
 	<script src="asset/js/custom.js"></script>
+    
+    
+  <!-- adjust navigation bar size when scroll down-->
+	<script>$(function(){
+      $(window).scroll(function(event){
+          if ($(document).scrollTop() > 200) {
+			$('#title').addClass('title-sm');
+			$('#title').removeClass('title-lg');
+			$('#logo').addClass('logoimage-shrink');
+			$('#logo').removeClass('logoimage');
+		  } else {
+			$('#title').removeClass('title-sm');
+			$('#title').addClass('title-lg');  
+			$('#logo').removeClass('logoimage-shrink');
+			$('#logo').addClass('logoimage');
+		  }
+	   });
+ 	});</script>
+   
+
 
 	
   </body>

@@ -348,7 +348,12 @@ border-radius: 4px;
          -o-transform:skew(8deg) rotate(3deg); 
             transform:skew(8deg) rotate(3deg);
 }
-
+@media (max-width: 767px){/*mobile view */
+.detail-header .title {
+font-size:14px;
+}
+								
+}
 
 
 

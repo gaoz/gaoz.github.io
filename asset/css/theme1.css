@@ -178,8 +178,8 @@ background-color:#333;
  .carousel-caption {
     text-shadow: none;
     z-index: 10;
-    top: 50px;
-    margin: 10px;
+
+    margin: 50px;
     padding: 0 40px;
 }
 
