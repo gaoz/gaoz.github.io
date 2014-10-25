@@ -36,7 +36,7 @@
 
   <body>
 	
-           <!-- Fixed navbar -->
+       <!-- Fixed navbar -->
     <div class="theme1-nav navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container-fluid">
             
@@ -50,7 +50,6 @@
                     	<style>
 							
 							
-							.theme1-nav .title-position{padding-left:10px;}
 							.theme1-nav .title-style{
 								
 								color: #555;
@@ -79,35 +78,34 @@
 								transition-timing-function: linear;	
 							}
 							.theme1-nav .navlogo2{
-								background: url(http://www.koolinaoceanadventures.com/images/logot.png)no-repeat center center;
+								background: url("asset/img/etc/icon_256x256@2x.png")no-repeat center center;
 								background-size: contain;
 							}
-							@media (min-width: 1028px){ /* desktop view */
+							.theme1-nav #title, .theme1-nav #logo{
+								cursor:pointer;
+							}
+							@media (min-width: 1028px){ /* bigger desktop view */
 								
-								.theme1-nav #title{
-									margin-top:0px!important;	
-								}
+								.theme1-nav #title{margin-top:0px!important;	}
+								.theme1-nav #logo{margin-left:20px!important;}
+								.theme1-nav .title-position{padding-left:20px!important;}
 							}
 							@media (min-width: 768px){ /* desktop view */
-								.theme1-nav .secondary-nav{
-										margin-top:-50px;	
-								}
-								/*.theme1-nav #title{      this one is only for the first page.
-									margin-top:-30px;	
-								}*/
-								.theme1-nav .title-position{padding-left:30px;}
+								.theme1-nav .secondary-nav{margin-top:-50px;}
+								.theme1-nav #logo{margin-left:0px;}
+								.theme1-nav #title{margin-top:-30px;}
+								.theme1-nav .title-position{padding-left:5px;}
 							}
 							@media (max-width: 767px){/*mobile view */
 								.theme1-nav #title{font-size:13px;}
 								.theme1-nav .logoimage { width: 66.665px; height: 50px; } 
-																.brand{ margin-left:0px; margin-right:0px;}
+								.theme1-nav .brand{ margin-left:0px; margin-right:0px;}
 								.theme1-nav .brand-inner{padding-left:0px;}
 									
 							}
-							.theme1-nav #logo{margin-top:3px; margin-bottom:3px;}
-
+							.theme1-nav #logo{margin-left:3px; margin-top:3px; margin-bottom:3px;}
 							.theme1-nav .flex-container {
-							  padding-left:3px;
+							  
 							  -ms-box-orient: horizontal;
 							  display: -webkit-box;
 							  display: -moz-box;
@@ -123,8 +121,8 @@
 						</style>     
                     	<div class="brand-inner animated fadeInDown col-xs-12 col-xs-height">   
                             <div class="flex-container">
-                                <div class="flex-item transition logoimage-shrink navlogo2" id="logo"></div>
-                                <a class="text-center flex-item title-position title-lg title-style" hef="index.html" id="title">Company Name </a>
+                                <span class="flex-item transition logoimage-shrink navlogo2" hef="index.html" id="logo"></span>
+                                <span class="text-center flex-item title-position title-sm title-style" hef="index.html" id="title">Company Name </span>
                             </div>         		  
                         </div>
                         

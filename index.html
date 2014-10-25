@@ -48,7 +48,6 @@
                     	<style>
 							
 							
-							.theme1-nav .title-position{padding-left:10px;}
 							.theme1-nav .title-style{
 								
 								color: #555;
@@ -83,32 +82,28 @@
 							.theme1-nav #title, .theme1-nav #logo{
 								cursor:pointer;
 							}
-							@media (min-width: 1028px){ /* desktop view */
+							@media (min-width: 1028px){ /* bigger desktop view */
 								
-								.theme1-nav #title{
-									margin-top:0px!important;	
-								}
+								.theme1-nav #title{margin-top:0px!important;	}
+								.theme1-nav #logo{margin-left:20px!important;}
+								.theme1-nav .title-position{padding-left:20px!important;}
 							}
 							@media (min-width: 768px){ /* desktop view */
-								.theme1-nav .secondary-nav{
-										margin-top:-50px;	
-								}
-								.theme1-nav #title{
-									margin-top:-30px;	
-								}
-								.theme1-nav .title-position{padding-left:30px;}
+								.theme1-nav .secondary-nav{margin-top:-50px;}
+								.theme1-nav #logo{margin-left:0px;}
+								.theme1-nav #title{margin-top:-30px;}
+								.theme1-nav .title-position{padding-left:5px;}
 							}
 							@media (max-width: 767px){/*mobile view */
 								.theme1-nav #title{font-size:13px;}
 								.theme1-nav .logoimage { width: 66.665px; height: 50px; } 
-																.brand{ margin-left:0px; margin-right:0px;}
+								.theme1-nav .brand{ margin-left:0px; margin-right:0px;}
 								.theme1-nav .brand-inner{padding-left:0px;}
 									
 							}
-							.theme1-nav #logo{margin-top:3px; margin-bottom:3px;}
-
+							.theme1-nav #logo{margin-left:3px; margin-top:3px; margin-bottom:3px;}
 							.theme1-nav .flex-container {
-							  padding-left:3px;
+							  
 							  -ms-box-orient: horizontal;
 							  display: -webkit-box;
 							  display: -moz-box;
@@ -142,7 +137,7 @@
                    
             </div><!-- end of navbar-header"--> 
             <div class="navbar-collapse navbar-right collapse secondary-nav">
-                <ul class="animated fadeInDown nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="lang-xs lang-lbl" lang="en"></span><span class="caret"></span></a>
                   <ul class="animated fadeInUp dropdown-menu" role="menu">
@@ -152,7 +147,7 @@
                 </li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">US$ Dollar <span class="caret"></span></a>
-                  <ul class="animated fadeInUp dropdown-menu" role="menu">
+                  <ul class="dropdown-menu" role="menu">
                     <li><a href="#">฿ - Thai Baht</a></li>
                     <li><a href="#">JP¥ - Japanese Yen</a></li>
                     <li><a href="#">€ - Euro</a></li>
@@ -198,7 +193,7 @@
   
     
 <!--space down from the menu bar and logo section--->
-    <div class="container hidden-xs">
+    <div class="fluide-container hidden-xs" style="background-color:#333">
           <div style="height:205px"></div> 
     </div>
 <!--end of space down from the menu bar and logo section--->
@@ -705,12 +700,14 @@
 			$('#title').removeClass('title-lg');
 			$('#logo').addClass('logoimage-shrink');
 			$('#logo').removeClass('logoimage');
+			document.getElementById('title').style.marginTop="0px";   /* set the title back to the center when shrinked down. */
 		  } else {
 			$('#title').removeClass('title-sm');
 			$('#title').addClass('title-lg');  
 			$('#logo').removeClass('logoimage-shrink');
 			$('#logo').addClass('logoimage');
 		  }
+		  
 	   });
  	});</script>
    

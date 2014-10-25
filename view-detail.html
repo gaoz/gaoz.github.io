@@ -34,7 +34,7 @@
   </head>
 
   <body>
-	       <!-- Fixed navbar -->
+	   <!-- Fixed navbar -->
     <div class="theme1-nav navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container-fluid">
             
@@ -48,7 +48,6 @@
                     	<style>
 							
 							
-							.theme1-nav .title-position{padding-left:10px;}
 							.theme1-nav .title-style{
 								
 								color: #555;
@@ -77,35 +76,34 @@
 								transition-timing-function: linear;	
 							}
 							.theme1-nav .navlogo2{
-								background: url(http://www.koolinaoceanadventures.com/images/logot.png)no-repeat center center;
+								background: url("asset/img/etc/icon_256x256@2x.png")no-repeat center center;
 								background-size: contain;
 							}
-							@media (min-width: 1028px){ /* desktop view */
+							.theme1-nav #title, .theme1-nav #logo{
+								cursor:pointer;
+							}
+							@media (min-width: 1028px){ /* bigger desktop view */
 								
-								.theme1-nav #title{
-									margin-top:0px!important;	
-								}
+								.theme1-nav #title{margin-top:0px!important;	}
+								.theme1-nav #logo{margin-left:20px!important;}
+								.theme1-nav .title-position{padding-left:20px!important;}
 							}
 							@media (min-width: 768px){ /* desktop view */
-								.theme1-nav .secondary-nav{
-										margin-top:-50px;	
-								}
-								/*.theme1-nav #title{      this one is only for the first page.
-									margin-top:-30px;	
-								}*/
-								.theme1-nav .title-position{padding-left:30px;}
+								.theme1-nav .secondary-nav{margin-top:-50px;}
+								.theme1-nav #logo{margin-left:0px;}
+								.theme1-nav #title{margin-top:-30px;}
+								.theme1-nav .title-position{padding-left:5px;}
 							}
 							@media (max-width: 767px){/*mobile view */
 								.theme1-nav #title{font-size:13px;}
 								.theme1-nav .logoimage { width: 66.665px; height: 50px; } 
-																.brand{ margin-left:0px; margin-right:0px;}
+								.theme1-nav .brand{ margin-left:0px; margin-right:0px;}
 								.theme1-nav .brand-inner{padding-left:0px;}
 									
 							}
-							.theme1-nav #logo{margin-top:3px; margin-bottom:3px;}
-
+							.theme1-nav #logo{margin-left:3px; margin-top:3px; margin-bottom:3px;}
 							.theme1-nav .flex-container {
-							  padding-left:3px;
+							  
 							  -ms-box-orient: horizontal;
 							  display: -webkit-box;
 							  display: -moz-box;
@@ -121,8 +119,8 @@
 						</style>     
                     	<div class="brand-inner animated fadeInDown col-xs-12 col-xs-height">   
                             <div class="flex-container">
-                                <div class="flex-item transition logoimage-shrink navlogo2" id="logo"></div>
-                                <a class="text-center flex-item title-position title-lg title-style" hef="index.html" id="title">Company Name </a>
+                                <span class="flex-item transition logoimage-shrink navlogo2" hef="index.html" id="logo"></span>
+                                <span class="text-center flex-item title-position title-sm title-style" hef="index.html" id="title">Company Name </span>
                             </div>         		  
                         </div>
                         
@@ -158,7 +156,7 @@
                   </ul>
                 </li>
                 <li>
-                    <a href="check-out.html" class="dropdown-toggle"><span class="glyphicon glyphicon-shopping-cart"></span>(0)</a>
+                    <a href="check-out.html" class="shopping-cart  dropdown-toggle"><span class="glyphicon glyphicon-shopping-cart"></span>(0)</a>
                 </li>
                 <li>
                     <a href="login.html" class="dropdown-toggle"><span class="glyphicon glyphicon-user"></span></a>
@@ -291,7 +289,7 @@
                                 <h5 class="price text-right"><small>Adult (Age: 14+)</small> US$ 213.08</h5>
                                 <div style="width:100%;" class=" ">
                                     <button style="width:100%;margin-bottom:5px;" type="button" class="btn btn-info">Purchase</button>
-                                    <button  style="width:100%;" type="button" class="btn btn-primary">ADD <span class="glyphicon glyphicon-shopping-cart"></span></button>
+                                    <button  style="width:100%;" type="button" class="add-to-cart btn btn-primary">ADD <span class="glyphicon glyphicon-shopping-cart"></span></button>
                                 </div>
                               
                             </div>       
@@ -322,7 +320,8 @@
                                 
                                 <div style="width:100%;" class=" ">
                                     <button style="width:100%;margin-bottom:5px;" type="button" class="btn btn-info">Purchase</button>
-                                    <button  style="width:100%;" type="button" class="btn  btn-primary">ADD <span class="glyphicon glyphicon-shopping-cart"></span></button>
+                                    <button  style="width:100%;" type="button" class="add-to-cart btn  btn-primary">ADD <span class="glyphicon glyphicon-shopping-cart"></span></button>
+                              
                                 </div>
                             </div>
                       </div>
@@ -397,13 +396,28 @@
 	</footer> 
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>  <!--bootstrap only works with this 1.11 jquery. and the 1.8 is used to handle the viewport js bug that. better to keep both -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-	<script src="asset/js/jQuery_v1.8.2.js"></script><!--this old version jQuery must be used with SmoothScroll.js-->    <!--if delete this jquery v1.8.2, it will cause a nav auto expanded when switch to mobile view. the bug comes from custom.js/viewport checker js(bug source)-->
-    <script src="asset/js/SmoothScroll.js"></script><!--this js must be used with jQuery_v1.8.2.js-->
-	<script src="asset/js/custom.js"></script>
 
+ 
+<script>
+	
+ 		$(function(){		
+			$('.add-to-cart').click(function(e){
+				var $cart = $('.shopping-cart');
+				
+					$cart.addClass('css3-notification');
+					$(this).prop('disabled', true);
+				window.setTimeout( function() {
+					  $cart.removeClass( 'css3-notification' );
+					  $('button').prop('disabled', false);
+					}, 800 );
+				
+			});
+		});
+	
+</script>
 	
   </body>
 </html>
