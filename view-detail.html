@@ -42,7 +42,7 @@
       	<div class="row">
             <div class="navbar-header">
                 	<div class="brand row">
-                    	<!-- NAVIGATION BAR TOP (LOGO, TITLE)-->
+                    	<!-- NAVIGATION BAR CSS FOR (LOGO, TITLE)-->
                         <!-- Including a piece of js at index.html(bottom of this page) line 687 (adjust logo and title size when scrolling)-->
                         <!-- Including new css below -->
                     	<style>
@@ -236,29 +236,84 @@
             	</div>
         	
         </div>
-        
+        <style>
+		.Cheader{
+			border:white!important;
+		}
+		.Cheader>td{
+			border:white!important;
+		}
+		</style>
         <div class="detail-panel2 panel-style effect7">
             <div class="calendar" id="priceCalendarBox">
-                
-                    <div class="paddle-nav">
-                        <div class="title-style1">
-                            Choose Date:
-                        </div>
-                        <div class="row">
-                               <div class="text-center col-xs-12 col-sm-12">
-                                    <a href="javascript:;"><div class="previous __priceCalendarPrev __priceCalendarNone"><span class="glyphicon glyphicon-chevron-up"></span></div></a>
-                                    <a href="javascript:;"><span class="week calendar_active"><span class="__priceCalendarWeekDay">2014</span><h4 class="__priceCalendarMonth">Sep</h4><h3 class="__priceCalendarDay">23</h3><h6 class="__priceCalendarMinPrice">50.00</h6></span></a>
-                                    <a href="javascript:;"><span class="week"><span class="__priceCalendarWeekDay">2014</span><h4 class="__priceCalendarMonth">Sep</h4><h3 class="__priceCalendarDay">25</h3><h6 class="__priceCalendarMinPrice">50.00</h6></span></a>
-                                    <a href="javascript:;"><span class="week"><span class="__priceCalendarWeekDay">2014</span><h4 class="__priceCalendarMonth">Sep</h4><h3 class="__priceCalendarDay">28</h3><h6 class="__priceCalendarMinPrice">50.00</h6></span></a>
-                                    <a href="javascript:;"><span class="week"><span class="__priceCalendarWeekDay">2014</span><h4 class="__priceCalendarMonth">Sep</h4><h3 class="__priceCalendarDay">30</h3><h6 class="__priceCalendarMinPrice">50.00</h6></span></a>
-                                    <a href="javascript:;"><span class="week"><span class="__priceCalendarWeekDay">2014</span><h4 class="__priceCalendarMonth">Oct</h4><h3 class="__priceCalendarDay">2</h3><h6 class="__priceCalendarMinPrice">50.00</h6></span></a>
-                                    <a href="javascript:;"><span class="week"><span class="__priceCalendarWeekDay">2014</span><h4 class="__priceCalendarMonth">Oct</h4><h3 class="__priceCalendarDay">5</h3><h6 class="__priceCalendarMinPrice">50.00</h6></span></a>
-                                    <a href="javascript:;"><span class="week"><span class="__priceCalendarWeekDay">2014</span><h4 class="__priceCalendarMonth">Oct</h4><h3 class="__priceCalendarDay">7</h3><h6 class="__priceCalendarMinPrice">50.00</h6></span></a>
-                                    <a href="javascript:;"><div class="next __priceCalendarNext"><span class="glyphicon glyphicon-chevron-down"></span></div></a>
-                                </div>           
-                            </div>
-                    </div>
-             
+            	<div class="well">
+                 <table class=" table table-bordered">
+                    <tbody>
+                        <tr class="Cheader">
+                            <td>MON</td>
+                            <td>TUE</td>
+                            <td>WEB</td>
+                            <td>THU</td>
+                            <td>FRI&nbsp;</th>
+                            <td>SAT</td>
+                            <td>SUN</td>
+                        </tr>
+                    
+                    
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            
+                            
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                        </tr>
+                        
+                        <tr>
+                            
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                        </tr>
+                         <tr>
+                            <td>29</td>
+                            <td>30</td>
+                            <td>31</td>
+                          	<td></td>
+                          	<td></td>
+                          	<td></td>
+                            <td></td>
+                        </tr>
+                      
+                    </tbody>
+                </table>
+             	</div>
             </div>
         </div>
         
@@ -401,23 +456,29 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	<script src="asset/js/custom.js"></script>
  
-<script>
-	
- 		$(function(){		
-			$('.add-to-cart').click(function(e){
-				var $cart = $('.shopping-cart');
-				
-					$cart.addClass('css3-notification');
-					$(this).prop('disabled', true);
-				window.setTimeout( function() {
-					  $cart.removeClass( 'css3-notification' );
-					  $('button').prop('disabled', false);
-					}, 400 );
-				
-			});
-		});
-	
+	<script>
+    		/* add to cart button animation with css in view-detail2.css */    
+            $(function(){		
+                $('.add-to-cart').click(function(e){
+                    var $cart = $('.shopping-cart');
+                    
+                        $cart.addClass('css3-notification');
+                        $(this).prop('disabled', true);
+                    window.setTimeout( function() {
+                          $cart.removeClass( 'css3-notification' );
+                          $('button').prop('disabled', false);
+                        }, 400 );
+                    
+                });
+            });
+        
+    </script>
+    <script>
+	$(window).load(function(){
+	$('a.btnn').click(function(){
+		$( this ).toggleClass( "active" );
+	});
+	});
 </script>
-	
   </body>
 </html>
