@@ -271,6 +271,7 @@ $(document).ready(function(){
 		}
 		if($(this).attr("value")=="trans3"){
 			$(".mybox0").hide();
+			$(".trans3").show();
 
 		}
 	});
