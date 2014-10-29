@@ -199,7 +199,7 @@ background-color:#333;
 }
 /* Declare heights because of positioning of img element */
  .carousel .item {
-    min-height:600px;
+    min-height:400px;
     min-width:100%;
     background-color: #f2f2f2;
 }

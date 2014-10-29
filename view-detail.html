@@ -30,7 +30,9 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
  	<link href='http://fonts.googleapis.com/css?family=Roboto:300,100' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Playfair+Display:900' rel='stylesheet' type='text/css'>
-
+	<link href="asset/css/datepicker.css" rel="stylesheet" type="text/css"/>	<!--style the calendar-->
+    <link rel='stylesheet prefetch' href='http://dimsemenov-static.s3.amazonaws.com/dist/magnific-popup.css'><!--used for calendar popup-->
+	 
   </head>
 
   <body>
@@ -236,153 +238,158 @@
             	</div>
         	
         </div>
-        <style>
-		.Cheader{
-			border:white!important;
+      
+		<style>
+		.white-popup {
+		  position: relative;
+		  background: none;
+		  padding: 20px;
+		  width:auto;
+		  max-width: 700px;
+		  margin: 20px auto;
 		}
-		.Cheader>td{
-			border:white!important;
-		}
+		
+		
+
 		</style>
+
         <div class="detail-panel2 panel-style effect7">
             <div class="calendar" id="priceCalendarBox">
-            	<div class="well">
-                 <table class=" table table-bordered">
-                    <tbody>
-                        <tr class="Cheader">
-                            <td>MON</td>
-                            <td>TUE</td>
-                            <td>WEB</td>
-                            <td>THU</td>
-                            <td>FRI&nbsp;</th>
-                            <td>SAT</td>
-                            <td>SUN</td>
-                        </tr>
+             <h3 class="title-style1">Choose a date<h3>
+            	<div style="padding:20px;">
                     
-                    
-                        <tr>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                            <td>4</td>
-                            <td>5</td>
-                            <td>6</td>
-                            <td>7</td>
-                        </tr>
-                        <tr>
-                            
-                            
-                            <td>8</td>
-                            <td>9</td>
-                            <td>10</td>
-                            <td>11</td>
-                            <td>12</td>
-                            <td>13</td>
-                            <td>14</td>
-                        </tr>
-                        
-                        <tr>
-                            
-                            <td>15</td>
-                            <td>16</td>
-                            <td>17</td>
-                            <td>18</td>
-                            <td>19</td>
-                            <td>20</td>
-                            <td>21</td>
-                            
-                        </tr>
-                        <tr>
-                            <td>22</td>
-                            <td>23</td>
-                            <td>24</td>
-                            <td>25</td>
-                            <td>26</td>
-                            <td>27</td>
-                            <td>28</td>
-                        </tr>
-                         <tr>
-                            <td>29</td>
-                            <td>30</td>
-                            <td>31</td>
-                          	<td></td>
-                          	<td></td>
-                          	<td></td>
-                            <td></td>
-                        </tr>
-                      
-                    </tbody>
-                </table>
-             	</div>
-            </div>
-        </div>
-        
-        <div class="detail-panel3 panel-style2 effect7">
-            <div class="plan">
-                 <div class="row">
-                             <div class=" content content-style1 col-sm-offset-1 col-sm-7 col-xs-12">
-                                <h3 class="">Sea Life Park Dolphin plan A</h3>
-                                <p>Select the time session:</p>
-                                <div class="well" style="">
-                                	
-                                    <ul class="list-group checked-list-box">
-                                      <li class="list-group-item" data-checked="true" >6:00 - 7:00</li>
-                                      <li class="list-group-item">8:00 - 9:00</li>
-                                      <li class="list-group-item">10:00 - 11:00</li>
-                                      <li class="list-group-item">12:00 -13:00</li>
-                                   
-                          
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="content content-style2  col-sm-4  col-xs-12"> 
-                                
-            
-                                
-                                <h5 class="price text-right"><small>Infant (Age: 1-2)</small> US$ 213.08</h5>
-                                <h5 class="price text-right"><small>Children (Age: 3-13)</small> US$ 213.08</h5>
-                                <h5 class="price text-right"><small>Adult (Age: 14+)</small> US$ 213.08</h5>
-                                <div style="width:100%;" class=" ">
-                                    <button style="width:100%;margin-bottom:5px;" type="button" class="btn btn-info">Purchase</button>
-                                    <button  style="width:100%;" type="button" class="add-to-cart btn btn-primary">ADD <span class="glyphicon glyphicon-shopping-cart"></span></button>
-                                </div>
-                              
-                            </div>       
-                  </div>
-              	
-            </div>
-         </div>   
-           
-         <div class="detail-panel3 panel-style2 effect7">
-             <div class="plan">           
-              	  
-                      
+      				
+                   
+                    <form class="bs-example bs-example-form" role="form">
                       <div class="row">
-                            <div class=" content content-style1 col-sm-offset-1 col-sm-7 col-xs-12">
-                                <h3>Sea Life Park Dolphin plan B</h3>
-                                <p>
-                                    45-minutes including orientation, minimum age 1 yr old. 3-7 yrs old must be accompanied by paying adult 18+ yrs old in water. Due to health reasons, pregnant women are not allowed in the water.
-                                     </p>
-                                <p>
-                                    Event Time : 01:45 PM , 03:15 AM , 09:30 AM , 11:00 AM
-                                </p>
-                            </div>
-                            <div class="content content-style2 col-sm-4 col-xs-12"> 
+                         <div class=" col-sm-6">
+                           <a href="#popupIDmatch-1" class="open-popup-link">
+                            <div class="input-group">
+                            	<input type="text" class="form-control " id="alternate" placeholder="MM/DD/YYYY">
+                               <span class="input-group-btn">
                                 
-                                <h5 class="price text-right"><small>Infant (Age: 1-2)</small> US$ 213.08</h5>
-                                <h5 class="price text-right"><small>Children (Age: 3-13)</small> US$ 213.08</h5>
-                                <h5 class="price text-right"><small>Adult (Age: 14+)</small> US$ 213.08</h5>
+                                      <button class="choose btn btn-info" type="button"> 
+                                         <span class="glyphicon glyphicon-calendar"> </span>
+                                      </button>
                                 
-                                <div style="width:100%;" class=" ">
-                                    <button style="width:100%;margin-bottom:5px;" type="button" class="btn btn-info">Purchase</button>
-                                    <button  style="width:100%;" type="button" class="add-to-cart btn  btn-primary">ADD <span class="glyphicon glyphicon-shopping-cart"></span></button>
+                               </span>
                               
-                                </div>
-                            </div>
-                      </div>
+                            </div><!-- /input-group -->
+                           </a>
+                         </div><!-- /.col-lg-6 --><br>
+                         
+                      </div><!-- /.row -->
+                   </form>
+                    
+                    
+            	</div>
                 
-             </div>
-		 </div>
+            
+            <!--
+            Alternative markup with data-mfp-src attribute:
+            <a href="mobile-friendly-page.html" data-mfp-src="#test-popup" class="open-popup-link">Show inline popup</a>
+            -->
+            
+            <!-- Popup itself -->
+            <div id="popupIDmatch-1" class="white-popup mfp-hide">
+              <div class="white-popup" style="width:100%; height:auto;" id="datepicker"></div>
+            </div>   
+               
+             <!-- Popup itself -->
+            <!--<div id="test-popup" class="white-popup mfp-hide">
+             
+            </div>-->
+   
+             	
+            </div>
+        
+       
+            <div class="detail-panel3 panel-style2 effect7">
+                <div class="plan">
+                     <div class="row">
+                                 <div class=" content content-style1 col-sm-offset-1 col-sm-7 col-xs-12">
+                                    <h3 class="">Sea Life Park Dolphin plan A</h3>
+                                    <p>Select the time session:</p>
+                                    <div class="well" style="">
+                                        
+                                        <ul class="list-group checked-list-box">
+                                          <li class="list-group-item" data-checked="true" >6:00 - 7:00</li>
+                                          <li class="list-group-item">8:00 - 9:00</li>
+                                          <li class="list-group-item">10:00 - 11:00</li>
+                                          <li class="list-group-item">12:00 -13:00</li>
+                                       
+                              
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content content-style2  col-sm-4  col-xs-12"> 
+                                    
+                
+                                    
+                                    <h5 class="price text-right"><small>Infant (Age: 1-2)</small> US$ 213.08</h5>
+                                    <h5 class="price text-right"><small>Children (Age: 3-13)</small> US$ 213.08</h5>
+                                    <h5 class="price text-right"><small>Adult (Age: 14+)</small> US$ 213.08</h5>
+                                    <div style="width:100%;" class=" ">
+                                        <button style="width:100%;margin-bottom:5px;" type="button" class="btn btn-info">Purchase</button>
+                                        <button  style="width:100%;" type="button" class="add-to-cart btn btn-primary">ADD <span class="glyphicon glyphicon-shopping-cart"></span></button>
+                                    </div>
+                                  
+                                </div>       
+                      </div>
+                    
+                </div>
+             </div>   
+               
+             <div class="detail-panel3 panel-style2 effect7">
+                 <div class="plan">           
+                      
+                          
+                          <div class="row">
+                                <div class=" content content-style1 col-sm-offset-1 col-sm-7 col-xs-12">
+                                    <h3>Sea Life Park Dolphin plan B</h3>
+                                    <p>
+                                        45-minutes including orientation, minimum age 1 yr old. 3-7 yrs old must be accompanied by paying adult 18+ yrs old in water. Due to health reasons, pregnant women are not allowed in the water.
+                                         </p>
+                                    <p>
+                                        Event Time : 01:45 PM , 03:15 AM , 09:30 AM , 11:00 AM
+                                    </p>
+                                </div>
+                                <div class="content content-style2 col-sm-4 col-xs-12"> 
+                                    
+                                    <h5 class="price text-right"><small>Infant (Age: 1-2)</small> US$ 213.08</h5>
+                                    <h5 class="price text-right"><small>Children (Age: 3-13)</small> US$ 213.08</h5>
+                                    <h5 class="price text-right"><small>Adult (Age: 14+)</small> US$ 213.08</h5>
+                                    
+                                    <div style="width:100%;" class=" ">
+                                        <button style="width:100%;margin-bottom:5px;" type="button" class="btn btn-info">Purchase</button>
+                                        <button  style="width:100%;" type="button" class="add-to-cart btn  btn-primary">ADD <span class="glyphicon glyphicon-shopping-cart"></span></button>
+                                  
+                                    </div>
+                                </div>
+                          </div>
+                    
+                 </div>
+             </div><!--end of  plan 2-->
+             
+             <div class="detail-panel3 panel-style2 effect7">
+                 <div class="plan">           
+                      
+                          
+                          <div class="row">
+                                <div class=" content content-style1 text-center col-xs-12">
+                                    <h3 style="color:red;">Not available, please select another date. </h3>
+                                </div>
+                          </div>
+                    
+                 </div>
+             </div><!--end of  plan 2-->
+             
+             
+         </div><!--end of choose plan date-->
+         
+         
+         
+         
          
          <div class="detail-panel4 panel-style effect7">
 
@@ -416,7 +423,7 @@
             </div>
          </div>
          
-          <div class="detail-panel6 panel-style effect7">
+         <div class="detail-panel6 panel-style effect7">
         	<div  class="title-style1">Video:</div>
             <div  class="content-style1">
                 <div class="embed-responsive embed-responsive-16by9">
@@ -428,7 +435,11 @@
         
         
         
-         
+        
+        
+       
+        
+        
 
 	</div>
 </div>
@@ -449,6 +460,9 @@
 		</div>
    
 	</footer> 
+    
+    
+    
 
 
    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -479,6 +493,42 @@
 		$( this ).toggleClass( "active" );
 	});
 	});
+	</script>
+    
+    
+    
+    <script type="text/javascript" src="asset/js/jquery-1.7.1.min.js"></script>   <!--used for the datepicker-->
+	<script type="text/javascript" src="asset/js/jquery-ui-1.8.18.custom.min.js"></script> <!--used for the datepicker-->
+	<script type=""> <!--used for the datepicker-->
+		$(function (){
+			$('#datepicker').datepicker({
+				inline: true,
+				//nextText: '&rarr;',
+				//prevText: '&larr;',
+				showOtherMonths: true,
+				//dateFormat: 'dd MM yy',
+				dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+				//showOn: "button",
+				//buttonImage: "img/calendar-blue.png",
+				//buttonImageOnly: true,
+				 altField: "#alternate",
+      			 altFormat: "DD, d MM, yy"
+			});
+		});
+	</script>
+    
+    
+ <script src='http://dimsemenov-static.s3.amazonaws.com/dist/jquery.magnific-popup.min.js'></script>  <!--used for popup the calendar(datapicker)-->
+ <script type="text/javascript"> <!--used for popup the calendar-->
+   // Example 1: From an element in DOM
+	$('.open-popup-link').magnificPopup({
+	  type:'inline',
+	  midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+	});
+    
+
+	
 </script>
+
   </body>
 </html>
