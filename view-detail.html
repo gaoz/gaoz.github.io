@@ -30,9 +30,12 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
  	<link href='http://fonts.googleapis.com/css?family=Roboto:300,100' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Playfair+Display:900' rel='stylesheet' type='text/css'>
-	<link href="asset/css/datepicker.css" rel="stylesheet" type="text/css"/>	<!--style the calendar-->
+	<!--<link href="asset/css/datepicker.css" rel="stylesheet" type="text/css"/>	--><!--style the calendar-->
     <link rel='stylesheet prefetch' href='http://dimsemenov-static.s3.amazonaws.com/dist/magnific-popup.css'><!--used for calendar popup-->
-	 
+	<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/ui-darkness/jquery-ui.min.css" rel="stylesheet"> 
+    <link href="asset/css/datepicker-style.css" rel="stylesheet" type="text/css"/>
+    
+    	 
   </head>
 
   <body>
@@ -239,20 +242,7 @@
         	
         </div>
       
-		<style>
-		.white-popup {
-		  position: relative;
-		  background: none;
-		  padding: 20px;
-		  width:auto;
-		  max-width: 700px;
-		  margin: 20px auto;
-		}
 		
-		
-
-		</style>
-
         <div class="detail-panel2 panel-style effect7">
             <div class="calendar" id="priceCalendarBox">
              <h3 class="title-style1">Choose a date<h3>
@@ -289,10 +279,164 @@
             Alternative markup with data-mfp-src attribute:
             <a href="mobile-friendly-page.html" data-mfp-src="#test-popup" class="open-popup-link">Show inline popup</a>
             -->
-            
+            <style>
+				.white-popup {
+					height:400px;
+					position: relative;
+					background: none;
+			
+					width:auto;
+					max-width: 700px;
+					margin: 20px auto;
+				}
+				.calendarbox{
+					width:100%; height:auto;
+				}
+				.description-box{
+					display:block;
+					background-color:white;
+					padding:5px;
+					overflow:hidden;
+					border-bottom-right-radius: 6px;
+					border-bottom-left-radius: 6px;
+				}
+				.LegendItem {
+					display:inline-block;
+					margin: 0 3em .6em 0;
+					float:left;
+					white-space: nowrap;
+				}
+				
+				.LgndImg {
+				width: 15px;
+				height: 15px;
+				}
+				.popup-info{
+				padding:5px;
+				display:block;
+				overflow:hidden;
+				background-color:white;	
+				}
+				.popup-inner{
+				padding:5px;
+				display:block;
+				overflow:hidden;
+				background:#CCC;
+				border-radius: 5px;
+				}
+				button.mfp-close {
+					margin-top:-50px;
+					color:white!important;
+				}
+				.ui-datepicker td a {
+				padding:3px!important;
+				}
+				.ui-widget-content {
+					border: 0px solid #666;
+					background: white;
+					color: #000;
+				}
+				.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+				border-bottom-right-radius: 0px;
+				}
+				.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+				border-bottom-left-radius: 0px;
+				}
+				.ui-datepicker-other-month span{
+				display:none!important;
+				}
+				.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+				border: none;
+				background: white;
+				font-weight:100;
+				color: #ccc;
+				}
+				.ui-datepicker-calendar .ui-state-active, .SelectedDates {
+				padding:0px!important;
+				}
+				.datelabel{
+					display:none;
+					width:100%;	
+				}
+				
+				.dp-highlight-unknown .ui-state-default {
+					background: #800;
+					color: #FFF;
+				}
+				.dp-highlight-holiday .ui-state-default {
+					background: #484;
+					color: #FFF;
+				}
+				/**********************************/
+				/*      CALENDAR COLOR CODES      */
+				/**********************************/
+				
+				/* available day's color on the calenlar*/
+				.available .ui-state-default {
+						background: #7CB250!important;
+						color: #FFF!important;	
+				}
+				/* unavailable day's color on the calenlar*/
+				.unavailable .ui-state-default {
+						background: #ccc!important;
+						color: #FFF!important;	
+				}
+				/* available icon*/
+				 .BECalOpen { background:#7CB250!important; }
+					
+				
+				/* No Available icon*/
+				.BENoAvail { background:#ccc!important; }
+					
+			
+				/* Selected dates */
+				.ui-datepicker-calendar .ui-state-active, .SelectedDates { border:3px solid #4A4D4D; } 
+				
+				/* Datepicker selected dates */
+				.calendars-popup .ui-datepicker-calendar .ui-state-active { background:#4A4D4D; border: 1px solid #4A4D4D !important; }
+					.calendars-popup .ui-datepicker-calendar .ui-state-active span { color:#FFF; }
+
+			 </style>
+
             <!-- Popup itself -->
             <div id="popupIDmatch-1" class="white-popup mfp-hide">
-              <div class="white-popup" style="width:100%; height:auto;" id="datepicker"></div>
+              <div  class="calendarbox" id="datepicker"></div>
+              <div class="popup-info"> 
+              		<div class="popup-inner">
+                    	<span class="glyphicon glyphicon-exclamation-sign"> </span>
+              			<span>There are 2 seats left only!</span>
+                    	<button class="pull-right btn btn-lg btn-primary">Continue</button>
+                    </div>
+              </div>
+              <div class="popup-info"> 
+              		<div class="popup-inner">
+                    	<span class="glyphicon glyphicon-exclamation-sign"> </span>
+              			<span>There are tickets available!</span>
+                    	<button class="pull-right btn btn-lg btn-primary">Continue</button>
+                    </div>
+              </div>
+               <div class="popup-info"> 
+              		<div class="popup-inner">
+                    	<span class="glyphicon glyphicon-exclamation-sign"> </span>
+              			<span>Sold Out!</span>
+                    	<button class="pull-right btn btn-lg btn-primary">Continue</button>
+                    </div>
+              </div>
+              <div class="description-box">
+              		<div class="LegendItem SD">
+                   		<img class="SelectedDates LgndImg" src="asset/img/etc/blank.gif">
+                    	Selected Dates
+                    </div>
+                    <div class="LegendItem OD">
+                        <img class="BECalOpen LgndImg" src="asset/img/etc/blank.gif">
+                        Available.
+                    </div>
+                    <div class="LegendItem NAv">
+                        <img class="BENoAvail LgndImg" src="asset/img/etc/blank.gif">
+                        No Availability
+                    </div>
+                   
+              	</div>
             </div>   
                
              <!-- Popup itself -->
@@ -495,28 +639,41 @@
 	});
 	</script>
     
-    
-    
-    <script type="text/javascript" src="asset/js/jquery-1.7.1.min.js"></script>   <!--used for the datepicker-->
-	<script type="text/javascript" src="asset/js/jquery-ui-1.8.18.custom.min.js"></script> <!--used for the datepicker-->
-	<script type=""> <!--used for the datepicker-->
+  <!--used for the datepicker-->  
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+<!--    <script type="text/javascript" src="asset/js/jquery-1.7.1.min.js"></script>-->   <!--used for the datepicker-->
+<!--	<script type="text/javascript" src="asset/js/jquery-ui-1.8.18.custom.min.js"></script>--> <!--used for the datepicker-->
+	<script > <!--used for the datepicker-->
 		$(function (){
+			var date1 = new Date;
+			date1.setHours(0, 0, 0, 0);
+			date1.setDate(10);
+			var date2 = new Date;
+			date2.setHours(0, 0, 0, 0);
+			date2.setDate(23);
 			$('#datepicker').datepicker({
 				inline: true,
-				//nextText: '&rarr;',
-				//prevText: '&larr;',
 				showOtherMonths: true,
 				//dateFormat: 'dd MM yy',
 				dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
-				//showOn: "button",
-				//buttonImage: "img/calendar-blue.png",
-				//buttonImageOnly: true,
-				 altField: "#alternate",
-      			 altFormat: "DD, d MM, yy"
+				altField: "#alternate",
+      			altFormat: "DD, d MM, yy",
+				 
+				 beforeShowDay: function(date) {
+					return [ true, date >= date1 && date <= date2 ? "available" : ""];
+				}
+			});
+			$("#datepicker").datepicker({
+				beforeShowDay: function(date) {
+					return [date < date1 || date > date2, ""];
+				}
 			});
 		});
+		
+		
 	</script>
-    
+
     
  <script src='http://dimsemenov-static.s3.amazonaws.com/dist/jquery.magnific-popup.min.js'></script>  <!--used for popup the calendar(datapicker)-->
  <script type="text/javascript"> <!--used for popup the calendar-->
