@@ -377,7 +377,20 @@
 						color: #FFF!important;	
 				}
 				/* unavailable day's color on the calenlar*/
-				.unavailable .ui-state-default {
+				.unAvailable .ui-state-default {
+						background: #ccc!important;
+						color: #FFF!important;	
+				}
+				/* unavailable day's color on the calenlar*/
+				.currentDay-avail .ui-state-default {
+						border:3px solid #15A5EA;
+						padding:0px!important;
+						background: #7CB250!important;
+						color: #FFF!important;	
+				}
+				.currentDay-unavail .ui-state-default {
+						border:3px solid #15A5EA;
+						padding:0px!important;
 						background: #ccc!important;
 						color: #FFF!important;	
 				}
@@ -392,44 +405,50 @@
 				/* Selected dates */
 				.ui-datepicker-calendar .ui-state-active, .SelectedDates { border:3px solid #4A4D4D; } 
 				
-				/* Datepicker selected dates */
-				.calendars-popup .ui-datepicker-calendar .ui-state-active { background:#4A4D4D; border: 1px solid #4A4D4D !important; }
-					.calendars-popup .ui-datepicker-calendar .ui-state-active span { color:#FFF; }
+				/* Current dates */
+				.currentDay { border:3px solid #15A5EA;
+						padding:0px!important; } 
 
 			 </style>
 
             <!-- Popup itself -->
             <div id="popupIDmatch-1" class="white-popup mfp-hide">
               <div  class="calendarbox" id="datepicker"></div>
+              
+              <!--以下的信熄是跟据选的日期而出现的 -->
               <div class="popup-info"> 
               		<div class="popup-inner">
                     	<span class="glyphicon glyphicon-exclamation-sign"> </span>
-              			<span>There are 2 seats left only!</span>
+              			<span>There are 2 seats left only!（这信息是跟据选中的日期而出现的）</span>
                     	<button class="pull-right btn btn-lg btn-primary">Continue</button>
                     </div>
               </div>
               <div class="popup-info"> 
               		<div class="popup-inner">
                     	<span class="glyphicon glyphicon-exclamation-sign"> </span>
-              			<span>There are tickets available!</span>
+              			<span>There are tickets available!（这信息是跟据选中的日期而出现的）</span>
                     	<button class="pull-right btn btn-lg btn-primary">Continue</button>
                     </div>
               </div>
                <div class="popup-info"> 
               		<div class="popup-inner">
                     	<span class="glyphicon glyphicon-exclamation-sign"> </span>
-              			<span>Sold Out!</span>
-                    	<button class="pull-right btn btn-lg btn-primary">Continue</button>
+              			<span>Sold Out!（这信息是跟据选中的日期而出现的）</span>
+                    	
                     </div>
               </div>
               <div class="description-box">
               		<div class="LegendItem SD">
+                   		<img class="currentDay LgndImg" src="asset/img/etc/blank.gif">
+                    	 Today
+                    </div>
+              		<div class="LegendItem SD">
                    		<img class="SelectedDates LgndImg" src="asset/img/etc/blank.gif">
-                    	Selected Dates
+                    	Selected Date
                     </div>
                     <div class="LegendItem OD">
                         <img class="BECalOpen LgndImg" src="asset/img/etc/blank.gif">
-                        Available.
+                        Available
                     </div>
                     <div class="LegendItem NAv">
                         <img class="BENoAvail LgndImg" src="asset/img/etc/blank.gif">
@@ -639,12 +658,20 @@
 	});
 	</script>
     
+  
+<!--－－－－－－－－－－－－－－－－－－－－－－－订购日期－－－－－－－－－－－－－－－－－－－－－－－－－－－-->
+<!--－－－－－－－－－－－－－－－－－－－－－－－订购日期－－－－－－－－－－－－－－－－－－－－－－－－－－－-->
+<!--－－－－－－－－－－－－－－－－－－－－－－－订购日期－－－－－－－－－－－－－－－－－－－－－－－－－－－-->
+<!--－－－－－－－－－－－－－－－－－－－－－－－订购日期－－－－－－－－－－－－－－－－－－－－－－－－－－－-->
+<!--－－－－－－－－－－－－－－－－－－－－－－－订购日期－－－－－－－－－－－－－－－－－－－－－－－－－－－-->
+
+
   <!--used for the datepicker-->  
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
-<!--    <script type="text/javascript" src="asset/js/jquery-1.7.1.min.js"></script>-->   <!--used for the datepicker-->
-<!--	<script type="text/javascript" src="asset/js/jquery-ui-1.8.18.custom.min.js"></script>--> <!--used for the datepicker-->
-	<script > <!--used for the datepicker-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.8.18/jquery-ui.min.js"></script>
+  <!--    Example at http://www.jquerybyexample.net/2012/05/highlight-specific-dates-in-jquery-ui.html  -->
+  
+  	<script > <!--used for the datepicker-->
 		$(function (){
 			var date1 = new Date;
 			date1.setHours(0, 0, 0, 0);
@@ -652,6 +679,38 @@
 			var date2 = new Date;
 			date2.setHours(0, 0, 0, 0);
 			date2.setDate(23);
+			
+			var Today = {};                //今天的日期
+			var SelectedOpenedDates = {};  //有空的日期
+			var SelectedClosedDates = {};  //卖光的日期
+			// array[index] = value;  Use the date as index and value
+			
+			//在这里导进今天的日期。
+			Today[new Date('11/03/2014')] = new Date('11/03/2014');
+			
+			//在这里导进所有 有空的日期。
+			SelectedOpenedDates[new Date('11/03/2014')] = new Date('11/03/2014');
+			SelectedOpenedDates[new Date('11/04/2014')] = new Date('11/04/2014');
+			SelectedOpenedDates[new Date('11/05/2014')] = new Date('11/05/2014');
+			SelectedOpenedDates[new Date('11/06/2014')] = new Date('11/06/2014');
+			SelectedOpenedDates[new Date('11/07/2014')] = new Date('11/07/2014');
+			SelectedOpenedDates[new Date('11/08/2014')] = new Date('11/08/2014');
+			SelectedOpenedDates[new Date('11/09/2014')] = new Date('11/09/2014');
+			SelectedOpenedDates[new Date('11/10/2014')] = new Date('11/10/2014');
+			SelectedOpenedDates[new Date('11/11/2014')] = new Date('11/11/2014');
+			SelectedOpenedDates[new Date('11/12/2014')] = new Date('11/12/2014');
+			
+			//在这里导进所有 卖光的日期。
+			SelectedClosedDates[new Date('11/13/2014')] = new Date('11/13/2014');
+			SelectedClosedDates[new Date('11/14/2014')] = new Date('11/14/2014');
+			SelectedClosedDates[new Date('11/15/2014')] = new Date('11/15/2014');
+			SelectedClosedDates[new Date('11/16/2014')] = new Date('11/17/2014');
+			SelectedClosedDates[new Date('11/17/2014')] = new Date('11/18/2014');
+			SelectedClosedDates[new Date('11/18/2014')] = new Date('11/19/2014');
+			SelectedClosedDates[new Date('11/19/2014')] = new Date('11/20/2014');
+			SelectedClosedDates[new Date('11/20/2014')] = new Date('11/21/2014');
+			SelectedClosedDates[new Date('11/21/2014')] = new Date('11/12/2014');
+
 			$('#datepicker').datepicker({
 				inline: true,
 				showOtherMonths: true,
@@ -660,19 +719,53 @@
 				altField: "#alternate",
       			altFormat: "DD, d MM, yy",
 				 
-				 beforeShowDay: function(date) {
-					return [ true, date >= date1 && date <= date2 ? "available" : ""];
-				}
-			});
-			$("#datepicker").datepicker({
 				beforeShowDay: function(date) {
-					return [date < date1 || date > date2, ""];
+					//return [ true, date >= date1 && date <= date2 ? "available" : ""];  // add css class '.available' into matched date.
+					var CurrenDay = Today[date];
+					var OpenedDay = SelectedOpenedDates[date];
+					var ClosedDay = SelectedClosedDates[date];
+					
+					if (OpenedDay && !CurrenDay ) {
+					
+					 return [true, "available", OpenedDay]; // add css class '.available' into matched date.
+					
+					}
+					else if(ClosedDay && !CurrenDay){
+					  
+					 return [true, "unAvailable", ClosedDay]; // add css class '.unAvailable' into matched date.
+					}
+					else if(CurrenDay && OpenedDay){
+					  
+					 return [true, "currentDay-avail", CurrenDay]; // add css class '.currentDay' into matched date.
+					}
+					else if(CurrenDay && ClosedDay){
+					  
+					 return [true, "currentDay-unavail", CurrenDay]; // add css class '.currentDay' into matched date.
+					}
+					else {
+					
+					 return [true, '', ''];
+					
+					}
+				
+ 					
 				}
 			});
+			
 		});
 		
 		
-	</script>
+	</script> 
+<!--－－－－－－－－－－－－－－－－－－－－－－－end of code(订购日期)－－－－－－－－－－－－－－－－－－－－－－－－－－－-->
+<!--－－－－－－－－－－－－－－－－－－－－－－－end of code(订购日期)－－－－－－－－－－－－－－－－－－－－－－－－－－－-->
+<!--－－－－－－－－－－－－－－－－－－－－－－－end of code(订购日期)－－－－－－－－－－－－－－－－－－－－－－－－－－－-->
+<!--－－－－－－－－－－－－－－－－－－－－－－－end of code(订购日期)－－－－－－－－－－－－－－－－－－－－－－－－－－－-->
+<!--－－－－－－－－－－－－－－－－－－－－－－－end of code(订购日期)－－－－－－－－－－－－－－－－－－－－－－－－－－－-->
+
+
+
+
+
 
     
  <script src='http://dimsemenov-static.s3.amazonaws.com/dist/jquery.magnific-popup.min.js'></script>  <!--used for popup the calendar(datapicker)-->
