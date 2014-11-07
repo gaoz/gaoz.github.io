@@ -152,13 +152,18 @@ background-color:#333;
     50% { opacity: 0.2; }
     100% { opacity: 1.0; }
 }
-
-
 /* end of blinking text css */
 
 
-/* THE CAROUSEL slidershow section
--------------------------------------------------- */
+
+
+
+/*-------------------------- Desktop style banner slider ----------------------------------
+/*-------------------------- Desktop style banner slider ----------------------------------
+/*-------------------------- Desktop style banner slider ----------------------------------
+/*-------------------------- Desktop style banner slider ----------------------------------
+/*-------------------------- Desktop style banner slider ----------------------------------
+/*-------------------------- Desktop style banner slider ----------------------------------
 
 /* Carousel base class */
  .carousel {
@@ -204,10 +209,10 @@ background-color:#333;
     background-color: #f2f2f2;
 }
 .carousel-inner > .item > img {
-    position: absolute;
+   /* position: absolute;
     top: 0;
     left: 0;
-    height:500px;
+    height:400px;*/
 }
 .carousel-inner .item {
     width: 100%;
@@ -304,7 +309,7 @@ background-color:#333;
 }
 @media (max-width: 991px) {j
     .carousel .item {
-    min-height:500px;
+       min-height:400px;
     }
 }
 @media (min-width: 992px) {
@@ -317,21 +322,53 @@ background-color:#333;
      font-size: 70px;
   }
 }
-@media (max-width: 767px) {/*mobile view */
-	.carousel{
-	}
-    .carousel .item {
-    min-height:400px;
-    }
 
-    .carousel-caption {
+
+
+/*-------------------------- mobile style banner slider ----------------------------------*/
+/*-------------------------- mobile style banner slider ----------------------------------*/
+/*-------------------------- mobile style banner slider ----------------------------------*/
+/*-------------------------- mobile style banner slider ----------------------------------*/
+/*-------------------------- mobile style banner slider ----------------------------------*/
+/*-------------------------- mobile style banner slider ----------------------------------*/
+
+@media (max-width: 767px) {/*mobile view */
+	
+	 .carousel-caption {
         padding: 0;
     }
     .carousel-caption h1 {
         font-size:40px;
     }
 
+	.carousel-inner .item {
+		 min-height:0px;
+		 width: 100%;
+	  	 padding-bottom: 56.25%;   /* 16:9 size */
+		-webkit-background-size: contain;
+		-moz-background-size: contain;
+		-o-background-size: contain;
+		background-size: cover;
+	}
 }
+@media (max-width: 500px) {
+	 .carousel-caption {
+        padding: 0;
+    }
+    .carousel-caption h1 {
+        font-size:20px;
+    }
+	.carousel a.btn{
+		padding: 5px 8px;
+		font-size: 12px;
+	}
+}
+/*-------------------------- end of mobile style banner slider ----------------------------------*/
+
+
+
+
+
 
 
 /* Buttons
