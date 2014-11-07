@@ -342,13 +342,13 @@ background-color:#333;
     }
 
 	.carousel-inner .item {
-		 min-height:0px;
+		 min-height:0px!important;
 		 width: 100%;
 	  	 padding-bottom: 56.25%;   /* 16:9 size */
-		-webkit-background-size: contain;
-		-moz-background-size: contain;
-		-o-background-size: contain;
-		background-size: cover;
+		-webkit-background-size: cover!important;
+		-moz-background-size: cover!important;
+		-o-background-size: cover!important;
+		background-size: cover!important;
 	}
 }
 @media (max-width: 500px) {
