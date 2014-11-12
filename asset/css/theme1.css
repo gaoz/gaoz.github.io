@@ -12,6 +12,12 @@ html, body{
 	margin-bottom: 0px;
 }
 }
+
+
+
+.navbar{
+	border:0;	
+}
 .navbar *{
 	text-transform: uppercase;
 	font-size: 12px;	
