@@ -13,19 +13,14 @@
 
     <!-- Bootstrap core CSS -->
     <link href="asset/css/bootstrap.min.css" rel="stylesheet">
-	<!-- language flat icon CSS -- document https://github.com/usrz/bootstrap-languages -->
+	<!-- language flat icon CSS used for the selected language icon and text display, the icon sprite image is located at the css folder-- document https://github.com/usrz/bootstrap-languages -->
     <link href="asset/css/languages.css" rel="stylesheet">
-    <!-- social media icon CSS with social_media_icon.js-- document https://http://codepen.io/benfields/pen/pnoEL -->
-    <link href="asset/css/hover-effect.css" rel="stylesheet">
-    <link href="asset/css/Flat_Social_Buttons.css" rel="stylesheet">
-    <link href="asset/css/program-cards.css" rel="stylesheet">
+	<!--animation css for animate div to fade in or right/left in -->
     <link href="asset/css/animate.css" rel="stylesheet">
+    <!--main css for Custom styles of this template-->
 	<link href="asset/css/theme1.css" rel="stylesheet">
-    <link href="asset/css/bootstrap_helper.css" rel="stylesheet"> <!--test test test , this can be deleted anytime-->
-    <link href="asset/css/more-programs.css" rel="stylesheet"> 
-    <!-- Custom 1 styles for this template -->
-   
 
+	<!--extenal fonts-->
 	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
@@ -170,6 +165,7 @@
             <div class="navbar-collapse collapse main-nav">
               <ul class="animated fadeInRight nav navbar-nav">
                 <li class="active"><a href="index.html">HOME</a></li>
+                <li><a href="theme2.html">HOME2</a></li>
                 <li><a href="programs.html">Programs Display Mode 1</a></li>
                 <li><a href="programs2.html">Programs Display Mode 2</a></li>
                 <li><a href="view-detail.html">View Detail</a></li>
@@ -764,14 +760,18 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>  <!--bootstrap only works with this 1.11 jquery. and the 1.8 is used to handle the viewport js bug that. better to keep both -->
+    <!--core bootstrap js -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	<script src="asset/js/jQuery_v1.8.2.js"></script><!--this old version jQuery must be used with SmoothScroll.js-->    <!--if delete this jquery v1.8.2, it will cause a nav auto expanded when switch to mobile view. the bug comes from custom.js/viewport checker js(bug source)-->
     <script src="asset/js/SmoothScroll.js"></script><!--this js must be used with jQuery_v1.8.2.js-->
+    <!-- main custom js for this template-->
 	<script src="asset/js/custom.js"></script>
     
     
-  <!-- adjust navigation bar size when scroll down-->
-	<script>$(function(){
+  	<script>
+	<!-- adjust navigation bar size when scroll down-->
+	<!--issue: when I put this js in the custom.js then it doesn't work-->
+	$(function(){
       $(window).scroll(function(event){
           if ($(document).scrollTop() > 200) {
 			$('#title').addClass('title-sm');
@@ -787,7 +787,8 @@
 		  }
 		  
 	   });
- 	});</script>
+ 	});
+	</script>
    
 
 

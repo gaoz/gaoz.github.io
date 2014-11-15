@@ -13,19 +13,14 @@
 
     <!-- Bootstrap core CSS -->
     <link href="asset/css/bootstrap.min.css" rel="stylesheet">
-	<!-- language flat icon CSS -- document https://github.com/usrz/bootstrap-languages -->
+	<!-- language flat icon CSS used for the selected language icon and text display -- document https://github.com/usrz/bootstrap-languages -->
     <link href="asset/css/languages.css" rel="stylesheet">
-    <!-- social media icon CSS with social_media_icon.js-- document https://http://codepen.io/benfields/pen/pnoEL -->
-    <link href="asset/css/hover-effect.css" rel="stylesheet">
-    <link href="asset/css/Flat_Social_Buttons.css" rel="stylesheet">
-    <link href="asset/css/program-cards.css" rel="stylesheet">
+	<!--animation css for animate div to fade in or right/left in -->
     <link href="asset/css/animate.css" rel="stylesheet">
-	<link href="asset/css/theme1.css" rel="stylesheet">
-    <link href="asset/css/bootstrap_helper.css" rel="stylesheet"> <!--test test test , this can be deleted anytime-->
-    <link href="asset/css/more-programs.css" rel="stylesheet"> 
-    <!-- Custom 1 styles for this template -->
-   
+    <!--main css for Custom styles of this template-->
+	<link href="asset/css/theme2.css" rel="stylesheet">
 
+	<!--extenal fonts-->
 	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
@@ -45,78 +40,7 @@
                     	<!-- NAVIGATION BAR TOP (LOGO, TITLE)-->
                         <!-- Including a piece of js at index.html(bottom of this page) line 687 (adjust logo and title size when scrolling)-->
                         <!-- Including new css below -->
-                    	<style>
-							
-							
-							.theme1-nav .title-style{
-								
-								color: #555;
-								font-style: normal;
-								font-weight: 300;
-								text-transform: uppercase;
-								letter-spacing: 0.20em;
-								-webkit-font-smoothing: antialiased;
-								line-height:30px;
-								height: auto;
-								white-space:pre-wrap;
-							}
-							.theme1-nav .title-sm{font-size:15px;}
-							.theme1-nav .title-lg{font-size:25px;}
-							.theme1-nav .logoimage {width: 200px; height: 80px;}
-							.theme1-nav .logoimage-shrink{width: 66.665px; height: 50px;}
-							.theme1-nav .transition{
-								-webkit-transition-delay: 0s;
-								-webkit-transition-duration: 0.25s;
-								-webkit-transition-property: height;
-								-webkit-transition-timing-function: linear;
-								
-								transition-delay: 0s;
-								transition-duration: 0.25s;
-								transition-property: height;
-								transition-timing-function: linear;	
-							}
-							.theme1-nav .navlogo2{
-								background: url("asset/img/etc/icon_256x256@2x.png")no-repeat center center;
-								background-size: contain;
-							}
-							.theme1-nav #title, .theme1-nav #logo{
-								cursor:pointer;
-							}
-							@media (min-width: 1028px){ /* bigger desktop view */
-								
-								.theme1-nav #title{margin-top:0px!important;	}
-								.theme1-nav #logo{margin-left:20px!important;}
-								.theme1-nav .title-position{padding-left:20px!important;}
-							}
-							@media (min-width: 768px){ /* desktop view */
-								.theme1-nav .secondary-nav{margin-top:-50px;}
-								.theme1-nav #logo{margin-left:0px;}
-								.theme1-nav #title{margin-top:-30px;}
-								.theme1-nav .title-position{padding-left:5px;}
-							}
-							@media (max-width: 767px){/*mobile view */
-								.theme1-nav #title{font-size:13px;}
-								.theme1-nav .logoimage { width: 66.665px; height: 50px; } 
-								.theme1-nav .brand{ margin-left:0px; margin-right:0px;}
-								.theme1-nav .brand-inner{padding-left:0px;}
-									
-							}
-							.theme1-nav #logo{margin-left:3px; margin-top:3px; margin-bottom:3px;}
-							.theme1-nav .flex-container {
-							  
-							  -ms-box-orient: horizontal;
-							  display: -webkit-box;
-							  display: -moz-box;
-							  display: -ms-flexbox;
-							  display: -moz-flex;
-							  display: -webkit-flex;
-							  display: flex;
-							  
-							  -webkit-align-items: center; 
-							  align-items: center; 
-							}
-							
-						</style>     
+                       
                     	<div class="brand-inner animated fadeInDown col-xs-12 col-xs-height">   
                             <div class="flex-container">
                                 <span class="flex-item transition logoimage navlogo2" hef="index.html" id="logo"></span>
@@ -169,7 +93,8 @@
         <div class="row"> 
             <div class="navbar-collapse collapse main-nav">
               <ul class="animated fadeInRight nav navbar-nav">
-                <li class="active"><a href="index.html">HOME</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li class="active"><a href="theme2.html">HOME2</a></li>
                 <li><a href="programs.html">Programs Display Mode 1</a></li>
                 <li><a href="programs2.html">Programs Display Mode 2</a></li>
                 <li><a href="view-detail.html">View Detail</a></li>
@@ -184,36 +109,7 @@
                 
               </ul>
               <style>
-			  .tripAdvisor{
-				  display:block;
-				  width:20px;
-				  height:20px;
-				  background-image:url(asset/img/icon/tripadvisor.png);
-				  background-size: cover;
-				  opacity:0.7;
-				  -webkit-transition-delay: 0s;
-				-webkit-transition-duration: 0.25s;
-				-webkit-transition-property: opacity;
-				-webkit-transition-timing-function: linear;
-			  }
-			  .tripAdvisor:hover{
-				  opacity:1;
-			  }
-			  .pinterest{
-				  display:block;
-				  width:15px;
-				  height:15px;
-				  background-image:url(asset/img/icon/pinterest.png);
-				  background-size: cover;
-				  opacity:0.7;
-				  -webkit-transition-delay: 0s;
-				-webkit-transition-duration: 0.25s;
-				-webkit-transition-property: opacity;
-				-webkit-transition-timing-function: linear;
-			  }
-			  .pinterest:hover{
-				  opacity:1;
-			  }  
+			
 				 
 			  
 			  </style>
@@ -350,23 +246,126 @@
  
  <!--more-programs section -->
 <div class="container-fluid no-padding">
-    <div class="programs-section" style="background-color:#333!important;">
+    <div class="theme2 programs-section" style="background-color:#333!important;">
         <div class="container wrapper2">
             	<div class="row"><!-- row up the catagory and program cards "-->
                 	 
                 
-                    <div class=" col-xs-12 col-sm-9 card-list">
+                    <div class=" col-xs-12 col-sm-9 col-md-8 card-list">
                     
                     
-                    
+                    	  <!-- css for left pane(activities list) content-->
+                            <style>
+								.jumbotron .main-title {
+									font-size: 30px;
+									padding-bottom: 10px;
+									color: white;
+									font-style: normal;
+									font-weight: 300;
+									line-height: 1.17em;
+									text-transform: uppercase;
+									letter-spacing: 0.20em;
+									-webkit-font-smoothing: antialiased;
+								}
+						
+						   		.theme2 .card-item{
+								-webkit-box-shadow:none!important;
+								-moz-box-shadow:none!important;
+								box-shadow: none!important;	
+								}
+						   
+						   
+                            	.theme2 .jumbotron {
+								background-color: #333!important;
+								}
+								.programs-section .image{
+									width: 100%;
+									min-height:150px;
+									max-width:150px;
+									max-height:150px;
+									-webkit-background-size: cover;
+									-moz-background-size: cover;
+									-o-background-size: cover;
+									background-size: cover;
+									border-bottom-left-radius: 3px;
+									border-top-left-radius: 3px;
+								}
+								@media (max-width: 765px) {j
+									.carousel .item {
+									   min-height:400px;
+									}
+									.programs-section .image{
+									   border-top-left-radius: 3px;
+									   border-top-right-radius: 3px;
+									   border-bottom-left-radius: 0px;
+									   border-bottom-right-radius: 0px;
+									}
+									
+								}
+								@media (max-width: 767px){
+									.programs-section .image{
+										max-width:350px;
+										max-height:350px;
+									}
+									.programs-section .card-item{
+										margin-left: auto;
+										margin-right:auto;
+										max-width:350px;
+									}
+								}
+								
+								
+								<!-- css for right pane(contactus,aboutus,news) content-->
+						
+								.right-pane{
+									border-radius:5px;
+									
+								}
+								.right-pane .thumbnail{
+									margin-bottom:0px!important;
+								}
+								.right-pane .item{
+									background: #F6F6F6;
+									padding: 5px;
+									border-radius:5px;
+									overflow:hidden;
+									
+								}
+								.spaceout{
+		
+									height:	75px;
+								}
+								.news-item-title div{padding-top:30px;}
+								.img-wrapper {
+									position: relative;
+									background-color: rgba(255,255,255,0.3);
+									overflow: hidden;
+								}
+								.right-pane .subtitle{
+									padding-left:5px;
+									padding-right:5px;
+									margin-top:1px;
+								}
+							</style>
+                          	<div class="container mobile mobile-program-title visible-xs " style="margin-bottom:20px;">
                           
-                          
+                             <p class="text-center">Activities and Events</p>
+                     
+                    
+                            </div>
                             
-                            <div class="card-item fade-in"><a class="view-detail" href="#"></a>
-                                <div class="col-sm-4 col-xs-12" id="no-padding" >
-                                      <div class="image tour4"></div>              
+                  
+                            <div class="jumbotron hidden-xs" style="padding:0px; margin:0px;">
+                                <div class="text-center container"> 
+                                <h1 class="main-title">Activities and Events</h1>
+                                </div>
+                            </div>
+                            
+                            <div class="card-item fade-in" style=""><a class="view-detail" href="#"></a>
+                                <div class="col-md-3 col-sm-4 col-xs-12" id="no-padding" >
+                                      <img class="image tour4" ></img>              
                                 </div>	
-                                <div class="col-sm-6 col-xs-8" id="right-border">
+                                <div class="col-md-7 col-sm-6 col-xs-8" id="right-border">
                                       <h4 class="title two-row-text-limit">Honolulu Screamer Jet Boat</h4>
                                       
                                       <h6 class="description three-rows-text-limit hidden-xs ">
@@ -393,10 +392,10 @@
                             </div> <!-- program cards right-in animation"-->
                              
                             <div class="card-item fade-in"><a class="view-detail" href="#"></a>
-                                <div class="col-sm-4 col-xs-12" id="no-padding" >
-                                      <div class="image tour3"></div>              
+                               <div class="col-md-3 col-sm-4 col-xs-12" id="no-padding" >
+                                      <img class="image tour1" ></img>              
                                 </div>	
-                                <div class="col-sm-6 col-xs-8" id="right-border">
+                                <div class=" col-md-7 col-sm-6 col-xs-8" id="right-border">
                                       <h4 class="title two-row-text-limit">Honolulu Screamer Jet Boat</h4>
                                       
                                       <h6 class="description three-rows-text-limit hidden-xs ">
@@ -424,10 +423,10 @@
                             
                            
                             <div class="card-item fade-in"><a class="view-detail" href="#"></a>
-                                <div class="col-sm-4 col-xs-12" id="no-padding" >
-                                      <div class="image tour2"></div>              
+                                <div class=" col-md-3 col-sm-4 col-xs-12" id="no-padding" >
+                                      <img class="image tour2" ></img>              
                                 </div>	
-                                <div class="col-sm-6 col-xs-8" id="right-border">
+                                <div class="col-md-7 col-sm-6 col-xs-8" id="right-border">
                                       <h4 class="title two-row-text-limit">Honolulu Screamer Jet Boat</h4>
                                       
                                       <h6 class="description three-rows-text-limit hidden-xs ">
@@ -454,10 +453,10 @@
                            </div> <!-- program cards right-in animation"-->
                            
                             <div class="card-item fade-in"><a class="view-detail" href="#"></a>
-                                <div class="col-sm-4 col-xs-12" id="no-padding" >
-                                      <div class="image tour1"></div>              
+                                <div class="col-md-3 col-sm-4 col-xs-12" id="no-padding" >
+                                      <img class="image tour5" ></img>              
                                 </div>	
-                                <div class="col-sm-6 col-xs-8" id="right-border">
+                                <div class=" col-md-7 col-sm-6 col-xs-8" id="right-border">
                                       <h4 class="title two-row-text-limit">Honolulu Screamer Jet Boat</h4>
                                       
                                       <h6 class="description three-rows-text-limit hidden-xs ">
@@ -484,10 +483,10 @@
                            </div> <!-- program cards right-in animation"-->
                            
                           <div class="card-item fade-in"><a class="view-detail" href="#"></a>
-                                <div class="col-sm-4 col-xs-12" id="no-padding" >
-                                      <div class="image tour4"></div>              
+                                <div class=" col-md-3 col-sm-4 col-xs-12" id="no-padding" >
+                                      <img class="image tour3" ></img>              
                                 </div>	
-                                <div class="col-sm-6 col-xs-8" id="right-border">
+                                <div class=" col-md-7 col-sm-6 col-xs-8" id="right-border">
                                       <h4 class="title two-row-text-limit">Honolulu Screamer Jet Boat</h4>
                                       
                                       <h6 class="description three-rows-text-limit hidden-xs ">
@@ -515,7 +514,7 @@
                              
                           
                           
-                             
+                            <!--next page nav-->
            					<nav class="text-center">
                               <ul class="pagination">
                                 <li><a href="#">&laquo;</a></li>
@@ -529,51 +528,75 @@
                             </nav>
                    
                     </div><!-- end of class="col-sm-9 cards"-->
-                    <style>
-						.news-item{
-							background: #F6F6F6;
-							padding: 15px;
-							margin-bottom: 15px;
-							border-top: 10px solid #1BD1BD;
-							border-left: 1px dashed #000;
-							border-right: 1px dashed #000;
-							border-bottom: 1px dashed #000;
-						}
-						.img-wrapper {
-						position: relative;
-						background-color: rgba(255,255,255,0.3);
-						overflow: hidden;
-						}
-					 </style>
-                    <div class="col-xs-12 col-sm-3 catagory">
-
-                        <div class="panel panel-color-theme hidden-xs">
-                       			<div class="news-item">
-                                	News Feed
+                 
+                    <div class="col-xs-12 col-sm-3 col-md-4">
+                    
+                    
+                    	 <!--space out-->
+						 <div class="spaceout hidden-xs" style=" background-color:#333;"></div> 
+                         <!--end of space out-->
+                         
+                         <div class="right-pane panel hidden-xs">
+                        		<div class="panel-title" style="padding:10px;">Contact Us:
+                                </div>
+                       			<div class="panel-body text-center item">
+                                
+                                    	
+                                        <h5 >在线预订: (808) 4551600 x 228</h5>
+                                 
+                                   
+                                </div>
+                           
+                        </div> <!--end of panel & color-theme--> 
+                         
+                        <div class="right-pane panel hidden-xs">
+                        		<div class="panel-title" style="padding:10px;">About Us:
+                                </div>
+                       			<div class="panel-body item">
+                                
+                                    	
+                                        <h5 >&nbsp;&nbsp;&nbsp;This is a company name that does this ....
+                                        This is a company name that does this ....
+                                        This is a company name that does this ....
+                                        This is a company name that does this ....</h5>
+                                 
+                                   
                                 </div>
                            
                         </div> <!--end of panel & color-theme-->
                         
-                        <div class="panel panel-color-theme hidden-xs">
-                       			<div class="news-item">
-                                	<a href="" style="background-color: #99f28a;"><div class="img-wrapper" style="height:auto;"><img class="img-responsive" src="http://ww2.sinaimg.cn/bmiddle/b4031917gw1elcof5i8cyj20bw0gn75l.jpg" alt="" title="" width="300" height="auto"></div><div class="data"><div class="title">GEO 12/12</div><div class="subtitle">NeoTax</div><div class="date">December 2012</div></div></a>
+                        
+                        
+                       
+                        
+                        <div class="right-pane panel hidden-xs">
+                       			<div class="panel-title" style="padding:10px;">News Feed
+                                </div>
+                       			<div class="panel-body item">
+                                	<a href="" style="background-color: #99f28a;">
+                                    	<div class=" img-wrapper" style="height:auto;">
+                                        	<img class="thumbnail img-responsive" src="http://ww2.sinaimg.cn/bmiddle/b4031917gw1elcof5i8cyj20bw0gn75l.jpg" alt="" title="" width="150" height="auto">
+                                        </div>
+                                        <h6 class="subtitle" style="padding-bottom:10px;">List Special Membership Offers. Example, 3 Day Pass, 1 Week, 30 Day. Flexibility to offer  </h6>
+                                    </a>
+                                    <a href="" style="background-color: #99f28a;">
+                                    	<div class="img-wrapper" style="height:auto;">
+                                        	<img class="thumbnail img-responsive" src="http://ww3.sinaimg.cn/bmiddle/b4031917gw1elbkmi428rj20b70cj3zt.jpg" alt="" title="" width="150" height="auto">
+                                        </div>
+                                        <h6 class="subtitle" style="padding-bottom:10px;">美国国家气象局(National Weather Service)表示，热带风暴安娜(Ana)预料将在本周增强为飓风 </h6>
+                                    </a>
+                                    <a href="" style="background-color: #99f28a;">
+                                    	<div class="img-wrapper" style="height:auto;">
+                                        	<img class="thumbnail img-responsive" src="http://ww4.sinaimg.cn/bmiddle/b4031917jw1elberq3r7vj20h4078wgi.jpg" alt="" title="" width="150" height="auto">
+                                        </div>
+                                        <h6 class="subtitle" style="padding-bottom:10px;">生存，有些人赴战求身亡" "SOME FOUGHT TO LIVEーSOME FOUGHT TO DIE" 设计者:RENE</h6>
+                                    </a>
+                                   
                                 </div>
                            
                         </div> <!--end of panel & color-theme-->
                         
-                         <div class="panel panel-color-theme hidden-xs">
-                       			<div class="news-item">
-                                	<a href="" style="background-color: #99f28a;"><div class="img-wrapper" style="height:auto;"><img class="img-responsive" src="http://ww3.sinaimg.cn/bmiddle/b4031917gw1elbkmi428rj20b70cj3zt.jpg" alt="" title="" width="300" height="auto"></div><div class="data"><div class="title">GEO 12/12</div><div class="subtitle">NeoTax</div><div class="date">December 2012</div></div></a>
-                                </div>
-                           
-                        </div> <!--end of panel & color-theme-->
                         
-                         <div class="panel panel-color-theme hidden-xs">
-                       			<div class="news-item">
-                                	<a href="" style="background-color: #99f28a;"><div class="img-wrapper" style="height:auto;"><img class="img-responsive" src="http://ww4.sinaimg.cn/bmiddle/b4031917jw1elberq3r7vj20h4078wgi.jpg" alt="" title="" width="300" height="auto"></div><div class="data"><div class="title">GEO 12/12</div><div class="subtitle">NeoTax</div><div class="date">December 2012</div></div></a>
-                                </div>
-                           
-                        </div> <!--end of panel & color-theme-->
                     </div> <!-- end of class="col-sm-3 catagory"-->
                     
                     
@@ -619,14 +642,17 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>  <!--bootstrap only works with this 1.11 jquery. and the 1.8 is used to handle the viewport js bug that. better to keep both -->
+    <!--core bootstrap js -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	<script src="asset/js/jQuery_v1.8.2.js"></script><!--this old version jQuery must be used with SmoothScroll.js-->    <!--if delete this jquery v1.8.2, it will cause a nav auto expanded when switch to mobile view. the bug comes from custom.js/viewport checker js(bug source)-->
     <script src="asset/js/SmoothScroll.js"></script><!--this js must be used with jQuery_v1.8.2.js-->
-	
-    
-    
-  <!-- adjust navigation bar size when scroll down-->
-	<script>$(function(){
+    <!-- main custom js for this template-->
+	<script src="asset/js/custom.js"></script>
+   
+	<script>
+	<!-- adjust navigation bar size when scroll down-->
+	<!--issue: when I put this js in the custom.js then it doesn't work-->
+	 $(function(){
       $(window).scroll(function(event){
           if ($(document).scrollTop() > 200) {
 			$('#title').addClass('title-sm');
@@ -642,9 +668,8 @@
 		  }
 		  
 	   });
- 	});</script>
-   
-
+ 	});
+	</script>
 
 	
   </body>

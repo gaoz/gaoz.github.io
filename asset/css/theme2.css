@@ -3,10 +3,23 @@ html, body{
 	font-family: 'Open Sans', sans-serif!important;
 	
 }
-/* navigation bar section */
-
+/* ----------------navigation bar section------------------------------------------------------------------------------- */
+/* ----------------navigation bar section------------------------------------------------------------------------------- */
+/* ----------------navigation bar section------------------------------------------------------------------------------- */
+/* ----------------navigation bar section------------------------------------------------------------------------------- */
+/* ----------------navigation bar section------------------------------------------------------------------------------- */
+/* ----------------navigation bar section------------------------------------------------------------------------------- */
+/* ----------------navigation bar section------------------------------------------------------------------------------- */
+/* ----------------navigation bar section------------------------------------------------------------------------------- */
+/* ----------------navigation bar section------------------------------------------------------------------------------- */
+/* ----------------navigation bar section------------------------------------------------------------------------------- */
+/* ----------------navigation bar section------------------------------------------------------------------------------- */
+/* ----------------navigation bar section------------------------------------------------------------------------------- */
+/* ----------------navigation bar section------------------------------------------------------------------------------- */
+/* ----------------navigation bar section------------------------------------------------------------------------------- */
+/* ----------------navigation bar section------------------------------------------------------------------------------- */
 .theme1-nav .title-style{
-	
+								
 	color: #555;
 	font-style: normal;
 	font-weight: 300;
@@ -33,7 +46,7 @@ html, body{
 	transition-timing-function: linear;	
 }
 .theme1-nav .navlogo2{
-	background: url("asset/img/etc/icon_256x256@2x.png")no-repeat center center;
+	background: url("../img/etc/icon_256x256@2x.png")no-repeat center center;
 	background-size: contain;
 }
 .theme1-nav #title, .theme1-nav #logo{
@@ -73,11 +86,7 @@ html, body{
   align-items: center; 
 }
 
-
-
-
-
-
+							
 @media (max-width: 767px){/* fix mobile view menu bar static stick to the top */
 
 .navbar-fixed-top {
@@ -194,47 +203,41 @@ background-color:#333;
 }
 /* end of navigation bar section */
 
-
-/* blinking text */
-
-.blink_me {
-    -webkit-animation-name: blinker;
-    -webkit-animation-duration: 5s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-
-    -moz-animation-name: blinker;
-    -moz-animation-duration: 5s;
-    -moz-animation-timing-function: linear;
-    -moz-animation-iteration-count: infinite;
-
-    animation-name: blinker;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+/* -----------social media icon -----------*/
+/* -----------social media icon -----------*/
+/* -----------social media icon -----------*/
+/* -----------social media icon -----------*/
+/* -----------social media icon -----------*/
+.tripAdvisor{
+	display:block;
+	width:20px;
+	height:20px;
+	background-image:url(../img/icon/tripadvisor.png);
+	background-size: cover;
+	opacity:0.7;
+	-webkit-transition-delay: 0s;
+	-webkit-transition-duration: 0.25s;
+	-webkit-transition-property: opacity;
+	-webkit-transition-timing-function: linear;
 }
-
-@-moz-keyframes blinker {  
-    0% { opacity: 1.0; }
-    50% { opacity: 0.2; }
-    100% { opacity: 1.0; }
+.tripAdvisor:hover{
+  	opacity:1;
 }
-
-@-webkit-keyframes blinker {  
-    0% { opacity: 1.0; }
-    50% { opacity: 0.2; }
-    100% { opacity: 1.0; }
+.pinterest{
+	display:block;
+	width:15px;
+	height:15px;
+	background-image:url(../img/icon/pinterest.png);
+	background-size: cover;
+	opacity:0.7;
+	-webkit-transition-delay: 0s;
+	-webkit-transition-duration: 0.25s;
+	-webkit-transition-property: opacity;
+	-webkit-transition-timing-function: linear;
 }
-
-@keyframes blinker {  
-    0% { opacity: 1.0; }
-    50% { opacity: 0.2; }
-    100% { opacity: 1.0; }
-}
-/* end of blinking text css */
-
-
-
+.pinterest:hover{
+ 	opacity:1;
+}  
 
 
 /*-------------------------- Desktop style banner slider ----------------------------------
@@ -341,8 +344,6 @@ background-color:#333;
     background: url(../img/banner/place6.jpg) no-repeat center top;
 }
 
-
-
 .shadow-layer {
     background-color:none;
     background-color: rgba(0,0,0,0.3);
@@ -363,11 +364,6 @@ background-color:#333;
     -o-transition: background-color 0.5s ease;
     transition: background-color 0.5s ease;
 }
-
-
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
 
 @media (min-width: 768px) {
     /* Remove the edge padding needed for mobile */
@@ -393,9 +389,6 @@ background-color:#333;
 }
 @media (min-width: 992px) {
     /* Narrow Menu bar and Body part, but banner slider show */
-   .container {
-        width: 860px;
-    }
 
   .carousel-caption h1{
      font-size: 70px;
@@ -514,6 +507,10 @@ background-color:#333;
 
 
 /***************footer section**********************/
+/***************footer section**********************/
+/***************footer section**********************/
+/***************footer section**********************/
+/***************footer section**********************/
 
 footer { 
  font-size: 10px;
@@ -566,299 +563,23 @@ footer .powerby{
 	
 /* end of footer section */
 
-
-
-
-
-/* -------------------- program display mode 1 style ------------------------------*/
-/* -------------------- program display mode 1 style ------------------------------*/
-/* -------------------- program display mode 1 style ------------------------------*/
-/* -------------------- program display mode 1 style ------------------------------*/
-/* -------------------- program display mode 1 style ------------------------------*/
-/* -------------------- program display mode 1 style ------------------------------*/
-/* -------------------- program display mode 1 style ------------------------------*/
-/* -------------------- program display mode 1 style ------------------------------*/
-
-.programs-section{
-	padding-top:30px;
-	min-height:800px;
-	height:auto;
-	background-color:#ccc;		
-}
-.no-padding{
-	padding:0px!important;	
-}
-
-.programs-section .wrapper2{
-	min-height:800px;
-	padding-top:5px;
-	padding-bottom:5px;	
-}
-.programs-section .navbar-form {
-	margin-top: 0px;
-}
-.programs-section  .sort-control-label {
-	margin-right: 5px;
-}
-.programs-section  .key-words-label {
-	
-	margin-right: 5px;
-}
-.programs-section  .panel-color-theme{
-
-	font-size:12px;
-	border:none;
-	-webkit-box-shadow: 0 0 8px #bbb;
-	-moz-box-shadow: 0 0 8px #bbb;
-	box-shadow: 0 0 8px #bbb
-
-
-
-}
-.programs-section  .panel-color-theme>.panel-heading {
-color: #fff;
-background-color:#AAA;
-
-}
-
-.programs-section .catagory .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
-
-}
-
-
-.programs-section .badge {
-display: inline-block;
-min-width: 10px;
-padding: 3px 7px;
-font-size: 10px;
- font-weight: 100;
-line-height: 1;
-color: #fff;
-text-align: center;
-white-space: nowrap;
-vertical-align: baseline;
-background-color: #B8BDBB;
-border-radius: 10px;
-}
-.programs-section .sort-control{
-	padding-bottom:10px;	
-}
-.programs-section .key-words{
-	
-	padding-bottom:10px;	
-	
-}
-
-.programs-section .navbar-form {
-	padding: 0px 0px;
-}
-.programs-section .sort-control{
-	display:inline-block;
-
-
-}
-
-.programs-section .key-words{
-	display:inline-block;
-
-}
-/* mobile view */
-@media (max-width: 767px){
-.programs-section{
-	/*padding-top:80px;*/		
-}
-.programs-section .navbar-form{
-	margin-bottom: 0px;	
-	border-bottom: none;
-}
-.programs-section .key-words{
-	width:49%;	
-}
-.programs-section .sort-control{
-	float:none;
-	width:49%;	
-}
-.programs-section .key-words .btn{
-	width:100%;	
-}
-.programs-section .sort-control .btn-group{
-	width:100%;	
-}
-.programs-section .sort-control .btn{
-	width:100%;	
-}
-.programs-section .navbar-form {
-	padding: 10px 15px;
-}
-}
-
-
-
-
-/* program cards section*/
-
-
-/* desktop view size css*/
-.programs-section .card-item{
-	width:100%;
-	position: relative;
-	height: 150px;
-	background-color:#fff;
-	border-radius:5px;
-	cursor:pointer;
-	margin-bottom:20px;
-	
-	-webkit-box-shadow: 0 0 8px #C9C5C5;
-	-moz-box-shadow: 0 0 8px #C9C5C5;
-	box-shadow: 0 0 8px #C9C5C5;
-	
-
-}
-
-.programs-section .image{
-	width: 100%;
-	min-height:150px;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	border-bottom-left-radius: 3px;
-	border-top-left-radius: 3px;
-}
-
-.programs-section #no-padding{
-	padding-left:0px!important;
-	padding-right:0px!important;
-}
-.programs-section .title{
-	font-family: 'Oswald', sans-serif;
-	font-size: 22px;
-	line-height: 30px;
-	color: #888;
-	font-weight: 100;
-	-webkit-font-smoothing: antialiased;
-}
-.programs-section .from{
-	font-size: 10px;
-	padding-top:20px;
-	padding-bottom:12px;
-	
-}
-.programs-section .view-detail{
-	font-size: 10px;
-
-	
-}
-.mobile-inline-block{
-	display:inline-block!important;
-}
-.programs-section .price{
-	padding-top:0px;
-	margin-top:0px;
-	padding-bottom: 10px;
-	display: block;
-	
-	font-size: 13px;
-	color: #555;
-	font-style: normal;
-	font-weight: 300;
-	line-height: 1.17em;
-	text-transform: uppercase;
-	letter-spacing: 0.00em;
-	-webkit-font-smoothing: antialiased;
-	
-		
-}
-.programs-section .description{
-	font-size:12px;
-	line-height:17px;
-}
-#right-border{
-
-	border-right:1px solid #F1F1F1;
-}
-#no-left-right-padding{
-	padding-left:0px;
-}
-/* mobile view size css */
-
-@media (max-width: 767px){
-	
-/* mobile view */
-#right-border{
-
-	border-right:none;
-}
-.programs-section .card-item{
-	height: 200px!important;	
-}
-
-.programs-section .card-item .price{
-	margin-right:-3px;
-	display:inline-block;
-	float:right;
-	font-size:14px;
-	color:#777;
-	padding-bottom:8px;
-	padding-top:8px;
-	padding-left: 15px; 
-	padding-right: 15px; 
-	border-radius:2px;
-	margin-top:10px;
-	background-color:rgba(0,0,0,0.1);
-}
-#no-right-padding{
-	padding-right:0px;	
-}
-#no-left-padding{
-	padding-left:0px;	
-}
-#no-left-right-padding{
-	padding-left:0px;
-	padding-right:0px;	
-}
-
-.programs-section .title{
-font-family: 'Open Sans', sans-serif;
-font-size: 15px;
-line-height: 1.42857143;
-color: #333;
-}
-
-
-
-
-
-}
-
-/* ------------------program display mode 2 --------------------*/
-/* ------------------program display mode 2 --------------------*/
-/* ------------------program display mode 2 --------------------*/
-/* ------------------program display mode 2 --------------------*/
-/* ------------------program display mode 2 --------------------*/
-/* ------------------program display mode 2 --------------------*/
-/* ------------------program display mode 2 --------------------*/
-/* ------------------program display mode 2 --------------------*/
-/* ------------------program display mode 2 --------------------*/
-/* ------------------program display mode 2 --------------------*/
-/* ------------------program display mode 2 --------------------*/
-/* ------------------program display mode 2 --------------------*/
-/* ------------------program display mode 2 --------------------*/
-/* ------------------program display mode 2 --------------------*/
-/* ------------------program display mode 2 --------------------*/
-/* ------------------program display mode 2 --------------------*/
-/* ------------------program display mode 2 --------------------*/
-
-
-@charset "utf-8";
-/* Desktop View Program cards CSS Document */
-
+/* ------------------program display mode 1 --------------------*/
+/* ------------------program display mode 1 --------------------*/
+/* ------------------program display mode 1 --------------------*/
+/* ------------------program display mode 1 --------------------*/
+/* ------------------program display mode 1 --------------------*/
+/* ------------------program display mode 1 --------------------*/
+/* ------------------program display mode 1 --------------------*/
+/* ------------------program display mode 1 --------------------*/
+/* ------------------program display mode 1 --------------------*/
+/* ------------------program display mode 1 --------------------*/
+/* ------------------program display mode 1 --------------------*/
 
 
 .jumbotron .desktop-program-title{
 	font-size: 30px;
 	padding-bottom: 10px;
-	color: #555;
+	color: white;
 	font-style: normal;
 	font-weight: 300;
 	line-height: 1.17em;
@@ -1124,6 +845,7 @@ line-height: 22px;
 .mobile-program-card .program-image{
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
+	
 }
 .mobile-program-title .mobile-program-card{
 	cursor:default;
@@ -1195,4 +917,282 @@ line-height: 22px;
 	margin-right: -3px; /* override bootstrap */
 	margin-left: 0px; /* override bootstrap */
 }	
+
+
+
+
+/* -------------------- program display mode 2 style ------------------------------*/
+/* -------------------- program display mode 2 style ------------------------------*/
+/* -------------------- program display mode 2 style ------------------------------*/
+/* -------------------- program display mode 2 style ------------------------------*/
+/* -------------------- program display mode 2 style ------------------------------*/
+/* -------------------- program display mode 2 style ------------------------------*/
+/* -------------------- program display mode 2 style ------------------------------*/
+/* -------------------- program display mode 2 style ------------------------------*/
+/* -------------------- program display mode 2 style ------------------------------*/
+
+.programs-section{
+	padding-top:30px;
+	min-height:800px;
+	height:auto;
+	background-color:#ccc;		
+}
+.no-padding{
+	padding:0px!important;	
+}
+
+.programs-section .wrapper2{
+	min-height:800px;
+	padding-top:5px;
+	padding-bottom:5px;	
+}
+.programs-section .navbar-form {
+	margin-top: 0px;
+}
+.programs-section  .sort-control-label {
+	margin-right: 5px;
+}
+.programs-section  .key-words-label {
+	
+	margin-right: 5px;
+}
+.programs-section  .panel-color-theme{
+
+	font-size:12px;
+	border:none;
+	-webkit-box-shadow: 0 0 8px #bbb;
+	-moz-box-shadow: 0 0 8px #bbb;
+	box-shadow: 0 0 8px #bbb
+
+
+
+}
+.programs-section  .panel-color-theme>.panel-heading {
+color: #fff;
+background-color:#AAA;
+
+}
+
+.programs-section .catagory .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+
+}
+
+
+.programs-section .badge {
+display: inline-block;
+min-width: 10px;
+padding: 3px 7px;
+font-size: 10px;
+ font-weight: 100;
+line-height: 1;
+color: #fff;
+text-align: center;
+white-space: nowrap;
+vertical-align: baseline;
+background-color: #B8BDBB;
+border-radius: 10px;
+}
+.programs-section .sort-control{
+	padding-bottom:10px;	
+}
+.programs-section .key-words{
+	
+	padding-bottom:10px;	
+	
+}
+
+.programs-section .navbar-form {
+	padding: 0px 0px;
+}
+.programs-section .sort-control{
+	display:inline-block;
+
+
+}
+
+.programs-section .key-words{
+	display:inline-block;
+
+}
+/* mobile view */
+@media (max-width: 767px){
+.programs-section{
+	/*padding-top:80px;*/		
+}
+.programs-section .navbar-form{
+	margin-bottom: 0px;	
+	border-bottom: none;
+}
+.programs-section .key-words{
+	width:49%;	
+}
+.programs-section .sort-control{
+	float:none;
+	width:49%;	
+}
+.programs-section .key-words .btn{
+	width:100%;	
+}
+.programs-section .sort-control .btn-group{
+	width:100%;	
+}
+.programs-section .sort-control .btn{
+	width:100%;	
+}
+.programs-section .navbar-form {
+	padding: 10px 15px;
+}
+}
+
+
+
+
+/* program cards section*/
+
+
+/* desktop view size css*/
+.programs-section .card-item{
+	width:100%;
+	position: relative;
+	height: 150px;
+	background-color:#fff;
+	border-radius:5px;
+	cursor:pointer;
+	margin-bottom:20px;
+	
+	-webkit-box-shadow: 0 0 8px #C9C5C5;
+	-moz-box-shadow: 0 0 8px #C9C5C5;
+	box-shadow: 0 0 8px #C9C5C5;
+	
+
+}
+
+.programs-section .image{
+	width: 100%;
+	min-height:150px;
+	max-width:150px;
+	max-height:150px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	border-bottom-left-radius: 3px;
+	border-top-left-radius: 3px;
+}
+@media (max-width: 767px){
+	.programs-section .image{
+		max-width:350px;
+		max-height:350px;
+	}
+	.programs-section .card-item{
+		margin-left: auto;
+		margin-right:auto;
+		max-width:350px;
+	}
+}
+.programs-section #no-padding{
+	padding-left:0px!important;
+	padding-right:0px!important;
+}
+.programs-section .title{
+	font-family: 'Oswald', sans-serif;
+	font-size: 22px;
+	line-height: 30px;
+	color: #888;
+	font-weight: 100;
+	-webkit-font-smoothing: antialiased;
+}
+.programs-section .from{
+	font-size: 10px;
+	padding-top:20px;
+	padding-bottom:12px;
+	
+}
+.programs-section .view-detail{
+	font-size: 10px;
+
+	
+}
+.mobile-inline-block{
+	display:inline-block!important;
+}
+.programs-section .price{
+	padding-top:0px;
+	margin-top:0px;
+	padding-bottom: 10px;
+	display: block;
+	
+	font-size: 13px;
+	color: #555;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 1.17em;
+	text-transform: uppercase;
+	letter-spacing: 0.00em;
+	-webkit-font-smoothing: antialiased;
+	
+		
+}
+.programs-section .description{
+	font-size:12px;
+	line-height:17px;
+}
+#right-border{
+
+	border-right:1px solid #F1F1F1;
+}
+#no-left-right-padding{
+	padding-left:0px;
+}
+/* mobile view size css */
+
+@media (max-width: 767px){
+	
+/* mobile view */
+#right-border{
+
+	border-right:none;
+}
+.programs-section .card-item{
+	height: 200px!important;	
+}
+
+.programs-section .card-item .price{
+	margin-right:-3px;
+	display:inline-block;
+	float:right;
+	font-size:14px;
+	color:#777;
+	padding-bottom:8px;
+	padding-top:8px;
+	padding-left: 15px; 
+	padding-right: 15px; 
+	border-radius:2px;
+	margin-top:10px;
+	background-color:rgba(0,0,0,0.1);
+}
+#no-right-padding{
+	padding-right:0px;	
+}
+#no-left-padding{
+	padding-left:0px;	
+}
+#no-left-right-padding{
+	padding-left:0px;
+	padding-right:0px;	
+}
+
+.programs-section .title{
+font-family: 'Open Sans', sans-serif;
+font-size: 15px;
+line-height: 1.42857143;
+color: #333;
+}
+
+
+
+
+
+}
+
 

@@ -25,9 +25,8 @@
 }
 .programs-section  .panel-color-theme{
 
-font-size:12px;
-border:none;
-
+	font-size:12px;
+	border:none;
 	-webkit-box-shadow: 0 0 8px #bbb;
 	-moz-box-shadow: 0 0 8px #bbb;
 	box-shadow: 0 0 8px #bbb
