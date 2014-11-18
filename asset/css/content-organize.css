@@ -1,0 +1,181 @@
+/******************************************************/
+/***********>>> Css Folders Content <<< *********/
+/*******************************************************
+
+>>template
+	>>template-1
+		>> global-css:
+			>>global-style:  
+			>>navigation-bar:  	
+			>>footer: 
+		>> homepage-css:	
+			>>showcase:		
+			>>slider-banner:			
+			>>news-feed:			
+			>>about:		
+			>>Contact:		
+		>>all-programs-page-css:		
+			>>massive-display:					
+			>>simple-display:		
+		>>program-detail-page-css:		
+			>>tiltle:
+			>>description:
+			>>image:
+			>>video:
+			>>detail:
+			>>calendar:
+		>>checkout-page-css:
+		>>login-css:		
+		>>plugin-css:		
+			>>bootstrap:		
+			>>font:		
+			>>utility:		
+			>>color-theme:	
+			
+	>>template-2
+		......
+		
+		
+/******************************************************/
+/***********>>> Css names Content <<< *****************/
+/*******************************************************
+>>template
+
+
+	>>template-1
+	
+	
+		>> global-css:
+		
+			>>global-style: 
+		  
+				global-v1.css
+		
+			>>navigation-bar:  
+		
+				nav-v1.css  
+				nav-v2.css 
+		
+			>>footer: 
+		
+				footer-v1.css 
+				footer-v2.css
+		
+		
+		
+		
+		
+		>> homepage-css:
+			
+			>>showcase:
+		
+				showcase-v1.css
+				showcase-v2.css
+		
+			>>slider-banner:
+			
+				banner-v1.css
+				banner-v2.css
+		
+			>>news-feed:
+			
+				news-v1.css
+				news-v2.css
+		
+			>>about:
+			
+				about-v1.css
+				about-v2.css
+		
+			>>Contact:
+		
+				contact-v1.css
+				contact-v2.css
+		
+		
+		
+		
+		>>all-programs-page-css
+			
+			>>massive-display
+				
+				massive-v1.css
+				massive-v2.css
+			
+			>>simple-display
+				
+				simple-v1.css
+				simple-v2.css
+		
+		
+		
+		
+		
+		>>program-detail-page-css
+		
+			detail-v1.css
+		
+			>>tiltle:
+			>>description:
+			>>image:
+			>>video:
+			>>detail:
+			>>calendar:
+				
+				calendar-v1.css
+				calendar-v2.css
+		
+		
+		
+		
+		
+		>>checkout-page-css:
+		
+			checkout-v1.css
+			checkout-success-v1.css
+			checkout-fail-v1.css
+		
+		
+		
+		
+		>>login-css:
+			
+			login-v1.css
+		
+		
+		
+		
+		
+		>> plugin-css:
+		
+			>>bootstrap:
+		
+				bootstrap.min.css
+		
+			>>font:
+		
+				font1.css
+				font2.css
+				font3.css
+		
+			>>utility:
+		
+				animation.css
+		
+			>>color-theme:
+		
+				ocean.css
+				business.css
+				white.css
+				black.css
+				colorful.css
+				fire.css
+	
+	
+	
+	>>template-2
+	
+		.....
+		
+		
+***************************************************/
