@@ -1154,7 +1154,7 @@ border-radius: 10px;
 	border-right:none;
 }
 .programs-section .card-item{
-	height: 200px!important;	
+	/*height: 200px!important;	*/
 }
 
 .programs-section .card-item .price{

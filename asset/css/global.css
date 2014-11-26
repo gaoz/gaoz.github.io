@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.font1{
+	font-family: DINWeb-Medium, sans-serif;
+}
+.size8{
+	font-size:8px;
+}
+.size9{
+	font-size:9px;
+}
+.size10{
+	font-size:10px;
+}
+.size11{
+	font-size:11px;
+}
+.size12{
+	font-size:12px;
+}
+.size14{
+	font-size:14px;
+}
+.size16{
+	font-size:16px;
+}
+.size18{
+	font-size:18px;
+}
+.size20{
+	font-size:20px;
+}
+.size21{
+	font-size:21px;
+}
+.size22{
+	font-size:22px;
+}
+.size24{
+	font-size:24px;
+}
+
+.gpnecolor1{
+	color:rgb(0, 58, 90);
+}
+.gpnecolor2{
+	color:rgba(0, 58, 90, 0.5);
+}
+.marginL10{
+	margin-left:10px;
+}
+.marginL15{
+	margin-left:15px;
+}
+.marginR15{
+	margin-right:15px;
+}
+.marginT0{
+	margin-top:0px;
+}
+.marginT10{
+	margin-top:10px;
+}
+.marginT20{
+	margin-top:20px;
+}
+.marginB10{
+	margin-Bottom:10px;
+}
+.marginB10{
+	margin-Bottom:10px;
+}
+.marginB13{
+	margin-Bottom:13px;
+}
+.marginB16{
+	margin-Bottom:16px;
+}
+.marginB20{
+	margin-Bottom:20px;
+}
+.paddingB5{
+	padding-bottom:5px;
+}
+.paddingB8{
+	padding-bottom:8px;
+}
+.paddingB9{
+	padding-bottom:9px;
+}
+.paddingB10{
+	padding-bottom:10px;
+}	
+.paddingL10{
+	padding-left:10px;
+}
+.paddingT10{
+	padding-top:10px;
+}
+
+.border-bottom{
+	border-bottom:1px solid #1E94C6;	
+}
+
+.noSytle{
+	text-decoration: none;
+}
+
+
+
+
+/* color theme #1 */
+
+.font-color-1{
+	color:white;
+}
+.font-color-2{
+	color:#646464;
+}
+
+.bg-color-1{
+	background-color:white;
+}

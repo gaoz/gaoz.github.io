@@ -1,7 +1,7 @@
- 
+
 <!DOCTYPE html>
 <html lang="en">
-  <head> 
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,89 +21,123 @@
     <link href="asset/css/program-cards.css" rel="stylesheet">
     <link href="asset/css/animate.css" rel="stylesheet">
 	<link href="asset/css/theme1.css" rel="stylesheet">
-    <link href="asset/css/view-detail2.css" rel="stylesheet"> 
+    <link href="asset/css/bootstrap_helper.css" rel="stylesheet"> <!--test test test , this can be deleted anytime-->
     <link href="asset/css/more-programs.css" rel="stylesheet"> 
+	<link href="asset/css/check-out2.css" rel="stylesheet">
+    <link href="asset/css/view-detail2.css" rel="stylesheet"> 
+   
     <!-- Custom 1 styles for this template -->
    
 
 	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
- 	<link href='http://fonts.googleapis.com/css?family=Roboto:300,100' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:900' rel='stylesheet' type='text/css'>
-<style type="text/css">
-	section.center {
-		max-width: 150px;
-		margin: 100px auto;
-	}
-	span.clickMe {
-		font-size: 30px;
-	}
-	span.clickMe:hover {
-		cursor: pointer;
-		color: green;
-	}
-	section.hiddenn {
-		display: none;
-		position: fixed;
-	}
-	section article.popup {
-		position: relative;
-		width: 400px;
-		height: 300px;
-		background: #e3e3e3;
-		color: #222;
-		border: 1px solid #333;
-		border-radius: 3px;
-		padding: 5px 7px;
-		margin: 10% auto;
-	}
-	span.close {
-		text-transform: uppercase;
-		color: #222;
-	}
-	span.close:hover{
-		color: red;
-		cursor: pointer;
-	}
-</style>
-</head>
-<body>
-	<section class="center">
-		<span class="clickMe">Click Me</span>
-	</section>
  
-	<section class="hiddenn">
-		<article class="popup">
-			<span class="close">Close Me</span>
-			<p>
-				This is a test.
-			</p>
-		</article>
-	</section>
-</body>
-<!-- JQUERY SETUP -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
-<script>
-	$(document).ready(function(){
- 
-		$(function(){
-			$('span.clickMe').click(function(e){
-				var hiddenSection = $('section.hiddenn');
-				hiddenSection.fadeIn()
-					// unhide section.hidden
-					.css({ 'display':'block' })
-					// set to full screen
-					.css({ width: $(window).width() + 'px', height: $(window).height() + 'px' })
-					.css({ top:($(window).height() - hiddenSection.height())/2 + 'px', 
-						left:($(window).width() - hiddenSection.width())/2 + 'px' })
-					// greyed out background
-					.css({ 'background-color': 'rgba(0,0,0,0.5)' })
-					.appendTo('body');
-					// console.log($(window).width() + ' - ' + $(window).height());
-					$('span.close').click(function(){ $(hiddenSection).fadeOut(); });
-			});
-		});
- 
-	});
-</script>
+
+  </head>
+
+  <body>
+	
+       <!-- Fixed navbar -->
+    <div class="theme1-nav navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+            
+        
+
+    
+<!--space down from the menu bar and logo section--->
+    <div class="container hidden-xs">
+          <div style="height:105px"></div> 
+    </div>
+<!--end of space down from the menu bar and logo section--->
+
+          
+          
+          
+    <style>
+        .blog-card{
+            width:200px;
+
+        }
+        .cart-checkout-section{
+   
+        }
+          .blog-img{
+              width:200px;
+          }
+    </style>
+          
+          
+          
+	<div class="blog " id="blog">
+    	<div class="fludie-container">
+        <!--    <img class="blog-img" src="asset/img/blog/1.jpg"></img>
+        <img class="blog-img" src="asset/img/blog/2.jpg"></img>
+        <img class="blog-img" src="asset/img/blog/3.jpg"></img>
+        <img class="blog-img" src="asset/img/blog/4.jpg"></img>
+        <img class="blog-img" src="asset/img/blog/5.jpg"></img>
+        <img class="blog-img" src="asset/img/blog/6.jpg"></img>
+        <img class="blog-img" src="asset/img/blog/7.jpg"></img>
+        <img class="blog-img" src="asset/img/blog/8.jpg"></img>
+        <img class="blog-img" src="asset/img/blog/9.jpg"></img>
+        <img class="blog-img" src="asset/img/blog/10.jpg"></img>
+        <img class="blog-img" src="asset/img/blog/11.png"></img>
+        <img class="blog-img" src="asset/img/blog/12.jpg"></img>
+        <img class="blog-img" src="asset/img/blog/13.jpg"></img>
+        <img class="blog-img" src="asset/img/blog/14.jpg"></img>
+        <img class="blog-img" src="asset/img/blog/15.jpg"></img>
+        <img class="blog-img" src="asset/img/blog/16.jpg"></img>-->
+
+         <div class="blog-card"><img class="blog-img" src="asset/img/blog/1.jpg"></img></div>
+            <div class="blog-card"><img class="blog-img" src="asset/img/blog/2.jpg"></img></div>
+            <div class="blog-card"><img class="blog-img" src="asset/img/blog/3.jpg"></img></div>
+            <div class="blog-card"><img class="blog-img" src="asset/img/blog/4.jpg"></img></div>
+            <div class="blog-card"><img class="blog-img" src="asset/img/blog/5.jpg"></img></div>
+            <div class="blog-card"><img class="blog-img" src="asset/img/blog/6.jpg"></img></div>
+            <div class="blog-card"><img class="blog-img" src="asset/img/blog/7.jpg"></img></div>
+            <div class="blog-card"><img class="blog-img" src="asset/img/blog/8.jpg"></img></div>
+            <div class="blog-card"><img class="blog-img" src="asset/img/blog/9.jpg"></img></div>
+        </div>
+    </div><!--end of cart-checkout-section--->
+
+    
+    
+
+            
+
+
+	<footer>
+    	<div class="container">
+             <div class="bounce-in col-sm-12">
+                <a href="/en/site/about"> About us</a> | 
+                <a href="/en/site/terms"> Terms & Conditions</a>  | 
+                <a href="/en/site/privacy"> Privacy Policy</a>  | 
+                <a href="/en/site/cancellation"> Cancellation Policy</a>  | 
+                <a href="/en/site/contact"> Contact Us</a>  
+                <p class="cotyright">Copyright 2012-2014 &copy; Company Name</p>
+                <p class="powerby">Powered by <a href="www.totalgds.com">TotalGDS</a></p>
+                
+            </div>
+		</div>
+   
+	</footer> 
+ 	
+
+
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>  <!--bootstrap only works with this 1.11 jquery. and the 1.8 is used to handle the viewport js bug that. better to keep both -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="asset/js/custom.js"></script>
+	<script src="asset/js/masonry.pkgd.min.cascading-grid-layout.js"></script>
+    <script>
+    
+    var container = document.querySelector('#blog');
+    var msnry = new Masonry( container, {
+      // options
+      columnWidth: 200,
+      itemSelector: '.blog-card'
+    });
+        
+    </script>
+	
+  </body>
 </html>
