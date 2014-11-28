@@ -2,3 +2,6 @@
     padding-top:30px;
     padding-bottom: 30px;
 }
+#inner-blog .tag-list li{
+    margin-bottom: 10px;
+}
