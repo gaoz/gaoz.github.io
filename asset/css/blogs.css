@@ -1,5 +1,33 @@
+#blog-title-desktop {
+font-size: 30px;
+padding-bottom: 10px;
+color: #555;
+font-style: normal;
+font-weight: 300;
+line-height: 1.17em;
+text-transform: uppercase;
+letter-spacing: 0.20em;
+-webkit-font-smoothing: antialiased;
+}
+
+#blog-title-mobile{
+font-size: 17px;
+color: #000;
+font-style: normal;
+font-weight: 300;
+line-height: 40px;
+text-transform: uppercase;
+letter-spacing: 0.20em;
+-webkit-font-smoothing: antialiased;
+padding-top: 20px;
+-webkit-box-shadow: 0px 3px #AAAAAA;
+box-shadow: 0px 3px #AAAAAA;
+padding-bottom:10px;
+}
+
+
 .blog{
-	padding-top:30px;
+	padding-top: 10px;
 	min-height:800px;
 	height:auto;
 	background-color:#ccc;		
@@ -119,10 +147,8 @@ border-radius: 10px;
         width:48%; 
         
     }
-   .blog .row{
-        margin-left: 0px;
-        margin-right: 0px; 
-   }   
+   
+     
 }
 @media (min-width: 701px) and (max-width: 991px) {
   .blog .blog-card{
@@ -130,18 +156,32 @@ border-radius: 10px;
         width:30%; 
         
     }
-   .blog .row{
-        margin-left: 0px;
-        margin-right: 0px; 
-   }
+   
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .blog .blog-card{
         
-        width:23%; 
+        width:30%; 
         
     } 
+   
+    
 }
+@media (min-width: 1200px) and (max-width: 2560px) {
+    .blog .blog-card{
+        
+        width:23%; 
+        
+    }
+
+    
+}
+.blog .row {
+        margin-left: 0px;
+        margin-right: 0px;
+}
+
+
 @media (max-width: 400px) {
     .blog .blog-card{
         width:100%; 

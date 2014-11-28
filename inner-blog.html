@@ -1,0 +1,407 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content=""> 	
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>WhiteLabelSite</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet">
+	<!-- language flat icon CSS -- document https://github.com/usrz/bootstrap-languages -->
+    <link href="asset/css/languages.css" rel="stylesheet">
+    <!-- social media icon CSS with social_media_icon.js-- document https://http://codepen.io/benfields/pen/pnoEL -->
+    <link href="asset/css/hover-effect.css" rel="stylesheet">
+    <link href="asset/css/Flat_Social_Buttons.css" rel="stylesheet">
+    <link href="asset/css/program-cards.css" rel="stylesheet">
+    <link href="asset/css/animate.css" rel="stylesheet">
+	<link href="asset/css/theme1.css" rel="stylesheet">
+    <link href="asset/css/inner-blog.css" rel="stylesheet"> 
+    <link href="asset/css/global.css" rel="stylesheet"> 
+    
+
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+	
+    
+    
+       <!-- Fixed navbar -->
+    <div class="theme1-nav navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+            
+            <!-- navi bar  -->
+      	<div class="row">
+            <div class="navbar-header">
+                	<div class="brand row">
+                    	<!-- NAVIGATION BAR TOP (LOGO, TITLE)-->
+                        <!-- Including a piece of js at index.html(bottom of this page) line 687 (adjust logo and title size when scrolling)-->
+                        <!-- Including new css below -->
+                    	<style>
+							
+							
+							.theme1-nav .title-style{
+								
+								color: #555;
+								font-style: normal;
+								font-weight: 300;
+								text-transform: uppercase;
+								letter-spacing: 0.20em;
+								-webkit-font-smoothing: antialiased;
+								line-height:30px;
+								height: auto;
+								white-space:pre-wrap;
+							}
+							.theme1-nav .title-sm{font-size:15px;}
+							.theme1-nav .title-lg{font-size:25px;}
+							.theme1-nav .logoimage {width: 200px; height: 150px;}
+							.theme1-nav .logoimage-shrink{width: 66.665px; height: 50px;}
+							.theme1-nav .transition{
+								-webkit-transition-delay: 0s;
+								-webkit-transition-duration: 0.25s;
+								-webkit-transition-property: height;
+								-webkit-transition-timing-function: linear;
+								
+								transition-delay: 0s;
+								transition-duration: 0.25s;
+								transition-property: height;
+								transition-timing-function: linear;	
+							}
+							.theme1-nav .navlogo2{
+								background: url("asset/img/etc/icon_256x256@2x.png")no-repeat center center;
+								background-size: contain;
+							}
+							.theme1-nav #title, .theme1-nav #logo{
+								cursor:pointer;
+							}
+							@media (min-width: 1028px){ /* bigger desktop view */
+								
+								.theme1-nav #title{margin-top:0px!important;	}
+								.theme1-nav #logo{margin-left:20px!important;}
+								.theme1-nav .title-position{padding-left:20px!important;}
+							}
+							@media (min-width: 768px){ /* desktop view */
+								.theme1-nav .secondary-nav{margin-top:-50px;}
+								.theme1-nav #logo{margin-left:0px;}
+								.theme1-nav #title{margin-top:-30px;}
+								.theme1-nav .title-position{padding-left:5px;}
+							}
+							@media (max-width: 767px){/*mobile view */
+								.theme1-nav #title{font-size:13px;}
+								.theme1-nav .logoimage { width: 66.665px; height: 50px; } 
+								.theme1-nav .brand{ margin-left:0px; margin-right:0px;}
+								.theme1-nav .brand-inner{padding-left:0px;}
+									
+							}
+							.theme1-nav #logo{margin-left:3px; margin-top:3px; margin-bottom:3px;}
+							.theme1-nav .flex-container {
+							  
+							  -ms-box-orient: horizontal;
+							  display: -webkit-box;
+							  display: -moz-box;
+							  display: -ms-flexbox;
+							  display: -moz-flex;
+							  display: -webkit-flex;
+							  display: flex;
+							  
+							  -webkit-align-items: center; 
+							  align-items: center; 
+							}
+							
+						</style>     
+                    	<div class="brand-inner animated fadeInDown col-xs-12 col-xs-height">   
+                            <div class="flex-container">
+                                <span class="flex-item transition logoimage-shrink navlogo2" hef="index.html" id="logo"></span>
+                                <span class="text-center flex-item title-position title-sm title-style" hef="index.html" id="title">Company Name </span>
+                            </div>         		  
+                        </div>
+                        
+                        <div class="col-xs-height col-middle">
+                          <button type="button" class=" navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+                        </div>
+                    </div> <!-- end of brand"-->   
+                 
+                   
+            </div><!-- end of navbar-header"--> 
+            <div class="navbar-collapse navbar-right collapse secondary-nav">
+                <ul class="animated fadeInDown nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="lang-xs lang-lbl" lang="en"></span><span class="caret"></span></a>
+                  <ul class="animated fadeInUp dropdown-menu" role="menu">
+                    <li><a href="#"><span class="lang-xs lang-lbl" lang="en"></span></a></li>
+                    <li><a href="#"><span class="lang-xs lang-lbl" lang="zh"></span></a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">US$ Dollar <span class="caret"></span></a>
+                  <ul class="animated fadeInUp dropdown-menu" role="menu">
+                    <li><a href="#">฿ - Thai Baht</a></li>
+                    <li><a href="#">JP¥ - Japanese Yen</a></li>
+                    <li><a href="#">€ - Euro</a></li>
+                    <li><a href="#">£ - Pound Sterling</a></li>
+                    <li><a href="#">CN¥ - Chinese Yuan</a></li>
+                  </ul>
+                </li>
+                <li>
+                    <a href="check-out.html" class="dropdown-toggle"><span class="glyphicon glyphicon-shopping-cart"></span>(0)</a>
+                </li>
+                <li>
+                    <a href="login.html" class="dropdown-toggle"><span class="glyphicon glyphicon-user"></span></a>
+                </li>
+              </ul>
+            </div> 
+		</div><!--row-->
+         
+         						  
+        <div class="row"> 
+            <div class="navbar-collapse collapse main-nav">
+              <ul class="animated fadeInRight nav navbar-nav">
+                <li><a href="index.html">HOME</a></li>
+                <li ><a href="theme2.html">HOME2</a></li>
+                <li class="active"><a href="programs.html">Programs Display Mode 1</a></li>
+                <li><a href="programs2.html">Programs Display Mode 2</a></li>
+                <li><a href="view-detail.html">View Detail</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Checkout <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="check-out.html">Checkout Now</a></li>
+                    <li><a href="check-out-success.html">Checkout Success</a></li>
+                    <li><a href="check-out-fail.html">Checkout Fail</a></li>
+                  </ul>
+                </li>
+              </ul>
+              
+            </div><!--/.nav-collapse -->
+         </div><!--row -->
+         
+         
+      </div>
+    </div>
+
+ <!--space down from the menu bar and logo section--->
+    <div class="container hidden-xs">
+          <div style="height:105px"></div> 
+    </div>
+<!--end of space down from the menu bar and logo section--->  
+   
+    
+ <!-- Page Content -->
+    <div class="container" id="inner-blog">
+
+        <div class="row">
+
+            <!-- Blog Post Content Column -->
+            <div class="col-lg-8">
+
+                <!-- Blog Post -->
+
+                <!-- Title -->
+                <h1>Blog Post Title</h1>
+
+                <!-- Author -->
+                <p class="lead">
+                    by <a href="#">Mr Right</a>
+                </p>
+
+                <hr>
+
+                <!-- Date/Time -->
+                <p><span class="glyphicon glyphicon-time"></span> Posted on August 24, 2013 at 9:00 PM</p>
+
+                <hr>
+
+                <!-- Preview Image -->
+                <img class="img-responsive" src="asset/img/blog/12.jpg" alt="">
+
+                <hr>
+
+                <!-- Post Content -->
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis. Enim, iure!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut quas placeat totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo voluptatem obcaecati?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo, aliquam tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam recusandae? Qui, necessitatibus, est!</p>
+
+                <hr>
+
+                <!-- Blog Comments -->
+
+                <!-- Comments Form -->
+                <div class="well">
+                    <h4>Leave a Comment:</h4>
+                    <form role="form">
+                        <div class="form-group">
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+
+                <hr>
+
+                <!-- Posted Comments -->
+
+                <!-- Comment -->
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="http://placehold.it/64x64" alt="">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">Start Bootstrap
+                            <small>August 25, 2014 at 9:30 PM</small>
+                        </h4>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    </div>
+                </div>
+
+                <!-- Comment -->
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="http://placehold.it/64x64" alt="">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">Start Bootstrap
+                            <small>August 25, 2014 at 9:30 PM</small>
+                        </h4>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                        <!-- Nested Comment -->
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="http://placehold.it/64x64" alt="">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Nested Start Bootstrap
+                                    <small>August 25, 2014 at 9:30 PM</small>
+                                </h4>
+                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                            </div>
+                        </div>
+                        <!-- End Nested Comment -->
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Blog Sidebar Widgets Column -->
+            <div class="col-md-4">
+
+                <!-- Blog Search Well -->
+                <div class="well">
+                    <h4>Blog Search</h4>
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">
+                                <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                        </span>
+                    </div>
+                    <!-- /.input-group -->
+                </div>
+
+                <!-- Blog Categories Well -->
+                <div class="well">
+                    <h4>Blog Categories</h4>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Category Name</a>
+                                </li>
+                                <li><a href="#">Category Name</a>
+                                </li>
+                                <li><a href="#">Category Name</a>
+                                </li>
+                                <li><a href="#">Category Name</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Category Name</a>
+                                </li>
+                                <li><a href="#">Category Name</a>
+                                </li>
+                                <li><a href="#">Category Name</a>
+                                </li>
+                                <li><a href="#">Category Name</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                </div>
+
+                <!-- Side Widget Well -->
+                <div class="well">
+                    <h4>Side Widget Well</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci accusamus laudantium odit aliquam repellat tempore quos aspernatur vero.</p>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+       
+    </div>
+    <!-- /.container -->
+
+      
+<!-- end of inner-blog --> 
+
+      
+      
+	<footer>
+    	<div class="container">
+             <div class="bounce-in col-sm-12">
+                <a href="/en/site/about"> About us</a> | 
+                <a href="/en/site/terms"> Terms & Conditions</a>  | 
+                <a href="/en/site/privacy"> Privacy Policy</a>  | 
+                <a href="/en/site/cancellation"> Cancellation Policy</a>  | 
+                <a href="/en/site/contact"> Contact Us</a>  
+                <p class="cotyright">Copyright 2012-2014 &copy; Company Name</p>
+                <p class="powerby">Powered by <a href="www.totalgds.com">TotalGDS</a></p>
+                
+            </div>
+		</div>
+   
+	</footer> 
+ 	
+ 	
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>  <!--bootstrap only works with this 1.11 jquery. and the 1.8 is used to handle the viewport js bug that. better to keep both -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="asset/js/jQuery_v1.8.2.js"></script><!--this old version jQuery must be used with SmoothScroll.js-->    <!--if delete this jquery v1.8.2, it will cause a nav auto expanded when switch to mobile view. the bug comes from custom.js/viewport checker js(bug source)-->
+    <script src="asset/js/SmoothScroll.js"></script><!--this js must be used with jQuery_v1.8.2.js-->
+	<script src="asset/js/custom.js"></script>
+    <script src="asset/js/masonry.pkgd.min.cascading-grid-layout.js"></script>
+    <script>
+    
+        var container = document.querySelector('#blog');
+        var msnry = new Masonry( container, {
+          // options
+          
+          itemSelector: '.blog-card'
+        });
+        
+    </script>
+	
+	
+  </body>
+</html>
+
+
