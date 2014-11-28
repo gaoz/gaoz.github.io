@@ -119,7 +119,7 @@ vertical-align: baseline;
 background-color: #B8BDBB;
 border-radius: 10px;
 }
-.blog .sort-control{
+.blog .catagory-dropdown{
 	padding-bottom:10px;	
 }
 .blog .key-words{
@@ -131,7 +131,7 @@ border-radius: 10px;
 .blog .navbar-form {
 	padding: 0px 0px;
 }
-.blog .sort-control{
+.blog .catagory-dropdown{
 	display:inline-block;
 
 
@@ -141,6 +141,11 @@ border-radius: 10px;
 	display:inline-block;
 
 }
+.blog .row {
+        margin-left: 0px;
+        margin-right: 0px;
+}
+
 @media (min-width: 401px) and (max-width: 700px) {
     .blog .blog-card{
         
@@ -159,7 +164,7 @@ border-radius: 10px;
    
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .blog .blog-card{
+   .blog .blog-card{
         
         width:30%; 
         
@@ -176,10 +181,6 @@ border-radius: 10px;
 
     
 }
-.blog .row {
-        margin-left: 0px;
-        margin-right: 0px;
-}
 
 
 @media (max-width: 400px) {
@@ -189,175 +190,34 @@ border-radius: 10px;
     .blog .row{
         margin-left: 0px;
         margin-right: 0px; 
-   }
+    }
    
 }/* mobile view */
 @media screen and  (max-width: 767px){
-.blog{
-	/*padding-top:80px;*/		
+   
+    .blog .navbar-form{
+        margin-bottom: 0px;	
+        border-bottom: none;
+    }
+    .blog .key-words{
+        width:49%;	
+    }
+    .blog .catagory-dropdown{
+        float:none;
+        width:100%;	
+    }
+    .blog .key-words .btn{
+        width:100%;	
+    }
+    .blog .catagory-dropdown .btn-group{
+        width:100%;	
+    }
+    .blog .catagory-dropdown .btn{
+        width:100%;	
+    }
+    .blog .navbar-form {
+        padding: 10px 15px;
+    }
 }
 
-.blog .navbar-form{
-	margin-bottom: 0px;	
-	border-bottom: none;
-}
-.blog .key-words{
-	width:49%;	
-}
-.blog .sort-control{
-	float:none;
-	width:49%;	
-}
-.blog .key-words .btn{
-	width:100%;	
-}
-.blog .sort-control .btn-group{
-	width:100%;	
-}
-.blog .sort-control .btn{
-	width:100%;	
-}
-.blog .navbar-form {
-	padding: 10px 15px;
-}
-}
-
-
-
-
-/* program cards section*/
-
-
-/* desktop view size css*/
-.programs-section .card-item{
-	width:100%;
-	position: relative;
-	height: 150px;
-	background-color:#fff;
-	border-radius:5px;
-	cursor:pointer;
-	margin-bottom:20px;
-	
-	-webkit-box-shadow: 0 0 8px #C9C5C5;
-	-moz-box-shadow: 0 0 8px #C9C5C5;
-	box-shadow: 0 0 8px #C9C5C5;
-	
-
-}
-
-.programs-section .image{
-	width: 100%;
-	min-height:150px;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	border-bottom-left-radius: 3px;
-	border-top-left-radius: 3px;
-}
-
-.programs-section #no-padding{
-	padding-left:0px!important;
-	padding-right:0px!important;
-}
-.programs-section .title{
-	font-family: 'Oswald', sans-serif;
-	font-size: 22px;
-	line-height: 30px;
-	color: #888;
-	font-weight: 100;
-	-webkit-font-smoothing: antialiased;
-}
-.programs-section .from{
-	font-size: 10px;
-	padding-top:20px;
-	padding-bottom:12px;
-	
-}
-.programs-section .view-detail{
-	font-size: 10px;
-
-	
-}
-.mobile-inline-block{
-	display:inline-block!important;
-}
-.programs-section .price{
-	padding-top:0px;
-	margin-top:0px;
-	padding-bottom: 10px;
-	display: block;
-	
-	font-size: 13px;
-	color: #555;
-	font-style: normal;
-	font-weight: 300;
-	line-height: 1.17em;
-	text-transform: uppercase;
-	letter-spacing: 0.00em;
-	-webkit-font-smoothing: antialiased;
-	
-		
-}
-.programs-section .description{
-	font-size:12px;
-	line-height:17px;
-}
-#right-border{
-
-	border-right:1px solid #F1F1F1;
-}
-#no-left-right-padding{
-	padding-left:0px;
-}
-/* mobile view size css */
-
-@media (max-width: 767px){
-	
-/* mobile view */
-#right-border{
-
-	border-right:none;
-}
-.programs-section .card-item{
-	height: 200px!important;	
-}
-
-.programs-section .card-item .price{
-	margin-right:-3px;
-	display:inline-block;
-	float:right;
-	font-size:14px;
-	color:#777;
-	padding-bottom:8px;
-	padding-top:8px;
-	padding-left: 15px; 
-	padding-right: 15px; 
-	border-radius:2px;
-	margin-top:10px;
-	background-color:rgba(0,0,0,0.1);
-}
-#no-right-padding{
-	padding-right:0px;	
-}
-#no-left-padding{
-	padding-left:0px;	
-}
-#no-left-right-padding{
-	padding-left:0px;
-	padding-right:0px;	
-}
-
-.programs-section .title{
-font-family: 'Open Sans', sans-serif;
-font-size: 15px;
-line-height: 1.42857143;
-color: #333;
-}
-
-
-
-
-
-}
 
