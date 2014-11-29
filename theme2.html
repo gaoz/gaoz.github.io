@@ -19,6 +19,7 @@
     <link href="asset/css/animate.css" rel="stylesheet">
     <!--main css for Custom styles of this template-->
 	<link href="asset/css/theme2.css" rel="stylesheet">
+    <link href="asset/css/global.css" rel="stylesheet">
 
 	<!--extenal fonts-->
 	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
@@ -29,7 +30,7 @@
 	
   <body>
 
-       <!-- Fixed navbar -->
+  <!-----------------------------------------------------------Fixed navbar------------------------------------------------------------------->
     <div class="theme1-nav navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container-fluid">
             
@@ -40,7 +41,78 @@
                     	<!-- NAVIGATION BAR TOP (LOGO, TITLE)-->
                         <!-- Including a piece of js at index.html(bottom of this page) line 687 (adjust logo and title size when scrolling)-->
                         <!-- Including new css below -->
-                       
+                    	<style>
+							
+							
+							.theme1-nav .title-style{
+								
+								color: #555;
+								font-style: normal;
+								font-weight: 300;
+								text-transform: uppercase;
+								letter-spacing: 0.20em;
+								-webkit-font-smoothing: antialiased;
+								line-height:30px;
+								height: auto;
+								white-space:pre-wrap;
+							}
+							.theme1-nav .title-sm{font-size:15px;}
+							.theme1-nav .title-lg{font-size:25px;}
+							.theme1-nav .logoimage {width: 200px; height: 80px;}
+							.theme1-nav .logoimage-shrink{width: 66.665px; height: 50px;}
+							.theme1-nav .transition{
+								-webkit-transition-delay: 0s;
+								-webkit-transition-duration: 0.25s;
+								-webkit-transition-property: height;
+								-webkit-transition-timing-function: linear;
+								
+								transition-delay: 0s;
+								transition-duration: 0.25s;
+								transition-property: height;
+								transition-timing-function: linear;	
+							}
+							.theme1-nav .navlogo2{
+								background: url("asset/img/etc/icon_256x256@2x.png")no-repeat center center;
+								background-size: contain;
+							}
+							.theme1-nav #title, .theme1-nav #logo{
+								cursor:pointer;
+							}
+							@media (min-width: 1028px){ /* bigger desktop view */
+								
+								.theme1-nav #title{margin-top:0px!important;	}
+								.theme1-nav #logo{margin-left:20px!important;}
+								.theme1-nav .title-position{padding-left:20px!important;}
+							}
+							@media (min-width: 768px){ /* desktop view */
+								.theme1-nav .secondary-nav{margin-top:-50px;}
+								.theme1-nav #logo{margin-left:0px;}
+								.theme1-nav #title{margin-top:-30px;}
+								.theme1-nav .title-position{padding-left:5px;}
+							}
+							@media (max-width: 767px){/*mobile view */
+								.theme1-nav #title{font-size:13px;}
+								.theme1-nav .logoimage { width: 66.665px; height: 50px; } 
+								.theme1-nav .brand{ margin-left:0px; margin-right:0px;}
+								.theme1-nav .brand-inner{padding-left:0px;}
+									
+							}
+							.theme1-nav #logo{margin-left:3px; margin-top:3px; margin-bottom:3px;}
+							.theme1-nav .flex-container {
+							  
+							  -ms-box-orient: horizontal;
+							  display: -webkit-box;
+							  display: -moz-box;
+							  display: -ms-flexbox;
+							  display: -moz-flex;
+							  display: -webkit-flex;
+							  display: flex;
+							  
+							  -webkit-align-items: center; 
+							  align-items: center; 
+							}
+							
+						</style>     
                     	<div class="brand-inner animated fadeInDown col-xs-12 col-xs-height">   
                             <div class="flex-container">
                                 <span class="flex-item transition logoimage navlogo2" hef="index.html" id="logo"></span>
@@ -93,11 +165,12 @@
         <div class="row"> 
             <div class="navbar-collapse collapse main-nav">
               <ul class="animated fadeInRight nav navbar-nav">
-                <li><a href="index.html">HOME</a></li>
+                <li ><a href="index.html">HOME</a></li>
                 <li class="active"><a href="theme2.html">HOME2</a></li>
-                <li><a href="programs.html">Programs Display Mode 1</a></li>
-                <li><a href="programs2.html">Programs Display Mode 2</a></li>
-                <li><a href="view-detail.html">View Detail</a></li>
+                <li><a href="programs.html">Display1</a></li>
+                <li><a href="programs2.html">Display2</a></li>
+                <li><a href="view-detail.html">Detail</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Checkout <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
@@ -109,7 +182,36 @@
                 
               </ul>
               <style>
-			
+			  .tripAdvisor{
+				  display:block;
+				  width:20px;
+				  height:20px;
+				  background-image:url(asset/img/icon/tripadvisor.png);
+				  background-size: cover;
+				  opacity:0.7;
+				  -webkit-transition-delay: 0s;
+				-webkit-transition-duration: 0.25s;
+				-webkit-transition-property: opacity;
+				-webkit-transition-timing-function: linear;
+			  }
+			  .tripAdvisor:hover{
+				  opacity:1;
+			  }
+			  .pinterest{
+				  display:block;
+				  width:15px;
+				  height:15px;
+				  background-image:url(asset/img/icon/pinterest.png);
+				  background-size: cover;
+				  opacity:0.7;
+				  -webkit-transition-delay: 0s;
+				-webkit-transition-duration: 0.25s;
+				-webkit-transition-property: opacity;
+				-webkit-transition-timing-function: linear;
+			  }
+			  .pinterest:hover{
+				  opacity:1;
+			  }  
 				 
 			  
 			  </style>
@@ -153,9 +255,11 @@
          
       </div>
     </div>
-    
-  
-    
+<!-----------------------------------------------------end of fixed navigation bar ---------------------------------------------------------->  
+      
+      
+      
+      
 <!--space down from the menu bar and logo section--->
     <div class="fluide-container hidden-xs" style="background-color:#333">
           <div style="height:135px"></div> 
@@ -244,387 +348,193 @@
     </div>
     <!-- /.carousel -->
  
- <!--more-programs section -->
-<div class="container-fluid no-padding">
-    <div class="theme2 programs-section" style="background-color:#333!important;">
-        <div class="container wrapper2">
-            	<div class="row"><!-- row up the catagory and program cards "-->
-                	 
+<!------------------------------activities showcase section (no css file needed, just insert this html)----------------------------------->
+
+    <!-- Page Content -->
+    <div class="container">
+        
+        
+        <div class="row">
+            <div class="col-lg-8">
+                <!-- Page Heading -->
+                <div class="left-in row">
+                     <div class="col-lg-12">
+                        <h1 class="page-header size24">
+                            Activities
+                        </h1>
+                     </div>
+                </div>
+                <!-- /.row -->
+
+                <!-- Project One -->
+                <div class="left-in row">
+                    <div class="col-md-5">
+                        <a href="#">
+                            <img class="thumbnail img-responsive" width="360px;" src="http://www.enoa.com.php5-12.dfw1-1.websitetestlink.com/wp/wp-content/uploads/pearl-harbor-misc.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-7">
+                        <h3>Pearl Harbor Tours</h3>
+                      
+                        <p>Travel back in time and experience one of the most important eras in our nation's history through our Pearl Harbor and USS Arizona Tours.</p>
+                        <a class="btn btn-primary" href="#">View Detail <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <hr>
+
+                <!-- Project Two -->
+                <div class="left-in row">
+                    <div class="col-md-5">
+                        <a href="#">
+                            <img class="thumbnail img-responsive" width="360px;" src="http://www.enoa.com.php5-12.dfw1-1.websitetestlink.com/wp/wp-content/uploads/sightseeing-misc.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-7">
+                        <h3>Circle Island Tours</h3>
+                      
+                        <p>Take a tour around Oahu and experience its rich natural and cultural wonders through our Oahu Circle Island Sightseeing Tours.</p>
+                        <a class="btn btn-primary" href="#">View Detail <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <hr>
+
+                <!-- Project Three -->
+                <div class="left-in row">
+                    <div class="col-md-5">
+                        <a href="#">
+                            <img class="thumbnail img-responsive" width="360px;" src="http://www.enoa.com/wp/wp-content/uploads/tours-from-ko-olina.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-7">
+                        <h3>Island Tours from Ko Olina</h3>
+                      
+                        <p>Enjoy the best island tour experiences directly from any Ko Olina resort through our island tours from Ko Olina!</p>
+                        <a class="btn btn-primary" href="#">View Detail <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <hr>
+
+                <!-- Project Four -->
+                <div class="left-in row">
+
+                    <div class="col-md-5">
+                        <a href="#">
+                            <img class="thumbnail img-responsive" width="360px;" src="http://www.enoa.com.php5-12.dfw1-1.websitetestlink.com/wp/wp-content/uploads/shopping-misc.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-7">
+                        <h3>Waikele Shopping Tours</h3>
+                      
+                        <p>Name-brand shopping at outlet prices in paradise is what our Waikele Outlet Shopping Tours are all about!</p>
+                        <a class="btn btn-primary" href="#">View Detail <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <hr>
+
+                <!-- Project Five -->
+                <div class="left-in row">
+                    <div class="col-md-5">
+                        <a href="#">
+                            <img class="thumbnail img-responsive" width="360px;" src="http://placehold.it/360x240" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-7">
+                        <h3>Guaranteed Tickets to the USS Arizona Memorial</h3>
+                      
+                        <p>Avoid standing in line for tickets and sold-out dates for the USS Arizona! We guarantee Pearl Harbor Tickets on all our Pearl Harbor Tours.</p>
+                        <a class="btn btn-primary" href="#">View Detail <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                </div>
+                <!-- /.row -->
                 
-                    <div class=" col-xs-12 col-sm-9 col-md-8 card-list">
-                    
-                    
-                    	  <!-- css for left pane(activities list) content-->
-                            <style>
-								.jumbotron .main-title {
-									font-size: 30px;
-									padding-bottom: 10px;
-									color: white;
-									font-style: normal;
-									font-weight: 300;
-									line-height: 1.17em;
-									text-transform: uppercase;
-									letter-spacing: 0.20em;
-									-webkit-font-smoothing: antialiased;
-								}
-						
-						   		.theme2 .card-item{
-								-webkit-box-shadow:none!important;
-								-moz-box-shadow:none!important;
-								box-shadow: none!important;	
-								}
-						   
-						   
-                            	.theme2 .jumbotron {
-								background-color: #333!important;
-								}
-								.programs-section .image{
-									width: 100%;
-									min-height:150px;
-									max-width:150px;
-									max-height:150px;
-									-webkit-background-size: cover;
-									-moz-background-size: cover;
-									-o-background-size: cover;
-									background-size: cover;
-									border-bottom-left-radius: 3px;
-									border-top-left-radius: 3px;
-								}
-								@media (max-width: 765px) {j
-									.carousel .item {
-									   min-height:400px;
-									}
-									.programs-section .image{
-									   border-top-left-radius: 3px;
-									   border-top-right-radius: 3px;
-									   border-bottom-left-radius: 0px;
-									   border-bottom-right-radius: 0px;
-									
-										max-width:350px;
-										max-height:350px;
-									}
-									.programs-section .card-item{
-										margin-left: auto;
-										margin-right:auto;
-										max-width:350px;
-									}
-								}
-								
-								
-								<!-- css for right pane(contactus,aboutus,news) content-->
-						
-								.right-pane{
-									border-radius:5px;
-									
-								}
-								.right-pane .thumbnail{
-									margin-bottom:0px!important;
-								}
-								.right-pane .item{
-									background: #F6F6F6;
-									padding: 5px;
-									border-radius:5px;
-									overflow:hidden;
-									
-								}
-								.spaceout{
-		
-									height:	75px;
-								}
-								.news-item-title div{padding-top:30px;}
-								.img-wrapper {
-									position: relative;
-									background-color: rgba(255,255,255,0.3);
-									overflow: hidden;
-								}
-								.right-pane .subtitle{
-									padding-left:5px;
-									padding-right:5px;
-									margin-top:1px;
-								}
-							</style>
-                          	<div class="container mobile mobile-program-title visible-xs " style="margin-bottom:20px;">
-                          
-                             <p class="text-center">Activities and Events</p>
-                     
-                    
-                            </div>
-                            
-                  
-                            <div class="jumbotron hidden-xs" style="padding:0px; margin:0px;">
-                                <div class="text-center container"> 
-                                <h1 class="main-title">Activities and Events</h1>
-                                </div>
-                            </div>
-                            
-                            <div class="card-item fade-in" style=""><a class="view-detail" href="#"></a>
-                                <div class="col-md-3 col-sm-4 col-xs-12" id="no-padding" >
-                                      <img class="image" src="asset/img/etc/icon_256x256@2x.png"></img>              
-                                </div>	
-                                <div class="col-md-7 col-sm-6 col-xs-8" id="right-border">
-                                      <h4 class="title two-row-text-limit">Honolulu Screamer Jet Boat</h4>
-                                      
-                                      <h6 class="description three-rows-text-limit hidden-xs ">
-                                            <span class="glyphicon glyphicon-list-alt"></span>
-                                             &nbsp;&nbsp;&nbsp;November 6-7: East Meets West in
-                                              Startup Paradise 2014 "Digital Lifestyle" Conference
-                                               in Honolulu, Hawaii - Reserve your seat now!</h6>
-                                </div>
-                                <div class="col-sm-2 col-xs-4" id="no-left-right-padding">
-                                      <div class="text-center">
-                                           <h5 class="from hidden-xs">FROM</h5>
-                                           <h5 class="price">US$1199.00</h5>
-                                           <h6 class="view-detail hidden-xs">
-                                                DETAIL 
-                                               <span class="glyphicon glyphicon-chevron-right">
-                                               </span>
-                                               
-                                               
-                                           </h6>             
-                                     </div>  
-                                     
-                                </div>
-                                    
-                            </div> <!-- program cards right-in animation"-->
-                             
-                            <div class="card-item fade-in"><a class="view-detail" href="#"></a>
-                               <div class="col-md-3 col-sm-4 col-xs-12" id="no-padding" >
-                                      <img class="image tour1" ></img>              
-                                </div>	
-                                <div class=" col-md-7 col-sm-6 col-xs-8" id="right-border">
-                                      <h4 class="title two-row-text-limit">Honolulu Screamer Jet Boat</h4>
-                                      
-                                      <h6 class="description three-rows-text-limit hidden-xs ">
-                                            <span class="glyphicon glyphicon-list-alt"></span>
-                                             &nbsp;&nbsp;&nbsp;November 6-7: East Meets West in
-                                              Startup Paradise 2014 "Digital Lifestyle" Conference
-                                               in Honolulu, Hawaii - Reserve your seat now!</h6>
-                                </div>
-                                <div class="col-sm-2 col-xs-4" id="no-left-right-padding">
-                                      <div class="text-center">
-                                           <h5 class="from hidden-xs">FROM</h5>
-                                           <h5 class="price">US$1199.00</h5>
-                                           <h6 class="view-detail hidden-xs">
-                                                DETAIL 
-                                               <span class="glyphicon glyphicon-chevron-right">
-                                               </span>
-                                               
-                                               
-                                           </h6>             
-                                     </div>  
-                                     
-                                </div>
-                                    
-                            </div> <!-- program cards right-in animation"-->
-                            
-                           
-                            <div class="card-item fade-in"><a class="view-detail" href="#"></a>
-                                <div class=" col-md-3 col-sm-4 col-xs-12" id="no-padding" >
-                                      <img class="image tour2" ></img>              
-                                </div>	
-                                <div class="col-md-7 col-sm-6 col-xs-8" id="right-border">
-                                      <h4 class="title two-row-text-limit">Honolulu Screamer Jet Boat</h4>
-                                      
-                                      <h6 class="description three-rows-text-limit hidden-xs ">
-                                      		<span class="glyphicon glyphicon-list-alt"></span>
-                                             &nbsp;&nbsp;&nbsp;November 6-7: East Meets West in
-                                              Startup Paradise 2014 "Digital Lifestyle" Conference
-                                               in Honolulu, Hawaii - Reserve your seat now!</h6>
-                                </div>
-                                <div class="col-sm-2 col-xs-4" id="no-left-right-padding">
-                                      <div class="text-center">
-                                           <h5 class="from hidden-xs">FROM</h5>
-                                           <h5 class="price">US$1199.00</h5>
-                                           <h6 class="view-detail hidden-xs">
-                                                DETAIL 
-                                               <span class="glyphicon glyphicon-chevron-right">
-                                               </span>
-                                               
-                                               
-                                           </h6>             
-                                     </div>  
-                                     
-                                </div>
-                                	
-                           </div> <!-- program cards right-in animation"-->
-                           
-                            <div class="card-item fade-in"><a class="view-detail" href="#"></a>
-                                <div class="col-md-3 col-sm-4 col-xs-12" id="no-padding" >
-                                      <img class="image tour5" ></img>              
-                                </div>	
-                                <div class=" col-md-7 col-sm-6 col-xs-8" id="right-border">
-                                      <h4 class="title two-row-text-limit">Honolulu Screamer Jet Boat</h4>
-                                      
-                                      <h6 class="description three-rows-text-limit hidden-xs ">
-                                      		<span class="glyphicon glyphicon-list-alt"></span>
-                                             &nbsp;&nbsp;&nbsp;November 6-7: East Meets West in
-                                              Startup Paradise 2014 "Digital Lifestyle" Conference
-                                               in Honolulu, Hawaii - Reserve your seat now!</h6>
-                                </div>
-                                <div class="col-sm-2 col-xs-4" id="no-left-right-padding">
-                                      <div class="text-center">
-                                           <h5 class="from hidden-xs">FROM</h5>
-                                           <h5 class="price">US$1199.00</h5>
-                                           <h6 class="view-detail hidden-xs">
-                                                DETAIL 
-                                               <span class="glyphicon glyphicon-chevron-right">
-                                               </span>
-                                               
-                                               
-                                           </h6>             
-                                     </div>  
-                                     
-                                </div>
-                                	
-                           </div> <!-- program cards right-in animation"-->
-                           
-                          <div class="card-item fade-in"><a class="view-detail" href="#"></a>
-                                <div class=" col-md-3 col-sm-4 col-xs-12" id="no-padding" >
-                                      <img class="image tour3" ></img>              
-                                </div>	
-                                <div class=" col-md-7 col-sm-6 col-xs-8" id="right-border">
-                                      <h4 class="title two-row-text-limit">Honolulu Screamer Jet Boat</h4>
-                                      
-                                      <h6 class="description three-rows-text-limit hidden-xs ">
-                                      		<span class="glyphicon glyphicon-list-alt"></span>
-                                             &nbsp;&nbsp;&nbsp;November 6-7: East Meets West in
-                                              Startup Paradise 2014 "Digital Lifestyle" Conference
-                                               in Honolulu, Hawaii - Reserve your seat now!</h6>
-                                </div>
-                                <div class="col-sm-2 col-xs-4" id="no-left-right-padding">
-                                      <div class="text-center">
-                                           <h5 class="from hidden-xs">FROM</h5>
-                                           <h5 class="price">US$1199.00</h5>
-                                           <h6 class="view-detail hidden-xs">
-                                                DETAIL 
-                                               <span class="glyphicon glyphicon-chevron-right">
-                                               </span>
-                                               
-                                               
-                                           </h6>             
-                                     </div>  
-                                     
-                                </div>
-                                	
-                           </div> <!-- program cards right-in animation"-->
-                           <div class="card-item fade-in"><a class="view-detail" href="#"></a>
-                                <div class=" col-md-3 col-sm-4 col-xs-12" id="no-padding" >
-                                      <img class="image tour3" ></img>              
-                                </div>	
-                                <div class=" col-md-7 col-sm-6 col-xs-8" id="right-border">
-                                      <h4 class="title two-row-text-limit">Honolulu Screamer Jet Boat</h4>
-                                      
-                                      <h6 class="description three-rows-text-limit hidden-xs ">
-                                      		<span class="glyphicon glyphicon-list-alt"></span>
-                                             &nbsp;&nbsp;&nbsp;November 6-7: East Meets West in
-                                              Startup Paradise 2014 "Digital Lifestyle" Conference
-                                               in Honolulu, Hawaii - Reserve your seat now!</h6>
-                                </div>
-                                <div class="col-sm-2 col-xs-4" id="no-left-right-padding">
-                                      <div class="text-center">
-                                           <h5 class="from hidden-xs">FROM</h5>
-                                           <h5 class="price">US$1199.00</h5>
-                                           <h6 class="view-detail hidden-xs">
-                                                DETAIL 
-                                               <span class="glyphicon glyphicon-chevron-right">
-                                               </span>
-                                               
-                                               
-                                           </h6>             
-                                     </div>  
-                                     
-                                </div>
-                                	
-                           </div> <!-- program cards right-in animation"-->
-                           
-                          
-                             
-                          
-                          
-                   
-                    </div><!-- end of class="col-sm-9 cards"-->
-                 
-                    <div class="col-xs-12 col-sm-3 col-md-4">
-                    
-                    
-                    	 <!--space out-->
-						 <div class="spaceout hidden-xs" style=" background-color:#333;"></div> 
-                         <!--end of space out-->
-                         
-                         <div class="right-pane panel hidden-xs">
-                        		<div class="panel-title" style="padding:10px;">Contact Us:
-                                </div>
-                       			<div class="panel-body text-center item">
-                                
-                                    	
-                                        <h5 >在线预订: (808) 4551600 x 228</h5>
-                                 
-                                   
-                                </div>
-                           
-                        </div> <!--end of panel & color-theme--> 
-                         
-                        <div class="right-pane panel hidden-xs">
-                        		<div class="panel-title" style="padding:10px;">About Us:
-                                </div>
-                       			<div class="panel-body item">
-                                
-                                    	<img class="thumbnail img-responsive" src="asset/img/banner/place4.jpg" alt="" title="" width="100%" height="auto">
-                                        <h5 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus, justo non euismod fringilla, enim risus dapibus arcu, a rhoncus augue ipsum non velit. Aliquam non efficitur leo. Duis eget blandit ex. In ultricies ornare semper. </h5>
-                                 
-                                   
-                                </div>
-                           
-                        </div> <!--end of panel & color-theme-->
-                        
-                        
-                        
-                       
-                        
-                        <div class="right-pane panel hidden-xs">
-                       			<div class="panel-title" style="padding:10px;">News Feed
-                                </div>
-                       			<div class="panel-body item">
-                                	<a href="" style="background-color: #99f28a;">
-                                    	<div class=" img-wrapper">
-                                        	<img class="thumbnail" src="http://academic.emporia.edu/schulmem/hydro/TERM%20PROJECTS/2007/Flory/pearlharbor2.gif" alt="" title="" width="auto" height="120px">
-                                        </div>
-                                        <h6 class="subtitle" style="padding-bottom:10px;">Aliquam in tortor pellentesque, egestas leo eget, auctor magna. Integer eu ullamcorper elit. Vestibulum pulvinar hendrerit sem, ut venenatis ligula congue et. Mauris euismod sem in commodo interdum.</h6>
-                                    </a>
-                                    <a href="" style="background-color: #99f28a;">
-                                    	<div class="img-wrapper" style="height:auto;">
-                                        	<img class="thumbnail" src="http://upload.wikimedia.org/wikipedia/commons/c/c3/USS_Arizona_Memorial_(aerial_view).jpg" alt="" title="" width="auto" height="120px">
-                                        </div>
-                                        <h6 class="subtitle" style="padding-bottom:10px;">Integer id nibh a eros suscipit aliquam sed a nisi. Mauris gravida diam nunc, vel auctor lacus tempus et. Nunc accumsan congue dignissim. Sed malesuada eget libero ut ornare.</h6>
-                                    </a>
-                                    <a href="" style="background-color: #99f28a;">
-                                    	<div class="img-wrapper" style="height:auto;">
-                                        	<img class="thumbnail" src="http://hvo.wr.usgs.gov/multimedia/archive/2005/Jan/20050128-7797_DAS_large.jpg" alt="" title="" width="auto" height="120px">
-                                        </div>
-                                        <h6 class="subtitle" style="padding-bottom:10px;">Sed tincidunt sed ipsum id interdum. Phasellus laoreet posuere consectetur. Nam tempus rhoncus dui. Morbi pharetra quam in sagittis mollis. Quisque eu tincidunt lectus, ac mollis felis. </h6>
-                                    </a>
-                                   
-                                </div>
-                           
-                        </div> <!--end of panel & color-theme-->
-                        
-                        
-                    </div> <!-- end of class="col-sm-3 catagory"-->
-                    
-                    
-                </div><!-- end of row up the catagory and program cards "-->
-        	
-            </div> <!-- end of wrapper2 "-->
+            </div> <!-- /.col-lg-8 -->
             
-        </div><!-- end of programs-section "-->
+            <div class="col-lg-4">
+                <!--space out-->
+                <div class="col-lg-12">
+                 <h1 class="page-header size24" style="color:rgba(225,225,255,0.0);">space out
+
+                 </h1>
+                </div>
+						 
+                         
+                <div class="col-lg-12 right-in right-pane panel">
+                    <div class="panel-title" style="padding:10px;">Contact Us:
+                    </div>
+                    <div class="panel-body text-center item">
+
+
+                            <h5 >在线预订: (808) 4551600 x 228</h5>
+
+
+                    </div>
+
+                </div> <!--end of panel & color-theme--> 
+                         
+                <div class="col-lg-12 right-in right-pane panel">
+                        <div class="panel-title" style="padding:10px;">About Us:
+                        </div>
+                        <div class="panel-body item">
+
+                                <img class="thumbnail img-responsive" src="asset/img/banner/place4.jpg" alt="" title="" width="100%" height="auto">
+                                <h5 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus, justo non euismod fringilla, enim risus dapibus arcu, a rhoncus augue ipsum non velit. Aliquam non efficitur leo. Duis eget blandit ex. In ultricies ornare semper. </h5>
+
+
+                        </div>
+
+                </div> <!--end of panel & color-theme-->
+
+
+
+
+
+                <div class="col-lg-12 right-pane panel">
+                        <div class="panel-title" style="padding:10px;">News Feed
+                        </div>
+                        <div class="panel-body item">
+                            <a href="" style="background-color: #99f28a;">
+                                <div class=" img-wrapper right-in">
+                                    <img class="thumbnail" src="http://academic.emporia.edu/schulmem/hydro/TERM%20PROJECTS/2007/Flory/pearlharbor2.gif" alt="" title="" width="auto" height="120px">
+                                </div>
+                                <h6 class="subtitle right-in" style="padding-bottom:10px;">Aliquam in tortor pellentesque, egestas leo eget, auctor magna. Integer eu ullamcorper elit. Vestibulum pulvinar hendrerit sem, ut venenatis ligula congue et. Mauris euismod sem in commodo interdum.</h6>
+                            </a>
+                            <a href="" style="background-color: #99f28a;">
+                                <div class="img-wrapper" style="height:auto;">
+                                    <img class="thumbnail right-in" src="http://upload.wikimedia.org/wikipedia/commons/c/c3/USS_Arizona_Memorial_(aerial_view).jpg" alt="" title="" width="auto" height="120px">
+                                </div>
+                                <h6 class="subtitle right-in" style="padding-bottom:10px;">Integer id nibh a eros suscipit aliquam sed a nisi. Mauris gravida diam nunc, vel auctor lacus tempus et. Nunc accumsan congue dignissim. Sed malesuada eget libero ut ornare.</h6>
+                            </a>
+                            <a href="" style="background-color: #99f28a;">
+                                <div class="img-wrapper right-in" style="height:auto;">
+                                    <img class="thumbnail" src="http://hvo.wr.usgs.gov/multimedia/archive/2005/Jan/20050128-7797_DAS_large.jpg" alt="" title="" width="auto" height="120px">
+                                </div>
+                                <h6 class="subtitle right-in" style="padding-bottom:10px; ">Sed tincidunt sed ipsum id interdum. Phasellus laoreet posuere consectetur. Nam tempus rhoncus dui. Morbi pharetra quam in sagittis mollis. Quisque eu tincidunt lectus, ac mollis felis. </h6>
+                            </a>
+
+                        </div>
+
+                </div> <!--end of panel & color-theme-->
+            </div>
             
-</div> <!--end of div class="container-fluid no-padding"-->
+        </div> <!-- /.row -->
+        <hr>
 
+       
 
+ 
 
-      
-<!-- end of more-programs --> 
-   
+       
+
+    </div>
+    <!-- /.container -->   
 
             
 
@@ -632,7 +542,7 @@
             
             
   
-    <!-- end of activities showcase -->
+<!--------------------------- end of activities showcase --------------------------->
 
 	<footer>
     	<div class="container">
