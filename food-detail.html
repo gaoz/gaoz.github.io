@@ -1,0 +1,552 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content=""> 	
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>WhiteLabelSite</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet">
+	<!-- language flat icon CSS -- document https://github.com/usrz/bootstrap-languages -->
+    <link href="asset/css/languages.css" rel="stylesheet">
+    <!-- social media icon CSS with social_media_icon.js-- document https://http://codepen.io/benfields/pen/pnoEL -->
+    <link href="asset/css/hover-effect.css" rel="stylesheet">
+    <link href="asset/css/Flat_Social_Buttons.css" rel="stylesheet">
+    <link href="asset/css/program-cards.css" rel="stylesheet">
+    <link href="asset/css/animate.css" rel="stylesheet">
+	<link href="asset/css/theme1.css" rel="stylesheet">
+    <link href="asset/css/view-detail.css" rel="stylesheet"> 
+    <link href="asset/css/view-detail2.css" rel="stylesheet"> 
+    <link href="asset/css/more-programs.css" rel="stylesheet"> 
+    <!-- Custom 1 styles for this template -->
+   
+
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+ 	<link href='http://fonts.googleapis.com/css?family=Roboto:300,100' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:900' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+      
+	<!--<link href="asset/css/datepicker.css" rel="stylesheet" type="text/css"/>	--><!--style the calendar-->
+    <link rel='stylesheet prefetch' href='http://dimsemenov-static.s3.amazonaws.com/dist/magnific-popup.css'><!--used for calendar popup-->
+	<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/ui-darkness/jquery-ui.min.css" rel="stylesheet"> 
+    <link href="asset/css/datepicker-style.css" rel="stylesheet" type="text/css"/>
+    
+    	 
+  </head>
+
+  <body>
+ <!-----------------------------------------------------------Fixed navbar------------------------------------------------------------------->
+    <div class="theme1-nav navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+            
+            <!-- navi bar  -->
+      	<div class="row">
+            <div class="navbar-header">
+                	<div class="brand row">
+                    	<!-- NAVIGATION BAR TOP (LOGO, TITLE)-->
+                        <!-- Including a piece of js at index.html(bottom of this page) line 687 (adjust logo and title size when scrolling)-->
+                        <!-- Including new css below -->
+                    	<style>
+							
+							
+							.theme1-nav .title-style{
+								
+								color: #555;
+								font-style: normal;
+								font-weight: 300;
+								text-transform: uppercase;
+								letter-spacing: 0.20em;
+								-webkit-font-smoothing: antialiased;
+								line-height:30px;
+								height: auto;
+								white-space:pre-wrap;
+							}
+							.theme1-nav .title-sm{font-size:15px;}
+							.theme1-nav .title-lg{font-size:25px;}
+							.theme1-nav .logoimage {width: 200px; height: 150px;}
+							.theme1-nav .logoimage-shrink{width: 66.665px; height: 50px;}
+							.theme1-nav .transition{
+								-webkit-transition-delay: 0s;
+								-webkit-transition-duration: 0.25s;
+								-webkit-transition-property: height;
+								-webkit-transition-timing-function: linear;
+								
+								transition-delay: 0s;
+								transition-duration: 0.25s;
+								transition-property: height;
+								transition-timing-function: linear;	
+							}
+							.theme1-nav .navlogo2{
+								background: url("asset/img/etc/icon_256x256@2x.png")no-repeat center center;
+								background-size: contain;
+							}
+							.theme1-nav #title, .theme1-nav #logo{
+								cursor:pointer;
+							}
+							@media (min-width: 1028px){ /* bigger desktop view */
+								
+								.theme1-nav #title{margin-top:0px!important;	}
+								.theme1-nav #logo{margin-left:20px!important;}
+								.theme1-nav .title-position{padding-left:20px!important;}
+							}
+							@media (min-width: 768px){ /* desktop view */
+								.theme1-nav .secondary-nav{margin-top:-50px;}
+								.theme1-nav #logo{margin-left:0px;}
+								.theme1-nav #title{margin-top:-30px;}
+								.theme1-nav .title-position{padding-left:5px;}
+							}
+							@media (max-width: 767px){/*mobile view */
+								.theme1-nav #title{font-size:13px;}
+								.theme1-nav .logoimage { width: 66.665px; height: 50px; } 
+								.theme1-nav .brand{ margin-left:0px; margin-right:0px;}
+								.theme1-nav .brand-inner{padding-left:0px;}
+									
+							}
+							.theme1-nav #logo{margin-left:3px; margin-top:3px; margin-bottom:3px;}
+							.theme1-nav .flex-container {
+							  
+							  -ms-box-orient: horizontal;
+							  display: -webkit-box;
+							  display: -moz-box;
+							  display: -ms-flexbox;
+							  display: -moz-flex;
+							  display: -webkit-flex;
+							  display: flex;
+							  
+							  -webkit-align-items: center; 
+							  align-items: center; 
+							}
+							
+                        </style>
+                    	<div class="brand-inner animated fadeInDown col-xs-12 col-xs-height">   
+                            <div class="flex-container">
+                                <span class="flex-item transition logoimage-shrink navlogo2" hef="index.html" id="logo"></span>
+                                <span class="text-center flex-item title-position title-sm title-style" hef="index.html" id="title">Company Name </span>
+                            </div>         		  
+                        </div>
+                        
+                        <div class="col-xs-height col-middle">
+                          <button type="button" class=" navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+                        </div>
+                    </div> <!-- end of brand"-->  
+                   
+            </div><!-- end of navbar-header"--> 
+            <div class="navbar-collapse navbar-right collapse secondary-nav">
+                <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="lang-xs lang-lbl" lang="en"></span><span class="caret"></span></a>
+                  <ul class="animated fadeInUp dropdown-menu" role="menu">
+                    <li><a href="#"><span class="lang-xs lang-lbl" lang="en"></span></a></li>
+                    <li><a href="#"><span class="lang-xs lang-lbl" lang="zh"></span></a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">US$ Dollar <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">฿ - Thai Baht</a></li>
+                    <li><a href="#">JP¥ - Japanese Yen</a></li>
+                    <li><a href="#">€ - Euro</a></li>
+                    <li><a href="#">£ - Pound Sterling</a></li>
+                    <li><a href="#">CN¥ - Chinese Yuan</a></li>
+                  </ul>
+                </li>
+                <li>
+                    <a href="check-out.html" class="dropdown-toggle"><span class="glyphicon glyphicon-shopping-cart"></span>(0)</a>
+                </li>
+                <li>
+                    <a href="login.html" class="dropdown-toggle"><span class="glyphicon glyphicon-user"></span></a>
+                </li>
+              </ul>
+            </div> 
+		</div><!--row-->
+         
+         						  
+        <div class="row"> 
+            <div class="navbar-collapse collapse main-nav">
+              <ul class="animated fadeInRight nav navbar-nav">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="theme2.html">HOME2</a></li>
+                <li><a href="programs.html">Display1</a></li>
+                <li><a href="programs2.html">Display2</a></li>
+                <li class="active"><a href="view-detail.html">Detail</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Checkout <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li ><a href="check-out.html">Checkout Now</a></li>
+                    <li ><a href="check-out-success.html">Checkout Success</a></li>
+                    <li><a href="check-out-fail.html">Checkout Fail</a></li>
+                  </ul>
+                </li>
+                
+              </ul>
+              <style>
+			  .tripAdvisor{
+				  display:block;
+				  width:20px;
+				  height:20px;
+				  background-image:url(asset/img/icon/tripadvisor.png);
+				  background-size: cover;
+				  opacity:0.7;
+				  -webkit-transition-delay: 0s;
+				-webkit-transition-duration: 0.25s;
+				-webkit-transition-property: opacity;
+				-webkit-transition-timing-function: linear;
+			  }
+			  .tripAdvisor:hover{
+				  opacity:1;
+			  }
+			  .pinterest{
+				  display:block;
+				  width:15px;
+				  height:15px;
+				  background-image:url(asset/img/icon/pinterest.png);
+				  background-size: cover;
+				  opacity:0.7;
+				  -webkit-transition-delay: 0s;
+				-webkit-transition-duration: 0.25s;
+				-webkit-transition-property: opacity;
+				-webkit-transition-timing-function: linear;
+			  }
+			  .pinterest:hover{
+				  opacity:1;
+			  }  
+				 
+			  
+			  </style>
+              <ul class="nav navbar-nav navbar-right nav-pills" style="padding-right:40px;">
+              	<!--use the fontawesome to get the those icon-->
+                <li>
+                <a href="http://facebook.com/" class="btn btn-social-icon btn-facebook">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                </li>
+                <li>
+                <a href="http://twitter.com/" class="btn btn-social-icon btn-twitter">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                </li>
+                                <li>
+                <a href="http://www.linkedin.com/in/" class="btn btn-social-icon btn-linkedin">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+                </li>
+                                <li>
+                <a href="https://github.com/" class="btn btn-social-icon btn-github">
+                    <i class="fa fa-github"></i>
+                </a>
+                </li>
+                				 <li>
+                <a href="https://www.tripadvisor.com/‎" class="btn btn-social-icon btn-tripadivsor">
+                    <span class="tripAdvisor"></span>
+                </a>
+                </li>
+                				 <li>
+                <a href="https://www.pinterest.com/‎" class="btn btn-social-icon btn-pinterest">
+                    <span class="pinterest"></span>
+                </a>
+                </li>
+              </ul>
+              
+            </div><!--/.nav-collapse -->
+         </div><!--row -->
+         
+         
+      </div>
+    </div>
+<!-----------------------------------------------------end of fixed navigation bar ----------------------------------------------------------> 
+
+    
+<!--space down from the menu bar and logo section--->
+    <div class="container hidden-xs">
+          <div style="height:105px"></div> 
+    </div>
+<!--end of space down from the menu bar and logo section--->
+
+
+<div class="view-detail-section">
+	<div class="container">
+    	<div class="detail-header effect7 header">
+        	<h2 class="title text-center">Boston Main Lobster</h2>
+          
+        </div>
+        <div class="detail-panel1 panel-style effect7">
+
+        		<div class="row">
+        			<div class="col-sm-5">
+                    	<img class=" img-thumbnail"  src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRv_QVGOTIATnVOBMd0iAuKQseXc4_BGnsYsdKqIh3KcOfO3VcuJg" width="100%" height="auto">
+                    </div>
+                    <div class="col-sm-7">
+                    	<div style="Margin-left:15px;padding-right:10px;padding-top:30px;padding-bottom:30px;" >
+                            <span class="detail-label">Restaurant:</span><p class="detail-description">JJ French Pastry & Bistro</p>
+                            <span class="detail-label">Location:</span>
+                            <p class="detail-description">3447 waialae ave, Honolulu, HI</p>
+                            <span class="detail-label">DESCRIPTION:</span><p class="detail-description">This is a special dish that offered by JJ, it is a steam whole lobster with sauce of your choice - garblic butter sauce, lemon perper sauce, and Cajun sauce. <br>
+                            we are open 7 day a week, Monday-Saturday 10am-9pm, Sunday 11am-9pm
+                            <br>Reservation are recommanded, free parking avalible.
+                            <br>contact number: 808-888-8888
+                            </p>					
+                         
+                       
+                       
+                           
+                           
+                     
+                            <span class="detail-label">Tag:</span>
+                            <p class="detail-description">
+                                  JJ French Pastry & Bistro, Seafood, Kaimuki, 100$ Deal
+                            </p>
+                           
+                           
+                            
+                            
+                            
+                        </div>   
+                        
+                    </div>
+            	</div>
+        	
+        </div>
+        
+        <div class="panel-style effect7">
+            
+            <div style="padding:20px;">
+                <h3>Make a Reservation Now:</h3>
+                <br>
+                <form role="form">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Your Email address</label>
+                    <input>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">How many people?</label>
+                    <input></input>
+                  </div>
+
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Sent a copy to myself
+                    </label>
+                  </div>
+                  <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+            </div>
+        </div>
+        
+        
+       
+        
+       
+           
+               
+            
+          
+             
+      
+         
+         
+         
+         
+         
+         
+         
+         
+        
+        
+        
+        
+        
+       
+        
+        
+
+	</div>
+</div>
+
+
+	<footer>
+    	<div class="container">
+             <div class="bounce-in col-sm-12">
+                <a href="/en/site/about"> About us</a> | 
+                <a href="/en/site/terms"> Terms & Conditions</a>  | 
+                <a href="/en/site/privacy"> Privacy Policy</a>  | 
+                <a href="/en/site/cancellation"> Cancellation Policy</a>  | 
+                <a href="/en/site/contact"> Contact Us</a>  
+                <p class="cotyright">Copyright 2012-2014 &copy; Company Name</p>
+                <p class="powerby">Powered by <a href="www.totalgds.com">TotalGDS</a></p>
+                
+            </div>
+		</div>
+   
+	</footer> 
+    
+    
+    
+
+
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>  <!--bootstrap only works with this 1.11 jquery. and the 1.8 is used to handle the viewport js bug that. better to keep both -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="asset/js/custom.js"></script>
+ 
+	<script>
+    		/* add to cart button animation with css in view-detail2.css */    
+            $(function(){		
+                $('.add-to-cart').click(function(e){
+                    var $cart = $('.shopping-cart');
+                    
+                        $cart.addClass('css3-notification');
+                        $(this).prop('disabled', true);
+                    window.setTimeout( function() {
+                          $cart.removeClass( 'css3-notification' );
+                          $('button').prop('disabled', false);
+                        }, 400 );
+                    
+                });
+            });
+        
+    </script>
+    <script>
+	$(window).load(function(){
+	$('a.btnn').click(function(){
+		$( this ).toggleClass( "active" );
+	});
+	});
+	</script>
+    
+  
+<!--－－－－－－－－－－－－－－－－－－－－－－－订购日期－－－－－－－－－－－－－－－－－－－－－－－－－－－-->
+<!--－－－－－－－－－－－－－－－－－－－－－－－订购日期－－－－－－－－－－－－－－－－－－－－－－－－－－－-->
+<!--－－－－－－－－－－－－－－－－－－－－－－－订购日期－－－－－－－－－－－－－－－－－－－－－－－－－－－-->
+<!--－－－－－－－－－－－－－－－－－－－－－－－订购日期－－－－－－－－－－－－－－－－－－－－－－－－－－－-->
+<!--－－－－－－－－－－－－－－－－－－－－－－－订购日期－－－－－－－－－－－－－－－－－－－－－－－－－－－-->
+
+
+  <!--used for the datepicker-->  
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.8.18/jquery-ui.min.js"></script>
+  <!--    Example at http://www.jquerybyexample.net/2012/05/highlight-specific-dates-in-jquery-ui.html  -->
+  
+  	<script > <!--used for the datepicker-->
+		$(function (){
+			var date1 = new Date;
+			date1.setHours(0, 0, 0, 0);
+			date1.setDate(10);
+			var date2 = new Date;
+			date2.setHours(0, 0, 0, 0);
+			date2.setDate(23);
+			
+			var Today = {};                //今天的日期
+			var SelectedOpenedDates = {};  //有空的日期
+			var SelectedClosedDates = {};  //卖光的日期
+			// array[index] = value;  Use the date as index and value
+			
+			//在这里导进今天的日期。
+			Today[new Date('11/03/2014')] = new Date('11/03/2014');
+			
+			//在这里导进所有 有空的日期。
+			SelectedOpenedDates[new Date('11/03/2014')] = new Date('11/03/2014');
+			SelectedOpenedDates[new Date('11/04/2014')] = new Date('11/04/2014');
+			SelectedOpenedDates[new Date('11/05/2014')] = new Date('11/05/2014');
+			SelectedOpenedDates[new Date('11/06/2014')] = new Date('11/06/2014');
+			SelectedOpenedDates[new Date('11/07/2014')] = new Date('11/07/2014');
+			SelectedOpenedDates[new Date('11/08/2014')] = new Date('11/08/2014');
+			SelectedOpenedDates[new Date('11/09/2014')] = new Date('11/09/2014');
+			SelectedOpenedDates[new Date('11/10/2014')] = new Date('11/10/2014');
+			SelectedOpenedDates[new Date('11/11/2014')] = new Date('11/11/2014');
+			SelectedOpenedDates[new Date('11/12/2014')] = new Date('11/12/2014');
+			
+			//在这里导进所有 卖光的日期。
+			SelectedClosedDates[new Date('11/13/2014')] = new Date('11/13/2014');
+			SelectedClosedDates[new Date('11/14/2014')] = new Date('11/14/2014');
+			SelectedClosedDates[new Date('11/15/2014')] = new Date('11/15/2014');
+			SelectedClosedDates[new Date('11/16/2014')] = new Date('11/17/2014');
+			SelectedClosedDates[new Date('11/17/2014')] = new Date('11/18/2014');
+			SelectedClosedDates[new Date('11/18/2014')] = new Date('11/19/2014');
+			SelectedClosedDates[new Date('11/19/2014')] = new Date('11/20/2014');
+			SelectedClosedDates[new Date('11/20/2014')] = new Date('11/21/2014');
+			SelectedClosedDates[new Date('11/21/2014')] = new Date('11/12/2014');
+
+			$('#datepicker').datepicker({
+				inline: true,
+				showOtherMonths: true,
+				//dateFormat: 'dd MM yy',
+				dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+				altField: "#alternate",
+      			altFormat: "DD, d MM, yy",
+				 
+				beforeShowDay: function(date) {
+					//return [ true, date >= date1 && date <= date2 ? "available" : ""];  // add css class '.available' into matched date.
+					var CurrenDay = Today[date];
+					var OpenedDay = SelectedOpenedDates[date];
+					var ClosedDay = SelectedClosedDates[date];
+					
+					if (OpenedDay && !CurrenDay ) {
+					
+					 return [true, "available", OpenedDay]; // add css class '.available' into matched date.
+					
+					}
+					else if(ClosedDay && !CurrenDay){
+					  
+					 return [true, "unAvailable", ClosedDay]; // add css class '.unAvailable' into matched date.
+					}
+					else if(CurrenDay && OpenedDay){
+					  
+					 return [true, "currentDay-avail", CurrenDay]; // add css class '.currentDay' into matched date.
+					}
+					else if(CurrenDay && ClosedDay){
+					  
+					 return [true, "currentDay-unavail", CurrenDay]; // add css class '.currentDay' into matched date.
+					}
+					else {
+					
+					 return [true, '', ''];
+					
+					}
+				
+ 					
+				}
+			});
+			
+		});
+		
+		
+	</script> 
+<!--－－－－－－－－－－－－－－－－－－－－－－－end of code(订购日期)－－－－－－－－－－－－－－－－－－－－－－－－－－－-->
+<!--－－－－－－－－－－－－－－－－－－－－－－－end of code(订购日期)－－－－－－－－－－－－－－－－－－－－－－－－－－－-->
+<!--－－－－－－－－－－－－－－－－－－－－－－－end of code(订购日期)－－－－－－－－－－－－－－－－－－－－－－－－－－－-->
+<!--－－－－－－－－－－－－－－－－－－－－－－－end of code(订购日期)－－－－－－－－－－－－－－－－－－－－－－－－－－－-->
+<!--－－－－－－－－－－－－－－－－－－－－－－－end of code(订购日期)－－－－－－－－－－－－－－－－－－－－－－－－－－－-->
+
+
+
+
+
+
+    
+ <script src='http://dimsemenov-static.s3.amazonaws.com/dist/jquery.magnific-popup.min.js'></script>  <!--used for popup the calendar(datapicker)-->
+ <script type="text/javascript"> <!--used for popup the calendar-->
+   // Example 1: From an element in DOM
+	$('.open-popup-link').magnificPopup({
+	  type:'inline',
+	  midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+	});
+    
+
+	
+</script>
+
+  </body>
+</html>
