@@ -279,7 +279,7 @@
 <div class="view-detail-section">
 	<div class="container">
     	<div class="detail-header effect7 header">
-        	<h2 class="title text-center">Boston Main Lobster</h2>
+        	<h2 class="title text-center">Free Appetizer Coupon At Chef Chai</h2>
           
         </div>
         <div class="detail-panel1 panel-style effect7">
@@ -295,15 +295,10 @@
                             <p class="detail-description">3447 waialae ave, Honolulu, HI</p>
                             <span class="detail-label">DESCRIPTION:</span><p class="detail-description">This is a special dish that offered by JJ, it is a steam whole lobster with sauce of your choice - garblic butter sauce, lemon perper sauce, and Cajun sauce. <br>
                             we are open 7 day a week, Monday-Saturday 10am-9pm, Sunday 11am-9pm
-                            <br>Reservation are recommanded, free parking avalible.
-                            <br>contact number: 808-888-8888
+                            <br>BYOB
+                            <br>Free parking avalible.
+                            <br>Contact number for more information: 808-888-8888
                             </p>					
-                         
-                       
-                       
-                           
-                           
-                     
                             <span class="detail-label">Tag:</span>
                             <p class="detail-description">
                                   JJ French Pastry & Bistro, Seafood, Kaimuki, 100$ Deal
@@ -320,30 +315,279 @@
         	
         </div>
         
-        <div class="panel-style effect7">
+        
+         <div class="detail-panel2 panel-style effect7">
+            <div class="calendar" id="priceCalendarBox">
+             <h3 class="title-style1">Choose a date Version 2<h3>
+            	<div style="padding:20px;">
+                    
+      				
+                   
+                    <form class="bs-example bs-example-form" role="form">
+                      <div class="row">
+                         <div class=" col-sm-6">
+                           <a href="#popupIDmatch-1" class="open-popup-link">
+                            <div class="input-group">
+                            	<input type="text" class="form-control " id="alternate" placeholder="MM/DD/YYYY">
+                               <span class="input-group-btn">
+                                
+                                      <button class="choose btn btn-info" type="button"> 
+                                         <span class="glyphicon glyphicon-calendar"> </span>
+                                      </button>
+                                
+                               </span>
+                              
+                            </div><!-- /input-group -->
+                           </a>
+                         </div><!-- /.col-lg-6 --><br>
+                         
+                      </div><!-- /.row -->
+                   </form>
+                    
+                    
+            	</div>
+                
             
-            <div style="padding:20px;">
-                <h3>Make a Reservation Now:</h3>
-                <br>
-                <form role="form">
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Your Email address</label>
-                    <input>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">How many people?</label>
-                    <input></input>
-                  </div>
+            <!--
+            Alternative markup with data-mfp-src attribute:
+            <a href="mobile-friendly-page.html" data-mfp-src="#test-popup" class="open-popup-link">Show inline popup</a>
+            -->
+            <style>
+				.white-popup {
+					height:400px;
+					position: relative;
+					background: none;
+			
+					width:auto;
+					max-width: 700px;
+					margin: 20px auto;
+				}
+				.calendarbox{
+					width:100%; height:auto;
+				}
+				.description-box{
+					display:block;
+					background-color:white;
+					padding:5px;
+					overflow:hidden;
+					border-bottom-right-radius: 6px;
+					border-bottom-left-radius: 6px;
+				}
+				.LegendItem {
+					display:inline-block;
+					margin: 0 3em .6em 0;
+					float:left;
+					white-space: nowrap;
+				}
+				
+				.LgndImg {
+				width: 15px;
+				height: 15px;
+				}
+				.popup-info{
+				padding:5px;
+				display:block;
+				overflow:hidden;
+				background-color:white;	
+				}
+				.popup-inner{
+				padding:5px;
+				display:block;
+				overflow:hidden;
+				background:#CCC;
+				border-radius: 5px;
+				}
+				button.mfp-close {
+					margin-top:-50px;
+					color:white!important;
+				}
+				.ui-datepicker td a {
+				padding:3px!important;
+				}
+				.ui-widget-content {
+					border: 0px solid #666;
+					background: white;
+					color: #000;
+				}
+				.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+				border-bottom-right-radius: 0px;
+				}
+				.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+				border-bottom-left-radius: 0px;
+				}
+				.ui-datepicker-other-month span{
+				display:none!important;
+				}
+				.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+				border: none;
+				background: white;
+				font-weight:100;
+				color: #ccc;
+				}
+				.ui-datepicker-calendar .ui-state-active, .SelectedDates {
+				padding:0px!important;
+				}
+				.datelabel{
+					display:none;
+					width:100%;	
+				}
+				
+				.dp-highlight-unknown .ui-state-default {
+					background: #800;
+					color: #FFF;
+				}
+				.dp-highlight-holiday .ui-state-default {
+					background: #484;
+					color: #FFF;
+				}
+				/**********************************/
+				/*      CALENDAR COLOR CODES      */
+				/**********************************/
+				
+				/* available day's color on the calenlar*/
+				.available .ui-state-default {
+						background: #7CB250!important;
+						color: #FFF!important;	
+				}
+				/* unavailable day's color on the calenlar*/
+				.unAvailable .ui-state-default {
+						background: #ccc!important;
+						color: #FFF!important;	
+				}
+				/* unavailable day's color on the calenlar*/
+				.currentDay-avail .ui-state-default {
+						border:3px solid #15A5EA;
+						padding:0px!important;
+						background: #7CB250!important;
+						color: #FFF!important;	
+				}
+				.currentDay-unavail .ui-state-default {
+						border:3px solid #15A5EA;
+						padding:0px!important;
+						background: #ccc!important;
+						color: #FFF!important;	
+				}
+				/* available icon*/
+				 .BECalOpen { background:#7CB250!important; }
+					
+				
+				/* No Available icon*/
+				.BENoAvail { background:#ccc!important; }
+					
+			
+				/* Selected dates */
+				.ui-datepicker-calendar .ui-state-active, .SelectedDates { border:3px solid #4A4D4D; } 
+				
+				/* Current dates */
+				.currentDay { border:3px solid #15A5EA;
+						padding:0px!important; } 
 
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox"> Sent a copy to myself
-                    </label>
-                  </div>
-                  <button type="submit" class="btn btn-default">Submit</button>
-                </form>
+			 </style>
+
+            <!-- Popup itself -->
+            <div id="popupIDmatch-1" class="white-popup mfp-hide">
+              <div  class="calendarbox" id="datepicker"></div>
+              
+              <!--以下的信熄是跟据选的日期而出现的 -->
+              <div class="popup-info"> 
+              		<div class="popup-inner">
+                    	<span class="glyphicon glyphicon-exclamation-sign"> </span>
+              			<span>There are 2 seats left only!（这信息是跟据选中的日期而出现的）</span>
+                    	<button class="pull-right btn btn-lg btn-primary">Continue</button>
+                    </div>
+              </div>
+              <div class="popup-info"> 
+              		<div class="popup-inner">
+                    	<span class="glyphicon glyphicon-exclamation-sign"> </span>
+              			<span>There are tickets available!（这信息是跟据选中的日期而出现的）</span>
+                    	<button class="pull-right btn btn-lg btn-primary">Continue</button>
+                    </div>
+              </div>
+               <div class="popup-info"> 
+              		<div class="popup-inner">
+                    	<span class="glyphicon glyphicon-exclamation-sign"> </span>
+              			<span>Sold Out!（这信息是跟据选中的日期而出现的）</span>
+                    	
+                    </div>
+              </div>
+              <div class="description-box">
+              		<div class="LegendItem SD">
+                   		<img class="currentDay LgndImg" src="asset/img/etc/blank.gif">
+                    	 Today
+                    </div>
+              		<div class="LegendItem SD">
+                   		<img class="SelectedDates LgndImg" src="asset/img/etc/blank.gif">
+                    	Selected Date
+                    </div>
+                    <div class="LegendItem OD">
+                        <img class="BECalOpen LgndImg" src="asset/img/etc/blank.gif">
+                        Available
+                    </div>
+                    <div class="LegendItem NAv">
+                        <img class="BENoAvail LgndImg" src="asset/img/etc/blank.gif">
+                        No Availability
+                    </div>
+                   
+              	</div>
+            </div>   
+               
+             <!-- Popup itself -->
+            <!--<div id="test-popup" class="white-popup mfp-hide">
+             
+            </div>-->
+   
+             	
             </div>
-        </div>
+        
+       
+            <div class="detail-panel3 panel-style2 effect7">
+                <div class="plan">
+                     <div class="row">
+                                 <div class=" content content-style1 col-sm-offset-1 col-sm-7 col-xs-12">
+                                    <h3 class="">Make a Reservation</h3>
+                                    <p>Select the time session:</p>
+                                    <div class="well" style="">
+                                        
+                                        <ul class="list-group checked-list-box">
+                                          <li class="list-group-item" data-checked="true" >5:00PM - 7:00PM</li>
+                                          <li class="list-group-item">7:00 - 9:00PM</li>
+                                          <li class="list-group-item">10:00 - 12:00PM</li>
+                                       
+                              
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content content-style2  col-sm-4  col-xs-12"> 
+                                    
+                
+                                    
+                                    <h5 class="price text-right">Reservation Fee: US$ 1.00</h5>
+                                    <div style="width:100%;" class=" ">
+                                        <button style="width:100%;margin-bottom:5px;" type="button" class="btn btn-info">Purchase</button>
+                                        <button  style="width:100%;" type="button" class="add-to-cart btn btn-primary">ADD <span class="glyphicon glyphicon-shopping-cart"></span></button>
+                                    </div>
+                                  
+                                </div>       
+                      </div>
+                    
+                </div>
+             </div>   
+  
+             <div class="detail-panel3 panel-style2 effect7">
+                 <div class="plan">           
+                      
+                          
+                          <div class="row">
+                                <div class=" content content-style1 text-center col-xs-12">
+                                    <h3 style="color:red;">Not available, please select another date. </h3>
+                                </div>
+                          </div>
+                    
+                 </div>
+             </div><!--end of  plan 2-->
+             
+             
+         </div><!--end of choose plan date-->
         
         
        

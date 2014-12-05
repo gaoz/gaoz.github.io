@@ -23,6 +23,8 @@
 	<link href="asset/css/theme1.css" rel="stylesheet">
     <link href="asset/css/bootstrap_helper.css" rel="stylesheet"> <!--test test test , this can be deleted anytime-->
     <link href="asset/css/more-programs.css" rel="stylesheet"> 
+	<link href="asset/css/check-out2.css" rel="stylesheet">
+    <link href="asset/css/view-detail2.css" rel="stylesheet"> 
     <!-- Custom 1 styles for this template -->
    
 
@@ -30,12 +32,12 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
       <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
  
-	
-  </head>
-	
-  <body>
 
-  <!-----------------------------------------------------------Fixed navbar------------------------------------------------------------------->
+  </head>
+
+  <body>
+	
+        <!-----------------------------------------------------------Fixed navbar------------------------------------------------------------------->
     <div class="theme1-nav navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container-fluid">
             
@@ -175,10 +177,10 @@
                 <li><a href="programs2.html">Display2</a></li>
                 <li><a href="view-detail.html">Detail</a></li>
                 <li><a href="blogs.html">Blogs</a></li>
-                <li class="dropdown">
+                <li class="active dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Checkout <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
-                    <li ><a href="check-out.html">Checkout Now</a></li>
+                    <li class="active"><a href="check-out.html">Checkout Now</a></li>
                     <li ><a href="check-out-success.html">Checkout Success</a></li>
                     <li><a href="check-out-fail.html">Checkout Fail</a></li>
                   </ul>
@@ -260,117 +262,190 @@
       </div>
     </div>
 <!-----------------------------------------------------end of fixed navigation bar ----------------------------------------------------------> 
-    
-    
-  
+
+
     
 <!--space down from the menu bar and logo section--->
     <div class="container hidden-xs">
-          <div style="height:150px"></div> 
+          <div style="height:105px"></div> 
     </div>
 <!--end of space down from the menu bar and logo section--->
-	
-    
- 
-    
-    
-    
-     
-    <!--end of social media news feed ===========================-->
-    
 
-   	
+	<div class="cart-checkout-section ">
+    	<div class="container">
+        	<div class="row cart-without-items" style="display:none;">
+            	<h2 class="main-title  text-center panel-shadow-style col-sm-12" style="padding-top:160px; padding-bottom:160px;">
+                    You have 0 item in your cart.
+                    <form><input  class="btn btn-md btn-info" type="button" value="Continue Shopping" onclick="history.back(-1)" /></form>
+                </h2><!--end of cart-top-side--> 
+            </div>
+    		<div class="row cart-with-items">
+            	<h2 class="main-title  text-center panel-shadow-style col-sm-12">You have 2 item(s) in your cart.</h2><!--end of cart-top-side--> 
+				<div class="cart-left-side col-sm-9 col-md-10">
+                	<div class="row">   
+                        <!---------------------------------cart item 1 ------------------------------------>
+                        <!---------------------------------cart item 1 ------------------------------------>
+                        <!---------------------------------cart item 1 ------------------------------------>
+                        <!---------------------------------cart item 1 ------------------------------------>
+                        <!---------------------------------cart item 1 ------------------------------------>
+                        <!---------------------------------cart item 1 ------------------------------------>
+                        <!---------------------------------cart item 1 ------------------------------------>
+                        <!---------------------------------cart item 1 ------------------------------------>
+                        <!---------------------------------cart item 1 ------------------------------------>
+                    	<div class="item panel-shadow-style col-sm-12" id="cart-item">
+                    	    	
+                            <div class="item-title  col-sm-7">Free Appetizer Coupon At Chef Chai</div>
+                            <div class="item-price  text-right col-sm-5">
+                            	<div class="row">
+                                	<div class="plan-price col-sm-12 col-xs-8">
+                                     Free
+                                    </div>
+                                    <div class="col-sm-12 col-xs-4">
+                                    <button class="delete-item btn btn-xs btn-info"> Delete Item</button>
+                                    </div>
+                            	</div>
+                            
+                            </div>
+                            <div class="row">
+                           
+                                <div class="item-picture col-xs-12 col-sm-4">
+                                <img class=" img-thumbnail" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRv_QVGOTIATnVOBMd0iAuKQseXc4_BGnsYsdKqIh3KcOfO3VcuJg" width="100%" height="auto">
+                                
+                                </div>
+                                <div class="item-description col-xs-12 col-sm-12 col-md-8">
+                                        
+                                        <p><label> Option:</label>
+                                            <span>Make a Reservation</span>
+                                        </p>
+                                        <p><label> Date & Time:</label>
+                                            <span>2014-09-05,  06:00 PM </span>
+                                        </p>
+                                        <p><label> Duration:</label>
+                                            <span>2 hours.</span>
+                                        </p>
+                                        
+                                        
+                                          
+                                          
+                                  
+                                        </table>
+                                        
+                                </div>
+                               
+                            </div> <!--end of row-->
+                            
+                            
+                          
+                            <div class="row">
+                                
+                                
+                            	<div class="plan_notes_box col-sm-12">
+                                	<div class="blue_left_border_panel">
+                                        <div class="well" >
+                                            <form role="form">
+                                                <div class="form-group">
+                                                  <label for="sel1">How many people for your reservation?(minimun is 2 people):</label>
+                                                  <select class="form-control" id="sel1">
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                  </select>
+                                                  <br>                                              
+                                                </div>
+                                              </form>
+                                        </div>
+                                        <div class="well" style="margin-bottom:0px;">
+                                              <h5>Notes for Chef Chai (optional)</h5>
+                                              <textarea class="form-control" rows="3"></textarea>
+                                        </div>
+                                	</div>
+                                </div> 
+                            </div>
+                          
+                            
+                   		</div> <!--end of item 1-->  
+                        <!-------------------------------end of cart-item-1-----------------------------------------> 	
+                        <!-------------------------------end of cart-item-1-----------------------------------------> 	
+                        <!-------------------------------end of cart-item-1-----------------------------------------> 	
+                        <!-------------------------------end of cart-item-1-----------------------------------------> 	
+                        <!-------------------------------end of cart-item-1-----------------------------------------> 	
+                        <!-------------------------------end of cart-item-1-----------------------------------------> 	
+                        <!-------------------------------end of cart-item-1-----------------------------------------> 
+                        
+                        	
+                        
+                       
+                    </div> <!--end of .cart-left-side .row-->
+                 </div><!--end of cart-left-side-->                 
+                <div class="cart-right-side col-sm-3 col-md-2">
+                        <div class="row">
+                             <div class="panel-shadow-style cart-summary panel-success">
+                                  <!-- Default panel contents -->
+                                  <div class="panel-heading">Summary</div>
+                                  <div class=" panel-body">
+                                     <div class="row">
+                                        <p class="col-xs-4 col-sm-12" style="font-size:13px;"><label style="font-size:12px; font-weight:100; color:#000000; width:50%;text-align: right;
+padding-right: 5px;">Subtotal:</label>US$ 0.00</p>
+                                        <p class="col-xs-3 col-sm-12" style="font-size:13px;"><label style="font-size:12px; font-weight:100; color:#000000; width:50%;text-align: right;
+padding-right: 5px;">Fee:</label>US$ 1.00</p>            
+                                        
+                                  
+                                        <p class=" text-center col-xs-5 col-sm-12" style="font-size:18px; font-weight:bold; color:#3cab0f;"><small style="font-size:12px; font-weight:bold; color:#000000;">Booking Total: </small><p class=" text-center col-xs-5 col-sm-12" style="font-size:18px; font-weight:bold; color:#3cab0f;">US$ 1.00</p></p>
+                                     </div> 
+                                    
+                                  </div>
+                             </div>
+                             
+                             <div class="panel-shadow-style cart-info panel-success">
+                                  <!-- Default panel contents -->
+                                  <div class="panel-heading">Primary Guest</div>
+                                  <div class="panel-body">
+                         
+                                        <form class="form-horizontal" role="form">
+                                          <div class="form-group">
+                                            
+                                            <div class="col-sm-12">
+                                              <input type="" class="form-control" id="" placeholder="First Name">
+                                            </div>
+                                          </div>
+                                          <div class="form-group">
+                                           
+                                            <div class="col-sm-12">
+                                              <input type="" class="form-control" id="" placeholder="Last Name">
+                                            </div>
+                                          </div>
+                                           <div class="form-group">
+                                           
+                                            <div class="col-sm-12">
+                                              <input type="" class="form-control" id="" placeholder="Phone">
+                                            </div>
+                                          </div>
+                                          <div class="form-group">
+                                           
+                                            <div class="col-sm-12">
+                                              <input type="" class="form-control" id="" placeholder="Email">
+                                            </div>
+                                          </div>
+                                          <div class="form-group">
+                                            <div class="col-sm-12">
+                                              <button style="width:100%;" type="submit" class="btn btn-success">Check Out</button>
+                                            </div>
+                                          </div>
+                                        </form>
+                                  </div>
+                             </div>
+                        </div><!--end of row-->
+                  </div><!--end of cart-right-side-->            
+            </div><!--end of row-->
+        </div> <!--end of container-->      
+    </div><!--end of cart-checkout-section--->
 
-     
- <!-- Page Content -->
-    <div class="container">
-
-        <div class="row">
+    
+    
 
             
 
-            <div class="col-md-offset-1 col-md-10">
 
-                <div class="thumbnail">
-                    <img class="img-responsive" src="http://honolulumagazine-images.dashdigital.com/images/cache/cache_7/cache_3/cache_f/47162-45069-splash_HaleAina-80156b37-bc2b9f37.jpeg?ver=1416525081&aspectratio=2.2222222222222" width="800px" height="auto" alt="">
-                    <div class="caption-full">
-                       
-                        <h3>Free Food Coupon When Purchase Any Activity
-                        </h3>
-                        <p>Discription:</p>
-                        <p>When you purchase any activities. you are eligible to redeem one free favor dish from following list in Honolulu when you make a reservation. <br>
-                            <strong><a href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">click here to view the favor dishes that are available for this deal.</a>
-                            </strong></p>
-                
-                        
-                        <p>How it works:</p>
-                        <p>You can just purchase any amount of activities from <a href="#"> our activities list</a>, whenever the total per person meets $100 and up, your free favor dish coupon will be sent to your email after you checkout. The next step is to print out the coupon and bring it with you to the restaurant that listed <a href="#">here</a>, or you can make a reservation now.<br>
-                           </p>
-                     
-                    </div>
-                    
-                </div>
-
-                <div class="well">
-                    <h3>Free Dishes For This Deal <div class="pull-right">
-                        <a href="food.html" class="btn btn-success">View All</a>
-                    </div></h3>
-                   
-
-                    <hr>
-
-                    <div class="row">
-                        <div class="col-md-4 img-wrapper">
-                                        <img class="thumbnail" style="margin-bottom:5px;" src="http://s3-media3.ak.yelpcdn.com/bphoto/Ux3i-oczHSCcUBQHd15a_A/l.jpg" alt="" title="" width="200px" height="auto">
-                                    </div>
-                        <div class="col-md-8">
-                           
-                            <h4>Appetizer Name</h4>
-                            Restaurant Name
-                          
-                            <p>This Appetizer was awarded by Star Honolulu Magazin. In terms of the quality, I would definitely buy another!</p>
-                            <button class="btn btn-primary">make a reservation</button>
-                        </div>
-                    </div>
-
-                    <hr>
-
-                    <div class="row">
-                        <div class="col-md-4 img-wrapper">
-                                        <img class="thumbnail" style="margin-bottom:5px;" src="http://s3-media1.fl.yelpcdn.com/bphoto/yLfcPBMUj8yU6dFs3JnlwQ/l.jpg" alt="" title="" width="200px" height="auto">
-                                    </div>
-                        <div class="col-md-8"> 
-                            <h4>Appetizer Name</h4>
-                            Restaurant Name
-                            <p>This Appetizer was awarded by Star Honolulu Magazin. In terms of the quality, I would definitely buy another!</p>
-                            <button class="btn btn-primary">make a reservation</button>
-                        </div>
-                    </div>
-
-                    <hr>
-
-                    <div class="row">
-                        <div class="col-md-4 img-wrapper">
-                                        <img class="thumbnail" style="margin-bottom:5px;" src="http://newyork.seriouseats.com/images/20080701-matsugen-pickles.jpg" alt="" title="" width="200px" height="auto">
-                                    </div>
-                        <div class="col-md-8">
-                            
-                            <h4>Appetizer Name</h4>
-                            Restaurant Name
-                            <p>This Appetizer was awarded by Star Honolulu Magazin. In terms of the quality, I would definitely buy another!</p>
-                            <button class="btn btn-primary">make a reservation</button>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-    <!-- /.container -->
-    <!-- end of activities showcase -->
 	<footer>
     	<div class="container">
              <div class="bounce-in col-sm-12">
@@ -389,17 +464,14 @@
  	
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>  <!--bootstrap only works with this 1.11 jquery. and the 1.8 is used to handle the viewport js bug that. better to keep both -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-	<script src="asset/js/jQuery_v1.8.2.js"></script><!--this old version jQuery must be used with SmoothScroll.js-->    <!--if delete this jquery v1.8.2, it will cause a nav auto expanded when switch to mobile view. the bug comes from custom.js/viewport checker js(bug source)-->
-    <script src="asset/js/SmoothScroll.js"></script><!--this js must be used with jQuery_v1.8.2.js-->
 	<script src="asset/js/custom.js"></script>
     
     
-
-
-
+    
+	
 	
   </body>
 </html>
