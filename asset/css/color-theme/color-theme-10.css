@@ -6,21 +6,27 @@ body {
 
 
 .main-nav {
-    background-color: #DAEFF1; /* Navigation bar background color */
+    background-color: #F8C1D3; /* Navigation bar background color */
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
-    color: #333;
+    color: #fff;
     border-bottom-color: white;
-    background-color: #6ED7E2; /* Navigation bar active color */
+    background-color: #F3AEC2; /* Navigation bar active color */
 }
 .jumbotron {
-    background-color:#A7E6EC;  /* main body content background color */
+    background-color: #F3AEC2; /* main body content background color */
 }
 .navbar-default .navbar-nav>li>a {
-    color:  #4d4d4d;           /* Navigation bar text color */
+    color:  #fff;   /* Navigation bar text color */
 }
 .jumbotron .desktop-program-title {
-    color: #717575;            /* acitivities big title text color */
+    color: #fff;   /* acitivities big title text color */
+}
+.programs-card {
+    background-color: white;   /* card background color */
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: #000;    /* nav hover over color */
 }
 
 
@@ -30,9 +36,6 @@ body {
 .navbar-default {
     background-color: white;
     border-color: #eb7350;
-}
-.navbar-default .navbar-nav>li>a:hover {
-    color: #eb7350;
 }
 .secondary-nav .dropdown-toggle:hover {
     color: #eb7350!important;
@@ -50,9 +53,7 @@ body {
 .jumbotron .program-title {
     color: #999;
 }
-.programs-card {
-    background-color: #DAEFF1;
-}
+
 .programs {
     border-right-color:  #ddd;
 }
