@@ -1,0 +1,121 @@
+/*.default-theme
+:root {
+  --theme-color-1: #333;
+  --theme-color-2: #5ca824;
+  --theme-color-3: #f8f8f8;
+  --theme-color-4: #e7e7e7;
+  --theme-color-5: #999;
+  --theme-color-6: #fff;
+  --theme-color-7: #000;
+  --theme-color-8: #ddd;
+  --theme-color-9: #888; 
+  --theme-color-10: #e5e5e5; 
+  --theme-color-11: #BBB ;
+  --theme-color-12: #EEE; 
+
+  $color-1: #333;
+  $color-2: #999;
+  $color-3: #DDD;
+  $color-4: white;
+    
+  -webkit-var-color-1: #333;
+  -moz-var-color-1: #333;
+  -ms-var-color-1: #333;
+  -o-var-color-1: #333; 
+  var-color-1: #333; 
+      
+  -webkit-var-color-2: #999;
+  -moz-var-color-2: #999;
+  -ms-var-color-2: #999;
+  -o-var-color-2: #999; 
+  var-color-2: #999; 
+
+  -webkit-var-color-3: #DDD;
+  -moz-var-color-3: #DDD;
+  -ms-var-color-3: #DDD;
+  -o-var-color-3: #DDD; 
+  var-color-3: #DDD; 
+      
+  -webkit-var-color-4: white;
+  -moz-var-color-4: white;
+  -ms-var-color-4: white;
+  -o-var-color-4: white; 
+  var-color-4: white; 
+}
+*/
+
+
+/* *********** example **************
+.red-theme {
+  --theme-primary: #801515;
+  --theme-secondary: #D46A6A;
+  --theme-tertiary: #AA3939;
+}
+button, a {
+  background-color: var(--theme-primary);
+  color: var(--theme-secondary);
+}
+ 
+h1 {
+  color: var(--theme-tertiary);
+}
+*/
+body {
+    background-color: var(color-1);
+    /* background: url(/bundles/business/images/template/darkdenim3.png) repeat 0 0 #555; */
+}
+.theme1-nav .title-style {
+    color: var(color-1);
+}
+.navbar-default {
+    background-color: var(color-4);
+    border-color: var(color-4);
+}
+.navbar-default .navbar-nav>li>a {
+    color:  var(color-2);  
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+    color: var(color-4);
+    border-bottom-color: var(color-4);
+    background-color: var(color-1);
+}
+.main-nav {
+    background-color: var(color-1);
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: var(color-3);
+}
+.carousel {
+    border-bottom-color: var(color-1);
+}
+.jumbotron {
+    background-color: var(color-3);
+}
+.jumbotron .desktop-program-title {
+    color: var(color-1);
+}
+.jumbotron .program-title {
+    color: var(color-2);
+}
+.programs-card {
+    background-color: var(color-4);
+}
+.programs {
+    border-right-color:  var(color-3);
+}
+.jumbotron .from {
+    color: var(color-2);
+}
+.jumbotron .price {
+    color: var(color-2);
+}
+.jumbotron .view-detail {
+    color: var(color-1);
+}
+footer {
+   background: var(color-1);
+   color: var(color-2);
+}
+footer a {
+   color: var(color-4);
+}

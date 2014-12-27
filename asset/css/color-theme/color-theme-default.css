@@ -1,0 +1,60 @@
+
+body {
+    background-color: #333;
+    /* background: url(/bundles/business/images/template/darkdenim3.png) repeat 0 0 #555; */
+}
+.theme1-nav .title-style {
+    color: #333;
+}
+.navbar-default {
+    background-color: white;
+    border-color: white;
+}
+.navbar-default .navbar-nav>li>a {
+    color:  #999;  
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+    color: white;
+    border-bottom-color: white;
+    background-color: #333;
+}
+.main-nav {
+    background-color: #333;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #ddd;
+}
+.carousel {
+    border-bottom-color: #333;
+}
+.jumbotron {
+    background-color: #ddd;
+}
+.jumbotron .desktop-program-title {
+    color: #333;
+}
+.jumbotron .program-title {
+    color: #999;
+}
+.programs-card {
+    background-color: white;
+}
+.programs {
+    border-right-color:  #ddd;
+}
+.jumbotron .from {
+    color: #999;
+}
+.jumbotron .price {
+    color: #999;
+}
+.jumbotron .view-detail {
+    color: #333;
+}
+footer {
+   background: #333;
+   color: #999;
+}
+footer a {
+   color: white;
+}

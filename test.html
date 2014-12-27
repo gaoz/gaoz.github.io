@@ -19,7 +19,6 @@
     <link href="asset/css/animate.css" rel="stylesheet">
     <!--main css for Custom styles of this template-->
 	<link href="asset/css/theme1.css" rel="stylesheet">
-    <link id="colortheme" href="asset/css/color-theme/color-theme-default.css" rel="stylesheet">
 
 	<!--extenal fonts-->
 	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
@@ -28,7 +27,7 @@
 	
   </head>
 	
-  <body class="default-theme">
+  <body>
 
 <!-----------------------------------------------------------Fixed navbar------------------------------------------------------------------->
     <div class="theme1-nav navbar navbar-default navbar-fixed-top" role="navigation">
@@ -46,7 +45,7 @@
 							
 							.theme1-nav .title-style{
 								
-				
+								color: #555;
 								font-style: normal;
 								font-weight: 300;
 								text-transform: uppercase;
@@ -172,11 +171,15 @@
                 <li><a href="view-detail.html">Detail</a></li>
                 <li><a href="blogs.html">Blogs</a></li>
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Checkout <span class="caret"></span></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Activites <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
-                    <li><a href="check-out.html">Checkout Now</a></li>
-                    <li><a href="check-out-success.html">Checkout Success</a></li>
-                    <li><a href="check-out-fail.html">Checkout Fail</a></li>
+                    <li><a href="check-out.html">Oahu</a></li>
+                    <li><a href="check-out-success.html">Maui</a></li>
+                    <li><a href="check-out-fail.html">Kauai</a></li>
+                    <li><a href="check-out-fail.html">Lanai</a></li>
+                    <li><a href="check-out-fail.html">Molokai</a></li>
+                    <li><a href="check-out-fail.html">Hawaii</a></li>
+                      
                   </ul>
                 </li>
                 
@@ -254,22 +257,7 @@
          
          
       </div>
-    </div> 
-    <style>
-      .w_icon{  
-        position: absolute;
-        top:0;
-        right:0;
-        z-index: 9999;
-        width: 19px; 
-        height:23px;
-        display: inline-block;
-        background-position: -100px 0;
-        background-image: url("asset/img/etc/icon_weibo.png");
-        background-repeat: no-repeat;
-      }
-    </style>
-    <a type="button"  data-toggle="modal" data-target="#themePicker" class="w_icon"></a>
+    </div>
 <!-----------------------------------------------------end of fixed navigation bar ---------------------------------------------------------->   
   
     
@@ -773,37 +761,7 @@
    
 	</footer> 
  	
-    
-<!-- Modal Theme -->
-<div class="modal fade" id="themePicker" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">Change Theme Color</h4>
-      </div>
-      <div class="modal-body">
-         <div class="text-center" style="padding:20px;">Click the image to selecte the theme 
-         </div>
-         <div class="row">
-             <img class="col-md-offset-1 col-md-2" id="theme1" src="asset/img/etc/theme-default.jpg" ></img>
-             <img class="col-md-2" id="theme2" src="asset/img/etc/tiffany.jpg"></img>
-             <img class="col-md-2" id="theme3" src="asset/img/etc/sunset.jpg" ></img>
-             <img class="col-md-2" id="theme4" src="asset/img/etc/night.jpg" ></img>
-             <img class="col-md-2" id="theme5" src="asset/img/etc/guava.jpg" ></img>
-         </div>
-      </div>
-      <div class="modal-footer">
-        <a id="upload_data" data-dismiss="modal" type="button" class="btn btn-primary">OK</a>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Modal Icon -->  
-      
-      
 
-      
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>  <!--bootstrap only works with this 1.11 jquery. and the 1.8 is used to handle the viewport js bug that. better to keep both -->
@@ -836,23 +794,8 @@
 	   });
  	});
 	</script>
-    <script>
-        $('#theme1').click(function (){
-           $('#colortheme').attr('href','asset/css/color-theme/color-theme-default.css');
-        });
-        $('#theme2').click(function (){
-           $('#colortheme').attr('href','asset/css/color-theme/color-theme-1.css');
-        });
-         $('#theme3').click(function (){
-           $('#colortheme').attr('href','asset/css/color-theme/color-theme-2.css');
-        });
-        $('#theme4').click(function (){
-           $('#colortheme').attr('href','asset/css/color-theme/color-theme-3.css');
-        });
-        $('#theme5').click(function (){
-           $('#colortheme').attr('href','asset/css/color-theme/color-theme-4.css');
-        });
-    </script>
+   
+
 
 	
   </body>

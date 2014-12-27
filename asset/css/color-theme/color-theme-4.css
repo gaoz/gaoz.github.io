@@ -1,0 +1,78 @@
+
+body {
+    background-color: #fff;
+    /* background: url(/bundles/business/images/template/darkdenim3.png) repeat 0 0 #555; */
+}
+
+
+.main-nav {
+    background-color: #F6C7BA; /* Navigation bar background color */
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+    color: white;
+    border-bottom-color: white;
+    background-color: #F1A590; /* Navigation bar active color */
+}
+.jumbotron {
+    background-color: #F4B6A4; /* main body content background color */
+}
+.navbar-default .navbar-nav>li>a {
+    color:  #444;   /* Navigation bar text color */
+}
+
+
+
+.theme1-nav .title-style {
+    color: #999;
+}
+.navbar-default {
+    background-color: white;
+    border-color: #eb7350;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: #eb7350;
+}
+.secondary-nav .dropdown-toggle:hover {
+    color: #eb7350!important;
+}
+.secondary-nav a{
+    color:#999!important;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #494949;
+}
+.carousel {
+    border-bottom-color: white;
+}
+.jumbotron .desktop-program-title {
+    color: #444;
+}
+.jumbotron .program-title {
+    color: #999;
+}
+.programs-card {
+    background-color: white;
+}
+.programs {
+    border-right-color:  #ddd;
+}
+.jumbotron .from {
+    color: #999;
+}
+.jumbotron .price {
+    color: #999;
+}
+.jumbotron .view-detail {
+    color: #333;
+}
+footer {
+   background: white ;
+   color: #999;
+}
+footer a {
+   color: black;
+}
+footer a:hover {
+color: #eb7350;
+text-decoration: none;
+}
