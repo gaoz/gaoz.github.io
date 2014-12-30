@@ -23,6 +23,10 @@ body {
     color: #717575;            /* acitivities big title text color */
 }
 
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+color: #333;
+background-color: #6ED7E2;
+}
 
 .theme1-nav .title-style {
     color: #999;
@@ -69,9 +73,13 @@ footer {
    background: white ;
    color: #999;
 }
+footer {
+    box-shadow: 0px 500px 0px 500px #fff;
+}
 footer a {
    color: black;
 }
+
 footer a:hover {
 color: #eb7350;
 text-decoration: none;

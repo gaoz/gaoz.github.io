@@ -6,15 +6,19 @@ body {
 
 
 .main-nav {
-    background-color: #F6ECD6; /* Navigation bar background color */
+    background-color: #DDD; /* Navigation bar background color */
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
     border-bottom-color: white;
-    background-color: #BFB4A0; /* Navigation bar active color */
+    background-color: #9B9B9B; /* Navigation bar active color */
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+color: #fff;
+background-color: #9B9B9B;
 }
 .jumbotron {
-    background-color: #BFB4A0; /* main body content background color */
+    background-color: #9B9B9B; /* main body content background color */
 }
 .navbar-default .navbar-nav>li>a {
     color:  #333;   /* Navigation bar text color */
@@ -69,6 +73,9 @@ body {
 footer {
    background: white ;
    color: #999;
+}
+footer {
+    box-shadow: 0px 500px 0px 500px #fff;
 }
 footer a {
    color: black;

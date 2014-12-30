@@ -6,24 +6,28 @@ body {
 
 
 .main-nav {
-    background-color: #624C38; /* Navigation bar background color */
+    background-color: #FFF; /* Navigation bar background color */
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
-    color: #fff;
+    color: #000;
     border-bottom-color: white;
-    background-color: #301E12; /* Navigation bar active color */
+    background-color: #FFF; /* Navigation bar active color */
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+    color: #000;
+    background-color: #FFF;
 }
 .jumbotron {
-    background-color: #301E12; /* main body content background color */
+    background-color: #FFF; /* main body content background color */
 }
 .navbar-default .navbar-nav>li>a {
-    color:  #fff;   /* Navigation bar text color */
+    color:  #999;   /* Navigation bar text color */
 }
 .jumbotron .desktop-program-title {
-    color: #fff;   /* acitivities big title text color */
+    color: #999;   /* acitivities big title text color */
 }
 .programs-card {
-    background-color: white;   /* card background color */
+    background-color: #DDD;   /* card background color */
 }
 .navbar-default .navbar-nav>li>a:hover {
     color: #000;    /* nav hover over color */
@@ -51,7 +55,7 @@ body {
 }
 
 .jumbotron .program-title {
-    color: #999;
+    color: #5C5C5C;
 }
 
 .programs {
@@ -67,8 +71,11 @@ body {
     color: #333;
 }
 footer {
-   background: white ;
+   background: #FFF ;
    color: #999;
+}
+footer {
+    box-shadow: 0px 500px 0px 500px #fff;
 }
 footer a {
    color: black;

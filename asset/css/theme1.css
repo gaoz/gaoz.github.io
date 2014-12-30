@@ -249,6 +249,7 @@ background-color:#333;
    /* padding-top: 105px;*/
 	border-bottom:1px solid #000;
     /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+     
 }
 
 @media (max-width: 767px){
@@ -321,7 +322,6 @@ background-color:#333;
 .img-40 {
     width:40%;
 }
-
 
 .ad1 {
     background: url(../img/banner/place11.jpg) no-repeat center center;

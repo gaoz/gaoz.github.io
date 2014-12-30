@@ -18,6 +18,10 @@ body {
     border-bottom-color: white;
     background-color: #191919;
 }
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+color: white;
+background-color: #191919;
+}
 .main-nav {
     background-color: #333;
 }
@@ -55,6 +59,11 @@ footer {
    background: #333;
    color: #999;
 }
+footer {
+    box-shadow: 0px 500px 0px 500px #333;
+}
 footer a {
    color: white;
 }
+
+
