@@ -29,148 +29,162 @@
   </head> 
 	
   <body class="default-theme">
+      <style>
+        /*!
+         * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+         * Code licensed under the Apache License v2.0.
+         * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+         */
 
-<!-----------------------------------------------------------Fixed navbar------------------------------------------------------------------->
-    <div class="theme1-nav navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container-fluid">
-            
-            <!-- navi bar  -->
-      	<div class="row">
-            <div class="navbar-header">
-                	<div class="brand row">
-                    	<!-- NAVIGATION BAR TOP (LOGO, TITLE)-->
-                        <!-- Including a piece of js at index.html(bottom of this page) line 687 (adjust logo and title size when scrolling)-->
-                        <!-- Including new css below -->
-                    	<style>
-							
-							
-							.theme1-nav .title-style{
-								
-				
-								font-style: normal;
-								font-weight: 300;
-								text-transform: uppercase;
-								letter-spacing: 0.20em;
-								-webkit-font-smoothing: antialiased;
-								line-height:30px;
-								height: auto;
-								white-space:pre-wrap;
-							}
-							.theme1-nav .title-sm{font-size:15px;}
-							.theme1-nav .title-lg{font-size:25px;}
-							.theme1-nav .logoimage {width: 200px; height: 80px;}
-							.theme1-nav .logoimage-shrink{width: 66.665px; height: 50px;}
-							.theme1-nav .transition{
-								-webkit-transition-delay: 0s;
-								-webkit-transition-duration: 0.25s;
-								-webkit-transition-property: height;
-								-webkit-transition-timing-function: linear;
-								
-								transition-delay: 0s;
-								transition-duration: 0.25s;
-								transition-property: height;
-								transition-timing-function: linear;	
-							}
-							.theme1-nav .navlogo2{
-								background: url("asset/img/etc/icon_256x256@2x.png")no-repeat center center;
-								background-size: contain;
-							}
-							.theme1-nav #title, .theme1-nav #logo{
-								cursor:pointer;
-							}
-							@media (min-width: 1028px){ /* bigger desktop view */
-								
-								.theme1-nav #title{margin-top:0px!important;	}
-								.theme1-nav #logo{margin-left:20px!important;}
-								.theme1-nav .title-position{padding-left:20px!important;}
-							}
-							@media (min-width: 768px){ /* desktop view */
-								.theme1-nav .secondary-nav{margin-top:-50px;}
-								.theme1-nav #logo{margin-left:0px;}
-								.theme1-nav #title{margin-top:-30px;}
-								.theme1-nav .title-position{padding-left:5px;}
-							}
-							@media (max-width: 767px){/*mobile view */
-								.theme1-nav #title{font-size:13px;}
-								.theme1-nav .logoimage { width: 66.665px; height: 50px; } 
-								.theme1-nav .brand{ margin-left:0px; margin-right:0px;}
-								.theme1-nav .brand-inner{padding-left:0px;}
-									
-							}
-							.theme1-nav #logo{margin-left:3px; margin-top:3px; margin-bottom:3px;}
-							.theme1-nav .flex-container {
-							  
-							  -ms-box-orient: horizontal;
-							  display: -webkit-box;
-							  display: -moz-box;
-							  display: -ms-flexbox;
-							  display: -moz-flex;
-							  display: -webkit-flex;
-							  display: flex;
-							  
-							  -webkit-align-items: center; 
-							  align-items: center; 
-							}
-							
-						</style>     
-                    	<div class="brand-inner animated fadeInDown col-xs-12 col-xs-height">   
-                            <div class="flex-container">
-                                <span class="flex-item transition logoimage navlogo2" hef="index.html" id="logo"></span>
-                                <span class="text-center flex-item title-position title-lg title-style" hef="index.html" id="title">Company Name </span>
-                            </div>         		  
-                        </div>
-                        
-                        <div class="col-xs-height col-middle">
-                          <button type="button" class=" navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                          </button>
-                        </div>
-                    </div> <!-- end of brand"-->   
-                 
-                   
-            </div><!-- end of navbar-header"--> 
-            <div class="navbar-collapse navbar-right collapse secondary-nav">
-                <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="lang-xs lang-lbl" lang="en"></span><span class="caret"></span></a>
-                  <ul class="animated fadeInUp dropdown-menu" role="menu">
-                    <li><a href="#"><span class="lang-xs lang-lbl" lang="en"></span></a></li>
-                    <li><a href="#"><span class="lang-xs lang-lbl" lang="zh"></span></a></li>
-                  </ul>
+        /* Toggle Styles */
+ /*
+        #navigation-wrapper {
+            padding-right: 0;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }*/
+/*
+        #navigation-wrapper.toggled {
+            padding-right: 250px;
+        }*/
+
+        #sidebar-wrapper {
+            z-index: 1000;
+            position: fixed;
+            right: 250px;
+            width: 0;
+            height: 100%;
+            margin-right: -250px;
+            overflow-y: auto;
+            background: #000;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }
+        /*
+        #navigation-wrapper.toggled #sidebar-wrapper {
+            width: 250px;
+        }*/
+        #sidebar-wrapper.toggled {
+            width: 250px;
+        }
+
+        #page-content-wrapper {
+            width: 100%;
+            position: absolute;
+        }
+           /*
+        #navigation-wrapper.toggled #page-content-wrapper {
+            position: absolute;
+            margin-left: -250px;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }*/
+        #page-content-wrapper.toggled {
+            position: absolute;
+            margin-left: -250px;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }
+
+        /* Sidebar Styles */
+
+        .sidebar-nav {
+            position: absolute;
+            top: 0;
+            width: 250px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .sidebar-nav li {
+            text-indent: 20px;
+            line-height: 40px;
+        }
+
+        .sidebar-nav li a {
+            display: block;
+            text-decoration: none;
+            color: #999999;
+        }
+
+        .sidebar-nav li a:hover {
+            text-decoration: none;
+            color: #fc8800;
+            background: rgba(255,255,255,0.2);
+        }
+
+        .sidebar-nav li a:active,
+        .sidebar-nav li a:focus {
+            text-decoration: none;
+        }
+
+        .sidebar-nav > .sidebar-brand {
+            height: 65px;
+            font-size: 18px;
+            line-height: 60px;
+        }
+
+        .sidebar-nav > .sidebar-brand a {
+            color: #999999;
+        }
+
+        .sidebar-nav > .sidebar-brand a:hover {
+            color: #fff;
+            background: none;
+        }
+        @media(min-width: 767px){
+             /*
+            #navigation-wrapper.toggled #page-content-wrapper {
+                position: absolute;
+                margin-left: 0px;
+                -webkit-transition: all 0.5s ease;
+                -moz-transition: all 0.5s ease;
+                -o-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+            }*/
+            #page-content-wrapper.toggled {
+                position: absolute;
+                margin-left: 0px;
+                -webkit-transition: all 0.5s ease;
+                -moz-transition: all 0.5s ease;
+                -o-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+            }
+        }
+        #sidebar-wrapper li a.active{
+            background-color: #302D2D;  
+            color:#fff;
+            border-left: 2px white solid;
+        }
+       
+    </style>
+      
+      
+
+        <!-- Sidebar -->
+        <div class="hidden-sm hidden-md hidden-lg" id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="index.html">
+                        Etour International Group
+                    </a>
                 </li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">US$ Dollar <span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">฿ - Thai Baht</a></li>
-                    <li><a href="#">JP¥ - Japanese Yen</a></li>
-                    <li><a href="#">€ - Euro</a></li>
-                    <li><a href="#">£ - Pound Sterling</a></li>
-                    <li><a href="#">CN¥ - Chinese Yuan</a></li>
-                  </ul>
-                </li>
-                <li>
-                    <a href="check-out.html" class="dropdown-toggle"><span class="glyphicon glyphicon-shopping-cart"></span>(0)</a>
-                </li>
-                <li>
-                    <a href="login.html" class="dropdown-toggle"><span class="glyphicon glyphicon-user"></span></a>
-                </li>
-              </ul>
-            </div> 
-		</div><!--row-->
-         
-         						  
-        <div class="row"> 
-            <div class="navbar-collapse collapse main-nav">
-              <ul class="animated fadeInRight nav navbar-nav">
-                <li class="active"><a href="index.html">HOME</a></li>
+                            
+                <li ><a class="active" href="index.html">HOME</a></li>
                 <li><a href="theme2.html">HOME2</a></li>
                 <li><a href="programs.html">Display1</a></li>
                 <li><a href="programs2.html">Display2</a></li>
                 <li><a href="view-detail.html">Detail</a></li>
-                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="food.html">Coupon</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Checkout <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
@@ -180,598 +194,807 @@
                   </ul>
                 </li>
                 
-              </ul>
-              <style>
-			  .tripAdvisor{
-				  display:block;
-				  width:20px;
-				  height:20px;
-				  background-image:url(asset/img/icon/tripadvisor.png);
-				  background-size: cover;
-				  opacity:0.7;
-				  -webkit-transition-delay: 0s;
-				-webkit-transition-duration: 0.25s;
-				-webkit-transition-property: opacity;
-				-webkit-transition-timing-function: linear;
-			  }
-			  .tripAdvisor:hover{
-				  opacity:1;
-			  }
-			  .pinterest{
-				  display:block;
-				  width:15px;
-				  height:15px;
-				  background-image:url(asset/img/icon/pinterest.png);
-				  background-size: cover;
-				  opacity:0.7;
-				  -webkit-transition-delay: 0s;
-				-webkit-transition-duration: 0.25s;
-				-webkit-transition-property: opacity;
-				-webkit-transition-timing-function: linear;
-			  }
-			  .pinterest:hover{
-				  opacity:1;
-			  }  
-				 
-			  
-			  </style>
-              <ul class="nav navbar-nav navbar-right nav-pills" style="padding-right:40px;">
-              	<!--use the fontawesome to get the those icon-->
-                <li>
-                <a href="http://facebook.com/" class="btn btn-social-icon btn-facebook">
-                    <i class="fa fa-facebook"></i>
-                </a>
-                </li>
-                <li>
-                <a href="http://twitter.com/" class="btn btn-social-icon btn-twitter">
-                    <i class="fa fa-twitter"></i>
-                </a>
-                </li>
-                                <li>
-                <a href="http://www.linkedin.com/in/" class="btn btn-social-icon btn-linkedin">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-                </li>
-                                <li>
-                <a href="https://github.com/" class="btn btn-social-icon btn-github">
-                    <i class="fa fa-github"></i>
-                </a>
-                </li>
-                				 <!--li>
-                <a href="https://www.tripadvisor.com/‎" class="btn btn-social-icon btn-tripadivsor">
-                    <span class="tripAdvisor"></span>
-                </a>
-                </li>
-                				 <li>
-                <a href="https://www.pinterest.com/‎" class="btn btn-social-icon btn-pinterest">
-                    <span class="pinterest"></span>
-                </a>
-                </li-->
-              </ul>
-              
-            </div><!--/.nav-collapse -->
-         </div><!--row -->
-         
-         
-      </div>
-    </div> 
-    <style>
-      .w_icon{  
-        position: absolute;
-        top:0;
-        right:0;
-        z-index: 9999;
-        width: 19px; 
-        height:23px;
-        display: inline-block;
-        background-position: -100px 0;
-        background-image: url("asset/img/etc/icon_weibo.png");
-        background-repeat: no-repeat;
-      }
-    </style>
-    <a type="button"  data-toggle="modal" data-target="#themePicker" class="hidden-xs w_icon"></a>
-<!-----------------------------------------------------end of fixed navigation bar ---------------------------------------------------------->   
-  
-    
-<!--space down from the menu bar and logo section--->
-    <div class="fluide-container hidden-xs" style="background-color:#333">
-          <div style="height:135px"></div> 
-    </div>
-<!--end of space down from the menu bar and logo section--->
-	
-    
-    <!-- Carousel
-    ================================================== -->
-  <div id="MissionBanner" class="carousel slide">
-  
-        <ol class="animated fadeIn carousel-indicators">
-            <li data-target="#MissionBanner" data-slide-to="0" class="active"></li>
-            <li data-target="#MissionBanner" data-slide-to="1" class=""></li>
-            <li data-target="#MissionBanner" data-slide-to="2" class=""></li>
-            <li data-target="#MissionBanner" data-slide-to="3" class=""></li>
-            <li data-target="#MissionBanner" data-slide-to="4" class=""></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="item ad1 active">
-                <div class="shadow-layer">
-                    <div class="animated fadeInUp carousel-caption">
-                        <h1>Banner Title</h1>
-                        <p>Background image 16:9 ratio</p>
-                        <p>
-                            <a class="btn btn-lg btn-clear" href="#">Button Link</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="item ad2">
-                <div class="shadow-layer">
-                    <div class="animated fadeInUp carousel-caption">
-                        <h1>Banner Title</h1>
-                        <p>Banner Subtitle</p>
-                        <p>
-                            <a class="btn btn-lg btn-clear" href="#">Button Link</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="item ad3">
-                <div class="shadow-layer">
-                    <div class="animated fadeInUp carousel-caption">
-                        <h1>Banner Title</h1>
-                        <p>Banner Subtitle</p>
-                        <p>
-                            <a class="btn btn-lg btn-clear" href="#">Button Link</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="item ad4 ">
-                <div class="shadow-layer">
-                    <div class="animated fadeInUp carousel-caption">
-                        <h1>Banner Title </h1>
-                        <p>Banner Subtitle</p>
-                        <p>
-                            <a class="btn btn-lg btn-clear" href="#">Button Link</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="item ad5">
-                <div class="shadow-layer">
-                    <div class="animated fadeInUp carousel-caption">
-                        <h1>Banner Title </h1>
-                         <p>Banner Subtitle</p>
-                          <p>
-                            <a class="btn btn-lg btn-clear" href="#">Button Link</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    
-        <a class="animated fadeInLeft  left carousel-control" href="#MissionBanner" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="animated fadeInRight  right carousel-control" href="#MissionBanner" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-
-   
-    </div>
-    <!-- /.carousel -->
-    
-    
-
-    
-    
-
-  	<!--social media news feed ===========================-->
-    <style>
-	.newsfeed .news-card{
-		padding-left:10px;
-		padding-right:10px;
-		padding-bottom:20px;
-		height: 100px;	
-	}
-	.newsfeed .item{
-		
-		border-radius:5px;
-		height:100%;
-		background-color:white;
-	}
-	.newsfeed .item a{
-		letter-spacing: 0.07em;
-		color:hsla(0,0%,58%,1.00);
-		cursor:pointer;
-	}
-	.newsfeed .news-image{
-		height:80px;
-		margin-left:15px;
-	}
-
-	</style>
-<!--    <div class="container mobile mobile-program-title visible-xs ">
-    	<p class="text-center">News Feed</p>
-    </div>
-    <div class="jumbotron hidden-xs"  style="padding:10px; padding-top:30px;" >
-        <div class="text-center container"> 
-        <h1 class="desktop-program-title" style="font-size:18px;">News Feed</h1>
-        </div>
-    </div>
-    
-    <div class="newsfeed jumbotron">
-    	<div class="fluide-container">
-        	<div class="row">
-        		<div class="fade-in col-lg-3 col-sm-6 col-xs-12 news-card">
-                	<div class="item">
-                    	<div class="row">
-                    		<div class="col-xs-4 col-sm-4 ratio-img-box-cover news-image news1"></div>
-                        	<div class="col-xs-7 col-sm-7"><h6 class="four-rows-text-limit"><a>List Special Membership Offers. Example, 3 Day Pass, 1 Week, 30 Day. Flexibility to offer complimentary passes and/or purchase passes at discounted</a></h6></div>
-                    	</div>
-                    </div> 
-                    <div class="program-shadow" style="height:50px;"></div>	
-            	</div>  
-                <div class="fade-in col-lg-3 col-sm-6 col-xs-12 news-card">
-                	<div class="item">
-                    	<div class="row">
-                    		<div class="col-xs-4 col-sm-4 ratio-img-box-cover news-image news2"></div>
-                        	<div class="col-xs-7 col-sm-7"><h6 class="four-rows-text-limit"><a >List Special Membership Offers. Example, 3 Day Pass, 1 Week, 30 Day. Flexibility to offer complimentary passes and/or purchase passes at discounted</a></h6></div>
-                    	</div>
-                    </div> 
-                    <div class="program-shadow" style="height:50px;"></div>	
-            	</div> 
-                <div class="fade-in col-lg-3 col-sm-6 col-xs-12 news-card">
-                	<div class="item">
-                    	<div class="row">
-                    		<div class="col-xs-4 col-sm-4 ratio-img-box-cover news-image news3"></div>
-                        	<div class="col-xs-7 col-sm-7"><h6 class="four-rows-text-limit"><a >美国国家气象局(National Weather Service)表示，热带风暴安娜(Ana)预料将在本周增强为飓风，根据预测，安娜将在18日下午掠过大岛，并在19日通过夏威夷毛伊岛(Maui) 。 Photo: Central Pacific Hurricane Center</a></h6></div>
-                    	</div>
-                    </div> 
-                    <div class="program-shadow" style="height:50px;"></div>	
-            	</div> 
-                <div class="fade-in col-lg-3 col-sm-6 col-xs-12 news-card">
-                	<div class="item">
-                    	<div class="row">
-                    		<div class="col-xs-4 col-sm-4 ratio-img-box-cover news-image news4"></div>
-                        	<div class="col-xs-7 col-sm-7"><h6 class="four-rows-text-limit"><a>生存，有些人赴战求身亡" "SOME FOUGHT TO LIVEーSOME FOUGHT TO DIE" 设计者:RENE HIERONYMUS PHOTOS: ALBERT MOSER 比例:1:72 花费工时：746 hours Scratch Build</a></h6></div>
-                    	</div>
-                    </div> 
-                    <div class="program-shadow" style="height:50px;"></div>	
-            	</div>             
-            </div>
-    	</div>
-    </div>
-    
-    
--->
-     
-    <!--end of social media news feed ===========================-->
-    
-
-   	
-
-     <!--    activities
-  ================================================== ---->
-
- 
-  			<div class="container mobile mobile-program-title visible-xs ">
+                    
+                    <li style="background-color:#ddd; border-left:1px #333 solid; border-bottom:1px #333 solid">    
+                            <a  href="check-out.html" ><span style="left:-14px;" class="glyphicon glyphicon-shopping-cart"></span>(0) Shopping Cart</a>      
+                   </li> 
+                    <li style="background-color:#ddd; border-left:1px #333 solid; border-bottom:1px #333 solid">         
+                            <a  href="login.html" ><span  style="left:-14px;" class="glyphicon glyphicon-user"></span> Login</a>
+                   </li>  
+                   <li style="background-color:#ddd; border-left:1px #333 solid; border-bottom:1px #333 solid" class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown"></span>English<span class="caret"></span></a>
+                      <ul class="animated dropdown-menu" role="menu">
+                        <li><a href="#"><span class="lang-xs lang-lbl" lang="en"></span></a></li>
+                        <li><a href="#"><span class="lang-xs lang-lbl" lang="zh"></span></a></li>
+                      </ul>
+                    </li>
+                    <li style="background-color:#ddd; border-left:1px #333 solid; border-bottom:1px #333 solid" class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">US$ Dollar <span class="caret"></span></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">฿ - Thai Baht</a></li>
+                        <li><a href="#">JP¥ - Japanese Yen</a></li>
+                        <li><a href="#">€ - Euro</a></li>
+                        <li><a href="#">£ - Pound Sterling</a></li>
+                        <li><a href="#">CN¥ - Chinese Yuan</a></li>
+                      </ul>
+                    </li> 
+                    <li style="">
                           
-                             <p class="text-center">Activities and Events</p>
-                     
-                    
-            </div>
-            
-  
-  			<div class="jumbotron hidden-xs">
-            	<div class="text-center container"> 
-            	<h1 class="desktop-program-title">Activities and Events</h1>
-                </div>
-            </div>
-  	
-            <div class="jumbotron hidden-xs">
-                                     <div class="left-in">
-                                                     <div class=" container programs-card"> <a class="view-detail" href="view-detail.html"></a>
-                                                            <div class="col-sm-4 col-xs-12" id="no-left-padding">
-                                                                       
-                                                                        <div class="item tour1"></div>              
-                                                            </div>	
-                                    
-                                                            
-                                                            <div class="programs col-sm-6 col-xs-12">
-                                                                <h3 class="program-title two-row-text-limit">Sample Activity One</h3>
-                                                               
-                                                                <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;91-119 Olai Street,Kapolei, HI 96707</h5>
-                                                                <h5  class="three-rows-text-limit"> November 6-7: East Meets West in Startup Paradise 2014 "Digital Lifestyle" Conference in Honolulu, Hawaii - Reserve your seat now!</h5>
-                                                           		
-                                                                <h5 class="detail-description"><span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;&nbsp;Sample tag one,&nbsp;&nbsp; Sample tag two</h5>
-                                                              
-                                                            </div>
-                                                            <div class="col-sm-2 col-xs-12">
-                                                                <div class="content text-center">
-                                                                       <P class="from">FROM</P>
-                                                                       <p class="price">$189</p> 
-                                                                       <p class="view-detail"><span class="glyphicon glyphicon-chevron-right"></span> View Detail</p>   
-                                                                </div>   
-                                                         
-                                                                       
-                                                                       
-                                                                          
-                                                            </div>	
-                                                        
-                                                    </div><!-- end of program card content -->
-                                                  	<div class="container" id="no-padding">
-                                                            <div class="program-shadow"></div>
-                                                    </div>
-                                    </div>
-                    
-            </div>
-          
-            
-            
-            <div class="jumbotron hidden-xs">
-                                     <div class="right-in">
-                                                     <div class=" container programs-card"> <a class="view-detail" href="view-detail.html"></a>
-                                                            <div class="col-sm-4 col-xs-12" id="no-left-padding">
-                                                                       
-                                                                        <div class="item tour2"></div>              
-                                                            </div>	
-                                    
-                                                            
-                                                            <div class="programs col-sm-6 col-xs-12">
-                                                                <h3 class="two-row-text-limit program-title">Sample Activity Two</h3>
-                                                                <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;91-119 Olai Street,Kapolei, HI 96707</h5>
-                                                                <h5  class="three-rows-text-limit"> November 6-7: East Meets West in Startup Paradise 2014 "Digital Lifestyle" Conference in Honolulu, Hawaii - Reserve your seat now!</h5>
-                                                           		
-                                                                <h5 class="detail-description"><span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;&nbsp;Sample tag one,&nbsp;&nbsp; Sample tag two</h5>
-                                                           
-                                                               <!-- <button style="display: block; width: 100%;" class="btn btn-dark">From $100&nbsp;&nbsp;&nbsp;&nbsp;View Details</button>-->
-                                                            </div>
-                                                            <div class="col-sm-2 col-xs-12">
-                                                                <div class="content text-center">
-                                                                       <P class="from">FROM</P>
-                                                                       <p class="price">$189</p>
-                                                                        <p class="view-detail"><span class="glyphicon glyphicon-chevron-right"></span> View Detail</p>     
-                                                                </div> 
-                                                                           
-                                                            </div>	
-                                                        
-                                                    </div><!-- end of program card content -->
-                                                  	<div class="container" id="no-padding">
-                                                            <div class="program-shadow"></div>
-                                                    </div>
-                                    </div>
-                    
-            </div>
-            
-            
-            
-            
-            <div class="jumbotron hidden-xs">
-                                     <div class="left-in">
-                                                     <div class=" container programs-card"> <a class="view-detail" href="view-detail.html"></a>
-                                                            <div class="col-sm-4 col-xs-12" id="no-left-padding">
-                                                                       
-                                                                        <div class="item tour3"></div>              
-                                                            </div>	
-                                    
-                                                            
-                                                            <div class="programs col-sm-6 col-xs-12">
-                                                                <h3 class="two-row-text-limit program-title">Sample Activity Three</h3>
-                                                                <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;91-119 Olai Street,Kapolei, HI 96707</h5>
-                                                                <h5  class="three-rows-text-limit"> November 6-7: East Meets West in Startup Paradise 2014 "Digital Lifestyle" Conference in Honolulu, Hawaii - Reserve your seat now!</h5>
-                                                           		
-                                                                <h5 class="detail-description"><span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;&nbsp;Sample tag one,&nbsp;&nbsp; Sample tag two</h5>
-                                                               <!-- <button style="display: block; width: 100%;" class="btn btn-dark">From $100&nbsp;&nbsp;&nbsp;&nbsp;View Details</button>-->
-                                                            </div>
-                                                            <div class="col-sm-2 col-xs-12">
-                                                                <div class="content text-center">
-                                                                       <P class="from">FROM</P>
-                                                                       <p class="price">$189</p>
-                                                                       <p class="view-detail"><span class="glyphicon glyphicon-chevron-right"></span> View Detail</p>     
-                                                                </div>           
-                                                            </div>	
-                                                        
-                                                    </div><!-- end of program card content -->
-                                                  	<div class="container" id="no-padding">
-                                                            <div class="program-shadow"></div>
-                                                    </div>
-                                    </div>
-                    
-            </div>
-            
-
-
-            <div class="jumbotron hidden-xs">
-                                     <div class="right-in">
-                                                     <div class=" container programs-card"> <a class="view-detail" href="view-detail.html"></a>
-                                                            <div class="col-sm-4 col-xs-12" id="no-left-padding">
-                                                                       
-                                                                        <div class="item tour4"></div>              
-                                                            </div>	
-                                    
-                                                            
-                                                            <div class="two-row-text-limit programs col-sm-6 col-xs-12">
-                                                                <h3 class="program-title">Sample Activity Four</h3>
-                                                                <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;91-119 Olai Street,Kapolei, HI 96707</h5>
-                                                                <h5  class="three-rows-text-limit"> November 6-7: East Meets West in Startup Paradise 2014 "Digital Lifestyle" Conference in Honolulu, Hawaii - Reserve your seat now!</h5>
-                                                           		
-                                                                <h5 class="detail-description"><span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;&nbsp;Sample tag one,&nbsp;&nbsp; Sample tag two</h5>
-                                                               <!-- <button style="display: block; width: 100%;" class="btn btn-dark">From $100&nbsp;&nbsp;&nbsp;&nbsp;View Details</button>-->
-                                                            </div>
-                                                            <div class="col-sm-2 col-xs-12">
-                                                                <div class="content text-center">
-                                                                       <P class="from">FROM</P>
-                                                                       <p class="price">$189</p>
-                                                                       <p class="view-detail"><span class="glyphicon glyphicon-chevron-right"></span> View Detail</p>     
-                                                                </div>           
-                                                            </div>	
-                                                        
-                                                    </div><!-- end of program card content -->
-                                                  	<div class="container" id="no-padding">
-                                                            <div class="program-shadow"></div>
-                                                    </div>
-                                    </div>
-                    
-            </div>
-            
-            <div class="jumbotron hidden-xs">
-                                     <div class="right-in">
-                                                     <div class=" container programs-card"> <a class="view-detail" href="view-detail.html"></a>
-                                                            <div class="col-sm-4 col-xs-12" id="no-left-padding">
-                                                                       
-                                                                        <div class="item tour5"></div>              
-                                                            </div>	
-                                    
-                                                            
-                                                            <div class="two-row-text-limit programs col-sm-6 col-xs-12">
-                                                                <h3 class="program-title">Sample Activity Five</h3>
-                                                                <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;91-119 Olai Street,Kapolei, HI 96707</h5>
-                                                                <h5  class="three-rows-text-limit"> November 6-7: East Meets West in Startup Paradise 2014 "Digital Lifestyle" Conference in Honolulu, Hawaii - Reserve your seat now!</h5>
-                                                           		
-                                                                <h5 class="detail-description"><span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;&nbsp;Sample tag one,&nbsp;&nbsp; Sample tag two</h5>
-                                                           
-                                                               <!-- <button style="display: block; width: 100%;" class="btn btn-dark">From $100&nbsp;&nbsp;&nbsp;&nbsp;View Details</button>-->
-                                                            </div>
-                                                            <div class="col-sm-2 col-xs-12">
-                                                                <div class="content text-center">
-                                                                       <P class="from">FROM</P>
-                                                                       <p class="price">$189</p>
-                                                                       <p class="view-detail"><span class="glyphicon glyphicon-chevron-right"></span> View Detail</p>     
-                                                                </div>           
-                                                            </div>	
-                                                        
-                                                    </div><!-- end of program card content -->
-                                                  	<div class="container" id="no-padding">
-                                                            <div class="program-shadow"></div>
-                                                    </div>
-                                    </div>
-                    
-            </div>
-            
-            
-            
-            <div class="jumbotron hidden-xs">
-                                     <div class="left-in">
-                                                     <div class=" container programs-card"> <a class="view-detail" href="view-detail.html"></a>
-                                                            <div class="col-sm-4 col-xs-12" id="no-left-padding">
-                                                                       
-                                                                        <div class="item tour6"></div>              
-                                                            </div>	
-                                    
-                                                            
-                                                            <div class="two-row-text-limit programs col-sm-6 col-xs-12">
-                                                                <h3 class="program-title">Sample Activity Six</h3>
-                                                                <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;91-119 Olai Street,Kapolei, HI 96707</h5>
-                                                                <h5  class="three-rows-text-limit"> November 6-7: East Meets West in Startup Paradise 2014 "Digital Lifestyle" Conference in Honolulu, Hawaii - Reserve your seat now!</h5>
-                                                           		
-                                                                <h5 class="detail-description"><span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;&nbsp;Sample tag one,&nbsp;&nbsp; Sample tag two</h5>
-                                                               <!-- <button style="display: block; width: 100%;" class="btn btn-dark">From $100&nbsp;&nbsp;&nbsp;&nbsp;View Details</button>-->
-                                                            </div>
-                                                            <div class="col-sm-2 col-xs-12">
-                                                                <div class="content text-center">
-                                                                       <P class="from">FROM</P>
-                                                                       <p class="price">$189</p>
-                                                                       <p class="view-detail"><span class="glyphicon glyphicon-chevron-right"></span> View Detail</p>     
-                                                                </div>           
-                                                            </div>	
-                                                        
-                                                    </div><!-- end of program card content -->
-                                                  	<div class="container" id="no-padding">
-                                                            <div class="program-shadow"></div>
-                                                    </div>
-                                    </div>
-                    
-            </div>
-            
-            <div class="container mobile padding-left-right-3% visible-xs ">
-                <div class="mobile-program-card">
-                    <a class="view-detail" href=""></a>
-                        <div class="program-image item tour4"></div>
-                        <div class="program-detail">
-                            <div class="row">
-                                <h5 class="col-xs-12 title ">Sample Activity One</h5>
-                                <div class="price text-center">
-                                 	<h5>CN$199</h5>
-                                 </div>
-                            </div>
-                        </div>
-                   
-                </div>     
-            </div>
-            
-            <div class="container mobile padding-left-right-3% visible-xs ">
-                <div class="mobile-program-card">
-                    <a class="view-detail" href=""></a>
-                        <div class="program-image item tour3"></div>
-                        <div class="program-detail">
-                            <div class="row">
-                                <h5 class="col-xs-12 title ">Sample Activity Two</h5>
-                                <div class="price text-center">
-                                 	<h5>CN$199</h5>
-                                 </div>
-                            </div>
-                        </div>
-                   
-                </div>     
-            </div>
-            
-            
-            <div class="container mobile padding-left-right-3% visible-xs ">
-                <div class="mobile-program-card">
-                    <a class="view-detail" href=""></a>
-                        <div class="program-image item tour2"></div>
-                        <div class="program-detail">
-                            <div class="row">
-                                <h5 class="col-xs-12 title ">Sample Activity Three</h5>
-                                <div class="price text-center">
-                                 	<h5>CN$199</h5>
-                                 </div>
-                            </div>
-                        </div>
-                  
-                </div>     
-            </div>
-            
-            
-            <div class="container mobile padding-left-right-3% visible-xs ">
-                <div class="mobile-program-card">
-                    <a class="view-detail" href=""></a>
-                        <div class="program-image item tour1"></div>
-                        <div class="program-detail">
-                            <div class="row">
-                                <h5 class="col-xs-12 title ">Sample Activity Four</h5>
-                                <div class="price text-center">
-                                 	<h5>CN$199</h5>
-                                 </div>
-                            </div>
-                        </div>
+                         <a style="padding-right:20px;" class="text-right" href="#menu-toggle" id="alernative-menu-toggle" ><span  style="left:-14px;" class=" glyphicon glyphicon-off"></span> Exit Menu</a>
                  
-                </div>     
-            </div>
-            
+                        
+                    </li>
+                    
+               
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
 
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="theme1-nav navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container-fluid">
             
-            
-            
-  
-    <!-- end of activities showcase -->
+                    <!-- navi bar  -->
+                    <div class="row">
+                        <div class="navbar-header">
+                                <div class="brand row">
+                                    <!-- NAVIGATION BAR TOP (LOGO, TITLE)-->
+                                    <!-- Including a piece of js at index.html(bottom of this page) line 687 (adjust logo and title size when scrolling)-->
+                                    <!-- Including new css below -->
+                                    <style>
 
-	<footer>
-    	<div class="container">
-             <div class="bounce-in col-sm-12">
-                <a href="/en/site/about"> About us</a> | 
-                <a href="/en/site/terms"> Terms & Conditions</a>  | 
-                <a href="/en/site/privacy"> Privacy Policy</a>  | 
-                <a href="/en/site/cancellation"> Cancellation Policy</a>  | 
-                <a href="/en/site/contact"> Contact Us</a>  
-                <p class="cotyright">Copyright 2012-2014 &copy; Company Name</p>
-                <p class="powerby">Powered by <a href="www.totalgds.com">TotalGDS</a></p>
-                
-            </div>
-		</div>
-   
-	</footer> 
+
+                                        .theme1-nav .title-style{
+
+
+                                            font-style: normal;
+                                            font-weight: 300;
+                                            text-transform: uppercase;
+                                            letter-spacing: 0.20em;
+                                            -webkit-font-smoothing: antialiased;
+                                            line-height:30px;
+                                            height: auto;
+                                            white-space:pre-wrap;
+                                        }
+                                        .theme1-nav .title-sm{font-size:15px;}
+                                        .theme1-nav .title-lg{font-size:25px;}
+                                        .theme1-nav .logoimage {width: 200px; height: 80px;}
+                                        .theme1-nav .logoimage-shrink{width: 66.665px; height: 50px;}
+                                        .theme1-nav .transition{
+                                            -webkit-transition-delay: 0s;
+                                            -webkit-transition-duration: 0.25s;
+                                            -webkit-transition-property: height;
+                                            -webkit-transition-timing-function: linear;
+
+                                            transition-delay: 0s;
+                                            transition-duration: 0.25s;
+                                            transition-property: height;
+                                            transition-timing-function: linear;	
+                                        }
+                                        .theme1-nav .navlogo2{
+                                            background: url("asset/img/etc/icon_256x256@2x.png")no-repeat center center;
+                                            background-size: contain;
+                                        }
+                                        .theme1-nav #title, .theme1-nav #logo{
+                                            cursor:pointer;
+                                        }
+                                        @media (min-width: 1028px){ /* bigger desktop view */
+
+                                            .theme1-nav #title{margin-top:0px!important;	}
+                                            .theme1-nav #logo{margin-left:20px!important;}
+                                            .theme1-nav .title-position{padding-left:20px!important;}
+                                        }
+                                        @media (min-width: 768px){ /* desktop view */
+                                            .theme1-nav .secondary-nav{margin-top:-50px;}
+                                            .theme1-nav #logo{margin-left:0px;}
+                                            .theme1-nav #title{margin-top:-30px;}
+                                            .theme1-nav .title-position{padding-left:5px;}
+                                        }
+                                        @media (max-width: 767px){/*mobile view */
+                                            .theme1-nav #title{font-size:13px;}
+                                            .theme1-nav .logoimage { width: 66.665px; height: 50px; } 
+                                            .theme1-nav .brand{ margin-left:0px; margin-right:0px;}
+                                            .theme1-nav .brand-inner{padding-left:0px;}
+
+                                        }
+                                        .theme1-nav #logo{margin-left:3px; margin-top:3px; margin-bottom:3px;}
+                                        .theme1-nav .flex-container {
+
+                                          -ms-box-orient: horizontal;
+                                          display: -webkit-box;
+                                          display: -moz-box;
+                                          display: -ms-flexbox;
+                                          display: -moz-flex;
+                                          display: -webkit-flex;
+                                          display: flex;
+
+                                          -webkit-align-items: center; 
+                                          align-items: center; 
+                                        }
+
+                                    </style>     
+                                    <div class="brand-inner animated fadeInDown col-xs-12 col-xs-height">   
+                                        <div class="flex-container">
+                                            <span class="flex-item transition logoimage navlogo2" hef="index.html" id="logo"></span>
+                                            <span class="text-center one-row-text-limit flex-item title-position title-lg title-style" hef="index.html" id="title">Etour International Group </span>
+                                        </div>         		  
+                                    </div>
+
+                                    <style>
+                                        .bs-docs-nav .navbar-header .navbar-toggle:hover, .bs-docs-nav .navbar-header .navbar-toggle:focus {
+                                            
+                                        }
+                                    </style>
+                                    <div class="col-xs-height col-middle">
+                                        <button style="background-color: #fff!important; border-color: #fff!important;" class="navbar-toggle collapsed" type="button" href="#menu-toggle" id="menu-toggle" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
+                                </div> <!-- end of brand"-->   
+
+
+                        </div><!-- end of navbar-header"--> 
+                        <div class="navbar-collapse navbar-right collapse secondary-nav">
+                            <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="lang-xs lang-lbl" lang="en"></span><span class="caret"></span></a>
+                              <ul class="animated fadeInUp dropdown-menu" role="menu">
+                                <li><a href="#"><span class="lang-xs lang-lbl" lang="en"></span></a></li>
+                                <li><a href="#"><span class="lang-xs lang-lbl" lang="zh"></span></a></li>
+                              </ul>
+                            </li>
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">US$ Dollar <span class="caret"></span></a>
+                              <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">฿ - Thai Baht</a></li>
+                                <li><a href="#">JP¥ - Japanese Yen</a></li>
+                                <li><a href="#">€ - Euro</a></li>
+                                <li><a href="#">£ - Pound Sterling</a></li>
+                                <li><a href="#">CN¥ - Chinese Yuan</a></li>
+                              </ul>
+                            </li>
+                            <li>
+                                <a href="check-out.html" class="dropdown-toggle"><span class="glyphicon glyphicon-shopping-cart"></span>(0)</a>
+                            </li>
+                            <li>
+                                <a href="login.html" class="dropdown-toggle">
+                                    <span class="glyphicon glyphicon-user"> 
+                                          
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                               
+                            </li>
+                          </ul>
+                        </div> 
+                    </div><!--row-->
+
+
+                    <div class="row"> 
+                        <div class="navbar-collapse collapse main-nav">
+                          <ul class="animated fadeInRight nav navbar-nav">
+                            <li class="active"><a href="index.html">HOME</a></li>
+                            <li><a href="theme2.html">HOME2</a></li>
+                            <li><a href="programs.html">Display1</a></li>
+                            <li><a href="programs2.html">Display2</a></li>
+                            <li><a href="view-detail.html">Detail</a></li>
+                            <li><a href="food.html">Coupon</a></li>
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Checkout <span class="caret"></span></a>
+                              <ul class="dropdown-menu" role="menu">
+                                <li><a href="check-out.html">Checkout Now</a></li>
+                                <li><a href="check-out-success.html">Checkout Success</a></li>
+                                <li><a href="check-out-fail.html">Checkout Fail</a></li>
+                              </ul>
+                            </li>
+
+                          </ul>
+                          <style>
+                          .tripAdvisor{
+                              display:block;
+                              width:20px;
+                              height:20px;
+                              background-image:url(asset/img/icon/tripadvisor.png);
+                              background-size: cover;
+                              opacity:0.7;
+                              -webkit-transition-delay: 0s;
+                            -webkit-transition-duration: 0.25s;
+                            -webkit-transition-property: opacity;
+                            -webkit-transition-timing-function: linear;
+                          }
+                          .tripAdvisor:hover{
+                              opacity:1;
+                          }
+                          .pinterest{
+                              display:block;
+                              width:15px;
+                              height:15px;
+                              background-image:url(asset/img/icon/pinterest.png);
+                              background-size: cover;
+                              opacity:0.7;
+                              -webkit-transition-delay: 0s;
+                            -webkit-transition-duration: 0.25s;
+                            -webkit-transition-property: opacity;
+                            -webkit-transition-timing-function: linear;
+                          }
+                          .pinterest:hover{
+                              opacity:1;
+                          }  
+
+
+                          </style>
+                          <ul class="nav navbar-nav navbar-right nav-pills" style="padding-right:40px;">
+                            <!--use the fontawesome to get the those icon-->
+                            <li>
+                            <a href="http://facebook.com/" class="btn btn-social-icon btn-facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            </li>
+                            <li>
+                            <a href="http://twitter.com/" class="btn btn-social-icon btn-twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            </li>
+                                            <li>
+                            <a href="http://www.linkedin.com/in/" class="btn btn-social-icon btn-linkedin">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                            </li>
+                                            <li>
+                            <a href="https://github.com/" class="btn btn-social-icon btn-github">
+                                <i class="fa fa-github"></i>
+                            </a>
+                            </li>
+                                             <!--li>
+                            <a href="https://www.tripadvisor.com/‎" class="btn btn-social-icon btn-tripadivsor">
+                                <span class="tripAdvisor"></span>
+                            </a>
+                            </li>
+                                             <li>
+                            <a href="https://www.pinterest.com/‎" class="btn btn-social-icon btn-pinterest">
+                                <span class="pinterest"></span>
+                            </a>
+                            </li-->
+                          </ul>
+
+                        </div><!--/.nav-collapse -->
+                     </div><!--row -->
+
+
+                  </div>
+                </div> 
+                <style>
+                  .w_icon{  
+                    position: absolute;
+                    top:0;
+                    right:0;
+                    z-index: 9999;
+                    width: 19px; 
+                    height:23px;
+                    display: inline-block;
+                    background-position: -100px 0;
+                    background-image: url("asset/img/etc/icon_weibo.png");
+                    background-repeat: no-repeat;
+                  }
+                </style>
+                <a type="button"  data-toggle="modal" data-target="#themePicker" class="hidden-xs w_icon"></a>
+            <!-----------------------------------------------------end of fixed navigation bar ---------------------------------------------------------->   
+
+
+            <!--space down from the menu bar and logo section--->
+                <div class="fluide-container hidden-xs" style="background-color:#333">
+                      <div style="height:135px"></div> 
+                </div>
+            <!--end of space down from the menu bar and logo section--->
+
+
+                <!-- Carousel
+                ================================================== -->
+              <div id="MissionBanner" class="carousel slide">
+
+                    <ol class="animated fadeIn carousel-indicators">
+                        <li data-target="#MissionBanner" data-slide-to="0" class="active"></li>
+                        <li data-target="#MissionBanner" data-slide-to="1" class=""></li>
+                        <li data-target="#MissionBanner" data-slide-to="2" class=""></li>
+                        <li data-target="#MissionBanner" data-slide-to="3" class=""></li>
+                        <li data-target="#MissionBanner" data-slide-to="4" class=""></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item ad1 active">
+                            <div class="shadow-layer">
+                                <div class="animated fadeInUp carousel-caption">
+                                    <h1>Banner Title</h1>
+                                    <p>Background image 16:9 ratio</p>
+                                    <p>
+                                        <a class="btn btn-lg btn-clear" href="#">Button Link</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item ad2">
+                            <div class="shadow-layer">
+                                <div class="animated fadeInUp carousel-caption">
+                                    <h1>Banner Title</h1>
+                                    <p>Banner Subtitle</p>
+                                    <p>
+                                        <a class="btn btn-lg btn-clear" href="#">Button Link</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item ad3">
+                            <div class="shadow-layer">
+                                <div class="animated fadeInUp carousel-caption">
+                                    <h1>Banner Title</h1>
+                                    <p>Banner Subtitle</p>
+                                    <p>
+                                        <a class="btn btn-lg btn-clear" href="#">Button Link</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item ad4 ">
+                            <div class="shadow-layer">
+                                <div class="animated fadeInUp carousel-caption">
+                                    <h1>Banner Title </h1>
+                                    <p>Banner Subtitle</p>
+                                    <p>
+                                        <a class="btn btn-lg btn-clear" href="#">Button Link</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item ad5">
+                            <div class="shadow-layer">
+                                <div class="animated fadeInUp carousel-caption">
+                                    <h1>Banner Title </h1>
+                                     <p>Banner Subtitle</p>
+                                      <p>
+                                        <a class="btn btn-lg btn-clear" href="#">Button Link</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <a class="animated fadeInLeft  left carousel-control" href="#MissionBanner" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="animated fadeInRight  right carousel-control" href="#MissionBanner" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+
+
+                </div>
+                <!-- /.carousel -->
+
+
+
+
+
+
+                <!--social media news feed ===========================-->
+                <style>
+                .newsfeed .news-card{
+                    padding-left:10px;
+                    padding-right:10px;
+                    padding-bottom:20px;
+                    height: 100px;	
+                }
+                .newsfeed .item{
+
+                    border-radius:5px;
+                    height:100%;
+                    background-color:white;
+                }
+                .newsfeed .item a{
+                    letter-spacing: 0.07em;
+                    color:hsla(0,0%,58%,1.00);
+                    cursor:pointer;
+                }
+                .newsfeed .news-image{
+                    height:80px;
+                    margin-left:15px;
+                }
+
+                </style>
+            <!--    <div class="container mobile mobile-program-title visible-xs ">
+                    <p class="text-center">News Feed</p>
+                </div>
+                <div class="jumbotron hidden-xs"  style="padding:10px; padding-top:30px;" >
+                    <div class="text-center container"> 
+                    <h1 class="desktop-program-title" style="font-size:18px;">News Feed</h1>
+                    </div>
+                </div>
+
+                <div class="newsfeed jumbotron">
+                    <div class="fluide-container">
+                        <div class="row">
+                            <div class="fade-in col-lg-3 col-sm-6 col-xs-12 news-card">
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-xs-4 col-sm-4 ratio-img-box-cover news-image news1"></div>
+                                        <div class="col-xs-7 col-sm-7"><h6 class="four-rows-text-limit"><a>List Special Membership Offers. Example, 3 Day Pass, 1 Week, 30 Day. Flexibility to offer complimentary passes and/or purchase passes at discounted</a></h6></div>
+                                    </div>
+                                </div> 
+                                <div class="program-shadow" style="height:50px;"></div>	
+                            </div>  
+                            <div class="fade-in col-lg-3 col-sm-6 col-xs-12 news-card">
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-xs-4 col-sm-4 ratio-img-box-cover news-image news2"></div>
+                                        <div class="col-xs-7 col-sm-7"><h6 class="four-rows-text-limit"><a >List Special Membership Offers. Example, 3 Day Pass, 1 Week, 30 Day. Flexibility to offer complimentary passes and/or purchase passes at discounted</a></h6></div>
+                                    </div>
+                                </div> 
+                                <div class="program-shadow" style="height:50px;"></div>	
+                            </div> 
+                            <div class="fade-in col-lg-3 col-sm-6 col-xs-12 news-card">
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-xs-4 col-sm-4 ratio-img-box-cover news-image news3"></div>
+                                        <div class="col-xs-7 col-sm-7"><h6 class="four-rows-text-limit"><a >美国国家气象局(National Weather Service)表示，热带风暴安娜(Ana)预料将在本周增强为飓风，根据预测，安娜将在18日下午掠过大岛，并在19日通过夏威夷毛伊岛(Maui) 。 Photo: Central Pacific Hurricane Center</a></h6></div>
+                                    </div>
+                                </div> 
+                                <div class="program-shadow" style="height:50px;"></div>	
+                            </div> 
+                            <div class="fade-in col-lg-3 col-sm-6 col-xs-12 news-card">
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-xs-4 col-sm-4 ratio-img-box-cover news-image news4"></div>
+                                        <div class="col-xs-7 col-sm-7"><h6 class="four-rows-text-limit"><a>生存，有些人赴战求身亡" "SOME FOUGHT TO LIVEーSOME FOUGHT TO DIE" 设计者:RENE HIERONYMUS PHOTOS: ALBERT MOSER 比例:1:72 花费工时：746 hours Scratch Build</a></h6></div>
+                                    </div>
+                                </div> 
+                                <div class="program-shadow" style="height:50px;"></div>	
+                            </div>             
+                        </div>
+                    </div>
+                </div>
+
+
+            -->
+
+                <!--end of social media news feed ===========================-->
+
+
+
+
+                 <!--    activities
+              ================================================== ---->
+
+
+                        <div class="container mobile mobile-program-title visible-xs ">
+
+                                         <p class="text-center">Activities and Events</p>
+
+
+                        </div>
+
+
+                        <div class="jumbotron hidden-xs">
+                            <div class="text-center container"> 
+                            <h1 class="desktop-program-title">Activities and Events</h1>
+                            </div>
+                        </div>
+
+                        <div class="jumbotron hidden-xs">
+                                                 <div class="left-in">
+                                                                 <div class=" container programs-card"> <a class="view-detail" href="view-detail.html"></a>
+                                                                        <div class="col-sm-4 col-xs-12" id="no-left-padding">
+
+                                                                                    <div class="item tour1"></div>              
+                                                                        </div>	
+
+
+                                                                        <div class="programs col-sm-6 col-xs-12">
+                                                                            <h3 class="program-title two-row-text-limit">Sample Activity One</h3>
+
+                                                                            <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;91-119 Olai Street,Kapolei, HI 96707</h5>
+                                                                            <h5  class="three-rows-text-limit"> November 6-7: East Meets West in Startup Paradise 2014 "Digital Lifestyle" Conference in Honolulu, Hawaii - Reserve your seat now!</h5>
+
+                                                                            <h5 class="detail-description"><span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;&nbsp;Sample tag one,&nbsp;&nbsp; Sample tag two</h5>
+
+                                                                        </div>
+                                                                        <div class="col-sm-2 col-xs-12">
+                                                                            <div class="content text-center">
+                                                                                   <P class="from">FROM</P>
+                                                                                   <p class="price">$189</p> 
+                                                                                   <p class="view-detail"><span class="glyphicon glyphicon-chevron-right"></span> View Detail</p>   
+                                                                            </div>   
+
+
+
+
+                                                                        </div>	
+
+                                                                </div><!-- end of program card content -->
+                                                                <div class="container" id="no-padding">
+                                                                        <div class="program-shadow"></div>
+                                                                </div>
+                                                </div>
+
+                        </div>
+
+
+
+                        <div class="jumbotron hidden-xs">
+                                                 <div class="right-in">
+                                                                 <div class=" container programs-card"> <a class="view-detail" href="view-detail.html"></a>
+                                                                        <div class="col-sm-4 col-xs-12" id="no-left-padding">
+
+                                                                                    <div class="item tour2"></div>              
+                                                                        </div>	
+
+
+                                                                        <div class="programs col-sm-6 col-xs-12">
+                                                                            <h3 class="two-row-text-limit program-title">Sample Activity Two</h3>
+                                                                            <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;91-119 Olai Street,Kapolei, HI 96707</h5>
+                                                                            <h5  class="three-rows-text-limit"> November 6-7: East Meets West in Startup Paradise 2014 "Digital Lifestyle" Conference in Honolulu, Hawaii - Reserve your seat now!</h5>
+
+                                                                            <h5 class="detail-description"><span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;&nbsp;Sample tag one,&nbsp;&nbsp; Sample tag two</h5>
+
+                                                                           <!-- <button style="display: block; width: 100%;" class="btn btn-dark">From $100&nbsp;&nbsp;&nbsp;&nbsp;View Details</button>-->
+                                                                        </div>
+                                                                        <div class="col-sm-2 col-xs-12">
+                                                                            <div class="content text-center">
+                                                                                   <P class="from">FROM</P>
+                                                                                   <p class="price">$189</p>
+                                                                                    <p class="view-detail"><span class="glyphicon glyphicon-chevron-right"></span> View Detail</p>     
+                                                                            </div> 
+
+                                                                        </div>	
+
+                                                                </div><!-- end of program card content -->
+                                                                <div class="container" id="no-padding">
+                                                                        <div class="program-shadow"></div>
+                                                                </div>
+                                                </div>
+
+                        </div>
+
+
+
+
+                        <div class="jumbotron hidden-xs">
+                                                 <div class="left-in">
+                                                                 <div class=" container programs-card"> <a class="view-detail" href="view-detail.html"></a>
+                                                                        <div class="col-sm-4 col-xs-12" id="no-left-padding">
+
+                                                                                    <div class="item tour3"></div>              
+                                                                        </div>	
+
+
+                                                                        <div class="programs col-sm-6 col-xs-12">
+                                                                            <h3 class="two-row-text-limit program-title">Sample Activity Three</h3>
+                                                                            <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;91-119 Olai Street,Kapolei, HI 96707</h5>
+                                                                            <h5  class="three-rows-text-limit"> November 6-7: East Meets West in Startup Paradise 2014 "Digital Lifestyle" Conference in Honolulu, Hawaii - Reserve your seat now!</h5>
+
+                                                                            <h5 class="detail-description"><span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;&nbsp;Sample tag one,&nbsp;&nbsp; Sample tag two</h5>
+                                                                           <!-- <button style="display: block; width: 100%;" class="btn btn-dark">From $100&nbsp;&nbsp;&nbsp;&nbsp;View Details</button>-->
+                                                                        </div>
+                                                                        <div class="col-sm-2 col-xs-12">
+                                                                            <div class="content text-center">
+                                                                                   <P class="from">FROM</P>
+                                                                                   <p class="price">$189</p>
+                                                                                   <p class="view-detail"><span class="glyphicon glyphicon-chevron-right"></span> View Detail</p>     
+                                                                            </div>           
+                                                                        </div>	
+
+                                                                </div><!-- end of program card content -->
+                                                                <div class="container" id="no-padding">
+                                                                        <div class="program-shadow"></div>
+                                                                </div>
+                                                </div>
+
+                        </div>
+
+
+
+                        <div class="jumbotron hidden-xs">
+                                                 <div class="right-in">
+                                                                 <div class=" container programs-card"> <a class="view-detail" href="view-detail.html"></a>
+                                                                        <div class="col-sm-4 col-xs-12" id="no-left-padding">
+
+                                                                                    <div class="item tour4"></div>              
+                                                                        </div>	
+
+
+                                                                        <div class="two-row-text-limit programs col-sm-6 col-xs-12">
+                                                                            <h3 class="program-title">Sample Activity Four</h3>
+                                                                            <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;91-119 Olai Street,Kapolei, HI 96707</h5>
+                                                                            <h5  class="three-rows-text-limit"> November 6-7: East Meets West in Startup Paradise 2014 "Digital Lifestyle" Conference in Honolulu, Hawaii - Reserve your seat now!</h5>
+
+                                                                            <h5 class="detail-description"><span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;&nbsp;Sample tag one,&nbsp;&nbsp; Sample tag two</h5>
+                                                                           <!-- <button style="display: block; width: 100%;" class="btn btn-dark">From $100&nbsp;&nbsp;&nbsp;&nbsp;View Details</button>-->
+                                                                        </div>
+                                                                        <div class="col-sm-2 col-xs-12">
+                                                                            <div class="content text-center">
+                                                                                   <P class="from">FROM</P>
+                                                                                   <p class="price">$189</p>
+                                                                                   <p class="view-detail"><span class="glyphicon glyphicon-chevron-right"></span> View Detail</p>     
+                                                                            </div>           
+                                                                        </div>	
+
+                                                                </div><!-- end of program card content -->
+                                                                <div class="container" id="no-padding">
+                                                                        <div class="program-shadow"></div>
+                                                                </div>
+                                                </div>
+
+                        </div>
+
+                        <div class="jumbotron hidden-xs">
+                                                 <div class="right-in">
+                                                                 <div class=" container programs-card"> <a class="view-detail" href="view-detail.html"></a>
+                                                                        <div class="col-sm-4 col-xs-12" id="no-left-padding">
+
+                                                                                    <div class="item tour5"></div>              
+                                                                        </div>	
+
+
+                                                                        <div class="two-row-text-limit programs col-sm-6 col-xs-12">
+                                                                            <h3 class="program-title">Sample Activity Five</h3>
+                                                                            <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;91-119 Olai Street,Kapolei, HI 96707</h5>
+                                                                            <h5  class="three-rows-text-limit"> November 6-7: East Meets West in Startup Paradise 2014 "Digital Lifestyle" Conference in Honolulu, Hawaii - Reserve your seat now!</h5>
+
+                                                                            <h5 class="detail-description"><span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;&nbsp;Sample tag one,&nbsp;&nbsp; Sample tag two</h5>
+
+                                                                           <!-- <button style="display: block; width: 100%;" class="btn btn-dark">From $100&nbsp;&nbsp;&nbsp;&nbsp;View Details</button>-->
+                                                                        </div>
+                                                                        <div class="col-sm-2 col-xs-12">
+                                                                            <div class="content text-center">
+                                                                                   <P class="from">FROM</P>
+                                                                                   <p class="price">$189</p>
+                                                                                   <p class="view-detail"><span class="glyphicon glyphicon-chevron-right"></span> View Detail</p>     
+                                                                            </div>           
+                                                                        </div>	
+
+                                                                </div><!-- end of program card content -->
+                                                                <div class="container" id="no-padding">
+                                                                        <div class="program-shadow"></div>
+                                                                </div>
+                                                </div>
+
+                        </div>
+
+
+
+                        <div class="jumbotron hidden-xs">
+                                                 <div class="left-in">
+                                                                 <div class=" container programs-card"> <a class="view-detail" href="view-detail.html"></a>
+                                                                        <div class="col-sm-4 col-xs-12" id="no-left-padding">
+
+                                                                                    <div class="item tour6"></div>              
+                                                                        </div>	
+
+
+                                                                        <div class="two-row-text-limit programs col-sm-6 col-xs-12">
+                                                                            <h3 class="program-title">Sample Activity Six</h3>
+                                                                            <h5 class="hidden-xs one-row-text-limit"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;91-119 Olai Street,Kapolei, HI 96707</h5>
+                                                                            <h5  class="three-rows-text-limit"> November 6-7: East Meets West in Startup Paradise 2014 "Digital Lifestyle" Conference in Honolulu, Hawaii - Reserve your seat now!</h5>
+
+                                                                            <h5 class="detail-description"><span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;&nbsp;Sample tag one,&nbsp;&nbsp; Sample tag two</h5>
+                                                                           <!-- <button style="display: block; width: 100%;" class="btn btn-dark">From $100&nbsp;&nbsp;&nbsp;&nbsp;View Details</button>-->
+                                                                        </div>
+                                                                        <div class="col-sm-2 col-xs-12">
+                                                                            <div class="content text-center">
+                                                                                   <P class="from">FROM</P>
+                                                                                   <p class="price">$189</p>
+                                                                                   <p class="view-detail"><span class="glyphicon glyphicon-chevron-right"></span> View Detail</p>     
+                                                                            </div>           
+                                                                        </div>	
+
+                                                                </div><!-- end of program card content -->
+                                                                <div class="container" id="no-padding">
+                                                                        <div class="program-shadow"></div>
+                                                                </div>
+                                                </div>
+
+                        </div>
+
+                        <div class="container mobile padding-left-right-3% visible-xs ">
+                            <div class="mobile-program-card">
+                                <a class="view-detail" href=""></a>
+                                    <div class="program-image item tour4"></div>
+                                    <div class="program-detail">
+                                        <div class="row">
+                                            <h5 class="col-xs-12 title ">Sample Activity One</h5>
+                                            <div class="price text-center">
+                                                <h5>CN$199</h5>
+                                             </div>
+                                        </div>
+                                    </div>
+
+                            </div>     
+                        </div>
+
+                        <div class="container mobile padding-left-right-3% visible-xs ">
+                            <div class="mobile-program-card">
+                                <a class="view-detail" href=""></a>
+                                    <div class="program-image item tour3"></div>
+                                    <div class="program-detail">
+                                        <div class="row">
+                                            <h5 class="col-xs-12 title ">Sample Activity Two</h5>
+                                            <div class="price text-center">
+                                                <h5>CN$199</h5>
+                                             </div>
+                                        </div>
+                                    </div>
+
+                            </div>     
+                        </div>
+
+
+                        <div class="container mobile padding-left-right-3% visible-xs ">
+                            <div class="mobile-program-card">
+                                <a class="view-detail" href=""></a>
+                                    <div class="program-image item tour2"></div>
+                                    <div class="program-detail">
+                                        <div class="row">
+                                            <h5 class="col-xs-12 title ">Sample Activity Three</h5>
+                                            <div class="price text-center">
+                                                <h5>CN$199</h5>
+                                             </div>
+                                        </div>
+                                    </div>
+
+                            </div>     
+                        </div>
+
+
+                        <div class="container mobile padding-left-right-3% visible-xs ">
+                            <div class="mobile-program-card">
+                                <a class="view-detail" href=""></a>
+                                    <div class="program-image item tour1"></div>
+                                    <div class="program-detail">
+                                        <div class="row">
+                                            <h5 class="col-xs-12 title ">Sample Activity Four</h5>
+                                            <div class="price text-center">
+                                                <h5>CN$199</h5>
+                                             </div>
+                                        </div>
+                                    </div>
+
+                            </div>     
+                        </div>
+
+
+
+
+
+
+                <!-- end of activities showcase -->
+
+                <footer>
+                    <div class="container">
+                         <div class="bounce-in col-sm-12">
+                            <a href="/en/site/about"> About us</a> | 
+                            <a href="/en/site/terms"> Terms & Conditions</a>  | 
+                            <a href="/en/site/privacy"> Privacy Policy</a>  | 
+                            <a href="/en/site/cancellation"> Cancellation Policy</a>  | 
+                            <a href="/en/site/contact"> Contact Us</a>  
+                            <p class="cotyright">Copyright 2012-2014 &copy; Company Name</p>
+                            <p class="powerby">Powered by <a href="www.totalgds.com">TotalGDS</a></p>
+
+                        </div>
+                    </div>
+
+                </footer> 
+            
+            
+            
+            
+        </div>
+        <!-- /#page-content-wrapper -->
+
+
+<!-----------------------------------------------------------Fixed navbar------------------------------------------------------------------->
+    
  	
     
 <!-- Modal Theme -->
@@ -921,6 +1144,20 @@
         
     </script>
 
+     <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("toggled");
+        $("#page-content-wrapper").toggleClass("toggled");
+        
+    });
+    $("#alernative-menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("toggled");
+        $("#page-content-wrapper").toggleClass("toggled");
+    });
+    </script>
 	
   </body>
 </html>

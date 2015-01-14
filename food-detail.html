@@ -180,7 +180,7 @@
                 <li><a href="programs.html">Display1</a></li>
                 <li><a href="programs2.html">Display2</a></li>
                 <li class="active"><a href="view-detail.html">Detail</a></li>
-                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="food.html">Coupon</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Checkout <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
@@ -331,203 +331,10 @@ Chef Chai's creations have even criss-crossed oceans. He's the executive chef fo
         </div>
         
         
-         <div class="detail-panel2 panel-style effect7">
-            <div class="calendar" id="priceCalendarBox">
-            
-            
-            <!--
-            Alternative markup with data-mfp-src attribute:
-            <a href="mobile-friendly-page.html" data-mfp-src="#test-popup" class="open-popup-link">Show inline popup</a>
-            -->
-            <style>
-				.white-popup {
-					height:400px;
-					position: relative;
-					background: none;
-			
-					width:auto;
-					max-width: 700px;
-					margin: 20px auto;
-				}
-				.calendarbox{
-					width:100%; height:auto;
-				}
-				.description-box{
-					display:block;
-					background-color:white;
-					padding:5px;
-					overflow:hidden;
-					border-bottom-right-radius: 6px;
-					border-bottom-left-radius: 6px;
-				}
-				.LegendItem {
-					display:inline-block;
-					margin: 0 3em .6em 0;
-					float:left;
-					white-space: nowrap;
-				}
-				
-				.LgndImg {
-				width: 15px;
-				height: 15px;
-				}
-				.popup-info{
-				padding:5px;
-				display:block;
-				overflow:hidden;
-				background-color:white;	
-				}
-				.popup-inner{
-				padding:5px;
-				display:block;
-				overflow:hidden;
-				background:#CCC;
-				border-radius: 5px;
-				}
-				button.mfp-close {
-					margin-top:-50px;
-					color:white!important;
-				}
-				.ui-datepicker td a {
-				padding:3px!important;
-				}
-				.ui-widget-content {
-					border: 0px solid #666;
-					background: white;
-					color: #000;
-				}
-				.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
-				border-bottom-right-radius: 0px;
-				}
-				.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
-				border-bottom-left-radius: 0px;
-				}
-				.ui-datepicker-other-month span{
-				display:none!important;
-				}
-				.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
-				border: none;
-				background: white;
-				font-weight:100;
-				color: #ccc;
-				}
-				.ui-datepicker-calendar .ui-state-active, .SelectedDates {
-				padding:0px!important;
-				}
-				.datelabel{
-					display:none;
-					width:100%;	
-				}
-				
-				.dp-highlight-unknown .ui-state-default {
-					background: #800;
-					color: #FFF;
-				}
-				.dp-highlight-holiday .ui-state-default {
-					background: #484;
-					color: #FFF;
-				}
-				/**********************************/
-				/*      CALENDAR COLOR CODES      */
-				/**********************************/
-				
-				/* available day's color on the calenlar*/
-				.available .ui-state-default {
-						background: #7CB250!important;
-						color: #FFF!important;	
-				}
-				/* unavailable day's color on the calenlar*/
-				.unAvailable .ui-state-default {
-						background: #ccc!important;
-						color: #FFF!important;	
-				}
-				/* unavailable day's color on the calenlar*/
-				.currentDay-avail .ui-state-default {
-						border:3px solid #15A5EA;
-						padding:0px!important;
-						background: #7CB250!important;
-						color: #FFF!important;	
-				}
-				.currentDay-unavail .ui-state-default {
-						border:3px solid #15A5EA;
-						padding:0px!important;
-						background: #ccc!important;
-						color: #FFF!important;	
-				}
-				/* available icon*/
-				 .BECalOpen { background:#7CB250!important; }
-					
-				
-				/* No Available icon*/
-				.BENoAvail { background:#ccc!important; }
-					
-			
-				/* Selected dates */
-				.ui-datepicker-calendar .ui-state-active, .SelectedDates { border:3px solid #4A4D4D; } 
-				
-				/* Current dates */
-				.currentDay { border:3px solid #15A5EA;
-						padding:0px!important; } 
-
-			 </style>
-
-            <!-- Popup itself -->
-            <div id="popupIDmatch-1" class="white-popup mfp-hide">
-              <div  class="calendarbox" id="datepicker"></div>
-              
-              <!--以下的信熄是跟据选的日期而出现的 -->
-              <div class="popup-info"> 
-              		<div class="popup-inner">
-                    	<span class="glyphicon glyphicon-exclamation-sign"> </span>
-              			<span>There are 2 seats left only!（这信息是跟据选中的日期而出现的）</span>
-                    	<button class="pull-right btn btn-lg btn-primary">Continue</button>
-                    </div>
-              </div>
-              <div class="popup-info"> 
-              		<div class="popup-inner">
-                    	<span class="glyphicon glyphicon-exclamation-sign"> </span>
-              			<span>There are tickets available!（这信息是跟据选中的日期而出现的）</span>
-                    	<button class="pull-right btn btn-lg btn-primary">Continue</button>
-                    </div>
-              </div>
-               <div class="popup-info"> 
-              		<div class="popup-inner">
-                    	<span class="glyphicon glyphicon-exclamation-sign"> </span>
-              			<span>Sold Out!（这信息是跟据选中的日期而出现的）</span>
-                    	
-                    </div>
-              </div>
-              <div class="description-box">
-              		<div class="LegendItem SD">
-                   		<img class="currentDay LgndImg" src="asset/img/etc/blank.gif">
-                    	 Today
-                    </div>
-              		<div class="LegendItem SD">
-                   		<img class="SelectedDates LgndImg" src="asset/img/etc/blank.gif">
-                    	Selected Date
-                    </div>
-                    <div class="LegendItem OD">
-                        <img class="BECalOpen LgndImg" src="asset/img/etc/blank.gif">
-                        Available
-                    </div>
-                    <div class="LegendItem NAv">
-                        <img class="BENoAvail LgndImg" src="asset/img/etc/blank.gif">
-                        No Availability
-                    </div>
-                   
-              	</div>
-            </div>   
-               
-             <!-- Popup itself -->
-            <!--<div id="test-popup" class="white-popup mfp-hide">
-             
-            </div>-->
-   
-             	
-            </div>
+        
         
        
-            <div class="detail-panel3 panel-style2 effect7">
+            <div style="padding-bottom:20px;" class="detail-panel3 panel-style2 effect7">
                 <div class="plan">
                      <div class="row">
                           <div class=" content content-style1 col-sm-offset-1 col-sm-10 col-xs-12 text-center">                          <h3 class="">Option #1: $99 for a four-course dinner for two ($131 value)</h3>
@@ -567,7 +374,7 @@ Chef Chai's creations have even criss-crossed oceans. He's the executive chef fo
                 </div>
              </div>  
     
-              <div class="detail-panel3 panel-style2 effect7">
+              <div  style="padding-bottom:20px;" class="detail-panel3 panel-style2 effect7">
                 <div class="plan">
                      <div class="row">
                          <div class=" content content-style1 col-sm-offset-1 col-sm-10 col-xs-12 text-center">
@@ -611,8 +418,7 @@ Chef Chai's creations have even criss-crossed oceans. He's the executive chef fo
   
            
              
-             
-         </div><!--end of choose plan date-->
+     
         
         
        

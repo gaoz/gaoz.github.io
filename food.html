@@ -395,7 +395,228 @@
                            
                             </div><!--end of list-group-->
                         </div> <!--end of catagory menu-->
+                          
+                         <!--catagory panel-->    
+                        <div class="panel panel-color-theme hidden-xs">
+                       	   <div class="panel-heading">Type</div>
+                            <div class="list-group">
+                            		<a href="#" class="list-group-item ">
+                                	<div class="row">
+                                    	<div class="col-sm-9">
+                                        All
+                                        </div>
+                                        <div class="col-sm-3 ">
+                                           <span class="badge pull-right">94</span>
+                                        </div>
+                                    </div>
+                                 </a>
+                                 <a href="#" class="list-group-item ">
+                                	<div class="row">
+                                    	<div class="col-sm-9">
+                                        Chinese 
+                                        </div>
+                                        <div class="col-sm-3 ">
+                                           <span class="badge pull-right">2</span>
+                                        </div>
+                                    </div>
+                                 </a>
+                                 <a href="#" class="list-group-item">
+                                	<div class="row">
+                                    	<div class="col-sm-9">
+                                        Japanese 
+                                        </div>
+                                        <div class="col-sm-3 ">
+                                           <span class="badge pull-right">3</span>
+                                        </div>
+                                    </div>
+                                 </a>
+                                 <a href="#" class="list-group-item ">
+                                	<div class="row">
+                                    	<div class="col-sm-9">
+                                        Korean
+                                        </div>
+                                        <div class="col-sm-3 ">
+                                           <span class="badge pull-right">1</span>
+                                        </div>
+                                    </div>
+                                 </a>
+                           
+                          		 <a href="#" class="list-group-item ">
+                                	<div class="row">
+                                    	<div class="col-sm-9">
+                                        French
+                                        </div>
+                                        <div class="col-sm-3 ">
+                                           <span class="badge pull-right">0</span>
+                                        </div>
+                                    </div>
+                                 </a>
+                           
+                          		 <a href="#" class="list-group-item">
+                                	<div class="row">
+                                    	<div class="col-sm-9">
+                                        Seafood 
+                                        </div>
+                                        <div class="col-sm-3 ">
+                                           <span class="badge pull-right">9</span>
+                                        </div>
+                                    </div>
+                                 </a>
+                           
+                           		<a href="#" class="list-group-item">
+                                	<div class="row">
+                                    	<div class="col-sm-9">
+                                        Vegeterian
+                                        </div>
+                                        <div class="col-sm-3 ">
+                                           <span class="badge pull-right">4</span>
+                                        </div>
+                                    </div>
+                                 </a>
+                                 
+                                
+                                 <a href="#" class="list-group-item">
+                                	<div class="row">
+                                    	<div class="col-sm-9">
+                                        BBQ
+                                        </div>
+                                        <div class="col-sm-3 ">
+                                           <span class="badge pull-right">2</span>
+                                        </div>
+                                    </div>
+                                 </a>
+                                 
+                                 <a href="#" class="list-group-item ">
+                                	<div class="row">
+                                    	<div class="col-sm-9">
+                                        hotpot
+                                        </div>
+                                        <div class="col-sm-3 ">
+                                           <span class="badge pull-right">1</span>
+                                        </div>
+                                    </div>
+                                 </a>
+                                    
+                           
+                            </div><!--end of list-group-->
+                        </div> <!--end of catagory menu-->
+ 
+                          
+                          
+<style>                        
+    .group {
+    background: yellow;
+    width: 200px;
+    height: 500px;
+}
+.group .subgroup {
+    background: orange;
+    width: 150px;
+    height: 200px;
+}
+.fixed {
+
+}
+
+/* sidebar */
+.bs-docs-sidebar {
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    z-index: 999;
+}
+
+/* all links */
+.bs-docs-sidebar .nav>li>a {
+    color: #999;
+    border-left: 2px solid transparent;
+    padding: 4px 20px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+/* nested links */
+.bs-docs-sidebar .nav .nav>li>a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    font-size: 12px;
+}
+
+/* active & hover links */
+.bs-docs-sidebar .nav>.active>a, 
+.bs-docs-sidebar .nav>li>a:hover, 
+.bs-docs-sidebar .nav>li>a:focus {
+    color: #563d7c;                 
+    text-decoration: none;          
+    background-color: transparent;  
+    border-left-color: #563d7c; 
+}
+/* all active links */
+.bs-docs-sidebar .nav>.active>a, 
+.bs-docs-sidebar .nav>.active:hover>a,
+.bs-docs-sidebar .nav>.active:focus>a {
+    font-weight: 700;
+}
+/* nested active links */
+.bs-docs-sidebar .nav .nav>.active>a, 
+.bs-docs-sidebar .nav .nav>.active:hover>a,
+.bs-docs-sidebar .nav .nav>.active:focus>a {
+    font-weight: 500;
+}
+
+/* hide inactive nested list */
+.bs-docs-sidebar .nav ul.nav {
+    display: none;           
+}
+/* show active nested list */
+.bs-docs-sidebar .nav>.active>ul.nav {
+    display: block;           
+}
+
+</style>
+
+                          
+                          
+<div class="row">
+    <!--Nav Bar -->
+    <nav class="col-xs-3 bs-docs-sidebar">
+        <ul id="sidebar" class="nav nav-stacked fixed">
+            <li>
+                <a href="#GroupA">Group A</a>
+                <ul class="nav nav-stacked">
+                    <li><a href="#GroupASub1">Sub-Group 1</a></li>
+                    <li><a href="#GroupASub2">Sub-Group 2</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#GroupB">Group B</a>
+                <ul class="nav nav-stacked">
+                    <li><a href="#GroupBSub1">Sub-Group 1</a></li>
+                    <li><a href="#GroupBSub2">Sub-Group 2</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#GroupC">Group C</a>
+                <ul class="nav nav-stacked">
+                    <li><a href="#GroupCSub1">Sub-Group 1</a></li>
+                    <li><a href="#GroupCSub2">Sub-Group 2</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    
+</div>
+                          
+                          
+                          
+                          
+                          
+                          
+                    
                     </div> <!-- end of left panel class=" col-sm-3"-->
+                    
+                    
                 
                     <div class=" col-xs-12 col-md-10 col-sm-9 card-list">
                     
@@ -451,7 +672,7 @@
                             <a href="food-detail.html">
                                 <div class="food-card onhold">  
                                     <img class="food-img" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRv_QVGOTIATnVOBMd0iAuKQseXc4_BGnsYsdKqIh3KcOfO3VcuJg"></img>
-                                    <div class="font-color-3 bg-color-1 food-title">Free Appetizer at the Top of the Ilikai</div>
+                                    <div class="font-color-3 bg-color-1 food-title">40% off coupon the Top of the Ilikai $50 Value</div>
                                     <div class="bg-color-1 size10 font-color-2 food-date">
                                         <div class="sperater"></div>
                                         <div>Top of the Ilikai</div>
@@ -637,8 +858,8 @@
           });
         });
 
-        
- 
+  
+
         
     </script>
 	
