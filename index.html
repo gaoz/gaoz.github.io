@@ -108,6 +108,10 @@
         .sidebar-nav li {
             text-indent: 20px;
             line-height: 40px;
+            -webkit-transition: height 0.5s ease;
+            -moz-transition: height 0.5s ease;
+            -o-transition: height 0.5s ease;
+            transition: height 0.5s ease;
         }
 
         .sidebar-nav li a {
@@ -160,11 +164,50 @@
                 transition: all 0.5s ease;
             }
         }
-        #sidebar-wrapper li a.active{
+        #sidebar-wrapper li.active{
             background-color: #302D2D;  
             color:#fff;
             border-left: 2px white solid;
         }
+        .sidebar-nav li ul{
+            list-style: none;
+            padding-left: 0px;
+        }
+        .sidebar-nav li ul{
+            list-style: none;
+            padding-left: 0px;
+        }
+        .sidebar-nav li ul a{
+            padding-left: 30px;
+        }
+        .sidebar-nav li ul a.active{
+            background-color:#4e4b4b;
+            color:#fff;
+        }
+        .sidebar-nav>li>ul a{
+            height:0px;
+            opacity: 0;
+                    -webkit-transition: all 0.5s ease;
+                -moz-transition: all 0.5s ease;
+                -o-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+        }
+        /* show active nested list */
+        .sidebar-nav>li.active>ul a{
+            height:40px;
+            opacity: 1;
+                    -webkit-transition: all 0.5s ease;
+                -moz-transition: all 0.5s ease;
+                -o-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+
+
+        }
+
+        .sidebar-nav .sec-nav a{
+            color:#302D2D;
+        }
+       
        
     </style>
       
@@ -179,38 +222,38 @@
                     </a>
                 </li>
                             
-                <li ><a class="active" href="index.html">HOME</a></li>
+                <li><a href="index.html">HOME</a></li>
                 <li><a href="theme2.html">HOME2</a></li>
                 <li><a href="programs.html">Display1</a></li>
                 <li><a href="programs2.html">Display2</a></li>
                 <li><a href="view-detail.html">Detail</a></li>
                 <li><a href="food.html">Coupon</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Checkout <span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="check-out.html">Checkout Now</a></li>
-                    <li><a href="check-out-success.html">Checkout Success</a></li>
-                    <li><a href="check-out-fail.html">Checkout Fail</a></li>
+                <li>
+                  <a class="inner-nav" href="#" >Checkout <span class="caret"></span></a>
+                  <ul>
+                    <li><a class="active" href="check-out.html">Checkout Now</a></li>
+                    <li><a  href="check-out-success.html">Checkout Success</a></li>
+                    <li><a  href="check-out-fail.html">Checkout Fail</a></li>
                   </ul>
                 </li>
                 
                     
-                    <li style="background-color:#ddd; border-left:1px #333 solid; border-bottom:1px #333 solid">    
+                    <li  class="sec-nav" style="background-color:#ddd; border-left:1px #333 solid; border-bottom:1px #333 solid">    
                             <a  href="check-out.html" ><span style="left:-14px;" class="glyphicon glyphicon-shopping-cart"></span>(0) Shopping Cart</a>      
                    </li> 
-                    <li style="background-color:#ddd; border-left:1px #333 solid; border-bottom:1px #333 solid">         
+                    <li  class="sec-nav" style="background-color:#ddd; border-left:1px #333 solid; border-bottom:1px #333 solid">         
                             <a  href="login.html" ><span  style="left:-14px;" class="glyphicon glyphicon-user"></span> Login</a>
                    </li>  
-                   <li style="background-color:#ddd; border-left:1px #333 solid; border-bottom:1px #333 solid" class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown"></span>English<span class="caret"></span></a>
-                      <ul class="animated dropdown-menu" role="menu">
+                   <li  class="sec-nav" style="background-color:#ddd; border-left:1px #333 solid; border-bottom:1px #333 solid">
+                      <a  class="inner-nav"></span>English<span class="caret"></span></a>
+                      <ul>
                         <li><a href="#"><span class="lang-xs lang-lbl" lang="en"></span></a></li>
                         <li><a href="#"><span class="lang-xs lang-lbl" lang="zh"></span></a></li>
                       </ul>
                     </li>
-                    <li style="background-color:#ddd; border-left:1px #333 solid; border-bottom:1px #333 solid" class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">US$ Dollar <span class="caret"></span></a>
-                      <ul class="dropdown-menu" role="menu">
+                    <li  class="sec-nav" style="background-color:#ddd; border-left:1px #333 solid; border-bottom:1px #333 solid">
+                      <a  class="inner-nav">US$ Dollar <span class="caret"></span></a>
+                      <ul>
                         <li><a href="#">฿ - Thai Baht</a></li>
                         <li><a href="#">JP¥ - Japanese Yen</a></li>
                         <li><a href="#">€ - Euro</a></li>
@@ -218,7 +261,7 @@
                         <li><a href="#">CN¥ - Chinese Yuan</a></li>
                       </ul>
                     </li> 
-                    <li style="">
+                    <li >
                           
                          <a style="padding-right:20px;" class="text-right" href="#menu-toggle" id="alernative-menu-toggle" ><span  style="left:-14px;" class=" glyphicon glyphicon-off"></span> Exit Menu</a>
                  
@@ -321,11 +364,7 @@
                                         </div>         		  
                                     </div>
 
-                                    <style>
-                                        .bs-docs-nav .navbar-header .navbar-toggle:hover, .bs-docs-nav .navbar-header .navbar-toggle:focus {
-                                            
-                                        }
-                                    </style>
+
                                     <div class="col-xs-height col-middle">
                                         <button style="background-color: #fff!important; border-color: #fff!important;" class="navbar-toggle collapsed" type="button" href="#menu-toggle" id="menu-toggle" data-toggle="collapse" data-target=".bs-navbar-collapse">
                                             <span class="sr-only">Toggle navigation</span>
@@ -1146,18 +1185,45 @@
 
      <!-- Menu Toggle Script -->
     <script>
-    $("#menu-toggle").click(function(e) {
+     $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $("#sidebar-wrapper").toggleClass("toggled");
         $("#page-content-wrapper").toggleClass("toggled");
-        
+
     });
     $("#alernative-menu-toggle").click(function(e) {
         e.preventDefault();
         $("#sidebar-wrapper").toggleClass("toggled");
         $("#page-content-wrapper").toggleClass("toggled");
     });
+    $(".inner-nav").on('click', function(){
+            if ($(this).parents("li").hasClass('active')){
+                $(this).parents("li").removeClass('active');
+            }else{
+                $(".inner-nav").parents("li").removeClass('active');
+                $(this).parents("li").addClass('active');
+            }
+    });   
+     /*
+    $("#page-content-wrapper.toggled").on('click',function(){
+        if($("#sidebar-wrapper").hasClass("toggled")){
+            $("#sidebar-wrapper").toggleClass("toggled");
+            $("#page-content-wrapper").toggleClass("toggled");
+        }
+    });  
+    */
+
     </script>
+    <!--script>
+    $(document).ready(function () {
+         var selector = '.sidebar-nav a';
+
+        $(selector).on('click', function(){
+            $(selector).parents("li").removeClass('active');
+            $(this).parents("li").addClass('active');
+        });
+    });
+    </script-->
 	
   </body>
 </html>
