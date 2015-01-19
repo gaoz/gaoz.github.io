@@ -532,9 +532,18 @@
             <!--end of space down from the menu bar and logo section--->
 
 
+            
+            
+            
+            
+            
+            
+           
+            
+            
                 <!-- Carousel
                 ================================================== -->
-              <div id="MissionBanner" class="carousel slide">
+              <div id="MissionBanner" class="carousel slide" data-ride="carousel">
 
                     <ol class="animated fadeIn carousel-indicators">
                         <li data-target="#MissionBanner" data-slide-to="0" class="active"></li>
@@ -1224,6 +1233,8 @@
         });
     });
     </script-->
-	
+	<script>
+        $('[data-slide-to=0').trigger('click');
+    </script>
   </body>
 </html>
