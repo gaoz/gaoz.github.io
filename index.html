@@ -81,6 +81,7 @@
             -moz-transition: all 0.5s ease;
             -o-transition: all 0.5s ease;
             transition: all 0.5s ease;
+            overflow-x: hidden;
         }
         /*
         #navigation-wrapper.toggled #sidebar-wrapper {
@@ -88,12 +89,17 @@
         }*/
         #sidebar-wrapper.toggled {
             width: 250px;
+           
             
         }
 
         #page-content-wrapper {
             width: 100%;
             position: absolute;
+             -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
         }
            /*
         #navigation-wrapper.toggled #page-content-wrapper {
