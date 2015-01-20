@@ -344,3 +344,46 @@ line-height: 22px;
 	margin-left: 0px; /* override bootstrap */
 }	
 
+/* iphone 6 plus size display */
+@media (max-width: 480px) {
+    .mobile .view-detail {
+        list-style: none;
+        text-decoration: none;
+    }
+    
+    .mobile-program-title p{
+        display:none;
+         font-size:15px!important;
+        margin-bottom: 0px!important; 
+        
+    }
+    .mobile .view-detail .title{
+        font-size: 15px;
+        font-family: 'Open Sans', sans-serif !important; 
+        color:#888;
+    }
+    .mobile{
+        padding:5px;
+	background-color:#DDD;	
+    }
+    .mobile-program-title{
+        
+        padding:0px;
+        padding-top:5px;
+        
+    }
+     .mobile-program-card:hover{
+         
+        -webkit-box-shadow: 0 0 7px rgba(0,0,0,.5);
+        -moz-box-shadow: 0 0 7px rgba(0,0,0,.5);
+        box-shadow: 0 0 7px rgba(0,0,0,.5);
+        -webkit-transition-delay: 0s;
+	-webkit-transition-duration: 0.25s;
+	-webkit-transition-property: box-shadow;
+	-webkit-transition-timing-function: linear;
+    }
+    
+    
+    
+}
+

@@ -1,0 +1,220 @@
+.view-detail-section{
+	min-height:600px;
+	background-color:#DDD;	
+}
+
+.detail-header .title{
+	position:relative;
+	padding-top:40px;
+	padding-left:20px;
+	padding-bottom:20px;
+    font-size:1.5em
+	
+}
+.detail-header {
+	width: 100%;
+	min-height: 80px;
+	background: #FFF;
+	margin-bottom:10px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.panel-style{
+	width: 100%;
+	height:auto;
+	background: #FFF;
+	margin-bottom:10px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;	
+}
+.panel-style2{
+	width: 100%;
+	height:auto;
+	background: #FFF;
+	margin-bottom:10px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;	
+}
+
+.detail-panel1 .detail-label{
+box-sizing: border-box;
+color: rgb(51, 51, 51);
+display: block;
+font-family: 'Playfair Display', sans-serif;
+font-size: 15px;
+font-weight: bold;
+line-height: 15.8999996185303px;
+text-align: left;
+text-transform: uppercase;	
+}
+.detail-panel1 .detail-description{
+color: #666;
+padding-top:5px;
+font-size: 12px;
+letter-spacing: 0.07em;
+line-height: 1.4em;
+
+}
+
+
+.title-style1{
+padding:20px;
+box-sizing: border-box;
+color: rgb(51, 51, 51);	
+display: block;
+font-family: 'Playfair Display', sans-serif;
+font-size: 18px;
+font-weight: bold;
+height: 19px;
+line-height: 18.8999996185303px;
+text-align: left;
+text-transform: uppercase;	
+}
+
+.content-style1{
+padding:20px;	
+	
+}
+.content-style2{
+padding:50px;	
+	
+}
+
+
+
+
+/*calendar */
+
+
+/* plan section */
+
+.plan .title{
+	padding-bottom:80px;
+box-sizing: border-box;
+color: rgb(51, 51, 51);	
+display: block;
+font-family: 'Playfair Display', sans-serif;
+font-size: 18px;
+font-weight: bold;
+height: 19px;
+line-height: 18.8999996185303px;
+text-align: left;
+text-transform: uppercase;
+}
+
+
+.plan .panel{
+	margin-top:15px;
+	margin-bottom:100px;
+}
+.plan .panel-body h3{
+	margin-top:0px;	
+}
+.plan .alert {
+padding: 15px;
+margin-bottom: 5px;
+border: 1px solid transparent;
+border-radius: 4px;
+}
+
+
+/*==================================================
+ * box panel background Effect 7
+ * ===============================================*/
+.effect7
+{
+  	position:relative;       
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+/*
+.effect7:before, .effect7:after
+{
+	content:"";
+    position:absolute; 
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:0;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+} */
+.effect7:after
+{
+	right:10px; 
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg); 
+       -moz-transform:skew(8deg) rotate(3deg);     
+        -ms-transform:skew(8deg) rotate(3deg);     
+         -o-transform:skew(8deg) rotate(3deg); 
+            transform:skew(8deg) rotate(3deg);
+}
+@media (max-width: 767px){/*mobile view */
+.detail-header .title {
+font-size:14px;
+}
+								
+}
+
+
+
+/* CSS REQUIRED for plan options checkbox */
+.state-icon {
+    left: -5px;
+}
+.well .list-group{
+	margin-bottom:0px;	
+}
+
+.well .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+z-index: 2;
+color: #fff;
+background-color: #888;
+border-color: #777;
+}
+
+
+/* add to shopping cart animation css */
+.css3-notification {
+	
+	-webkit-animation: bounce 400ms ease-out;
+	-moz-animation: bounce 400ms ease-out;
+	-o-animation: bounce 400ms ease-out;
+	animation: bounce 400ms ease-out;
+}
+
+/* Webkit, Chrome and Safari */
+
+@-webkit-keyframes bounce {
+   0% { -webkit-transform: scale(3); opacity:0; }
+  100% { -webkit-transform: scale(1); opacity:1;}
+}
+
+/* Mozilla Firefox 15 below */
+@-moz-keyframes bounce {
+ 0% { -webkit-transform: scale(3); opacity:0; }
+  100% { -webkit-transform: scale(1); opacity:1;}
+}
+
+/* Opera 12.0 */
+@-o-keyframes bounce {
+ 0% { -webkit-transform: scale(3); opacity:0; }
+  100% { -webkit-transform: scale(1); opacity:1;}
+}
+
+/* W3, Opera 12+, Firefox 16+ */
+@keyframes bounce {
+  0% { -webkit-transform: scale(3); opacity:0; }
+  100% { -webkit-transform: scale(1); opacity:1;}
+  
+}
+/* end of add to shopping cart animation css */
