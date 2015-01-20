@@ -378,11 +378,11 @@ line-height: 22px;
         -moz-box-shadow: 0 0 7px rgba(0,0,0,.5);
         box-shadow: 0 0 7px rgba(0,0,0,.5);
         -webkit-transition-delay: 0s;
-	-webkit-transition-duration: 0.25s;
-	-webkit-transition-property: box-shadow;
-	-webkit-transition-timing-function: linear;
-    }
-    
+        -webkit-transition-duration: 0.25s;
+        -webkit-transition-property: box-shadow;
+        -webkit-transition-timing-function: linear;
+        }
+
     
     
 }
