@@ -1225,6 +1225,11 @@
         $("#sidebar-dismiss-wrapper").toggleClass("toggled"); 
         $("#sidebar-wrapper").toggleClass("toggled");
         $("#page-content-wrapper").toggleClass("toggled");
+         if($("#sidebar-wrapper").hasClass("toggled")){
+            $('html').css("overflow-y", "hidden");
+         }else{
+            $('html').css("overflow-y", "scroll");
+         }
 
     });
     $("#sidebar-dismiss-wrapper").click(function(e) {
@@ -1232,12 +1237,22 @@
         $("#sidebar-dismiss-wrapper").toggleClass("toggled"); 
         $("#sidebar-wrapper").toggleClass("toggled");
         $("#page-content-wrapper").toggleClass("toggled");
+        if($("#sidebar-wrapper").hasClass("toggled")){
+            $('html').css("overflow-y", "hidden");
+         }else{
+            $('html').css("overflow-y", "scroll");
+         }
     });
     $("#alernative-menu-toggle").click(function(e) {
         e.preventDefault();
         $("#sidebar-dismiss-wrapper").toggleClass("toggled"); 
         $("#sidebar-wrapper").toggleClass("toggled");
         $("#page-content-wrapper").toggleClass("toggled");
+        if($("#sidebar-wrapper").hasClass("toggled")){
+            $('html').css("overflow-y", "hidden");
+         }else{
+            $('html').css("overflow-y", "scroll");
+         }
     });
     $(".inner-nav").on('click', function(){
             if ($(this).parents("li").hasClass('active')){
