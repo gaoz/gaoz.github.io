@@ -157,9 +157,9 @@
         }
 
         .sidebar-nav > .sidebar-brand {
-            height: 65px;
-            font-size: 18px;
-            line-height: 60px;
+            height: 45px;
+            font-size: 15px;
+            line-height: 40px;
         }
 
         .sidebar-nav > .sidebar-brand a {
@@ -210,7 +210,7 @@
             color:#fff;
         }
         .sidebar-nav>li>ul a{
-            height:0px;
+            line-height:0px;
             opacity: 0;
                     -webkit-transition: all 0.5s ease;
                 -moz-transition: all 0.5s ease;
@@ -219,7 +219,7 @@
         }
         /* show active nested list */
         .sidebar-nav>li.active>ul a{
-            height:40px;
+            line-height:40px;
             opacity: 1;
                     -webkit-transition: all 0.5s ease;
                 -moz-transition: all 0.5s ease;
@@ -233,6 +233,19 @@
             color:#302D2D;
         }
        
+        .sidebar-nav .social-icon li{
+            text-indent: 0px!important;
+
+        }
+        .sidebar-nav .social-icon{
+            width:100%;
+            padding:0px!important;
+            margin:0 auto;
+
+        }  
+          
+          
+          
        
     </style>
       
@@ -246,9 +259,12 @@
         <div class="hidden-sm hidden-md hidden-lg" id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-                    <a href="index.html">
-                        Etour International Group
-                    </a>
+            
+              
+                    <a style="padding-right:20px;" class="text-right" href="#menu-toggle" id="alernative-menu-toggle" ><span  style="left:-14px;" class=" glyphicon glyphicon-remove"></span>Exit Menu</a>
+
+
+
                 </li>
                             
                 <li><a href="index.html">HOME</a></li>
@@ -276,26 +292,66 @@
                    <li  class="sec-nav" style="background-color:#ddd; border-left:1px #333 solid; border-bottom:1px #333 solid">
                       <a  class="inner-nav"></span>English<span class="caret"></span></a>
                       <ul>
-                        <li><a style="line-height:15px;" href="#"><span  class="lang-xs lang-lbl" lang="en"></span></a></li>
-                        <li><a style="line-height:15px;" href="#"><span  class="lang-xs lang-lbl" lang="zh"></span></a></li>
+                         <li><a href="#">English</a></li>
+                         <li><a href="#">Chinese</a></li>
                       </ul>
                     </li>
                     <li  class="sec-nav" style="background-color:#ddd; border-left:1px #333 solid; border-bottom:1px #333 solid">
                       <a  class="inner-nav">US$ Dollar <span class="caret"></span></a>
                       <ul>
-                        <li><a href="#">฿ - Thai Baht</a></li>
-                        <li><a href="#">JP¥ - Japanese Yen</a></li>
-                        <li><a href="#">€ - Euro</a></li>
-                        <li><a href="#">£ - Pound Sterling</a></li>
-                        <li><a href="#">CN¥ - Chinese Yuan</a></li>
+                         <li><a href="#">฿ - Thai Baht</a></li>
+                         <li><a href="#">JP¥ - Japanese Yen</a></li>
+                         <li><a href="#">€ - Euro</a></li>
+                         <li><a href="#">£ - Pound Sterling</a></li>
+                         <li><a href="#">CN¥ - Chinese Yuan</a></li>
                       </ul>
                     </li> 
-                    <li >
-                          
-                         <a style="padding-right:20px;" class="text-right" href="#menu-toggle" id="alernative-menu-toggle" ><span  style="left:-14px;" class=" glyphicon glyphicon-off"></span> Exit Menu</a>
+                   
+                    <ul class="social-icon nav navbar-nav navbar-right nav-pills" style="padding:20px; padding-top:0px;">
+                     <li>
+                            <a href="<?php echo $val['Link'] ?>" class="btn btn-social-icon btn-linkedin">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
                  
-                        
-                    </li>
+                        <li>
+                            <a href="<?php echo $val['Link'] ?>" class="btn btn-social-icon btn-twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                 
+                        <li>
+                            <a href="<?php echo $val['Link'] ?>" class="btn btn-social-icon btn-youtube">
+                                <i class="fa fa-youtube"></i>
+                            </a>
+                        </li>
+                
+                        <li>
+                            <a href="<?php echo $val['Link'] ?>" class="btn btn-social-icon btn-facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+              
+                      
+                        <li>
+                            <a href="<?php echo $url; ?>" title="" class="btn btn-social-icon btn-qq">
+                                <i class="fa fa-qq"></i>
+                            </a>
+                        </li>
+                  
+                        <li>
+                            <a href="<?php echo $val['Link'] ?>" class="btn btn-social-icon btn-weibo">
+                                <i class="fa fa-weibo"></i>
+                            </a>
+                        </li>
+                  
+                 
+                        <li>
+                            <a href="<?php echo $val['Link'] ?>" class="btn btn-social-icon btn-instagram">
+                                <i class="fa fa-instagram"></i>
+                            </a> 
+                        </li> 
+                    </ul>
                     
                
             </ul>
