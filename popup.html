@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>popup demo</title>
+
+</head>
+    
+    
+    
+<body>
+    
+    
+
+<style>
+
+    
+        /* -------------------------------- 
+
+        ALL Style for pop up modal (Section 2's html code)
+
+        -------------------------------- */
+    
+    
+    
+    
+        .cd-popup .img-replace {/* replace THE top right corn CLOSE BUTTON text with an image X */ 
+          display: inline-block;
+          overflow: hidden;
+          text-indent: 100%;
+          color: transparent;
+          white-space: nowrap;
+        }
+        .cd-popup ul{
+            list-style-type: none;
+        }
+        .cd-popup a{
+            text-decoration: none;
+        }
+        .cd-popup {
+          z-index:999;
+          position: fixed;
+          left: 0;
+          top: 0;
+          height: 100%;
+          width: 100%;
+          background-color: rgba(94, 110, 141, 0.9);
+          opacity: 0;
+          visibility: hidden;
+          -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+          -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+          transition: opacity 0.3s 0s, visibility 0s 0.3s;
+          overflow: scroll;
+        }
+        .cd-popup.is-visible {
+          opacity: 1;
+          visibility: visible;
+          -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+          -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+          transition: opacity 0.3s 0s, visibility 0s 0s;
+        }
+
+        .cd-popup .cd-popup-container {
+          position: relative;
+          width: 90%;
+          max-width: 900px;
+          margin: 10px auto;
+          background: #FFF;
+          border-radius: .25em .25em .4em .4em;
+          text-align: center;
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+          -webkit-transform: translateX(-40px);
+          -moz-transform: translateX(-40px);
+          -ms-transform: translateX(-40px);
+          -o-transform: translateX(-40px);
+          transform: translateX(-40px);
+          /* Force Hardware Acceleration in WebKit */
+          -webkit-backface-visibility: hidden;
+          -webkit-transition-property: -webkit-transform;
+          -moz-transition-property: -moz-transform;
+          transition-property: transform;
+          -webkit-transition-duration: 0.3s;
+          -moz-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+
+        }
+        .cd-popup  .cd-popup-container p {
+          padding: 3em 1em;
+        }
+        .cd-popup  .cd-popup-container .cd-buttons:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        .cd-popup  .cd-popup-container .cd-buttons li {
+          float: left;
+          width: 50%;
+        }
+        .cd-popup .cd-popup-container .cd-buttons a {
+          display: block;
+          height: 60px;
+          line-height: 60px;
+          text-transform: uppercase;
+          color: #FFF;
+          -webkit-transition: background-color 0.2s;
+          -moz-transition: background-color 0.2s;
+          transition: background-color 0.2s;
+        }
+        .cd-popup  .cd-popup-container .cd-buttons li:first-child a {
+          background: #fc7169;
+          border-radius: 0 0 0 .25em;
+        }
+        .cd-popup .no-touch .cd-popup-container .cd-buttons li:first-child a:hover {
+          background-color: #fc8982;
+        }
+        .cd-popup  .cd-popup-container .cd-buttons li:last-child a {
+          background: #b6bece;
+          border-radius: 0 0 .25em 0;
+        }
+        .cd-popup .no-touch .cd-popup-container .cd-buttons li:last-child a:hover {
+          background-color: #c5ccd8;
+        }
+        .cd-popup .cd-popup-container .cd-popup-close {
+          position: absolute;
+          top: 8px;
+          right: 8px;
+          width: 30px;
+          height: 30px;
+        }
+        .cd-popup .cd-popup-container .cd-popup-close::before, .cd-popup-container .cd-popup-close::after {
+          content: '';
+          position: absolute;
+          top: 12px;
+          width: 14px;
+          height: 3px;
+          background-color: #8f9cb5;
+        }
+        .cd-popup .cd-popup-container .cd-popup-close::before {
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+          left: 8px;
+        }
+        .cd-popup .cd-popup-container .cd-popup-close::after {
+          -webkit-transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+          right: 8px;
+        }
+        .cd-popup.is-visible .cd-popup-container {
+          -webkit-transform: translateY(0);
+          -moz-transform: translateY(0);
+          -ms-transform: translateY(0);
+          -o-transform: translateY(0);
+          transform: translateY(0);
+        }
+        @media only screen and (min-width: 1170px) {
+          .cd-popup .cd-popup-container {
+            margin: 20px auto;
+          }
+        }
+
+    
+</style>    
+    
+    
+<!----------------------------- Section 1  ....... contain a button that pop up the modal--------------------------------------------------------------------------> 
+<!----------------------------- Section 1  ....... contain a button that pop up the modal-------------------------------------------------------------------------->   
+<!----------------------------- Section 1  ....... contain a button that pop up the modal-------------------------------------------------------------------------->   
+<!----------------------------- Section 1  ....... contain a button that pop up the modal-------------------------------------------------------------------------->   
+<!----------------------------- Section 1  ....... contain a button that pop up the modal-------------------------------------------------------------------------->   
+<!----------------------------- Section 1  ....... contain a button that pop up the modal-------------------------------------------------------------------------->   
+<!----------------------------- Section 1  ....... contain a button that pop up the modal-------------------------------------------------------------------------->    
+<!----------------------------- Section 1  ....... contain a button that pop up the modal-------------------------------------------------------------------------->   
+<!----------------------------- Section 1  ....... contain a button that pop up the modal-------------------------------------------------------------------------->   
+<!----------------------------- Section 1  ....... contain a button that pop up the modal-------------------------------------------------------------------------->   
+<!----------------------------- Section 1  ....... contain a button that pop up the modal-------------------------------------------------------------------------->   
+<!----------------------------- Section 1  ....... contain a button that pop up the modal-------------------------------------------------------------------------->   
+<div style="width:100%; height:100%;">
+    <button  style="display:block; width:200px; height:100px; margin:0 auto; font-size:30px;" class="cd-popup-trigger">  click me </button>
+    
+</div>
+
+
+
+
+<!----------------------------- Section 2  ....... The modal (popped up window on top of the section 1 's div)-----------------------------------------------------> 
+<!----------------------------- Section 2  ....... The modal (popped up window on top of the section 1 's div)-----------------------------------------------------> 
+<!----------------------------- Section 2  ....... The modal (popped up window on top of the section 1 's div)-----------------------------------------------------> 
+<!----------------------------- Section 2  ....... The modal (popped up window on top of the section 1 's div)-----------------------------------------------------> 
+<!----------------------------- Section 2  ....... The modal (popped up window on top of the section 1 's div)-----------------------------------------------------> 
+<!----------------------------- Section 2  ....... The modal (popped up window on top of the section 1 's div)-----------------------------------------------------> 
+<!----------------------------- Section 2  ....... The modal (popped up window on top of the section 1 's div)-----------------------------------------------------> 
+<!----------------------------- Section 2  ....... The modal (popped up window on top of the section 1 's div)-----------------------------------------------------> 
+<!----------------------------- Section 2  ....... The modal (popped up window on top of the section 1 's div)-----------------------------------------------------> 
+<!----------------------------- Section 2  ....... The modal (popped up window on top of the section 1 's div)-----------------------------------------------------> 
+<!----------------------------- Section 2  ....... The modal (popped up window on top of the section 1 's div)-----------------------------------------------------> 
+<div class="cd-popup">
+    <div class="cd-popup-container">
+        <div style="padding-bottom:30px;">
+            <div class="text-center" style="padding:20px;">Click the image to select the theme </div>
+                 
+            
+            <h3>Sea Life Park Dolphin plan B</h3>  <h3>Sea Life Park Dolphin plan B</h3>  <h3>Sea Life Park Dolphin plan B</h3>  <h3>Sea Life Park Dolphin plan B</h3>  <h3>Sea Life Park Dolphin plan B</h3>  <h3>Sea Life Park Dolphin plan B</h3>  <h3>Sea Life Park Dolphin plan B</h3>  <h3>Sea Life Park Dolphin plan B</h3>  <h3>Sea Life Park Dolphin plan B</h3>  <h3>Sea Life Park Dolphin plan B</h3>  <h3>Sea Life Park Dolphin plan B</h3>  <h3>Sea Life Park Dolphin plan B</h3>  <h3>Sea Life Park Dolphin plan B</h3>  <h3>Sea Life Park Dolphin plan B</h3>  <h3>Sea Life Park Dolphin plan B</h3>  <h3>Sea Life Park Dolphin plan B</h3>  <h3>Sea Life Park Dolphin plan B</h3>  <h3>Sea Life Park Dolphin plan B</h3>  <h3>Sea Life Park Dolphin plan B</h3>  <h3>Sea Life Park Dolphin plan B</h3>  <h3>Sea Life Park Dolphin plan B</h3>  <h3>Sea Life Park Dolphin plan B</h3>  <h3>Sea Life Park Dolphin plan B</h3>  <h3>Sea Life Park Dolphin plan B</h3>  <h3>Sea Life Park Dolphin plan B</h3>  <h3>Sea Life Park Dolphin plan B</h3>  <h3>Sea Life Park Dolphin plan B</h3>  <h3>Sea Life Park Dolphin plan B</h3> 
+           
+
+        </div>
+        <ul class="cd-buttons" style="padding-left:0px!important">
+                <li><a href="#0" id="default_theme_yes">Yes</a></li>
+                <li><a href="#0" id="default_theme_no">No</a></li>
+        </ul>
+            <a href="#0" class="cd-popup-close img-replace">Close</a>
+    </div> <!-- cd-popup-container -->
+</div> <!-- cd-popup -->
+
+
+    
+
+    
+</body>    
+    
+    
+    
+    
+    
+    
+
+
+<!-----------------------------------------Needed Jquery---------------------------------->   
+<!-----------------------------------------Needed Jquery---------------------------------->   
+<!-----------------------------------------Needed Jquery---------------------------------->   
+<!-----------------------------------------Needed Jquery---------------------------------->   
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+
+
+
+<!--------------Apply js into the button that you want to pop the window out-------------->
+<!--------------Apply js into the button that you want to pop the window out-------------->  
+<!--------------Apply js into the button that you want to pop the window out-------------->  
+<!--------------Apply js into the button that you want to pop the window out-------------->  
+<script>
+jQuery(document).ready(function($){
+	//open popup
+	$('.cd-popup-trigger').on('click', function(event){
+		event.preventDefault();
+		$('.cd-popup').addClass('is-visible');
+        $('html').css("overflow-y", "hidden");    // handle the double scrolling bar appeared issue
+	});
+	
+	//close popup
+	$('.cd-popup').on('click', function(event){
+		if( $(event.target).is('.cd-popup-close') || $(event.target).is('.cd-popup') ) {
+			event.preventDefault();
+			$(this).removeClass('is-visible');
+            $('html').css("overflow-y", "scroll");// handle the double scrolling bar appeared issue
+		}
+	});
+	//close popup when clicking the esc keyboard button
+	$(document).keyup(function(event){
+    	if(event.which=='27'){
+    		$('.cd-popup').removeClass('is-visible');
+                $('html').css("overflow-y", "scroll");// handle the double scrolling bar appeared issue
+	    }
+    });
+
+   
+});
+</script> 
+    
+    
+    
+
+</html>
