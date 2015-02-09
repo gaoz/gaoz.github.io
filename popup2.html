@@ -160,11 +160,32 @@
           -o-transform: translateY(0);
           transform: translateY(0);
         }
+       
         @media only screen and (min-width: 1170px) {
           .cd-popup .cd-popup-container {
             margin: 20px auto;
           }
+          
+          
         }
+       .ui-datepicker{
+            margin: 0 auto;
+            max-width:580px;
+            width:100%!important;
+            -box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+       @media (max-width: 767px) {
+          .ui-widget-content {
+                border: 1px solid white!important;
+               
+           }
+           .cd-popup .cd-popup-container {
+            width:98%;
+          }
+    
+       } 
 
        
 </style>    
@@ -220,7 +241,7 @@
                     background-position: 0px 0px!important;
                 }
             </style>
-            <div style="display:block; width:308px; height:auto; margin:0 auto;" id="datepicker"></div>     
+            <div style="display:block; width:100%; height:auto; margin:0 auto;" id="datepicker"></div>     
             
            
 
