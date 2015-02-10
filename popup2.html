@@ -12,187 +12,6 @@
 <body>
     
     
-
-<style>
-
-    
-        /* -------------------------------- 
-
-        ALL Style for pop up modal (Section 2's html code)
-
-        -------------------------------- */
-    
-    
-    
-    
-        .cd-popup .img-replace {/* replace THE top right corn CLOSE BUTTON text with an image X */ 
-          display: inline-block;
-          overflow: hidden;
-          text-indent: 100%;
-          color: transparent;
-          white-space: nowrap;
-        }
-        .cd-popup ul{
-            list-style-type: none;
-        }
-        .cd-popup a{
-            text-decoration: none;
-        }
-        .cd-popup {
-          z-index:999;
-          position: fixed;
-          left: 0;
-          top: 0;
-          height: 100%;
-          width: 100%;
-          background-color: rgba(94, 110, 141, 0.9);
-          opacity: 0;
-          visibility: hidden;
-          -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
-          -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
-          transition: opacity 0.3s 0s, visibility 0s 0.3s;
-          overflow: scroll;
-        }
-        .cd-popup.is-visible {
-          opacity: 1;
-          visibility: visible;
-          -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
-          -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
-          transition: opacity 0.3s 0s, visibility 0s 0s;
-        }
-
-        .cd-popup .cd-popup-container {
-          position: relative;
-          width: 90%;
-          max-width: 900px;
-          margin: 10px auto;
-          background: #FFF;
-          border-radius: .25em .25em .4em .4em;
-          text-align: center;
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-          -webkit-transform: translateX(-40px);
-          -moz-transform: translateX(-40px);
-          -ms-transform: translateX(-40px);
-          -o-transform: translateX(-40px);
-          transform: translateX(-40px);
-          /* Force Hardware Acceleration in WebKit */
-          -webkit-backface-visibility: hidden;
-          -webkit-transition-property: -webkit-transform;
-          -moz-transition-property: -moz-transform;
-          transition-property: transform;
-          -webkit-transition-duration: 0.3s;
-          -moz-transition-duration: 0.3s;
-          transition-duration: 0.3s;
-
-        }
-        .cd-popup  .cd-popup-container p {
-          padding: 3em 1em;
-        }
-        .cd-popup  .cd-popup-container .cd-buttons:after {
-          content: "";
-          display: table;
-          clear: both;
-        }
-        .cd-popup  .cd-popup-container .cd-buttons li {
-          float: left;
-          width: 50%;
-        }
-        .cd-popup .cd-popup-container .cd-buttons a {
-          display: block;
-          height: 60px;
-          line-height: 60px;
-          text-transform: uppercase;
-          color: #FFF;
-          -webkit-transition: background-color 0.2s;
-          -moz-transition: background-color 0.2s;
-          transition: background-color 0.2s;
-        }
-        .cd-popup  .cd-popup-container .cd-buttons li:first-child a {
-          color:#333;
-          background: #3af8a0;
-          border-radius: 0 0 0 .25em;
-        }
-        .cd-popup .no-touch .cd-popup-container .cd-buttons li:first-child a:hover {
-          background-color: #fc8982;
-        }
-        .cd-popup  .cd-popup-container .cd-buttons li:last-child a {
-          background: #b6bece;
-          border-radius: 0 0 .25em 0;
-        }
-        .cd-popup .no-touch .cd-popup-container .cd-buttons li:last-child a:hover {
-          background-color: #c5ccd8;
-        }
-        .cd-popup .cd-popup-container .cd-popup-close {
-          position: absolute;
-          top: 8px;
-          right: 8px;
-          width: 30px;
-          height: 30px;
-        }
-        .cd-popup .cd-popup-container .cd-popup-close::before, .cd-popup-container .cd-popup-close::after {
-          content: '';
-          position: absolute;
-          top: 12px;
-          width: 14px;
-          height: 3px;
-          background-color: #8f9cb5;
-        }
-        .cd-popup .cd-popup-container .cd-popup-close::before {
-          -webkit-transform: rotate(45deg);
-          -moz-transform: rotate(45deg);
-          -ms-transform: rotate(45deg);
-          -o-transform: rotate(45deg);
-          transform: rotate(45deg);
-          left: 8px;
-        }
-        .cd-popup .cd-popup-container .cd-popup-close::after {
-          -webkit-transform: rotate(-45deg);
-          -moz-transform: rotate(-45deg);
-          -ms-transform: rotate(-45deg);
-          -o-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-          right: 8px;
-        }
-        .cd-popup.is-visible .cd-popup-container {
-          -webkit-transform: translateY(0);
-          -moz-transform: translateY(0);
-          -ms-transform: translateY(0);
-          -o-transform: translateY(0);
-          transform: translateY(0);
-        }
-       
-        @media only screen and (min-width: 1170px) {
-          .cd-popup .cd-popup-container {
-            margin: 20px auto;
-          }
-          
-          
-        }
-       .ui-datepicker{
-            margin: 0 auto;
-            max-width:580px;
-            width:100%!important;
-            -box-sizing: border-box;
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-        }
-        .ui-widget-content {
-                border: 1px solid #ddd!important;
-               
-        }
-        @media (max-width: 767px) {
-          .ui-widget-content {
-                border: 1px solid white!important;
-               
-           }
-           .cd-popup .cd-popup-container {
-            width:98%;
-          }
-    
-        } 
-
-       
-</style>    
     
     
 <!----------------------------- Section 1  ....... contain a button that pop up the modal--------------------------------------------------------------------------> 
@@ -232,18 +51,7 @@
             <div class="text-center" style="padding:20px;"> </div>
             <h2>Select a date</h2>
             <style>
-                .ui-widget-header .ui-icon {
-                    
-                    }
-                .ui-icon-circle-triangle-e {
-                    background-image:  url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2214px%22%20height%3D%2214px%22%20viewBox%3D%220%200%2014%2014%22%20style%3D%22enable-background%3Anew%200%200%2014%2014%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20fill%3D%22%23FFF%22%20points%3D%2214%2C7%207%2C0%207%2C5%200%2C5%200%2C9%207%2C9%207%2C14%20%22%2F%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3C%2Fsvg%3E")!important;
-                   background-position: 0px 0px!important;
-                }
-                .ui-icon-circle-triangle-w {
-                     
-                    background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2214px%22%20height%3D%2214px%22%20viewBox%3D%220%200%2014%2014%22%20style%3D%22enable-background%3Anew%200%200%2014%2014%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20fill%3D%22%23FFF%22%20points%3D%227%2C5%207%2C0%200%2C7%207%2C14%207%2C9%2014%2C9%2014%2C5%20%22%2F%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3C%2Fsvg%3E")!important;
-                    background-position: 0px 0px!important;
-                }
+                
             </style>
             <div style="display:block; width:100%; height:auto; margin:0 auto;" id="datepicker"></div>     
             
@@ -251,8 +59,8 @@
 
         </div>
         <ul class="cd-buttons" style="padding-left:0px!important">
-                <li><a href="#0" id="default_theme_yes">Confirm</a></li>
-                <li><a href="#0" id="default_theme_no">Cancle</a></li>
+                <li><a href="popup4.html" id="default_theme_yes">Confirm</a></li>
+                <!--li><a href="#0" id="default_theme_no">Cancle</a></li-->
         </ul>
             <a href="#0" class="cd-popup-close img-replace">Close</a>
     </div> <!-- cd-popup-container -->
@@ -286,7 +94,7 @@
 <!--------------Apply js into the button that you want to pop the window out-------------->  
 <script>
 jQuery(document).ready(function($){
-	//open popup
+	//open popup 
 	$('.cd-popup-trigger').on('click', function(event){
 		event.preventDefault();
 		$('.cd-popup').addClass('is-visible');
@@ -313,12 +121,10 @@ jQuery(document).ready(function($){
 </script>
     
 <script>
+  // initial the date picker, this may edited to add chinese or format the calendar
   $(function() {
     $( "#datepicker" ).datepicker();
   });
 </script>
-    
-    
-    
 
 </html>
