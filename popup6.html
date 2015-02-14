@@ -47,21 +47,41 @@
 <!----------------------------- Section 2  ....... The modal (popped up window on top of the section 1 's div)-----------------------------------------------------> 
 <div class="cd-popup">
     <div class="cd-popup-container" >
-        <div style="padding-bottom:30px;">
+        <div style="padding-bottom:30px; font-size:0;">
             
             
-            <div class="" style="padding:20px;"> </div>
-            <div style="display:block;width:100%; ">
-                <div style="border-radius:3px; margin:10px; background-color:#f4b04f;">
+            <div  style="padding:20px;"> </div>
+            <style>
+                        @media (max-width: 767px) {
+                          
+                         .left-Checkout-Cart{
+                             width:100%!important;
+                         }
+                         .right-Checkout-Cart{
+                             width:100%!important;
+                         }
+                        }
+            </style>
+            <div  class="left-Checkout-Cart" style="display:inline-block; width:80%; vertical-align:top;">
+                <div  style="border-radius:3px; margin:10px; background-color:#f4b04f;">
                     <p style="padding-top:25px; padding-bottom:25px; color:white; font-size:20px;">You have 2 item(s) in your cart.</p>
                     
                 </div>
+               
+                
                 <div style="border-radius:3px; border: 1px solid #f4b04f; margin:10px; text-align:left; padding:10px; font-size:13px; font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif; color: #555;  ">
                      <div>
-                         <div style="margin-bottom:10px; display:inline-block; text-align:center; font-size:20px; background-color:#5bc0de; min-width:20px; width:auto; padding:5px; border-radius:2px; color:white;">1</div>
-                         <div style="display:inline-block; font-size:20px; ">Program Name Long Long Long Long Long Long Long Long Long</div>
+
+                         <div style=" float:right;"> <a><div style="border-radius:2px; text-align:center;  color:white; font-size:13px; padding:5px; height:100%; cursor:pointer; background-color:#5bc0de;">Delete</div></a>
+                         </div>
+                         <div style=" float:right;"><div style="font-size:20px; margin-right:10px;">$999.99</div>
+                         </div>
+                         
+                         <div style="margin-bottom:10px; display:inline-block; text-align:center; font-size:20px; background-color:#FA9253; min-width:20px; width:auto; padding:5px; border-radius:2px; color:white;">1</div>
+                         <div style="display:inline-block; font-size:20px; ">Program Name</div>
                          
                          <div>
+                         
                              <div style="display:inline-block;">
                                  <div style=" margin-top:5px; width:190px; height:190px; background:url(http://gaoz.github.io/asset/img/plan/tour6.jpg) center center; background-size:cover;"></div>
                              </div>
@@ -125,43 +145,330 @@
                          
                     </div>
                     <div>
+                        <div style="margin-bottom:5px; margin-top:5px; background-color:#f4b04f; width:auto; padding:5px; border-radius:2px; color:white;">Special Instruction: </div>
+                        关于小费：建议给小费，每人2美元，直接现付给司机即可。
+
+注；美国夏威夷法律规定，儿童必须配置儿童椅（7美元/个），当面付给司机就行。请亲们注意。
+                    </div> 
+                    <div>
+                        <div style="margin-bottom:5px; margin-top:5px; background-color:#f4b04f; width:auto; padding:5px; border-radius:2px; color:white;">Inclusions: </div>
+                        1.机场接送服务机场接送服务机场接送服务机场接送服务机场接送服务机场接送服务机场接送服务机场接送服务机场接送服务机场接送服务机场接送服务机场接送服务机场接送服务机场接送服务机场接送服务机场接送服务机场接送服务机场接送服务机场接送服务机场接送服务机场接送服务机场接送服务机场接送服务机场接送服务机场接送服务机场接送服务机场接送服务机场接送服务机场接送服务机场接送服务机场接送服务机场接送服务机场接送服务机场接送服务机场接送服务机场接送服务机场接送服务机场接送服务机场接送服务机场接送服务机场接送服务机场接送服务机场接送服务机场接送服务
+                    </div> 
+                     <div>
+                        <div style="margin-bottom:5px; margin-top:5px; background-color:#f4b04f; width:auto; padding:5px; border-radius:2px; color:white;">Exclusions: </div>
+                         1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费1.司机小费
+                    </div> 
+                   
+                    <div>
                         <div style="margin-top:5px; background-color:#f4b04f; width:auto; padding:5px; border-radius:2px; color:white;">How would you like to be picked up: </div>
-                           <form>
-                            <input type="radio" name="pickup"  >Picked up as a group.<br>
-                            <input type="radio" name="pickup"  >Picked up as an individual.<br>
-                            <input type="radio" name="pickup"  >We don't need it.
-                           </form>
+                        <form>
+                             <label style=" margin-right:10px;"><input type="radio" name="aname" value="">Picked up as a group.</label>
+                             <label style="margin-top:20px; margin-right:10px;"><input type="radio" name="aname" value="">Picked up as an individual. </label> 
+                             <label style="margin-top:20px; margin-right:10px;"><input type="radio" name="aname" value="">We don't need it. </label>             
+                        </form>
+                        
+                        <h4 style="color:red;">1. Show up blow when CHECKed Staying at the hotel, Also disable all the traportation options below for each person.</h4>            
+                        <div style=" border-radius:5px; border: 1px solid #FA9253;">
+                            <label style=" margin-right:10px;"><input type="radio" name="aname" value=""> Staying at the hotel</label>
+                            <label style="margin-top:20px; margin-right:10px;"><input type="radio" name="aname" value=""> Staying at other address </label>                                
+                            <h4 style="color:red;">1a. Show up blow when CHECKed Staying at the hotel</h4>            
+                            <div  style=" margin-left:10px; margin-top:10px;">
+                                    <form class="" role="form">
+
+                                         <div class="" style="margin:5px; margin-left:0px;">
+                                             <LABEL style=" display: inline-block; width: 100px; text-align: left;" for="">Hotel Name: </LABEL>
+                                             <INPUT type="text" id="" placeholder="Hotel Name"><BR>
+                                         </div>
+                                         <div class="" style="margin:5px; margin-left:0px;">
+                                             <LABEL style=" display: inline-block; width: 100px; text-align: left;" for="">Room Number: </LABEL>
+                                              <input type="RoomNumber" class="form-control" id="inputRoomNumber" placeholder="Room Number">
+                                         </div>
+                                    </form>
+                                    <div>  
+                                          <h3>We will be picking you up：</h3>
+                                          <div>Ala Moana-Mahukona St. 9:15:00 AM</div>
+                                          <br>
+                                          <div style="background:url(asset/img/etc/freo_pick_up_point.png) center center; background-size:cover; height:200px;"   height="200px" ></div>
+
+                                    </div>
+                            </div>
+
+
+                            <h4 style="color:red;">1b.Show up blow when CHECKed staying at other address</h4>            
+                            <div  style="  margin-left:10px; margin-top:10px;">
+                                    <div> Please let us know the address you will be staying. We will send you another email to confirm you with the pickup location.</div>
+                                    <form class="" role="form">
+                                         <div class="" style="margin:5px">
+                                             <LABEL style=" display: inline-block; width: 100px; text-align: left;" for="">Address: </LABEL>
+                                             <INPUT type="text" id="" placeholder="Example: 102 kalakawa Apt201, Honolulu, HI 96816"><BR>
+                                         </div>
+                                    </form>
+                            </div>        
+                        </div>
+
+
+                        <h4 style="color:red;">2. Show up blow when CHECKed Picked up as an individual or  we don't need it. if  selected we don't need it then disable all the traportation options below for each person.</h4>            
+                        <div class="" style=" padding:10px;border-radius:5px; border: 1px solid #FA9253; margin-bottom:20px; margin-left:5px; margin-top:10px;">
+                               <div> Please continue filling out the following information for each person.</div> 
+                               
+                        </div>
+                        
+                       
                     
                     </div>
+                    <style>
+                        @media (max-width: 767px) {
+                          .person{
+                              width:100%!important;
+                          }
+                        }
+                    </style>
                     <div style="font-size:0;">
-                        <div style="display:inline-block; width:50%;">
-                           <div style="font-size:13px; margin-top:5px; background-color:#78B88E; width:auto; padding:5px; border-radius:2px; border-top-right-radius:20px; border-bottom-right-radius:20px; color:white;">Adult 1 <span style=" position: absolute; right: 52%;"><button style="border-radius:5px; font-size:9px;">Delete</button></span></div>
-                           <form style="font-size:13px;">
-                                <input type="radio" name="pickup"  >Picked up as a group.<br>
-                                <input type="radio" name="pickup"  >Picked up as an individual.<br>
-                                <input type="radio" name="pickup"  >We don't need it.
-                           </form>
-
+                        <div class="person" style="display:inline-block; width:50%; vertical-align:top;">
+                            
+                            
+                            <div style="display:inline-block; width:90%;">    
+                               <div style="font-size:13px; margin-top:5px; background-color:#f4b04f; width:auto; padding:5px; border-radius:2px; border-top-right-radius:0px; border-bottom-right-radius:0px; color:white;">Adult 1 </div>
+                            </div>
+                            <div style="display:inline-block; width:10%;">
+                                <a><div style="text-align:center; border-top-right-radius:2px; border-bottom-right-radius:2px; color:white; font-size:13px; padding:5px; height:100%; cursor:pointer; background-color:#5bc0de; border-right:2px solid white">X</div></a>
+                            </div>
+                           
+                            <div style="display:inline-block; width:100%;">    
+                               <div style="font-size:13px; margin-top:10px; border-left:5px solid #FFC7A6; width:auto; padding:5px;  border-radius:5px; "> 
+                                   <div style="font-weight:bold; margin-bottom:10px;">Additonal Options For You (CheckBox Style)</div>
+                                   <form style="font-size:13px;">
+                                      <input type="checkbox" name="pickup"  >xxxx xxxx xx xxx xx xx.<br>
+                                      <input type="checkbox" name="pickup"  >xxxx xxxx xx xxx xx xx.<br>
+                                      <input type="checkbox" name="pickup"  >xxxx xxxx xx xxx xx xx.
+                                   </form>
+                                </div>
+                            </div>
+                            
+                            <div style="display:inline-block; width:100%;">    
+                               <div style="font-size:13px; margin-top:10px; border-left:5px solid #FFC7A6; width:auto; padding:5px;  border-radius:5px; "> 
+                                   <div style="font-weight:bold; margin-bottom:10px;">Additonal Options For You (Radio Style)</div>
+                                   <form style="font-size:13px;">
+                                      <input type="radio" name="pickup"  >xxxx xxxx xx xxx xx xx.<br>
+                                      <input type="radio" name="pickup"  >xxxx xxxx xx xxx xx xx.<br>
+                                      <input type="radio" name="pickup"  >xxxx xxxx xx xxx xx xx.
+                                   </form>
+                                </div>
+                            </div>
+                            
+                           
+                            
+                           
                         </div>
-                        <div style="display:inline-block; width:50%;">
-                            <div style="font-size:13px;  margin-top:5px; background-color:#78B88E; width:auto; padding:5px; border-radius:2px; border-top-right-radius:20px; border-bottom-right-radius:20px; color:white;">Adult 2 <span style=" position: absolute; right: 30px;"><button style="border-radius:5px; font-size:9px;">Delete</button></span></div>
-                            <form  style="font-size:13px;">
-                                <input type="radio" name="pickup"  >Picked up as a group.<br>
-                                <input type="radio" name="pickup"  >Picked up as an individual.<br>
-                                <input type="radio" name="pickup"  >We don't need it.
-                            </form>
+                        <div class="person" style="display:inline-block; width:50%; vertical-align:top;">
+                            
+                            
+                            
+                            <div style="display:inline-block; width:90%;">    
+                               <div style="font-size:13px; margin-top:5px; background-color:#f4b04f; width:auto; padding:5px; border-radius:2px; border-top-right-radius:0px; border-bottom-right-radius:0px; color:white;">Adult 2 </div>
+                            </div>
+                            <div style="display:inline-block; width:10%;">
+                                <a><div style="text-align:center; border-top-right-radius:2px; border-bottom-right-radius:2px;  color:white; font-size:13px; padding:5px; height:100%; cursor:pointer; background-color:#5bc0de; border-right:2px solid white">X</div></a>
+                            </div>
 
+                            <div style="display:inline-block; width:100%;">    
+                               <div style="font-size:13px; margin-top:10px; border-left:5px solid #FFC7A6; width:auto; padding:5px;  border-radius:5px; "> 
+                                   <div style="font-weight:bold; margin-bottom:10px;">Do you want xxx service?</div>
+                                   <form style="font-size:13px;">
+                                      <input type="checkbox" name="pickup"  >Yes (Check this box and show additional options below)<br>
+                                          <div style="margin:5px; margin-left:20px;">
+                                              <input type="checkbox" name="aname"  >xxxx xxxx xx xxx xx xx.<br>
+                                              <input type="checkbox" name="aname"  >xxxx xxxx xx xxx xx xx.<br>
+                                              <input type="checkbox" name="aname"  >more nested options 
+                                              <div style="margin:5px; margin-left:20px;">
+                                                  <input type="checkbox" name="aname"  >xxxx xxxx xx xxx xx xx.<br>
+                                                  <input type="checkbox" name="aname"  >xxxx xxxx xx xxx xx xx.<br>
+                                                  <input type="checkbox" name="aname"  >xxxx xxxx xx xxx xx xx.
+                                              </div>
+                                              <input type="checkbox" name="aname"  >xxxx xxxx xx xxx xx xx.<br>
+                                              <input type="checkbox" name="aname"  >xxxx xxxx xx xxx xx xx.<br>
+                                          </div>
+                                   </form>
+                                </div>
+                            </div>
+                            
+                            <div style="display:inline-block; width:100%;">    
+                               <div style="font-size:13px; margin-top:10px; border-left:5px solid #FFC7A6; width:auto; padding:5px;  border-radius:5px; "> 
+                                   <div style="font-weight:bold; margin-bottom:10px;">Select from this drop down list <br>(but do not use this if the option is too long)</div>
+                                   <select style="width:100%;">
+                                      <option value="">option1 option1 option1 option1 option1 option1 option1option1option1option1option1option1option1option1option1</option>
+                                      <option value="">option2</option>
+                                      <option value="">option3</option>
+                                      <option value="">option4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div style="display:inline-block; width:100%;">    
+                               <div style="font-size:13px; margin-top:10px; border-left:5px solid #FFC7A6; width:auto; padding:5px;  border-radius:5px; "> 
+                                   <div style="font-weight:bold; margin-bottom:10px;">Notes for this person</div>
+                                   <textarea style="width:100%;" class="form-control" rows="3"></textarea>
+                                </div>
+                            </div>
+                            
+                            <div style="display:inline-block; width:100%;">    
+                               <div style="font-size:13px; margin-top:10px; border-left:5px solid #FFC7A6; width:auto; padding:5px;  border-radius:5px; "> 
+                                    <h4 style="color:red;">Show up transportation when CHECKed Picked up as an individual.</h4>      
+                                   <div style="font-weight:bold; margin-bottom:10px;">Where will you stay?</div>                
+                                        <div class="">
+                                             <label style=" margin-right:10px;"><input type="radio" name="aname" value=""> Staying at the hotel</label>
+                                             <label style="margin-top:20px; margin-right:10px;"><input type="radio" name="aname" value=""> Staying at other address </label>                                
+                                             <h4 style="color:red;">Show up blow when CHECKed Staying at the hotel</h4>            
+                                             <div class="" style="margin-left:25px; margin-top:10px;">
+                                                        <form class="" role="form">
+
+                                                             <div class="" style="margin:5px; margin-left:0px;">
+                                                                 <LABEL style=" display: inline-block; width: 100px; text-align: left;" for="">Hotel Name: </LABEL>
+                                                                 <INPUT type="text" id="" placeholder="Hotel Name"><BR>
+                                                             </div>
+                                                             <div class="" style="margin:5px; margin-left:0px;">
+                                                                 <LABEL style=" display: inline-block; width: 100px; text-align: left;" for="">Room Number: </LABEL>
+                                                                  <input type="RoomNumber" class="form-control" id="inputRoomNumber" placeholder="Room Number">
+                                                             </div>
+                                                        </form>
+                                                        <div>  
+                                                              <h3>We will be picking you up：</h3>
+                                                              <div>Ala Moana-Mahukona St. 9:15:00 AM</div>
+                                                              <br>
+                                                              <div style="background:url(asset/img/etc/freo_pick_up_point.png) center center; background-size:cover; height:200px;"   height="200px" ></div>
+
+                                                        </div>
+                                                </div>
+
+
+                                                <h4 style="color:red;">Show up blow when CHECKed staying at other address</h4>            
+                                                <div class="" style="margin-left:25px; margin-top:10px;">
+                                                        <div> Please let us know the address you will be staying. We will send you another email to confirm you with the pickup location.</div>
+                                                        <form class="" role="form">
+                                                             <div class="" style="margin:5px">
+                                                                 <LABEL style=" display: inline-block; width: 100px; text-align: left;" for="">Address: </LABEL>
+                                                                 <INPUT type="text" id="" placeholder="Example: 102 kalakawa Apt201, Honolulu, HI 96816"><BR>
+                                                             </div>
+                                                        </form>
+                                                </div>        
+                                        </div>
+                                                               
+
+                                   
+                               </div>
+                            </div>
+                            
+                            
+                            
                         </div>
                     </div>
                     
-                </div>
+                    <div style="display:inline-block; width:100%;">    
+                         <div style="margin-bottom:5px; margin-top:5px; background-color:#f4b04f; width:auto; padding:5px; border-radius:2px; color:white;">Notes for this plan: </div>
+                              
+                         <textarea style="width:99%;" class="form-control" rows="3"></textarea>
+                    </div>
+                 
+                                
+                                
+                 </div>   <!--end of program 1-->            
+                 <div style="border-radius:3px; border: 1px solid #f4b04f; margin:10px; text-align:left; padding:10px; font-size:13px; font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif; color: #555;  ">
+                     <div>
+                         <div style=" float:right;"> <a><div style="border-radius:2px; text-align:center;  color:white; font-size:13px; padding:5px; height:100%; cursor:pointer; background-color:#5bc0de;">Delete</div></a>
+                         </div>
+                         <div style=" float:right;"><div style="font-size:20px; margin-right:10px;">$999.99</div>
+                         </div>
+                         <div style="margin-bottom:10px; display:inline-block; text-align:center; font-size:20px; background-color:#FA9253; min-width:20px; width:auto; padding:5px; border-radius:2px; color:white;">2</div>
+                         <div style="display:inline-block; font-size:20px; ">Program Name</div>
+                         
+                         <div>
+                         
+                             <div style="display:inline-block;">
+                                 <div style=" margin-top:5px; width:190px; height:190px; background:url(http://gaoz.github.io/asset/img/plan/tour6.jpg) center center; background-size:cover;"></div>
+                             </div>
+                             <div style="vertical-align:top; display:inline-block">
+                                 <div>
+                                     <div style="text-align:right;display:inline-block; margin-top:5px; background-color:#f4b04f; width:80px; padding:5px; border-radius:2px; color:white;">Option:</div>
+                                    <div style="display:inline-block;">Sample plan name long long long</div>
+                                 </div>
+                                 <div>
+                                     <div style="text-align:right; display:inline-block; margin-top:5px; background-color:#f4b04f; width:80px; padding:5px; border-radius:2px; color:white;">Date & Time:</div>
+                                    <div style="display:inline-block;">2014-09-05, 01:00 PM , 02:30 PM , 10:15 AM , 11:45 AM</div>
+                                 </div>
+                                 <div>
+                                     <div style="text-align:right; display:inline-block; margin-top:5px; background-color:#f4b04f; width:80px; padding:5px; border-radius:2px; color:white;">Duration:</div>
+                                    <div style="display:inline-block;">2 hour</div>
+                                 </div>
+                                 <div>
+                                     <div style="vertical-align:top; text-align:right; display:inline-block; margin-top:5px; background-color:#f4b04f; width:80px; padding:5px; border-radius:2px; color:white;">Pricing:</div>
+                                    <div style="display:inline-block; "> 
+                                        <div><span style="line-height:30px;">Adult(age:16-21)</span><span>   US$213.08/unit</span>
+                                                <span><select>
+                                                  <option value="1">1</option>
+                                                  <option value="2">2</option>
+                                                  <option value="3">3</option>
+                                                  <option value="4">4</option>
+                                                  </select>
+                                                </span>
+                                        </div>
+                                        <div><span style="line-height:30px;">Children(age:8-16)</span><span>    US$200.08/unit</span>
+                                                <span><select>
+                                                  <option value="1">1</option>
+                                                  <option value="2">2</option>
+                                                  <option value="3">3</option>
+                                                  <option value="4">4</option>
+                                                  </select>
+                                                </span>
+                                        </div>
+                                        <div><span style="line-height:30px;">Infant(age:0-7)</span><span>     US$188.08/unit</span>
+                                                <span><select>
+                                                  <option value="1">1</option>
+                                                  <option value="2">2</option>
+                                                  <option value="3">3</option>
+                                                  <option value="4">4</option>
+                                                  </select>
+                                                </span>
+                                        </div>
+                                        
+                                        <div><span style="line-height:30px;">Senior(age:60+)</span><span>    US$150.08/unit</span>
+                                                <span><select>
+                                                  <option value="1">1</option>
+                                                  <option value="2">2</option>
+                                                  <option value="3">3</option>
+                                                  <option value="4">4</option>
+                                                  </select>
+                                                </span>
+                                        </div>
+                                    </div>
+                                 </div>
+                             </div>
+                         </div>                  
+                     </div>                           
+                 </div> <!--end of program 2-->        
+                                
+                 <!--more programs-->                 
+                                
+            
                 
             
             
-            </div>
-        
-            
-            
+          </div> 
+          <div  class="left-Checkout-Cart"  style="display:inline-block; width:20%; vertical-align:top;">
+              <div  style="border-radius:3px; margin:10px; background-color:#b1f5a1;">
+                    <p style="padding-top:25px; padding-bottom:25px; color:#999; font-size:20px;">Total</p>
+                    
+              </div>
+               <div style="border-radius:3px; border: 1px solid #19ce19; margin:10px; text-align:left; padding:10px; font-size:13px; font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif; color: #555;  ">
+                   <div> Subtotal:</div>
+                   <div> US$400.00</div>
+                   <div> Tax:</div>
+                   <div> US$4.00</div>
+                   <div> Booking Total:</div>
+                   <div> US$ 404.00</div>
+                   <div><input style="width:100%;" class="form-control" id="" placeholder="Voucher#"></input></div>
+              </div>
+          </div>
+         
         </div>
         
         
