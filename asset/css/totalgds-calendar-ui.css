@@ -1463,3 +1463,8 @@ body .ui-tooltip {
 .cd-popup .cd-popup-back span {
     position: relative;
 }
+.cd-popup{
+    overflow-y: scroll;
+    overflow-x: hidden; 
+    -webkit-overflow-scrolling: touch;
+}
