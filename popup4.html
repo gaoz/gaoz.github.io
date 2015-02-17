@@ -407,6 +407,59 @@ jQuery(document).ready(function($){
  
 });
 </script>
-    
+<script>// this is keeping the right total panel on the screen no matter how you scroll it.
+  var $popup = $(".cd-popup");
+  var $container = $(".cd-popup-container");
+  var $checkout = $(".right-Checkout-Cart");
+  var left_maxheight  = $container.height();
+  var right_maxheight = $checkout.height();
+  var maxheight       = left_maxheight-right_maxheight;
+  var window_offset =  $popup.scrollTop(); 
+  var cart = document.getElementById("right-cart");
+  var screenwidth = $popup.width();
+  $(window).resize(function() {
+       
+       screenwidth = $popup.width();
+       if(screenwidth<768){
+        cart.style.marginTop = "0px";
+       }
+       window_offset =  $popup.scrollTop(); 
+       left_maxheight  = $container.height();
+       right_maxheight = $checkout.height();
+       maxheight       = left_maxheight-right_maxheight;
+
+  });
+  $(".cd-popup").scroll(function() {
+      if(screenwidth>767){
+          screenwidth = $popup.width();
+          window_offset =  $popup.scrollTop(); 
+     
+          if(window_offset>80){
+            if(window_offset<maxheight ){
+                window_offset = window_offset-80;
+                cart.style.marginTop = window_offset+"px";
+            }else{
+                cart.style.marginTop = left_maxheight-right_maxheight-105+"px";
+            }
+          }
+          else if(window_offset<81){
+             cart.style.marginTop = "0px";
+          }
+      }
+  });
+</script>
+<script>
+
+var doubleTouchStartTimestamp = 0;
+document.addEventListener("touchstart", function (event) {
+    var now = +(new Date());
+    if (doubleTouchStartTimestamp + 500 > now) {
+        event.preventDefault();
+        $(event.target).trigger('click');
+    }
+    doubleTouchStartTimestamp = now;
+});
+
+</script>    
 
 </html>

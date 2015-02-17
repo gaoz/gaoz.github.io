@@ -1409,7 +1409,7 @@ body .ui-tooltip {
 
 /* back button */
 .cd-popup .cd-popup-back{
-    color:#5bc0de;
+    color:#999;
     font-family: 'Raleway', Arial, sans-serif;
     font-weight: 700;
     font-size: 15px;
@@ -1445,17 +1445,17 @@ body .ui-tooltip {
 .cd-popup .cd-popup-back:before {
     font-size:20px;
     content: "«  ";
-    color: #5bc0de;;
+    color: #999;;
 }
 
 .cd-popup .cd-popup-back:hover, .cd-popup .cd-popup-back:focus {
-    color:#999;
+    color:#5bc0de;
   
  
 }
 
 .cd-popup .cd-popup-back:hover:before, .cd-popup .cd-popup-back:focus:before {
-    color:#999;
+    color:#5bc0de;
     
 
 }
