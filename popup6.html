@@ -765,6 +765,7 @@ jQuery(document).ready(function($){
   var left_maxheight = $container.height();
   var right_maxheight=$checkout.height();
   var maxheight = left_maxheight-right_maxheight;
+  var cart = document.getElementById("right-cart");
   $(".cd-popup").scroll(function() {
       var screenwidth = $popup.width();
       var window_offset =  $popup.scrollTop(); 
@@ -772,13 +773,13 @@ jQuery(document).ready(function($){
       if(window_offset>80 && screenwidth>767){
         if(window_offset<maxheight ){
             window_offset = window_offset-80;
-            document.getElementById("right-cart").style.marginTop = window_offset+"px";
+            cart.style.marginTop = window_offset+"px";
         }else{
-            document.getElementById("right-cart").style.marginTop = left_maxheight-right_maxheight-105+"px";
+            cart.style.marginTop = left_maxheight-right_maxheight-105+"px";
         }
       }
       else if(window_offset<81 || screenwidth<768){
-        document.getElementById("right-cart").style.marginTop = "0px";
+         cart.style.marginTop = "0px";
       }
   });
 </script>
