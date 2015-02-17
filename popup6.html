@@ -799,5 +799,18 @@ jQuery(document).ready(function($){
       }
   });
 </script>
+<script>
+
+var doubleTouchStartTimestamp = 0;
+document.addEventListener("touchstart", function (event) {
+    var now = +(new Date());
+    if (doubleTouchStartTimestamp + 500 > now) {
+        event.preventDefault();
+        $(event.target).trigger('click');
+    }
+    doubleTouchStartTimestamp = now;
+});
+
+</script>
 
 </html>
