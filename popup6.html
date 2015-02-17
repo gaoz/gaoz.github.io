@@ -718,7 +718,7 @@ jQuery(document).ready(function($){
 			event.preventDefault();
 			$(this).removeClass('is-visible');
             $('html').css("overflow-y", "scroll");// handle the double scrolling bar appeared issue
-            $('body').css("position", "fixed"); 
+            $('body').css("position", "static"); 
             //location.href='popup2.html';
 		}
 	});
@@ -727,7 +727,7 @@ jQuery(document).ready(function($){
     	if(event.which=='27'){
     		$('.cd-popup').removeClass('is-visible');
             $('html').css("overflow-y", "scroll");// handle the double scrolling bar appeared issue
-            $('body').css("position", "fixed"); 
+            $('body').css("position", "static"); 
             //location.href='popup2.html';
 	    }
     });
