@@ -782,16 +782,18 @@ jQuery(document).ready(function($){
       var screenwidth = $popup.width();
       window_offset =  $popup.scrollTop(); 
       console.log("offset"+window_offset+" window.screen.availWidth:"+screenwidth+" Maxheight:"+maxheight);
-      if(window_offset>80 && screenwidth>767){
-        if(window_offset<maxheight ){
-            window_offset = window_offset-80;
-            cart.style.marginTop = window_offset+"px";
-        }else{
-            cart.style.marginTop = left_maxheight-right_maxheight-105+"px";
-        }
-      }
-      else if(window_offset<81 && screenwidth>767){
-         cart.style.marginTop = "0px";
+      if(screenwidth>767){
+          if(window_offset>80){
+            if(window_offset<maxheight ){
+                window_offset = window_offset-80;
+                cart.style.marginTop = window_offset+"px";
+            }else{
+                cart.style.marginTop = left_maxheight-right_maxheight-105+"px";
+            }
+          }
+          else if(window_offset<81){
+             cart.style.marginTop = "0px";
+          }
       }
   });
 </script>
