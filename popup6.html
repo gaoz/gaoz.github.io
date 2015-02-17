@@ -780,10 +780,10 @@ jQuery(document).ready(function($){
        maxheight       = left_maxheight-right_maxheight;
   });
   $(".cd-popup").scroll(function() {
-      
-      screenwidth = $popup.width();
-      window_offset =  $popup.scrollTop(); 
       if(screenwidth>767){
+          screenwidth = $popup.width();
+          window_offset =  $popup.scrollTop(); 
+     
           if(window_offset>80){
             if(window_offset<maxheight ){
                 window_offset = window_offset-80;
