@@ -1201,16 +1201,14 @@ body .ui-tooltip {
 }
 
 
-/* NEW ADDED STYLE */
-/* NEW ADDED STYLE */
-/* NEW ADDED STYLE */
-/* NEW ADDED STYLE */
-/* NEW ADDED STYLE */
-/* NEW ADDED STYLE */
-/* NEW ADDED STYLE */
-/* NEW ADDED STYLE */
-/* NEW ADDED STYLE */
-/* NEW ADDED STYLE */
+/* NEW ADDED STYLE to calendar*/
+/* NEW ADDED STYLE to calendar*/
+/* NEW ADDED STYLE to calendar*/
+/* NEW ADDED STYLE to calendar*/
+/* NEW ADDED STYLE to calendar*/
+/* NEW ADDED STYLE to calendar*/
+/* NEW ADDED STYLE to calendar*/
+/* NEW ADDED STYLE to calendar*/
 
 .ui-icon-circle-triangle-e {
     background-image:  url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2214px%22%20height%3D%2214px%22%20viewBox%3D%220%200%2014%2014%22%20style%3D%22enable-background%3Anew%200%200%2014%2014%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20fill%3D%22%23FFF%22%20points%3D%2214%2C7%207%2C0%207%2C5%200%2C5%200%2C9%207%2C9%207%2C14%20%22%2F%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3C%2Fsvg%3E")!important;
@@ -1221,6 +1219,18 @@ body .ui-tooltip {
     background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2214px%22%20height%3D%2214px%22%20viewBox%3D%220%200%2014%2014%22%20style%3D%22enable-background%3Anew%200%200%2014%2014%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20fill%3D%22%23FFF%22%20points%3D%227%2C5%207%2C0%200%2C7%207%2C14%207%2C9%2014%2C9%2014%2C5%20%22%2F%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3C%2Fsvg%3E")!important;
     background-position: 0px 0px!important;
 }
+
+
+/*  STYLE to cd-popup*/
+/*  STYLE to cd-popup*/
+/*  STYLE to cd-popup*/
+/*  STYLE to cd-popup*/
+/*  STYLE to calendar*/
+/*  STYLE to cd-popup*/
+/*  STYLE to cd-popup*/
+/*  STYLE to cd-popup*/
+
+
 .cd-popup .img-replace {/* replace THE top right corn CLOSE BUTTON text with an image X */ 
   display: inline-block;
   overflow: hidden;
@@ -1399,30 +1409,25 @@ body .ui-tooltip {
 
 /* back button */
 .cd-popup .cd-popup-back{
-    color:white;
+    color:#5bc0de;
     font-family: 'Raleway', Arial, sans-serif;
-    text-transform: uppercase;
     font-weight: 700;
-    font-size: 12px;
-    line-height: 2.3; 
+    font-size: 15px;
     position: absolute;
     top: 10px;
     left: 8px;
    
 }
 .cd-popup .cd-popup-back {
-    background: rgb(250, 146, 83);
- 
     display: inline-block;
-    height: 28px;
-    line-height: 28px;
-    margin-left: 20px;
+    margin-left: 5px;
     margin-right: 2px;
     padding: 0 7px 0 3px;
     text-decoration: none;
+    
 }
 
-.cd-popup .cd-popup-back:before {
+/*.cd-popup .cd-popup-back:before {
     background: rgb(255, 199, 165);
     border: 0.5 solid rgb(250, 146, 83);
     content: '';
@@ -1436,16 +1441,22 @@ body .ui-tooltip {
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
     width: 21px;
+}*/
+.cd-popup .cd-popup-back:before {
+    font-size:20px;
+    content: "«  ";
+    color: #5bc0de;;
 }
 
 .cd-popup .cd-popup-back:hover, .cd-popup .cd-popup-back:focus {
-    color:white;
-    background: #35BFFC ;
+    color:#999;
+  
  
 }
 
 .cd-popup .cd-popup-back:hover:before, .cd-popup .cd-popup-back:focus:before {
-    background: #35BFFC ;
+    color:#999;
+    
 
 }
 

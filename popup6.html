@@ -670,7 +670,7 @@
         </ul>
             <a href="popup2.html" class="cd-popup-close img-replace">Close</a>
             <!--a href="popup2.html" class="cd-popup-back">Back to Calendar</a-->
-            <a href="popup2.html" class="cd-popup-back"><span>Back to Calendar</span></a>
+            <a href="popup2.html" class="cd-popup-back"><span>Back to calendar</span></a>
         
         
     </div> <!-- cd-popup-container -->
@@ -708,7 +708,8 @@ jQuery(document).ready(function($){
 	$('.cd-popup-trigger').on('click', function(event){
 		event.preventDefault();
 		$('.cd-popup').addClass('is-visible');
-        $('html').css("overflow-y", "hidden");    // handle the double scrolling bar appeared issue
+        $('html').css("overflow-y", "hidden"); 
+        $('body').css("position", "fixed"); // handle the double scrolling bar appeared issue
 	});
 	
 	//close popup
@@ -717,7 +718,8 @@ jQuery(document).ready(function($){
 			event.preventDefault();
 			$(this).removeClass('is-visible');
             $('html').css("overflow-y", "scroll");// handle the double scrolling bar appeared issue
-            location.href='popup2.html';
+            $('body').css("position", "fixed"); 
+            //location.href='popup2.html';
 		}
 	});
 	//close popup when clicking the esc keyboard button
@@ -725,7 +727,8 @@ jQuery(document).ready(function($){
     	if(event.which=='27'){
     		$('.cd-popup').removeClass('is-visible');
             $('html').css("overflow-y", "scroll");// handle the double scrolling bar appeared issue
-            location.href='popup2.html';
+            $('body').css("position", "fixed"); 
+            //location.href='popup2.html';
 	    }
     });
     // this is for skipping the click process in popup3.html page
@@ -758,7 +761,7 @@ jQuery(document).ready(function($){
     $( "#datepicker" ).datepicker();
   });
 </script>
-<script>
+<script>// this is keeping the right total panel on the screen no matter how you scroll it.
   var $popup = $(".cd-popup");
   var $container = $(".cd-popup-container");
   var $checkout = $(".right-Checkout-Cart");
