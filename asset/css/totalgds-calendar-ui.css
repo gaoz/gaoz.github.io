@@ -1291,6 +1291,9 @@ body .ui-tooltip {
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  -box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 
 }
 .cd-popup  .cd-popup-container p {
@@ -1468,3 +1471,4 @@ body .ui-tooltip {
     overflow-x: hidden; 
     -webkit-overflow-scrolling: touch;
 }
+
