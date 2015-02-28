@@ -1199,10 +1199,10 @@ body .ui-tooltip {
 /****************************** NEW ADDED STYLE to calendar***************************/
 /****************************** NEW ADDED STYLE to calendar***************************/
 .ui-widget-header {
-    border: 1px solid #FFFFFF;
-    background: #35BFFC!important;
-  
+    border: 1px solid #FFFFFF; 
     font-weight: normal;
+    color:white;
+    background-color:#7B7B7B;
 }
 
 .ui-widget {
@@ -1212,11 +1212,12 @@ body .ui-tooltip {
 }
 .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
     width: 34px;
-    height: 36px;
+    height: 34px;
+   /*  background-color:#00a9f4;*/
     
 }
 .ui-datepicker .ui-datepicker-prev:hover, .ui-datepicker .ui-datepicker-next:hover {
-    background-color:#09d;
+    background-color:#35BFFC;
 }
 .ui-icon-circle-triangle-e {
     background-image:  url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2214px%22%20height%3D%2214px%22%20viewBox%3D%220%200%2014%2014%22%20style%3D%22enable-background%3Anew%200%200%2014%2014%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20fill%3D%22%23FFF%22%20points%3D%2214%2C7%207%2C0%207%2C5%200%2C5%200%2C9%207%2C9%207%2C14%20%22%2F%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3C%2Fsvg%3E")!important;
@@ -1230,11 +1231,13 @@ body .ui-tooltip {
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
     border: 0px solid white!important;
     background:#e6e6e6; 
-
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active{
+    background:white; 
 }
 .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
     border: 0px solid #ddd!important;
-    background: #bae8fc;
+    background: #D3D3D3;
     color: #000;
 }
 .ui-datepicker th {
