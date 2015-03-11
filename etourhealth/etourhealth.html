@@ -35,6 +35,24 @@
             g('tbc_' + m + n).className = 'dis';
             g('tb_' + m + n).className = 'on';
         }
+
+        function HoverLii(m, n, counter) {
+            for (var i = 1; i <= counter; i++) {
+                g('iid' + m + i).className = '';
+                g('id' + m + i).className = '';
+            }
+            g('iid' + m + n).className = 'active';
+            g('id' + m + n).className = 'active';
+        }
+
+        function HoverLiii(m, n, counter) {
+            for (var i = 1; i <= counter; i++) {
+                g('section' + m + i).className = 'nodisplay';
+                g('mn_' + m + i).className = 'gg';
+            }
+            g('section' + m + n).className = 'active';
+            g('mn_' + m + n).className = 'a';
+        }
     </script>
     <script src="./etourhealth_files/jquery-week.js" type="text/javascript"></script>
     <script src="./etourhealth_files/common.js" type="text/javascript"></script>
@@ -51,6 +69,63 @@
     <script type="text/javascript" charset="utf-8" src="./etourhealth_files/helper-utils-moplus-monitor_95fef85.js" _md_="_anymoore_http://apps.bdimg.com/cloudaapi/pkg/helper-utils-moplus-monitor_95fef85.js"></script>
     <script type="text/javascript" charset="utf-8" src="./etourhealth_files/push-smartBar_42ac0c7.js" _md_="_anymoore_http://apps.bdimg.com/cloudaapi/pkg/push-smartBar_42ac0c7.js"></script>
     <script type="text/javascript" charset="utf-8" src="./etourhealth_files/app-socialshare_15393e1.js" _md_="_anymoore_http://apps.bdimg.com/cloudaapi/pkg/app-socialshare_15393e1.js"></script>
+    <style>
+        #section11.active {
+            display: block!important;
+        }
+        
+        #section11.nodisplay {
+            display: none!important;
+        }
+        
+        #section12.active {
+            display: block!important;
+        }
+        
+        #section12.nodisplay {
+            display: none!important;
+        }
+        
+        #section13.active {
+            display: block!important;
+        }
+        
+        #section13.nodisplay {
+            display: none!important;
+        }
+        
+        #section14.active {
+            display: block!important;
+        }
+        
+        #section14.nodisplay {
+            display: none!important;
+        }
+        
+        #section15.active {
+            display: block!important;
+        }
+        
+        #section15.nodisplay {
+            display: none!important;
+        }
+        
+        #section16.active {
+            display: block!important;
+        }
+        
+        #section16.nodisplay {
+            display: none!important;
+        }
+        
+        #section17.active {
+            display: block!important;
+        }
+        
+        #section17.nodisplay {
+            display: none!important;
+        }
+    </style>
 </head>
 
 <body class=" hPC" style="">
@@ -75,7 +150,7 @@
         <div id="hd">
             <div class="usa_header">
                 <div class="fl">
-                    <a href="" target="_blank" class="logo" title=""><img style="margin-top:-20px;"  src="./etourhealth_files/etourlogo4.png">
+                    <a href="" target="_blank" class="logo" title=""><img style="margin-top:-20px;" src="./etourhealth_files/etourlogo4.png">
                     </a>
                 </div>
                 <div class="fr">
@@ -100,23 +175,23 @@
             <div class="wp cl">
                 <div class="nav">
                     <ul>
-                        <li class="a" id="mn_portal"><a href="./etourhealth_files/etourhealth.html" hidefocus="true" target="_blank" title="">首页<span>首页</span></a>
+                        <li id="mn_11" class="a" onclick="HoverLiii(1,1,7)"><a style="cursor:pointer" hidefocus="true" target="_blank" title="">首页</a>
                         </li>
 
-                        <li id="mn_forum" onmouseover="" initialized="true" class=""><a href="" target="_blank" title="">产品购买<span>产品购买</span></a>
+                        <li id="mn_12" class="" onclick="HoverLiii(1,2,7)" initialized="true" class=""><a style="cursor:pointer" target="_blank" title="">产品购买</a>
                         </li>
 
-                        <li id="mn_P1" onmouseover="" initialized="true" class=""><a href="" target="_blank" hidefocus="true">服务项目</a>
+                        <li id="mn_13" class="" onclick="HoverLiii(1,3,7)" initialized="true" class=""><a style="cursor:pointer" target="_blank" hidefocus="true">服务项目</a>
                         </li>
 
-                        <li id="mn_P2" onmouseover="" initialized="true" class=""><a href="" target="_blank" hidefocus="true">医疗资源</a>
+                        <li id="mn_14" class="" onclick="HoverLiii(1,4,7)" initialized="true" class=""><a style="cursor:pointer" target="_blank" hidefocus="true">医疗资源</a>
                         </li>
 
-                        <li id="mn_P3" onmouseover="" initialized="true" class=""><a href="" target="_blank" hidefocus="true">新闻动态</a>
+                        <li id="mn_15" class="" onclick="HoverLiii(1,5,7)" initialized="true" class=""><a style="cursor:pointer" target="_blank" hidefocus="true">新闻动态</a>
                         </li>
-                        <li id="mn_P4" onmouseover="" initialized="true" class=""><a href="" target="_blank" hidefocus="true">关于我们</a>
+                        <li id="mn_16" class="" onclick="HoverLiii(1,6,8)" initialized="true" class=""><a style="cursor:pointer" target="_blank" hidefocus="true">关于我们</a>
                         </li>
-                        <li id="mn_P5" onmouseover="" initialized="true" class=""><a href="" target="_blank" hidefocus="true">联系我们</a>
+                        <li id="mn_17" class="" onclick="HoverLiii(1,7,9)" initialized="true" class=""><a style="cursor:pointer" target="_blank" hidefocus="true">联系我们</a>
                         </li>
                         <!--li id="mn_P6" onmouseover="" initialized="true" class=""><a href="http://www.taikangclub.com/japan/reading/" target="_blank" hidefocus="true">出国看病指南</a></li> 
              <li id="mn_P7" onmouseover="" initialized="true" class=""><a href="http://www.taikangclub.com/news/" target="_blank" hidefocus="true">厚朴健康速递</a></li-->
@@ -128,108 +203,110 @@
     </div>
 
 
+    <div id="section11" class="">
 
-    <div id="Slide" style="margin-top:2px;">
+        <div id="Slide" style="margin-top:2px;">
 
-        <div class="fullSlide">
+            <div class="fullSlide">
 
 
 
-            <div class="bd">
+                <div class="bd">
 
-                <ul style="position: relative; width: 1547px; height: 390px;">
+                    <ul style="position: relative; width: 1547px; height: 390px;">
 
-                    <li style="position: absolute; width: 1547px; left: 0px; top: 0px; display: none; background: url(etourhealth_files/banner1.png) 50% 0px no-repeat rgb(255, 255, 255);">
-                        <a target="_blank" href=""></a>
-                    </li>
+                        <li style="position: absolute; width: 1547px; left: 0px; top: 0px; display: none; background: url(etourhealth_files/banner1.png) 50% 0px no-repeat rgb(255, 255, 255);">
+                            <a target="_blank" href=""></a>
+                        </li>
 
-                    <li style="position: absolute; width: 1547px; left: 0px; top: 0px; display: none; background: url(etourhealth_files/banner2.png) 50% 0px no-repeat rgb(255, 255, 255);">
-                        <a target="_blank" href=""></a>
-                    </li>
+                        <li style="position: absolute; width: 1547px; left: 0px; top: 0px; display: none; background: url(etourhealth_files/banner2.png) 50% 0px no-repeat rgb(255, 255, 255);">
+                            <a target="_blank" href=""></a>
+                        </li>
 
-                    <li style="position: absolute; width: 1547px; left: 0px; top: 0px; display: none; background: url(etourhealth_files/banner3.png) 50% 0px no-repeat rgb(255, 255, 255);">
-                        <a target="_blank" href=""></a>
-                    </li>
+                        <li style="position: absolute; width: 1547px; left: 0px; top: 0px; display: none; background: url(etourhealth_files/banner3.png) 50% 0px no-repeat rgb(255, 255, 255);">
+                            <a target="_blank" href=""></a>
+                        </li>
 
-                    <li style="position: absolute; width: 1547px; left: 0px; top: 0px; display: list-item; background: url(etourhealth_files/banner4.png) 50% 0px no-repeat white;">
-                        <a target="_blank" href=""></a>
-                    </li>
-                    <!--li style="position: absolute; width: 1547px; left: 0px; top: 0px; display: none; background: url(http://www.taikangclub.com/templets/hopenoah/images/cctv1022a.jpg) 50% 0px no-repeat rgb(112, 123, 134);"><a target="_blank" href="http://www.taikangclub.com/news/event/20141023504.html"></a></li>
+                        <li style="position: absolute; width: 1547px; left: 0px; top: 0px; display: list-item; background: url(etourhealth_files/banner4.png) 50% 0px no-repeat white;">
+                            <a target="_blank" href=""></a>
+                        </li>
+                        <!--li style="position: absolute; width: 1547px; left: 0px; top: 0px; display: none; background: url(http://www.taikangclub.com/templets/hopenoah/images/cctv1022a.jpg) 50% 0px no-repeat rgb(112, 123, 134);"><a target="_blank" href="http://www.taikangclub.com/news/event/20141023504.html"></a></li>
 				
 				<li style="position: absolute; width: 1547px; left: 0px; top: 0px; display: none; background: url(http://www.taikangclub.com/templets/2014/banner/2.jpg) 50% 0px no-repeat rgb(4, 109, 167);"><a target="_blank" href="http://www.taikangclub.com/news/Media/2014062750.html"></a></li>
 				
                  <li style="position: absolute; width: 1547px; left: 0px; top: 0px; display: none; background: url(http://www.taikangclub.com/templets/hopenoah/images/tianya1022.jpg) 50% 0px no-repeat rgb(54, 107, 148);"><a target="_blank" href="http://www.taikangclub.com/news/event/20141023504.html"></a></li>
 				<li style="position: absolute; width: 1547px; left: 0px; top: 0px; display: none; background: url(http://www.taikangclub.com/templets/2014/banner/rrrr.jpg) 50% 0px no-repeat rgb(229, 222, 211);"><a target="_blank" href="http://www.taikangclub.com/zhuanti/qiangxiang/index.html"></a></li-->
 
-                </ul>
+                    </ul>
+
+                </div>
+
+
+
+                <div class="hd">
+                    <ul>
+                        <li class="">1</li>
+                        <li class="">2</li>
+                        <li class="">3</li>
+                        <!--li class="on">4</li><li class="">5</li><li class="">6</li><li class="">7</li><li class="">8</li-->
+                    </ul>
+                </div>
+
+                <span class="prev" style="opacity: 0.1568; display: inline;"></span>
+
+                <span class="next" style="opacity: 0.1568; display: inline;"></span>
 
             </div>
 
+            <script type="text/javascript">
+                /* 控制左右按钮显示 */
 
-
-            <div class="hd">
-                <ul>
-                    <li class="">1</li>
-                    <li class="">2</li>
-                    <li class="">3</li>
-                    <!--li class="on">4</li><li class="">5</li><li class="">6</li><li class="">7</li><li class="">8</li-->
-                </ul>
-            </div>
-
-            <span class="prev" style="opacity: 0.1568; display: inline;"></span>
-
-            <span class="next" style="opacity: 0.1568; display: inline;"></span>
-
-        </div>
-
-        <script type="text/javascript">
-            /* 控制左右按钮显示 */
-
-            jQuery(".fullSlide").hover(function () {
-                jQuery(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.5)
-            }, function () {
-                jQuery(this).find(".prev,.next").fadeOut()
-            });
+                jQuery(".fullSlide").hover(function () {
+                    jQuery(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.5)
+                }, function () {
+                    jQuery(this).find(".prev,.next").fadeOut()
+                });
 
 
 
-            /* 调用SuperSlide */
+                /* 调用SuperSlide */
 
-            jQuery(".fullSlide").slide({
-                titCell: ".hd ul",
-                mainCell: ".bd ul",
-                effect: "fold",
-                autoPlay: true,
-                autoPage: true,
-                trigger: "click",
+                jQuery(".fullSlide").slide({
+                    titCell: ".hd ul",
+                    mainCell: ".bd ul",
+                    effect: "fold",
+                    autoPlay: true,
+                    autoPage: true,
+                    trigger: "click",
 
-                startFun: function (i) {
+                    startFun: function (i) {
 
-                    var curLi = jQuery(".fullSlide .bd li").eq(i); /* 当前大图的li */
+                        var curLi = jQuery(".fullSlide .bd li").eq(i); /* 当前大图的li */
 
-                    if (!!curLi.attr("_src")) {
+                        if (!!curLi.attr("_src")) {
 
-                        curLi.css("background-image", curLi.attr("_src")).removeAttr("_src") /* 将_src地址赋予li背景，然后删除_src */
+                            curLi.css("background-image", curLi.attr("_src")).removeAttr("_src") /* 将_src地址赋予li背景，然后删除_src */
+
+                        }
 
                     }
 
-                }
+                });
+            </script>
 
-            });
-        </script>
+        </div>
 
-    </div>
 
-    <div id="container">
+        <div id="container">
 
-        <div class="main">
-            <div style="height:50px;">
+            <div class="main">
+                <div style="height:50px;">
 
-                <div class="hd3">
-                    <h3><a target="_blank" href="#"></a><a class="ab_r" href="" target="_blank"></a></h3>
+                    <div class="hd3">
+                        <h3><a target="_blank" href="#"></a><a class="ab_r" href="" target="_blank"></a></h3>
+                    </div>
                 </div>
-            </div>
-            <!--div class="navigation">
+                <!--div class="navigation">
 
  
 
@@ -245,580 +322,1073 @@
  
             <!--navigation-->
 
-            <div class="clear"></div>
+                <div class="clear"></div>
 
-            <div class="a_left">
+                <div class="a_left">
 
-                <div class="TB-focus" style="margin:0 auto">
-
-                    <div class="hd">
-
-                        <ul>
-
-                            <li class="on">1</li>
-
-                            <li class="">2</li>
-
-                            <li class="">3</li>
-
-                            <li class="">4</li>
-                           
-                        </ul>
-
-                    </div>
-
-                    <div class="bd">
-
-                        <ul style="position: relative; width: 278px; height: 330px;">
-                            <li style="position: absolute; width: 278px; left: 0px; top: 0px; display: list-item;">
-                                <a href="" target="_blank"><img src="./etourhealth_files/adv1.png" width="280" height="330">
-                                </a>
-                            </li>
-                            <li style="position: absolute; width: 278px; left: 0px; top: 0px; display: none;">
-                                <a href="" target="_blank"><img src="./etourhealth_files/adv2.png" width="280" height="330">
-                                </a>
-                            </li>
-
-                            <li style="position: absolute; width: 278px; left: 0px; top: 0px; display: none;">
-                                <a href="" target="_blank"><img src="./etourhealth_files/adv3.png" width="280" height="330">
-                                </a>
-                            </li>
-
-                            <li style="position: absolute; width: 278px; left: 0px; top: 0px; display: none;">
-                                <a href="l" target="_blank"><img src="./etourhealth_files/adv4.png" width="280" height="330">
-                                </a>
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-                </div>
-
-                <script type="text/javascript">
-                    jQuery(".TB-focus").slide({
-                        mainCell: ".bd ul",
-                        effect: "fold",
-                        autoPlay: true,
-                        delayTime: 200
-                    });
-                </script>
-
-            </div>
-
-            <div class="a_mid">
-
-                <div class="hotnews">
-
-                    <div class="hotnews_t">
-
-                        <h1><a href="">美国医疗旅游第一品牌</a></h1>
-
-                        <p>易途国际有限公司总部设立在美国夏威夷。成立至今大力发展中国游客赴美医疗旅游的项目。我公司陆续和多家美国优秀的医疗团队以及医疗保险公司签署了战略合作 协议，搭建了中美先进医疗唯一的桥梁...<a href="">[详细]</a>
-                        </p>
-
-                    </div>
-
-                    <div class="hotnews_b">
+                    <div class="TB-focus" style="margin:0 auto">
 
                         <div class="hd">
 
                             <ul>
 
-                                <li class="on" id="tb_11"><span>热点新闻</span>
-                                </li>
+                                <li class="on">1</li>
 
-                                <!--li class="" id="tb_12" onmouseover="HoverLi(1,2,2);"><span>媒体聚焦</span></li-->
+                                <li class="">2</li>
+
+                                <li class="">3</li>
+
+                                <li class="">4</li>
 
                             </ul>
 
-                            <div class="clear"></div>
-
                         </div>
 
-                        <div class="dis" id="">
+                        <div class="bd">
 
-                            <div class="bd">
-                                <ul>
-                                    <li><span><a href="" title="美国大概有70%的肿瘤病人需要做放射治疗">美国FDA 2014 年批准的新药</a></span><cite>01-22</cite>
-                                    </li>
-                                    <li><span><a href="" title="柴静女儿未出生患肿瘤-美国的先进医疗！中国的雾霭!">美国2013年FDA新药</a></span><cite>01-22</cite>
-                                    </li>
-                                    <li><span><a href="" title="论出国看病行业中的“李鬼”！">中国女子翻越鸿沟 赴美国看病记</a></span><cite>12-07</cite>
-                                    </li>
-                                    <li><span><a href="" title="震惊：中国丙肝患者约四千万 逾九成就诊者已至晚期">医疗观光盛行 中国人海外买健康</a></span><cite>09-15</cite>
-                                    </li>
-                                    <li><span><a href="" title="罕见病患者，路在何方？">基因测序开闸 千亿商机抢滩</a></span><cite>08-05</cite>
-                                    </li>
-                                    <li><span><a href="" title="汇总：FDA授予突破性疗法认定药物，癌症类占43%">中国海外代购抗癌药为何大受欢迎？</a></span><cite>07-28</cite>
-                                    </li>
+                            <ul style="position: relative; width: 278px; height: 330px;">
+                                <li style="position: absolute; width: 278px; left: 0px; top: 0px; display: list-item;">
+                                    <a href="" target="_blank"><img src="./etourhealth_files/adv1.png" width="280" height="330">
+                                    </a>
+                                </li>
+                                <li style="position: absolute; width: 278px; left: 0px; top: 0px; display: none;">
+                                    <a href="" target="_blank"><img src="./etourhealth_files/adv2.png" width="280" height="330">
+                                    </a>
+                                </li>
 
-                                </ul>
+                                <li style="position: absolute; width: 278px; left: 0px; top: 0px; display: none;">
+                                    <a href="" target="_blank"><img src="./etourhealth_files/adv3.png" width="280" height="330">
+                                    </a>
+                                </li>
 
-                            </div>
+                                <li style="position: absolute; width: 278px; left: 0px; top: 0px; display: none;">
+                                    <a href="l" target="_blank"><img src="./etourhealth_files/adv4.png" width="280" height="330">
+                                    </a>
+                                </li>
+
+                            </ul>
 
                         </div>
-
-                       
-                        <div class="clear"></div>
 
                     </div>
 
                     <script type="text/javascript">
-                        jQuery(".hasMoreTab").slide({
-                            mainCell: ".conWrap",
-                            targetCell: ".more a",
-                            effect: "fold"
+                        jQuery(".TB-focus").slide({
+                            mainCell: ".bd ul",
+                            effect: "fold",
+                            autoPlay: true,
+                            delayTime: 200
                         });
                     </script>
 
                 </div>
 
-            </div>
+                <div class="a_mid">
 
-            <div class="a_right">
+                    <div class="hotnews">
 
-                <div class="introduction">
+                        <div class="hotnews_t">
 
-                    <div class="title" style="background-color:#248AE0;">
-                        <h1><i></i>医疗资源</h1> <a href="#">更多&gt;&gt;</a>
-                    </div>
+                            <h1><a href="">美国医疗旅游第一品牌</a></h1>
 
-                    <ul class="huodong">
+                            <p>易途国际有限公司总部设立在美国夏威夷。成立至今大力发展中国游客赴美医疗旅游的项目。我公司陆续和多家美国优秀的医疗团队以及医疗保险公司签署了战略合作 协议，搭建了中美先进医疗唯一的桥梁...<a href="">[详细]</a>
+                            </p>
 
+                        </div>
 
-                        <li>
+                        <div class="hotnews_b">
 
-                            <a href="#"><img src="./etourhealth_files/radv1.jpg" style="object-fit: cover;" alt="会员服务流程">
-                            </a>
+                            <div class="hd">
 
-                            <h3><a href="#">会员服务流程</a></h3>
+                                <ul>
 
-                            <p>在e途健康美国医疗服务网，直接购买会员证、购买美国新药或赴美就医...</p>
+                                    <li class="on" id="tb_11"><span>热点新闻</span>
+                                    </li>
 
-                        </li>
+                                    <!--li class="" id="tb_12" onmouseover="HoverLi(1,2,2);"><span>媒体聚焦</span></li-->
 
+                                </ul>
 
-                        <li>
+                                <div class="clear"></div>
 
-                            <a href="#"><img src="./etourhealth_files/radv2.jpg" style="object-fit: cover;" alt="全美医疗资源网络">
-                            </a>
+                            </div>
 
-                            <h3><a href="http://www.taikangclub.com/zhuanti/qiangxiang/">全美医疗资源网络</a></h3>
+                            <div class="dis" id="">
 
-                            <p>我们的定点医院和定点医生遍布在全美50个州的医疗网络，超过4600家医院...</p>
+                                <div class="bd">
+                                    <ul>
+                                        <li><span><a href="" title="美国大概有70%的肿瘤病人需要做放射治疗">美国FDA 2014 年批准的新药</a></span><cite>01-22</cite>
+                                        </li>
+                                        <li><span><a href="" title="柴静女儿未出生患肿瘤-美国的先进医疗！中国的雾霭!">美国2013年FDA新药</a></span><cite>01-22</cite>
+                                        </li>
+                                        <li><span><a href="" title="论出国看病行业中的“李鬼”！">中国女子翻越鸿沟 赴美国看病记</a></span><cite>12-07</cite>
+                                        </li>
+                                        <li><span><a href="" title="震惊：中国丙肝患者约四千万 逾九成就诊者已至晚期">医疗观光盛行 中国人海外买健康</a></span><cite>09-15</cite>
+                                        </li>
+                                        <li><span><a href="" title="罕见病患者，路在何方？">基因测序开闸 千亿商机抢滩</a></span><cite>08-05</cite>
+                                        </li>
+                                        <li><span><a href="" title="汇总：FDA授予突破性疗法认定药物，癌症类占43%">中国海外代购抗癌药为何大受欢迎？</a></span><cite>07-28</cite>
+                                        </li>
 
-                        </li>
+                                    </ul>
 
+                                </div>
 
-                        <li>
+                            </div>
 
-                            <a href="#"><img src="./etourhealth_files/radv3.jpg" style="object-fit: cover;" alt="肿瘤治疗中心">
-                            </a>
-
-                            <h3><a href="http://www.taikangclub.com/zt/j_health">肿瘤治疗中心</a></h3>
-
-                            <p>美国国家肿瘤中心将全美最好的肿瘤临床研究中心设立成肿瘤治疗卓越中心...</p>
-
-                        </li>
-
-
-
-
-
-                    </ul>
-
-
-
-                </div>
-
-            </div>
-
-
-
-            <div class="w1000">
-
-                <div class="hd3">
-                    <h3><a target="_blank" href="http://www.taikangclub.com/#">产品购买</a><a class="ab_r" href="http://www.taikangclub.com/usa/" target="_blank">更多产品</a></h3>
-                </div>
-
-                <div class="b_left">
-
-                    <div class="t1_mid">
-
-                        <div class="news2">
-
-                            <ul>
-
-                                <li class="on" id="tb_31" onmouseover="HoverLi(3,1,7);"><span>美国医疗会员卡</span>
-                                </li>
-
-                                <li class="" id="tb_32" onmouseover="HoverLi(3,2,7);"><span>美国新药和特效药</span>
-                                </li>
-
-                                <li class="" id="tb_33" onmouseover="HoverLi(3,3,7);"><span>关节炎PRP疗法</span>
-                                </li>
-
-                                <li class="" id="tb_34" onmouseover="HoverLi(3,4,7);"><span>丙肝新药Havoni</span>
-                                </li>
-
-                                <li class="" id="tb_35" onmouseover="HoverLi(3,5,7);"><span>赴美就医预约</span>
-                                </li>
-
-                                <li class="" id="tb_36" onmouseover="HoverLi(3,6,7);"><span>第二医疗意见预约</span>
-                                </li>
-
-                                <li class="" id="tb_37" onmouseover="HoverLi(3,7,7);"><span>美国就医全程陪预约</span>
-                                </li>
-
-                            </ul>
 
                             <div class="clear"></div>
 
                         </div>
 
-                        <div class="dis" id="tbc_31">
-
-                            <div class="main2">
-                                <div class="title" style="color:red;"><span><a href=""></a></span>【会员服务】美国医疗会员卡</div>
-
-                                <div style="border-bottom:1px dashed #ccc;">
-                                    <div style="display:inline-block; width:220px; height:130px; background-image:url(etourhealth_files/pro1.jpg); background-position:center top; background-size:cover; "></div>
-                                    <div style="vertical-align:top; display:inline-block; width:230px; height:100px; ">
-                                        <div style="text-align:center; vertical-align:top; padding-top:40px;padding-bottom:20px; display:block; width:230px; font-size:20px;">定价 ¥ 10000.00 起 </div>
-                                        <a href="#">
-                                            <div style="vertical-align:top; display:block; width:250px; height:100px; ">
-                                                <div style="text-align:center; padding:10px 20px; background-color:#d54a29 ; color:white;">立刻订购</div>
-                                            </div>
-                                        </a>
-
-                                    </div>
-                                </div>
-
-                                <div class="m2box_t">
-
-                                    <h2><a href="" title="">【会员服务】美国医疗会员卡</a></h2>
-                                    <p><a href="">拥有我们美国医疗会员卡金卡的会员可享受美国看病预约、美国看病75折优惠，药品高达25折优惠，健康检查服务，远程医疗面诊、就医绿色通道、医疗专员服务。</a>
-                                    </p>
-                                    <h2><a href="" title="">美国医疗会员卡福利一览表</a></h2>
-                                    <p><a href="">我们的美国医疗会员卡为年卡。成为我们的会员后，您可以享受我们提供的美国看病免费预约、美国医疗费用报销、健康检查、远程医疗咨询服务. </a>
-                                    </p>
-
-                                </div>
-
-                               
-                            </div>
-
-                        </div>
-
-                        <div class="undis" id="tbc_32">
-                            <div class="main2">
-
-                                <div class="title" style="color:red;"><span><a href=""></a></span>【会员服务】购买美国2013-2014新药和特效药</div>
-
-
-                                <div style="border-bottom:1px dashed #ccc;">
-                                    <div style="display:inline-block; width:220px; height:130px; background-image:url(etourhealth_files/pro2.jpg); background-position:center center; background-size:cover; "></div>
-                                    <div style="vertical-align:top; display:inline-block; width:230px; height:100px; ">
-                                        <div style="text-align:center; vertical-align:top; padding-top:40px;padding-bottom:20px; display:block; width:230px; font-size:20px;">定价 ¥ 4000.00 起 </div>
-                                        <a href="#">
-                                            <div style="vertical-align:top; display:block; width:250px; height:100px; ">
-                                                <div style="text-align:center; padding:10px 20px; background-color:#d54a29 ; color:white;">立刻订购</div>
-                                            </div>
-                                        </a>
-
-                                    </div>
-                                </div>
-
-
-
-                                <div class="m2box_t">
-
-                                    <h2><a href="" title="">简介</a></h2>
-                                    <p><a href="">美国FDA批准的新药、特效药和疗法一般在18个月到2-3年才在国内SFDA药监局批准上市。对于到美国旅游的客人，美国就医网可以帮助你您通过找到美国医生远程视频门诊或面对面门诊开处方，以优惠折扣价购买处方药和需要处方药的健康营养品。MedTravel 通过定点医院和医生网络可以为病人开具处方，病人可以放心在美国买到最新出品的、国内没有上市的新药和特效药，帮助病人早日药到病除，回复健康，享受美好的生活。</a>
-                                    </p>
-
-
-
-
-
-
-
-                                </div>
-
-                            </div>
-
-
-                        </div>
-
-                        <div class="undis" id="tbc_33">
-                            <div class="main2">
-
-                                <div class="title"  style="color:red"><span><a href=""></a></span>【特色医疗】关节炎PRP疗法</div>
-
-                                <div style="border-bottom:1px dashed #ccc;">
-                                    <div style="display:inline-block; width:220px; height:130px; background-image:url(etourhealth_files/pro3.jpg); background-position:center center; background-size:cover; "></div>
-                                    <div style="vertical-align:top; display:inline-block; width:230px; height:100px; ">
-                                        <div style="text-align:center; vertical-align:top; padding-top:40px;padding-bottom:20px; display:block; width:230px; font-size:20px;">定价 ¥ 11688.00 起 </div>
-                                        <a href="#">
-                                            <div style="vertical-align:top; display:block; width:250px; height:100px; ">
-                                                <div style="text-align:center; padding:10px 20px; background-color:#d54a29 ; color:white;">立刻订购</div>
-                                            </div>
-                                        </a>
-
-                                    </div>
-                                </div>
-                                <div class="m2box_t">
-
-                                    <h2><a href="" title="">简介</a></h2>
-                                    <p><a href="">PRP技术通过一种离心装置把血液中的富含血小板的血浆收集，然后把富含大量生长因子的血小板注射回患者体内，对组织中细胞和基质的再生起到促进作用，从而加速组织修复。整个技术由抽血至注射仅需要20分钟左右。PRP疗法是退化性关节炎的救星。无需开刀，没有伤口，无需修复期。而且因为是自己的血液，不存在排斥与副作用，即使是高血脂病人也能做。这项新技术近10年来在欧美被广泛应用。</a>
-                                    </p>
-
-                                </div>
-
-                            </div>
-
-
-                        </div>
-
-                        <div class="undis" id="tbc_34">
-                            <div class="main2">
-                                <div class="title" style="color:red"><span><a href=""></a></span>到美国购买丙肝新药Havoni</div>
-                                <div style="border-bottom:1px dashed #ccc;">
-                                    <div style="display:inline-block; width:220px; height:130px; background-image:url(etourhealth_files/pro4.jpg); background-position:center center; background-size:contain; "></div>
-                                    <div style="vertical-align:top; display:inline-block; width:230px; height:100px; ">
-                                        <div style="text-align:center; vertical-align:top; padding-top:40px;padding-bottom:20px; display:block; width:230px; font-size:20px;">定价 ¥ 225000.00 起 </div>
-                                        <a href="#">
-                                            <div style="vertical-align:top; display:block; width:250px; height:100px; ">
-                                                <div style="text-align:center; padding:10px 20px; background-color:#d54a29 ; color:white;">立刻订购</div>
-                                            </div>
-                                        </a>
-
-                                    </div>
-                                </div>
-                                <div class="m2box_t">
-                                    <h2 ><a href="" title="">简介</a></h2>
-                                    <p><a href=""> Harvoni是首个获批用于治疗慢性基因1型丙肝病毒感染的复方制剂，也是首个获批的无需联合干扰素或者利巴韦林的药物。Harvoni和Sovaldi（索非布韦）由总部设在加州福斯特市的吉利德公司上市。</a>
-                                    </p>
-                                    <h2 style="padding-top:1px;"><a href="" title=""></a></h2>
-                                    <p><a href="">1.帮助病人拿到美国医生处方；2.联系美国药店按疗程拿药；3.协助安排行程；4.新药的折扣是7.5折。</a>
-                                    </p>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="undis" id="tbc_35">
-                            <div class="main2">
-                                <div class="title"><span><a href=""></a></span>【会员服务】赴美就医预约</div>
-                                <div style="border-bottom:1px dashed #ccc;">
-                                    <div style="display:inline-block; width:220px; height:130px;  background-image:url(etourhealth_files/pro5.jpg); background-position:center center; background-size:cover; "></div>
-                                    <div style="vertical-align:top; display:inline-block; width:230px; height:100px; ">
-                                        <div style="text-align:center; vertical-align:top; padding-top:40px;padding-bottom:20px; display:block; width:230px; font-size:20px;">免费预约</div>
-                                        <a href="#">
-                                            <div style="vertical-align:top; display:block; width:250px; height:100px; ">
-                                                <div style="text-align:center; padding:10px 20px; background-color:#d54a29 ; color:white;">立刻订购</div>
-                                            </div>
-                                        </a>
-
-                                    </div>
-                                </div>
-                                <div class="m2box_t">
-                                    <h2 ><a href="" title="">简介</a></h2>
-                                    <p><a href=""> 您就医后，可以在此选择就医日期、就诊医院、和医生。我们收到您的预约后，会跟您联系，安排旅程。。</a>
-                                    </p>
-                                   
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="undis" id="tbc_36">
-
-                            <div class="main2">
-
-                                <div class="title"><span><a href=""></a></span>【会员服务】第二医疗意见预约</div>
-
-                                <div style="border-bottom:1px dashed #ccc;">
-                                    <div style="display:inline-block; width:220px; height:130px; background-repeat:no-repeat; background-image:url(etourhealth_files/pro6.jpg); background-position:center center; background-size:contain; "></div>
-                                    <div style="vertical-align:top; display:inline-block; width:230px; height:100px; ">
-                                        <div style="text-align:center; vertical-align:top; padding-top:40px;padding-bottom:20px; display:block; width:230px; font-size:20px;">免费预约 </div>
-                                        <a href="#">
-                                            <div style="vertical-align:top; display:block; width:250px; height:100px; ">
-                                                <div style="text-align:center; padding:10px 20px; background-color:#d54a29 ; color:white;">立刻订购</div>
-                                            </div>
-                                        </a>
-
-                                    </div>
-                                </div>
-                                <div class="m2box_t">
-                                    <h2 ><a href="" title="">简介</a></h2>
-                                    <p><a href=""> 第二医疗意见服务是在个人罹患疾病或遭受意外伤害并已经获得诊断（也就是第一医疗意见）的基础上，咨询遍布世界各地的顶尖级医疗机构所组成的咨询网络，向您提供专业书面医疗建议。主要针对危及生命或改变生命状态的疾病，如癌症、良性肿瘤、先天性心脏疾病等。</a>
-                                    </p>
-                                    
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="undis" id="tbc_37">
-
-                            <div class="main2">
-
-                                <div class="title"><span><a href=""></a></span>【会员服务】美国就医全程陪预约</div>
-
-                                <div style="border-bottom:1px dashed #ccc;">
-                                    <div style="display:inline-block; width:220px; height:130px;  background-image:url(etourhealth_files/pro7.jpg); background-position:center center; background-size:cover; "></div>
-                                    <div style="vertical-align:top; display:inline-block; width:230px; height:100px; ">
-                                        <div style="text-align:center; vertical-align:top; padding-top:40px;padding-bottom:20px; display:block; width:230px; font-size:20px;">免费预约 </div>
-                                        <a href="#">
-                                            <div style="vertical-align:top; display:block; width:250px; height:100px; ">
-                                                <div style="text-align:center; padding:10px 20px; background-color:#d54a29 ; color:white;">立刻订购</div>
-                                            </div>
-                                        </a>
-
-                                    </div>
-                                </div>
-                                <div class="m2box_t">
-                                    <h2 ><a href="" title="">简介</a></h2>
-                                    <p><a href="">为您或您的家人打造舒心就医之旅，我们派专人全程陪同，在您就医之旅行前、行中、行后，解决所有遇到的问题，提供就医所需的各种服务，包括办理文件、杂费支付、翻译、协调等。</a>
-                                    </p>
-                                    
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="clear"></div>
+                        <script type="text/javascript">
+                            jQuery(".hasMoreTab").slide({
+                                mainCell: ".conWrap",
+                                targetCell: ".more a",
+                                effect: "fold"
+                            });
+                        </script>
 
                     </div>
 
                 </div>
 
-                <div class="b_right">
+                <div class="a_right">
 
-                    <h3 style="padding-top:21px;">美国医疗会员卡会员服务</h3>
+                    <div class="introduction">
 
-                    <ul>
+                        <div class="title" style="background-color:#248AE0;">
+                            <h1><i></i>医疗资源</h1> <a href="#">更多&gt;&gt;</a>
+                        </div>
 
-                        <span> 我们的美国医疗会员卡为年卡。成为我们的会员后，您可以享受我们提供的</span>
+                        <ul class="huodong">
 
-                        <li>- 美国看病免费预约</li>
-                        <li>- 美国医疗费用报销</li>
-                        <li>- 美国健康检查</li>
-                        <li>- 远程医疗咨询服务</li>
-                        <li>- 医疗管理贵宾服务</li>
-                        <li>- 定点药房药费折扣</li>
-                        <li>- 定点医疗网医疗费折扣</li>
-                        <li>- 旅游管理贵宾等服务</li>
-                        <br>
-                        <span> 每项的服务的详细信息，请向MedTravel在各地的办公室查询。</span> 
 
-                    </ul>
+                            <li>
 
-                   
-                </div>
+                                <a href="#"><img src="./etourhealth_files/radv1.jpg" style="object-fit: cover;" alt="会员服务流程">
+                                </a>
 
-            </div>
-           
+                                <h3><a href="#">会员服务流程</a></h3>
 
-            <script type="text/javascript">
-                jQuery('ul.mitolist li').hover(function () {
+                                <p>在e途健康美国医疗服务网，直接购买会员证、购买美国新药或赴美就医...</p>
 
-                    jQuery(".shadow_text", this).stop().animate({
-                        height: '100%'
-                    }, {
-                        queue: false,
-                        duration: 160
-                    });
-                }, function () {
+                            </li>
 
-                    jQuery(".shadow_text", this).stop().animate({
-                        height: '30px'
-                    }, {
-                        queue: false,
-                        duration: 160
-                    });
-                });
-            </script>
 
-        </div>
+                            <li>
 
-    </div>
+                                <a href="#"><img src="./etourhealth_files/radv2.jpg" style="object-fit: cover;" alt="全美医疗资源网络">
+                                </a>
 
-    
-    
-    
-    
-  
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <div id="discuz_tips" style="display:none;"></div>
-    <div class="footer">
-        <div class="footernav">
-            <a target="_blank" href="">首页</a>
-            <a target="_blank" href="">关于我们</a>
-            <a target="_blank" href="">服务条款</a>
-            <a target="_blank" href="">隐私政策</a>
-            <a target="_blank" href="">退款/取消政策</a>
-            <a target="_blank" href="">新闻动态 </a>
-            <a target="_blank" href="">联系方式</a>
+                                <h3><a href="http://www.taikangclub.com/zhuanti/qiangxiang/">全美医疗资源网络</a></h3>
 
-        </div>
-        <div class="contactinfo clearfix">
-            <div class="qrcode" style="margin-left:200px;" >
-                <img src="./etourhealth_files/etourlogo2.png" alt="" width="200px;">
-            </div>
-            <div class="address">
-                <div id="tab" style="margin-left:420px; ">
-                    <div class="tabList">
-                        <ul>
-                           
-                            <li  class="cur">广州分公司</li>
-                            <li style="width:100px;" >夏威夷总公司</li>
+                                <p>我们的定点医院和定点医生遍布在全美50个州的医疗网络，超过4600家医院...</p>
+
+                            </li>
+
+
+                            <li>
+
+                                <a href="#"><img src="./etourhealth_files/radv3.jpg" style="object-fit: cover;" alt="肿瘤治疗中心">
+                                </a>
+
+                                <h3><a href="http://www.taikangclub.com/zt/j_health">肿瘤治疗中心</a></h3>
+
+                                <p>美国国家肿瘤中心将全美最好的肿瘤临床研究中心设立成肿瘤治疗卓越中心...</p>
+
+                            </li>
+
+
+
+
+
                         </ul>
+
+
+
                     </div>
-                    <div class="tabCon">
-                        <div class="cur" style=" color:#fff;">
-                            <p>咨询热线：400-083-8428   (联系人: Winny Wu)
-                            <br>邮箱: info@etourhealth.com
-                            <br>地址：中国广州市越秀区东风西路253号外贸大楼501室 邮政编码510180</p>
+
+                </div>
+
+
+
+                <div class="w1000">
+
+                    <div class="hd3">
+                        <h3><a target="_blank" href="http://www.taikangclub.com/#">产品购买</a><a class="ab_r" href="http://www.taikangclub.com/usa/" target="_blank">更多产品</a></h3>
+                    </div>
+
+                    <div class="b_left">
+
+                        <div class="t1_mid">
+
+                            <div class="news2">
+
+                                <ul>
+
+                                    <li class="on" id="tb_31" onmouseover="HoverLi(3,1,7);"><span>美国医疗会员卡</span>
+                                    </li>
+
+                                    <li class="" id="tb_32" onmouseover="HoverLi(3,2,7);"><span>美国新药和特效药</span>
+                                    </li>
+
+                                    <li class="" id="tb_33" onmouseover="HoverLi(3,3,7);"><span>关节炎PRP疗法</span>
+                                    </li>
+
+                                    <li class="" id="tb_34" onmouseover="HoverLi(3,4,7);"><span>丙肝新药Havoni</span>
+                                    </li>
+
+                                    <li class="" id="tb_35" onmouseover="HoverLi(3,5,7);"><span>赴美就医预约</span>
+                                    </li>
+
+                                    <li class="" id="tb_36" onmouseover="HoverLi(3,6,7);"><span>第二医疗意见预约</span>
+                                    </li>
+
+                                    <li class="" id="tb_37" onmouseover="HoverLi(3,7,7);"><span>美国就医全程陪预约</span>
+                                    </li>
+
+                                </ul>
+
+                                <div class="clear"></div>
+
+                            </div>
+
+                            <div class="dis" id="tbc_31">
+
+                                <div class="main2">
+                                    <div class="title" style="color:red;"><span><a href=""></a></span>【会员服务】美国医疗会员卡</div>
+
+                                    <div style="border-bottom:1px dashed #ccc;">
+                                        <div style="display:inline-block; width:220px; height:130px; background-image:url(etourhealth_files/pro1.jpg); background-position:center top; background-size:cover; "></div>
+                                        <div style="vertical-align:top; display:inline-block; width:230px; height:100px; ">
+                                            <div style="text-align:center; vertical-align:top; padding-top:40px;padding-bottom:20px; display:block; width:230px; font-size:20px;">定价 ¥ 10000.00 起 </div>
+                                            <a href="#">
+                                                <div style="vertical-align:top; display:block; width:250px; height:100px; ">
+                                                    <div style="text-align:center; padding:10px 20px; background-color:#d54a29 ; color:white;">立刻订购</div>
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="m2box_t">
+
+                                        <h2><a href="" title="">【会员服务】美国医疗会员卡</a></h2>
+                                        <p><a href="">拥有我们美国医疗会员卡金卡的会员可享受美国看病预约、美国看病75折优惠，药品高达25折优惠，健康检查服务，远程医疗面诊、就医绿色通道、医疗专员服务。</a>
+                                        </p>
+                                        <h2><a href="" title="">美国医疗会员卡福利一览表</a></h2>
+                                        <p><a href="">我们的美国医疗会员卡为年卡。成为我们的会员后，您可以享受我们提供的美国看病免费预约、美国医疗费用报销、健康检查、远程医疗咨询服务. </a>
+                                        </p>
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                            <div class="undis" id="tbc_32">
+                                <div class="main2">
+
+                                    <div class="title" style="color:red;"><span><a href=""></a></span>【会员服务】购买美国2013-2014新药和特效药</div>
+
+
+                                    <div style="border-bottom:1px dashed #ccc;">
+                                        <div style="display:inline-block; width:220px; height:130px; background-image:url(etourhealth_files/pro2.jpg); background-position:center center; background-size:cover; "></div>
+                                        <div style="vertical-align:top; display:inline-block; width:230px; height:100px; ">
+                                            <div style="text-align:center; vertical-align:top; padding-top:40px;padding-bottom:20px; display:block; width:230px; font-size:20px;">定价 ¥ 4000.00 起 </div>
+                                            <a href="#">
+                                                <div style="vertical-align:top; display:block; width:250px; height:100px; ">
+                                                    <div style="text-align:center; padding:10px 20px; background-color:#d54a29 ; color:white;">立刻订购</div>
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="m2box_t">
+
+                                        <h2><a href="" title="">简介</a></h2>
+                                        <p><a href="">美国FDA批准的新药、特效药和疗法一般在18个月到2-3年才在国内SFDA药监局批准上市。对于到美国旅游的客人，美国就医网可以帮助你您通过找到美国医生远程视频门诊或面对面门诊开处方，以优惠折扣价购买处方药和需要处方药的健康营养品。MedTravel 通过定点医院和医生网络可以为病人开具处方，病人可以放心在美国买到最新出品的、国内没有上市的新药和特效药，帮助病人早日药到病除，回复健康，享受美好的生活。</a>
+                                        </p>
+
+
+
+
+
+
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                            <div class="undis" id="tbc_33">
+                                <div class="main2">
+
+                                    <div class="title" style="color:red"><span><a href=""></a></span>【特色医疗】关节炎PRP疗法</div>
+
+                                    <div style="border-bottom:1px dashed #ccc;">
+                                        <div style="display:inline-block; width:220px; height:130px; background-image:url(etourhealth_files/pro3.jpg); background-position:center center; background-size:cover; "></div>
+                                        <div style="vertical-align:top; display:inline-block; width:230px; height:100px; ">
+                                            <div style="text-align:center; vertical-align:top; padding-top:40px;padding-bottom:20px; display:block; width:230px; font-size:20px;">定价 ¥ 11688.00 起 </div>
+                                            <a href="#">
+                                                <div style="vertical-align:top; display:block; width:250px; height:100px; ">
+                                                    <div style="text-align:center; padding:10px 20px; background-color:#d54a29 ; color:white;">立刻订购</div>
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <div class="m2box_t">
+
+                                        <h2><a href="" title="">简介</a></h2>
+                                        <p><a href="">PRP技术通过一种离心装置把血液中的富含血小板的血浆收集，然后把富含大量生长因子的血小板注射回患者体内，对组织中细胞和基质的再生起到促进作用，从而加速组织修复。整个技术由抽血至注射仅需要20分钟左右。PRP疗法是退化性关节炎的救星。无需开刀，没有伤口，无需修复期。而且因为是自己的血液，不存在排斥与副作用，即使是高血脂病人也能做。这项新技术近10年来在欧美被广泛应用。</a>
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                            <div class="undis" id="tbc_34">
+                                <div class="main2">
+                                    <div class="title" style="color:red"><span><a href=""></a></span>到美国购买丙肝新药Havoni</div>
+                                    <div style="border-bottom:1px dashed #ccc;">
+                                        <div style="display:inline-block; width:220px; height:130px; background-image:url(etourhealth_files/pro4.jpg); background-position:center center; background-size:contain; "></div>
+                                        <div style="vertical-align:top; display:inline-block; width:230px; height:100px; ">
+                                            <div style="text-align:center; vertical-align:top; padding-top:40px;padding-bottom:20px; display:block; width:230px; font-size:20px;">定价 ¥ 225000.00 起 </div>
+                                            <a href="#">
+                                                <div style="vertical-align:top; display:block; width:250px; height:100px; ">
+                                                    <div style="text-align:center; padding:10px 20px; background-color:#d54a29 ; color:white;">立刻订购</div>
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <div class="m2box_t">
+                                        <h2><a href="" title="">简介</a></h2>
+                                        <p><a href=""> Harvoni是首个获批用于治疗慢性基因1型丙肝病毒感染的复方制剂，也是首个获批的无需联合干扰素或者利巴韦林的药物。Harvoni和Sovaldi（索非布韦）由总部设在加州福斯特市的吉利德公司上市。</a>
+                                        </p>
+                                        <h2 style="padding-top:1px;"><a href="" title=""></a></h2>
+                                        <p><a href="">1.帮助病人拿到美国医生处方；2.联系美国药店按疗程拿药；3.协助安排行程；4.新药的折扣是7.5折。</a>
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="undis" id="tbc_35">
+                                <div class="main2">
+                                    <div class="title"><span><a href=""></a></span>【会员服务】赴美就医预约</div>
+                                    <div style="border-bottom:1px dashed #ccc;">
+                                        <div style="display:inline-block; width:220px; height:130px;  background-image:url(etourhealth_files/pro5.jpg); background-position:center center; background-size:cover; "></div>
+                                        <div style="vertical-align:top; display:inline-block; width:230px; height:100px; ">
+                                            <div style="text-align:center; vertical-align:top; padding-top:40px;padding-bottom:20px; display:block; width:230px; font-size:20px;">免费预约</div>
+                                            <a href="#">
+                                                <div style="vertical-align:top; display:block; width:250px; height:100px; ">
+                                                    <div style="text-align:center; padding:10px 20px; background-color:#d54a29 ; color:white;">立刻订购</div>
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <div class="m2box_t">
+                                        <h2><a href="" title="">简介</a></h2>
+                                        <p><a href=""> 您就医后，可以在此选择就医日期、就诊医院、和医生。我们收到您的预约后，会跟您联系，安排旅程。。</a>
+                                        </p>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="undis" id="tbc_36">
+
+                                <div class="main2">
+
+                                    <div class="title"><span><a href=""></a></span>【会员服务】第二医疗意见预约</div>
+
+                                    <div style="border-bottom:1px dashed #ccc;">
+                                        <div style="display:inline-block; width:220px; height:130px; background-repeat:no-repeat; background-image:url(etourhealth_files/pro6.jpg); background-position:center center; background-size:contain; "></div>
+                                        <div style="vertical-align:top; display:inline-block; width:230px; height:100px; ">
+                                            <div style="text-align:center; vertical-align:top; padding-top:40px;padding-bottom:20px; display:block; width:230px; font-size:20px;">免费预约 </div>
+                                            <a href="#">
+                                                <div style="vertical-align:top; display:block; width:250px; height:100px; ">
+                                                    <div style="text-align:center; padding:10px 20px; background-color:#d54a29 ; color:white;">立刻订购</div>
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <div class="m2box_t">
+                                        <h2><a href="" title="">简介</a></h2>
+                                        <p><a href=""> 第二医疗意见服务是在个人罹患疾病或遭受意外伤害并已经获得诊断（也就是第一医疗意见）的基础上，咨询遍布世界各地的顶尖级医疗机构所组成的咨询网络，向您提供专业书面医疗建议。主要针对危及生命或改变生命状态的疾病，如癌症、良性肿瘤、先天性心脏疾病等。</a>
+                                        </p>
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="undis" id="tbc_37">
+
+                                <div class="main2">
+
+                                    <div class="title"><span><a href=""></a></span>【会员服务】美国就医全程陪预约</div>
+
+                                    <div style="border-bottom:1px dashed #ccc;">
+                                        <div style="display:inline-block; width:220px; height:130px;  background-image:url(etourhealth_files/pro7.jpg); background-position:center center; background-size:cover; "></div>
+                                        <div style="vertical-align:top; display:inline-block; width:230px; height:100px; ">
+                                            <div style="text-align:center; vertical-align:top; padding-top:40px;padding-bottom:20px; display:block; width:230px; font-size:20px;">免费预约 </div>
+                                            <a href="#">
+                                                <div style="vertical-align:top; display:block; width:250px; height:100px; ">
+                                                    <div style="text-align:center; padding:10px 20px; background-color:#d54a29 ; color:white;">立刻订购</div>
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <div class="m2box_t">
+                                        <h2><a href="" title="">简介</a></h2>
+                                        <p><a href="">为您或您的家人打造舒心就医之旅，我们派专人全程陪同，在您就医之旅行前、行中、行后，解决所有遇到的问题，提供就医所需的各种服务，包括办理文件、杂费支付、翻译、协调等。</a>
+                                        </p>
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="clear"></div>
+
                         </div>
-                        <div>
-                            <p>咨询热线：001.808.223.9912  (联系人: Richard Xie)
-                            <br>传真: 001-808-841-8030
-                            <br>地址：3239 Ualena Street #100， Honolulu, Hawaii, U.S.A.96819</p>
+
+                    </div>
+
+                    <div class="b_right">
+
+                        <h3 style="padding-top:21px;">美国医疗会员卡会员服务</h3>
+
+                        <ul>
+
+                            <span> 我们的美国医疗会员卡为年卡。成为我们的会员后，您可以享受我们提供的</span>
+
+                            <li>- 美国看病免费预约</li>
+                            <li>- 美国医疗费用报销</li>
+                            <li>- 美国健康检查</li>
+                            <li>- 远程医疗咨询服务</li>
+                            <li>- 医疗管理贵宾服务</li>
+                            <li>- 定点药房药费折扣</li>
+                            <li>- 定点医疗网医疗费折扣</li>
+                            <li>- 旅游管理贵宾等服务</li>
+                            <br>
+                            <span> 每项的服务的详细信息，请向MedTravel在各地的办公室查询。</span>
+
+                        </ul>
+
+
+                    </div>
+
+                </div>
+
+
+                <script type="text/javascript">
+                    jQuery('ul.mitolist li').hover(function () {
+
+                        jQuery(".shadow_text", this).stop().animate({
+                            height: '100%'
+                        }, {
+                            queue: false,
+                            duration: 160
+                        });
+                    }, function () {
+
+                        jQuery(".shadow_text", this).stop().animate({
+                            height: '30px'
+                        }, {
+                            queue: false,
+                            duration: 160
+                        });
+                    });
+                </script>
+
+            </div>
+
+        </div>
+    </div>
+    <div id="section12" class="" style="display:none;">
+
+
+
+
+    </div>
+    <div id="section13" class="" style="display:none;">
+        <style>
+            #section13 .tab div:hover {
+                background-color: #d54a29;
+                color: white;
+            }
+            
+            #section13 .tab div.active {
+                background-color: #d54a29;
+                color: white;
+                border-right: 6px solid white;
+                border-left: 6px solid white;
+            }
+            
+            #section13 .content .active {
+                display: block!important;
+            }
+        </style>
+        <div style="width:1000px; height:200px; background-image:url(etourhealth_files/banner-top.jpg); background-repeat:no-repeat; background-position:center center; background-size:cover;margin:0 auto; margin-top:2px;"> </div>
+        <div style="width:1000px; min-height:600px; margin:0 auto; font-size:0">
+            <div class="tab" style="vertical-align:top; font-size:15px; display:inline-block; width:200px; height:600px; background-color:#ddd;">
+
+                <div style="padding:15px; padding-left:30px; border-bottom:2px solid #cbcbcb; font-weight:bold"> 服务项目 >> </div>
+                <div id="iid91" class="active" onmouseover="HoverLii(9,1,4);" style="cursor:pointer; padding:15px; padding-left:30px; border-bottom:2px solid #cbcbcb; font-weight:normal">&rarr; 医疗会员服务</div>
+                <div id="iid92" class="" onmouseover="HoverLii(9,2,4);" style="cursor:pointer; padding:15px; padding-left:30px; border-bottom:2px solid #cbcbcb; font-weight:normal">&rarr; 赴美就医服务</div>
+                <div id="iid93" class="" onmouseover="HoverLii(9,3,4);" style="cursor:pointer; padding:15px; padding-left:30px; border-bottom:2px solid #cbcbcb; font-weight:normal">&rarr; 赴美购药服务</div>
+                <div id="iid94" class="" onmouseover="HoverLii(9,4,4);" style="cursor:pointer; padding:15px; padding-left:30px; border-bottom:2px solid #cbcbcb; font-weight:normal">&rarr; 特色医疗项目</div>
+
+
+            </div>
+
+
+
+            <div class="content" style="font-size:15px; display:inline-block; width:800px; height:400px; background-color:white;">
+                <div class="active" id="id91" style="display:none; margin:25px; ">
+                    <div style="font-size:20px;  border-bottom:1px solid #cbcbcb; color:black; "><img src="http://stockpins4less.com/images/manufacturers/4611249.jpg" width="50px;"></img>医疗会员服务</div>
+                    <div style="padding-top:20px"> &ensp;&ensp;&ensp;&ensp;我们的美国医疗会员卡为年卡。成为我们的会员后，您可以享受我们提供的美国看病免费预约、美国医疗费用报销、健康检查、远程医疗咨询服务、医疗管理贵宾服务、定点药房药费折扣、定点医疗网医疗费折扣、旅游管理贵宾等服务。 每项的服务的详细信息，请向MedTravel在各地的办公室查询。 </div>
+                </div>
+
+                <div class="" id="id92" style="display:none; margin:25px; ">
+                    <div style="font-size:20px;  border-bottom:1px solid #cbcbcb; color:black; "><img src="http://stockpins4less.com/images/manufacturers/4611249.jpg" width="50px;"></img>赴美看病咨询与服务</div>
+                    <div style="padding-top:20px"> &ensp;&ensp;&ensp;&ensp;我们向国内患者提供远程门诊咨询服务、赴美就医陪同服务、专家预约服务和医疗保险服务。
+                        <br>
+                        <br>
+                        <p>【1】远程门诊咨询服务 通过远程门诊咨询服务，我们可以帮您找最适合您的主治医师，并且帮您估算出赴美看病的总费用。我们会先收集您的病例和住院资料、完成病例医学翻译、邮递病理切片和影像资料。根据您的病情推荐国外权威医学专家，并且帮助您完成预约，帮您定制专属赴美治疗计划。
+                        </p>
+                        <br>
+                        <p>【2】专家预约服务 我们通过夏威夷家庭健康联保公司在全美50个州的医疗网络，帮您在最快时间找到适合您的专属权威医生。如果您已经加入了我们的美国医疗保险计划，更可以享受超级服务：在提交完整病历资料2个工作日后，就能收到美国医院的就医邀请函。
+                        </p>
+                        <br>
+                        <p>【3】赴美就医陪同服务 为您制定一对一的VIP专属服务包括接机、住宿预订、看病接送、就医随行翻译、生活随行翻译、病历资料翻译、门诊预约、住院预约、手术预约和美国医疗保险等服务。
+                        </p>
+                        <br>
+                        <p>【4】美国医疗会员服务 我公司与家庭健康国际联保公司合作，向内地居民提供美国医疗会员服务。如果您有需要一年多次来美国就医，或者您有重大疾病需要在美国治疗，加入我们的医疗会员可以大大减轻您在就医方面的经济压力，无疑是您的最佳选择。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="" id="id93" style="display:none; margin:25px; ">
+                    <div style="font-size:20px;  border-bottom:1px solid #cbcbcb; color:black; "><img src="http://stockpins4less.com/images/manufacturers/4611249.jpg" width="50px;"></img>赴美购药服务</div>
+                    <div style="padding-top:20px"> &ensp;&ensp;&ensp;&ensp;美国FDA批准的新药和特效药一般要等18到24月后，才会在国内的国家药监局批准上市销售。有些病人希望尽快使用新药和特效药，希望从国外直接购药。但国外需要处方的要管理极其严格，没有处方，根本买不到这些药品。
+
+                        <br> &ensp;&ensp;&ensp;&ensp;MedTravel 通过定点医院和医生网络可以为病人开具处方，病人可以放心在美国买到最新出品的、国内没有上市的新药和特效药，帮助病人早日药到病除，回复健康，享受美好的生活。
+
+
+                        <br> &#8226; MedTravel会员在美国购药还可以享受下列价格优惠：
+                        <br>
+                        <br> &#8226; 购买非专利药、专利品牌药最高可以享受2.5折优惠。
+                        <br> &#8226; 购买专科特效药时最高可以享受6.5折优惠。
+                        <br> &#8226; 购买重大疾病和慢性病维护药物时最高可以享受6.5折优惠。
+                        <br> &#8226; 接受输液治疗服务时最高可以享受8.0-8.5折优惠。
+                        <br> &#8226; 购买医疗小微设备和试纸等耗材时最高可以享受6.5折优惠。
+
+
+                        <br>
+                        <br> 需要赴美购药的病人只需要在本站购买产品、填写信息后，MedTravel工作人员会在24小时内与您联系。 </div>
+                </div>
+
+                <div class="" id="id94" style="display:none; margin:25px; ">
+                    <div style="font-size:20px;  border-bottom:1px solid #cbcbcb; color:black; "><img src="http://stockpins4less.com/images/manufacturers/4611249.jpg" width="50px;"></img>特色医疗项目</div>
+                    <div style="padding-top:20px"> &ensp;&ensp;&ensp;&ensp;特色医疗项目 我公司还推出特色医疗项目，包括全身体检、基因检测、关节炎PRP疗法、慢性腰痛微创疗法等，整合夏威夷当地最优秀的医疗资源以以迎合内地居民的治病需求。 比如，PRP疗法是退化性关节炎的救星。患者只需抽取自身的外周血液20-30毫升，通过离心装置把血液中的富含血小板的血浆收集起来，然后注射到患者体内（如膝关节炎患者注射到膝关节腔内），血小板内的生长因子就会促进组织的愈合。整个技术由抽血至注射仅需要20分钟左右。无需开刀，没有伤口，无需修复期。而且因为是自己的血液，不存在排斥与副作用。经过离心钝化，即使是高血脂病人也能做。这项新技术近10年来在欧美被广泛应用，但由于制备方法复杂成本过高，导致我国在临床上难以开展运用此技术。
+                        <div class="text-center" style="margin:0 auto; width:362px;"><img src="https://dn-totalgdsimg.qbox.me/54559a1b505f88aa1bb2bc86" />
+                        </div>
+
+                        &ensp;&ensp;&ensp;&ensp;夏威夷拥有先进的设备和全美最优秀的骨科疾病治疗团队。我们将竭诚为您提供先进的医疗诊治项目，只有咖啡味、没有药水味的优雅舒适环境和5星级酒店服务。 </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section14" class="" style="display:none;">
+        <style>
+            #section14 .tab div:hover {
+                background-color: #d54a29;
+                color: white;
+            }
+            
+            #section14 .tab div.active {
+                background-color: #d54a29;
+                color: white;
+                border-right: 6px solid white;
+                border-left: 6px solid white;
+            }
+            
+            #section14 .content .active {
+                display: block!important;
+            }
+        </style>
+        <div style="width:1000px; height:200px; background-image:url(etourhealth_files/banner-top.jpg); background-repeat:no-repeat; background-position:center center; background-size:cover;margin:0 auto; margin-top:2px;"> </div>
+        <div style="width:1000px; min-height:600px; margin:0 auto; font-size:0">
+            <div class="tab" style="vertical-align:top; font-size:15px; display:inline-block; width:200px; height:600px; background-color:#ddd;">
+
+                <div style="padding:15px; padding-left:30px; border-bottom:2px solid #cbcbcb; font-weight:bold"> 医疗资源 >> </div>
+                <div id="iid81" class="active" onmouseover="HoverLii(8,1,3);" style="cursor:pointer; padding:15px; padding-left:30px; border-bottom:2px solid #cbcbcb; font-weight:normal">&rarr; 核心服务流程 </div>
+                <div id="iid82" class="" onmouseover="HoverLii(8,2,3);" style="cursor:pointer; padding:15px; padding-left:30px; border-bottom:2px solid #cbcbcb; font-weight:normal">&rarr; 全美医疗资源 </div>
+                <div id="iid83" class="" onmouseover="HoverLii(8,3,3);" style="cursor:pointer; padding:15px; padding-left:30px; border-bottom:2px solid #cbcbcb; font-weight:normal">&rarr; 肿瘤定点医院</div>
+
+
+            </div>
+
+
+
+            <div class="content" style="font-size:15px; display:inline-block; width:800px; height:400px; background-color:white;">
+                <div class="active" id="id81" style="display:none; margin:25px; ">
+                    <div style="font-size:20px;  border-bottom:1px solid #cbcbcb; color:black; "><img src="http://stockpins4less.com/images/manufacturers/4611249.jpg" width="50px;"></img>会员服务流程</div>
+                    <div style="padding-top:20px"> &ensp;&ensp;&ensp;&ensp;
+                        <table data-sort="sortDisabled">
+                            <tbody>
+                                <tr>
+                                    <td style="word-break: break-all; border-color: rgb(141, 179, 226);" rowspan="1" colspan="1" valign="top" width="21.66666666666667">
+                                        <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">1<br></span>
+                                        </p>
+                                    </td>
+                                    <td style="word-break: break-all; border-color: rgb(141, 179, 226);" valign="top" width="90.66666666666667">
+                                        <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">福利咨询</span>
+                                        </p>
+                                    </td>
+                                    <td style="word-break: break-all; border-color: rgb(141, 179, 226);" valign="top" width="619.6666666666666">
+                                        <ul class=" list-paddingleft-2" style="list-style-type: disc;">
+                                            <li>
+                                                <p style="text-align: left; line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">患者与eTour或定点医院的工作人员和医护专家进行咨询，了解流程、费用和服务细则；</span>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p style="text-align: left; line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">在公司办公室或在官网选择会员类型、签署合约，缴纳费用，成为会员；eTour 会在24小时内发给电子版临时会员证。 正式会员证会员证证在14天内寄到会员指定地址。<br></span>
+                                                    <br>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border-color: rgb(141, 179, 226); word-break: break-all;" rowspan="1" colspan="1" valign="top" width="21.66666666666667">
+                                        <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">2<br></span>
+                                        </p>
+                                    </td>
+                                    <td style="border-color: rgb(141, 179, 226); word-break: break-all;" valign="top" width="60.66666666666667">
+                                        <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">服务申请</span>
+                                        </p>
+                                    </td>
+                                    <td style="border-color: rgb(141, 179, 226); word-break: break-all;" valign="top" width="619.6666666666666">
+                                        <ul class=" list-paddingleft-2" style="list-style-type: disc;">
+                                            <li>
+                                                <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">会员需要远程门诊、VIP健康检查、赴美就医或其他服务时，通知etour 服务人员；<br></span>
+                                                    <br>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border-color: rgb(141, 179, 226); word-break: break-all;" rowspan="1" colspan="1" valign="top" width="21.66666666666667">
+                                        <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">3<br></span>
+                                        </p>
+                                    </td>
+                                    <td style="border-color: rgb(141, 179, 226); word-break: break-all;" valign="top" width="60.66666666666667">
+                                        <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">准备材料</span>
+                                        </p>
+                                    </td>
+                                    <td style="border-color: rgb(141, 179, 226); word-break: break-all;" valign="top" width="619.6666666666666">
+                                        <ul class=" list-paddingleft-2" style="list-style-type: disc;">
+                                            <li>
+                                                <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">首次服务的会员根据需要，提交中文病历和相关检测文件，eTour按需要将相关资料翻译，提交给eTour专家系统<br></span>
+                                                    <br>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border-color: rgb(141, 179, 226); word-break: break-all;" rowspan="1" colspan="1" valign="top" width="21.66666666666667">
+                                        <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">4<br></span>
+                                        </p>
+                                    </td>
+                                    <td style="border-color: rgb(141, 179, 226); word-break: break-all;" valign="top" width="60.66666666666667">
+                                        <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">定向预约</span>
+                                        </p>
+                                    </td>
+                                    <td style="border-color: rgb(141, 179, 226); word-break: break-all;" valign="top" width="619.6666666666666">
+                                        <ul class=" list-paddingleft-2" style="list-style-type: disc;">
+                                            <li>
+                                                <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">根据会员的选择，预约美国合适的顶级医院和医生<br></span>
+                                                    <br>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border-color: rgb(141, 179, 226); word-break: break-all;" rowspan="1" colspan="1" valign="top" width="21.66666666666667">
+                                        <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">5<br></span>
+                                        </p>
+                                    </td>
+                                    <td style="border-color: rgb(141, 179, 226); word-break: break-all;" valign="top" width="60.66666666666667">
+                                        <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">接受服务</span>
+                                        </p>
+                                    </td>
+                                    <td style="border-color: rgb(141, 179, 226); word-break: break-all;" valign="top" width="619.6666666666666">
+                                        <ul class=" list-paddingleft-2" style="list-style-type: disc;">
+                                            <li>
+                                                <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">会员根据需求、接受eTour安排的会员服务；<br></span>
+                                                    <br>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border-color: rgb(141, 179, 226); word-break: break-all;" rowspan="1" colspan="1" valign="top" width="21.66666666666667">
+                                        <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">6<br></span>
+                                        </p>
+                                    </td>
+                                    <td style="border-color: rgb(141, 179, 226); word-break: break-all;" rowspan="1" colspan="1" valign="top" width="60.66666666666667">
+                                        <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">费用报销</span>
+                                        </p>
+                                    </td>
+                                    <td style="border-color: rgb(141, 179, 226); word-break: break-all;" rowspan="1" colspan="1" valign="top" width="619.6666666666666">
+                                        <ul class=" list-paddingleft-2" style="list-style-type: disc;">
+                                            <li>
+                                                <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">在美做健康检查或购买药物的，填写会员报销单，可联系eTour工作人员申请报销<br></span>
+                                                    <br>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+
+                <div class="" id="id82" style="display:none; margin:25px; ">
+                    <div style="font-size:20px;  border-bottom:1px solid #cbcbcb; color:black; padding-bottom:25px;">远程医疗流程</div>
+                    <div style="padding-top:20px">
+                        <table data-sort="sortDisabled">
+                            <tbody>
+                                <tr>
+                                    <td style="word-break: break-all; border-color: rgb(141, 179, 226);" valign="top" width="18.66666666666667">
+                                        <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">1<br></span>
+                                        </p>
+                                    </td>
+                                    <td style="word-break: break-all; border-color: rgb(141, 179, 226);" valign="top" width="90.66666666666667">
+                                        <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">服务咨询</span>
+                                        </p>
+                                    </td>
+                                    <td style="word-break: break-all; border-color: rgb(141, 179, 226);" valign="top" width="622.6666666666666">
+                                        <ul class=" list-paddingleft-2" style="list-style-type: disc;">
+                                            <li>
+                                                <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">患者与eTour或定点医院的医护专家进行咨询，了解流程和费用后，签署服务合约，缴纳费用<br><br></span>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border-color: rgb(141, 179, 226); word-break: break-all;" valign="top" width="18.66666666666667">
+                                        <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">2<br></span>
+                                        </p>
+                                    </td>
+                                    <td style="border-color: rgb(141, 179, 226); word-break: break-all;" valign="top" width="62.66666666666667">
+                                        <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">准备材料</span>
+                                        </p>
+                                    </td>
+                                    <td style="border-color: rgb(141, 179, 226); word-break: break-all;" valign="top" width="622.6666666666666">
+                                        <ul class=" list-paddingleft-2" style="list-style-type: disc;">
+                                            <li>
+                                                <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">患者提交中文病历和相关检测文件，eTour按病情需要将相关资料翻译，提交给eTour专家会诊系统<br><br></span>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border-color: rgb(141, 179, 226); word-break: break-all;" valign="top" width="18.66666666666667">
+                                        <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">3<br></span>
+                                        </p>
+                                    </td>
+                                    <td style="border-color: rgb(141, 179, 226); word-break: break-all;" valign="top" width="62.66666666666667">
+                                        <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">定向预约</span>
+                                        </p>
+                                    </td>
+                                    <td style="border-color: rgb(141, 179, 226); word-break: break-all;" valign="top" width="622.6666666666666">
+                                        <ul class=" list-paddingleft-2" style="list-style-type: disc;">
+                                            <li>
+                                                <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">根据患者的选择，预约美国合适的顶级医院和医生<br><br></span>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border-color: rgb(141, 179, 226); word-break: break-all;" valign="top" width="18.66666666666667">
+                                        <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">4</span>
+                                        </p>
+                                    </td>
+                                    <td style="border-color: rgb(141, 179, 226); word-break: break-all;" valign="top" width="62.66666666666667">
+                                        <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">远程会诊</span>
+                                        </p>
+                                    </td>
+                                    <td style="border-color: rgb(141, 179, 226); word-break: break-all;" valign="top" width="622.6666666666666">
+                                        <ul class=" list-paddingleft-2" style="list-style-type: disc;">
+                                            <li>
+                                                <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">美国的顶级医学专家对患者进行会诊，给出诊断结果、治疗方案，以及如需赴美就医的行程安排和费用<br></span>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border-color: rgb(141, 179, 226); word-break: break-all;" valign="top" width="18.66666666666667">
+                                        <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">5<br></span>
+                                        </p>
+                                    </td>
+                                    <td style="border-color: rgb(141, 179, 226); word-break: break-all;" valign="top" width="62.66666666666667">
+                                        <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">提供报告</span>
+                                        </p>
+                                    </td>
+                                    <td style="border-color: rgb(141, 179, 226); word-break: break-all;" valign="top" width="622.6666666666666">
+                                        <ul class=" list-paddingleft-2" style="list-style-type: disc;">
+                                            <li>
+                                                <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">eTour 医护专家将中英文报告提供给患者，并解答相关问题<br></span>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="" id="id83" style="display:none; margin:25px; ">
+                    <div style="font-size:20px;  border-bottom:1px solid #cbcbcb; color:black; padding-bottom:25px;">赴美就医流程</div>
+                    <div style="padding-top:20px"> &ensp;&ensp;&ensp;&ensp;
+
+
+                        <table data-sort="sortDisabled">
+                            <tbody>
+                                <tr>
+                                    <td style="word-break: break-all; border-color: rgb(141, 179, 226);" valign="top" width="17.66666666666667">
+                                        <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">1<br></span>
+                                        </p>
+                                    </td>
+                                    <td style="word-break: break-all; border-color: rgb(141, 179, 226);" valign="top" width="90.66666666666667">
+                                        <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">专家咨询</span>
+                                        </p>
+                                    </td>
+                                    <td style="word-break: break-all; border-color: rgb(141, 179, 226);" valign="top" width="631">
+                                        <ul class=" list-paddingleft-2" style="list-style-type: disc;">
+                                            <li>
+                                                <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">患者与eTour或定点医院的医护专家进行咨询，了解流程和费用后，签署服务合约，缴纳服务费<br><br></span>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="word-break: break-all; border-color: rgb(141, 179, 226);" valign="top" width="17.66666666666667">
+                                        <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">2<br></span>
+                                        </p>
+                                    </td>
+                                    <td style="word-break: break-all; border-color: rgb(141, 179, 226);" valign="top" width="68.66666666666667">
+                                        <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">准备材料</span>
+                                        </p>
+                                    </td>
+                                    <td style="word-break: break-all; border-color: rgb(141, 179, 226);" valign="top" width="631">
+                                        <ul class=" list-paddingleft-2" style="list-style-type: disc;">
+                                            <li>
+                                                <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">患者提交中文病历和相关检测文件，eTour按病情需要将相关资料翻译，提交给eTour专家系统<br><br></span>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="word-break: break-all; border-color: rgb(141, 179, 226);" valign="top" width="17.66666666666667">
+                                        <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">3<br></span>
+                                        </p>
+                                    </td>
+                                    <td style="border-color: rgb(141, 179, 226); word-break: break-all;" valign="top" width="68.66666666666667">
+                                        <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">定向预约</span>
+                                        </p>
+                                    </td>
+                                    <td style="border-color: rgb(141, 179, 226); word-break: break-all;" valign="top" width="626">
+                                        <ul class=" list-paddingleft-2" style="list-style-type: disc;">
+                                            <li>
+                                                <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">根据患者的选择，预约美国合适的顶级医院和医生<br><br></span>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="word-break: break-all; border-color: rgb(141, 179, 226);" valign="top" width="17.66666666666667">
+                                        <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">4<br></span>
+                                        </p>
+                                    </td>
+                                    <td style="border-color: rgb(141, 179, 226); word-break: break-all;" valign="top" width="68.66666666666667">
+                                        <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">安排行程</span>
+                                        </p>
+                                    </td>
+                                    <td style="border-color: rgb(141, 179, 226); word-break: break-all;" valign="top" width="622">
+                                        <ul class=" list-paddingleft-2" style="list-style-type: disc;">
+                                            <li>
+                                                <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">为患者安排赴美就医的行程安排、邀请函和签证、缴纳医疗预收费<br><br></span>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="word-break: break-all; border-color: rgb(141, 179, 226);" valign="top" width="17.66666666666667">
+                                        <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">5<br></span>
+                                        </p>
+                                    </td>
+                                    <td style="border-color: rgb(141, 179, 226); word-break: break-all;" valign="top" width="68.66666666666667">
+                                        <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">赴美就医</span>
+                                        </p>
+                                    </td>
+                                    <td style="border-color: rgb(141, 179, 226); word-break: break-all;" valign="top" width="620">
+                                        <ul class=" list-paddingleft-2" style="list-style-type: disc;">
+                                            <li>
+                                                <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">为患者提供专职医学翻译、全程陪同、接机、交通、交通、食宿、保险等服务。 帮助申请医疗费用审核和减免。<br><br></span>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="word-break: break-all; border-color: rgb(141, 179, 226);" valign="top" width="17.66666666666667">
+                                        <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">6<br></span>
+                                        </p>
+                                    </td>
+                                    <td style="border-color: rgb(141, 179, 226); word-break: break-all;" valign="top" width="68.66666666666667">
+                                        <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">康复服务</span>
+                                        </p>
+                                    </td>
+                                    <td style="border-color: rgb(141, 179, 226); word-break: break-all;" valign="top" width="618">
+                                        <ul class=" list-paddingleft-2" style="list-style-type: disc;">
+                                            <li>
+                                                <p style="line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">患者回国后，eTour 医护专家与国内外医院和医生合作，为病患安排康复和疗养服务<br><br></span>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+
+
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+        <div id="section15" class="" style="display:none;"></div>
+        <div id="section16" class="" style="display:none;"></div>
+        <div id="section17" class="" style="display:none;"></div>
+
+
+
+
+
+
+
+
+
+
+        <div id="discuz_tips" style="display:none;"></div>
+        <div class="footer">
+            <div class="footernav">
+                <a target="_blank" href="">首页</a>
+                <a target="_blank" href="">关于我们</a>
+                <a target="_blank" href="">服务条款</a>
+                <a target="_blank" href="">隐私政策</a>
+                <a target="_blank" href="">退款/取消政策</a>
+                <a target="_blank" href="">新闻动态 </a>
+                <a target="_blank" href="">联系方式</a>
+
+            </div>
+            <div class="contactinfo clearfix">
+                <div class="qrcode" style="margin-left:200px;">
+                    <img src="./etourhealth_files/etourlogo2.png" alt="" width="200px;">
+                </div>
+                <div class="address">
+                    <div id="tab" style="margin-left:420px; ">
+                        <div class="tabList">
+                            <ul>
+
+                                <li class="cur">广州分公司</li>
+                                <li style="width:100px;">夏威夷总公司</li>
+                            </ul>
+                        </div>
+                        <div class="tabCon">
+                            <div class="cur" style=" color:#fff;">
+                                <p>咨询热线：400-083-8428 (联系人: Winny Wu)
+                                    <br>邮箱: info@etourhealth.com
+                                    <br>地址：中国广州市越秀区东风西路253号外贸大楼501室 邮政编码510180</p>
+                            </div>
+                            <div>
+                                <p>咨询热线：001.808.223.9912 (联系人: Richard Xie)
+                                    <br>传真: 001-808-841-8030
+                                    <br>地址：3239 Ualena Street #100， Honolulu, Hawaii, U.S.A.96819</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="beian">
+            </div>
         </div>
-        <div class="beian">
-        </div>
-    </div>
-    <div class="footer_ft">
-        <div class="footer_ft1">
-            <p></p>
-            <p> 易途国际有限公司 版权所有<a href="http://www.etourhealth.com/"> www.etourhealth.com </a>
-               
-            </p>
-        </div>
-    </div>
+        <div class="footer_ft">
+            <div class="footer_ft1">
+                <p></p>
+                <p> 易途国际有限公司 版权所有<a href="http://www.etourhealth.com/"> www.etourhealth.com </a>
 
-    <div id="hm_t_undefined" class="hm-t-container">
-        <div class="hm-t-go-top" style="display: none;"></div>
-    </div>
+                </p>
+            </div>
+        </div>
+
+        <div id="hm_t_undefined" class="hm-t-container">
+            <div class="hm-t-go-top" style="display: none;"></div>
+        </div>
 
 
 </body>
