@@ -171,7 +171,8 @@
 
 .news2 ul li{ width:181px; height:44px; margin-top:10px; padding-left:30px; font:16px "\5FAE\8F6F\96C5\9ED1","\9ED1\4f53"; line-height:44px; vertical-align:middle; cursor:pointer; background:#e3e3e3 url(../images/tt2.gif) no-repeat right; color:#666;}
 
-.news2 ul li.on{ width:181px; height:44px; margin-top:10px; padding-left:30px; line-height:44px; background:#d54a29 url(../images/ttt1.gif) no-repeat right; color:#fff;}
+.news2 ul li.on{ width:181px; height:44px; margin-top:10px; padding-left:30px; line-height:44px; background:#248AE0 url(../images/ttt1.gif) no-repeat right; color:#fff;}
+.news2 ul li.on span:after{ content:'  >>'}
 
 .news2 span{ display:block;}
 
