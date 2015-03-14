@@ -48,10 +48,22 @@
         function HoverLiii(m, n, counter) {
             for (var i = 1; i <= counter; i++) {
                 g('section' + m + i).className = 'nodisplay';
-                g('mn_' + m + i).className = 'gg';
+                g('mn_' + m + i).className = '';
+
             }
             g('section' + m + n).className = 'active';
             g('mn_' + m + n).className = 'a';
+
+        }
+
+        function changeProductPage(m, n, counter) {
+            for (var i = 1; i <= counter; i++) {
+                g('product' + m + i).className = '';
+
+            }
+            g('product' + m + n).className = 'active';
+
+
         }
     </script>
     <script src="./etourhealth_files/jquery-week.js" type="text/javascript"></script>
@@ -70,83 +82,39 @@
     <script type="text/javascript" charset="utf-8" src="./etourhealth_files/push-smartBar_42ac0c7.js" _md_="_anymoore_http://apps.bdimg.com/cloudaapi/pkg/push-smartBar_42ac0c7.js"></script>
     <script type="text/javascript" charset="utf-8" src="./etourhealth_files/app-socialshare_15393e1.js" _md_="_anymoore_http://apps.bdimg.com/cloudaapi/pkg/app-socialshare_15393e1.js"></script>
     <style>
-        #section11.active {
+        #section11.active,
+        #section12.active,
+        #section13.active,
+        #section14.active,
+        #section15.active,
+        #section16.active,
+        #section17.active,
+        #section18.active,
+        #section19.active,
+        #section110.active,
+        #section111.active,
+        #section112.active,
+        #section113.active,
+        #section114.active,
+        #section115.active {
             display: block!important;
         }
         
-        #section11.nodisplay {
-            display: none!important;
-        }
-        
-        #section12.active {
-            display: block!important;
-        }
-        
-        #section12.nodisplay {
-            display: none!important;
-        }
-        
-        #section13.active {
-            display: block!important;
-        }
-        
-        #section13.nodisplay {
-            display: none!important;
-        }
-        
-        #section14.active {
-            display: block!important;
-        }
-        
-        #section14.nodisplay {
-            display: none!important;
-        }
-        
-        #section15.active {
-            display: block!important;
-        }
-        
-        #section15.nodisplay {
-            display: none!important;
-        }
-        
-        #section16.active {
-            display: block!important;
-        }
-        
-        #section16.nodisplay {
-            display: none!important;
-        }
-        
-        #section17.active {
-            display: block!important;
-        }
-        
-        #section17.nodisplay {
-            display: none!important;
-        }
-        
-        #section18.active {
-            display: block!important;
-        }
-        
-        #section18.nodisplay {
-            display: none!important;
-        }
-        
-        #section19.active {
-            display: block!important;
-        }
-        
-        #section19.nodisplay {
-            display: none!important;
-        }
-        
-        #section110.active {
-            display: block!important;
-        }
-        
-        #section110.nodisplay {
+        #section11.nodisplay,
+        #section12.nodisplay,
+        #section13.nodisplay,
+        #section14.nodisplay,
+        #section15.nodisplay,
+        #section16.nodisplay,
+        #section17.nodisplay,
+        #section18.nodisplay,
+        #section19.nodisplay,
+        #section110.nodisplay,
+        #section111.nodisplay,
+        #section112.nodisplay,
+        #section113.nodisplay,
+        #section114.nodisplay,
+        #section115.nodisplay {
             display: none!important;
         }
     </style>
@@ -158,7 +126,7 @@
             <div class="w1000">
 
                 <p>欢迎访问美国就医网</p>
-                <a class=""  onClick="alert('手机网站开发中! Coming Soon !!!')" title="手机网站"><img style="margin-top:-3px;" src="http://www.clipartbest.com/cliparts/jcx/p5X/jcxp5XRoi.png" width="10px"> </img>手机网站</a>
+                <a class="" onClick="alert('手机网站开发中! Coming Soon !!!')" title="手机网站"><img style="margin-top:-3px;" src="http://www.clipartbest.com/cliparts/jcx/p5X/jcxp5XRoi.png" width="10px"> </img>手机网站</a>
                 <!--a class="iocn_3" href="http://www.taikangclub.com/zhuanti/phone/index.html" target="_blank" title="APP下载">APP下载</a>
 
                 <a class="iocn_5" href="http://hopenoah.com/" target="_blank" title="English">English</a>
@@ -202,7 +170,7 @@
                         <li id="mn_11" class="a" onclick="HoverLiii(1,1,10)"><a style="cursor:pointer" hidefocus="true" target="_blank" title="">首页</a>
                         </li>
 
-                        <li id="mn_12" class="" onclick="HoverLiii(1,2,10)" initialized="true" class=""><a style="cursor:pointer" target="_blank" title="">产品购买</a>
+                        <li id="mn_12" class="" onclick="HoverLiii(1,2,10), changeProductPage(1,1,8);" initialized="true" class=""><a style="cursor:pointer" target="_blank" title="">产品购买</a>
                         </li>
 
                         <li id="mn_13" class="" onclick="HoverLiii(1,3,10)" initialized="true" class=""><a style="cursor:pointer" target="_blank" hidefocus="true">服务项目</a>
@@ -564,7 +532,7 @@
                             <div class="dis" id="tbc_31">
 
                                 <div class="main2">
-                                    <div class="title" style="color:red;"><span><a href=""></a></span>【会员服务】美国医疗会员卡</div>
+                                    <div class="title" style="font-size:18px; color:red;"><span><a href=""></a></span>【会员服务】美国医疗会员卡</div>
 
                                     <div style="border-bottom:1px dashed #ccc;">
                                         <div style="display:inline-block; width:220px; height:130px; background-image:url(etourhealth_files/pro1.jpg); background-position:center top; background-size:cover; "></div>
@@ -598,7 +566,7 @@
                             <div class="undis" id="tbc_32">
                                 <div class="main2">
 
-                                    <div class="title" style="color:red;"><span><a href=""></a></span>【会员服务】购买美国2013-2014新药和特效药</div>
+                                    <div class="title" style="font-size:18px; color:red;"><span><a href=""></a></span>【会员服务】购买美国2013-2014新药和特效药</div>
 
 
                                     <div style="border-bottom:1px dashed #ccc;">
@@ -638,7 +606,7 @@
                             <div class="undis" id="tbc_33">
                                 <div class="main2">
 
-                                    <div class="title" style="color:red"><span><a href=""></a></span>【特色医疗】关节炎PRP疗法</div>
+                                    <div class="title" style="font-size:18px; color:red;"><span><a href=""></a></span>【特色医疗】关节炎PRP疗法</div>
 
                                     <div style="border-bottom:1px dashed #ccc;">
                                         <div style="display:inline-block; width:220px; height:130px; background-image:url(etourhealth_files/pro3.jpg); background-position:center center; background-size:cover; "></div>
@@ -667,7 +635,7 @@
 
                             <div class="undis" id="tbc_34">
                                 <div class="main2">
-                                    <div class="title" style="color:red"><span><a href=""></a></span>到美国购买丙肝新药Havoni</div>
+                                    <div class="title" style="font-size:18px; color:red;"><span><a href=""></a></span>到美国购买丙肝新药Havoni</div>
                                     <div style="border-bottom:1px dashed #ccc;">
                                         <div style="display:inline-block; width:220px; height:130px; background-image:url(etourhealth_files/pro4.jpg); background-position:center center; background-size:contain; "></div>
                                         <div style="vertical-align:top; display:inline-block; width:230px; height:100px; ">
@@ -694,7 +662,7 @@
 
                             <div class="undis" id="tbc_35">
                                 <div class="main2">
-                                    <div class="title"><span><a href=""></a></span>【会员服务】赴美就医预约</div>
+                                    <div class="title" style="font-size:18px; color:red;"><span><a href=""></a></span>【会员服务】赴美就医预约</div>
                                     <div style="border-bottom:1px dashed #ccc;">
                                         <div style="display:inline-block; width:220px; height:130px;  background-image:url(etourhealth_files/pro5.jpg); background-position:center center; background-size:cover; "></div>
                                         <div style="vertical-align:top; display:inline-block; width:230px; height:100px; ">
@@ -721,7 +689,7 @@
 
                                 <div class="main2">
 
-                                    <div class="title"><span><a href=""></a></span>【会员服务】第二医疗意见预约</div>
+                                    <div class="title" style="font-size:18px; color:red;"><span><a href=""></a></span>【会员服务】第二医疗意见预约</div>
 
                                     <div style="border-bottom:1px dashed #ccc;">
                                         <div style="display:inline-block; width:220px; height:130px; background-repeat:no-repeat; background-image:url(etourhealth_files/pro6.jpg); background-position:center center; background-size:contain; "></div>
@@ -751,7 +719,7 @@
 
                                 <div class="main2">
 
-                                    <div class="title"><span><a href=""></a></span>【会员服务】美国就医全程陪预约</div>
+                                    <div class="title" style="font-size:18px; color:red;"><span><a href=""></a></span>【会员服务】美国就医全程陪预约</div>
 
                                     <div style="border-bottom:1px dashed #ccc;">
                                         <div style="display:inline-block; width:220px; height:130px;  background-image:url(etourhealth_files/pro7.jpg); background-position:center center; background-size:cover; "></div>
@@ -835,11 +803,506 @@
         </div>
     </div>
     <div id="section12" class="" style="display:none;">
+        <style>
+            #section12 .tab div:hover {
+                background-color: #248AE0;
+                color: white;
+            }
+            
+            #section12 .tab div.active {
+                background-color: #248AE0;
+                color: white;
+                border-right: 6px solid white;
+                border-left: 6px solid white;
+            }
+            
+            #section12 .content .active {
+                display: block!important;
+            }
+        </style>
+        <div style="width:1000px; height:200px; background-image:url(etourhealth_files/banner-top.jpg); background-repeat:no-repeat; background-position:center center; background-size:cover;margin:0 auto; margin-top:2px;"> </div>
+        <div style="width:1000px; min-height:600px; margin:0 auto; font-size:0">
+            <div class="tab" style="vertical-align:top; font-size:15px; display:inline-block; width:200px; min-height:1263px; background-color:#ddd;">
 
+                <div style="text-align:center; padding:15px; border-bottom:2px solid #cbcbcb; font-weight:bold"> 产品展示 </div>
+                <div id="iid291" onclick="changeProductPage(1,1,8);" class="active" style="cursor:pointer; padding:15px; padding-left:30px; border-bottom:2px solid #cbcbcb; font-weight:normal">&rarr; 所有产品 </div>
+            </div>
+
+
+
+            <div class="content" style="font-size:15px; display:inline-block; width:800px; min-height:1263px; background-color:white; ">
+                <div class="active" id="product11" style="display:none; margin:25px; margin-top:10px; ">
+                    <div style="cursor:pointer; font-size:15px;  padding:10px; background-color:#ddd; border-right:5px solid #cbcbcb; color:black;  border-left:5px solid #cbcbcb; color:black;"><span onclick="changeProductPage(1,1,8);" onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';">所有产品</span>></div>
+                    <div style="padding-top:10px">
+
+                        <div style="border:1px solid #ddd; padding:10px; margin-bottom:10px;">
+                            <div style="margin-top:-10px; display:inline-block; width:220px; height:130px; background-image:url(etourhealth_files/pro1.jpg); background-position:center top; background-size:cover; "></div>
+                            <div style="vertical-align:top; display:inline-block; width:350px; height:140px;">
+                                <div class="">
+                                    <div style="margin-bottom:10px; font-size:17px; font-weight:bold;">美国医疗会员卡</div>
+                                    <div class=""> 拥有我们美国医疗会员卡金卡的会员可享受美国看病预约、美国看病75折优惠，药品高达25折优惠，健康检查服务，远程医疗面诊、就医绿色通道、医疗专员服务。</div>
+
+
+                                    <!-- <button style="display: block; width: 100%;" class="btn btn-dark">From $100&nbsp;&nbsp;&nbsp;&nbsp;View Details</button>-->
+                                </div>
+                            </div>
+                            <div style="vertical-align:top; display:inline-block; width:145px; height:130px;">
+                                <div style="padding:5px; font-size:17px;">定价¥10000.00</div>
+                                <div onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">立刻订购</div>
+                                <div onclick="changeProductPage(1,2,8);" onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">更多资料>></div>
+
+                            </div>
+                        </div>
+
+                        <div style="border:1px solid #ddd; padding:10px; margin-bottom:10px;">
+                            <div style="display:inline-block; width:220px; height:130px; background-image:url(etourhealth_files/pro2.jpg); background-position:center center; background-size:cover; "></div>
+                            <div style="vertical-align:top; display:inline-block; width:350px; height:130px;">
+                                <div class="">
+                                    <div style="margin-bottom:10px; font-size:17px; font-weight:bold;">购买美国2013-2014新药和特效药</div>
+                                    <div class=""> 美国的新药一般在18个月到2-3年才在国内SFDA药监局批准上市。对于美国旅客，美国就医网可以帮助你您通过找到美国医生远程视频门诊或面对面门诊开处方，以优惠折扣价购买处方药和健康营养品。</div>
+
+
+                                    <!-- <button style="display: block; width: 100%;" class="btn btn-dark">From $100&nbsp;&nbsp;&nbsp;&nbsp;View Details</button>-->
+                                </div>
+                            </div>
+                            <div style="vertical-align:top; display:inline-block; width:145px; height:130px;">
+                                <div style="padding:5px; font-size:17px;">定价¥4000.00</div>
+                                <div onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">立刻订购</div>
+                                <div onclick="changeProductPage(1,3,8);" onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">更多资料>></div>
+
+                            </div>
+                        </div>
+
+
+                        <div style="border:1px solid #ddd; padding:10px; margin-bottom:10px;">
+                            <div style="display:inline-block; width:220px; height:130px; background-image:url(etourhealth_files/pro3.jpg); background-position:center center; background-size:cover; "></div>
+                            <div style="vertical-align:top; display:inline-block; width:350px; height:130px;">
+                                <div class="">
+                                    <div style="margin-bottom:10px; font-size:17px; font-weight:bold;">【特色医疗】关节炎PRP疗法</div>
+                                    <div class=""> PRP技术通过一种离心装置把血液中的富含血小板的血浆收集，然后把富含大量生长因子的血小板注射回患者体内，对组织中细胞和基质的再生起到促进作用。整个技术由抽血至注射仅需要20分钟左右。</div>
+
+
+                                    <!-- <button style="display: block; width: 100%;" class="btn btn-dark">From $100&nbsp;&nbsp;&nbsp;&nbsp;View Details</button>-->
+                                </div>
+                            </div>
+                            <div style="vertical-align:top; display:inline-block; width:145px; height:130px;">
+                                <div style="padding:5px; font-size:17px;">定价¥11688.00</div>
+                                <div onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">立刻订购</div>
+                                <div onclick="changeProductPage(1,4,8);" onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">更多资料>></div>
+
+                            </div>
+                        </div>
+
+                        <div style="border:1px solid #ddd; padding:10px; margin-bottom:10px;">
+                            <div style="display:inline-block; width:220px; height:130px; background-image:url(etourhealth_files/pro4.jpg); background-position:center center; background-size:cover; "></div>
+                            <div style="vertical-align:top; display:inline-block; width:350px; height:130px;">
+                                <div class="">
+                                    <div style="margin-bottom:10px; font-size:17px; font-weight:bold;">到美国购买丙肝新药Havoni</div>
+                                    <div class=""> 1.帮助病人拿到美国医生处方
+                                        <br>2.联系美国药店按疗程拿药
+                                        <br>3.协助安排行程
+                                        <br>新药的折扣是7.5折。</div>
+
+
+                                    <!-- <button style="display: block; width: 100%;" class="btn btn-dark">From $100&nbsp;&nbsp;&nbsp;&nbsp;View Details</button>-->
+                                </div>
+                            </div>
+                            <div style="vertical-align:top; display:inline-block; width:145px; height:130px;">
+                                <div style="padding:5px; font-size:17px;">¥225000.00 起</div>
+                                <div onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">立刻订购</div>
+                                <div onclick="changeProductPage(1,5,8);" onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">更多资料>></div>
+
+                            </div>
+                        </div>
+
+                        <div style="border:1px solid #ddd; padding:10px; margin-bottom:10px;">
+                            <div style="display:inline-block; width:220px; height:130px; background-image:url(etourhealth_files/pro5.jpg); background-position:center center; background-size:cover; "></div>
+                            <div style="vertical-align:top; display:inline-block; width:350px; height:130px;">
+                                <div class="">
+                                    <div style="margin-bottom:10px; font-size:17px; font-weight:bold;">【会员服务】赴美就医预约</div>
+                                    <div class=""> 您就医后，可以在此选择就医日期、就诊医院、和医生。我们收到您的预约后，会跟您联系，安排旅程。</div>
+
+
+                                    <!-- <button style="display: block; width: 100%;" class="btn btn-dark">From $100&nbsp;&nbsp;&nbsp;&nbsp;View Details</button>-->
+                                </div>
+                            </div>
+                            <div style="vertical-align:top; display:inline-block; width:145px; height:130px;">
+                                <div style="text-align:center; padding:5px; font-size:17px;">会员免费</div>
+                                <div onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">立刻预约</div>
+                                <div onclick="changeProductPage(1,6,8);" onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">更多资料>></div>
+
+                            </div>
+                        </div>
+
+                        <div style="border:1px solid #ddd; padding:10px; margin-bottom:10px;">
+                            <div style="display:inline-block; width:220px; height:130px; background-image:url(etourhealth_files/pro6.jpg); background-repeat:no-repeat; background-position:center center; background-size:contain; "></div>
+                            <div style="vertical-align:top; display:inline-block; width:350px; height:130px;">
+                                <div class="">
+                                    <div style="margin-bottom:10px; font-size:17px; font-weight:bold;">【会员服务】第二医疗意见预约</div>
+                                    <div class=""> 第二医疗意见服务是在个人罹患疾病或遭受意外伤害并已经获得诊断（也就是第一医疗意见）的基础上，咨询遍布世界各地的顶尖级医疗机构所组成的咨询网络，向您提供专业书面医疗建议。</div>
+
+
+                                    <!-- <button style="display: block; width: 100%;" class="btn btn-dark">From $100&nbsp;&nbsp;&nbsp;&nbsp;View Details</button>-->
+                                </div>
+                            </div>
+                            <div style="vertical-align:top; display:inline-block; width:145px; height:130px;">
+                                <div style="text-align:center; padding:5px; font-size:17px;">会员免费</div>
+                                <div onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">立刻预约</div>
+                                <div onclick="changeProductPage(1,7,8);" onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">更多资料>></div>
+
+                            </div>
+                        </div>
+                        <div style="border:1px solid #ddd; padding:10px; margin-bottom:10px;">
+                            <div style="display:inline-block; width:220px; height:130px; background-image:url(etourhealth_files/pro7.jpg); background-repeat:no-repeat; background-position:center top; background-size:cover; "></div>
+                            <div style="vertical-align:top; display:inline-block; width:350px; height:130px;">
+                                <div class="">
+                                    <div style="margin-bottom:10px; font-size:17px; font-weight:bold;">【会员服务】美国就医全程陪预约</div>
+                                    <div class=""> 为您或您的家人打造舒心就医之旅，我们派专人全程陪同，在您就医之旅行前、行中、行后，解决所有遇到的问题，提供就医所需的各种服务，包括办理文件、杂费支付、翻译、协调等。</div>
+
+
+                                    <!-- <button style="display: block; width: 100%;" class="btn btn-dark">From $100&nbsp;&nbsp;&nbsp;&nbsp;View Details</button>-->
+                                </div>
+                            </div>
+                            <div style="vertical-align:top; display:inline-block; width:145px; height:130px;">
+                                <div style="text-align:center; padding:5px; font-size:17px;">会员免费</div>
+                                <div onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">立刻预约</div>
+                                <div onclick="changeProductPage(1,8,8);" onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">更多资料>></div>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="" id="product12" style="display:none; margin:25px; margin-top:10px; ">
+                    <div style="cursor:pointer; font-size:15px;  padding:10px; background-color:#ddd; border-right:5px solid #cbcbcb; color:black;  border-left:5px solid #cbcbcb; color:black;"><span onclick="changeProductPage(1,1,8);" onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';">所有产品</span>><span onclick="changeProductPage(1,2,8);" onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';">美国医疗会员卡</span>
+                    </div>
+                    <div style="padding-top:10px">
+
+                        <div style="border:1px solid #ddd; padding:10px; margin-bottom:10px;">
+                            <div style="margin-top:-10px; display:inline-block; width:220px; height:130px; background-image:url(etourhealth_files/pro1.jpg); background-position:center top; background-size:cover; "></div>
+                            <div style="vertical-align:top; display:inline-block; width:350px; height:140px;">
+                                <div class="">
+                                    <div style="text-align:center; margin-bottom:10px; font-size:17px; font-weight:bold;">美国医疗会员卡</div>
+                                    <div class=""> 拥有我们美国医疗会员卡金卡的会员可享受美国看病预约、美国看病75折优惠，药品高达25折优惠，健康检查服务，远程医疗面诊、就医绿色通道、医疗专员服务。</div>
+
+
+                                    <!-- <button style="display: block; width: 100%;" class="btn btn-dark">From $100&nbsp;&nbsp;&nbsp;&nbsp;View Details</button>-->
+                                </div>
+                            </div>
+                            <div style="vertical-align:top; display:inline-block; width:145px; height:130px;">
+
+                                <div onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">立刻订购</div>
+
+
+                            </div>
+                        </div>
+
+                        <div style="border:1px solid #ddd; padding:10px; margin-bottom:10px;">
+
+                            <div style="vertical-align:top; display:inline-block; width:570px; height:30px;">
+                                <div class="">
+                                    <div style="margin-bottom:10px; font-size:17px; font-weight:bold;">选项 1 ： 本人医疗卡</div>
+                                    <div class=""> </div>
+
+
+                                    <!-- <button style="display: block; width: 100%;" class="btn btn-dark">From $100&nbsp;&nbsp;&nbsp;&nbsp;View Details</button>-->
+                                </div>
+                            </div>
+                            <div style="vertical-align:top; display:inline-block; width:145px; height:30px;">
+                                <div style="padding:5px; font-size:17px;">¥10000.00</div>
+
+
+
+                            </div>
+                        </div>
+
+                        <div style="border:1px solid #ddd; padding:10px; margin-bottom:10px;">
+
+                            <div style="vertical-align:top; display:inline-block; width:570px; height:30px;">
+                                <div class="">
+                                    <div style="margin-bottom:10px; font-size:17px; font-weight:bold;">选项 2 ： 家庭成员医疗卡</div>
+                                    <div class=""> </div>
+
+
+                                    <!-- <button style="display: block; width: 100%;" class="btn btn-dark">From $100&nbsp;&nbsp;&nbsp;&nbsp;View Details</button>-->
+                                </div>
+                            </div>
+                            <div style="vertical-align:top; display:inline-block; width:145px; height:30px;">
+                                <div style="padding:5px; font-size:17px;">¥7000.00</div>
+
+
+
+                            </div>
+                        </div>
+                        详情:
+                        <br>
+                        <br> 美国医疗会员卡福利一览表
+                        <br>
+                        <br> 我们的美国医疗会员卡为年卡。成为我们的会员后，您可以享受我们提供的美国看病免费预约、美国医疗费用报销、健康检查、远程医疗咨询服务、医疗管理贵宾服务、定点药房药费折扣、定点医疗网医疗费折扣、旅游管理贵宾等服务。
+                        <!--详情点击会员服务细则-->
+
+
+                    </div>
+                </div>
+                <div class="" id="product13" style="display:none; margin:25px; margin-top:10px; ">
+
+                    <div style="cursor:pointer; font-size:15px;  padding:10px; background-color:#ddd; border-right:5px solid #cbcbcb; color:black;  border-left:5px solid #cbcbcb; color:black;"><span onclick="changeProductPage(1,1,8);" onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';">所有产品</span>><span onclick="changeProductPage(1,3,8);" onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';">【会员服务】购买美国2013-2014新药和特效药</span>
+                    </div>
+                    <div style="padding-top:10px">
+                        <div style="border:1px solid #ddd; padding:10px; margin-bottom:10px;">
+                            <div style=" text-align:center; font-size:17px; font-weight:bold;">购买美国2013-2014新药和特效药</div>
+                        </div>
+                        <div style="border:1px solid #ddd; padding:10px; margin-bottom:10px;">
+                            <div style=" display:inline-block; width:220px; height:130px; background-image:url(etourhealth_files/pro2.jpg); background-position:center center; background-size:cover; "></div>
+                            <div style="vertical-align:top; display:inline-block; width:350px; height:130px;">
+                                <div class="">
+
+
+
+
+                                    <!-- <button style="display: block; width: 100%;" class="btn btn-dark">From $100&nbsp;&nbsp;&nbsp;&nbsp;View Details</button>-->
+                                </div>
+                            </div>
+                            <div style="vertical-align:top; display:inline-block; width:145px; height:130px;">
+                                <div style="padding:5px; font-size:17px;">定价¥4000.00</div>
+                                <div onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">立刻订购</div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+
+                        详情:
+                        <br>
+
+                        <div class="">美国的新药一般在18个月到2-3年才在国内SFDA药监局批准上市。对于美国旅客，美国就医网可以帮助你您通过找到美国医生远程视频门诊或面对面门诊开处方，以优惠折扣价购买处方药和健康营养品。</div>
+
+                        <br> MedTravel 通过定点医院和医生网络可以为病人开具处方，病人可以放心在美国买到最新出品的、国内没有上市的新药和特效药，帮助病人早日药到病除，回复健康，享受美好的生活。
+                        <br>
+                        <br> MedTravel会员在美国购药还可以享受下列价格优惠：
+                        <br>
+                        <br> 购买非专利药、专利品牌药最高可以享受2.5折优惠。
+                        <br>
+                        <br> 购买专科特效药时最高可以享受6.5折优惠。
+                        <br>
+                        <br> 购买重大疾病和慢性病维护药物时最高可以享受6.5折优惠。
+                        <br>
+                        <br> 接受输液治疗服务时最高可以享受8.0-8.5折优惠。
+                        <br>
+                        <br> 购买医疗小微设备和试纸等耗材时最高可以享受6.5折优惠。
+
+
+
+                        <br>
+                        <br>
+                        <br>
+                        <br> 需要赴美购药的病人只需要在本站购买产品、填写信息后，MedTravel工作人员会在24小时内与您联系。
+
+
+                    </div>
+
+                </div>
+                <div class="" id="product14" style="display:none; margin:25px; margin-top:10px; ">
+
+                    <div style="cursor:pointer; font-size:15px;  padding:10px; background-color:#ddd; border-right:5px solid #cbcbcb; color:black;  border-left:5px solid #cbcbcb; color:black;"><span onclick="changeProductPage(1,1,8);" onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';">所有产品</span>><span onclick="changeProductPage(1,4,8);" onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';">【特色医疗】关节炎PRP疗法</span>
+                    </div>
+                    <div style="padding-top:10px">
+                        <div style="border:1px solid #ddd; padding:10px; margin-bottom:10px;">
+                            <div style="text-align:center; font-size:17px; font-weight:bold;">【特色医疗】关节炎PRP疗法</div>
+                        </div>
+                        <div style="border:1px solid #ddd; padding:10px; margin-bottom:10px;">
+
+                            <div style=" display:inline-block; width:220px; height:220px; background-image:url(etourhealth_files/pro3.jpg); background-position:center center; background-size:cover; "></div>
+                            <div style=" display:inline-block; width:350px;"></div>
+
+                           
+                            <div style="vertical-align:top;   display:inline-block; width:145px; height:50px;">
+                                <div style="padding:5px; font-size:17px;">定价¥11688.00</div>
+                                <div onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">立刻订购</div>
+
+
+                            </div>
+
+
+
+                        </div>
+
+
+                       
+
+                        详情:
+                        <br>
+                        <br> PRP技术通过一种离心装置把血液中的富含血小板的血浆收集，然后把富含大量生长因子的血小板注射回患者体内，对组织中细胞和基质的再生起到促进作用，从而加速组织修复。整个技术由抽血至注射仅需要20分钟左右。PRP疗法是退化性关节炎的救星。无需开刀，没有伤口，无需修复期。而且因为是自己的血液，不存在排斥与副作用，即使是高血脂病人也能做。这项新技术近10年来在欧美被广泛应用。夏威夷拥有先进的设备和全美最优秀的骨科疾病治疗团队。我们将竭诚为您提供先进的医疗诊治项目，只有咖啡味、没有药水味的优雅舒适环境和5星级酒店服务。<br><br>
+                <div style="display:block;cursor: pointer;margin-bottom: 10px;" class="pic" href="http://totalgdsimg.qiniudn.com/539caf2b94a25215490000e1" title="">
+                                <img alt="" title="" width="190" height="auto" rel="lightbox" src="http://totalgdsimg.qiniudn.com/539caf2b94a25215490000e1-w360h240c">
+                                <!--<span></span>-->
+                            </div>
+
+                   关节炎泛指发生在人体关节及其周围组织的炎性疾病，可分为数十种。我国的关节炎患者有1亿以上，且人数在不断增加。临床表现为关节的红、肿、热、痛、功能障碍及关节畸形，严重者导致关节残疾、影响患者生活质量。
+
+<br><br>
+ <div style="display:block;cursor: pointer;margin-bottom: 10px;" class="pic" href="http://totalgdsimg.qiniudn.com/539caf2194a25215490000d9" title="">
+                                <img alt="" title="" width="190" height="auto" rel="lightbox" src="http://totalgdsimg.qiniudn.com/539caf2194a25215490000d9-w360h240c">
+                                <!--<span></span>-->
+                            </div>
+                            
+富血小板血浆（platelet-richplasma，PRP）是自体血小板的浓集物。血小板富含大量生长因子，在人体自我愈合和修复过程中还有更重要的作用，它是人体的"再生药"。富血小板血浆技术通过一种离心装置把血液中的富含血小板的血浆收集，然后把富含大量生长因子的血小板注射回患者体内，对组织中细胞和基质的再生起到促进作用，从而加速组织修复。患者只需抽取自身的外周血液20-30毫升，通过离心装置把血液中的富含血小板的血浆收集起来，然后注射到患者体内（如膝关节炎患者注射到膝关节腔内），血小板内的生长因子就会促进组织的愈合。整个技术由抽血至注射仅需要20分钟左右。
+
+<br><br>
+  <div style="display:block;cursor: pointer;margin-bottom: 10px;" class="pic" href="http://totalgdsimg.qiniudn.com/539caf2794a25215490000dd" title="">
+                                <img alt="" title="" width="190" height="auto" rel="lightbox" src="http://totalgdsimg.qiniudn.com/539caf2794a25215490000dd-w360h240c">
+                                <!--<span></span>-->
+                            </div>
+
+
+PRP疗法是退化性关节炎的救星。无需开刀，没有伤口，无需修复期。而且因为是自己的血液，不存在排斥与副作用。经过离心钝化，即使是高血脂病人也能做。这项新技术近10年来在欧美被广泛应用，但由于制备方法复杂成本过高，导致我国在临床上难以开展运用此技术。夏威夷拥有先进的设备和全美最优秀的骨科疾病治疗团队。我们将竭诚为您提供先进的医疗诊治项目，只有咖啡味、没有药水味的优雅舒适环境和5星级酒店服务。
+
+
+<br><br>
+推荐旅游方案：
+<br>
+                        10日游：<a href="http://etourhealth.totalgds.com/zh/activity/acy135482">http://etourhealth.totalgds.com/zh/activity/acy135482</a>
+<br>
+                        12日游：<a href="http://etourhealth.totalgds.com/zh/activity/acy135488">http://etourhealth.totalgds.com/zh/activity/acy135488</a>
+
+<br><br>
+
+特别说明<br><br>
+
+如患有以下症状，不适合prp疗法：<br>
+<br>
+血小板功能异常<br>
+
+全身感染<br>
+
+血小板指数低<br>
+
+严重贫血<br>
+
+
+<br><br>
+术前准备<br>
+
+告诉医生病史以及过敏史。<br>
+
+手术前一天晚餐以清淡为主，午夜后不要进食。此外，我们建议您术前48小时不要吸烟或饮酒。<br>
+
+手术前6个小时一定不要吃、喝，或抽烟，包括冰，口香糖，薄荷糖。<br>
+
+穿着舒适、宽松的衣服，建议穿着膝盖以上的短裤。请自备运动鞋。手术过程中可能要脱衣服和穿长袍。<br>
+
+手术当天不要穿戴指甲油，假指甲，化妆，首饰，手表。<br>
+
+<br>
+
+术后康复<br>
+
+手术完成后，您将在恢复区，麻醉师和护士会密切留意和悉心照顾，30分钟后可以回家或到住院房间。<br>
+
+术后7天内为观察期，通过术后回访，医师将与您讨论康复方案，帮助您完全康复。<br>
+<br>
+术后2-3周需要佩戴护膝。
+
+
+<br><br>
+在临床上，手术效果可维持9个月至一年，但时间长短与个人体质有关。<br><br>
+
+
+
+<br><br>
+
+费用包含
+<br>
+费用包含1次PRP治疗费。<br>
+
+
+
+                    <br>
+                    <br>
+                    <br>
+                  
+
+
+                </div>
+
+            </div>
+            <div class="" id="product15" style="display:none; margin:25px; margin-top:10px; ">
+
+                <div style="cursor:pointer; font-size:15px;  padding:10px; background-color:#ddd; border-right:5px solid #cbcbcb; color:black;  border-left:5px solid #cbcbcb; color:black;"><span onclick="changeProductPage(1,1,8);" onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';">所有产品</span>><span onclick="changeProductPage(1,5,8);" onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';">到美国购买丙肝新药Havoni</span>
+                </div>
+                <div style="padding-top:10px">
+                    <div style="border:1px solid #ddd; padding:10px; margin-bottom:10px;">
+                        <div style="text-align:center; font-size:17px; font-weight:bold;"> 到美国购买丙肝新药Havoni</div>
+                    </div>
+                    <div style="border:1px solid #ddd; padding:10px; margin-bottom:10px;">
+
+                        <div style=" display:inline-block; width:220px; height:220px; background-image:url(etourhealth_files/pro4.jpg); background-position:center center; background-size:cover; "></div>
+
+
+                        <div style="vertical-align:top; display:inline-block; width:350px; height:50px;">
+                            <div class="">
+
+
+
+                                <!-- <button style="display: block; width: 100%;" class="btn btn-dark">From $100&nbsp;&nbsp;&nbsp;&nbsp;View Details</button>-->
+                            </div>
+                        </div>
+                        <div style="vertical-align:top;   display:inline-block; width:145px; height:50px;">
+                            <div style="padding:5px; font-size:17px;">定价¥11688.00</div>
+                            <div onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">立刻订购</div>
+
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+                    详情:
+                    <br>
+                    <br>
+
+
+                    <br> 1.帮助病人拿到美国医生处方
+                    <br>
+                    <br> 2.联系美国药店按疗程拿药
+                    <br>
+                    <br> 3.协助安排行程
+                    <br>
+                    <br> 新药的折扣是7.5折。
+                    <br>
+
+
+
+
+                    <br>
+                    <br>
+                    <br>
+                    <br> 需要赴美购药的病人只需要在本站购买产品、填写信息后，MedTravel工作人员会在24小时内与您联系。
+
+
+                </div>
+
+            </div>
+            <div class="" id="product16" style="display:none; margin:25px; margin-top:10px; "></div>
+            <div class="" id="product17" style="display:none; margin:25px; margin-top:10px; "></div>
+            <div class="" id="product18" style="display:none; margin:25px; margin-top:10px; "></div>
+
+        </div>
+    </div>
 
 
 
     </div>
+    <!--产品展示-->
     <div id="section13" class="" style="display:none;">
         <style>
             #section13 .tab div:hover {
@@ -875,12 +1338,12 @@
 
             <div class="content" style="font-size:15px; display:inline-block; width:800px; min-height:600px; background-color:white;">
                 <div class="active" id="id91" style="display:none; margin:25px; ">
-                    <div style="font-size:20px;  border-bottom:1px solid #cbcbcb; color:black; "><img src="http://stockpins4less.com/images/manufacturers/4611249.jpg" width="50px;"></img>医疗会员服务</div>
+                    <div style="font-size:20px;  border-bottom:1px solid #cbcbcb; color:black; ">医疗会员服务</div>
                     <div style="padding-top:20px"> &ensp;&ensp;&ensp;&ensp;我们的美国医疗会员卡为年卡。成为我们的会员后，您可以享受我们提供的美国看病免费预约、美国医疗费用报销、健康检查、远程医疗咨询服务、医疗管理贵宾服务、定点药房药费折扣、定点医疗网医疗费折扣、旅游管理贵宾等服务。 每项的服务的详细信息，请向MedTravel在各地的办公室查询。 </div>
                 </div>
 
                 <div class="" id="id92" style="display:none; margin:25px; ">
-                    <div style="font-size:20px;  border-bottom:1px solid #cbcbcb; color:black; "><img src="http://stockpins4less.com/images/manufacturers/4611249.jpg" width="50px;"></img>赴美看病咨询与服务</div>
+                    <div style="font-size:20px;  border-bottom:1px solid #cbcbcb; color:black; ">赴美看病咨询与服务</div>
                     <div style="padding-top:20px"> &ensp;&ensp;&ensp;&ensp;我们向国内患者提供远程门诊咨询服务、赴美就医陪同服务、专家预约服务和医疗保险服务。
                         <br>
                         <br>
@@ -899,7 +1362,7 @@
                 </div>
 
                 <div class="" id="id93" style="display:none; margin:25px; ">
-                    <div style="font-size:20px;  border-bottom:1px solid #cbcbcb; color:black; "><img src="http://stockpins4less.com/images/manufacturers/4611249.jpg" width="50px;"></img>赴美购药服务</div>
+                    <div style="font-size:20px;  border-bottom:1px solid #cbcbcb; color:black; ">赴美购药服务</div>
                     <div style="padding-top:20px"> &ensp;&ensp;&ensp;&ensp;美国FDA批准的新药和特效药一般要等18到24月后，才会在国内的国家药监局批准上市销售。有些病人希望尽快使用新药和特效药，希望从国外直接购药。但国外需要处方的要管理极其严格，没有处方，根本买不到这些药品。
 
                         <br> &ensp;&ensp;&ensp;&ensp;MedTravel 通过定点医院和医生网络可以为病人开具处方，病人可以放心在美国买到最新出品的、国内没有上市的新药和特效药，帮助病人早日药到病除，回复健康，享受美好的生活。
@@ -919,7 +1382,7 @@
                 </div>
 
                 <div class="" id="id94" style="display:none; margin:25px; ">
-                    <div style="font-size:20px;  border-bottom:1px solid #cbcbcb; color:black; "><img src="http://stockpins4less.com/images/manufacturers/4611249.jpg" width="50px;"></img>特色医疗项目</div>
+                    <div style="font-size:20px;  border-bottom:1px solid #cbcbcb; color:black; ">特色医疗项目</div>
                     <div style="padding-top:20px"> &ensp;&ensp;&ensp;&ensp;特色医疗项目 我公司还推出特色医疗项目，包括全身体检、基因检测、关节炎PRP疗法、慢性腰痛微创疗法等，整合夏威夷当地最优秀的医疗资源以以迎合内地居民的治病需求。 比如，PRP疗法是退化性关节炎的救星。患者只需抽取自身的外周血液20-30毫升，通过离心装置把血液中的富含血小板的血浆收集起来，然后注射到患者体内（如膝关节炎患者注射到膝关节腔内），血小板内的生长因子就会促进组织的愈合。整个技术由抽血至注射仅需要20分钟左右。无需开刀，没有伤口，无需修复期。而且因为是自己的血液，不存在排斥与副作用。经过离心钝化，即使是高血脂病人也能做。这项新技术近10年来在欧美被广泛应用，但由于制备方法复杂成本过高，导致我国在临床上难以开展运用此技术。
                         <div class="text-center" style="margin:0 auto; width:362px;"><img src="https://dn-totalgdsimg.qbox.me/54559a1b505f88aa1bb2bc86" />
                         </div>
@@ -929,6 +1392,7 @@
             </div>
         </div>
     </div>
+    <!--服务项目-->
     <div id="section14" class="" style="display:none;">
         <style>
             #section14 .tab div:hover {
@@ -963,7 +1427,7 @@
 
             <div class="content" style="font-size:15px; display:inline-block; width:800px; min-height:600px; background-color:white;">
                 <div class="active" id="id81" style="display:none; margin:25px; ">
-                    <div style="font-size:20px;  border-bottom:1px solid #cbcbcb; color:black; "><img src="http://stockpins4less.com/images/manufacturers/4611249.jpg" width="50px;"></img>会员服务流程</div>
+                    <div style="font-size:20px;  border-bottom:1px solid #cbcbcb; color:black; ">会员服务流程</div>
                     <div style="padding-top:10px"> &ensp;&ensp;&ensp;&ensp;
                         <table data-sort="sortDisabled">
                             <tbody>
@@ -3522,6 +3986,7 @@
         </div>
 
     </div>
+    <!--医疗资源-->
     <div id="section15" class="" style="display:none;">
         <style>
             #section15 .tab div:hover {
@@ -3550,21 +4015,22 @@
 
                 <div style=" text-align:center; font-size:15px; padding:15px; padding-left:30px; border-bottom:2px solid #cbcbcb; font-weight:bold">新闻动态 </div>
 
-                <div id="iid191" class="active" onmouseover="HoverLii(19,1,15);" style="cursor:pointer; padding:15px; padding-left:10px; border-bottom:2px solid #cbcbcb; font-weight:normal"> 美国FDA 2014 年批准的新药</div>
-                <div id="iid192" class="" onmouseover="HoverLii(19,2,15);" style="cursor:pointer; padding:15px; padding-left:10px; border-bottom:2px solid #cbcbcb; font-weight:normal"> 美国2013年FDA新药</div>
-                <div id="iid193" class="" onmouseover="HoverLii(19,3,15);" style="cursor:pointer; padding:15px; padding-left:10px; border-bottom:2px solid #cbcbcb; font-weight:normal"> 中国女子翻越鸿沟 赴美国看病记</div>
-                <div id="iid194" class="" onmouseover="HoverLii(19,4,15);" style="cursor:pointer; padding:15px; padding-left:10px; border-bottom:2px solid #cbcbcb; font-weight:normal"> 医疗观光盛行 中国人海外买健康</div>
-                <div id="iid195" class="" onmouseover="HoverLii(19,5,15);" style="cursor:pointer; padding:15px; padding-left:10px; border-bottom:2px solid #cbcbcb; font-weight:normal"> 基因测序开闸 千亿商机抢滩</div>
-                <div id="iid196" class="" onmouseover="HoverLii(19,6,15);" style="cursor:pointer; padding:15px; padding-left:10px; border-bottom:2px solid #cbcbcb; font-weight:normal"> 中国海外代购抗癌药为何大受欢迎？</div>
-                <div id="iid197" class="" onmouseover="HoverLii(19,7,15);" style="cursor:pointer; padding:15px; padding-left:10px; border-bottom:2px solid #cbcbcb; font-weight:normal"> 我公司与夏威夷家庭健康联保公司达成战略协议</div>
-                <div id="iid198" class="" onmouseover="HoverLii(19,8,15);" style="cursor:pointer; padding:15px; padding-left:10px; border-bottom:2px solid #cbcbcb; font-weight:normal"> “精明”选择海外就医</div>
-                <div id="iid199" class="" onmouseover="HoverLii(19,9,15);" style="cursor:pointer; padding:15px; padding-left:10px; border-bottom:2px solid #cbcbcb; font-weight:normal"> 夏威夷：中国游客医疗旅游的首选之地</div>
-                <div id="iid1910" class="" onmouseover="HoverLii(19,10,15);" style="cursor:pointer; padding:15px; padding-left:10px; border-bottom:2px solid #cbcbcb; font-weight:normal"> 医疗旅游产业白皮书</div>
-                <div id="iid1911" class="" onmouseover="HoverLii(19,11,15);" style="cursor:pointer; padding:15px; padding-left:10px; border-bottom:2px solid #cbcbcb; font-weight:normal"> 中国奢华旅游白皮书</div>
-                <div id="iid1912" class="" onmouseover="HoverLii(19,12,15);" style="cursor:pointer; padding:15px; padding-left:10px; border-bottom:2px solid #cbcbcb; font-weight:normal"> 幸福感调查位居榜首 向夏威夷人学长寿</div>
-                <div id="iid1913" class="" onmouseover="HoverLii(19,13,15);" style="cursor:pointer; padding:15px; padding-left:10px; border-bottom:2px solid #cbcbcb; font-weight:normal"> 夏威夷是全美医疗水平最高的州</div>
-                <div id="iid1914" class="" onmouseover="HoverLii(19,14,15);" style="cursor:pointer; padding:15px; padding-left:10px; border-bottom:2px solid #cbcbcb; font-weight:normal"> PRP療法以自己血治療退化性關節炎免開刀</div>
-                <div id="iid1915" class="" onmouseover="HoverLii(19,15,15);" style="cursor:pointer; padding:15px; padding-left:10px; border-bottom:2px solid #cbcbcb; font-weight:normal"> 基因导致的药物不良反应案例</div>
+                <div id="iid1916" class="" onmouseover="HoverLii(19,16,16);" style="cursor:pointer; padding:10px; padding-left:10px; border-bottom:2px solid #cbcbcb; font-weight:normal"> 华裔医生亲述在美看病</div>
+                <div id="iid191" class="active" onmouseover="HoverLii(19,1,16);" style="cursor:pointer; padding:10px; padding-left:10px; border-bottom:2px solid #cbcbcb; font-weight:normal"> 美国FDA2014年批准新药</div>
+                <div id="iid192" class="" onmouseover="HoverLii(19,2,16);" style="cursor:pointer; padding:10px; padding-left:10px; border-bottom:2px solid #cbcbcb; font-weight:normal"> 美国FDA2013年批准新药</div>
+                <div id="iid193" class="" onmouseover="HoverLii(19,3,16);" style="cursor:pointer; padding:10px; padding-left:10px; border-bottom:2px solid #cbcbcb; font-weight:normal"> 女子翻越鸿沟赴美国看病记</div>
+                <div id="iid194" class="" onmouseover="HoverLii(19,4,16);" style="cursor:pointer; padding:10px; padding-left:10px; border-bottom:2px solid #cbcbcb; font-weight:normal"> 医疗观光盛行 海外买健康</div>
+                <div id="iid195" class="" onmouseover="HoverLii(19,5,16);" style="cursor:pointer; padding:10px; padding-left:10px; border-bottom:2px solid #cbcbcb; font-weight:normal"> 基因测序开闸 千亿商机抢滩</div>
+                <div id="iid196" class="" onmouseover="HoverLii(19,6,16);" style="cursor:pointer; padding:10px; padding-left:10px; border-bottom:2px solid #cbcbcb; font-weight:normal"> 海外代购抗癌药为何大受欢迎？</div>
+                <div id="iid197" class="" onmouseover="HoverLii(19,7,16);" style="cursor:pointer; padding:10px; padding-left:10px; border-bottom:2px solid #cbcbcb; font-weight:normal"> 与夏威夷家庭健康联保达成协议</div>
+                <div id="iid198" class="" onmouseover="HoverLii(19,8,16);" style="cursor:pointer; padding:10px; padding-left:10px; border-bottom:2px solid #cbcbcb; font-weight:normal"> “精明”选择海外就医</div>
+                <div id="iid199" class="" onmouseover="HoverLii(19,9,16);" style="cursor:pointer; padding:10px; padding-left:10px; border-bottom:2px solid #cbcbcb; font-weight:normal"> 夏威夷：游客医疗旅游胜地</div>
+                <div id="iid1910" class="" onmouseover="HoverLii(19,10,16);" style="cursor:pointer; padding:10px; padding-left:10px; border-bottom:2px solid #cbcbcb; font-weight:normal"> 医疗旅游产业白皮书</div>
+                <div id="iid1911" class="" onmouseover="HoverLii(19,11,16);" style="cursor:pointer; padding:10px; padding-left:10px; border-bottom:2px solid #cbcbcb; font-weight:normal"> 中国奢华旅游白皮书</div>
+                <div id="iid1912" class="" onmouseover="HoverLii(19,12,16);" style="cursor:pointer; padding:10px; padding-left:10px; border-bottom:2px solid #cbcbcb; font-weight:normal"> 向夏威夷人学长寿</div>
+                <div id="iid1913" class="" onmouseover="HoverLii(19,13,16);" style="cursor:pointer; padding:10px; padding-left:10px; border-bottom:2px solid #cbcbcb; font-weight:normal"> 夏威夷全美医疗水平最高的州</div>
+                <div id="iid1914" class="" onmouseover="HoverLii(19,14,16);" style="cursor:pointer; padding:10px; padding-left:10px; border-bottom:2px solid #cbcbcb; font-weight:normal"> PRP療法治療退化性關節炎免開刀</div>
+                <div id="iid1915" class="" onmouseover="HoverLii(19,15,16);" style="cursor:pointer; padding:10px; padding-left:10px; border-bottom:2px solid #cbcbcb; font-weight:normal"> 基因导致的药物不良反应案例</div>
 
 
 
@@ -3574,9 +4040,36 @@
 
 
             <div class="content" style="font-size:15px; display:inline-block; width:750px; min-height:600px; background-color:white;">
+                <div class="active" id="id1916" style="display:none; margin:25px; ">
+                    <div style="font-size:20px;  border-bottom:1px solid #cbcbcb; color:black; ">华裔医生亲述:在美国，医生怎么给病人看病</div>
+                    <div style="padding-top:20px">新闻来源: 美华网 于 2015-03-12 16:43:18
+                        <br>
+                        <br> 不同国家，医疗制度必然存在着差异。若论哪个国家的医疗制度更完善，可能在某个医疗制度下工作过的医生更有发言权，对于该制度也能有一个专业、客观的评价。高磊，美国路易斯安那州Ochsner Clinic心脏专科医生，是一位华裔医生，他在中美两种制度下都工作过，他认为，中美的医疗各有千秋，但从规范完善和人性化的角度上，美国的医疗体系是领先的。
+                        <img src="https://ci3.googleusercontent.com/proxy/32yk37p8AqIY4W5QRYKoFXktNJmDytbIRakIDcz6a8NsI2qvkKpWe0jRiGEhAoSG4R3ek0G1LGAu-Nj2uZAU9PnCirlX=s0-d-e1-ft#http://web.popo8.com/201503/12/1/619aa6caa8.jpg" border="0" style="max-width:600px" class="CToWUd a6T" tabindex="0">
 
-
-                <div class="active" id="id191" style="display:none; margin:25px; ">
+                        <br>
+                        <br> 　　以下是高磊刊登在《医学界》上的一篇文章，让我们看到，在美国，医生是怎么给病人看病的。
+                        <br>
+                        <br> 　　每次回国，与同事朋友聊上中美医疗制度的差别，大家都是惊叹于外面的世界有多不一样。我跟他们说，我们诊所给我的规定时间是看一个新病人用40分钟，看一个随访老病人是20分钟，而且期间的一半时间要用于病人教育预防咨询。朋友们眨眨眼睛说，如果在国内也这么看病人，一则时间上不可能，二则后面排队的病人都要来打你医生了。现在国内门诊医生一天大致看70到100个病人。听说有手脚快的，一天看150个门诊。我是惊叹了，一天8小时，150个，怎么看下来的？
+                        <br>
+                        <br> 　　在美国，医生的主要时间是在门诊。我的一个月中大致一周时间在医院，另外三周在门诊。在医院是处理急性发病，迅速救治，对症下药，很多疾病都是在2-3天后可以出院。住院周期很短。例如，没有并发症的急性心梗，放支架后48小时出院。一个做开胸心脏搭桥手术的病人，平均术后4-5天出院。出院后的门诊是随访治疗的主要环节。这样的医疗结构恰恰是为了节省医疗开支，避免院内并发症的发生及加快病人的康复。在费用上，比如，美国心电监护病房一天的费用大致在2000到3000美元左右，还不包括诊疗费及药费。是不是还不如住个总统套房来的舒服。出院后请个家用护工，上门护士治疗和物理治疗师的服务，这样一天的费用也不会达到病房的一半。缩短住院周期，降低费用，医院高兴，病人高兴，保险公司更高兴。
+                        <br>
+                        <br> 　　在美国，看门诊是预约制度。基本上每个有医疗保险的病人都有一个家庭医生。这个家庭医生可以看作是美国门诊医疗就诊制度的骨架。它的作用犹如一个门户，面向广大病人的需求。它又是一个诊治病人的圆点，可以由此扩展出去。通常小病咳嗽发烧或慢性病的随访，家庭医生都可游刃有余。如果洞察到有关专科方面的特殊疾病，家庭医生会迅速的把病人转诊给相关的专科医生会诊。根据医疗保险的不同，很多病人可以跨过家庭医生直接看专科。但是HMO的病人必须经过家庭医生转诊。在美国经常听到很多人抱怨门诊预约时间很长，看一个专科要等上一两个月。其实这里的原因大致是此医生的病人过度饱和，也就是说医生已经太忙了。我经常看到很多医生经过7，8年的行医后不再也不能继续接受新病人。这时也表示需要有新的医生加入此地区的必要。我们诊所现在倡导的是当天专科会诊，就是如果家庭医生当天看病人认为有会诊需求或病人要求，我们可以在同一天看到病人。在门诊预约制度以外，大多诊所也有Walkin 门诊或Urgent Care门诊，不需要预约，直接挂号看病，大大的方便病人的应急需求。
+                        <br>
+                        <br> 　　在美国，看门诊是需要医疗保险的。每次门诊病人根据各自不同的保险负担一定的COPAY（按照保险规定每次看病的自付费用），一般在20-40美元。我曾经有过很好的保险，看任何门诊都没有COPAY。现在不同了，我们单位的医疗保险不但我每月要交600-700美元，而且COPAY也是高的离奇。在医疗保险面前人人平等，医生也不例外。门诊也有自费病人，但是费用很难承担。看我心脏科的门诊自费病人需先缴纳500美元的预付。每次我看到这样的情况，我都会叫病人去CharityHospital（慈善医院或诊所）或我们称的公立医院，那儿的门诊可以是免费的。以往很多诊所都不收Medicare和Medicaid（美国的两种针对老人和低收入的政府保险）的病人，因为联邦医疗对医生的Reimbursement（偿付费用）很低。近些年，美国经济不景气及医疗改革的推动，有越来越多的诊所开始接受联邦保险了。
+                        <br>
+                        <br> 　　在美国，医生一天看完病人并不是一天工作的结束。整个一天我需要回复很多病人的来电和处理各个病人的检查结果。我们诊所强调病人的来电要在1小时内回复。病人的病情变化或要求药方Refill（药方的联系处方）都会通过我的护士转到我的电脑上。我会及时的给病人打电话或告知我的护士如何处理。门诊每次看病人都会有开一些相关的检查。如果是复杂病情的检查我都会预约病人下次门诊时讨论。大多检查我认为没有必要回诊所的又是病情相关的，都会在结果出来后打电话通知病人。多的时候一天有8到10个电话结果通知。病人在电话上也会提出问题我们一一解答。曾经有一个病人的结果是周五晚上出来的，是正常结果，但是我知道病人很关心，打了一天的病人手机和宅电都没人接，最后是周日下午打通，原来病人出去郊游了。
+                        <br>
+                        <br> 　　在美国，医院和诊所都在大力推广电脑化。奥巴马医疗改革的一个方面就是医疗信息的全面电子化。从2014年开始，没有实行电脑化的诊所和医院将受到经济上的惩罚。全面电脑化方便了医生，也方便了病人。我们整个系统有8个医院，有统一的电脑系统联网。病人可以免费注册到我们的系统。通过注册后，病人有自己的网页。可以查看到各个门诊的时间表，选择最佳适合时间预约就诊，亦可在网上反复取消再预约。病人所有的检查结果都会直接显示在病人的网页上。通过网页病人也可以给自己的医生留言或要求咨询，医生都会在最短时间回复或回电。目前我们诊所已经开始open note，就是病人看完医生后，医生书写的病历会自动传输到病人自己的网页上便于病人查看。对于医生，所有病人信息都在电脑上，查看方便。就是病人不在我们系统的医院或诊所看病，如果另个单位用的是同一电脑系统（例如，Epic是个很广泛应用的医疗电脑系统），经过病人同意，一秒内病人的信息便可传输到我的电脑上。没有以往等Fax的烦恼。就是我没有电脑在身旁，用我的iphone也可以进入我们的系统查看相关资料。由于信息电脑化，所有我开的检查的结果都会传输到我的电脑。有不正常的结果我会及时发现并做出处理。医疗的全面电子化无线化增强了病人与医生间的联系，而且进一步避免了医疗差错的发生。
+                        <br>
+                        <br> 　　在美国，各个医疗诊所都在积极促进医生和整个诊所的病人满意度。病人来看医生一方面是寻求对疾病的医治，另一方面也是得到一种服务。医疗重点在病人而不是医生。病人可以选择医生而医生不能选择病人。诊所作为一种服务机构不能承担因医生或其他工作人员的服务质量而减少病人的后果。每月有专业的调查机构会向你的病人发出调查表格统计对医生乃至整个诊所的评价。病人满意度已经与医生的收入联系，并且不达标的医生也会下岗。病人满意度差的诊所，可想而知，会在医疗行业激烈的竞争中被淘汰。
+                        <br>
+                        <br> 　　在美国，医学技术在不断进步，医疗观念也在不断进步。以前我们的医疗注重数量（Volume），你看了多少病人做了多少手术，你的收入与你的工作量成正比。很常见的一种衡量医生工作量的指标是RVU（relative value unit）。我们知道数量与质量是不能化等号的。某些不良医生及诊所为了增加收入开不必要的检查做不必要的手术，无形中增加了全民医疗费用，并且也危害了患者的身体健康。上述的情况正在改变。近年来，美国医疗已从注重数量转向质量（Quality）。评价医生的手段是看你是否遵循了正确的医疗方针和你的病人的相关预后。结果是，可能你今天看了150个病人，但是，他们没有好的进展，数天或一个月内还要再来看你或其他的医生，那么这样的情况下你就不能从这些病人的服务中得到应有的经济回报，可能还会有一定的惩罚。
+                        <br>
+                        <br> 　　世界上没有十全十美的医疗制度，在中美两种制度下都工作过的我，深有感受。中美的制度各有千秋，但是从规范完善和人性化的角度上，美国的医疗体系是大大的走在前头。
+                    </div>
+                </div>
+                <div class="" id="id191" style="display:none; margin:25px; ">
                     <div style="font-size:20px;  border-bottom:1px solid #cbcbcb; color:black; ">美国FDA 2014 年批准的新药 2015-01-22</div>
                     <div style="padding-top:20px"> &ensp;&ensp;&ensp;&ensp;美国FDA 2014 年批准的新药 2015-01-22 10:34:27 丰收和突破：药源点评2014年美国FDA批准新药 来源：美中药源/吕顺 2015-01-04 10:18
 
@@ -3590,7 +4083,6 @@
                         <br> 价格昂贵是2014年批准新药的又一个特色。比如Keytruda和Opdivo的年治疗费用都是每位病人15万美元。虽然说生命无价，但这个价格即使对美国的支付方也难以承受。比如美国有些州现在已经限制吉利德Sovaldi和Harvoni的使用，只有最严重的丙肝患者才可以得到政府支持的治疗。无论如何，高附加值/高价格短期内将持续成为西方新药的定价规则。
                         <br> 总之，2014年是制药工业丰收的一年、是监管部门工作效率得到有效改进的一年，也是科学和商业上获得重大突破的一年。 </div>
                 </div>
-
                 <div class="" id="id192" style="display:none; margin:25px; ">
                     <div style="font-size:20px;  border-bottom:1px solid #cbcbcb; color:black; ">美国2013年FDA新药 2015-01-22</div>
                     <div style="padding-top:20px">
@@ -3874,7 +4366,6 @@
                     <div style="padding-top:20px">2014-08-05 16:50:25 日前好莱坞影星安洁莉娜裘莉（Angelina Jolie）进行乳腺切除手术，让基因测序成为全球热点，7月大陆国家食品药品监督管理总局公布了4款基因测序产品获得注册证，根据大陆媒体报导，这等于是预告了大陆冰封的基因测序市场再度开放，商机上看千亿元（人民币，下同）。 安洁莉娜裘莉的母亲在与癌症搏斗了近十年后，于56岁那年去世。裘莉在接受基因检测后，证实患有名为「BRCA1」的先天基因缺陷，该缺陷会显著增加罹患乳腺癌的机率。37岁的裘莉因此接受了为期9周的双侧乳腺切除手术。医生告诉她，切除乳腺后，她个人患乳腺癌的机率将从87%降至5%。她还鼓励患有基因缺陷的女性积极接受检查。 ▲好莱坞女星安洁莉娜裘莉6月在上海宣传新片。（新华社资料照片） 4款产品获注册证 裘莉的作法让基因测序成为全球热点，不过大陆食药监总局在今年年初曾叫停基因检测的临床应用，并明确表示，在相关的标准出台以前，任何医疗机构不得开展基因测序临床应用。但7月，食药监总局公布4款基因测序产品获得注册证，这预示著冰封了半年的大陆基因测序市场正式放开。这也是食药监总局首次批淮注册的第二代基因测序诊断产品。 根据《第一财经日报》报导，粗略估计，大陆基因测序市场规模超过千亿元，而对目前已聚焦于这一产业链的数十家上市公司而言，更多竞争者的火速入场，已经拉开激烈的抢滩战。 7月大陆通过的BGISEQ-1000基因测序仪、BGISEQ-100基因测序仪和胎儿染色体非整倍体（T21、T18、T13）检测试剂盒（联合探针锚定连接测序法）、胎儿染色体非整倍体（T21、T18、T13）检测试剂盒（半导体测序法）等4个医疗器材获得注册证。该批产品最大的宣传点在于，可以通过对孕周12周以上的高危孕妇外周血血浆中的游离基因片段进行基因测序，对胎儿染色体非整倍体疾病进行无创产前检查和辅助诊断。 ▲华南农业大学学生在华大基因实验室做基因研究。（新华社资料照片） 市场将呈倍数释放 大陆华大基因董事长汪建指出，光是大陆孕妇唐氏综合症的筛选，1年商机就超过百亿，整体基因检测服务市场可达兆元级别，一切有生命的个体均可成为基因检测的服务市场，随著未来检测范围和领域的开放，市场将会倍数释放。
                     </div>
                 </div>
-
                 <div class="" id="id196" style="display:none; margin:25px; ">
                     <div style="font-size:20px;  border-bottom:1px solid #cbcbcb; color:black; ">中国海外代购抗癌药为何大受欢迎？</div>
                     <div style="padding-top:20px">2014-07-28 18:35:57 中国缺乏的海外抗癌药主要集中在治疗白血病、肺癌、乳腺癌和黑色素瘤等方面。受制于审批难和高关税、多层加价影响，中国进口药物价格较高，加之国内往往又有限价等管制，激励了海外代购的扩展。 癌症患者马先生对财新记者表示，“药就是命，国内没有，或者国内太贵，自然就会有其他渠道。” 与欧美国家相比，中国癌症患者生存率较低，除了筛查发现期较晚，医疗水平较为落后，硬件设施不足外，缺乏足够有效、经济的药物也是其中重要原因。 【白血病、肺癌、乳腺癌和黑色素瘤药物缺乏】 据北京盛诺一家管理有限公司首席医务官、医学博士连耀国对财新记者介绍，中美之间的医疗差距主要体现在科研临床转化率（Bench-to-Bed）上，其中包括诊断方案、技术设备的差异，也包括药物差异。 2012年，美国癌症学会和国家癌症研究所联合发布报告称，由于癌症存活率提高等因素，到2022年美国癌症幸存者的数量将从目前约1370万增至约1800万。 在美国目前癌症幸存者中，约45%的人年龄在70岁以上，只有5%的人不到40岁，确诊患癌时的平均年龄约为66岁；64%的幸存者确诊已至少5年，15%的幸存者患癌20年以上。 男性癌症幸存者中，前列腺癌、结直肠癌、黑色素瘤患者最常见，分别占全部幸存者的43%、9%和7%；女性癌症幸存者中，乳腺癌、子宫癌以及结直肠癌患者最常见，分别占41%、8%和8%。 在中国，缺乏有效的癌症存活率调查数据。但对比中美癌症药物使用情况可以发现，很多国外疗效显著的常用癌症药物，并没能进入中国。 连耀国介绍说，中国缺乏的海外抗癌药主要集中在治疗白血病、肺癌、直肠癌、乳腺癌和黑色素瘤等方面。具体而言，包括治疗肺癌的辉瑞产的克唑替尼、勃林格殷格翰产的阿法替尼，治疗乳腺癌的基因泰克产的帕妥珠单抗，治疗黑色素瘤的葛兰素史克产的达拉菲尼和曲美替尼、罗氏产的维罗非尼等。 中国缺乏的海外抗癌药，正是美国癌症幸存者最多的领域。 【制度与价格壁垒】 曾赴美国就医的癌症患者马先生对财新记者表示，癌症患者日常维持和控制主要靠药物治疗。但在中国，缺乏有效的药物，导致癌症患者的病情不能得到有效控制，一些进口药物价格奇高，导致患者和家属经济压力非常大。 据业内人士介绍，国外药物进入中国主要难在专利和审批方面。一些申请专利得到世界知识产权保护的药物，在保护期内，其他国家和企业是不能够仿制的，因此，引进新药，必须专利方药企主动申请。 即使专利方药企主动申请进入中国，也需要向中国药监部门和价格部门递交各种材料，以获得药品批号。其中包括以中国人为样本的临床试验数据，完成临床数据，获得批号，至少需要两到三年。 进入中国后，国外药物也往往因为价格高企而销售量不佳。“进口药品关税一般为5-8个点，中国是药品销售分包体系，转给一级代理商会加8-10个点，再到二级代理商和配送公司，会增加6-8个点，如果进入医院，还要加15个点。这就是为什么海外代购会非常火，因为便宜，价格差多的可以在10倍左右。”一位业内人士对财新记者表示。
@@ -3916,15 +4407,24 @@
                     <div style="padding-top:20px">2014-07-13 23:31:03 根据2013年美国健康排名报道，夏威夷州医疗水平位列全美50州之首。 An annual measure of the nation's health status finds evidence that Americans made "a notable shift" toward better health in 2013. Important gains were seen in more than two-thirds of the measures analyzed for the 2013 America's Health Rankings report, released today, including: •A decline in the smoking rate, down from 21.2% of the adult population in 2012 to 19.6%. Seventeen states had significant drops in smoking, the largest being in Nevada, Maryland, Oklahoma, Kansas and Vermont. •A drop in physical inactivity, defined as not doing any physical activity outside work for 30 days, down from 26.2% of the adult population in 2012 to 22.9% in 2013. The prevalence of physical inactivity varies from a high of 31.4% in Arkansas to a low of 16.2% in Oregon. •A leveling off of the obesity epidemic as the percentage of adults who are obese — defined as roughly 30 or more pounds over a healthy weight — holds steady. This marks the first year since 1998 that obesity rates did not increase, making it "a victory of sorts," says Reed Tuckson, senior medical adviser to the not-for-profit United Health Foundation, which sponsors the report with the American Public Health Association and the Partnership for Prevention. "We are encouraged," Tuckson says. "Put all together, the big conclusion is that these trends give us reason to be empowered to do more. We're seeing it all across America — individuals and families are making the decision to be active, to eat a more appropriate diet, to stop smoking. We are seeing that people can do it. And we are encouraged by the work in communities to address these issues that compromise America's health and vitality. Now we have to do more of it. "We are in no way declaring the war is over but are declaring that there is reason for optimism," he says. Among the challenges noted in the report is the increasing percentage of adults who have been diagnosed with diabetes (excluding pre-diabetes and gestational diabetes), a chronic condition that affects 9.7% of adults, about double the rate in the mid-1990s. The prevalence of diabetes ranges from 7% of adults in Alaska to 13% in West Virginia. The disease is the seventh leading cause of death in the USA and contributes to heart disease and stroke, the first and fourth leading causes of death, respectively. Of the three major types of diabetes (type 1, type 2 and gestational) type 2 diabetes is the most common and accounts for 90% to 95% of all diabetes cases, according to the report. Hawaii is this year's healthiest state, according to the analysis, which uses data from the Centers for Disease Control and Prevention, American Medical Association, Census Bureau, Department of Education and even the FBI. It looks at 27 measures of health, including tobacco and alcohol abuse, exercise, infectious diseases, crime rates, public health funding, access to immunizations, premature birth rates and cancer and heart disease rates. Last year, Vermont was No. 1. Hawaii scored well on most measures, particularly for having low rates of uninsured individuals, high rates of childhood immunization and low rates of obesity, smoking and preventable hospitalizations. The report notes that Hawaii also has areas where it can improve: higher-than-average rates of binge drinking and occupational fatalities, and lower-than-average rates of high school graduation. Mississippi is ranked last this year and ranked among the bottom three states since the inception of the rankings in 1990. It ranks in the bottom five states on 15 of the 27 measures including high prevalence of obesity, physical inactivity, diabetes and children in poverty. It scored well for a low prevalence of binge drinking, a high rate of child immunizations and small disparity in health status between adults 25 and older who graduated from high school and those who didn't. States that had the greatest improvement in the rankings include Wyoming (up eight places on the list); Idaho (up seven); Montana (up five); New Mexico (up four) and New York (up three). "People love rankings, and they do provide a real positive function," says Steven Wallace, the associate director of the UCLA Center for Health Policy Research, which was not involved in the report. "Being at the top is reason to crow, and being at bottom is a real motivator for policymakers, public health officials and communities to say we can do a lot better than we have been." He calls this report "credible and carefully constructed" and notes that a number of other health rankings from government and private organizations do similar and complementary work. Although much of the political and media discussion has focused on insurance and medical care issues, "we still need a much higher level of engaging on the prevention side," Tuckson says. "You cannot medicalize yourself out of the problems we have. We will never ever have enough money to do that." State-by-state rankings (ranking, state, score) 1 Hawaii 0.919 2 Vermont 0.868 3 Minnesota 0.731 4 Massachusetts 0.725 5 New Hampshire 0.703 6 Utah 0.695 7 Connecticut 0.649 8 Colorado 0.565 9 North Dakota 0.557 10 New Jersey 0.531 11 Nebraska 0.460 12 Idaho 0.442 13 Oregon 0.426 14 Washington 0.403 15 New York 0.370 16 Maine 0.366 17 Wyoming 0.355 18 Iowa 0.317 19 Rhode Island 0.317 20 Wisconsin 0.313 21 California 0.310 22 South Dakota 0.284 23 Montana 0.277 24 Maryland 0.276 25 Alaska 0.275 26 Virginia 0.259 27 Kansas 0.122 28 Arizona 0.020 29 Pennsylvania -0.022 30 Illinois -0.096 31 Delaware -0.097 32 New Mexico -0.175 33 Florida -0.210 34 Michigan -0.218 35 North Carolina -0.247 36 Texas -0.250 37 Nevada -0.294 38 Georgia -0.315 39 Missouri -0.373 40 Ohio -0.407 41 Indiana -0.487 42 Tennessee -0.579 43 South Carolina -0.635 44 Oklahoma -0.666 45 Kentucky -0.716 46 West Virginia -0.727 47 Alabama -0.822 48 Louisiana -0.844 49 Arkansas -0.893 50 Mississippi -0.894 Source: United Health Foundation, 2013
                     </div>
                 </div>
-
                 <div class="" id="id1914" style="display:none; margin:25px; ">
                     <div style="font-size:20px;  border-bottom:1px solid #cbcbcb; color:black; ">PRP療法以自己血治療退化性關節炎免開刀</div>
                     <div style="padding-top:20px"> 2014-07-13 23:30:27 退化性關節炎新救星，PRP治療不需開刀、沒有傷口、不需修復期，且由於是自己體內抽取的血液，沒有排斥與副作用問題，經過離心純化，即便是高血脂病患也能做，可說是目前為止，最好的治療方式。 蔡庆丰医师 門諾引進新療法 抽取自身血液經過離心純化取得血小板血漿 以促進軟骨組織再生 記者黃婉婷／報導 花蓮一名七十多歲因膝關節退化磨損、不靈活，走路不便、疼痛等困擾，係患退化性關節炎的市民，由花蓮門諾醫院引進最新的PRP療法，俗稱「吸血鬼療法」，利用抽取自己的血打回身上，不用開刀換關節，擺脫膝蓋疼痛困擾，擺脫拐杖、健步如飛。 PRP療法國外已行之有年 門諾醫院骨科醫師蔡慶豐說，PRP療法早在國外行之有年，原先使用在因運動傷害所造成的肌肉拉傷或肌健斷裂，效果良好，如老虎‧伍茲及網球選手拉斐爾．納達爾，但一般民眾也常為膝關節所苦，有些痛到寸不難行卻寧可拿柺杖、坐輪椅就是不願動刀，引進國內後，不少名人包括豬哥亮、籃球主播傅達仁、南僑集團董事長陳飛龍等人都曾嘗試，效果好、不需手術，而聲名大噪。 萃取生長因子注射疼痛處 PRP究竟有何特殊之處？蔡慶豐說，PRP是指以富含血小板之血漿 （platelet-rich plasma），抽取自身血液，利用離心機去除紅血球，取得高濃度的血小板血漿，再把血小板中所富含的生長因子萃取出來，注射到疼痛處，減緩或終止軟骨細胞壞死磨損，緩解關節的退化，減輕膝關節的疼痛、加速骨骼、肌肉細胞的修復再生速度、修復受損細胞、促進膠原增生、促進微血管周邊循環與軟骨組織的再生。 PRP究竟如何幫助終結膝蓋疼痛呢？一般人都知道，血小板具有凝血、止血的功能，蔡慶豐指出，近年醫學研究發現，血小板細胞中含有很多再生因子，可以促進血管及組織細胞的再生與修復，但一般血液中的血小板濃度不足，且含有紅血球、白血球等，所以需要透過離心機進行純化。 現行治療退化性關節炎的方式包含，口服抗消炎止痛藥、注射類固醇及玻尿酸、置換人工關節等，蔡慶豐說，口服消炎止痛藥、注射類固醇，只能暫時性的止痛，玻尿酸是增加關節的潤滑液，止痛效果不錯，但都是治標不治本的方式，不能真正達到膝關節軟骨治療，而使用PRP，透過自體血小板，促進軟骨細胞的修復與再生。 蔡慶豐指出，PRP的好處包括，不需開刀、沒有傷口、不需修復期，且由於是自己體內抽取的血液，沒有排斥與副作用問題，經過離心純化，即便是高血脂病患也能做，可說是目前為止，最好的治療方式！ 要價約六萬 維持九個月至一年 目前自費，抽取一百CC的血液，可萃取十CC的高濃度血小板，可注射兩到三處，要價約六萬，臨床上，可維持九個月至一年左右，但時間長短與個人體質有關，患者可到門諾醫院骨科門診洽詢。 蔡慶豐說，退化性關節的前兆是，坐姿或蹲姿，突然要站起來剎那，膝蓋疼痛無力，需手扶，但走幾步路後又不痛了，隨著時間會越來越嚴重，甚至不走路時，晚上睡覺膝關節都會痛，嚴重影響生活品質，他說，任何關節都會退化，但以膝關節活動量大，最常見，目前PRP療法可治療各種關節疼痛、五十肩、肌健斷練 腳踝拉傷等，越早治療，效果越好。 2014-04-30更生日報
                     </div>
                 </div>
                 <div class="" id="id1915" style="display:none; margin:25px; ">
-                    <div style="font-size:20px;  border-bottom:1px solid #cbcbcb; color:black; ">赴美看病咨询与服务</div>
-                    <div style="padding-top:20px"> &ensp;&ensp;&ensp;&ensp;我们向国内患者提供远程门诊咨询服务、赴美就医陪同服务、专家预约服务和医疗保险服务。
+                    <div style="font-size:20px;  border-bottom:1px solid #cbcbcb; color:black; ">基因导致的药物不良反应案例</div>
+                    <div style="padding-top:20px">2014-07-13 23:28:45
+                        <br>
+                        <br> 安全用药基因检测，针对与药物反应相关的基因密码进行解读，预测患者对于不同药物的不良反应程度，对临床用药起到一定的指导作用。参考基因检测的结果，医生可以在开处方时，在药品选择、剂量控制及联合用药等方面提出适合每个患者自己的个体化用药方案，最终达到提高药物疗效、降低药物毒副作用、减少医疗费用的目的。让患者花最短的时间、最少的钱，达到最好的治疗效果。
+                        <br>
+                        <br> 案例一： 2005 年8月，一个原本健康的婴儿在出生后第7天出现母乳喂养困难。第11天，儿科专家诊断宝宝已经痊愈并且恢复了体重。可是在出生后第12天，宝宝肤色发青而且母乳摄入量急剧下降。第13天，宝宝突然身亡。死亡鉴定表明，宝宝体内的吗啡含量超过了正确用量的70倍！原因就在于母亲在分娩后服用30毫克的可待因药片持续2周，而且期间一直持续母乳喂养。可待因是一种常用的产后常用的止痛药，但是其中CPY2D6的基因多态性对于母乳喂养来说，可危及一些新生儿的生命。而未雨绸缪的母婴基因检测就可以很好地预防这类悲剧的发生。
+                        <br>
+                        <br> 案例二： 氢可酮，一种半合成的阿片类药物，具有镇痛和止咳的功效。一个5岁9个月（体重35千克）的女孩，持续数天患有严重感冒，她被医生规定口服重酒石酸氢可酮（1毫克/毫升），每次1茶匙，每天3次，持续5天；她还规定同时服用克拉霉素治疗耳部感染。据母亲的记录和残留在瓶子的药量，下午3时至当天晚上11点，孩子每4小时服用了氢可酮，当天总药量是15毫克。 结果第二天，孩子在学校总是昏昏欲睡，头晕目眩，孩子被接回家睡觉。在晚上6点58分，母亲发现孩子反应迟钝。送到医院时孩子已经停止心跳，宣判死亡。尸检报告显示，血液中氢可酮浓度含量达到0.14微克/毫升，氢可酮引起的呼吸抑制是儿童死亡的最可能原因。 药理学实验分析表明，孩子继承了一个受损的CYP2D6等位基因，从而导致氢可酮在血液内堆积难以代谢。除此之外，克拉霉素是代谢酶CYP3A4的强效活性抑制剂，从而潜在地促进了氢可酮的毒性水平。氢可酮和克拉霉素是治疗儿童上呼吸道感染的普遍的临床用药。但是药物之间的相互作用，可以产生致命的毒性。
+                        <br>
+                        <br> 案例三： 氯吡格雷是一种广谱的抗血小板剂，用于预防动脉血栓。氯吡格雷给药作为一种前体药物，经过肝细胞色素酶CYP2C19代谢成活性代谢产物。活性代谢物是负责氯吡格雷的抗血小板活性。一名血栓患者CYP2C19的基因型导致他体内该酶的代谢能力弱，但他遵医嘱用氯吡格雷。自2005年至2009年，他坚持服用氯吡格雷，但是一直没有疗效。因此，患者体内出现支架内血栓，必须接受多个心脏手术。假如提前了解患者的基因构成，可以使用替代药物疗法，如阿司匹林早期治疗。药物更安全，更有效。 CYP2C19基因缺失最流行于亚洲人群。在中国每3个人里有就有1个人的基因型不适合服用药物如氯吡格雷，需要CYP2C19基因的激活。
+                        <br>
+                        <br>
 
                     </div>
                 </div>
@@ -3938,6 +4438,7 @@
 
 
     </div>
+    <!--新闻动态-->
     <div id="section16" class="" style="display:none;">
         <style>
             #section16 .tab div:hover {
@@ -3958,7 +4459,7 @@
         </style>
         <div style="width:1000px; height:200px; background-image:url(etourhealth_files/banner-top.jpg); background-repeat:no-repeat; background-position:center center; background-size:cover;margin:0 auto; margin-top:2px;"> </div>
         <div style="width:1000px; min-height:600px; margin:0 auto; font-size:0">
-            <div class="tab" style="vertical-align:top; font-size:15px; display:inline-block; width:200px; height:600px; background-color:#ddd;">
+            <div class="tab" style="vertical-align:top; font-size:15px; display:inline-block; width:200px; min-height:1100px; background-color:#ddd;">
 
                 <div style="text-align:center; padding:15px; border-bottom:2px solid #cbcbcb; font-weight:bold"> 关于我们 </div>
                 <div id="iid71" class="active" onmouseover="HoverLii(7,1,1);" style="cursor:pointer; padding:15px; padding-left:30px; border-bottom:2px solid #cbcbcb; font-weight:normal">&rarr; 易途国际有限公司</div>
@@ -3969,14 +4470,38 @@
 
 
 
-            <div class="content" style="font-size:15px; display:inline-block; width:800px; min-height:600px; background-color:white;">
+            <div class="content" style="font-size:15px; display:inline-block; width:800px; min-height:1100px; background-color:white;">
                 <div class="active" id="id71" style="display:none; margin:25px; ">
                     <div style="font-size:20px;  border-bottom:1px solid #cbcbcb; color:black; ">美国医疗旅游第一品牌</div>
                     <div style="padding-top:20px">
 
 
 
-                        易途国际有限公司总部设立在美国夏威夷。成立至今大力发展中国游客赴美医疗旅游的项目。我公司陆续和多家美国优秀的医疗团队以及医疗保险公司签署了战略合作 协议，搭建了中美先进医疗唯一的桥梁，是中国游客赴美医疗旅游活动的先驱。我们将为国内居民提供全面、权威的医疗咨询，出国看病，出国治病，赴美就医，海 外医疗保险等快捷贴心的一站式服务。 夏威夷的热带岛屿被称为人间天堂。 夏威夷人不仅长寿，而且比美国其他州的居民承压更少，生活更幸福。在盖洛普咨询公司最近几年关于全美各地人们幸福感的调查中，夏威夷人一直位居榜首。久居 喧嚣的大城市，承受着快节奏的生活压力，饱受着PM2.5的折磨，夏威夷岛屿上缓慢的度假节奏、充足的阳光和清新的空气，一定是您疗养、旅游和治病的最佳 圣地。 美国是世界第三大医疗旅游国，每年平均有80万国外病患来美国就医。尽管美国的医疗费用昂贵，还是因其善解疑难杂症吸引越来越多的海外病患。夏威夷医疗旅 游始于20世纪九十年代。起初主要顾客是日本游客。日本每年有2万人左右到夏威夷做医疗旅游，主要有健康检查、心血管疾病治疗、肿瘤治疗、疗养和康复、美 容等。2013年，纽约时报、Times和US Today等媒体均报道称“夏威夷是美国医疗健康水平最高的州，也是医疗成本全美最低的州”。 除了先进的医疗水平，夏威夷群岛的原始海滩和热带植物，充足的阳光和洁净的空气，也对病人康复增效不少。 公司目前在北京和广州建立了客户服务中心，为国内患者贴心安排海外就医咨询、当地接机、住宿安排、医学翻译等全面的服务。公司的客户服务团队由美国专业医 学人员、高级医学翻译、夏威夷旅游专家和律师团队共同组成。通过我们的不懈努力，确保国内居民可以充分享受海外先进的医疗资源、海外医学专家咨询及预约、 医学翻译、海外旅行陪同等优质的服务。我们将竭诚为您提供只有咖啡味，没有药水味的5星级医疗旅游服务。 选择我们的理由 (1) 注册地点在美国的唯一的海外医疗咨询与服务机构（服务中国内地居民）； (2) 与美国多家医疗健康保险公司合作，定点医院和医生网络覆盖美国本土超过5000家医院，70万名权威医生； (3) 专业的医学翻译和服务团队，只需2个工作日即可帮您完成病例翻译、医学专家联络和预约； (4) 服务价格透明，可通过公司官方网站直接拍下； (5) 专业的海外陪同人员和接待，帮您安排赴美治疗的行程、接机、交通、医学翻译等，让您在美国安心养病； (6) 专业的律师团队，如果美国医院治疗期间有任何医疗责任，都可以帮您追究，保障您的权益； (7) 客户病情资料严格保密； (8) 特别服务：向中国居民提供美国医疗会员卡，减轻您赴美就医的经济压力。
+                        易途国际有限公司总部设立在美国夏威夷。成立至今大力发展中国游客赴美医疗旅游的项目。我公司陆续和多家美国优秀的医疗团队以及医疗保险公司签署了战略合作 协议，搭建了中美先进医疗唯一的桥梁，是中国游客赴美医疗旅游活动的先驱。
+                        <br>
+                        <br>我们将为国内居民提供全面、权威的医疗咨询，出国看病，出国治病，赴美就医，海 外医疗保险等快捷贴心的一站式服务。 夏威夷的热带岛屿被称为人间天堂。 夏威夷人不仅长寿，而且比美国其他州的居民承压更少，生活更幸福。在盖洛普咨询公司最近几年关于全美各地人们幸福感的调查中，夏威夷人一直位居榜首。
+                        <br>
+                        <br>久居 喧嚣的大城市，承受着快节奏的生活压力，饱受着PM2.5的折磨，夏威夷岛屿上缓慢的度假节奏、充足的阳光和清新的空气，一定是您疗养、旅游和治病的最佳 圣地。 美国是世界第三大医疗旅游国，每年平均有80万国外病患来美国就医。尽管美国的医疗费用昂贵，还是因其善解疑难杂症吸引越来越多的海外病患。夏威夷医疗旅 游始于20世纪九十年代。起初主要顾客是日本游客。日本每年有2万人左右到夏威夷做医疗旅游，主要有健康检查、心血管疾病治疗、肿瘤治疗、疗养和康复、美 容等。2013年，纽约时报、Times和US Today等媒体均报道称“夏威夷是美国医疗健康水平最高的州，也是医疗成本全美最低的州”。除了先进的医疗水平，夏威夷群岛的原始海滩和热带植物，充足的阳光和洁净的空气，也对病人康复增效不少。
+                        <br>
+                        <br> 公司目前在北京和广州建立了客户服务中心，为国内患者贴心安排海外就医咨询、当地接机、住宿安排、医学翻译等全面的服务。公司的客户服务团队由美国专业医 学人员、高级医学翻译、夏威夷旅游专家和律师团队共同组成。通过我们的不懈努力，确保国内居民可以充分享受海外先进的医疗资源、海外医学专家咨询及预约、 医学翻译、海外旅行陪同等优质的服务。我们将竭诚为您提供只有咖啡味，没有药水味的5星级医疗旅游服务。
+                        <br>
+                        <br> 选择我们的理由
+                        <br>
+                        <br>(1) 注册地点在美国的唯一的海外医疗咨询与服务机构（服务中国内地居民）；
+                        <br>
+                        <br> (2) 与美国多家医疗健康保险公司合作，定点医院和医生网络覆盖美国本土超过5000家医院，70万名权威医生；
+                        <br>
+                        <br>(3) 专业的医学翻译和服务团队，只需2个工作日即可帮您完成病例翻译、医学专家联络和预约；
+                        <br>
+                        <br> (4) 服务价格透明，可通过公司官方网站直接拍下；
+                        <br>
+                        <br>(5) 专业的海外陪同人员和接待，帮您安排赴美治疗的行程、接机、交通、医学翻译等，让您在美国安心养病；
+                        <br>
+                        <br> (6) 专业的律师团队，如果美国医院治疗期间有任何医疗责任，都可以帮您追究，保障您的权益；
+                        <br>
+                        <br> (7) 客户病情资料严格保密；
+                        <br>
+                        <br> (8) 特别服务：向中国居民提供美国医疗会员卡，减轻您赴美就医的经济压力。
 
 
 
@@ -3987,6 +4512,7 @@
 
         </div>
     </div>
+    <!--关于我们-->
     <div id="section17" class="" style="display:none;">
         <style>
             #section17 .tab div:hover {
@@ -4023,7 +4549,7 @@
 
             <div class="content" style="font-size:15px; display:inline-block; width:700px; min-height:700px; background-color:white;">
                 <div class="active" id="id61" style="display:none; margin:25px; ">
-                    <div style="font-size:20px;  border-bottom:1px solid #cbcbcb; color:black; ">广州易徒乐商务服务有限公司</div>
+                    <div style="font-size:20px;  border-bottom:1px solid #cbcbcb; color:black; ">易途国际(香港)有限公司</div>
                     <div style="padding-top:20px">
 
 
@@ -4041,7 +4567,7 @@
                 </div>
 
                 <div class="" id="id62" style="display:none; margin:25px; ">
-                    <div style="font-size:20px;  border-bottom:1px solid #cbcbcb; color:black; ">易途国际(香港)有限公司</div>
+                    <div style="font-size:20px;  border-bottom:1px solid #cbcbcb; color:black; "> 广州易徒乐商务服务有限公司</div>
                     <div style="padding-top:20px">
 
 
@@ -4077,12 +4603,9 @@
 
         </div>
     </div>
-
-
-
-
+    <!--联系方式-->
     <div id="section18" class="" style="display:none;">
-         <style>
+        <style>
             #section18 .tab div:hover {
                 background-color: #248AE0;
                 color: white;
@@ -4101,7 +4624,7 @@
         </style>
         <div style="width:1000px; height:200px; background-image:url(etourhealth_files/banner-top.jpg); background-repeat:no-repeat; background-position:center center; background-size:cover;margin:0 auto; margin-top:2px;"> </div>
         <div style="width:1000px; min-height:1050px; margin:0 auto; font-size:0">
-            <div class="tab" style="vertical-align:top; font-size:15px; display:inline-block; width:300px; min-height:1050px; background-color:#ddd;">
+            <div class="tab" style="vertical-align:top; font-size:15px; display:inline-block; width:200px; min-height:1050px; background-color:#ddd;">
 
                 <div style="text-align:center; padding:15px; border-bottom:2px solid #cbcbcb; font-weight:bold"> 条款政策 </div>
                 <div id="iid51" class="active" onmouseover="HoverLii(5,1,3);" style="cursor:pointer; padding:15px; padding-left:30px; border-bottom:2px solid #cbcbcb; font-weight:normal">&rarr; 服务条款
@@ -4113,8 +4636,8 @@
 
 
 
-            <div class="content" style="font-size:15px; display:inline-block; width:700px; min-height:1050px; background-color:white;">
-               <div class="active" id="id51" style="display:none; margin:25px; ">
+            <div class="content" style="font-size:15px; display:inline-block; width:800px; min-height:1050px; background-color:white;">
+                <div class="active" id="id51" style="display:none; margin:25px; ">
                     <div style="font-size:20px;  border-bottom:1px solid #cbcbcb; color:black; ">服务条款</div>
                     <div style="padding-top:20px">
 
@@ -4155,7 +4678,7 @@
 
                     </div>
                 </div>
-                 <div class="" id="id52" style="display:none; margin:25px; ">
+                <div class="" id="id52" style="display:none; margin:25px; ">
                     <div style=" font-size:20px;  border-bottom:1px solid #cbcbcb; color:black; ">隐私政策 </div>
                     <div style="padding-top:20px">
                         <div class="container">
@@ -4188,14 +4711,35 @@
 
                     </div>
                 </div>
-                
+
                 <div class="" id="id53" style="display:none; margin:25px; ">
                     <div style="font-size:20px;  border-bottom:1px solid #cbcbcb; color:black; ">退款/取消政策</div>
                     <div style="padding-top:20px">
-                        
-                        <div class="container"> 
-        <p style="margin-top:7.5pt;margin-right:0cm;margin-bottom:7.5pt;margin-left:
-0cm;line-height:18.0pt"><strong><span style="font-family: 微软雅黑, sans-serif;">签约协议</span></strong><span lang="EN-US" style="font-family: Arial, sans-serif;"><o:p></o:p></span></p><p style="margin: 7.5pt 0cm; line-height: 18pt;"><span style="font-size: 10.5pt;">由病人或其他医疗服务对象预约或由其家属、朋友、随行人员代为预约易途国际有限公司医疗服务项目，应仔细阅读以下条款及规定后再填写、签署登记表格。</span><span lang="EN-US" style="font-family: Arial, sans-serif;"><o:p></o:p></span></p><p style="margin: 7.5pt 0cm; line-height: 18pt;"><span style="font-size: 10.5pt;">登记表中阐述的条款及规定在医疗服务报价单中同样阐明，其副本将提供给预约易途国际有限公司医疗服务项目的病人及医疗服务对象，或经病人及医疗服务对象授权预约易途国际有限公司医疗服务项目的家属、朋友、随行人员。</span><span lang="EN-US" style="font-family: Arial, sans-serif;"><o:p></o:p></span></p><p style="margin: 7.5pt 0cm; line-height: 18pt;"><span style="font-size: 10.5pt;">预约易途国际有限公司医疗服务项目的病人、医疗服务对象和经病人及医疗服务对象授权预约夏威夷健康旅游公司医疗服务项目的家属、朋友、随行人员都需签署此份文件。</span><span lang="EN-US" style="font-family: Arial, sans-serif;"><o:p></o:p></span></p><p style="margin: 7.5pt 0cm; line-height: 18pt;"><span style="font-size: 10.5pt;">由病人、医疗服务对象和经病人及医疗服务对象授权预约易途国际有限公司医疗服务项目的家属、朋友、随行人员一旦签署易途国际有限公司医疗服务项目预约条款及规定文件，则表示接受与认同此文件中包含的所有条款及规定。</span><span lang="EN-US" style="font-family: Arial, sans-serif;"><o:p></o:p></span></p><p style="margin: 7.5pt 0cm; line-height: 18pt;"><span style="font-size: 10.5pt;">签署的易途国际有限公司医疗服务项目预约条款及规定文件随同付款发票应交由病人、医疗服务对象和经病人及医疗服务对象授权预约易途国际有限公司医疗服务项目的家属、朋友、随行人员，并在其签署的易途国际有限公司医疗服务项目预约条款及规定文件和付款基础上，订立与医疗旅游公司的合同。</span><span lang="EN-US" style="font-family: Arial, sans-serif;"><o:p></o:p></span></p><p style="margin: 7.5pt 0cm; line-height: 18pt;"><strong><span style="font-family: 微软雅黑, sans-serif;"><br></span></strong></p><p style="margin: 7.5pt 0cm; line-height: 18pt;"><strong><span style="font-family: 微软雅黑, sans-serif;">退款协议</span></strong><span lang="EN-US" style="font-family: Arial, sans-serif;"><o:p></o:p></span></p><p><span style="font-size: 10.5pt; font-family: 宋体;">根据签约协议中行程，出发日两周以前取消行程的，付款中除酒店机票的费用其他可以退还。如果出发日两周前之后取消行程，所有付款均不退还。</span></p><p><br></p>    </div>
+
+                        <div class="container">
+                            <p style="margin-top:7.5pt;margin-right:0cm;margin-bottom:7.5pt;margin-left:
+0cm;line-height:18.0pt"><strong><span style="font-family: 微软雅黑, sans-serif;">签约协议</span></strong><span lang="EN-US" style="font-family: Arial, sans-serif;"><o:p></o:p></span>
+                            </p>
+                            <p style="margin: 7.5pt 0cm; line-height: 18pt;"><span style="font-size: 10.5pt;">由病人或其他医疗服务对象预约或由其家属、朋友、随行人员代为预约易途国际有限公司医疗服务项目，应仔细阅读以下条款及规定后再填写、签署登记表格。</span><span lang="EN-US" style="font-family: Arial, sans-serif;"><o:p></o:p></span>
+                            </p>
+                            <p style="margin: 7.5pt 0cm; line-height: 18pt;"><span style="font-size: 10.5pt;">登记表中阐述的条款及规定在医疗服务报价单中同样阐明，其副本将提供给预约易途国际有限公司医疗服务项目的病人及医疗服务对象，或经病人及医疗服务对象授权预约易途国际有限公司医疗服务项目的家属、朋友、随行人员。</span><span lang="EN-US" style="font-family: Arial, sans-serif;"><o:p></o:p></span>
+                            </p>
+                            <p style="margin: 7.5pt 0cm; line-height: 18pt;"><span style="font-size: 10.5pt;">预约易途国际有限公司医疗服务项目的病人、医疗服务对象和经病人及医疗服务对象授权预约夏威夷健康旅游公司医疗服务项目的家属、朋友、随行人员都需签署此份文件。</span><span lang="EN-US" style="font-family: Arial, sans-serif;"><o:p></o:p></span>
+                            </p>
+                            <p style="margin: 7.5pt 0cm; line-height: 18pt;"><span style="font-size: 10.5pt;">由病人、医疗服务对象和经病人及医疗服务对象授权预约易途国际有限公司医疗服务项目的家属、朋友、随行人员一旦签署易途国际有限公司医疗服务项目预约条款及规定文件，则表示接受与认同此文件中包含的所有条款及规定。</span><span lang="EN-US" style="font-family: Arial, sans-serif;"><o:p></o:p></span>
+                            </p>
+                            <p style="margin: 7.5pt 0cm; line-height: 18pt;"><span style="font-size: 10.5pt;">签署的易途国际有限公司医疗服务项目预约条款及规定文件随同付款发票应交由病人、医疗服务对象和经病人及医疗服务对象授权预约易途国际有限公司医疗服务项目的家属、朋友、随行人员，并在其签署的易途国际有限公司医疗服务项目预约条款及规定文件和付款基础上，订立与医疗旅游公司的合同。</span><span lang="EN-US" style="font-family: Arial, sans-serif;"><o:p></o:p></span>
+                            </p>
+                            <p style="margin: 7.5pt 0cm; line-height: 18pt;"><strong><span style="font-family: 微软雅黑, sans-serif;"><br></span></strong>
+                            </p>
+                            <p style="margin: 7.5pt 0cm; line-height: 18pt;"><strong><span style="font-family: 微软雅黑, sans-serif;">退款协议</span></strong><span lang="EN-US" style="font-family: Arial, sans-serif;"><o:p></o:p></span>
+                            </p>
+                            <p><span style="font-size: 10.5pt; font-family: 宋体;">根据签约协议中行程，出发日两周以前取消行程的，付款中除酒店机票的费用其他可以退还。如果出发日两周前之后取消行程，所有付款均不退还。</span>
+                            </p>
+                            <p>
+                                <br>
+                            </p>
+                        </div>
 
 
 
@@ -4206,29 +4750,9 @@
 
         </div>
     </div>
-
-    <div id="section19" class="" style="display:none;">
-
-        <div style="width:1000px; height:200px; background-image:url(etourhealth_files/banner-top.jpg); background-repeat:no-repeat; background-position:center center; background-size:cover;margin:0 auto; margin-top:2px;"> </div>
-        <div style="width:1000px; min-height:1050px; margin:0 auto; font-size:0">
-            <div class="tab" style="vertical-align:top; font-size:15px; display:inline-block; width:300px; min-height:1050px; background-color:#ddd;">
-
-                <div style="text-align:center; padding:15px; border-bottom:2px solid #cbcbcb; font-weight:bold"> left side title </div>
-
-
-            </div>
-
-
-
-            <div class="content" style="font-size:15px; display:inline-block; width:700px; min-height:1050px; background-color:white;">
-               
-
-
-            </div>
-
-        </div>
-    </div>
-
+    <!--条款政策-->
+    <div id="section19" class="" style="display:none;"> </div>
+    <!--产品：美国医疗会员卡-->
     <div id="section110" class="" style="display:none;">
 
         <div style="width:1000px; height:200px; background-image:url(etourhealth_files/banner-top.jpg); background-repeat:no-repeat; background-position:center center; background-size:cover;margin:0 auto; margin-top:2px;"> </div>
@@ -4243,27 +4767,133 @@
 
 
             <div class="content" style="font-size:15px; display:inline-block; width:700px; min-height:700px; background-color:white;">
-                
+
 
 
             </div>
 
         </div>
     </div>
+    <!--产品：购买美国2013-2014新药和特效药-->
+    <div id="section111" class="" style="display:none;">
+
+        <div style="width:1000px; height:200px; background-image:url(etourhealth_files/banner-top.jpg); background-repeat:no-repeat; background-position:center center; background-size:cover;margin:0 auto; margin-top:2px;"> </div>
+        <div style="width:1000px; min-height:700px; margin:0 auto; font-size:0">
+            <div class="tab" style="vertical-align:top; font-size:15px; display:inline-block; width:300px; min-height:700px; background-color:#ddd;">
+
+                <div style="text-align:center; padding:15px; border-bottom:2px solid #cbcbcb; font-weight:bold"> left side title </div>
+
+
+            </div>
 
 
 
+            <div class="content" style="font-size:15px; display:inline-block; width:700px; min-height:700px; background-color:white;">
 
 
+
+            </div>
+
+        </div>
+    </div>
+    <!--产品：【特色医疗】关节炎PRP疗法-->
+    <div id="section112" class="" style="display:none;">
+
+        <div style="width:1000px; height:200px; background-image:url(etourhealth_files/banner-top.jpg); background-repeat:no-repeat; background-position:center center; background-size:cover;margin:0 auto; margin-top:2px;"> </div>
+        <div style="width:1000px; min-height:700px; margin:0 auto; font-size:0">
+            <div class="tab" style="vertical-align:top; font-size:15px; display:inline-block; width:300px; min-height:700px; background-color:#ddd;">
+
+                <div style="text-align:center; padding:15px; border-bottom:2px solid #cbcbcb; font-weight:bold"> left side title </div>
+
+
+            </div>
+
+
+
+            <div class="content" style="font-size:15px; display:inline-block; width:700px; min-height:700px; background-color:white;">
+
+
+
+            </div>
+
+        </div>
+    </div>
+    <!--产品：到美国购买丙肝新药Havoni-->
+    <div id="section113" class="" style="display:none;">
+
+        <div style="width:1000px; height:200px; background-image:url(etourhealth_files/banner-top.jpg); background-repeat:no-repeat; background-position:center center; background-size:cover;margin:0 auto; margin-top:2px;"> </div>
+        <div style="width:1000px; min-height:700px; margin:0 auto; font-size:0">
+            <div class="tab" style="vertical-align:top; font-size:15px; display:inline-block; width:300px; min-height:700px; background-color:#ddd;">
+
+                <div style="text-align:center; padding:15px; border-bottom:2px solid #cbcbcb; font-weight:bold"> left side title </div>
+
+
+            </div>
+
+
+
+            <div class="content" style="font-size:15px; display:inline-block; width:700px; min-height:700px; background-color:white;">
+
+
+
+            </div>
+
+        </div>
+    </div>
+    <!--产品：【会员服务】赴美就医预约-->
+    <div id="section114" class="" style="display:none;">
+
+        <div style="width:1000px; height:200px; background-image:url(etourhealth_files/banner-top.jpg); background-repeat:no-repeat; background-position:center center; background-size:cover;margin:0 auto; margin-top:2px;"> </div>
+        <div style="width:1000px; min-height:700px; margin:0 auto; font-size:0">
+            <div class="tab" style="vertical-align:top; font-size:15px; display:inline-block; width:300px; min-height:700px; background-color:#ddd;">
+
+                <div style="text-align:center; padding:15px; border-bottom:2px solid #cbcbcb; font-weight:bold"> left side title </div>
+
+
+            </div>
+
+
+
+            <div class="content" style="font-size:15px; display:inline-block; width:700px; min-height:700px; background-color:white;">
+
+
+
+            </div>
+
+        </div>
+    </div>
+    <!--产品：【会员服务】第二医疗意见预约-->
+    <div id="section115" class="" style="display:none;">
+
+        <div style="width:1000px; height:200px; background-image:url(etourhealth_files/banner-top.jpg); background-repeat:no-repeat; background-position:center center; background-size:cover;margin:0 auto; margin-top:2px;"> </div>
+        <div style="width:1000px; min-height:700px; margin:0 auto; font-size:0">
+            <div class="tab" style="vertical-align:top; font-size:15px; display:inline-block; width:300px; min-height:700px; background-color:#ddd;">
+
+                <div style="text-align:center; padding:15px; border-bottom:2px solid #cbcbcb; font-weight:bold"> left side title </div>
+
+
+            </div>
+
+
+
+            <div class="content" style="font-size:15px; display:inline-block; width:700px; min-height:700px; background-color:white;">
+
+
+
+            </div>
+
+        </div>
+    </div>
+    <!--产品：【会员服务】美国就医全程陪预约-->
     <div class="footer">
         <div class="footernav">
-            <a id="mn_11" style="cursor:pointer" onclick="HoverLiii(1,1,10)">首页</a>
-            <a id="mn_17" style="cursor:pointer" onclick="HoverLiii(1,7,10); ">关于我们</a>
-            <a id="mn_18" style="cursor:pointer" onclick="HoverLiii(1,8,10); HoverLii(5,1,3)">服务条款</a>
-            <a id="mn_19" style="cursor:pointer" onclick="HoverLiii(1,8,10); HoverLii(5,2,3)">隐私政策</a>
-            <a id="mn_110" style="cursor:pointer" onclick="HoverLiii(1,8,10); HoverLii(5,3,3)">退款/取消政策</a>
-            <a id="mn_15" style="cursor:pointer" onclick="HoverLiii(1,5,10)">新闻动态 </a>
-            <a id="mn_17" style="cursor:pointer" onclick="HoverLiii(1,7,10)">联系方式</a>
+            <a id="mn_11" style="cursor:pointer" onclick="HoverLiii(1,1,15)">首页</a>
+            <a id="mn_17" style="cursor:pointer" onclick="HoverLiii(1,7,15); ">关于我们</a>
+            <a id="mn_18" style="cursor:pointer" onclick="HoverLiii(1,8,15); HoverLii(5,1,3)">服务条款</a>
+            <a id="mn_19" style="cursor:pointer" onclick="HoverLiii(1,8,15); HoverLii(5,2,3)">隐私政策</a>
+            <a id="mn_110" style="cursor:pointer" onclick="HoverLiii(1,8,15); HoverLii(5,3,3)">退款/取消政策</a>
+            <a id="mn_15" style="cursor:pointer" onclick="HoverLiii(1,5,15)">新闻动态 </a>
+            <a id="mn_17" style="cursor:pointer" onclick="HoverLiii(1,7,15)">联系方式</a>
 
         </div>
         <div class="contactinfo clearfix">
