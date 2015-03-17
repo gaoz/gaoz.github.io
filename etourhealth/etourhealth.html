@@ -23,6 +23,11 @@
     <script src="./etourhealth_files/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
     <script src="./etourhealth_files/zzsc.js" type="text/javascript"></script>
     <script type="text/javascript">
+        function backtotop() {
+            window.scrollTo(0, 0);
+            return false;
+        }
+
         function g(o) {
             return document.getElementById(o);
         }
@@ -163,27 +168,27 @@
             </div>
         </div>
 
-        <div class="wk_nav" id="week_nav">
+        <div class="wk_nav" id="week_nav" style="min-width:1000px;">
             <div class="wp cl">
                 <div class="nav">
                     <ul>
-                        <li id="mn_11" class="a" onclick="HoverLiii(1,1,10)"><a style="cursor:pointer" hidefocus="true" target="_blank" title="">首页</a>
+                        <li id="mn_11" class="a" onclick="HoverLiii(1,1,15)"><a style="cursor:pointer" hidefocus="true" target="_blank" title="">首页</a>
                         </li>
 
-                        <li id="mn_12" class="" onclick="HoverLiii(1,2,10), changeProductPage(1,1,8);" initialized="true" class=""><a style="cursor:pointer" target="_blank" title="">产品购买</a>
+                        <li id="mn_12" class="" onclick="HoverLiii(1,2,15), changeProductPage(1,1,8);" initialized="true" class=""><a style="cursor:pointer" target="_blank" title="">产品购买</a>
                         </li>
 
-                        <li id="mn_13" class="" onclick="HoverLiii(1,3,10)" initialized="true" class=""><a style="cursor:pointer" target="_blank" hidefocus="true">服务项目</a>
+                        <li id="mn_13" class="" onclick="HoverLiii(1,3,15)" initialized="true" class=""><a style="cursor:pointer" target="_blank" hidefocus="true">服务项目</a>
                         </li>
 
-                        <li id="mn_14" class="" onclick="HoverLiii(1,4,10)" initialized="true" class=""><a style="cursor:pointer" target="_blank" hidefocus="true">医疗资源</a>
+                        <li id="mn_14" class="" onclick="HoverLiii(1,4,15)" initialized="true" class=""><a style="cursor:pointer" target="_blank" hidefocus="true">医疗资源</a>
                         </li>
 
-                        <li id="mn_15" class="" onclick="HoverLiii(1,5,10)" initialized="true" class=""><a style="cursor:pointer" target="_blank" hidefocus="true">新闻动态</a>
+                        <li id="mn_15" class="" onclick="HoverLiii(1,5,15)" initialized="true" class=""><a style="cursor:pointer" target="_blank" hidefocus="true">新闻动态</a>
                         </li>
-                        <li id="mn_16" class="" onclick="HoverLiii(1,6,10)" initialized="true" class=""><a style="cursor:pointer" target="_blank" hidefocus="true">关于我们</a>
+                        <li id="mn_16" class="" onclick="HoverLiii(1,6,15)" initialized="true" class=""><a style="cursor:pointer" target="_blank" hidefocus="true">关于我们</a>
                         </li>
-                        <li id="mn_17" class="" onclick="HoverLiii(1,7,10)" initialized="true" class=""><a style="cursor:pointer" target="_blank" hidefocus="true">联系我们</a>
+                        <li id="mn_17" class="" onclick="HoverLiii(1,7,15)" initialized="true" class=""><a style="cursor:pointer" target="_blank" hidefocus="true">联系我们</a>
                         </li>
                         <!--li id="mn_P6" onmouseover="" initialized="true" class=""><a href="http://www.taikangclub.com/japan/reading/" target="_blank" hidefocus="true">出国看病指南</a></li> 
              <li id="mn_P7" onmouseover="" initialized="true" class=""><a href="http://www.taikangclub.com/news/" target="_blank" hidefocus="true">厚朴健康速递</a></li-->
@@ -195,7 +200,7 @@
     </div>
     <div id="section11" class="">
 
-        <div id="Slide" style="margin-top:2px;">
+        <div id="Slide" style="min-width:1000px; margin-top:2px;">
 
             <div class="fullSlide">
 
@@ -206,19 +211,19 @@
                     <ul style="position: relative; width: 1547px; height: 390px;">
 
                         <li style="position: absolute; width: 1547px; left: 0px; top: 0px; display: none; background: url(etourhealth_files/banner1.png) 50% 0px no-repeat rgb(255, 255, 255);">
-                            <a target="_blank" href=""></a>
+                            <a ></a>
                         </li>
 
                         <li style="position: absolute; width: 1547px; left: 0px; top: 0px; display: none; background: url(etourhealth_files/banner2.png) 50% 0px no-repeat rgb(255, 255, 255);">
-                            <a target="_blank" href=""></a>
+                            <a ></a>
                         </li>
 
                         <li style="position: absolute; width: 1547px; left: 0px; top: 0px; display: none; background: url(etourhealth_files/banner3.png) 50% 0px no-repeat rgb(255, 255, 255);">
-                            <a target="_blank" href=""></a>
+                            <a ></a>
                         </li>
 
                         <li style="position: absolute; width: 1547px; left: 0px; top: 0px; display: list-item; background: url(etourhealth_files/banner4.png) 50% 0px no-repeat white;">
-                            <a target="_blank" href=""></a>
+                            <a ></a>
                         </li>
                         <!--li style="position: absolute; width: 1547px; left: 0px; top: 0px; display: none; background: url(http://www.taikangclub.com/templets/hopenoah/images/cctv1022a.jpg) 50% 0px no-repeat rgb(112, 123, 134);"><a target="_blank" href="http://www.taikangclub.com/news/event/20141023504.html"></a></li>
 				
@@ -323,21 +328,21 @@
 
                             <ul style="position: relative; width: 278px; height: 330px;">
                                 <li style="position: absolute; width: 278px; left: 0px; top: 0px; display: list-item;">
-                                    <a href="" target="_blank"><img src="./etourhealth_files/adv1.png" width="280" height="330">
+                                    <a target="_blank"><img src="./etourhealth_files/adv1.png" width="280" height="330">
                                     </a>
                                 </li>
                                 <li style="position: absolute; width: 278px; left: 0px; top: 0px; display: none;">
-                                    <a href="" target="_blank"><img src="./etourhealth_files/adv2.png" width="280" height="330">
-                                    </a>
-                                </li>
-
-                                <li style="position: absolute; width: 278px; left: 0px; top: 0px; display: none;">
-                                    <a href="" target="_blank"><img src="./etourhealth_files/adv3.png" width="280" height="330">
+                                    <a target="_blank"><img src="./etourhealth_files/adv2.png" width="280" height="330">
                                     </a>
                                 </li>
 
                                 <li style="position: absolute; width: 278px; left: 0px; top: 0px; display: none;">
-                                    <a href="l" target="_blank"><img src="./etourhealth_files/adv4.png" width="280" height="330">
+                                    <a target="_blank"><img src="./etourhealth_files/adv3.png" width="280" height="330">
+                                    </a>
+                                </li>
+
+                                <li style="position: absolute; width: 278px; left: 0px; top: 0px; display: none;">
+                                    <a target="_blank"><img src="./etourhealth_files/adv4.png" width="280" height="330">
                                     </a>
                                 </li>
 
@@ -366,7 +371,7 @@
 
                             <h1><a href="">美国医疗旅游第一品牌</a></h1>
 
-                            <p>易途国际有限公司总部设立在美国夏威夷。成立至今大力发展中国游客赴美医疗旅游的项目。我公司陆续和多家美国优秀的医疗团队以及医疗保险公司签署了战略合作 协议，搭建了中美先进医疗唯一的桥梁...<a href="">[详细]</a>
+                            <p>易途国际有限公司总部设立在美国夏威夷。成立至今大力发展中国游客赴美医疗旅游的项目。我公司陆续和多家美国优秀的医疗团队以及医疗保险公司签署了战略合作 协议，搭建了中美先进医疗唯一的桥梁...<a style="cursor:pointer;" onclick="HoverLiii(1,6,15)">[详细]</a>
                             </p>
 
                         </div>
@@ -377,10 +382,9 @@
 
                                 <ul>
 
-                                    <li class="on" id="tb_11"><span>热点新闻</span>
+                                    <li class="on" id="tb_11" onclick="HoverLiii(1,5,15); HoverLii(19,16,16);"><span>热点新闻</span>
                                     </li>
 
-                                    <!--li class="" id="tb_12" onmouseover="HoverLi(1,2,2);"><span>媒体聚焦</span></li-->
 
                                 </ul>
 
@@ -392,17 +396,19 @@
 
                                 <div class="bd">
                                     <ul>
-                                        <li><span><a href="" title="美国大概有70%的肿瘤病人需要做放射治疗">美国FDA 2014 年批准的新药</a></span><cite>01-22</cite>
+                                        <li><span><a style="cursor:pointer;" onclick="HoverLiii(1,5,15);  HoverLii(19,16,16)" title="华裔医生亲述:在美国，医生怎么给病人看病">华裔医生亲述:在美国，医生怎么给病人看病</a></span><cite>03-12</cite>
                                         </li>
-                                        <li><span><a href="" title="柴静女儿未出生患肿瘤-美国的先进医疗！中国的雾霭!">美国2013年FDA新药</a></span><cite>01-22</cite>
+                                        <li><span><a style="cursor:pointer;" onclick="HoverLiii(1,5,15);  HoverLii(19,1,16)" title="美国大概有70%的肿瘤病人需要做放射治疗">美国FDA 2014 年批准的新药</a></span><cite>01-22</cite>
                                         </li>
-                                        <li><span><a href="" title="论出国看病行业中的“李鬼”！">中国女子翻越鸿沟 赴美国看病记</a></span><cite>12-07</cite>
+                                        <li><span><a style="cursor:pointer;" onclick="HoverLiii(1,5,15);  HoverLii(19,2,16)" title="柴静女儿未出生患肿瘤-美国的先进医疗！中国的雾霭!">美国2013年FDA新药</a></span><cite>01-22</cite>
                                         </li>
-                                        <li><span><a href="" title="震惊：中国丙肝患者约四千万 逾九成就诊者已至晚期">医疗观光盛行 中国人海外买健康</a></span><cite>09-15</cite>
+                                        <li><span><a style="cursor:pointer;" onclick="HoverLiii(1,5,15);  HoverLii(19,3,16)" title="论出国看病行业中的“李鬼”！">中国女子翻越鸿沟 赴美国看病记</a></span><cite>12-07</cite>
                                         </li>
-                                        <li><span><a href="" title="罕见病患者，路在何方？">基因测序开闸 千亿商机抢滩</a></span><cite>08-05</cite>
+                                        <li><span><a style="cursor:pointer;" onclick="HoverLiii(1,5,15);  HoverLii(19,4,16)" title="震惊：中国丙肝患者约四千万 逾九成就诊者已至晚期">医疗观光盛行 中国人海外买健康</a></span><cite>09-15</cite>
                                         </li>
-                                        <li><span><a href="" title="汇总：FDA授予突破性疗法认定药物，癌症类占43%">中国海外代购抗癌药为何大受欢迎？</a></span><cite>07-28</cite>
+                                        <li><span><a style="cursor:pointer;" onclick="HoverLiii(1,5,15);  HoverLii(19,5,16)" title="罕见病患者，路在何方？">基因测序开闸 千亿商机抢滩</a></span><cite>08-05</cite>
+                                        </li>
+                                        <li><span><a style="cursor:pointer;" onclick="HoverLiii(1,5,15);  HoverLii(19,6,16)" title="汇总：FDA授予突破性疗法认定药物，癌症类占43%">中国海外代购抗癌药为何大受欢迎？</a></span><cite>07-28</cite>
                                         </li>
 
                                     </ul>
@@ -433,7 +439,7 @@
                     <div class="introduction">
 
                         <div class="title" style="color:#999!important; background-color:#ddd;">
-                            <h1 style="color:#000!important;"><i></i>医疗资源</h1> <a href="#" style="color:#000!important;">更多&gt;&gt;</a>
+                            <h1 style="color:#000!important;"><i></i>医疗资源</h1> <a onclick="HoverLiii(1,4,15)" style="cursor:pointer; color:#000!important;">更多&gt;&gt;</a>
                         </div>
 
                         <ul class="huodong">
@@ -441,10 +447,10 @@
 
                             <li>
 
-                                <a href="#"><img src="./etourhealth_files/radv1.jpg" style="object-fit: cover;" alt="会员服务流程">
+                                <a style="cursor:pointer; " onclick="HoverLiii(1,4,15); HoverLii(8,1,3);"><img src="./etourhealth_files/radv1.jpg" style="object-fit: cover;" alt="会员服务流程">
                                 </a>
 
-                                <h3><a href="#">会员服务流程</a></h3>
+                                <h3><a style="cursor:pointer; " onclick="HoverLiii(1,4,15); HoverLii(8,1,3);">会员服务流程</a></h3>
 
                                 <p>在e途健康美国医疗服务网，直接购买会员证、购买美国新药或赴美就医...</p>
 
@@ -453,10 +459,10 @@
 
                             <li>
 
-                                <a href="#"><img src="./etourhealth_files/radv2.jpg" style="object-fit: cover;" alt="全美医疗资源网络">
+                                <a style="cursor:pointer; " onclick="HoverLiii(1,4,15); HoverLii(8,2,3);"><img src="./etourhealth_files/radv2.jpg" style="object-fit: cover;" alt="全美医疗资源网络">
                                 </a>
 
-                                <h3><a href="http://www.taikangclub.com/zhuanti/qiangxiang/">全美医疗资源网络</a></h3>
+                                <h3><a style="cursor:pointer; " onclick="HoverLiii(1,4,15); HoverLii(8,2,3);">全美医疗资源网络</a></h3>
 
                                 <p>我们的定点医院和定点医生遍布在全美50个州的医疗网络，超过4600家医院...</p>
 
@@ -465,10 +471,10 @@
 
                             <li>
 
-                                <a href="#"><img src="./etourhealth_files/radv3.jpg" style="object-fit: cover;" alt="肿瘤治疗中心">
+                                <a style="cursor:pointer; " onclick="HoverLiii(1,4,15); HoverLii(8,3,3);"><img src="./etourhealth_files/radv3.jpg" style="object-fit: cover;" alt="肿瘤治疗中心">
                                 </a>
 
-                                <h3><a href="http://www.taikangclub.com/zt/j_health">肿瘤治疗中心</a></h3>
+                                <h3><a style="cursor:pointer; " onclick="HoverLiii(1,4,15); HoverLii(8,3,3);">肿瘤治疗中心</a></h3>
 
                                 <p>美国国家肿瘤中心将全美最好的肿瘤临床研究中心设立成肿瘤治疗卓越中心...</p>
 
@@ -491,7 +497,7 @@
                 <div class="w1000">
 
                     <div class="hd3">
-                        <h3><a target="_blank" href="http://www.taikangclub.com/#">产品购买</a><a class="ab_r" href="http://www.taikangclub.com/usa/" target="_blank">更多产品</a></h3>
+                        <h3><a target="_blank" href="http://www.taikangclub.com/#">产品购买</a><a style="cursor:pointer;" class="ab_r" onclick="HoverLiii(1,2,15), changeProductPage(1,1,8);" target="_blank">更多产品</a></h3>
                     </div>
 
                     <div class="b_left">
@@ -849,7 +855,7 @@
                             <div style="vertical-align:top; display:inline-block; width:145px; height:130px;">
                                 <div style="padding:5px; font-size:17px;">定价¥10000.00</div>
                                 <div onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">立刻订购</div>
-                                <div onclick="changeProductPage(1,2,8);" onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">更多资料>></div>
+                                <div onclick="changeProductPage(1,2,8); backtotop();" onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">更多资料>></div>
 
                             </div>
                         </div>
@@ -868,7 +874,7 @@
                             <div style="vertical-align:top; display:inline-block; width:145px; height:130px;">
                                 <div style="padding:5px; font-size:17px;">定价¥4000.00</div>
                                 <div onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">立刻订购</div>
-                                <div onclick="changeProductPage(1,3,8);" onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">更多资料>></div>
+                                <div onclick="changeProductPage(1,3,8);backtotop();" onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">更多资料>></div>
 
                             </div>
                         </div>
@@ -888,7 +894,7 @@
                             <div style="vertical-align:top; display:inline-block; width:145px; height:130px;">
                                 <div style="padding:5px; font-size:17px;">定价¥11688.00</div>
                                 <div onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">立刻订购</div>
-                                <div onclick="changeProductPage(1,4,8);" onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">更多资料>></div>
+                                <div onclick="changeProductPage(1,4,8);backtotop();" onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">更多资料>></div>
 
                             </div>
                         </div>
@@ -910,7 +916,7 @@
                             <div style="vertical-align:top; display:inline-block; width:145px; height:130px;">
                                 <div style="padding:5px; font-size:17px;">¥225000.00 起</div>
                                 <div onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">立刻订购</div>
-                                <div onclick="changeProductPage(1,5,8);" onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">更多资料>></div>
+                                <div onclick="changeProductPage(1,5,8);backtotop();" onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">更多资料>></div>
 
                             </div>
                         </div>
@@ -929,7 +935,7 @@
                             <div style="vertical-align:top; display:inline-block; width:145px; height:130px;">
                                 <div style="text-align:center; padding:5px; font-size:17px;">会员免费</div>
                                 <div onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">立刻预约</div>
-                                <div onclick="changeProductPage(1,6,8);" onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">更多资料>></div>
+                                <div onclick="changeProductPage(1,6,8);backtotop();" onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">更多资料>></div>
 
                             </div>
                         </div>
@@ -948,7 +954,7 @@
                             <div style="vertical-align:top; display:inline-block; width:145px; height:130px;">
                                 <div style="text-align:center; padding:5px; font-size:17px;">会员免费</div>
                                 <div onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">立刻预约</div>
-                                <div onclick="changeProductPage(1,7,8);" onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">更多资料>></div>
+                                <div onclick="changeProductPage(1,7,8);backtotop();" onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">更多资料>></div>
 
                             </div>
                         </div>
@@ -966,7 +972,7 @@
                             <div style="vertical-align:top; display:inline-block; width:145px; height:130px;">
                                 <div style="text-align:center; padding:5px; font-size:17px;">会员免费</div>
                                 <div onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">立刻预约</div>
-                                <div onclick="changeProductPage(1,8,8);" onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">更多资料>></div>
+                                <div onclick="changeProductPage(1,8,8);backtotop();" onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">更多资料>></div>
 
                             </div>
                         </div>
@@ -1057,8 +1063,9 @@
                         <div style="border:1px solid #ddd; padding:10px; margin-bottom:10px;">
                             <div style=" display:inline-block; width:220px; height:130px; background-image:url(etourhealth_files/pro2.jpg); background-position:center center; background-size:cover; "></div>
                             <div style="vertical-align:top; display:inline-block; width:350px; height:130px;">
-                                <div class="">
+                                <div style="padding:10px">
 
+                                    美国的新药一般在18个月到2-3年才在国内SFDA药监局批准上市。对于美国旅客，美国就医网可以帮助你您通过找到美国医生远程视频门诊或面对面门诊开处方，以优惠折扣价购买处方药和健康营养品。
 
 
 
@@ -1080,7 +1087,6 @@
                         详情:
                         <br>
 
-                        <div class="">美国的新药一般在18个月到2-3年才在国内SFDA药监局批准上市。对于美国旅客，美国就医网可以帮助你您通过找到美国医生远程视频门诊或面对面门诊开处方，以优惠折扣价购买处方药和健康营养品。</div>
 
                         <br> MedTravel 通过定点医院和医生网络可以为病人开具处方，病人可以放心在美国买到最新出品的、国内没有上市的新药和特效药，帮助病人早日药到病除，回复健康，享受美好的生活。
                         <br>
@@ -1117,10 +1123,12 @@
                         </div>
                         <div style="border:1px solid #ddd; padding:10px; margin-bottom:10px;">
 
-                            <div style=" display:inline-block; width:220px; height:220px; background-image:url(etourhealth_files/pro3.jpg); background-position:center center; background-size:cover; "></div>
-                            <div style=" display:inline-block; width:350px;"></div>
+                            <div style=" padding-top:20px; display:inline-block; width:220px; height:120px; background-image:url(etourhealth_files/pro3.jpg); background-position:center center; background-size:cover; "></div>
+                            <div style=" vertical-align:top;  display:inline-block; width:350px;">
+                                <div style="padding:10px;">PRP技术通过一种离心装置把血液中的富含血小板的血浆收集，然后把富含大量生长因子的血小板注射回患者体内，对组织中细胞和基质的再生起到促进作用。整个技术由抽血至注射仅需要20分钟左右。</div>
+                            </div>
 
-                           
+
                             <div style="vertical-align:top;   display:inline-block; width:145px; height:50px;">
                                 <div style="padding:5px; font-size:17px;">定价¥11688.00</div>
                                 <div onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">立刻订购</div>
@@ -1133,171 +1141,368 @@
                         </div>
 
 
-                       
+
 
                         详情:
                         <br>
-                        <br> PRP技术通过一种离心装置把血液中的富含血小板的血浆收集，然后把富含大量生长因子的血小板注射回患者体内，对组织中细胞和基质的再生起到促进作用，从而加速组织修复。整个技术由抽血至注射仅需要20分钟左右。PRP疗法是退化性关节炎的救星。无需开刀，没有伤口，无需修复期。而且因为是自己的血液，不存在排斥与副作用，即使是高血脂病人也能做。这项新技术近10年来在欧美被广泛应用。夏威夷拥有先进的设备和全美最优秀的骨科疾病治疗团队。我们将竭诚为您提供先进的医疗诊治项目，只有咖啡味、没有药水味的优雅舒适环境和5星级酒店服务。<br><br>
-                <div style="display:block;cursor: pointer;margin-bottom: 10px;" class="pic" href="http://totalgdsimg.qiniudn.com/539caf2b94a25215490000e1" title="">
-                                <img alt="" title="" width="190" height="auto" rel="lightbox" src="http://totalgdsimg.qiniudn.com/539caf2b94a25215490000e1-w360h240c">
-                                <!--<span></span>-->
-                            </div>
-
-                   关节炎泛指发生在人体关节及其周围组织的炎性疾病，可分为数十种。我国的关节炎患者有1亿以上，且人数在不断增加。临床表现为关节的红、肿、热、痛、功能障碍及关节畸形，严重者导致关节残疾、影响患者生活质量。
-
-<br><br>
- <div style="display:block;cursor: pointer;margin-bottom: 10px;" class="pic" href="http://totalgdsimg.qiniudn.com/539caf2194a25215490000d9" title="">
-                                <img alt="" title="" width="190" height="auto" rel="lightbox" src="http://totalgdsimg.qiniudn.com/539caf2194a25215490000d9-w360h240c">
-                                <!--<span></span>-->
-                            </div>
-                            
-富血小板血浆（platelet-richplasma，PRP）是自体血小板的浓集物。血小板富含大量生长因子，在人体自我愈合和修复过程中还有更重要的作用，它是人体的"再生药"。富血小板血浆技术通过一种离心装置把血液中的富含血小板的血浆收集，然后把富含大量生长因子的血小板注射回患者体内，对组织中细胞和基质的再生起到促进作用，从而加速组织修复。患者只需抽取自身的外周血液20-30毫升，通过离心装置把血液中的富含血小板的血浆收集起来，然后注射到患者体内（如膝关节炎患者注射到膝关节腔内），血小板内的生长因子就会促进组织的愈合。整个技术由抽血至注射仅需要20分钟左右。
-
-<br><br>
-  <div style="display:block;cursor: pointer;margin-bottom: 10px;" class="pic" href="http://totalgdsimg.qiniudn.com/539caf2794a25215490000dd" title="">
-                                <img alt="" title="" width="190" height="auto" rel="lightbox" src="http://totalgdsimg.qiniudn.com/539caf2794a25215490000dd-w360h240c">
-                                <!--<span></span>-->
-                            </div>
-
-
-PRP疗法是退化性关节炎的救星。无需开刀，没有伤口，无需修复期。而且因为是自己的血液，不存在排斥与副作用。经过离心钝化，即使是高血脂病人也能做。这项新技术近10年来在欧美被广泛应用，但由于制备方法复杂成本过高，导致我国在临床上难以开展运用此技术。夏威夷拥有先进的设备和全美最优秀的骨科疾病治疗团队。我们将竭诚为您提供先进的医疗诊治项目，只有咖啡味、没有药水味的优雅舒适环境和5星级酒店服务。
-
-
-<br><br>
-推荐旅游方案：
-<br>
-                        10日游：<a href="http://etourhealth.totalgds.com/zh/activity/acy135482">http://etourhealth.totalgds.com/zh/activity/acy135482</a>
-<br>
-                        12日游：<a href="http://etourhealth.totalgds.com/zh/activity/acy135488">http://etourhealth.totalgds.com/zh/activity/acy135488</a>
-
-<br><br>
-
-特别说明<br><br>
-
-如患有以下症状，不适合prp疗法：<br>
-<br>
-血小板功能异常<br>
-
-全身感染<br>
-
-血小板指数低<br>
-
-严重贫血<br>
-
-
-<br><br>
-术前准备<br>
-
-告诉医生病史以及过敏史。<br>
-
-手术前一天晚餐以清淡为主，午夜后不要进食。此外，我们建议您术前48小时不要吸烟或饮酒。<br>
-
-手术前6个小时一定不要吃、喝，或抽烟，包括冰，口香糖，薄荷糖。<br>
-
-穿着舒适、宽松的衣服，建议穿着膝盖以上的短裤。请自备运动鞋。手术过程中可能要脱衣服和穿长袍。<br>
-
-手术当天不要穿戴指甲油，假指甲，化妆，首饰，手表。<br>
-
-<br>
-
-术后康复<br>
-
-手术完成后，您将在恢复区，麻醉师和护士会密切留意和悉心照顾，30分钟后可以回家或到住院房间。<br>
-
-术后7天内为观察期，通过术后回访，医师将与您讨论康复方案，帮助您完全康复。<br>
-<br>
-术后2-3周需要佩戴护膝。
-
-
-<br><br>
-在临床上，手术效果可维持9个月至一年，但时间长短与个人体质有关。<br><br>
-
-
-
-<br><br>
-
-费用包含
-<br>
-费用包含1次PRP治疗费。<br>
-
-
-
-                    <br>
-                    <br>
-                    <br>
-                  
-
-
-                </div>
-
-            </div>
-            <div class="" id="product15" style="display:none; margin:25px; margin-top:10px; ">
-
-                <div style="cursor:pointer; font-size:15px;  padding:10px; background-color:#ddd; border-right:5px solid #cbcbcb; color:black;  border-left:5px solid #cbcbcb; color:black;"><span onclick="changeProductPage(1,1,8);" onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';">所有产品</span>><span onclick="changeProductPage(1,5,8);" onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';">到美国购买丙肝新药Havoni</span>
-                </div>
-                <div style="padding-top:10px">
-                    <div style="border:1px solid #ddd; padding:10px; margin-bottom:10px;">
-                        <div style="text-align:center; font-size:17px; font-weight:bold;"> 到美国购买丙肝新药Havoni</div>
-                    </div>
-                    <div style="border:1px solid #ddd; padding:10px; margin-bottom:10px;">
-
-                        <div style=" display:inline-block; width:220px; height:220px; background-image:url(etourhealth_files/pro4.jpg); background-position:center center; background-size:cover; "></div>
-
-
-                        <div style="vertical-align:top; display:inline-block; width:350px; height:50px;">
-                            <div class="">
-
-
-
-                                <!-- <button style="display: block; width: 100%;" class="btn btn-dark">From $100&nbsp;&nbsp;&nbsp;&nbsp;View Details</button>-->
-                            </div>
+                        <br> PRP技术通过一种离心装置把血液中的富含血小板的血浆收集，然后把富含大量生长因子的血小板注射回患者体内，对组织中细胞和基质的再生起到促进作用，从而加速组织修复。整个技术由抽血至注射仅需要20分钟左右。PRP疗法是退化性关节炎的救星。无需开刀，没有伤口，无需修复期。而且因为是自己的血液，不存在排斥与副作用，即使是高血脂病人也能做。这项新技术近10年来在欧美被广泛应用。夏威夷拥有先进的设备和全美最优秀的骨科疾病治疗团队。我们将竭诚为您提供先进的医疗诊治项目，只有咖啡味、没有药水味的优雅舒适环境和5星级酒店服务。
+                        <br>
+                        <br>
+                        <div style="display:block;cursor: pointer;margin-bottom: 10px;" class="pic" href="http://totalgdsimg.qiniudn.com/539caf2b94a25215490000e1" title="">
+                            <img alt="" title="" width="190" height="auto" rel="lightbox" src="http://totalgdsimg.qiniudn.com/539caf2b94a25215490000e1-w360h240c">
+                            <!--<span></span>-->
                         </div>
-                        <div style="vertical-align:top;   display:inline-block; width:145px; height:50px;">
-                            <div style="padding:5px; font-size:17px;">定价¥11688.00</div>
-                            <div onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">立刻订购</div>
 
+                        关节炎泛指发生在人体关节及其周围组织的炎性疾病，可分为数十种。我国的关节炎患者有1亿以上，且人数在不断增加。临床表现为关节的红、肿、热、痛、功能障碍及关节畸形，严重者导致关节残疾、影响患者生活质量。
 
+                        <br>
+                        <br>
+                        <div style="display:block;cursor: pointer;margin-bottom: 10px;" class="pic" href="http://totalgdsimg.qiniudn.com/539caf2194a25215490000d9" title="">
+                            <img alt="" title="" width="190" height="auto" rel="lightbox" src="http://totalgdsimg.qiniudn.com/539caf2194a25215490000d9-w360h240c">
+                            <!--<span></span>-->
                         </div>
+
+                        富血小板血浆（platelet-richplasma，PRP）是自体血小板的浓集物。血小板富含大量生长因子，在人体自我愈合和修复过程中还有更重要的作用，它是人体的"再生药"。富血小板血浆技术通过一种离心装置把血液中的富含血小板的血浆收集，然后把富含大量生长因子的血小板注射回患者体内，对组织中细胞和基质的再生起到促进作用，从而加速组织修复。患者只需抽取自身的外周血液20-30毫升，通过离心装置把血液中的富含血小板的血浆收集起来，然后注射到患者体内（如膝关节炎患者注射到膝关节腔内），血小板内的生长因子就会促进组织的愈合。整个技术由抽血至注射仅需要20分钟左右。
+
+                        <br>
+                        <br>
+                        <div style="display:block;cursor: pointer;margin-bottom: 10px;" class="pic" href="http://totalgdsimg.qiniudn.com/539caf2794a25215490000dd" title="">
+                            <img alt="" title="" width="190" height="auto" rel="lightbox" src="http://totalgdsimg.qiniudn.com/539caf2794a25215490000dd-w360h240c">
+                            <!--<span></span>-->
+                        </div>
+
+
+                        PRP疗法是退化性关节炎的救星。无需开刀，没有伤口，无需修复期。而且因为是自己的血液，不存在排斥与副作用。经过离心钝化，即使是高血脂病人也能做。这项新技术近10年来在欧美被广泛应用，但由于制备方法复杂成本过高，导致我国在临床上难以开展运用此技术。夏威夷拥有先进的设备和全美最优秀的骨科疾病治疗团队。我们将竭诚为您提供先进的医疗诊治项目，只有咖啡味、没有药水味的优雅舒适环境和5星级酒店服务。
+
+
+                        <br>
+                        <br> 推荐旅游方案：
+                        <br> 10日游：
+                        <a href="http://etourhealth.totalgds.com/zh/activity/acy135482">http://etourhealth.totalgds.com/zh/activity/acy135482</a>
+                        <br> 12日游：
+                        <a href="http://etourhealth.totalgds.com/zh/activity/acy135488">http://etourhealth.totalgds.com/zh/activity/acy135488</a>
+
+                        <br>
+                        <br> 特别说明
+
+                        <br>
+                        <br> 如患有以下症状，不适合prp疗法：
+
+                        <br>
+                        <br> 血小板功能异常
+                        <br> 全身感染
+
+                        <br> 血小板指数低
+
+                        <br> 严重贫血
+
+                        <br>
+
+
+                        <br>
+                        <br> 术前准备
+                        <br> 告诉医生病史以及过敏史。
+
+                        <br> 手术前一天晚餐以清淡为主，午夜后不要进食。此外，我们建议您术前48小时不要吸烟或饮酒。
+
+                        <br> 手术前6个小时一定不要吃、喝，或抽烟，包括冰，口香糖，薄荷糖。
+
+                        <br> 穿着舒适、宽松的衣服，建议穿着膝盖以上的短裤。请自备运动鞋。手术过程中可能要脱衣服和穿长袍。
+
+                        <br> 手术当天不要穿戴指甲油，假指甲，化妆，首饰，手表。
+
+                        <br>
+
+                        <br> 术后康复
+
+                        <br> 手术完成后，您将在恢复区，麻醉师和护士会密切留意和悉心照顾，30分钟后可以回家或到住院房间。
+
+                        <br> 术后7天内为观察期，通过术后回访，医师将与您讨论康复方案，帮助您完全康复。
+
+                        <br>
+                        <br> 术后2-3周需要佩戴护膝。
+
+
+                        <br>
+                        <br> 在临床上，手术效果可维持9个月至一年，但时间长短与个人体质有关。
+                        <br>
+                        <br>
+
+
+
+                        <br>
+                        <br> 费用包含
+                        <br> 费用包含1次PRP治疗费。
+                        <br>
+
+
+
+                        <br>
+                        <br>
+                        <br>
 
 
 
                     </div>
 
+                </div>
+                <div class="" id="product15" style="display:none; margin:25px; margin-top:10px; ">
+
+                    <div style="cursor:pointer; font-size:15px;  padding:10px; background-color:#ddd; border-right:5px solid #cbcbcb; color:black;  border-left:5px solid #cbcbcb; color:black;"><span onclick="changeProductPage(1,1,8);" onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';">所有产品</span>><span onclick="changeProductPage(1,5,8);" onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';">到美国购买丙肝新药Havoni</span>
+                    </div>
+                    <div style="padding-top:10px">
+                        <div style="border:1px solid #ddd; padding:10px; margin-bottom:10px;">
+                            <div style="text-align:center; font-size:17px; font-weight:bold;"> 到美国购买丙肝新药Havoni</div>
+                        </div>
+                        <div style="border:1px solid #ddd; padding:10px; margin-bottom:10px;">
+
+                            <div style=" display:inline-block; width:220px; height:220px; background-image:url(etourhealth_files/pro4.jpg); background-position:center center; background-size:cover; "></div>
+
+
+                            <div style="vertical-align:top; display:inline-block; width:350px; height:50px;">
+                                <div style="padding:10px;">
+
+                                    到美国购买行程:
+                                    <br>
+                                    <br> 1.帮助病人拿到美国医生处方
+
+                                    <br> 2.联系美国药店按疗程拿药
+
+                                    <br> 3.协助安排行程
+                                    <br>
+                                    <br> 新药的折扣是7.5折。
+
+                                    <!-- <button style="display: block; width: 100%;" class="btn btn-dark">From $100&nbsp;&nbsp;&nbsp;&nbsp;View Details</button>-->
+                                </div>
+                            </div>
+                            <div style="vertical-align:top;   display:inline-block; width:145px; height:50px;">
+                                <div onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">立刻订购</div>
+
+
+                            </div>
 
 
 
-                    详情:
-                    <br>
-                    <br>
+                        </div>
 
+                        <div style="border:1px solid #ddd; padding:10px; margin-bottom:10px;">
 
-                    <br> 1.帮助病人拿到美国医生处方
-                    <br>
-                    <br> 2.联系美国药店按疗程拿药
-                    <br>
-                    <br> 3.协助安排行程
-                    <br>
-                    <br> 新药的折扣是7.5折。
-                    <br>
-
+                            <div style="vertical-align:top; display:inline-block; width:570px; height:30px;">
+                                <div class="">
+                                    <div style="margin-bottom:10px; font-size:17px; font-weight:bold;">疗程一：28粒Harvoni 90mg/400mg</div>
+                                    <div class=""> </div>
+                                </div>
+                            </div>
+                            <div style="vertical-align:top; display:inline-block; width:145px; height:30px;">
+                                <div style="padding:5px; font-size:17px;">¥ 225000.00</div>
 
 
 
-                    <br>
-                    <br>
-                    <br>
-                    <br> 需要赴美购药的病人只需要在本站购买产品、填写信息后，MedTravel工作人员会在24小时内与您联系。
+                            </div>
+                        </div>
+
+                        <div style="border:1px solid #ddd; padding:10px; margin-bottom:10px;">
+
+                            <div style="vertical-align:top; display:inline-block; width:570px; height:30px;">
+                                <div class="">
+                                    <div style="margin-bottom:10px; font-size:17px; font-weight:bold;">疗程二：30粒Harvoni 90mg/400mg</div>
+                                    <div class=""> </div>
+                                </div>
+                            </div>
+                            <div style="vertical-align:top; display:inline-block; width:145px; height:30px;">
+                                <div style="padding:5px; font-size:17px;">¥ 227500.00</div>
+
+
+
+                            </div>
+                        </div>
+
+
+                        详情:
+                        <br>
+                        <br>
+
+
+                        <br> 1.帮助病人拿到美国医生处方
+                        <br>
+                        <br> 2.联系美国药店按疗程拿药
+                        <br>
+                        <br> 3.协助安排行程
+                        <br>
+                        <br> 新药的折扣是7.5折。
+                        <br>
+
+
+
+
+                        <br>
+                        <br>
+                        <br>
+                        <br> 需要赴美购药的病人只需要在本站购买产品、填写信息后，MedTravel工作人员会在24小时内与您联系。
+
+
+                    </div>
+
+                </div>
+                <div class="" id="product16" style="display:none; margin:25px; margin-top:10px; ">
+                    <div style="cursor:pointer; font-size:15px;  padding:10px; background-color:#ddd; border-right:5px solid #cbcbcb; color:black;  border-left:5px solid #cbcbcb; color:black;"><span onclick="changeProductPage(1,1,8);" onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';">所有产品</span>><span onclick="changeProductPage(1,6,8);" onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';">【会员服务】赴美就医预约</span>
+                    </div>
+                    <div style="padding-top:10px">
+                        <div style="border:1px solid #ddd; padding:10px; margin-bottom:10px;">
+                            <div style="text-align:center; font-size:17px; font-weight:bold;"> 【会员服务】赴美就医预约</div>
+                        </div>
+                        <div style="border:1px solid #ddd; padding:10px; margin-bottom:10px;">
+
+                            <div style=" display:inline-block; width:220px; height:120px; background-image:url(etourhealth_files/pro5.jpg); background-position:center center; background-size:cover; "></div>
+
+
+                            <div style="vertical-align:top; display:inline-block; width:350px; height:50px;">
+                                <div style="padding:10px;">
+
+                                    您就医后，可以在此选择就医日期、就诊医院、和医生。我们收到您的预约后，会跟您联系，安排旅程
+
+
+                                </div>
+                            </div>
+                            <div style="vertical-align:top;   display:inline-block; width:145px; height:50px;">
+                                <div style="padding:5px; font-size:17px;">会员免费</div>
+                                <div onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">立刻预约</div>
+
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+                        详情
+
+                        <br>
+                        <br> 您就医后，可以在此选择就医日期、就诊医院、和医生。我们收到您的预约后，会跟您联系，安排旅程。
+
+
+
+
+
+                    </div>
+
+
+                </div>
+                <div class="" id="product17" style="display:none; margin:25px; margin-top:10px; ">
+
+                    <div style="cursor:pointer; font-size:15px;  padding:10px; background-color:#ddd; border-right:5px solid #cbcbcb; color:black;  border-left:5px solid #cbcbcb; color:black;"><span onclick="changeProductPage(1,1,8);" onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';">所有产品</span>><span onclick="changeProductPage(1,7,8);" onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';">【会员服务】第二医疗意见预约</span>
+                    </div>
+                    <div style="padding-top:10px">
+                        <div style="border:1px solid #ddd; padding:10px; margin-bottom:10px;">
+                            <div style="text-align:center; font-size:17px; font-weight:bold;"> 【会员服务】第二医疗意见预约</div>
+                        </div>
+                        <div style="border:1px solid #ddd; padding:10px; margin-bottom:10px;">
+
+                            <div style=" display:inline-block; width:220px; height:220px; background-image:url(etourhealth_files/pro6.jpg); background-position:center center; background-size:cover; "></div>
+
+
+                            <div style="vertical-align:top; display:inline-block; width:350px; height:170px;">
+                                <div style="padding:10px;">
+
+                                    第二医疗意见服务是在个人罹患疾病或遭受意外伤害并已经获得诊断（也就是第一医疗意见）的基础上，咨询遍布世界各地的顶尖级医疗机构所组成的咨询网络，向您提供专业书面医疗建议。主要针对危及生命或改变生命状态的疾病，如癌症、良性肿瘤、先天性心脏疾病等。
+
+
+                                </div>
+                            </div>
+                            <div style="vertical-align:top;   display:inline-block; width:145px; height:50px;">
+                                <div style="text-align:center; font-weight:bold; padding:5px; font-size:17px;">会员免费</div>
+                                <div onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">立刻预约</div>
+
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+                        详情
+                        <br>
+                        <br> 当一位患者在原诊后获知弥患较严重的病症（例如肺癌、肝癌、胃癌、心脑血管病或肾病等），在开始进行恰当的疗程或手术前，第二医疗意见其实是患者和患者的主治医生必须采取的一项步骤，亦是对患者宝贵的生命应有的责任。
+                        <br>
+                        <br> 患者在确诊弥患严重的病症，往往不知所措，在这个困难的时刻，患者与家人面临的最大挑战，就是不知如何对主治医生提出的治疗方案进行评估和回应。事情实在来得太突然、听不懂医学名词、不完全了解治疗的成效和治疗过程中可能产生的风险，也不敢对医生的专业诊断提出质疑。在这个时候，面对必须作出治疗的决定，患者寻求第二医疗意见是极其必要的。
+                        <br>
+                        <br> 可以挽救生命：虽然大部分『第二医疗意见』可能不会改变之前的诊断结果，但它却是提早发现误诊的唯一方法；还能透过专家独立客观的建议采用不同的治疗方法，增加生存机会。
+                        <br>
+                        <br> 可以提供更多的治疗选择：越来越多的诊治方法都源于新科技的迅速发展和医学知识的不断推陈出新，单独个别 医生要想全面了解最新的医疗资讯后而做出最正确的诊断和最先进的治疗是很难的。多一个意见，就多一个机会。『第二医疗意见』可以避免不必要的治疗程序甚至不可逆转的手术，并结合快速的医疗技术发展而提供更多的选择。
+                        <br>
+                        <br> 可以确认正确的诊断结果：平和稳定的心境是治病的良方。当『第二医疗意见』肯定了初次的诊断结果，您便可
+                        <br> 以更安心地接受现行的治疗以达到最佳的治疗效果。
+                        <br>
+                        <br> 患者自第二医疗意见获得的价值，主要包括两项：
+                        <br>
+                        <br> 1、由著名医院的专科小组提供的第二医疗意见服务，是根椐患者在原诊医院的多项不同的专科诊断报告和检测数椐，进行整体分析和作出结论，其全面性和客观性对患者来说是极具价值的。
+                        <br>
+                        <br> 2、第二医疗意见的专科小组同时亦会在报告中提出一个或多个治疗方案，以供主治医生和患者与原诊报告作比对和参考。患者在获得第二医疗意见的报告后，应该咨询原诊医院的主治医生，然后作出理性的决定，以平静和积极的心态接受治疗。
+
+
+
+
+                    </div>
+
+                </div>
+                <div class="" id="product18" style="display:none; margin:25px; margin-top:10px; ">
+
+                    <div style="cursor:pointer; font-size:15px;  padding:10px; background-color:#ddd; border-right:5px solid #cbcbcb; color:black;  border-left:5px solid #cbcbcb; color:black;"><span onclick="changeProductPage(1,1,8);" onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';">所有产品</span>><span onclick="changeProductPage(1,8,8);" onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';">【【会员服务】美国就医全程陪预约</span>
+                    </div>
+                    <div style="padding-top:10px">
+                        <div style="border:1px solid #ddd; padding:10px; margin-bottom:10px;">
+                            <div style="text-align:center; font-size:17px; font-weight:bold;"> 【会员服务】美国就医全程陪预约</div>
+                        </div>
+                        <div style="border:1px solid #ddd; padding:10px; margin-bottom:10px;">
+
+                            <div style=" display:inline-block; width:220px; height:220px; background-image:url(etourhealth_files/pro7.jpg); background-position:center center; background-size:cover; "></div>
+
+
+                            <div style="vertical-align:top; display:inline-block; width:350px; height:170px;">
+                                <div style="padding:10px;">
+
+                                    为您或您的家人打造舒心就医之旅，我们派专人全程陪同，在您就医之旅行前、行中、行后，解决所有遇到的问题，提供就医所需的各种服务，包括办理文件、杂费支付、翻译、协调等。
+
+
+                                </div>
+                            </div>
+                            <div style="vertical-align:top;   display:inline-block; width:145px; height:50px;">
+                                <div style="text-align:center; font-weight:bold; padding:5px; font-size:17px;">会员免费</div>
+                                <div onmouseover="this.style.background='orange';" onmouseout="this.style.background='#248AE0';" style="margin:5px; cursor:pointer; text-align:center; padding:10px 20px; background-color:#248AE0  ; color:white;">立刻预约</div>
+
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+                        详情
+                        <br>
+                        <br>出国前 - 出国看病病情材料准备、病历资料收集整理、撰写中文病情介绍、病历资料医学翻译、影像资料专业医用扫描和传输、病理切片邮寄、国外权威医院推荐、根据病情推荐国外权威专家及预约、国外医院邀请函、医生预约函、国外看病费用预估函、机票住宿预订、境外费用支付指导、行前指导等。
+                        <br>
+                        <br> 国外看病期间 - 接机、住宿预订及调整、看病接送、 国外就医中全程医学翻译陪同（翻译为美国办事处持美国医学翻译牌照的全职员工）、生活翻译陪同、 就诊期间病历资料翻译、后续预约、住院预约、 国外医院账单减免、医疗费用退款指导、返程机票改签等。
+                        <br>
+                        <br> 归国后 - 病情随访、与国外医生的信息沟通等
+
+
+
+                    </div>
 
 
                 </div>
 
             </div>
-            <div class="" id="product16" style="display:none; margin:25px; margin-top:10px; "></div>
-            <div class="" id="product17" style="display:none; margin:25px; margin-top:10px; "></div>
-            <div class="" id="product18" style="display:none; margin:25px; margin-top:10px; "></div>
-
         </div>
-    </div>
 
 
 
@@ -3752,7 +3957,7 @@ PRP疗法是退化性关节炎的救星。无需开刀，没有伤口，无需�
                 </div>
 
                 <div class="" id="id83" style="display:none; margin:25px; ">
-                    <div style="font-size:20px;  border-bottom:1px solid #cbcbcb; color:black; ">全美医疗资源网络</div>
+                    <div style="font-size:20px;  border-bottom:1px solid #cbcbcb; color:black; "> 肿瘤定点医院</div>
                     <div style="padding-top:10px"> &ensp;&ensp;&ensp;&ensp;
                         <div class="container image100">
                             <p style="text-align: center;"><span style="font-size: 18px; color: rgb(0, 112, 192); font-family: 微软雅黑,Microsoft YaHei;">肿瘤治疗中心</span>
@@ -3761,219 +3966,37 @@ PRP疗法是退化性关节炎的救星。无需开刀，没有伤口，无需�
                             </p>
                             <p style="margin-top: 10px; margin-bottom: 10px; text-align: justify; line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;美国US News排名前20名的顶尖肿瘤医院均在我公司的定点医疗网络之内。USNews2014癌症治疗中心排名榜：</span>
                             </p>
-                            <table width="100%" data-sort="sortDisabled" align="center" cellpadding="0" cellspacing="0">
-                                <colgroup>
-                                    <col style=";width:89px" width="89">
-                                        <col style=";width:591px" width="591">
-                                </colgroup>
-                                <tbody>
-                                    <tr style="height:22px" height="22">
-                                        <td style="border-color: rgb(141, 179, 226);" align="left" height="22" valign="middle" width="98">
-                                            <p style="line-height: 1.5em;"><span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">1</span>
-                                            </p>
-                                        </td>
-                                        <td style="border-color: rgb(141, 179, 226);" align="left" valign="middle" width="532">
-                                            <p style="line-height: 1.5em;"><span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">University of Texas MD Anderson &nbsp;Cancer Center</span>
-                                            </p>
-                                        </td>
-                                    </tr>
-                                    <tr style="height:22px" height="22">
-                                        <td style="border-color: rgb(141, 179, 226);" align="left" height="22" valign="middle" width="117">
-                                            <p style="line-height: 1.5em;"><span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">2</span>
-                                            </p>
-                                        </td>
-                                        <td style="border-color: rgb(141, 179, 226);" align="left" valign="middle" width="532">
-                                            <p style="line-height: 1.5em;"><span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">Memorial Sloan-Kettering Cancer &nbsp;Center</span>
-                                            </p>
-                                        </td>
-                                    </tr>
-                                    <tr style="height:22px" height="22">
-                                        <td style="border-color: rgb(141, 179, 226);" align="left" height="22" valign="middle" width="132">
-                                            <p style="line-height: 1.5em;"><span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">3</span>
-                                            </p>
-                                        </td>
-                                        <td style="border-color: rgb(141, 179, 226);" align="left" valign="middle" width="529">
-                                            <p style="line-height: 1.5em;"><span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">Mayo Clinic</span>
-                                            </p>
-                                        </td>
-                                    </tr>
-                                    <tr style="height:22px" height="22">
-                                        <td style="border-color: rgb(141, 179, 226);" align="left" height="22" valign="middle" width="143">
-                                            <p style="line-height: 1.5em;"><span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">4</span>
-                                            </p>
-                                        </td>
-                                        <td style="border-color: rgb(141, 179, 226);" align="left" valign="middle" width="527">
-                                            <p style="line-height: 1.5em;"><span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">Johns Hopkins Hospital</span>
-                                            </p>
-                                        </td>
-                                    </tr>
-                                    <tr style="height:44px" height="44">
-                                        <td style="border-color: rgb(141, 179, 226);" align="left" height="44" valign="middle" width="151">
-                                            <p style="line-height: 1.5em;"><span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">5</span>
-                                            </p>
-                                        </td>
-                                        <td style="border-color: rgb(141, 179, 226);" align="left" valign="middle" width="526">
-                                            <p style="line-height: 1.5em;"><span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">Dana-Farber/Brigham and Women's &nbsp;Cancer Center</span>
-                                            </p>
-                                        </td>
-                                    </tr>
-                                    <tr style="height:22px" height="22">
-                                        <td style="border-color: rgb(141, 179, 226);" align="left" height="22" valign="middle" width="157">
-                                            <p style="line-height: 1.5em;"><span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">6</span>
-                                            </p>
-                                        </td>
-                                        <td style="border-color: rgb(141, 179, 226);" align="left" valign="middle" width="525">
-                                            <p style="line-height: 1.5em;"><span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">Massachusetts General Hospital</span>
-                                            </p>
-                                        </td>
-                                    </tr>
-                                    <tr style="height:22px" height="22">
-                                        <td style="border-color: rgb(141, 179, 226);" align="left" height="22" valign="middle" width="161">
-                                            <p style="line-height: 1.5em;"><span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">7</span>
-                                            </p>
-                                        </td>
-                                        <td style="border-color: rgb(141, 179, 226);" align="left" valign="middle" width="524">
-                                            <p style="line-height: 1.5em;"><span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">UCSF Medical Center</span>
-                                            </p>
-                                        </td>
-                                    </tr>
-                                    <tr style="height:22px" height="22">
-                                        <td style="border-color: rgb(141, 179, 226);" align="left" height="22" valign="middle" width="164">
-                                            <p style="line-height: 1.5em;"><span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">8</span>
-                                            </p>
-                                        </td>
-                                        <td style="border-color: rgb(141, 179, 226);" align="left" valign="middle" width="524">
-                                            <p style="line-height: 1.5em;"><span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">University of Washington Medical &nbsp;Center</span>
-                                            </p>
-                                        </td>
-                                    </tr>
-                                    <tr style="height:22px" height="22">
-                                        <td style="border-color: rgb(141, 179, 226);" align="left" height="22" valign="middle" width="166">
-                                            <p style="line-height: 1.5em;"><span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">9</span>
-                                            </p>
-                                        </td>
-                                        <td style="border-color: rgb(141, 179, 226);" align="left" valign="middle" width="523">
-                                            <p style="line-height: 1.5em;"><span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">Cleveland Clinic</span>
-                                            </p>
-                                        </td>
-                                    </tr>
-                                    <tr style="height:22px" height="22">
-                                        <td style="border-color: rgb(141, 179, 226);" align="left" height="22" valign="middle" width="167">
-                                            <p style="line-height: 1.5em;"><span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">10</span>
-                                            </p>
-                                        </td>
-                                        <td style="border-color: rgb(141, 179, 226);" align="left" valign="middle" width="523">
-                                            <p style="line-height: 1.5em;"><span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">Stanford Hospital and Clinics</span>
-                                            </p>
-                                        </td>
-                                    </tr>
-                                    <tr style="height:22px" height="22">
-                                        <td style="border-color: rgb(141, 179, 226);" align="left" height="22" valign="middle" width="168">
-                                            <p style="line-height: 1.5em;"><span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">11</span>
-                                            </p>
-                                        </td>
-                                        <td style="border-color: rgb(141, 179, 226);" align="left" valign="middle" width="523">
-                                            <p style="line-height: 1.5em;"><span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">UCLA Medical Center</span>
-                                            </p>
-                                        </td>
-                                    </tr>
-                                    <tr style="height:22px" height="22">
-                                        <td style="border-color: rgb(141, 179, 226);" align="left" height="22" valign="middle" width="168">
-                                            <p style="line-height: 1.5em;"><span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">12</span>
-                                            </p>
-                                        </td>
-                                        <td style="border-color: rgb(141, 179, 226);" align="left" valign="middle" width="523">
-                                            <p style="line-height: 1.5em;"><span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">Wake Forest Baptist Medical &nbsp;Center</span>
-                                            </p>
-                                        </td>
-                                    </tr>
-                                    <tr style="height:22px" height="22">
-                                        <td style="border-color: rgb(141, 179, 226);" align="left" height="22" valign="middle" width="168">
-                                            <p style="line-height: 1.5em;"><span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">13</span>
-                                            </p>
-                                        </td>
-                                        <td style="border-color: rgb(141, 179, 226);" align="left" valign="middle" width="523">
-                                            <p style="line-height: 1.5em;"><span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">Hospital of the University of &nbsp;Pennsylvania</span>
-                                            </p>
-                                        </td>
-                                    </tr>
-                                    <tr style="height:22px" height="22">
-                                        <td style="border-color: rgb(141, 179, 226);" align="left" height="22" valign="middle" width="168">
-                                            <p style="line-height: 1.5em;"><span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">14</span>
-                                            </p>
-                                        </td>
-                                        <td style="border-color: rgb(141, 179, 226);" align="left" valign="middle" width="523">
-                                            <p style="line-height: 1.5em;"><span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">Northwestern Memorial Hospital</span>
-                                            </p>
-                                        </td>
-                                    </tr>
-                                    <tr style="height:22px" height="22">
-                                        <td style="border-color: rgb(141, 179, 226);" align="left" height="22" valign="middle" width="168">
-                                            <p style="line-height: 1.5em;"><span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">15</span>
-                                            </p>
-                                        </td>
-                                        <td style="border-color: rgb(141, 179, 226);" align="left" valign="middle" width="523">
-                                            <p style="line-height: 1.5em;"><span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">City of Hope</span>
-                                            </p>
-                                        </td>
-                                    </tr>
-                                    <tr style="height:22px" height="22">
-                                        <td style="border-color: rgb(141, 179, 226);" align="left" height="22" valign="middle" width="168">
-                                            <p style="line-height: 1.5em;"><span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">16</span>
-                                            </p>
-                                        </td>
-                                        <td style="border-color: rgb(141, 179, 226);" align="left" valign="middle" width="523">
-                                            <p style="line-height: 1.5em;"><span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">Seidman Cancer Center at UH Case &nbsp;Medical</span>
-                                            </p>
-                                        </td>
-                                    </tr>
-                                    <tr style="height:22px" height="22">
-                                        <td style="border-color: rgb(141, 179, 226);" align="left" height="22" valign="middle" width="168">
-                                            <p style="line-height: 1.5em;"><span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">17</span>
-                                            </p>
-                                        </td>
-                                        <td style="border-color: rgb(141, 179, 226);" align="left" valign="middle" width="523">
-                                            <p style="line-height: 1.5em;"><span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">Thomas Jefferson University &nbsp;Hospital</span>
-                                            </p>
-                                        </td>
-                                    </tr>
-                                    <tr style="height:22px" height="22">
-                                        <td style="border-color: rgb(141, 179, 226);" align="left" height="22" valign="middle" width="168">
-                                            <p style="line-height: 1.5em;"><span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">18</span>
-                                            </p>
-                                        </td>
-                                        <td style="border-color: rgb(141, 179, 226);" align="left" valign="middle" width="523">
-                                            <p style="line-height: 1.5em;"><span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">Duke University Medical Center</span>
-                                            </p>
-                                        </td>
-                                    </tr>
-                                    <tr style="height:22px" height="22">
-                                        <td style="border-color: rgb(141, 179, 226);" align="left" height="22" valign="middle" width="168">
-                                            <p style="line-height: 1.5em;"><span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">19</span>
-                                            </p>
-                                        </td>
-                                        <td style="border-color: rgb(141, 179, 226);" align="left" valign="middle" width="523">
-                                            <p style="line-height: 1.5em;"><span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">Moffitt Cancer Center</span>
-                                            </p>
-                                        </td>
-                                    </tr>
-                                    <tr style="height:22px" height="22">
-                                        <td style="border-color: rgb(141, 179, 226);" align="left" height="22" valign="middle" width="168">
-                                            <p style="line-height: 1.5em;"><span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">20</span>
-                                            </p>
-                                        </td>
-                                        <td style="border-color: rgb(141, 179, 226);" align="left" valign="middle" width="523">
-                                            <p style="line-height: 1.5em;"><span style="font-size: 14px; font-family: 微软雅黑,Microsoft YaHei;">Ohio State University James &nbsp;Cancer Hospital</span>
-                                            </p>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">&nbsp;&nbsp;&nbsp;针对不同种类的肿瘤，各个顶尖医院的特长也不一样，我们与治疗每种肿瘤的美国卫生部特选的研究中心和主治医生保持密切联系，持续跟踪他们的最新治疗方案和临床试验，保证我们MedTravel会员得到最新、最好的治疗。</span>
-                            </p>
-                            <p>
-                                <br>
-                            </p>
+                           
+                                <div style="padding-left:40px;">
+
+                                    1 . University of Texas MD Anderson Cancer Center
+                                    <br> 2 . Memorial Sloan-Kettering Cancer Center
+                                    <br> 3 . Mayo Clinic
+                                    <br> 4 . Johns Hopkins Hospital
+                                    <br> 5 . Dana-Farber/Brigham and Women's Cancer Center
+                                    <br> 6 . Massachusetts General Hospital
+                                    <br> 7 . UCSF Medical Center
+                                    <br> 8 . University of Washington Medical Center
+                                    <br> 9 . Cleveland Clinic
+                                    <br> 10 . Stanford Hospital and Clinics
+                                    <br> 11 . UCLA Medical Center
+                                    <br> 12 . Wake Forest Baptist Medical Center
+                                    <br> 13 . Hospital of the University of Pennsylvania
+                                    <br> 14 . Northwestern Memorial Hospital
+                                    <br> 15 . City of Hope
+                                    <br> 16 . Seidman Cancer Center at UH Case Medical
+                                    <br> 17 . Thomas Jefferson University Hospital
+                                    <br> 18 . Duke University Medical Center
+                                    <br> 19 . Moffitt Cancer Center
+                                    <br> 20 . Ohio State University James Cancer Hospital
+                                    <br>
+                                    <br>
+                                </div>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 14px;">&nbsp;&nbsp;&nbsp;针对不同种类的肿瘤，各个顶尖医院的特长也不一样，我们与治疗每种肿瘤的美国卫生部特选的研究中心和主治医生保持密切联系，持续跟踪他们的最新治疗方案和临床试验，保证我们MedTravel会员得到最新、最好的治疗。</span>
+                                </p>
+                                <p>
+                                    <br>
+                                </p>
                         </div>
 
                     </div>
@@ -4883,17 +4906,35 @@ PRP疗法是退化性关节炎的救星。无需开刀，没有伤口，无需�
             </div>
 
         </div>
+    </div>'
+    <!--help to cancle out the mn_xx bug-->
+    <div style="display:none; ">
+        <div id="mn_111" style="display:none; "></div>
+        <div id="mn_112" style="display:none; "></div>
+        <div id="mn_113" style="display:none; "></div>
+        <div id="mn_114" style="display:none; "></div>
+        <div id="mn_115" style="display:none; "></div>
+        <div id="mn_116" style="display:none; "></div>
+        <div id="mn_117" style="display:none; "></div>
+        <div id="mn_118" style="display:none; "></div>
+        <div id="mn_119" style="display:none; "></div>
+        <div id="mn_120" style="display:none; "></div>
+        <div id="mn_121" style="display:none; "></div>
+        <div id="mn_122" style="display:none; "></div>
+        <div id="mn_123" style="display:none; "></div>
+        <div id="mn_124" style="display:none; "></div>
+        <div id="mn_125" style="display:none; "></div>
     </div>
     <!--产品：【会员服务】美国就医全程陪预约-->
-    <div class="footer">
+    <div class="footer" style="min-width:1000px; ">
         <div class="footernav">
-            <a id="mn_11" style="cursor:pointer" onclick="HoverLiii(1,1,15)">首页</a>
-            <a id="mn_17" style="cursor:pointer" onclick="HoverLiii(1,7,15); ">关于我们</a>
-            <a id="mn_18" style="cursor:pointer" onclick="HoverLiii(1,8,15); HoverLii(5,1,3)">服务条款</a>
-            <a id="mn_19" style="cursor:pointer" onclick="HoverLiii(1,8,15); HoverLii(5,2,3)">隐私政策</a>
-            <a id="mn_110" style="cursor:pointer" onclick="HoverLiii(1,8,15); HoverLii(5,3,3)">退款/取消政策</a>
-            <a id="mn_15" style="cursor:pointer" onclick="HoverLiii(1,5,15)">新闻动态 </a>
-            <a id="mn_17" style="cursor:pointer" onclick="HoverLiii(1,7,15)">联系方式</a>
+            <a id="mn_11" style="cursor:pointer" onclick="HoverLiii(1,1,15); backtotop();">首页</a>
+            <a id="mn_17" style="cursor:pointer" onclick="HoverLiii(1,7,15); backtotop();">关于我们</a>
+            <a id="mn_18" style="cursor:pointer" onclick="HoverLiii(1,8,15); HoverLii(5,1,3); backtotop();">服务条款</a>
+            <a id="mn_19" style="cursor:pointer" onclick="HoverLiii(1,8,15); HoverLii(5,2,3); backtotop();">隐私政策</a>
+            <a id="mn_110" style="cursor:pointer" onclick="HoverLiii(1,8,15); HoverLii(5,3,3); backtotop();">退款/取消政策</a>
+            <a id="mn_15" style="cursor:pointer" onclick="HoverLiii(1,5,15); backtotop();">新闻动态 </a>
+            <a id="mn_17" style="cursor:pointer" onclick="HoverLiii(1,7,15); backtotop();">联系方式</a>
 
         </div>
         <div class="contactinfo clearfix">
@@ -4927,16 +4968,16 @@ PRP疗法是退化性关节炎的救星。无需开刀，没有伤口，无需�
         <div class="beian">
         </div>
     </div>
-    <div class="footer_ft">
-        <div class="footer_ft1">
+    <div class="footer_ft" style="min-width:1000px;">
+        <div class="footer_ft1 ">
             <p></p>
-            <p> 易途国际有限公司 版权所有<a href="http://www.etourhealth.com/"> www.etourhealth.com </a>
+            <p> 易途国际有限公司 版权所有<a href="http://www.etourhealth.com/ "> www.etourhealth.com </a>
 
             </p>
         </div>
     </div>
-    <div id="hm_t_undefined" class="hm-t-container">
-        <div class="hm-t-go-top" style="display: none;"></div>
+    <div id="hm_t_undefined " class="hm-t-container ">
+        <div class="hm-t-go-top " style="display: none; "></div>
     </div>
 
 
