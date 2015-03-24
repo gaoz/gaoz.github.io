@@ -47,10 +47,8 @@
 <!----------------------------- Section 2  ....... The modal (popped up window on top of the section 1 's div)-----------------------------------------------------> 
 <div class="cd-popup">
     <div class="cd-popup-container" >
-        <div style="padding-bottom:30px; font-size:0;">
-            
-            
-            <div  style="padding:20px;"> </div>
+        <div style="padding:30px; "> <a href="popup2.html"><div style=" border-bottom:2px solid #999; border-top-right-radius:3px; border-bottom-left-radius:3px; border-bottom-left-radius:2px;  position:fixed; top:0px; right:0px; margin-right: 0px;  text-align:left; padding:10px 12px; background-color:#3eaef4; color:white; " class="arrow">X</div></a> </div>
+        <div style="padding-bottom:30px; font-size:0;"> 
             <div style=" font-size:20px; padding: 30px;  background-color:#3eaef4; Color:white; ">Check Out</div>
             <style>
                 @media (max-width: 767px) {
@@ -607,7 +605,13 @@
         </div> 
         
     </div> <!-- cd-popup-container -->
-    <a href="popup2.html" class="cd-popup-close"><div style="border-bottom-left-radius:2px; border-bottom-right-radius:2px;  border-bottom: 2px solid white; position:fixed; top:0px; right:0px; margin-right: 20px;  text-align:left; padding:10px 12px; background-color:#FF8C77; color:white; " class="arrow">X</div></a>
+    <div id="topbar" style="border-bottom:2px solid #fff; opacity:0; overflow:hidden; top:0;  width:100%; height:38px; background-color:#3eaef4; position:fixed; ">
+        <a href="popup3.html"><div style="display:inline-block; border-bottom-right-radius:2px;    text-align:left; padding:10px 22px; background-color:#008ce6; color:white; " class="arrow">&larr;</div></a>
+        <div style="padding-left:10px; text-align:center; color:white; display:inline-block;">
+            Check Out
+        </div>
+         <a href="popup2.html"><div style="display:inline-block; border-bottom-left-radius:2px;   float:right; text-align:right; padding:10px 22px; padding-right:30px; background-color:#008ce6; color:white; " class="arrow">Close</div></a>
+    </div>
 </div> <!-- cd-popup -->
 
 
@@ -744,5 +748,25 @@ document.addEventListener("touchstart", function (event) {
 });
 
 </script>
+<script>// this is for top bar fixed on top when scroll down.
+     jQuery(document).ready(function($){
+          var $popup = $(".cd-popup");
+          var window_offset = $popup.scrollTop(); 
+          var topbar = document.getElementById("topbar");
 
+          $(".cd-popup").scroll(function() {
+
+                  window_offset =  $popup.scrollTop(); 
+                  if(window_offset>80){
+
+                        topbar.style.opacity = 1;
+
+                  }
+                  else if(window_offset<81){
+                     topbar.style.opacity = 0;
+                  }
+
+          });
+     });
+</script>
 </html>
