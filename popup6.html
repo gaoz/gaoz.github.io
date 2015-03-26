@@ -174,11 +174,11 @@
                             <div style="display:inline-block;"> <label style="margin-top:20px; margin-right:10px;"><input type="radio" name="aname" value="">We don't need it. </label></div>            
                         </form>
                         
-                        <h4 style="color:red;">1. Show up blow when CHECKed Staying at the hotel, Also disable all the traportation options below for each person.</h4>            
+                        <h4 style="color:red;">1. Show up below when CHECKed [Picked up as a group], Also disable all the transportation options below for each person.</h4>            
                         <div style=" border-radius:5px; border: 1px solid #ddd;">
                             <div style="display:inline-block;"><label style=" margin-right:10px;"><input type="radio" name="aname" value=""> Staying at the hotel</label></div>
                             <div style="display:inline-block;"><label style="margin-top:20px; margin-right:10px;"><input type="radio" name="aname" value=""> Staying at other address </label></div>                                
-                            <h4 style="color:red;">1a. Show up blow when CHECKed Staying at the hotel</h4>            
+                            <h4 style="color:red;">1a. Show up below when CHECKed [Staying at the hotel]</h4>            
                             <div  style=" margin-left:10px; margin-top:10px;">
                                     <form class="" role="form">
 
@@ -201,7 +201,7 @@
                             </div>
 
 
-                            <h4 style="color:red;">1b.Show up blow when CHECKed staying at other address</h4>            
+                            <h4 style="color:red;">1b.Show up below when CHECKed staying at other address</h4>            
                             <div  style="  margin-left:10px; margin-top:10px;">
                                     <div> Please let us know the address you will be staying. We will send you another email to confirm you with the pickup location.</div>
                                     <form class="" role="form">
@@ -214,7 +214,7 @@
                         </div>
 
 
-                        <h4 style="color:red;">2. Show up blow when CHECKed Picked up as an individual or  we don't need it. if  selected we don't need it then disable all the traportation options below for each person.</h4>            
+                        <h4 style="color:red;">2. Show up below when CHECKed [Picked up as an individual] or  [we don't need it]. if  selected we don't need it then disable all the tranportation options below for each person.</h4>            
                         <div class="" style=" padding:10px;border-radius:5px; border: 1px solid #ddd; margin-bottom:20px; margin-left:5px; margin-top:10px;">
                                <div> Please continue filling out the following information for each person.</div> 
                                
@@ -326,7 +326,7 @@
                                         <div class="">
                                              <div style="display:inline-block;"><label style=" margin-right:10px;"><input type="radio" name="aname" value=""> Staying at the hotel</label></div>
                                              <div style="display:inline-block;"><label style="margin-top:20px; margin-right:10px;"><input type="radio" name="aname" value=""> Staying at other address </label></div>                                
-                                             <h4 style="color:red;">Show up blow when CHECKed Staying at the hotel</h4>            
+                                             <h4 style="color:red;">Show up below when CHECKed Staying at the hotel</h4>            
                                              <div class="" style="margin-left:25px; margin-top:10px;">
                                                         <form class="" role="form">
 
@@ -349,7 +349,7 @@
                                                 </div>
 
 
-                                                <h4 style="color:red;">Show up blow when CHECKed staying at other address</h4>            
+                                                <h4 style="color:red;">Show up below when CHECKed staying at other address</h4>            
                                                 <div class="" style="margin-left:25px; margin-top:10px;">
                                                         <div> Please let us know the address you will be staying. We will send you another email to confirm you with the pickup location.</div>
                                                         <form class="" role="form">
@@ -474,7 +474,7 @@
                                         <div class="">
                                              <div style="display:inline-block;"><label style=" margin-right:10px;"><input type="radio" name="aname" value=""> Staying at the hotel</label></div>
                                              <div style="display:inline-block;"><label style="margin-top:20px; margin-right:10px;"><input type="radio" name="aname" value=""> Staying at other address </label></div>                                
-                                             <h4 style="color:red;">Show up blow when CHECKed Staying at the hotel</h4>            
+                                             <h4 style="color:red;">Show up below when CHECKed Staying at the hotel</h4>            
                                              <div class="" style="margin-left:25px; margin-top:10px;">
                                                         <form class="" role="form">
 
@@ -497,7 +497,7 @@
                                                 </div>
 
 
-                                                <h4 style="color:red;">Show up blow when CHECKed staying at other address</h4>            
+                                                <h4 style="color:red;">Show up below when CHECKed staying at other address</h4>            
                                                 <div class="" style="margin-left:25px; margin-top:10px;">
                                                         <div> Please let us know the address you will be staying. We will send you another email to confirm you with the pickup location.</div>
                                                         <form class="" role="form">
@@ -605,7 +605,7 @@
         </div> 
         
     </div> <!-- cd-popup-container -->
-    <div id="topbar" style="border-bottom:2px solid #fff; opacity:0; overflow:hidden; top:0;  width:100%; height:38px; background-color:#3eaef4; position:fixed; ">
+    <div id="topbar" style="border-bottom:2px solid #fff; opacity:0; overflow:hidden; top:0;  width:100%; height:0px; background-color:#3eaef4; position:fixed; ">
         <a href="popup3.html"><div style="display:inline-block; border-bottom-right-radius:2px;    text-align:left; padding:10px 22px; background-color:#008ce6; color:white; " class="arrow">&larr;</div></a>
         <div style="padding-left:10px; text-align:center; color:white; display:inline-block;">
             Check Out
@@ -758,11 +758,13 @@ document.addEventListener("touchstart", function (event) {
 
                   window_offset =  $popup.scrollTop(); 
                   if(window_offset>80){
-
+                        topbar.style.height = 38+'px';
                         topbar.style.opacity = 1;
+                      
 
                   }
                   else if(window_offset<81){
+                     topbar.style.height = 0;
                      topbar.style.opacity = 0;
                   }
 
