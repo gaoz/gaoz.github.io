@@ -64,24 +64,38 @@
                 }
                 .blue3dbg{
                     
-                    border:1px dashed #999;
+                    border:1px solid #999;
+                    border-radius:5px;
+                   
                 }
             </style>
             <div style=" padding: 30px;  background-color:#3eaef4; Color:white; font-size:20px; ">Please select a plan</div>
 
-            <div style=" margin:0 auto; margin-top:20px; max-width:643px; font-size:15px;  background-color:#fff; ">
-                <div style="display:inline-block;  max-width:310px; color:black; text-align:left; ">
-                    <div style="padding:10px 20px;">Selected Date:    2015 / 05 / 05 </div>
+            <div style=" margin:0 auto; margin-top:20px; margin-bottom:15px;max-width:543px; font-size:15px;  background-color:#fff; text-align:left; ">
+                <div style="display:inline-block;  max-width:543px; color:black;  ">
+                    <div style="display:inline-block; margin-left:5px; width:30px;"><img src="asset/img/etc/calendarblue.png" width="30px;"></img></div>
+                    <div style="display:inline-block; width:300px; vertical-align:top; padding-top:0px; ">
+                        <form action="demo_form.asp">
+                            <input style="font-size:17px;" type="date" name="year_week">
+                            <div style=" display:inline-block; vertical-align:top;">
+                                <a style="cursor:pointer" type="submit">
+                                    <div style="border-top-right-radius:5px; border-bottom-right-radius:5px; max-width:200px; text-align:center; color:#000; background-color:#fff; border:1px solid #bfbfbf; padding:8px 10px;font-size:10px;"> SEARCH </div>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
                    
                 </div>
+<!--
                  <div style=" max-width:310px;  text-align:right; display:inline-block;">
                             <a href="popup2.html">
                                 <div  onmouseover="this.style.color='#3eaef4';" onmouseout="this.style.color='black';" style="color:black; padding:10px 20px;">Back to Calendar </div>
                             </a>
                     
                  </div>
+-->
             </div>
-            <div  class="blue3dbg" style="  color:black; margin:0 auto; margin-top:0px; max-width:600px; padding:20px; font-size:0;">
+            <div  class="blue3dbg" style="  color:black; margin:0 auto; margin-top:0px;  margin-bottom:5px; max-width:500px; padding:20px; font-size:0;">
 
                 <div style="display:block; width:100%">
                     <div style="vertical-align:top; display:inline-block; width:100%;  font-size:15px; text-align:left; ">
@@ -95,7 +109,7 @@
 
                     </div>
                     <div style="padding-top:15px; vertical-align:top; display:block;  font-size:0; text-align:left; ">
-                        <div style="display:inline-block; min-width:450px; max-width:500px; ">
+                        <div style="display:inline-block; min-width:380px; max-width:400px; ">
                             <div style="font-size:12px">
                                 <div style="padding-bottom:5px;"> 时间 : 10:00 AM</div>
                                 <div style="padding-bottom:5px;"> 时长 : 1 小时 30 分</div>
@@ -113,7 +127,7 @@
             </div>
 
             
-            <div  class="blue3dbg" style="  color:black; margin:0 auto; margin-top:0px; max-width:600px; padding:20px; font-size:0;">
+            <div  class="blue3dbg" style="  color:black; margin:0 auto;  margin-bottom:5px; margin-top:0px; max-width:500px; padding:20px; font-size:0;">
 
                 <div style="display:block; width:100%">
                     <div style="vertical-align:top; display:inline-block; width:100%;  font-size:15px; text-align:left; ">
@@ -127,7 +141,7 @@
 
                     </div>
                     <div style="padding-top:15px; vertical-align:top; display:block;  font-size:0; text-align:left; ">
-                        <div style="display:inline-block; min-width:450px; max-width:500px; ">
+                        <div style="display:inline-block; min-width:380px; max-width:400px;">
                             <div style="font-size:12px">
                                 <div style="padding-bottom:5px;"> Event Time : 10:00 AM</div>
                                 <div style="padding-bottom:5px;"> Duration : 1 Hour(s) 30 Minute(s)</div>
@@ -144,7 +158,7 @@
                     </div>
                 </div>
             </div>
-            <div  class="blue3dbg" style="  color:black; margin:0 auto; margin-top:0px; max-width:600px; padding:20px; font-size:0;">
+            <div  class="blue3dbg" style="  color:black; margin:0 auto;  margin-bottom:5px; margin-top:0px; max-width:500px; padding:20px; font-size:0;">
 
                 <div style="display:block; width:100%">
                     <div style="vertical-align:top; display:inline-block; width:100%;  font-size:15px; text-align:left; ">
@@ -158,7 +172,7 @@
 
                     </div>
                     <div style="padding-top:15px; vertical-align:top; display:block;  font-size:0; text-align:left; ">
-                        <div style="display:inline-block; min-width:450px; max-width:500px; ">
+                        <div style="display:inline-block; min-width:380px; max-width:400px; ">
                             <div style="font-size:12px">
                                 <div style="padding-bottom:5px;"> Event Time : 10:00 AM</div>
                                 <div style="padding-bottom:5px;"> Duration : 1 Hour(s) 30 Minute(s)</div>
@@ -222,10 +236,14 @@
 <script src="asset/js/jquery-ui-2015.js"></script>
 
 
+
+
+
 <!--------------Apply js into the button that you want to pop the window out-------------->
 <!--------------Apply js into the button that you want to pop the window out-------------->
 <!--------------Apply js into the button that you want to pop the window out-------------->
 <!--------------Apply js into the button that you want to pop the window out-------------->
+
 <script>
     jQuery(document).ready(function ($) {
         //open popup

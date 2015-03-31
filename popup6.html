@@ -108,6 +108,7 @@
                                  <div>
                                      <div style="font-weight:bold;vertical-align:top; text-align:left; display:inline-block; margin-top:5px;   padding:5px; border-radius:2px; color:black;">Pricing:</div>
                                     <div style="display:inline-block; margin-top:5px;"> 
+                                        <tr>
                                         <div style="vertical-align:bottom; line-height:30px;"><span>Adult(age:16-21)</span><span>   US$213.08/unit</span>
                                                 <span><select>
                                                   <option value="1">1</option>
@@ -117,6 +118,8 @@
                                                   </select>
                                                 </span>
                                         </div>
+                                        </tr>
+                                        <tr>
                                         <div style="vertical-align:bottom; line-height:30px;"><span>Children(age:8-16)</span><span>    US$200.08/unit</span>
                                                 <span><select>
                                                   <option value="1">1</option>
@@ -126,6 +129,8 @@
                                                   </select>
                                                 </span>
                                         </div>
+                                        </tr>
+                                        <tr>
                                         <div style="vertical-align:bottom; line-height:30px;"><span >Infant(age:0-7)</span><span>     US$188.08/unit</span>
                                                 <span><select>
                                                   <option value="1">1</option>
@@ -135,7 +140,8 @@
                                                   </select>
                                                 </span>
                                         </div>
-                                        
+                                         </tr>
+                                        <tr>
                                         <div style="vertical-align:bottom; line-height:30px;"><span>Senior(age:60+)</span><span>    US$150.08/unit</span>
                                                 <span><select>
                                                   <option value="1">1</option>
@@ -145,6 +151,8 @@
                                                   </select>
                                                 </span>
                                         </div>
+                                        </tr>
+                                     
                                     </div>
                                  </div>
                              </div>
@@ -169,16 +177,15 @@
                     <div>
                         <div  style="font-weight:bold;margin-bottom:5px; margin-top:5px;width:auto; padding:5px; border-radius:2px; color:#000;">How would you like to be picked up: </div>
                         <form>
-                            <div style="display:inline-block;"><label style=" margin-right:10px;"><input type="radio" name="aname" value="">Picked up as a group.</label></div>
-                            <div style="display:inline-block;"> <label style="margin-top:20px; margin-right:10px;"><input type="radio" name="aname" value="">Picked up as an individual. </label></div>
-                            <div style="display:inline-block;"> <label style="margin-top:20px; margin-right:10px;"><input type="radio" name="aname" value="">We don't need it. </label></div>            
+                            <div style="display:inline-block;"><label style=" margin-right:10px;"><input type="checkbox" name="aname" value="">Picked up together.</label></div>
+                                    
                         </form>
                         
-                        <h4 style="color:red;">1. Show up below when CHECKed [Picked up as a group], Also disable all the transportation options below for each person.</h4>            
+                        <h4 style="color:red;">1. Show up blow when checked the box [Picked up together]</h4>            
                         <div style=" border-radius:5px; border: 1px solid #ddd;">
                             <div style="display:inline-block;"><label style=" margin-right:10px;"><input type="radio" name="aname" value=""> Staying at the hotel</label></div>
                             <div style="display:inline-block;"><label style="margin-top:20px; margin-right:10px;"><input type="radio" name="aname" value=""> Staying at other address </label></div>                                
-                            <h4 style="color:red;">1a. Show up below when CHECKed [Staying at the hotel]</h4>            
+                            <h4 style="color:red;">1a. Show up blow when CHECKed Staying at the hotel</h4>            
                             <div  style=" margin-left:10px; margin-top:10px;">
                                     <form class="" role="form">
 
@@ -201,7 +208,7 @@
                             </div>
 
 
-                            <h4 style="color:red;">1b.Show up below when CHECKed staying at other address</h4>            
+                            <h4 style="color:red;">1b.Show up blow when CHECKed staying at other address</h4>            
                             <div  style="  margin-left:10px; margin-top:10px;">
                                     <div> Please let us know the address you will be staying. We will send you another email to confirm you with the pickup location.</div>
                                     <form class="" role="form">
@@ -214,7 +221,7 @@
                         </div>
 
 
-                        <h4 style="color:red;">2. Show up below when CHECKed [Picked up as an individual] or  [we don't need it]. if  selected we don't need it then disable all the tranportation options below for each person.</h4>            
+                        <h4 style="color:red;">2. Show up blow when CHECKed Picked up as an individual or  we don't need it. if  selected we don't need it then disable all the traportation options below for each person.</h4>            
                         <div class="" style=" padding:10px;border-radius:5px; border: 1px solid #ddd; margin-bottom:20px; margin-left:5px; margin-top:10px;">
                                <div> Please continue filling out the following information for each person.</div> 
                                
@@ -326,7 +333,7 @@
                                         <div class="">
                                              <div style="display:inline-block;"><label style=" margin-right:10px;"><input type="radio" name="aname" value=""> Staying at the hotel</label></div>
                                              <div style="display:inline-block;"><label style="margin-top:20px; margin-right:10px;"><input type="radio" name="aname" value=""> Staying at other address </label></div>                                
-                                             <h4 style="color:red;">Show up below when CHECKed Staying at the hotel</h4>            
+                                             <h4 style="color:red;">Show up blow when CHECKed Staying at the hotel</h4>            
                                              <div class="" style="margin-left:25px; margin-top:10px;">
                                                         <form class="" role="form">
 
@@ -349,7 +356,7 @@
                                                 </div>
 
 
-                                                <h4 style="color:red;">Show up below when CHECKed staying at other address</h4>            
+                                                <h4 style="color:red;">Show up blow when CHECKed staying at other address</h4>            
                                                 <div class="" style="margin-left:25px; margin-top:10px;">
                                                         <div> Please let us know the address you will be staying. We will send you another email to confirm you with the pickup location.</div>
                                                         <form class="" role="form">
@@ -474,7 +481,7 @@
                                         <div class="">
                                              <div style="display:inline-block;"><label style=" margin-right:10px;"><input type="radio" name="aname" value=""> Staying at the hotel</label></div>
                                              <div style="display:inline-block;"><label style="margin-top:20px; margin-right:10px;"><input type="radio" name="aname" value=""> Staying at other address </label></div>                                
-                                             <h4 style="color:red;">Show up below when CHECKed Staying at the hotel</h4>            
+                                             <h4 style="color:red;">Show up blow when CHECKed Staying at the hotel</h4>            
                                              <div class="" style="margin-left:25px; margin-top:10px;">
                                                         <form class="" role="form">
 
@@ -497,7 +504,7 @@
                                                 </div>
 
 
-                                                <h4 style="color:red;">Show up below when CHECKed staying at other address</h4>            
+                                                <h4 style="color:red;">Show up blow when CHECKed staying at other address</h4>            
                                                 <div class="" style="margin-left:25px; margin-top:10px;">
                                                         <div> Please let us know the address you will be staying. We will send you another email to confirm you with the pickup location.</div>
                                                         <form class="" role="form">
@@ -749,7 +756,7 @@ document.addEventListener("touchstart", function (event) {
 
 </script>
 <script>// this is for top bar fixed on top when scroll down.
-     jQuery(document).ready(function($){
+      jQuery(document).ready(function($){
           var $popup = $(".cd-popup");
           var window_offset = $popup.scrollTop(); 
           var topbar = document.getElementById("topbar");
